@@ -1,6 +1,6 @@
 ---
-title: Anslutna program
-description: I det här avsnittet beskrivs hur du konfigurerar anslutna program i e-fakturering.
+title: Anslutna appar
+description: I den här artikeln beskrivs hur du konfigurerar anslutna program i e-fakturering.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59b67589139c0ce332716acf998825c6a024bded
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 7a0a9c19009c49b80ca8c182c31592c1a713a2aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371742"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906299"
 ---
-# <a name="connected-applications"></a>Anslutna program
+# <a name="connected-applications"></a>Anslutna appar
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ Tillgängligheten på Ekonomi- eller Supply Chain Management-parametrar i RCS ä
 3. På sidan **Miljökonfiguration** väljer du **Anslutna program** i åtgärdsfönstret.
 4. Skapa ett anslutet program genom att välja **Ny**.
 5. I fältet **Namn** anger du namnet på det program du vill ansluta.
-6. I fältet **Typ** väljer du **Dynamics 365 Finance**.
+6. I fältet **Typ**, välj **Dynamics 365 Finance**.
 7. I fältet **Program** anger du webbadressen till den miljö du vill ansluta.
 8. Ange miljöns klientorganisation i fältet **Klientorganisation**.
 9. Välj **Spara**.

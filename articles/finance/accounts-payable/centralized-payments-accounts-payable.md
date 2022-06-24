@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 5478a2ac61fb7304bc617f3d2614e68cda6154de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8331752"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903461"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Centraliserade betalningar för leverantörsreskontra
 

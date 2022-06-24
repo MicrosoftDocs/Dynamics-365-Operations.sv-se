@@ -1,6 +1,6 @@
 ---
 title: Skapa serviceavtal
-description: I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehantering och projekthantering och redovisning för att skapa serviceavtal.
+description: I denna artikel beskrivs hur du använder funktioner i modulerna för Servicehantering och Projekthantering samt redovisning för att skapa serviceavtal.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8a139d1a11cca036ace2540cba59bf2cace0db
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d18d279cd437e98cad6495def953978cb78e723e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677266"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901775"
 ---
 # <a name="create-service-agreements"></a>Skapa serviceavtal
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehantering och projekthantering och redovisning för att skapa serviceavtal.
+I denna artikel beskrivs hur du använder funktioner i modulerna för Servicehantering och Projekthantering samt redovisning för att skapa serviceavtal.
 
 ## <a name="create-a-service-agreement-from-service-management"></a>Skapa en serviceorder från ett serviceavtal
 
@@ -51,10 +51,10 @@ I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehan
 2. Markera **Alla projekt**.
 3. Välj projekt i listan.
 4. I **åtgärdsfönstret** klicka på **Hantera**. I den **nya** åtgärdsgruppen, klickar du på **service** och markerar **serviceavtal**.
-5. Följ anvisningarna i avsnittet **skapa ett serviceavtal** som beskrevs tidigare i det här avsnittet om du vill ange projektreferensen.
+5. Följ anvisningarna i avsnittet **Skapa ett serviceavtal** som beskrevs tidigare i denna artikel om du vill ange projektreferensen.
 
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Ta fram och upprätta avtal – översikt](service-agreements.md)
 

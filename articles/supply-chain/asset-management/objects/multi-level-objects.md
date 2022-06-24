@@ -1,6 +1,6 @@
 ---
 title: Tillgångar på flera nivåer
-description: Det här avsnittet beskriver hur du skapar och tar bort tillgångar på flera nivåer.
+description: Denna artikel beskriver hur du skapar och tar bort tillgångar på flera nivåer.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769621"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908784"
 ---
 # <a name="multi-level-assets"></a>Tillgångar på flera nivåer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769621"
 
  
 
-Det här avsnittet beskriver hur du skapar och tar bort tillgångar på flera nivåer. Du kan skapa tillgångar och relaterade undertillgångar i en hierarkisk trädstruktur. På så sätt kan du visa relationer och beroenden mellan tillgångar. Underhållsjobb kan relateras till alla nivåer i trädstrukturen. Statistik kan också skapas för en individuell nivå eller som en summa av alla nivåer av undertillgångar.
+Denna artikel beskriver hur du skapar och tar bort tillgångar på flera nivåer. Du kan skapa tillgångar och relaterade undertillgångar i en hierarkisk trädstruktur. På så sätt kan du visa relationer och beroenden mellan tillgångar. Underhållsjobb kan relateras till alla nivåer i trädstrukturen. Statistik kan också skapas för en individuell nivå eller som en summa av alla nivåer av undertillgångar.
 
 På listsidan **Alla tillgångar** (**Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**), anger kolumnen **Tillgångar** alla tillgångar i hierarkisk ordning. Kolumnen **överordnade** visar den relaterade överordnade. Dessutom, om tillgångar och undertillgångar redan har skapats visar avsnittet **Tillgångsträd** i fönstret **Relaterad information** tillgången i trädstrukturen.
 
@@ -58,7 +58,7 @@ Om en tillgång har relaterade undertillgångar kan du endast ta bort den om ing
 2. Välj **Ta bort**.
 
 > [!NOTE]
-> Om du inte kan ta bort en tillgång med hjälp av den här proceduren är ett annat sätt att hantera borttagningen att ställa in ett tillgångs livscykeltillstånd för detta ändamål. Du kan till exempel ställa in ett **Kasserat** eller **Borttaget** livscykeltillstånd på sidan **Tillgångens livscykeltillstånd**.
+> Om du inte kan ta bort en tillgång med hjälp av den här proceduren är ett annat sätt att hantera borttagningen att konfigurera ett tillgångs livscykeltillstånd för detta ändamål. Du kan till exempel konfigurera ett **Kasserat** eller **Borttaget** livscykeltillstånd på sidan **Tillgångens livscykeltillstånd**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

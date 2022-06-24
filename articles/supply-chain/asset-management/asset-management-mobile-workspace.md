@@ -1,6 +1,6 @@
 ---
-title: Använd mobil arbetsyta för tillgångshantering
-description: Det här ämnet innehåller information om arbetsyta för tillgångshantering.
+title: Använd mobil arbetsyta för Tillgångshantering
+description: Denna artikel innehåller information om mobil arbetsyta för Tillgångshantering.
 author: johanhoffmann
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d7e68cbe1132547fea5c72458a93b1a449a67c86
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902152"
 ---
-# <a name="use-the-asset-management-mobile-workspace"></a>Använd mobil arbetsyta för tillgångshantering
+# <a name="use-the-asset-management-mobile-workspace"></a>Använd mobil arbetsyta för Tillgångshantering
 
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Det här ämnet innehåller information om mobil arbetsyta för **tillgångshantering**. På den här arbetsytan kan användare visa och skapa underhållsbegäran och arbetsorder. Användarna kan också visa de tilldelade arbetsorderjobben i en kalender eller listvy. Tillgångar och funktionella platser kan också visas och sökas efter.
+Denna artikel innehåller information om mobil arbetsyta för **Tillgångshantering**. På den här arbetsytan kan användare visa och skapa underhållsbegäran och arbetsorder. Användarna kan också visa de tilldelade arbetsorderjobben i en kalender eller listvy. Tillgångar och funktionella platser kan också visas och sökas efter.
 
 ## <a name="overview"></a>Översikt
 
@@ -42,7 +42,7 @@ Särskilt den mobila arbetsytan **Tillgångshantering** låter användarna utfö
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du kan använda den mobila arbetsytan för **Tillgångshantering** måste din administratör ställa in nödvändiga användar- och arbetarkonton och publicera arbetsytan. Mer information finns i [Ställa in mobila arbetsytan för Tillgångshantering](set-up-asset-management-mobile.md).
+Innan du kan använda den mobila arbetsytan för **Tillgångshantering** måste din administratör konfigurera nödvändiga användar- och arbetarkonton och publicera arbetsytan. Mer information finns i [Ställa in mobila arbetsytan för Tillgångshantering](set-up-asset-management-mobile.md).
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
@@ -205,7 +205,7 @@ Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
 
 1. Välj **åtgärder** längst ned på skärmen och välj **skapa underhållsbegäran**.
 
-1. Om nummerserien är aktiverad för underhållsbegäran i **tillgångshantering** är fältet **underhållsbegäran** dolt, eftersom det fylls i automatiskt. Om fältet **underhållskostnader** visas, ange ett ID för underhållbegäran.
+1. Om nummerserien är aktiverad för underhållsbegäran i **Tillgångshantering** är fältet **underhållsbegäran** dolt, eftersom det fylls i automatiskt. Om fältet **underhållskostnader** visas, ange ett ID för underhållbegäran.
 
 1. Välj en **underhållbegärantyp**.
 

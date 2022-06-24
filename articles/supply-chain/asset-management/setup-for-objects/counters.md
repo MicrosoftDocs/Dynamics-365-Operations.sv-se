@@ -1,6 +1,6 @@
 ---
 title: Tillgångsmått
-description: Det här avsnittet beskriver hur du skapar tillgångsmåttyper i tillgångshantering.
+description: Denna artikel beskriver hur du skapar tillgångsmåttyper i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bcef89265697c1898b7d61a0b0ae6331ce1c851
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909684"
 ---
 # <a name="counters"></a>Räknare
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet beskriver hur du skapar räknartyper i tillgångshantering. Räknartyper används för att göra räknarregistreringar på tillgångar, till exempel om antalet produktionstimmar eller kvantiteten som produceras på tillgången. tillgångstyper är relaterade till räknartyperna. Det innebär att en räknare endast kan användas på en tillgång om räknaren ställs in på den tillgångstyp som används på tillgången.
+Denna artikel beskriver hur du skapar räknartyper i Tillgångshantering. Räknartyper används för att göra räknarregistreringar på tillgångar, till exempel om antalet produktionstimmar eller kvantiteten som produceras på tillgången. tillgångstyper är relaterade till räknartyperna. Det innebär att en räknare endast kan användas på en tillgång om räknaren ställs in på den tillgångstyp som används på tillgången.
 
 Innan du kan göra räknarregistreringar på tillgångar skapar du först de räknartyper som du vill använda i **räknare**. Därefter kan du skapa räknarregistreringar för tillgångar i **räknare**. 
 
@@ -43,7 +43,7 @@ En räknarregistrering kan uppdateras manuellt eller automatiskt baserat på pro
 
 ## <a name="create-counter-types-for-asset-counter-registrations"></a>Skapa räknartyper för tillgångsräknarregistreringar
 
-1. Välj **tillgångshantering** > **inställningar** > **tillgångstyper** > **räknare**.
+1. Välj **Tillgångshantering** > **inställningar** > **tillgångstyper** > **räknare**.
 2. Skapa en ny räknartyp genom att välja **Nytt**.
 3. Infoga ett ID i fältet **räknare** och ett räknarnamn i fältet **namn**.
 4. På snabbfliken **Allmänt** väljer du räknarenhet i fältet **enhet**.
@@ -58,7 +58,7 @@ En räknarregistrering kan uppdateras manuellt eller automatiskt baserat på pro
 
 
 >[!NOTE]
->En relaterad räknare uppdateras automatiskt endast om den relaterade räknaren har tillgångstypen, till vilken den är relaterad, i inställningarna för räknare. Exempel: du ställer in en räknare för "produktionstimmar" och lägger till tillgångstypen "lastbilsmotor". När den räknaren uppdateras kommer även en relaterad räknare "olja" att uppdateras med samma värden för räknare. Inställningen i **räknare** innehåller inställningarna på "timmar". På räknaren "Olja" bör "lastbilsmotor" läggas till på snabbfliken **tillgångstyper** för att säkerställa räknarrelationen. Se skärmdumparna nedan för ett exempel på inställningen på räknarna timmar och olja.
+>En relaterad räknare uppdateras automatiskt endast om den relaterade räknaren har tillgångstypen, till vilken den är relaterad, i inställningarna för räknare. Exempel: du konfigurerar en räknare för "produktionstimmar" och lägger till tillgångstypen "lastbilsmotor". När den räknaren uppdateras kommer även en relaterad räknare "olja" att uppdateras med samma värden för räknare. Inställningen i **räknare** innehåller inställningarna på "timmar". På räknaren "Olja" bör "lastbilsmotor" läggas till på snabbfliken **tillgångstyper** för att säkerställa räknarrelationen. Se skärmdumparna nedan för ett exempel på inställningen på räknarna timmar och olja.
 
 När tillgångstyper läggs till en räknartyp i **räknare**, läggs den räknaren automatiskt till tillgångstyperna på snabbfliken **räknare** i [tillgångstyper](../setup-for-objects/object-types.md).
 

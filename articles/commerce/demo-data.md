@@ -1,6 +1,6 @@
 ---
 title: Demodataskärmlayouter i Modern POS (MPOS) och molnbaserad kassa
-description: Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Dynamics 365 Commerce.
+description: Denna artikel innehåller information om skärmlayouterna som medföljer demonstrationsdatauppsättningen för kassaupplevelser (POS) i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761672"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897235"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Demodataskärmlayouter i Modern POS (MPOS) och molnbaserad kassa
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Dynamics 365 Commerce.
+Denna artikel innehåller information om skärmlayouterna som medföljer demonstrationsdatauppsättningen för kassaupplevelser (POS) i Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-Exempel på de skärmlayouter som medföljer Commerce demodata ger innehåll som är optimerat för olika butikssegment, lagerarbetarroller och enheter. En enkel layout kan innehålla flera layoutstorlekar och kombinationer av knappsatser som säkerställer täckning som lagerarbetare flyttar mellan enheter och stationer. Det här avsnittet beskriver skillnaderna mellan dessa layouter, operationer de tillhandahåller och de övergripande erfarenheter som de kan ge.
+Exempel på de skärmlayouter som medföljer Commerce demodata ger innehåll som är optimerat för olika butikssegment, lagerarbetarroller och enheter. En enkel layout kan innehålla flera layoutstorlekar och kombinationer av knappsatser som säkerställer täckning som lagerarbetare flyttar mellan enheter och stationer. Denna artikel beskriver skillnaderna mellan dessa layouter, de åtgärder de tillhandahåller och de övergripande erfarenheter som de ger.
 
 ![Demodatalayouter mellan enheter.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -67,9 +67,9 @@ Skärmlayout-ID kan ha upp till 10 tecken. ID är en sträng som består av tre 
 
 | Förkortning | Person       | Innehåll |
 |--------------|---------------|----------|
-| CSH          | Kassör       | Kassörlayouter inkluderar alla transaktionsrelaterade operationer, t.ex. kundorder, returer, rabatter, annulleringar och presentkort. Dessa layouter kan också innehålla dagliga uppgifter för lagerhantering som t.ex. priskontroller, lagersökningar och lagerinventeringar. Grundläggande hantering av skift finns också för startbelopp, skjuta upp skift och tidsklocka. |
-| MGR          | Butikschef | Butikscheflayouter inkluderar alla transaktionsrelaterade operationer som finns i kassalayouterna men innehåller också momsåsidosättningar. Dessa layouter kan också innehålla dagliga uppgifter för lagerhantering som t.ex. priskontroller, lagersökningar och lagerinventeringar. Hantering av skift tillhandahålls för att starta, skjuta upp och stänga skift. Dessutom innehåller layouterna kassaaktiviteter för registreringar, uttag, kassaavstämningar och kassaskåp och bankinsättningar. Slutligen innehåller dessa layouter tillgång till prestandarapporter och aktivera X- och Z-rapporter som ska skrivas ut. |
-| STK          | Ansvarig för lager   | Ansvarig för lager-layouter optimeras för lagerhantering. De innehåller tillgång till dagliga uppgifter för prischeckar, lagersökningar, plockning och mottagning, lagerinventeringar och paketuppdelning. Dessa layouter innehåller också grundläggande skiftoperationer för klocka och skjuta upp skift. Även om dessa layouter huvudsakligen är avsedda för back office-uppgifter, har lagerarbetare samma operationer som kassörerna för transaktionsskärmar. |
+| CSH          | Kassör       | Kassörlayouter inkluderar alla transaktionsrelaterade åtgärder, t.ex. kundorder, returer, rabatter, annulleringar och presentkort. Dessa layouter kan också innehålla dagliga uppgifter för lagerhantering som t.ex. priskontroller, lagersökningar och lagerinventeringar. Grundläggande hantering av skift finns också för startbelopp, skjuta upp skift och tidsklocka. |
+| MGR          | Butikschef | Butikscheflayouter inkluderar alla transaktionsrelaterade åtgärder som finns i kassalayouterna men innehåller också momsåsidosättningar. Dessa layouter kan också innehålla dagliga uppgifter för lagerhantering som t.ex. priskontroller, lagersökningar och lagerinventeringar. Hantering av skift tillhandahålls för att starta, skjuta upp och stänga skift. Dessutom innehåller layouterna kassaaktiviteter för registreringar, uttag, kassaavstämningar och kassaskåp och bankinsättningar. Slutligen innehåller dessa layouter tillgång till prestandarapporter och aktivera X- och Z-rapporter som ska skrivas ut. |
+| STK          | Ansvarig för lager   | Ansvarig för lager-layouter optimeras för lagerhantering. De innehåller tillgång till dagliga uppgifter för prischeckar, lagersökningar, plockning och mottagning, lagerinventeringar och paketuppdelning. Dessa layouter innehåller också grundläggande skiftåtgärder för klocka och skjuta upp skift. Även om dessa layouter huvudsakligen är avsedda för back office-uppgifter, har lagerarbetare samma åtgärder som kassörerna för transaktionsskärmar. |
 
 ### <a name="example-layout"></a>Exempel på layout
 
@@ -118,12 +118,12 @@ Varje fiktivt företag är avsett för ett annat butikssegment och innehåller p
 
 | Företag         | Plats | Segment        | Accent | Tema |
 |-----------------|----------|----------------|--------|-------|
-| Adventure Works | Seattle  | Sportutrustning | Blått   | Mörkt  |
-| Fabrikam        | San Francisco  | Mode        | Grönt  | Ljust |
-| Contoso         | Boston   | Elektronik    | Röd    | Mörkt  |
+| Adventure Works | Seattle  | Sportutrustning | Blått   | Mörk  |
+| Fabrikam        | San Francisco  | Mode        | Grönt  | Ljus |
+| Contoso         | Boston   | Elektronik    | Röd    | Mörk  |
 
 > [!NOTE]
-> Adventure Works och Fabrikam är två framstående varumärken. Contoso finns tillgängligt, men alla layouter har inte tillhandahållits.
+> Adventure Works och Fabrikam är två framstående varumärken. Contoso finns tillgänglig, men alla layouter har inte tillhandahållits.
 
 I följande illustrationer visas exempel på välkomstsidan och transaktionssidan för de tre fiktiva företagen.
 
@@ -141,7 +141,7 @@ I följande illustrationer visas exempel på välkomstsidan och transaktionssida
 
 ### <a name="contoso"></a>Contoso
 
-![Layouter för Contoso-demodata.](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Layouter för Contoso-demonstationsdata.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Matris för användarinloggning
 
@@ -157,7 +157,7 @@ Användare har angetts för de olika layouterna för skärmen. Med hjälp av tab
 | Fabrikam        | F3STK            | Ansvarig för lager   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Butikschef | 000100, 000111         |
 | Contoso         | C3CSH            | Kassör       | 000110, 000120         |
-| Contoso         | Inte aktuellt   | Ansvarig för lager   | Inte aktuellt         |
+| Contoso         | Inte tillämpligt   | Ansvarig för lager   | Inte tillämpligt         |
 
 > [!TIP]
 > För bästa resultat, aktivera ett register i motsvarande lagringsplats och ange vilket företag för den person som du tänker använda när du loggar in. På så sätt kan du garantera den visuella profilen och varumärkesanpassade bilder är justerade genom erfarenheten. Om du till exempel vill visa Fabrikam-layouten Fabrikam för en kassör, bör du aktivera en kassa i Houston-butiken.

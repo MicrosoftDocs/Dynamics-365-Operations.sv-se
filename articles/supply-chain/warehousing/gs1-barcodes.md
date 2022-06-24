@@ -1,6 +1,6 @@
 ---
 title: GS1-streckkoder
-description: I detta ämne beskrivs hur du ställer in GS1-streckkoder och QR-koder så att etiketter kan skannas på ett lagerställe.
+description: I denna artikel beskrivs hur du konfigurerar GS1-streckkoder och QR-koder så att etiketter kan skannas på ett lagerställe.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625290"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907157"
 ---
 # <a name="gs1-bar-codes"></a>GS1-streckkoder
 
@@ -30,11 +30,11 @@ GS1-stöd i Supply Chain Management förenklar avsevärt skanningsprocessen på 
 
 Logistikchefer måste konfigurera den lista över programidentifierare som krävs och associera var och en av dem med lämpliga menyalternativ för mobila enheter. Programidentifierarna kan sedan användas över flera lagerställen som en global inställning i flytt- och förpackningssyfte. Därför kommer alla frakthandlingar att ha ett enhetligt utseende.
 
-Om inget annat anges använder detta ämne termen *streckkod* för att hänvisa till såväl linjära (1D) och 2D-streckkoder.
+Om inget annat anges använder denna artikel termen *streckkod* för att hänvisa till såväl linjära (1D) som 2D-streckkoder.
 
 ## <a name="the-gs1-bar-code-format"></a>Formatet för GS1-streckkod
 
-I de allmänna specifikationerna för GS1 anges vilka symboler som kan användas för GS1-streckkoder och hur data i streckkoden ska kodas. Detta avsnitt innehåller en kort introduktion till ämnet. Fullständiga detaljer finns i de [allmänna specifikationerna för GS1](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) som publiceras av GS1. Specifikationsdokumentet för GS1 uppdateras regelbundet och informationen som det innehåller är uppdaterad i och med GS1 General Specifications version 22.0.
+I de allmänna specifikationerna för GS1 anges vilka symboler som kan användas för GS1-streckkoder och hur data i streckkoden ska kodas. Detta avsnitt innehåller en kort introduktion till artikeln. Fullständiga detaljer finns i de [allmänna specifikationerna för GS1](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) som publiceras av GS1. Specifikationsdokumentet för GS1 uppdateras regelbundet och informationen som det innehåller är uppdaterad i och med GS1 General Specifications version 22.0.
 
 I GS1-streckkoder används följande symboler:
 
@@ -165,7 +165,7 @@ Följ dessa steg genom att lösa in ID:n för standardprogram.
 
 Om vissa eller alla programidentifierare som ditt företag använder skiljer sig från standarduppsättningen kan du skapa egna koder från grunden eller anpassa standarduppsättningen efter behov.
 
-Följ de här stegen om du vill ställa in och anpassa dina egna programidentifierare för GS1.
+Följ de här stegen om du vill konfigurera och anpassa dina egna programidentifierare för GS1.
 
 1. Gå till **Lagerstyrning \> Inställningar \> GS1 \> GS1-programidentifierare**.
 1. Gör något av följande:
@@ -222,7 +222,7 @@ Anpassa den allmänna GS1-konfigurationen genom att följa dessa steg.
 
 ## <a name="set-up-gs1-policies-to-be-to-mobile-device-menu-items"></a><a name="policies-for-menus"></a>Konfigurera GS1-policyer som menyalternativ för mobila enheter
 
-Syftet med GS1-standarden är att göra det möjligt för medarbetare att läsa in flera värden när de skannar en enskild streckkod en (1) gång. För att uppnå detta syfte måste logistikchefer ställa in GS1-policyer som talar om för systemet hur det ska tolka streckkoder med flera värden. Du kan senare tilldela policyer till menyalternativ för mobila enheter i syfte att styra hur en streckkod tolkas när medarbetare skannar den medan de använder ett specifikt menyalternativ.
+Syftet med GS1-standarden är att göra det möjligt för medarbetare att läsa in flera värden när de skannar en enskild streckkod en (1) gång. För att uppnå detta syfte måste logistikchefer konfigurera GS1-policyer som talar om för systemet hur det ska tolka streckkoder med flera värden. Du kan senare tilldela policyer till menyalternativ för mobila enheter i syfte att styra hur en streckkod tolkas när medarbetare skannar den medan de använder ett specifikt menyalternativ.
 
 Om ingen GS1-policy har tilldelats till ett menyalternativ kan systemet bara samla in ett enda värde. Detta värde tillämpas på den mobila appindata som väljs när arbetaren utför skanningen, enligt angivet av den allmänna GS1-inställningen. Om en GS1-policy tilldelas menyalternativet använder systemet fortfarande den allmänna GS1-inställningen för att mappa det första streckkodsvärdet till det valda fältet. Den kan sedan fånga in ytterligare fältvärden enligt vad som angetts i den tillämpliga policyn.
 

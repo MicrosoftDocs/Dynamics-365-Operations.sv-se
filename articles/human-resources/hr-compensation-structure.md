@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f069d4e982a9c02070c2010b894b2ec7a9c7f6ab
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86953e6d54843f17d0d6090a9def8bc256624f21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693099"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902988"
 ---
 # <a name="develop-a-compensation-structure"></a>Utveckla en struktur för kompensation
 
@@ -26,7 +26,7 @@ ms.locfileid: "8693099"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Det här ämnet förklarar hur du skapar en fast ersättningsplan och registrerar anställda i planen genom behörighetsregler. I det här ämnet används USMF demodata och gäller kompensations- och förmånsansvariga.
+Det här ämnet förklarar hur du skapar en fast ersättningsplan och registrerar anställda i planen genom behörighetsregler. I den här artikeln används USMF demodata och gäller kompensations- och förmånsansvariga.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Skapa en fast kompensationsplan
 

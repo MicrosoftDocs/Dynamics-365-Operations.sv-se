@@ -1,6 +1,6 @@
 ---
 title: Ställa in parametrar för bokföring av en koncernintern order
-description: Det här avsnittet innehåller information om hur du ställer in parametrar för att bokföra en koncernintern order
+description: Denna artikel förklarar hur du konfigurerar parametrar för att bokföra en koncernintern order
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 24389d8ed3768089d59dc87e5948e9ea7fa1ecfc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 97ea0061d57beede6350eecfd497c12dd37aea31
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679259"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900808"
 ---
 # <a name="set-up-parameters-to-post-an-intercompany-order"></a>Ställa in parametrar för bokföring av en koncernintern order
 
 [!include [banner](../../includes/banner.md)]
 
-När en koncernintern kundfaktura bokförs kan du ställa in den för att bokföra både den koncerninterna försäljningsordern och den ursprungliga kundfakturan automatiskt.
+När en koncernintern kundfaktura bokförs kan du konfigurera den för att bokföra både den koncerninterna försäljningsordern och den ursprungliga kundfakturan automatiskt.
 
 > [!NOTE]
-> Innan du utför den här proceduren måste du ställa in utskriftshanteringen i organisationen så att den pekar på rätt fakturaskrivare. Då ser du till att fakturan för den ursprungliga försäljningsordern skrivs ut på rätt skrivare.
+> Innan du utför den här proceduren måste du konfigurera utskriftshanteringen i organisationen så att den pekar på rätt fakturaskrivare. Då ser du till att fakturan för den ursprungliga försäljningsordern skrivs ut på rätt skrivare.
 
-Du måste ställa in följande parametrar:
+Du måste konfigurera följande parametrar:
 
 1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**. Välj vilken försäljningsorder du vill arbeta med.
 1. På försäljningsordern i åtgärdsfönstret, välj **Huvudvy** och sedan snabbfliken **Koncerninterna inställningar** och öppna den.

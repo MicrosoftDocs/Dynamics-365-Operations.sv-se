@@ -1,6 +1,6 @@
 ---
 title: Synkronisera produktklassificeringar i Dynamics 365 Commerce
-description: I det här avsnittet beskrivs hur du synkroniserar produktvärderingar i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du synkroniserar produktvärderingar i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: ac94a8b4505aba509f0a71ed36d32adac864aedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967960"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909345"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronisera produktklassificeringar i Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du synkroniserar produktvärderingar i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du synkroniserar produktvärderingar i Microsoft Dynamics 365 Commerce.
 
 Om du vill använda produktvärderingar i flera kanaler, t.ex vid POS och i kundtjänst, måste produktvärderingar från tjänsten omdömen och recensioner importeras till databas för handelskanal. När produktvärderingar görs tillgängliga i flera kanaler kan de hjälpa kunderna indirekt under sina interaktioner med säljare.
 
-Detta avsnitt beskriver följande uppgifter:
+Denna artikel beskriver följande uppgifter:
 
 1. Konfigurera **synkroniseringsjobb för produktklassificering** som ett batchjobb för att synkronisera produktklassificeringar från **tjänsten omdömen och recensioner**.
 1. Kontrollera att batchjobbet för synkronisering av produktvärderingar har slutförts.

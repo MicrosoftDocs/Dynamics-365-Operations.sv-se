@@ -1,6 +1,6 @@
 ---
 title: Schemalägg datarensning i försäljningshistorik
-description: I detta ämne beskrivs hur du kan förbättra systemets prestanda genom att schemalägga den periodiska körningen för rensning av uppdateringshistorik för försäljning så att denna körs med jämna mellanrum.
+description: I denna artikel beskrivs hur du kan förbättra systemets prestanda genom att schemalägga den periodiska körningen för rensning av uppdateringshistorik för försäljning så att denna körs med jämna mellanrum.
 author: myvakalo
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6c6c1e08d45f2a7d1e1267010b286111bad01a6c
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570406"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900837"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Schemalägg datarensning i försäljningshistorik
 
 [!include [banner](../includes/banner.md)]
 
-Som en del av standarddriften skapar och lagrar Microsoft Dynamics 365 Supply Chain Management kontinuerligt data rörande uppdatering av försäljningshistorik. Med tiden kan en stor mängd inaktuella data rörande försäljningshistorik komma att ackumuleras i systemet. Dessa ackumulerade data kan orsaka prestanda- och funktionsproblem när dokument som hör till försäljningsorder bokförs. (Dessa dokument inkluderar bekräftelser av försäljningsorder, försäljningsföljesedlar, försäljningsplocklistor och fakturor). Därför bör du ställa in och schemalägga den periodiska rensningen av *uppdateringshistoriken för försäljning* så att denna körs med jämna mellanrum. Denna uppgift tar bort alla uppdateringsdata för försäljningshistorik som inte längre behövs.
+Som en del av standarddriften skapar och lagrar Microsoft Dynamics 365 Supply Chain Management kontinuerligt data rörande uppdatering av försäljningshistorik. Med tiden kan en stor mängd inaktuella data rörande försäljningshistorik komma att ackumuleras i systemet. Dessa ackumulerade data kan orsaka prestanda- och funktionsproblem när dokument som hör till försäljningsorder bokförs. (Dessa dokument inkluderar bekräftelser av försäljningsorder, försäljningsföljesedlar, försäljningsplocklistor och fakturor). Därför bör du konfigurera och schemalägga den periodiska rensningen av *uppdateringshistoriken för försäljning* så att denna körs med jämna mellanrum. Denna uppgift tar bort alla uppdateringsdata för försäljningshistorik som inte längre behövs.
 
 Om du använder den periodiska rensningen för *uppdateringshistorik för försäljning* rekommenderar vi att du aktiverar funktionen för *Prestandaförbättringar för rensning av uppdateringshistorik för försäljning*, som gör att uppgiften körs mer effektivt. (Du kan emellertid även köra uppgiften utan att aktivera denna funktion.)
 
 ## <a name="turn-on-the-sales-history-cleanup-features"></a>Aktivera rensningsfunktionen för försäljningshistorik
 
-Om du vill ställa in och använda den periodiska uppgiften för *rensning av uppdateringshistorik för försäljning* tillsammans med alla funktioner som beskrivs i detta ämne, måste du aktivera funktionerna *Prestandaförbättringar för rensning av uppdateringshistorik för försäljning* samt *Rensa uppdateringshistoriken för försäljning efter ålder* i funktionshanteringen enligt bekrivningen i följande underavsnitt.
+Om du vill konfigurera och använda den periodiska uppgiften för *rensning av uppdateringshistorik för försäljning* tillsammans med alla funktioner som beskrivs i denna artikel, måste du aktivera funktionerna *Prestandaförbättringar för rensning av uppdateringshistorik för försäljning* samt *Rensa uppdateringshistoriken för försäljning efter ålder* i funktionshanteringen enligt bekrivningen i följande underavsnitt.
 
 ### <a name="sales-history-cleanup-performance-improvements"></a>Förbättringar av prestanda för rensning av försäljningshistorik
 

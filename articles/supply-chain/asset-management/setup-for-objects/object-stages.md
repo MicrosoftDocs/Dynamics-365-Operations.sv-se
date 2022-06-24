@@ -1,6 +1,6 @@
 ---
 title: Livscykeltillstånd för tillgångar
-description: Det här avsnittet beskriver livscykeltillstånd för tillgångar och livscykelmodeller i tillgångshantering.
+description: Denna artikel beskriver livscykeltillstånd och livscykelmodeller för tillgångar i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43b1ff9438437e6c1ff33bab9a7ba0361029cb6d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722473"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901072"
 ---
-# <a name="asset-lifecycle-states"></a>Tillgångs livscykeltillstånd
+# <a name="asset-lifecycle-states"></a>Livscykeltillstånd för tillgångar
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Det här avsnittet beskriver livscykeltillstånd för tillgångar och livscykelmodeller i tillgångshantering. Tillgångs livscykeltillstånd används för att definiera om tillgången är aktiv eller inaktiv. Du kan till exempel ställa in tillgångs livscykeltillstånd som **skapad**, **aktiv** och **avslutad**.
+Denna artikel beskriver livscykeltillstånd och livscykelmodeller för tillgångar i Tillgångshantering. Tillgångs livscykeltillstånd används för att definiera om tillgången är aktiv eller inaktiv. Du kan till exempel konfigurera tillgångs livscykeltillstånd som **skapad**, **aktiv** och **avslutad**.
 
 > [!NOTE]
 > - Begär livscykeltillstånd är länkade till livscykeltillstånd för tillgångar. Därför när en begäran ändras till ett nytt livscykeltillstånd ändras tillgången som är kopplad till begäran till ett nytt livscykeltillstånd för tillgångar. Om livscykeltillståndet för en begäran till exempel ändras till **inkommande** ändras livscykeltillståndet för den kopplade tillgången till det livscykeltillstånd som har valts i fältet **inkommande livscykeltillstånd** på snabbfliken **Livscykeltillstånd för tillgångar** på sidan **Livscykelmodeller för tillgångar**. 
@@ -36,7 +36,7 @@ Det här avsnittet beskriver livscykeltillstånd för tillgångar och livscykelm
 
 Livscykeltillstånd för tillgångar kan ställas in i livscykelmodeller för tillgångar där du kan definiera de nödvändiga livscykeltillstånden för olika typer av tillgångar. Du ställer först in livscykeltillstånd. Sedan skapar du en livscykelmodell och väljer livscykeltillstånd för den.
 
-1. Välj **tillgångshantering** \> **inställningar** \> **tillgångar** \> **livscykeltillstånd**.
+1. Välj **Tillgångshantering** \> **inställningar** \> **tillgångar** \> **livscykeltillstånd**.
 2. Skapa ett nytt livscykeltillstånd för tillgångar genom att välja **Nytt**.
 3. I fältet **livscykeltillstånd** anger du ett ID för livscykeltillståndet.
 4. Ange en beskrivning i fältet **Namn**.
@@ -50,9 +50,9 @@ Livscykeltillstånd för tillgångar kan ställas in i livscykelmodeller för ti
 > Livscykeltillstånd för tillgångar, livscykelmodeller för tillgångar och tillgångstyper är relaterade. De används på samma sätt som livscykeltillstånd för arbetsorder, livscykelmodeller för arbetsorder och arbetsordertyper. 
 
 
-När du har skapat de nödvändiga livscykeltillstånden för tillgångar kan du ställa in livscykeltillstånd i tillgångens livscykelmodeller.
+När du har skapat de nödvändiga livscykeltillstånden för tillgångar kan du konfigurera livscykeltillstånd i tillgångens livscykelmodeller.
 
-1. Välj **tillgångshantering** \> **inställningar** \> **tillgångar** \> **livscykelmodeller**.
+1. Välj **Tillgångshantering** \> **inställningar** \> **tillgångar** \> **livscykelmodeller**.
 2. Skapa en ny livscykelmodell för tillgångar genom att välja **Nytt**.
 3. I fältet **livscykelmodell** anger du ett ID för livscykelmodell.
 4. Ange en beskrivning i fältet **Namn**.

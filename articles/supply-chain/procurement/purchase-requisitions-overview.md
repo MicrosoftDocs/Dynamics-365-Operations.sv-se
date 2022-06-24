@@ -1,6 +1,6 @@
 ---
 title: Översikt över inköpsrekvisition
-description: Det här ämnet beskriver arbetsflödet för inköpsrekvisition och olika statusar en inköpsrekvisition kan ha.
+description: Den här artikeln beskriver arbetsflödet för inköpsrekvisition och de olika statusar en inköpsrekvisition kan ha.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6524229800233d1bfdf54a11afc122990eed9d3
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a7430e18779dc2c37f74e6d25c95836f4fbc435d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905759"
 ---
 # <a name="purchase-requisition-overview"></a>Översikt över inköpsrekvisition
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver arbetsflödet för inköpsrekvisition och olika statusar en inköpsrekvisition kan ha.
+Den här artikeln beskriver arbetsflödet för inköpsrekvisition och de olika statusar en inköpsrekvisition kan ha.
 
 Beroende på hur din organisation är inställd kan du skapa inköpsrekvisitioner för produkter som används i organisationen. En inköpsrekvisition är ett internt dokument som ger inköpsavdelningen behörighet att köpa dessa artiklar eller tjänster.  
 

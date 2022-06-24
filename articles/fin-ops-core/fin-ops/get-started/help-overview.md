@@ -1,6 +1,6 @@
 ---
 title: Hjälpsystem (innehåller video)
-description: Det här ämnet innehåller en översikt över hjälpsystemet för Finance and Operations-appar.
+description: Det här ämnet innehåller en översikt över hjälpsystemet för Ekonomi och drift-appar.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898381"
 ---
 # <a name="help-system"></a>Hjälpsystem
 

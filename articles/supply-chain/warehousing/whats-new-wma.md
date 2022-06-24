@@ -1,6 +1,6 @@
 ---
-title: Vad är nytt eller ändrat i mobilappen Warehouse Management
-description: Det här ämnet visar en lista med nya och ändrade funktioner för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+title: Nyheter eller ändringar i mobilappen Warehouse Management
+description: Denna artikel visar en lista med nya och ändrade funktioner för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
-ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
+ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/02/2022
-ms.locfileid: "8661837"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945735"
 ---
-# <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Vad är nytt eller ändrat i mobilappen Warehouse Management
+# <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheter eller ändringar i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne listar nya funktioner, korrigeringar, förbättringar och kända problem för varje släppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+Denna artikel listar nya funktioner, korrigeringar, förbättringar och kända problem för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20240"></a>Version 2.0.24.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+
+- Förbättrad skannersida för att aktivera skanningsalternativet på **detaljsidor**.
+- Förbättrad tryckning, till exempel för pekskärm.
+- Förbättrade prestandaproblem för Android.
+- Fast placering av flera rubriker för att tillåta att fler kort visas på sidan **Förfrågan**.
+- Förbättrad rullning så att det blir mindre körsträcka för rullning av sidnumrering.
+- Lade till långt tryck för att visa tilläggstext på sidan **Förfrågan**.
+- Korrigerade information om saknat enhets-ID för Android.
+- Ökad stabilitet.
+- Optimerade inloggningslayouten.
+- Lade till gesten svep-åt-höger för att stänga popup-dialogsidor på knappsatsen, sidan **Detaljerad information** och indatasidor.
 
 ## <a name="version-20220"></a>Version 2.0.22.0
 

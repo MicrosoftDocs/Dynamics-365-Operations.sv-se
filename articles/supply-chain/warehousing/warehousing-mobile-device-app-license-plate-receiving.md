@@ -1,6 +1,6 @@
 ---
-title: ID-nummer tar emot via mobilappen för distributionslagerhantering
-description: I det här avsnittet beskrivs hur du ställer in mobilappen för distributionslagerhantering så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
+title: Inleverans av ID-nummer via Warehouse Management-mobilappen
+description: I denna artikel beskrivs hur du konfigurerar mobilappen för Warehouse Management så att du kan använda en mottagningsprocess för ID-nummer för att ta emot fysiskt lager.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103073"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907012"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>ID-nummer tar emot via mobilappen för distributionslagerhantering
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Inleverans av ID-nummer via Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in mobilappen för distributionslagerhantering för lager så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
+I denna artikel beskrivs hur du konfigurerar mobilappen Warehouse Management så att du kan använda en mottagningsprocess med ID-nummer för att ta emot fysiskt lager.
 
 Du kan använda den här funktionen för att snabbt registrera inleveranser av ankommande lager som är relaterat till en leveransavisering (ASN). Systemet skapar automatiskt ett ASN när lagerstyrningsprocesser används för att leverera en överföringsorder. För inköpsorderprocessen kan ett ASN registreras manuellt, eller importeras automatiskt med hjälp av en inkommande ASN-dataenhetsprocess.
 
@@ -43,7 +43,7 @@ Som med (till exempel) *Rapportera som färdig* mobilenhetens menyalternativproc
 
 ### <a name="work-policies-with-work-creation"></a>Arbetspolicyer med arbetsskapande
 
-När du registrerar inkommande artiklar med en arbetspolicy som skapar arbete, genererar systemet och sparar poster för inlagrat arbete för varje registrering. Om du använder arbetsprocessen *Plats och mottagning av registreringsskylt* hanteras registrering och artikelinförsel som en enskild operation med hjälp av ett enda menyalternativ på en mobil enhet. Om du använder processen *Inleverans av ID-nummer* kommer processerna för mottagande och inleverans hanteras som två olika lageroperationer, var och en med sitt eget menyalternativ för mobila enheter.
+När du registrerar inkommande artiklar med en arbetspolicy som skapar arbete, genererar systemet och sparar poster för inlagrat arbete för varje registrering. Om du använder arbetsprocessen *Plats och mottagning av registreringsskylt* hanteras registrering och artikelinförsel som en enskild åtgärd med hjälp av ett enda menyalternativ på en mobil enhet. Om du använder processen *Inleverans av ID-nummer* kommer processerna för mottagande och inleverans hanteras som två olika lageråtgärder, var och en med sitt eget menyalternativ för mobila enheter.
 
 ### <a name="work-policies-without-work-creation"></a>Arbetspolicyer utan arbetsskapande
 
@@ -95,7 +95,7 @@ Om du vill hantera funktionerna när den här funktionen är tillgänglig följe
 
 ## <a name="more-information"></a>Mer information
 
-Mer information om menyartiklar för mobila enheter finns i [ställa in mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).
+Mer information om menyartiklar för mobila enheter finns i [konfigurera mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).
 
 Mer information om produktionsscenariot *Rapportera som slutförd* se [Policyer för lagerarbete – översikt](warehouse-work-policies.md).
 

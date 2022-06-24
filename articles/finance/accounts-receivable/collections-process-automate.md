@@ -1,6 +1,6 @@
 ---
 title: Automatisering av inkassoprocess
-description: I det här avsnittet beskrivs hur du ställer in processtrategier för inkasso som automatiskt identifierar kundfakturor som kräver en e-postpåminnelse, inkassoaktivitet eller ett kravbrev som ska skickas till kunden.
+description: I den här artikeln beskrivs hur du ställer in processtrategier för inkasso som automatiskt identifierar kundfakturor som kräver en e-postpåminnelse, inkassoaktivitet eller ett kravbrev som ska skickas till kunden.
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 9ec749db197b4d04ee2e99ac7a16f4f2120c6707
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486879"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946191"
 ---
 # <a name="collections-process-automation"></a>Automatisering av inkassoprocess
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in processtrategier för inkasso som automatiskt identifierar kundfakturor som kräver en e-postpåminnelse, inkassoaktivitet (t.ex. ett telefonsamtal) eller ett kravbrev som ska skickas till kunden. 
+I den här artikeln beskrivs hur du ställer in processtrategier för inkasso som automatiskt identifierar kundfakturor som kräver en e-postpåminnelse, inkassoaktivitet (t.ex. ett telefonsamtal) eller ett kravbrev som ska skickas till kunden. 
 
 Organisationer ägnar en lång tid på att undersöka föråldrade saldorapporter, kundkonton och öppna fakturor för att lära dig vilka kunder som måste kontaktas om en öppen faktura eller ett kontosaldo. Den här forskningen tar tid från en inkassohandläggare som används för att kommunicera med kunder för att samla in förfallna saldon eller lösa tvister om fakturan. Med automatisering av inkassoprocesser kan du ställa in ett strategibaserade tillvägagångssätt för din insamlingsprocess. På så sätt kan du utföra inkassoaktiviteter på ett konsekvent sätt genom att tillhandahålla anpassade e-postpåminnelser eller en programmerad process för sändning av kravbrev. 
 

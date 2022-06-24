@@ -1,6 +1,6 @@
 ---
 title: Mappa butiker och team om det finns befintliga team i Microsoft Teams
-description: Detta ämne beskriver hur man kan kartlägga butiker och motsvarande team i Dynamics 365 Commerce-administration om din organisation redan har skapat team i Microsoft Teams före Commerce-integration.
+description: Denna artikel beskriver hur man kan kartlägga butiker och motsvarande team i Dynamics 365 Commerce-administrationen om din organisation redan har skapat team i Microsoft Teams före Commerce-integrering.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aafeaa1da3c3dab5d76a6bfcee06db34a6afba91
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cb18affd0df59dc986602a684a3fe3d418644fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691115"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902747"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Mappa butiker och team om det finns befintliga team i Microsoft Teams
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne beskriver hur man kan kartlägga butiker och motsvarande team i Dynamics 365 Commerce-administration om din organisation redan har skapat team i Microsoft Teams före Commerce-integration.
+Denna artikel beskriver hur man kan kartlägga butiker och motsvarande team i Dynamics 365 Commerce-administrationen om din organisation redan har skapat team i Microsoft Teams före Commerce-integrering.
 
-Din organisation kanske har team skapade för några eller alla av butikerna innan de kan integrera Dynamics 365 Commerce och Microsoft Teams. Om detta är fallet ska du skapa uppgiftssynkronisering mellan Commerce POS och Microsoft Teams måste du ange mappningen av butiker och motsvarande team i Commerce-administration.
+Din organisation kanske har team skapade för några eller alla av butikerna innan de kan integrera Dynamics 365 Commerce och Microsoft Teams. Om detta är fallet ska du skapa uppgiftssynkronisering mellan Commerce POS och Microsoft Teams måste du ange mappningen av butiker och motsvarande team i Commerce headquarters.
 
-## <a name="map-stores-and-corresponding-teams-in-commerce-headquarters"></a>Mappa butiker och motsvarande team i Commerce-administration 
+## <a name="map-stores-and-corresponding-teams-in-commerce-headquarters"></a>Mappa butiker och motsvarande team i Commerce headquarters 
 
-Mappa butiker och motsvarande team i Commerce-administration, följer dessa steg.
+Mappa butiker och motsvarande team i Commerce headquarters, följer dessa steg.
 
 1. Gå till **Systemadministration \> Arbetsyta \> Datahantering**.
 1. Välj **Exportera**. 
@@ -65,7 +65,7 @@ Följande exempelbild visar **Exportera Teams-mappning** gruppen i Commerce med 
 
 [Dynamics 365 Commerce och Microsoft Teams-integrering, översikt](commerce-teams-integration.md)
 
-[Aktivera Dynamics 365 Commerce och Microsoft Teams-integration](enable-teams-integration.md)
+[Aktivera Dynamics 365 Commerce och Microsoft Teams-integrering](enable-teams-integration.md)
 
 [Provision Microsoft Teams från Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
@@ -73,4 +73,4 @@ Följande exempelbild visar **Exportera Teams-mappning** gruppen i Commerce med 
 
 [Hantera användarroller i Microsoft Teams](manage-user-roles-teams.md)
 
-[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)
+[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integrering](teams-integration-faq.md)

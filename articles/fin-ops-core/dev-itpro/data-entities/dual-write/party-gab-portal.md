@@ -1,6 +1,6 @@
 ---
 title: Använda Microsoft Power Apps-portaler med datamodellen för part
-description: I det här avsnittet beskrivs ändringarna av webbrollerna för Microsoft Power Apps-portaler på grund av partens datamodell i nedskrivningen.
+description: I den här artikeln beskrivs ändringarna av webbrollerna för Microsoft Power Apps-portaler på grund av partens datamodell i nedskrivningen.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2e9d0f47ef90167bf84bb5b20e6a7ad2d58ffd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060930"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898958"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Använda Microsoft Power Apps-portaler med datamodellen för part
 
@@ -24,7 +24,7 @@ ms.locfileid: "8060930"
 
 Lösningen för dubbelriktad skrivning för programorkestrering version 2.0.999.0 innehåller senare datamodelländringar av parten och den globala adressboken för konto- och kontaktregistren. Ändringarna tillåter relationer mellan många som stöder avancerade affärsscenarier. Dessa ändringar stöds inte av portalwebbrollerna, inklusive kundportalen, som levereras out-of-the-box eller som fanns i din miljö innan du installerade webbplatsskrivning. För att webbrollerna ska fungera som förväntat måste du skapa nya webbroller med hjälp av den nya datamodellen. 
 
-Sammanfattningen är att det sätt på vilket register samverkar har ändrats, men registerbehörigheterna i kundportalen har inte ändrats. I det här avsnittet beskrivs hur du skapar nya webbroller som arbetar med den nya avancerade datamodellen.
+Sammanfattningen är att det sätt på vilket register samverkar har ändrats, men registerbehörigheterna i kundportalen har inte ändrats. I den här artikeln beskrivs hur du skapar nya webbroller som arbetar med den nya avancerade datamodellen.
 
 Detta diagram visar tabellförhållandet **utan** partiets och den globala adressbokens datamodell:
 

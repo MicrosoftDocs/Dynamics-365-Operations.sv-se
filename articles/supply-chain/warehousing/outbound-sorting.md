@@ -1,6 +1,6 @@
 ---
 title: Utgående sortering
-description: Den här ämnet innehåller information om utgående sortering. Den här funktionen gör det enklare att hantera små behållare och hjälper lagerarbetarna bättre att planera och organisera lastpallkapaciteten i lastbilen.
+description: Denna artikel innehåller information om utgående sortering. Den här funktionen gör det enklare att hantera små behållare och hjälper lagerarbetarna bättre att planera och organisera lastpallkapaciteten i lastbilen.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 004224090d8244028b6df7f32e1853ad60371cea
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 95afa46140de863ecdf61b0ef54e6d9e9ece91d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575205"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897325"
 ---
 # <a name="outbound-sorting"></a>Utgående sortering
 
@@ -106,7 +106,7 @@ Förpackningsstationen anses vara en plats. Lagerarbetare som loggar in på för
     - **Platsformat:** *ASRB* (gång-rack-hylla-fack)
     - **Platstyp:** *SORTERA*
     - **Använd spårning av ID-nummer:** *Ja*
-    - **Tillåt blandade artiklar:** *Ja* (om du ställer in det här alternativet till *Ja* kommer alternativet **Tillåt blandade lagerbatchar** automatiskt till *Ja* och kan inte ändras separat.)
+    - **Tillåt blandade artiklar:** *Ja* (om du konfigurerar det här alternativet till *Ja* kommer alternativet **Tillåt blandade lagerbatchar** automatiskt till *Ja* och kan inte ändras separat.)
 
 1. Välj **Spara**.
 
@@ -500,7 +500,7 @@ Slutför det skapade arbetet genom att flytta dem till paketstationen med hjälp
 
 1. Gå till **lagerstyrning \> packa och skapa behållare \> packa**.
 
-    Dialogrutan **Välj packningsstation** visas. Som standard ska fältet **arbetare** vara inställt på namnet på den arbetare som du ställer in tidigare.
+    Dialogrutan **Välj packningsstation** visas. Som standard ska fältet **arbetare** vara inställt på namnet på den arbetare som du konfigurerar tidigare.
 
 1. Ställ in följande värden för att visa och arbeta med försändelser och behållare som planeras på den specifika förpackningsplatsen:
 

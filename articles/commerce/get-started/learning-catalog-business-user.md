@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ca3734897172141243afcd0d6c7d734dac23aa83
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: afbd23768c86775e8007f72cb8af4126e4452336
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897082"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-commerce"></a>Utbildningskatalog för användare av Dynamics 365 Commerce
 
@@ -40,7 +40,7 @@ Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [
 | Innehåll | beskrivning  | Format   | Längd    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Konfigurera och arbeta med förutsättningar för flera kanaler i Dynamics 365 Commerce](/learn/paths/configure-work-omnichannel-prequisites-commerce/)| Innan någon av Dynamics 365 Commerce-kanalerna kan skapas och användas måste flera krav ställas in. Den här utbildningsvägen beskriver konfigurationen av dessa förutsättningar för att aktivera lyckad interaktion i Commerce-kanaler och hur du arbetar med dem.| Gratis, självstudier online utbildningsväg | 6.5 timmar |
-| [Konfigurera och använda kassa (POS) i Dynamics 365 Commerce](/learn/paths/configure-use-pos-commerce/) | Transaktionsdata skapas i POS och överförs sedan till Dynamics 365 Commerce administration för bearbetning. Den här utbildningsvägen beskriver hur man installerar och aktiverar POS samt hur du skapar dagliga transaktioner i POS. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
+| [Konfigurera och använda kassa (POS) i Dynamics 365 Commerce](/learn/paths/configure-use-pos-commerce/) | Transaktionsdata skapas i POS och överförs sedan till Dynamics 365 Commerce administration för bearbetning. Den här utbildningsvägen beskriver hur du installerar och aktiverar POS samt hur du skapar dagliga transaktioner i POS. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
 | [Hantera erfarenhet av kundengagemang och shopping i Dynamics 365 Commerce](/learn/paths/manage-customer-engagement-shopping-experience-commerce/) | Att hantera kundengagemang och förbättra kundupplevelsen hjälper kunderna att fatta bättre köpbeslut och utveckla lojaliteten för återförsäljarnas varumärken som i slutändan leder till ökade intäkter. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
 | [Konfigurera och arbeta med kundtjänst i Dynamics 365 Commerce](/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce är en flerkanalslösning som tillhandahåller en kundtjänstkanal med funktioner som standard för specifika orderbearbetningsinställningar och standardvärden för försäljnings order som skapas av kundtjänstanvändare. | Gratis, självstudier online utbildningsväg | 2 timmar   |
 | [Hantera uppfyllelse av order och inventering i Dynamics 365 Commerce](/learn/paths/manage-order-fulfillment-inventory-commerce/) | Effektiv lagerhantering spelar en viktig roll i detaljhandelsbranschen, där möjligheten att få en uppdaterad vy av det aktuella lagret och enkelt överföra och registrera varor, kan ha stor inverkan på återförsäljarnas framgång för att betjäna kunderna och öka försäljningsintäkterna. | Gratis, självstudier online utbildningsväg | 2 timmar   |

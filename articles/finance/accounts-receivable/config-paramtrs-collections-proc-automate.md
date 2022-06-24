@@ -1,6 +1,6 @@
 ---
 title: Konfigurera parametrar för att automatisera inkassoprocessen
-description: I det här avsnittet beskrivs parametrar som påverkar automatiska inkassoprocesser och ger riktlinjer till hur de kan konfigureras så att den automatiska processen återspeglar dina önskemål och förväntningar.
+description: I den här artikeln beskrivs parametrar som påverkar automatiska inkassoprocesser och ger riktlinjer till hur de kan konfigureras så att den automatiska processen återspeglar dina önskemål och förväntningar.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e7a7e048a371fc90456368206b91c29c4b1264d5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c5d0f801c47ef2d98d8ba410dc593bd7640839c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734408"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900054"
 ---
 # <a name="configure-parameters-for-collection-process-automation"></a>Konfigurera parametrar för att automatisera inkassoprocessen
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs parametrar som påverkar automatiska inkassoprocesser och ger riktlinjer till hur de kan konfigureras så att den automatiska processen återspeglar dina önskemål och förväntningar. Information om hur du automatiserar inkassoprocesser finns i [Automatisering av inkassoprocess](collections-process-automate.md).
+I den här artikeln beskrivs parametrar som påverkar automatiska inkassoprocesser och ger riktlinjer till hur de kan konfigureras så att den automatiska processen återspeglar dina önskemål och förväntningar. Information om hur du automatiserar inkassoprocesser finns i [Automatisering av inkassoprocess](collections-process-automate.md).
 
 ## <a name="general"></a>Allmänt
 Ange ett tal i **Procentandel kunder per batchuppgift** för att bestämma antalet batchuppgifter per automationsprocess. Ställ in **Bokför kravbrev automatiskt** till **Ja** så åtgärdstypen för kravbrev kommer att lägga ut brevet under automatiseringen. Ställ in **Skapa aktiviteter för automatisering** till **Ja** för att skapa och stänga aktiviteter för åtgärder som inte är aktiva för att visa alla automatiska steg som har tagits på ett konto. Definiera antalet dagar som samlingshistoriken lagras i **Antal dagar som insamling av inkassoprocesser ska fortsätta**.  När en faktura når det sista steget i insamlingsprocessen kommer den inte att användas för att skapa framtida typer av processautomatiseringsåtgärder om **Exkludera faktura efter aktivering av senaste processteg** anges till **Ja**. Den nästa äldsta fakturan fastställer nästa processautomatiseringssteg för att se till att insamlingsprocessens automationsåtgärder fortsätter. 

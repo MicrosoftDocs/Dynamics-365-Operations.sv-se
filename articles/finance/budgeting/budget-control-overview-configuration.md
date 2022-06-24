@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e36ecacc621b4ecb8cc71e42b7a306c4494f625a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 27eb31919937e7f43a785616b547e3d6952eaaf2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898310"
 ---
 # <a name="budget-control-overview"></a>Översikt över budgetkontroll
 

@@ -1,6 +1,6 @@
 ---
-title: Installera och ansluta mobilappen Hantering av distributionslager
-description: I det här avsnittet beskrivs hur du installerar mobilappen Hantering av distributionslager på alla dina mobila enheter och konfigurerar den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
+title: Installera och ansluta Warehouse Management-mobilappen
+description: I denna artikel beskrivs hur du installerar mobilappen Warehouse Management på alla dina mobila enheter och konfigurerar den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
 author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
+ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103423"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8941778"
 ---
-# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
+# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Det här ämnet beskriver hur man konfigurerar mobilappen för distributionslagerhantering. Mer information om hur du konfigurerar en gamla distributionslagerappen (nu inaktuell) finns i [Installera och koppla in distributionslagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Denna artikel beskriver hur du konfigurerar den nya Warehouse Management-mobilappen. Mer information om hur du konfigurerar en gamla distributionslagerappen (nu inaktuell) finns i [Installera och koppla in distributionslagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-I det här avsnittet beskrivs hur du laddar ner och installerar mobilappen Hantering av distributionslager på alla dina mobila enheter och konfigurerar appen den för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
+I denna artikel beskrivs hur du laddar ner och installerar mobilappen Warehouse Management på alla dina mobila enheter samt hur du konfigurerar appen för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
 
 ## <a name="system-requirements"></a>Systemkrav
 
@@ -39,9 +39,9 @@ Mobilappen Hantering av distributionslager är tillgänglig för både operativs
 - Windows 10 (Universal Windows Platform \[UWP\]) oktober 2018 uppdatering 1809 (version 10.0.17763) eller senare
 - Android 4.4 eller senare
 
-## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Stänga av funktioner för Warehouse Management Mobile-appen eller inaktivera dem i Supply Chain Management
+## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>Slå på/stänga av funktioner för mobilappen Warehouse Management i Supply Chain Management
 
-För att använda Warehouse Management Mobile-appen måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara inaktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda Warehouse Management Mobile-appen måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara aktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Skaffa mobilappen Hantering av distributionslager
 
@@ -62,7 +62,7 @@ Det enklaste sättet att installera programmet på en enskild enhet är att inst
 Ett alternativ till att installera från en appbutik är att hämta programmet från Microsoft App Center. App Center innehåller avinstallationsbara paket som du kan separat inläsning. Utöver den aktuella versionen kan du även hämta tidigare versioner med App Center, och du kan förse förhandsgranskningsversioner med kommande funktioner som du kan prova. Om du vill hämta aktuella, tidigare eller förhandsgranskningsversioner av mobilapplikationen Lagerstyrning från Microsoft App Center använder du någon av följande länkar:
 
 - **Windows (UWP):** [Lagerstyrning (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    För instruktioner om hur du installerar ett nedladdat paket på en Windows-enhet och sedan ställer in nödvändiga certifikat, se [Installera en version från App Center](/appcenter/distribution/installation).
+    För instruktioner om hur du installerar ett nedladdat paket på en Windows-enhet och sedan konfigurerar nödvändiga certifikat, se [Installera en version från App Center](/appcenter/distribution/installation).
 
 - **Android:** [distributionslagerhantering (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
     Om du laddar ner en förhandsgranskningsversion krävs några extra steg för att installera den. Mer information finns i [Testa Android-appar](/appcenter/distribution/testers/testing-android).
@@ -87,21 +87,21 @@ Om du vill att mobilappen Hantering av distributionslager ska interagera med en 
 
     ![Guiden Registrera ett program.](media/app-connect-azure-register-wizard.png "Guiden Registrera ett program")
 
-1. Din nya programregistrering öppnas. Anteckna värdet för **Program-ID (klient)** eftersom du kommer att behöva detta senare. Detta ID benämns *klient-ID* längre fram i detta avsnitt.
+1. Din nya programregistrering öppnas. Anteckna värdet för **Program-ID (klient)** eftersom du kommer att behöva detta senare. Detta ID benämns *klient-ID* längre fram i denna artikel.
 
     ![Program-ID (klient).](media/app-connect-azure-app-id.png "Program-ID (klient)")
 
-1. I listan **Hantera** väljer du **Certifikat och hemligheter**. Välj sedan någon av följande knappar, beroende på hur du vill konfigurera appen för autentisering. (Mer information finns under [Autentisera med hjälp av ett certifikat eller en klienthemlighet](#authenticate) senare i det här avsnittet.)
+1. I listan **Hantera** väljer du **Certifikat och hemligheter**. Välj sedan någon av följande knappar, beroende på hur du vill konfigurera appen för autentisering. (Mer information finns under [Autentisera med hjälp av ett certifikat eller en klienthemlighet](#authenticate) senare i den här artikeln.)
 
     - **Ladda upp certifikat** – Ladda upp ett certifikat som ska användas som hemlighet. Vi rekommenderar detta tillvägagångssätt eftersom det är säkrare och även kan automatiseras helt. Om du kör mobilappen Hantering av distributionslager på Windows-enheter ska du anteckna det värde för **tumavtryck** som visas när du har laddat upp certifikatet. Du kommer att behöva detta värde när du konfigurerar certifikatet på Windows-enheter.
     - **Ny klienthemlighet** – Skapa en nyckel genom att ange en nyckelbeskrivning och en varaktighet i avsnittet **Lösenord**, och välj sedan **Lägg till**. Skapa en kopia av nyckeln och spara den på ett säkert sätt.
 
     ![Certifikat & hemligheter.](media/app-connect-azure-authentication.png "Certifikat & hemligheter")
 
-Mer information om hur du ställer in webbtjänstprogram i Azure AD finns i följande resurser:
+Mer information om hur du konfigurerar webbtjänstprogram i Azure AD finns i följande resurser:
 
 - Instruktioner som visar hur du använder Windows PowerShell för att skapa webbtjänstprogram i Azure AD finns i [Så här använder du Azure PowerShell för att skapa ett tjänstekonto med ett certifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Mer information om hur du manuellt skapar ett webbtjänstprogram i Azure AD finns i följande avsnitt:
+- Mer information om hur du manuellt skapar ett webbtjänstprogram i Azure AD finns i följande artiklar:
 
     - [Snabbstart: Registrera ett program med Microsofts identitetsplattform](/azure/active-directory/develop/quickstart-register-app)
     - [Så här använder du portalen för att skapa ett Azure AD-program och ett tjänstekonto som har åtkomst till resurser](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -129,13 +129,13 @@ Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-pr
     ![Azure Active Directory-program.](media/app-connect-aad-apps.png "Azure Active Directory-program")
 
 > [!TIP]
-> Ett sätt att använda dessa inställningar är att skapa ett klient-ID i Azure för var och en av dina fysiska enheter och sedan lägga till varje klient-ID till sidan **Azure Active Directory appar**. Om en enhet går förlorad kan du enkelt ta bort åtkomsten till Supply Chain Management genom att ta bort dess klient-ID från den sidan. (Det här fungerar eftersom de anslutningsreferenser som sparas på varje enhet också anger ett klient-ID enligt beskrivningen senare i det här avsnittet.)
+> Ett sätt att använda dessa inställningar är att skapa ett klient-ID i Azure för var och en av dina fysiska enheter och sedan lägga till varje klient-ID till sidan **Azure Active Directory appar**. Om en enhet går förlorad kan du enkelt ta bort åtkomsten till Supply Chain Management genom att ta bort dess klient-ID från den sidan. (Denna metod fungerar eftersom de autentiseringsuppgifter för anslutning som sparas på respektive enhet också anger ett klient-ID enligt beskrivningen senare i denna artikel.)
 >
 > Dessutom fastställs standardspråk, nummerformat och tidszoninställningar för varje klient-ID genom de inställningar som har angetts för värdet för **användar-ID** som mappas här. Därför kan du använda dessa inställningar när du skapar standardinställningar för varje enhet eller samling enheter, baserat på klient-ID:t. Dessa standardinställningar åsidosätts dock om de även har definierats för *användarkonto för distributionslagerappen* som en arbetare använder när han eller hon loggar in på enheten. (Mer information finns i [användarkonton för mobil enhet](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Autentisera med hjälp av ett certifikat eller en klienthemlighet
 
-Autentisering med Azure AD är ett säkert sätt att ansluta en mobil enhet till Supply Chain Management. Du kan autentisera med hjälp av antingen en klienthemlighet eller ett certifikat. Om du vill importera anslutningsinställningar rekommenderar vi att du använder ett certifikat istället för en klienthemlighet. Eftersom klienthemligheten alltid måste lagras på ett säkert sätt kan du inte importera den från en anslutningsinställningsfil eller en QR-kod, enligt beskrivningen längre fram i det här avsnittet.
+Autentisering med Azure AD är ett säkert sätt att ansluta en mobil enhet till Supply Chain Management. Du kan autentisera med hjälp av antingen en klienthemlighet eller ett certifikat. Om du vill importera anslutningsinställningar rekommenderar vi att du använder ett certifikat istället för en klienthemlighet. Eftersom klienthemligheten alltid måste lagras på ett säkert sätt kan du inte importera den från en anslutningsinställningsfil eller en QR-kod, enligt beskrivningen längre fram i den här artikeln.
 
 Certifikat kan användas som hemligheter för att bevisa programmets identitet när en token begärs. Den offentliga delen av certifikatet överförs till app-registreringen i Azure-portalen, medan det fullständiga certifikatet måste distribueras på varje enskild enhet där mobilappen Hantering av distributionslager installeras. Organisationen ansvarar för att hantera certifikatet i fråga om rotation osv.. Du kan använda självsignerade certifikat, men du bör alltid använda icke-exporterbara certifikat.
 
@@ -266,7 +266,7 @@ Om du inte har en fil eller en QR-kod kan du konfigurera programmet manuellt på
 
 1. Ange följande information:
 
-    - **Använd klienthemlighet** – Ställ in det här alternativet på _Ja_ om du vill använda en klienthemlighet för att autentisera med Supply Chain Management. Ställ in det på _Nej_ om du vill använda ett certifikat för autentisering. (Mer information finns i [Skapa ett webbtjänstprogram i avsnittet Azure Active Directory](#create-service) tidigare i det här avsnittet.)
+    - **Använd klienthemlighet** – Ställ in det här alternativet på _Ja_ om du vill använda en klienthemlighet för att autentisera med Supply Chain Management. Ställ in det på _Nej_ om du vill använda ett certifikat för autentisering. (Mer information finns i [Skapa ett webbtjänstprogram i avsnittet Azure Active Directory](#create-service) tidigare i den här artikeln.)
     - **Anslutningsnamn** – Ange ett namn på den nya anslutningen. Det här namnet kommer att visas i fältet **Välj anslutning** nästa gång du öppnar anslutningsinställningarna. Det namn du anger måste vara unikt. (Med andra ord måste det skilja sig från alla andra anslutningsnamn som lagras på enheten, om det finns andra anslutningsnamn där).
     - **Klient-ID för Azure-katalog** – Ange det klient-ID som du noterade när du konfigurerade Azure AD i avsnittet [Skapa ett webbtjänstprogram i Azure Active Directory](#create-service).
     - **Klient-hemlighet för Active-katalog** – Det här fältet är endast tillgängligt när alternativet **Använd klienthemlighet** är inställt på _Ja_. Ange den klient-hemlighet som du har angivit under konfigurationen av Azure AD i avsnittet [Skapa ett webbtjänstprogram i Azure Active Directory](#create-service).

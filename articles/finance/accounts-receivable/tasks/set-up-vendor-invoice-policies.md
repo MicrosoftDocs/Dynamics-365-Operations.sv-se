@@ -1,6 +1,6 @@
 ---
 title: Ställ in leverantörsfakturapolicyer
-description: Det här avsnittet innehåller information om hur du ställer in leverantörsfakturapolicyer.
+description: Den här artikeln innehåller information om hur du ställer in leverantörsfakturapolicyer.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 049b38b6feba5f4369d79b89b4c81a8195dd7758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109766"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904742"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Ställ in leverantörsfakturapolicyer
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du ställer in leverantörsfakturapolicyer. Leverantörsfakturapolicyer körs när du bokför en leverantörsfaktura genom att använda sidan **leverantörsfaktura** sida och när du öppnar leverantörsfakturasidan **Regelöverträdelser**. Du kan även konfigurera leverantörsfakturaarbetsflödet om du vill köra leverantörsfakturapolicyer varje gång som du skickar in en faktura till arbetsflödet. 
+Den här artikeln innehåller information om hur du ställer in leverantörsfakturapolicyer. Leverantörsfakturapolicyer körs när du bokför en leverantörsfaktura genom att använda sidan **leverantörsfaktura** sida och när du öppnar leverantörsfakturasidan **Regelöverträdelser**. Du kan även konfigurera leverantörsfakturaarbetsflödet om du vill köra leverantörsfakturapolicyer varje gång som du skickar in en faktura till arbetsflödet. 
 
 - Leverantörsfakturapolicyer gäller inte för fakturor som har skapats i ankomstregistreringen eller fakturajournalen.  
 - Fakturamatchningsvalidering använder inte leverantörsfakturapolicyer, utan ställs in på sidan med **leverantörsreskontraparametrar**.  

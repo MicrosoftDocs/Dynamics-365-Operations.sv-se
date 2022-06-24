@@ -1,6 +1,6 @@
 ---
 title: Utskrift av påfyllnadsetikett
-description: Det här ämnet beskriver utskrift av påfyllnadsetikett och förklarar hur du ställer in det.
+description: Denna artikel beskriver utskrift av påfyllnadsetikett och förklarar hur du konfigurerar det.
 author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 18620602c5f3cf6a69a36ef7248f35e5509337b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778093"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901833"
 ---
 # <a name="wave-label-printing"></a>Utskrift av påfyllnadsetikett
 
@@ -49,7 +49,7 @@ Utskrift av påfyllnadsetikett ger följande förbättringar:
 Dessa förbättringar gör det effektivare att märka kartonger före palletering. De gynnar främst företag som levererar till stora återförsäljare som automatiskt bekräftar orderkvitton genom att söka igenom varje kartong separat.
 
 > [!NOTE]
-> Du kan implementera konfigurationsscenarier som beskrivs i det här avsnittet, antingen separat eller i kombination, beroende på dina affärsbehov. Du kan skapa flera påfyllnadsetikettmallar som fungerar i ordningsföljd (som illustreras i scenario 3). Du kan till exempel använda scenario 1 för att skriva ut kartonger och scenario 2 om du vill skriva ut lastpallsetiketter (om lastpallar i lagret varierar i storlek och sammansättning).
+> Du kan implementera de konfigurationsscenarier som beskrivs i denna artikel, antingen separat eller i kombination, beroende på dina affärsbehov. Du kan skapa flera påfyllnadsetikettmallar som fungerar i ordningsföljd (som illustreras i scenario 3). Du kan till exempel använda scenario 1 för att skriva ut kartonger och scenario 2 om du vill skriva ut lastpallsetiketter (om lastpallar i lagret varierar i storlek och sammansättning).
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Aktivera funktionen utskrift av påfyllnadsetiketter
 
@@ -109,7 +109,7 @@ Etikettlayouten bestämmer vilken information som ska skrivas ut på etiketten o
 
     - **Radhöjd:** *0*
 
-        I det här fältet definieras höjden på varje rad (i punkter) enligt ZPL-standard. Radhöjden är positiv för vågräta etiketter och är negativ för lodräta etiketter. Eftersom det bara finns en rad i det här exemplet kan du ställa in värdet på *0* (noll).
+        I det här fältet definieras höjden på varje rad (i punkter) enligt ZPL-standard. Radhöjden är positiv för vågräta etiketter och är negativ för lodräta etiketter. Eftersom det bara finns en rad i det här exemplet kan du konfigurera värdet på *0* (noll).
 
     - **Rader per sida:** *1*
 
@@ -239,7 +239,7 @@ Skapa sedan mall för påfyllnadsetikett för typen av påfyllnadsetikett.
     - **Kör fråga:** *Ja* (den här inställningen är valfri, men rekommenderas för optimal prestanda.)
 
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. Valfritt: om du ställer in en kundspecifik etikettdesign måste du skapa en fråga för att hitta kundens konto. På snabbfliken **information om påfyllnadsetikettens mall** välj **Redigera fråga**. I frågeredigerarens dialogruta, på fliken **Intervall** lägg till en rad med följande värden:
+1. Valfritt: om du konfigurerar en kundspecifik etikettdesign måste du skapa en fråga för att hitta kundens konto. På snabbfliken **information om påfyllnadsetikettens mall** välj **Redigera fråga**. I frågeredigerarens dialogruta, på fliken **Intervall** lägg till en rad med följande värden:
 
     - **Register:** *försändelser*
     - **Härlett register:** *försändelser*
@@ -441,7 +441,7 @@ Nu kan du använda din etikett.
     - **Kör fråga:** *Ja* (den här inställningen är valfri, men rekommenderas för optimal prestanda.)
 
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. Valfritt: om du ställer in en kundspecifik etikettdesign måste du skapa en fråga för att hitta kundens konto. På snabbfliken **information om påfyllnadsetikettens mall** välj **Redigera fråga**. I frågeredigerarens dialogruta, på fliken **Intervall** lägg till en rad med följande värden:
+1. Valfritt: om du konfigurerar en kundspecifik etikettdesign måste du skapa en fråga för att hitta kundens konto. På snabbfliken **information om påfyllnadsetikettens mall** välj **Redigera fråga**. I frågeredigerarens dialogruta, på fliken **Intervall** lägg till en rad med följande värden:
 
     - **Register:** *försändelser*
     - **Härlett register:** *försändelser*
@@ -510,7 +510,7 @@ Det här scenariot visar hur du använder funktionen utskrift av påfyllnadsetik
 
 Den huvudsakliga skillnaden mellan konfigurationen av scenariot och konfigurationen av scenario 1, förutom att bryta etiketter är aktiverade, är att flera typer av påfyllnadetiketter måste associeras med påfyllnadsetikettmallen och enhetssekvensgruppraderna. För att kunna utföra den här konfigurationen ställer du in följande element för det här scenariot:
 
-- **Metoder för påfyllnadsbearbetning:** du markerar en påfyllnadsetiketts metod som "upprepningsbar", lägger till den två (eller fler) tiderna i påfyllnadsmallen och ställer in olika koder för påfyllnadssteg.
+- **Metoder för påfyllnadsbearbetning:** du markerar en påfyllnadsetiketts metod som "upprepningsbar", lägger till den två (eller fler) tiderna i påfyllnadsmallen och konfigurerar olika koder för påfyllnadssteg.
 - **Mallar för påfyllnadsetikett:** du kommer att konfigurera mallarna för påfyllnadsetikett och länka dem till påfyllnadsmallen. Varje påfyllnadsetikettmall har en egen typ av påfyllnadsetikett.
 - **Layout för påfyllnadsetiketter:** du kan skapa flera layouter för påfyllnadsetiketter. Det finns en separat etikettlayout för varje "nivå" med etiketter och det får också en layout för avbrottsetiketten.
 
@@ -558,7 +558,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
     - **Radhöjd:** *0*
 
-        I det här fältet definieras höjden på varje rad (i punkter) enligt ZPL-standard. Radhöjden är positiv för vågräta etiketter och är negativ för lodräta etiketter. Eftersom det bara finns en rad i det här exemplet kan du ställa in värdet på *0* (noll).
+        I det här fältet definieras höjden på varje rad (i punkter) enligt ZPL-standard. Radhöjden är positiv för vågräta etiketter och är negativ för lodräta etiketter. Eftersom det bara finns en rad i det här exemplet kan du konfigurera värdet på *0* (noll).
 
     - **Rader per sida:** *1*
 
@@ -670,7 +670,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
     - **Radhöjd:** *0*
 
-        I det här fältet definieras höjden på varje rad (i punkter) enligt ZPL-standard. Radhöjden är positiv för vågräta etiketter och är negativ för lodräta etiketter. Eftersom det bara finns en rad i det här exemplet kan du ställa in värdet på *0* (noll).
+        I det här fältet definieras höjden på varje rad (i punkter) enligt ZPL-standard. Radhöjden är positiv för vågräta etiketter och är negativ för lodräta etiketter. Eftersom det bara finns en rad i det här exemplet kan du konfigurera värdet på *0* (noll).
 
     - **Rader per sida:** *1*
 
@@ -788,7 +788,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
     - **Kör fråga:** *Ja* (den här inställningen är valfri, men rekommenderas för optimal prestanda.)
 
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. Valfritt: om du ställer in en kundspecifik etikettdesign måste du skapa en fråga för att hitta kundens konto. På snabbfliken **information om påfyllnadsetikettens mall** välj **Redigera fråga**. I frågeredigerarens dialogruta, på fliken **Intervall** lägg till en rad med följande värden:
+1. Valfritt: om du konfigurerar en kundspecifik etikettdesign måste du skapa en fråga för att hitta kundens konto. På snabbfliken **information om påfyllnadsetikettens mall** välj **Redigera fråga**. I frågeredigerarens dialogruta, på fliken **Intervall** lägg till en rad med följande värden:
 
     - **Register:** *försändelser*
     - **Härlett register:** *försändelser*
@@ -842,7 +842,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
     - **Kör fråga:** *Ja* (den här inställningen är valfri, men rekommenderas för optimal prestanda.)
 
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. Valfritt: om du ställer in en kundspecifik etikettdesign måste du skapa en fråga för att hitta kundens konto. På snabbfliken **information om påfyllnadsetikettens mall** välj **Redigera fråga**. I frågeredigerarens dialogruta, på fliken **Intervall** lägg till en rad med följande värden:
+1. Valfritt: om du konfigurerar en kundspecifik etikettdesign måste du skapa en fråga för att hitta kundens konto. På snabbfliken **information om påfyllnadsetikettens mall** välj **Redigera fråga**. I frågeredigerarens dialogruta, på fliken **Intervall** lägg till en rad med följande värden:
 
     - **Register:** *försändelser*
     - **Härlett register:** *försändelser*

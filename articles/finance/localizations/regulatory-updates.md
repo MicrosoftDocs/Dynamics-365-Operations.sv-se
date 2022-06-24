@@ -1,6 +1,6 @@
 ---
 title: Regeluppdateringar
-description: Det här avsnittet innehåller en lista med planerade och utgivna regleruppdateringar för Microsoft Dynamics 365 Finance.
+description: Den här artikeln innehåller en lista med planerade och utgivna regleruppdateringar för Microsoft Dynamics 365 Finance.
 author: VStamberg
 ms.date: 04/18/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904293"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de regeluppdateringar som planeras och ges ut i Dynamics 365 Finance lokaliseringar som stöds. Leveranstidslinjer kan ändras och planerade funktioner kan ändras eller kanske inte har frisläppts. Mer information finns i [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
+Den här artikeln beskriver de regeluppdateringar som planeras och ges ut i Dynamics 365 Finance lokaliseringar som stöds. Leveranstidslinjer kan ändras och planerade funktioner kan ändras eller kanske inte har frisläppts. Mer information finns i [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
 Regeluppdateringar är funktioner som har implementerats så att de stöder ny eller ändrad landsspecifik lagstiftning. För ytterligare information om andra planerade och släppta landsspecifika funktioner finns i [Dynamics 365 and Power Platform lanseringsplaner](/business-applications-release-notes/index).
 

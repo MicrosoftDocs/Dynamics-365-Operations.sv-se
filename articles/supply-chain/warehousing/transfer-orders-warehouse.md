@@ -1,6 +1,6 @@
 ---
 title: Ställ in lagerställen för överföringsorder
-description: Det här avsnittet beskriver hur du ställer in lagerställen för överföringsorder.
+description: Denna artikel beskriver hur du konfigurerar lagerställen för överföringsorder.
 author: Mirzaab
 ms.date: 01/18/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6de9df2749836c68bc4e9f92a6934516ff9c1d469374f0d63173a209c841ba38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 984f90343805d35833b7ddd1a175af5833c23dd5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905527"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Ställ in lagerställen för överföringsorder 
 
@@ -41,7 +41,7 @@ Lagerställenivåer kan användas för att skapa en hierarki som stöder överf�
 
 
 > [!TIP]
-> <P>Om du vill tilldela ett lagerställe för påfyllning, måste du först ställa in lagerstället som en lagerdimension i formuläret <STRONG>Lagringsdimensionsgrupper</STRONG>. På den här sidan väljer du fältet <STRONG>Aktiv</STRONG> och fältet <STRONG>Disponera per dimension</STRONG> för lagerstället.</P>
+> <P>Om du vill tilldela ett lagerställe för påfyllning, måste du först konfigurera lagerstället som en lagerdimension i formuläret <STRONG>Lagringsdimensionsgrupper</STRONG>. På den här sidan väljer du fältet <STRONG>Aktiv</STRONG> och fältet <STRONG>Disponera per dimension</STRONG> för lagerstället.</P>
 
 ## <a name="set-up-transport-lead-time"></a>Ställa in ledtid för transport
 

@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (23 augusti 2021)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 23 augusti 2021.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 23 augusti 2021.
 author: marcelbf
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 21c3448c373600ffebca82be41fb5849b952dfe1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 91c2cd396ca26cc78c3fd4fab40a29b98a7826c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909742"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-23-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources (23 augusti 2021)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Detta ämne beskriver nya, ändrade och kommande funktioner i Microsoft Dynamics 365 Human Resources.
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Microsoft Dynamics 365 Human Resources.
 
 Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -42,7 +42,7 @@ Den här versionen innehåller följande felkorrigeringar.
 > [!NOTE]
 > Vårt mål är att få den här informationen så snart som möjligt. Vi kan komma att uppdatera detta ämne i syfte att inkludera felkorrigeringar som kommit med i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer | Problem | beskrivning |
+| Utfärda nummer | Problem | Beskrivning |
 | --- | --- | --- |
 | 594066 | Det gick inte att ta bort kontaktinformation | När du väljer att ta bort en kontaktinformationspost för en medarbetare tas en annan kontaktinformationspost bort än den valda posten. |
 | 611339 | Om du lägger till en personanpassning ignoreras filtret och den första posten hämtas av bankkontot | Om du lägger till en personanpassning leder det till att bankkontolistan kör en personanpassningsfråga efter att datakällsfrågan har körts, vilket leder till att frågan hämtar den översta posten oavsett vilken arbetare som detaljerna visas för. |

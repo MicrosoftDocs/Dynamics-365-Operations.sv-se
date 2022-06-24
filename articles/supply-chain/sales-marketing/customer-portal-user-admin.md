@@ -1,6 +1,6 @@
 ---
 title: Skapa och hantera kundportal användare (innehåller video)
-description: I det här avsnittet beskrivs hur du skapar användarkonton för kundportal och ställer in behörigheter för dem.
+description: I denna artikel beskrivs hur du skapar användarkonton för kundportal och konfigurerar behörigheter för dem.
 author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d095b0f6ff707852b4c9e22fd9c31cf87ccbe9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905788"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Skapa och hantera kundportal användare
 
@@ -68,7 +68,7 @@ Mer information om hur du ändrar medföljande användarrollerna finns i [skapa 
 
 #### <a name="administrator"></a>Administratör
 
-Administratören läser och underhåller webbplatsen. Den här personen kommer att etablera och ställa in kundportalen. Administratören har kvar portalens IT- och säkerhetsaspekter och ser till att allt fungerar utan problem. Administratören kan också anpassa och/eller ändra portalen genom att lägga till nya funktioner, skapa nya roller och mycket mer.
+Administratören läser och underhåller webbplatsen. Den här personen kommer att etablera och konfigurera kundportalen. Administratören har kvar portalens IT- och säkerhetsaspekter och ser till att allt fungerar utan problem. Administratören kan också anpassa och/eller ändra portalen genom att lägga till nya funktioner, skapa nya roller och mycket mer.
 
 #### <a name="customer-representative"></a>Kundrepresentant
 

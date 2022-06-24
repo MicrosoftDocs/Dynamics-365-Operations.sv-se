@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2612222ce21e382dae13ee65fb9b9a1d9852e99ddd176bee9fcc3067f72e57db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b84931cb575b40da449b0562977b9bfa6373999
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906617"
 ---
 # <a name="list-of-er-functions-in-the-record-category"></a>Lista över ER-funktioner i postkategorin
 
 [!include [banner](../includes/banner.md)]
 
-Postfunktioner för elektronisk rapportering (ER) kan användas för att extrahera information från och utföra åtgärder på datakällor för datatypen *behållare (post)*. Det här avsnittet innehåller en sammanfattning av dessa funktioner.
+Postfunktioner för elektronisk rapportering (ER) kan användas för att extrahera information från och utföra åtgärder på datakällor för datatypen *behållare (post)*. Den här artikeln innehåller en sammanfattning av dessa funktioner.
 
 ## <a name="list-of-supported-functions"></a>Lista över funktioner som stöds
 

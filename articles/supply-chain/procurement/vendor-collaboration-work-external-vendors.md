@@ -1,6 +1,6 @@
 ---
 title: Leverantörssamarbete med externa leverantörer
-description: I det här avsnittet förklaras hur inköpare kan samarbeta med externa leverantörer för att byta ut information om inköpsorder och försändelselager.
+description: I denna artikel förklaras hur inköpare kan samarbeta med externa leverantörer för att byta ut information om inköpsorder och försändelselager.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907302"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
 [!include [banner](../includes/banner.md)]
 
-Modulen för **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 Supply Chain Management. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I det här avsnittet förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
+Modulen för **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 Supply Chain Management. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I dnena artikel förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
 
 För mer information om vad externa leverantörer kan göra i gränssnittet för leverantörssamarbeten, se [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informationen i det här avsnittet om samarbete för leverantör gäller bara för den aktuella versionen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal**, se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
+> Informationen i denna artikel om samarbete för leverantör gäller bara för den aktuella versionen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal**, se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
 
 För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
@@ -112,7 +112,7 @@ Inköpsordern som skickades till leverantören och har statusen <strong>I extern
 <li>Byt ut en artikel.</li>
 </ul>
 Leverantören kan inte ändra prisinformation och avgifter. Leverantören kan föreslå dessa ändringar med hjälp av anteckningar.</td>
-<td>Leverantörens svar registreras som <strong>Accepterad med ändringar</strong> och inköpsorderns status förblir <strong>I extern granskning</strong>. Statusen visar vilka typer av ändringar som leverantören har föreslagit. Information om automatisk förbrukning av ändringarna finns i avsnittet &quot;Uppdatera inköpsordern när en leverantör föreslår ändringar&quot; senare i det här ämnet. </td>
+<td>Leverantörens svar registreras som <strong>Accepterad med ändringar</strong> och inköpsorderns status förblir <strong>I extern granskning</strong>. Statusen visar vilka typer av ändringar som leverantören har föreslagit. Information om automatisk förbrukning av ändringarna finns i avsnittet &quot;Uppdatera inköpsordern när en leverantör föreslår ändringar&quot; senare i denna artikel. </td>
 </tr>
 </tbody>
 </table>
@@ -234,15 +234,15 @@ Det här avsnittet beskriver interaktioner mellan kunder och leverantörer vid a
 
 ## <a name="public-sector-extensions"></a>Tillägg för offentlig sektor
 
-Med de utökade funktionerna för den offentliga sektorn går det att skicka en anbudsförfrågan till leverantörer och publicera den. När du publicerar en anbudsförfrågan kan alla som begär informationen visa det arbete som omfattas av offentlighetsprincipen. Allt tillgängligt arbete återspeglas på listsidan **Öppna publicerad anbudsförfrågningar**, och annullerade, väntande eller beviljade anbudsförfrågningar kan visas på listsidan **Stängda publicerade anbudsförfrågningar**. Dessa dokument kan även visas på en plats utanför Supply Chain Management genom integrationer med följande datatabeller:
+Med de utökade funktionerna för den offentliga sektorn går det att skicka en anbudsförfrågan till leverantörer och publicera den. När du publicerar en anbudsförfrågan kan alla som begär informationen visa det arbete som omfattas av offentlighetsprincipen. Allt tillgängligt arbete återspeglas på listsidan **Öppna publicerad anbudsförfrågningar**, och annullerade, väntande eller beviljade anbudsförfrågningar kan visas på listsidan **Stängda publicerade anbudsförfrågningar**. Dessa dokument kan även visas på en plats utanför Supply Chain Management genom integreringer med följande datatabeller:
 
 - Publicerade anbudsförfrågningar
 - Rad för publicerade anbudsförfrågningar
 - Huvudbilagor för publicerade anbudsförfrågningar
 
-Med dessa enheter kan personer som inte är allokerade användare i Supply Chain Management men som har åtkomst till den externa platsen, visa tillgängligt och avslutat arbete. Med de utökade funktionerna i **Skicka och publicera** kan användare som ställer in parametrar för anbudsförfråganprocessen dessutom definiera en e-postmall. När prokuristen sedan skapar anbudsförfrågan måste han eller hon välja e-postmallen för att kunna skicka den begärda informationen till leverantörerna i ärendet. 
+Med dessa enheter kan personer som inte är allokerade användare i Supply Chain Management men som har åtkomst till den externa platsen, visa tillgängligt och avslutat arbete. Med de utökade funktionerna i **Skicka och publicera** kan användare som konfigurerar parametrar för anbudsförfråganprocessen dessutom definiera en e-postmall. När prokuristen sedan skapar anbudsförfrågan måste han eller hon välja e-postmallen för att kunna skicka den begärda informationen till leverantörerna i ärendet. 
 
-Den användare som ställer in parametrarna för anbudsförfråganprocessen kan skapa flera e-postmallar. Dessa e-postmallar kan innehålla både statisk text och följande utbytestoken. Dessa token ersätts med sammanhangsberoende värden när ett e-postmeddelande skapas.
+Den användare som konfigurerar parametrarna för anbudsförfråganprocessen kan skapa flera e-postmallar. Dessa e-postmallar kan innehålla både statisk text och följande utbytestoken. Dessa token ersätts med sammanhangsberoende värden när ett e-postmeddelande skapas.
 
 - %RFQCase%
 - %RFQCaseName%

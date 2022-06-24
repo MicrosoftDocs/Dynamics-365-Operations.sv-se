@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d50db3a96d6267f59dd5a99c039dd8fc8b44079a
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a1583df4650d0b36ecc2cb0d3e2d3a410aa807ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717402"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909110"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Räkenskapskalendrar, räkenskapsår och perioder
 

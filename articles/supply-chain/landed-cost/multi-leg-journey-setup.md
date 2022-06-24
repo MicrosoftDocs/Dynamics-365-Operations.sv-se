@@ -1,6 +1,6 @@
 ---
 title: Inställning av resor med flera sträckor
-description: I det här avsnittet beskrivs hur du ställer in resor med flera sträckor för modulen hemtagningskostnad.
+description: I denna artikel beskrivs hur du konfigurerar resor med flera sträckor för modulen Hemtagningskostnad.
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c65a3d3971593ccf832a6af3c8c27d56a68b46c8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dcb536c03d09d51b247d9060d87db64e2b80383b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905846"
 ---
 # <a name="multi-leg-journey-setup"></a>Inställning av resor med flera sträckor
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in resor med flera sträckor för modulen **hemtagningskostnad**.
+I denna artikel beskrivs hur du konfigurerar resor med flera sträckor för modulen **Hemtagningskostnad**.
 
 ## <a name="legs"></a>Etapper
 
@@ -42,7 +42,7 @@ Om du vill arbeta med sträckor, gå till **Hemtagningskostnad \> Inställning a
 
 ## <a name="journey-templates"></a>Resemallar
 
-En resmall definierar ett flerdimensionellt samband mellan två portar som varor reser under en färd. Resans sträckor används för att identifiera hur lång tid det tar för varor som ska levereras från leverantörens ursprungspunkt till den slutliga lagerställedestinationen. När sträckorna på en resmall som är specifik för den, identifierar ledtiderna datumet för varje sträcka och status för färd, behållare och inköpsrader för färden. Med [spårningskontrollcentret](delivery-information-setup.md) kan du ställa in ledtiderna som associeras med varje del som utgör resmallen. Resmallen används också när de automatiska kostnaderna för en färd konfigureras. När en resa definieras kan kostnaden som associeras med transporten av varorna definieras på sidan Automatisk kostnad.
+En resmall definierar ett flerdimensionellt samband mellan två portar som varor reser under en färd. Resans sträckor används för att identifiera hur lång tid det tar för varor som ska levereras från leverantörens ursprungspunkt till den slutliga lagerställedestinationen. När sträckorna på en resmall som är specifik för den, identifierar ledtiderna datumet för varje sträcka och status för färd, behållare och inköpsrader för färden. Med [spårningskontrollcentret](delivery-information-setup.md) kan du konfigurera ledtiderna som associeras med varje del som utgör resmallen. Resmallen används också när de automatiska kostnaderna för en färd konfigureras. När en resa definieras kan kostnaden som associeras med transporten av varorna definieras på sidan Automatisk kostnad.
 
 Om du vill arbeta med resmallar, gå till **Hemtagningskostnad \> Inställning av resa med flera sträckor \> resmallar**. Där kan du visa, öppna, skapa och ta bort poster för resmallar.
 
@@ -70,7 +70,7 @@ I avsnittet **Rader**, lägg till en rad för varje sträcka på resan och ordna
 
 Inställningarna på sidan **Aktiviteter** gör att de typer av aktiviteter som kan ske vid destinationsporten för en sträcka. Användare som arbetar på sidan **Alla leveransbehållare** kan välja bland dessa värden när de uppskattar varaktigheten för varje aktivitet och registrerar den faktiska längden för jämförelse.
 
-Om du vill ställa in dina aktiviteter går du till **Hemtagningskostnad \> Inställning av resor med flera sträckor \> Aktiviteter**. Där kan du lägga till, ta bort och redigera aktiviteter genom att använda knapparna i åtgärdsfönstret.
+Om du vill konfigurera dina aktiviteter går du till **Hemtagningskostnad \> Inställning av resor med flera sträckor \> Aktiviteter**. Där kan du lägga till, ta bort och redigera aktiviteter genom att använda knapparna i åtgärdsfönstret.
 
 Följande register beskriver de fält som är tillgängliga för varje aktivitet i rutnätet.
 

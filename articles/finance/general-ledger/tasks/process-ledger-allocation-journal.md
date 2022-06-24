@@ -1,6 +1,6 @@
 ---
 title: Bearbeta journal för redovisningsallokering
-description: I det här avsnittet beskrivs hur du bearbetar en begäran om tilldelning i Dynamics 365 Finance.
+description: I den här artikeln beskrivs hur du bearbetar en begäran om tilldelning i Dynamics 365 Finance.
 author: aprilolson
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ec3653085aed278eb5d13d47f345c713cd39f1f
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: b86f8f5d090d624e812d9e7e6c0bc0212e5e9716
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902441"
 ---
 # <a name="process-ledger-allocation-journal"></a>Bearbeta journal för redovisningsallokering
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du bearbetar en begäran om tilldelning. Använd sidan Bearbeta allokeringsbegäran för att skapa en allokeringsjournal som kan granskas och godkännas före bokföringen, eller bokföras direkt i redovisningen. Innan du kan skapa en allokeringsjournal måste det finnas minst en aktiv redovisningsallokeringsregel. I den här uppgiften används demonstrationsföretaget USMF.
+I den här artikeln beskrivs hur du bearbetar en begäran om tilldelning. Använd sidan Bearbeta allokeringsbegäran för att skapa en allokeringsjournal som kan granskas och godkännas före bokföringen, eller bokföras direkt i redovisningen. Innan du kan skapa en allokeringsjournal måste det finnas minst en aktiv redovisningsallokeringsregel. I den här uppgiften används demonstrationsföretaget USMF.
 
 1. I navigeringsfönstret, gå till **Redovisning > Allokeringar > Bearbeta allokeringsbegäran**.
 2. I fältet **Regel** väljer du önskad post i listrutan.

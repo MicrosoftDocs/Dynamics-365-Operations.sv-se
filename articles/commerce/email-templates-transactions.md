@@ -1,6 +1,6 @@
 ---
 title: Skapa e-postmallar för transaktionshändelser
-description: I det här avsnittet beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,42 +14,42 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910560"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Skapa e-postmallar för transaktionshändelser
 
 [!include [banner](includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce tillhandahåller en färdig lösning för att skicka e-postmeddelanden som varnar kunder om transaktionshändelser. E-postmeddelanden kan till exempel skickas när en order läggs, är klar för upphämtning eller har levererats. Det här avsnittet beskriver hur du skapar, överför och konfigurerar e-postmallar som används för att skicka transaktionsmeddelanden.
+Dynamics 365 Commerce tillhandahåller en färdig lösning för att skicka e-postmeddelanden som varnar kunder om transaktionshändelser. E-postmeddelanden kan till exempel skickas när en order läggs, är klar för upphämtning eller har levererats. Denna artikel beskriver hur du skapar, överför och konfigurerar e-postmallar som används för att skicka transaktionsmeddelanden via e-post.
 
 ## <a name="notification-types"></a>Meddelandetyper
 
-Meddelanden kan konfigureras för att informera kunderna via e-post när specifika händelser inträffar som en del av orderns och kundens livscykel. Om du vill konfigurera meddelanden måste du mappa en e-postmall till en aviseringstyp genom att skapa en e-postnotifieringsprofil för Commerce. Mer information om hur du ställer in meddelandeprofiler för e-post finns i [Konfigurera profil för e-postmeddelande](email-notification-profiles.md).
+Meddelanden kan konfigureras för att informera kunderna via e-post när specifika händelser inträffar som en del av orderns och kundens livscykel. Om du vill konfigurera meddelanden måste du mappa en e-postmall till en aviseringstyp genom att skapa en e-postnotifieringsprofil för Commerce. Mer information om hur du konfigurerar meddelandeprofiler för e-post finns i [Konfigurera profil för e-postmeddelande](email-notification-profiles.md).
 
 Dynamics 365 Commerce har stöd för följande meddelandetyper.
 
 ### <a name="order-created"></a>Order skapad
 
-Meddelandetypen *order som skapas* utlöses när en ny försäljningsorder skapas i Commerce-administration.
+Meddelandetypen *order som skapas* utlöses när en ny försäljningsorder skapas i Commerce headquarters.
 
 > [!NOTE]
 > Ordern skapade meddelandetypen som inte utlöses för hämtköpstransaktioner som sker vid en kassaterminal (POS). I det här fallet genereras ett e-postmeddelande och/eller ett utskrivet kvitto istället. Mer information finns i [Skicka e-postkvitton från Modern POS (MPOS)](email-receipts.md).
 
 ### <a name="order-confirmed"></a>Ordern är bekräftad
 
-Meddelandetypen *order bekräftad* utlöses när ett orderbekräftelsedokument genereras för en försäljningsorder från Commerce-administration.
+Meddelandetypen *order bekräftad* utlöses när ett orderbekräftelsedokument genereras för en försäljningsorder från Commerce headquarters.
 
 ### <a name="picking-completed"></a>Plockningen är slutförd
 
-Meddelandetypen *plockning slutförd* utlöses när en plocklista för en order markeras som slutförd i Commerce-administration.
+Meddelandetypen *plockning slutförd* utlöses när en plocklista för en order markeras som slutförd i Commerce headquarters.
 
 > [!NOTE]
 > Meddelandetypen slutförd plockning som utlöses när en artikel markeras som plockad i en kassaterminal.
@@ -88,14 +88,14 @@ Meddelandetypen *ordern levereras* utlöses när en order som har ett leveranss�
 
 ### <a name="order-invoiced"></a>Order fakturerad
 
-Meddelandetypen *order som faktureras* utlöses när en order faktureras i kassa eller Commerce-administration.
+Meddelandetypen *order som faktureras* utlöses när en order faktureras i kassa eller Commerce headquarters.
 
 ### <a name="issue-gift-card"></a>Utfärda presentkort
 
 Meddelandetypen *Utfärda presentkort* utlöses när en försäljningsorder som innehåller en produkt av presentkortstyp faktureras.
 
 > [!NOTE]
-> E-postmeddelandet med presentkortet skickas till presentkortsmottagaren. Presentkortsmottagaren anges i Commerce-administration på en enskild försäljningsorderrad på fliken **Förpackning** under **Raddetaljer**. Den kan anges antingen manuellt eller programmässigt.
+> E-postmeddelandet med presentkortet skickas till presentkortsmottagaren. Presentkortsmottagaren anges i Commerce headquarters på en enskild försäljningsorderrad på fliken **Förpackning** under **Raddetaljer**. Den kan anges antingen manuellt eller programmässigt.
 
 Utbetalningsmeddelandetypen har stöd för följande ytterligare platshållare.
 
@@ -109,19 +109,19 @@ Utbetalningsmeddelandetypen har stöd för följande ytterligare platshållare.
 | `giftcardrecipientname` | Namnet på mottagare av presentkort, för produkter av typen presentkort. |
 | `giftcardbuyername`     | Namnet på inköpare av presentkort, för produkter av typen presentkort. |
 
-Mer information om presentkort finns i [digitala presentkort för e-handel](digital-gift-cards.md) och [stöd för externa för presentkort](dev-itpro/gift-card.md).
+Mer information om presentkort finns i [digitala presentkort för näthandel](digital-gift-cards.md) och [stöd för externa för presentkort](dev-itpro/gift-card.md).
 
 ### <a name="order-cancellation"></a>Orderannullering
 
-Meddelandetypen *orderannullering* utlöses när en order avbryts i Commerce-administration.
+Meddelandetypen *orderannullering* utlöses när en order avbryts i Commerce headquarters.
 
 ### <a name="customer-created"></a>Kunden har skapats
 
-Meddelandetypen *kund som skapas* utlöses när en ny kundentitet i Commerce-administration.
+Meddelandetypen *kund som skapas* utlöses när en ny kundentitet i Commerce headquarters.
 
 ### <a name="b2b-prospect-approved"></a>Potentiell B2B-kund godkänd
 
-Meddelandetypen *godkänd potentiell B2B-kund* utlöses när en potentiell kunds introduktionsbegäran godkänns i Commerces-administration. Mer information om hur du godkänner eller avvisar potentiella B2B-kunder finns i [Ställa in administratörsanvändare för en ny affärspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
+Meddelandetypen *godkänd potentiell B2B-kund* utlöses när en potentiell kunds introduktionsbegäran godkänns i Commerce headquarters. Mer information om hur du godkänner eller avvisar potentiella B2B-kunder finns i [Ställa in administratörsanvändare för en ny affärspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
 Meddelandetypen godkänd potentiell B2B-kund har stöd för följande ytterligare platshållare.
 
@@ -138,7 +138,7 @@ Meddelandetypen godkänd potentiell B2B-kund har stöd för följande ytterligar
 
 ### <a name="b2b-prospect-rejected"></a>Potentiell B2B-kund avvisad
 
-Meddelandetypen *avvisad potentiell B2B-kund* utlöses när en potentiell kunds introduktionsbegäran avvisad i Commerce-administration. Mer information om hur du godkänner eller avvisar potentiella B2B-kunder finns i [Ställa in administratörsanvändare för en ny affärspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
+Meddelandetypen *avvisad potentiell B2B-kund* utlöses när en potentiell kunds introduktionsbegäran avvisad i Commerce headquarters. Mer information om hur du godkänner eller avvisar potentiella B2B-kunder finns i [Ställa in administratörsanvändare för en ny affärspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
 Meddelandetypen avvisad potentiell B2B-kund har stöd för följande ytterligare platshållare.
 
@@ -154,7 +154,7 @@ Innan du kan mappa en specifik transaktionshändelse till en e-postmall måste d
 
 Gör så här om du vill skapa en e-postmall.
 
-1. I Commerce-administration, gå till **Retail och Commerce \> Headquarters setup \> Organisationens e-postmallar** eller **Organisationsadministration \> Konfigurera \> Organisationens e-postmallar**.
+1. I Commerce headquarters, gå till **Retail och Commerce \> Headquarters setup \> Organisationens e-postmallar** eller **Organisationsadministration \> Konfigurera \> Organisationens e-postmallar**.
 1. Välj **Ny**.
 1. Under **Allmänt** anger du följande fält:
 
@@ -162,10 +162,10 @@ Gör så här om du vill skapa en e-postmall.
     - **E-postbeskrivning** – Du kan använda det här valfria fältet för att ange en beskrivning av mallen. Värdet som du anger visas bara i Commerce Headquarters.
     - **Avsändarens namn** – Det namn som du anger visas i fältet "från" i de flesta e-postklienter.
     - **Avsändarens e-postadress** – Ange den e-postadress som ska användas för e-postmeddelanden som skickas med hjälp av den här mallen.
-    - **Standardspråkkod** – Detta fält innehåller den lokaliserade versionen av det e-postmeddelande som skickas som standard om kanalen som anropar inte anger ett språk.
+    - **Standardspråkkod** – Detta fält innehåller den lokalanpassade versionen av det e-postmeddelande som skickas som standard om kanalen som anropar inte anger ett språk.
 
 1. Under **Innehåll i e-postmeddelande** väljer du **Nytt**.
-1. I fältet **Språk** anger du språket för e-postmallen. Du kan lägga till fler språk och lokaliserade mallar senare.
+1. I fältet **Språk** anger du språket för e-postmallen. Du kan lägga till fler språk och lokalanpassade mallar senare.
 1. I fältet **Ämne** anger du det e-postämne som ska visas i e-postmeddelandets ämnesfält.
 1. Välj **Redigera** för att ladda upp e-postmallen.
 

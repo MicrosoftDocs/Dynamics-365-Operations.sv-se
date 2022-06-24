@@ -1,6 +1,6 @@
 ---
 title: Ställ in standardbeskrivningar för automatisk bokföring
-description: Det här avsnittet förklarar hur du kan ställa in standardtext som används för att beskriva redovisningsposter som bokförs automatiskt i redovisningen. Du kan ställa in standardbeskrivningstext genom att använda fritext eller välja fasta variabler.
+description: Den här artikeln förklarar hur du kan ställa in standardtext som används för att beskriva redovisningsposter som bokförs automatiskt i redovisningen. Du kan ställa in standardbeskrivningstext genom att använda fritext eller välja fasta variabler.
 author: aprilolson
 ms.date: 07/23/2019
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 772c754e9980e693daf7542de273cbe278ca7038
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 71982a7d5b1bb08d3e238646ea0b15f17260bdcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904511"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Ställ in standardbeskrivningar för automatisk bokföring
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar hur du kan ställa in standardtext som används för att beskriva redovisningsposter som bokförs automatiskt i redovisningen. Du kan ställa in standardbeskrivningstext genom att använda fritext eller välja fasta variabler.
+Den här artikeln förklarar hur du kan ställa in standardtext som används för att beskriva redovisningsposter som bokförs automatiskt i redovisningen. Du kan ställa in standardbeskrivningstext genom att använda fritext eller välja fasta variabler.
 
 > [!NOTE]
-> För vissa typer av transaktioner i vissa länder eller regioner kan du även ta med text från fält i som rör dessa transaktionstyper. En lista över transaktionstyperna, samt länderna och regionerna, finns i avsnittet [Valfritt: Lägg till annan text i standardbeskrivningar](#optional-add-other-text-to-default-descriptions) senare i det här avsnittet.
+> För vissa typer av transaktioner i vissa länder eller regioner kan du även ta med text från fält i som rör dessa transaktionstyper. En lista över transaktionstyperna, samt länderna och regionerna, finns i avsnittet [Valfritt: Lägg till annan text i standardbeskrivningar](#optional-add-other-text-to-default-descriptions) senare i den här artikeln.
 
 ## <a name="set-up-default-descriptions"></a>Ställ in standardbeskrivningar
 

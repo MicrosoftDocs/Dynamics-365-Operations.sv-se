@@ -1,6 +1,6 @@
 ---
 title: Lagerställeapphändelser
-description: Det här ämnet beskriver den bearbetning av apphändelse i distributionslagret som används för att bearbeta apphändelse meddelanden för lagerstället som en del av ett batchjobb.
+description: Denna artikel beskriver den bearbetning av programhändelser på distributionslagret som används för att bearbeta programhändelsemeddelanden för lagerstället som en del av ett batchjobb.
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 41b9538d3064bad24c4c5c60d401605e47e9c655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905466"
 ---
 # <a name="warehouse-app-event-processing"></a>Händelsebearbetning i distributionslagerappen
 

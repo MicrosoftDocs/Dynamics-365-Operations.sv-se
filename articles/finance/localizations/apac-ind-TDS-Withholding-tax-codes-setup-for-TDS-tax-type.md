@@ -1,6 +1,6 @@
 ---
 title: Ställ in källskattekoder för TDS-skattetypen
-description: I det här avsnittet beskrivs hur du konfigurerar skattekoder för skatteavdrag vid källan (TDS).
+description: I den här artikeln beskrivs hur du konfigurerar skattekoder för skatteavdrag vid källan (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ced5902b5a2e822f84a40da8149bc319c94973ba
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: fabe14b74c445434c37cb6ee79597d37affb162d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724739"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904395"
 ---
 # <a name="set-up-withholding-tax-codes-for-the-tds-tax-type"></a>Ställ in källskattekoder för TDS-skattetypen
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar skattekoder för skatteavdrag vid källan (TDS).
+I den här artikeln beskrivs hur du konfigurerar skattekoder för skatteavdrag vid källan (TDS).
 
 1. Gå till **Skatt \> Indirekt skatt \> Källskatt \> Källskattekoder**.
 

@@ -1,6 +1,6 @@
 ---
 title: Mappa kanaler till näthandelsplatser
-description: Det här ämnet beskriver några av de vanligare kanalmappningsscenarierna i Microsoft Dynamics 365 Commerce som kan extrapoleras för de flesta andra affärsbehov.
+description: Denna artikel beskriver några av de vanligare kanalmappningsscenarierna i Microsoft Dynamics 365 Commerce som kan extrapoleras för de flesta andra affärsbehov.
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743594"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902773"
 ---
 # <a name="map-channels-to-e-commerce-sites"></a>Mappa kanaler till näthandelsplatser
 
-Det här ämnet beskriver några av de vanligare kanalmappningsscenarierna i Microsoft Dynamics 365 Commerce som kan extrapoleras för de flesta andra affärsbehov.
+Denna artikel beskriver några av de vanligare kanalmappningsscenarierna i Microsoft Dynamics 365 Commerce som kan extrapoleras för de flesta andra affärsbehov.
 
 Dynamics 365 Commerce har stöd för många affärsscenarier för mappning av [onlinekanaler](#channels) som har en konfigurerad uppsättning produkter, priser och rabatter till [näthandelsplatsupplevelser](#e-commerce-sites) för kunder.
 
-I det här avsnittet beskrivs följande scenarier:
+I denna artikel beskrivs följande scenarier:
 
 - **En kanal med ett språk som har en gemensam näthandelsupplevelse.** Det här scenariot kan till exempel gälla en enskild varumärkeswebbplats som har konfigurerats för den amerikanska-engelska marknaden.
-- **En kanal med flera språk som har en enda lokaliserad näthandelsupplevelse.** Det här scenariot kan till exempel gälla en enskild varumärkeswebbplats som har konfigurerats för Kanada med franskt och engelskt språkstöd. I det här scenariot får användare som väljer olika språk samma webbplatsupplevelse, men den kommer att lokaliseras till varje användares valda språk.
+- **En kanal med flera språk som har en enda lokalanpassad näthandelsupplevelse.** Det här scenariot kan till exempel gälla en enskild varumärkeswebbplats som har konfigurerats för Kanada med franskt och engelskt språkstöd. I det här scenariot får användare som väljer olika språk samma webbplatsupplevelse, men den kommer att lokalanpassas till varje användares valda språk.
 - **En kanal med flera språk som har en olika näthandelsupplevelse per språk.** Det här scenariot kan till exempel gälla en enskild varumärkeswebbplats som har konfigurerats för Kanada med franskt och engelskt språkstöd. I det här scenariot finns det en unik webbplatsupplevelse för varje språk.
-- **Flera kanaler (ett språk och/eller flera språk) som har en enda lokaliserad webbplatsupplevelse.** Det här scenariot kan till exempel gälla en enskild varumärkeswebbplats som har konfigurerats för Australien och Nya Zeeland. I det här scenariot delar båda länderna samma webbplatsupplevelse på engelska, men varje land konfigureras med olika produkter, valuta, priser, rabatter och leveranssätt.
+- **Flera kanaler (ett språk och/eller flera språk) som har en enda lokalanpassad webbplatsupplevelse.** Det här scenariot kan till exempel gälla en enskild varumärkeswebbplats som har konfigurerats för Australien och Nya Zeeland. I det här scenariot delar båda länderna samma webbplatsupplevelse på engelska, men varje land konfigureras med olika produkter, valuta, priser, rabatter och leveranssätt.
 - **Flera kanaler (ett språk och/eller flera språk) som har olika webbplatsupplevelser per kanal.** Det här scenariot kan till exempel gälla en enskild varumärkeswebbplats som har konfigurerats för Australien, Kanada och Tyskland på flera språk. I det här scenariot har varje land en unik webbplatsupplevelse som konfigureras med olika produkter, valuta, priser, rabatter och leveranssätt.
 
 ## <a name="channels"></a>Kanaler
@@ -63,17 +63,17 @@ Följande exempelillustration visar en kanalkonfiguration i Commerce headquarter
 
 ![Värden för juridisk person, valuta och språk för onlinebutiken Adventure Works som markerats i Commerce headquarters.](media/channel-mapping-3.png)
 
-Den enda onlinekanalen kan mappas till en enda näthandelsplats i webbplatsbyggaren. Information om hur du skapar en ny webbplats och mappar den till en kanal finns i avsnittet [Mappa en kanal till en webbplats i webbplatsbyggaren](#map-a-channel-to-a-site-in-site-builder).
+Den enda onlinekanalen kan mappas till en enda näthandelsplats i webbplatsbyggaren. Information om hur du skapar en ny webbplats och mappar den till en kanal finns i avsnittet [Mappa en kanal till en webbplats i webbplatsbyggaren](#map-a-channel-to-a-site-in-site-builder) i denna artikel.
 
-### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>Kanal med flera språk som har en enda lokaliserad näthandelsupplevelse
+### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>Kanal med flera språk som har en enda lokalanpassad näthandelsupplevelse
 
-I det här scenariot har en enda kanal stöd för mer än ett språk. Därför kan produktnamn, beskrivningar och attribut lokaliseras i Commerce headquarters. Om du vill ha en fullständig lokaliserad webbplatsupplevelse kan marknadsföringsinnehållet på webbplatsen också lokaliseras i Commerce-webbplatsbyggaren.
+I det här scenariot har en enda kanal stöd för mer än ett språk. Därför kan produktnamn, beskrivningar och attribut lokalanpassas i Commerce headquarters. Om du vill ha en fullständig lokalanpassad webbplatsupplevelse kan marknadsföringsinnehållet på webbplatsen också lokalanpassas i Commerce-webbplatsbyggaren.
 
 Begränsningen i det här scenariot är att en enda kanal bara kan konfigureras med en valuta, en juridisk person och en uppsättning produkter och priser. Den här konfigurationen fungerar bäst för länder som har en gemensam valuta och flera språk (till exempel Kanada som har engelska och franska), en enda juridisk person samt en uppsättning produkter och priser.
 
 Varje språk i en kanal kan konfigureras med sitt eget domännamn. `www.adventure-works.ca`-domänen kan till exempel konfigureras för den engelska versionen för Kanada och `www.adventure-works-fr.ca`-domänen kan konfigureras för den franska versionen för Kanada. Olika språk i en kanal kan också konfigureras i en enda domän, och sedan kan en annan sökväg användas för varje språk. `www.adventure-works.ca`-domänen kan till exempel konfigureras för den engelska versionen för Kanada sedan kan `www.adventure-works.ca/fr`-sökvägen användas för den franska versionen för Kanada. [Geoidentifiering](geo-detection-redirection.md) kan också aktiveras för att automatiskt omdirigera användaren till rätt webbplats, baserat på användarens plats.
 
-Information om hur du aktiverar kunder för manuell växling mellan språk finns i avsnittet [Lägga till och konfigurera webbplatsväljarmodulen](#add-and-configure-the-site-picker-module) . Information om hur du anpassar lokaliserade sidor och fragment finns i avsnittet [Hantera webbplatsinnehåll som har flera kanaler och språk](#manage-site-content-that-has-multiple-channels-and-languages).
+Information om hur du aktiverar kunder för manuell växling mellan språk finns i avsnittet [Lägga till och konfigurera webbplatsväljarmodulen](#add-and-configure-the-site-picker-module) i denna artikel. Information om hur du anpassar lokalanpassade sidor och fragment finns i avsnittet [Hantera webbplatsinnehåll som har flera kanaler och språk](#manage-site-content-that-has-multiple-channels-and-languages).
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>Kanal med flera språk som har en olika näthandelsupplevelse per språk
 
@@ -81,13 +81,13 @@ Du kanske föredrar ett scenario där en enskild kanal har stöd för mer än et
 
 En annan metod är att skapa en ny näthandelsplats för varje språk i webbplatsbyggaren och sedan mappa varje webbplats till en enda onlinekanal och ett enda språk. Resultatet blir en enda onlinekanal som mappas till flera näthandelsplatser, en för varje språk. Den här metoden för flera webbplatser kräver extra hanteringsresurser, eftersom det finns mer än en webbplats att hantera i webbplatsbyggaren.
 
-### <a name="multiple-channels-single-language-andor-multi-language-that-have-a-single-localized-site-experience"></a>Flera kanaler (ett språk och/eller flera språk) som har en enda lokaliserad webbplatsupplevelse
+### <a name="multiple-channels-single-language-andor-multi-language-that-have-a-single-localized-site-experience"></a>Flera kanaler (ett språk och/eller flera språk) som har en enda lokalanpassad webbplatsupplevelse
 
 En varumärkt webbplats kanske kräver flera onlinekanaler per region för att stödja olika valutor, uppsättning produkter och priser för varje kanal på en enda webbplats. Adventure Works-webbplatsen kan till exempel ha en onlinekanal för den kanadensiska marknaden som har flera språk, en kanal för den amerikanska marknaden som har ett språk och en kanal för den tyska marknaden som har ett språk. I det här scenariot konfigureras varje onlinekanal för en regionspecifik juridisk person och kan ha samma uppsättning produkter som andra kanaler har, en delmängd av dessa produkter eller en annan uppsättning produkter. Varje kanal har också sina egna priser i den nationella valutan, momsen, rabatterna och leveranssätten.
 
 I det här scenariot kan varje marknad konfigureras med sitt eget domännamn. `www.adventure-works.com`-domänen kan till exempel konfigureras för den amerikanska marknaden och `www.adventure-works.de`-domänen kan konfigureras för den tyska marknaden. Alternativt kan varje marknad konfigureras till att använda olika sökvägar. `www.adventure-works.com`-domänen kan till exempel konfigureras för den amerikanska marknaden och sedan kan `www.adventure-works.com/de`-sökvägen användas för den tyska marknaden. [Geoidentifiering](geo-detection-redirection.md) kan också aktiveras för att automatiskt omdirigera användare till rätt webbplats, baserat på användarens region.
 
-Du kanske också vill att din webbplats ska innehålla en listrutan där användarna manuellt kan växla till en viss marknad. Mer information finns i avsnittet [Lägga till och konfigurera webbplatsväljarmodulen](#add-and-configure-the-site-picker-module) senare i det här ämnet.
+Du kanske också vill att din webbplats ska innehålla en listrutan där användarna manuellt kan växla till en viss marknad. Mer information finns i avsnittet [Lägga till och konfigurera webbplatsväljarmodulen](#add-and-configure-the-site-picker-module) senare i denna artikel.
 
 Information om hur du konfigurerar flera kanaler på en enda webbplats finns i avsnittet [Konfigurera flera kanaler på en näthandelsplats](#configure-multiple-channels-on-an-e-commerce-site).
 
@@ -160,7 +160,7 @@ Mer information om att lägga till och konfigurera webbplatsväljarmodulen finns
 
 ### <a name="implement-page-variants-for-each-language"></a>Implementera sidvarianter för varje språk
 
-I det här scenariot finns det bara en kanal, men det finns flera språk. Du kan ändra utseendet på en sida utifrån det valda språket genom att skapa en sidvariant för den. Du kan sedan lägga till lokaliserat innehåll till varianten.
+I det här scenariot finns det bara en kanal, men det finns flera språk. Du kan ändra utseendet på en sida utifrån det valda språket genom att skapa en sidvariant för den. Du kan sedan lägga till lokalanpassat innehåll till varianten.
 
 När en sida är öppen i webbplatsbyggaren och du väljer länken uppe till höger som visar aktuell kanal och språk, visas en kanal- och språkväljare, så som visas i följande exempelillustration. Om du vill åsidosätta sidan för det aktuella språket väljer du en annan språkvariant och väljer sedan **Ändra**. Du kan även ändra kanalen om du [hanterar en webbplats med flera kanaler och språk](#manage-site-content-that has-multiple-channels-and-languages).
 
@@ -172,15 +172,15 @@ Om varianten för den valda sidan eller fragmentet ännu inte har skapats visas 
 
 Om du inte skapar någon variant återges originalsidan och visar korrekt språk för modulsträngar och produktinformation från Commerce headquarters. Om text som en sidrubrik eller annat marknadsföringsinnehåll har angetts direkt i standardsidmoduler, kvarstår strängarna för denna text på originalspråket.
 
-I stället för att skapa varje sida och fragment manuellt kan du exportera varje sida och fragment till en XLIFF-fil (XML Localization Interchange File Format) som sedan kan skickas för lokalisering. När varje XLIFF har lokaliserats kan den importeras som en lokaliserad sidvariant. Om du vill exportera en XLIFF-fil från en sida eller ett fragment i webbplatsbyggaren, eller om du vill importera en XLIFF-fil till en sida eller ett fragment, väljer du **Lokalisering** i kommandofältet. Välj sedan **Exportera XLIFF** eller **Importera XLIFF**, enligt bilden i följande exempel.
+I stället för att skapa varje sida och fragment manuellt kan du exportera varje sida och fragment till en XLIFF-fil (XML Localization Interchange File Format) som sedan kan skickas för lokalisering. När varje XLIFF har lokalanpassats kan den importeras som en lokalanpassad sidvariant. Om du vill exportera en XLIFF-fil från en sida eller ett fragment i webbplatsbyggaren, eller om du vill importera en XLIFF-fil till en sida eller ett fragment, väljer du **Lokalisering** i kommandofältet. Välj sedan **Exportera XLIFF** eller **Importera XLIFF**, enligt bilden i följande exempel.
 
 ![Importera eller exportera en sida eller ett fragment i XLIFF-format.](media/channel-mapping-18.png)
 
 ## <a name="manage-site-content-that-has-multiple-channels-and-languages"></a>Hantera webbplatsinnehåll som har flera kanaler och språk
 
-En webbplats med flera kanaler och/eller språk lagrar en unik variant av varje sida och fragment för varje kombination av kanal och språk. Detta gör att sidvarianterna kan innehålla lokaliserade data, men du får också flexibiliteten att ändra utseendet för en sida för en specifik variant.
+En webbplats med flera kanaler och/eller språk lagrar en unik variant av varje sida och fragment för varje kombination av kanal och språk. Detta gör att sidvarianterna kan innehålla lokalanpassade data, men du får också flexibiliteten att ändra utseendet för en sida för en specifik variant.
 
-Information om hur du arbetar med sidvarianter finns i avsnittet [Implementera sidvarianter för varje språk](#implement-page-variants-for-each-language).
+Information om hur du arbetar med sidvarianter finns i avsnittet [Implementera sidvarianter för varje språk](#implement-page-variants-for-each-language) i denna artikel.
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>Konfigurera flera kanaler på en näthandelsplats
 

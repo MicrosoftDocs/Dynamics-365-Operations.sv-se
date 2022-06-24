@@ -1,6 +1,6 @@
 ---
 title: Automatisk frisläppning av försändelse för direktutleverans
-description: Det här ämnet beskriver en direktutleveransstrategi som gör att du automatiskt kan frisläppa en efterfrågeorder till lagerstället när tillverkningsordern som tillhandahåller efterfrågade kvantiteter rapporteras som färdig, så att kvantiteten flyttas direkt från produktionsutleveransplatsen till den utgående platsen.
+description: Denna artikel beskriver en direktutleveransstrategi som gör att du automatiskt kan frisläppa en efterfrågeorder till lagerstället när tillverkningsordern som tillhandahåller efterfrågade kvantiteter rapporteras som färdig, så att kvantiteten flyttas direkt från produktionsutleveransplatsen till den utgående platsen.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903794"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frisläppning av försändelse för direktutleverans
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver en direktutleveransstrategi som gör att du automatiskt kan frisläppa en efterfrågeorder till lagerstället när tillverkningsordern som tillhandahåller efterfrågekvantiteten rapporteras som färdig. På det här sättet flyttas den kvantitet som krävs för att slutföra efterfrågeorder direkt från produktionsutleveransplatsen till den utgående platsen.
+Denna artikel beskriver en direktutleveransstrategi som gör att du automatiskt kan frisläppa en efterfrågeorder till lagerstället när tillverkningsordern som tillhandahåller efterfrågekvantiteten rapporteras som färdig. På det här sättet flyttas den kvantitet som krävs för att slutföra efterfrågeorder direkt från produktionsutleveransplatsen till den utgående platsen.
 
 Direktutleverans är ett lagerhanteringsflöde där den kvantitet som krävs för att uppfylla en utgående order dirigeras till orderns utgående docknings- eller mellanlagringsområde från den plats där den inkommande ordern mottogs. (Den inkommande ordern kan vara en inköpsorder, en överföringsorder eller en produktionsorder.) Den avancerade funktionen för direktutleverans stöder alla leverans- och efterfrågeorder och kräver att det utgående efterfrågan frigörs innan affärsmöjligheten för direktutleverans identifieras, har funktionen för automatisk frisläppning av försändelse följande egenskaper:
 
@@ -33,7 +33,7 @@ Direktutleverans är ett lagerhanteringsflöde där den kvantitet som krävs fö
 
 De här funktionerna för direktutleverans har två fördelar:
 
-- Lageroperationerna kan hoppa över steget med att föra in kvantiteter av färdiga varor i det vanliga lagret, om dessa kvantiteter bara hämtas igen för att genomföra den utgående ordern. I stället kan kvantiteterna flyttas en gång, från utleveransplatsen till en förpacknings-/leveransplats. På så sätt kan funktionen minimera det antal gånger som lagret hanteras och i slutändan maximerar du tid och sparar pengar för lagrets arbetsstyrning.
+- Lageråtgärderna kan hoppa över steget med att föra in kvantiteter av färdiga varor i det vanliga lagret, om dessa kvantiteter bara hämtas igen för att genomföra den utgående ordern. I stället kan kvantiteterna flyttas en gång, från utleveransplatsen till en förpacknings-/leveransplats. På så sätt kan funktionen minimera det antal gånger som lagret hanteras och i slutändan maximerar du tid och sparar pengar för lagrets arbetsstyrning.
 - Lageråtgärderna kan senarelägga frisläppningen av försäljningsorder och överföringsorder till lagerstället tills produktionen av färdiga varor för den associerade tillverkningsordern rapporteras som färdig. Den här fördelen kan vara särskilt relevant i produktionsmiljöer för tillverka på beställning, där tillverkningstid för produktion brukar vara längre än produktionstiderna i tillverka mot lager-miljöer.
 
 ## <a name="prerequisites"></a>Förutsättningar
@@ -62,7 +62,7 @@ Ett typiskt direktleveransflöde består av följande huvudsteg.
     1. En produktionsplanering uppskattar och släpper produktionsordern. (Uppskattning omfattar råmaterialreservation och frisläppningen inkluderar frisläppning till ett lagerställe.)
     2. Lagerarbetaren startar och slutför råmaterialplockningen från lagringsplatsen till platsen för produktionsinleverans, enligt produktionsplockningsarbetet.
     3. En fabriksoperatör startar tillverkningsordern.
-    4. I den senaste operationen använder en maskin operatör den mobila enheten för att rapportera tillverkningsordern som färdig.
+    4. I den senaste åtgärden använder en maskin operatör den mobila enheten för att rapportera tillverkningsordern som färdig.
 
 4. I systemet används inställningarna för att identifiera direktutleverans för de två kopplade orderna och sedan utföra följande uppgifter:
 
@@ -85,7 +85,7 @@ För det här scenariet måste du ha demonstrationsdata installerad och du måst
 3. I fältet **Sekvensnummer**, ange **1**.
 4. I fältet **Mall-ID för direktleverans** ange ett namn, t.ex. **XDock\_RAF**.
 5. I fältet **principen för frisläppning av efterfrågan**, välj **Vid leverans av inleverans**.
-6. I fältet **Lagerställe**, ange numret på det lagerställe där du vill ställa in processen för direktleverans. Välj **51** i det här exemplet.
+6. I fältet **Lagerställe**, ange numret på det lagerställe där du vill konfigurera processen för direktleverans. Välj **51** i det här exemplet.
 
     > [!NOTE]
     > Så snart du väljer **Vid leverans av inleverans** som policy för efterfrågan, blir alla andra fält på sidan inte tillgängliga. Du kan inte heller definiera några leveranskällor. Det här problemet beror på att funktionen för direktleverans som använder funktionen för automatisk frisläppning av försändelse bara stöder tillverkningsorder som leveranskällor och den kräver att det finns en markering mellan försäljningsorder och tillverkningsorder. Om du väljer **Innan leverans av inleverans** som frisläppning av efterfråga är fälten på **planering** och **leveranskällor** tillgängliga och kan redigeras.
@@ -114,7 +114,7 @@ Om du vill begränsa vilka typer av platser där direktlevererade färdiga varor
 
 #### <a name="location-directives"></a>Platsdirektiv
 
-En standardprocess för artikelinförsel för färdiga varor kräver platsdirektivet **Placera** för att vägleda produktionen av plockade produktionskvantiteter till ett vanligt lagringsutrymme. På samma sätt måste du ställa in platsdirektivet direktleverans **Placera** om du vill att jobbet ska ställa in den färdiga kvantiteten på en angiven avgående plats som bevarar försändelsen av den associerade försäljningsordern.
+En standardprocess för artikelinförsel för färdiga varor kräver platsdirektivet **Placera** för att vägleda produktionen av plockade produktionskvantiteter till ett vanligt lagringsutrymme. På samma sätt måste du konfigurera platsdirektivet direktleverans **Placera** om du vill att jobbet ska konfigurera den färdiga kvantiteten på en angiven avgående plats som bevarar försändelsen av den associerade försäljningsordern.
 
 För direktleverans, som för vanlig artikelinförsel av färdiga varor, behöver du inte skapa ett platsdirektiv för åtgärden välj arbetsplats eftersom utleveransplatsen anges. Den här utleveransplatsen förväntas också vara angiven som standardinställd utleveransplats på en av de resursbaserade posterna (dvs. resursen, resursgruppsrelationen eller resursgruppen) eller som en standardplats för produktion av färdiga varor för en lokal.
 

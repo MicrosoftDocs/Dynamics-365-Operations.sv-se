@@ -1,6 +1,6 @@
 ---
 title: Generera en begränsad plan
-description: I det här avsnittet visas hur du skapar en plan som tar hänsyn till både material- och kapacitetsbegränsningar.
+description: I denna artikel visas hur du skapar en plan som tar hänsyn till både material- och kapacitetsbegränsningar.
 author: t-benebo
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8372f4e35b34ff66ef55c0961b867a1aff7a5e6
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 65884d556724cd6132fe328e95a5bec78885c174
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904026"
 ---
 # <a name="generate-a-constrained-plan"></a>Generera en begränsad plan
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet visas hur du skapar en plan som tar hänsyn till både material- och kapacitetsbegränsningar. Planen garanterar att produktionen inte startas innan det finns tillgängligt material och resurserna inte är överbokade. 
+I denna artikel visas hur du skapar en plan som tar hänsyn till både material- och kapacitetsbegränsningar. Planen garanterar att produktionen inte startas innan det finns tillgängligt material och resurserna inte är överbokade. 
 
 Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för produktionsplaneraren.
 

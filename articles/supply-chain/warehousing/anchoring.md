@@ -1,6 +1,6 @@
 ---
 title: Förankring
-description: I det här avsnittet beskrivs hur du aktiverar och använder ankare.
+description: I denna artikel beskrivs hur du aktiverar och använder ankare.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-29
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26a7bf60912ff1e8a23305e9331d520fe8d65727
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8a0fa849f07f0cc0a41a663fc97b5aba927700b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903823"
 ---
 # <a name="anchoring"></a>Förankring
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller information om förankringsprocess till lagerställe. Det beskriver den konfiguration som krävs och den logik som körs när en lagerarbetare ändrar antingen mellanlagringsplatsen eller inläsningsplatsen.
+Denna artikel innehåller information om förankringsprocessen. Det beskriver den konfiguration som krävs och den logik som körs när en lagerarbetare ändrar antingen mellanlagringsplatsen eller inläsningsplatsen.
 
 Med hjälp av förankringsfunktionen kan du åsidosätta mellanlagrings- eller inläsningsplatsen. Alla öppna puts skickas sedan till den nya mellanlagrings- eller inläsningsplatsen som du anger.
 
@@ -31,16 +31,16 @@ Den här funktionen kan hjälpa arbetare att bli mer effektiva när de levererar
 - En arbetare som måste lägga objekt för beställning 1 på en mellanlagringsplats vid brygga 1 kan inte slutföra den här åtgärden eftersom en tidigare last inte har rensat platsen. I stället för att vänta på att mellanlagringplatsen Dock 1 blir tillgänglig, kan arbetaren välja att använda mellanlagringsplatsen för Dock 2. I det här fallet åsidosätter arbetaren den föreslagna mellanlagringsplatsen. Placeringsplatsen för alla återstående artiklar för arbete uppdateras då till mellanlagringsplatsen Docka 2.
 - En arbetare som måste utföra flera plockningar för samma leverans kan vara säker på att alla placerade artiklar finns på samma plats. Därför krävs mindre tid att läsa in artiklarna i lastbilen.
 
-Du konfigurerar ankare för mobila enheter-menyalternativ genom att använda alternativet **Ankare**. Om du anger detta alternativ till *ja*, kan du använda fältet **förankra efter** för att ange om du vill ankra med sändning eller last. Om du ställer in fältet **Förankra efter** till *Leverans*, efterföljande öppna placeringar kommer att ändras till den nya platsen för den försändelsen. Om du ställer in fältet *Last*, efterföljande öppna placeringar kommer att ändras till den nya platsen för den lasten.
+Du konfigurerar ankare för mobila enheter-menyalternativ genom att använda alternativet **Ankare**. Om du anger detta alternativ till *ja*, kan du använda fältet **förankra efter** för att ange om du vill ankra med sändning eller last. Om du konfigurerar fältet **Förankra efter** till *Leverans*, efterföljande öppna placeringar kommer att ändras till den nya platsen för den försändelsen. Om du konfigurerar fältet *Last*, efterföljande öppna placeringar kommer att ändras till den nya platsen för den lasten.
 
 > [!IMPORTANT]
 > Platsen för efterföljande öppna placeringar ändras bara på arbetsraderna som genereras från samma arbetsmallrad. Med andra ord ankar systemet de placeringsrader som härstammar från samma arbetsmallrad.
 
-Det här avsnittet innehåller ett scenario som visar hur förankring fungerar. Under scenariot skapar du uppsättningar med försäljningsorder och släpper varje uppsättning till lagerstället. Du åsidosätter sedan den föreslagna mellanlagringsplatsen och kontrollerar att allt återstående arbete med en lagerplats har dirigerats till den nya platsen.
+Denna artikel innehåller ett scenario som visar hur förankring fungerar. Under scenariot skapar du uppsättningar med försäljningsorder och släpper varje uppsättning till lagerstället. Du åsidosätter sedan den föreslagna mellanlagringsplatsen och kontrollerar att allt återstående arbete med en lagerplats har dirigerats till den nya platsen.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Scenario: Göra demodata tillgängliga
 
-Scenariot i detta ämne innehåller referensvärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt ställa in den juridiska personen på *USMF* innan du börjar.
+Scenariot i denna artikel innehåller referensvärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt konfigurera den juridiska personen på *USMF* innan du börjar.
 
 ## <a name="scenario-setup"></a>Scenarioinställningar
 
@@ -170,7 +170,7 @@ Innan du kan prova förankringsfunktionen måste du skapa en viss efterfrågan. 
     - **Artikelnummer:** *A0001*
     - **Kvantitet:** *1*
 
-1. På verktygsfältet, välj **Lägg till rad** för att lägga till en andra försäljningsorderrad och ställa in följande värden:
+1. På verktygsfältet, välj **Lägg till rad** för att lägga till en andra försäljningsorderrad och konfigurera följande värden:
 
     - **Artikelnummer:** *A0002*
     - **Kvantitet:** *1*
