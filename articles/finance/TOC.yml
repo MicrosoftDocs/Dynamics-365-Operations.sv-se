@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (maj)
                   href: get-started/whats-new-changed-10-0-26.md
-                - name: Finance 10.0.25 (april)
-                  href: get-started/whats-new-changed-10-0-25.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -462,6 +460,8 @@
                   items:
                     - name: Konfigurera periodisering av intäkt och utgift
                       href: accounts-receivable/sb-deferrals.md
+                    - name: Bokföringsmetod för periodisering
+                      href: accounts-receivable/Deferral-posting-methods.md
                     - name: Skapa periodiseringsscheman
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Standardtransaktioner för periodisering
@@ -684,13 +684,13 @@
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Stämma av bankutdrag med hjälp av avancerad bankavstämning
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Avancerad MT940-import för bankavstämning – uppgradering av sammansatt dataenhet
+                - name: Avancerad MT940-import för bankavstämning – uppgradering av sammansatt dataentitet
                   href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: Översikt över avancerad bankavstämning
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
                 - name: Felsökning vid import av bankutdragsfil
                   href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
-                - name: Uppdatera bankjournalens sammansatta enhet
+                - name: Uppdatera bankjournalens sammansatta entitet
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Kostnadsredovisning
           items:
@@ -1214,6 +1214,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Komponenter i ekonomisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Visa och utforma ekonomiska rapporter
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
             - name: Valutafunktioner i ekonomisk rapportering
               href: general-ledger/financial-reporting-currency-capability.md
             - name: Beräkning av balanserade vinstmedel i ekonomisk rapportering
@@ -1978,11 +1980,13 @@
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: Ställ in bankkontonummer för Brasilien
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+                - name: Överföringsorder
+                  href: localizations/latam-bra-about-transfer-orders.md
                 - name: Skatter
                   items:
                     - name: Brasilianska skatter – översikt
                       href: localizations/latam-bra-calculate-taxes.md
-                    - name: Beräkna moms på inköpsrekvisitioner
+                    - name: Beräkna skatt på inköpsrekvisitioner
                       href: localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                     - name: Skapa en momsvärdering - ICMS
                       href: localizations/tasks/br-10001-4-create-tax-assessment-icms.md
@@ -2116,6 +2120,8 @@
                   href: localizations/emea-cze-intra-community-VAT.md
                 - name: Årsbokslut
                   href: localizations/emea-cze-hun-year-end.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-cze-eu-sales-list.md
             - name: Danmark
               items:
                 - name: Danmark – översikt
@@ -2130,8 +2136,8 @@
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
                 - name: Lista över försäljning inom EU
                   href: localizations/emea-dnk-eu-sales-list.md
-                - name: Importera elektronisk OIOUBL-faktureringskonfiguration
-                  href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+                - name: Elektroniska kundfakturor i Danmark
+                  href: localizations/emea-dnk-e-invoices.md
                 - name: Bokföra en fritextfaktura med betalningsblankett
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: Bokför en projektfaktura med betalningsblankett
@@ -2220,6 +2226,8 @@
                       href: localizations/emea-ISO20022-file-formats.md
                     - name: Importera konfiguration för ISO20022-autogiro
                       href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+                    - name: Förutsättningar för ISO 20022-kreditöverföringsformat
+                      href: localizations/emea-fra-ISO20022-international.md
                     - name: Importera konfiguration av ISO20022-kreditöverföring
                       href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
                     - name: Ställ in företagets bankkonton för ISO20022-kreditöverföringar
@@ -2462,6 +2470,8 @@
                   href: localizations/emea-hun-intrastat.md
                 - name: Beräkningar av uppskjuten moms
                   href: localizations/emea-hun-deferred-vat.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-hun-eu-sales-list.md
             - name: Island
               items:
                 - name: Island – översikt
@@ -2766,6 +2776,8 @@
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: Ställ in TDS-registreringsnummer för juridiska personer
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Ställ in komponentgrupperna för källskatt för skattetypen TDS
+                                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                                 - name: Ställ in källskattemyndigheter för skattetypen TDS
                                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                                 - name: Ställ in skattekomponenter för skattetypen TDS
@@ -2968,6 +2980,8 @@
                   href: localizations/tasks/configure-depreciation-profile-posting.md
                 - name: Konfigurera huvudkonton för bokföring av utrangering av anläggningstillgångar och marknadsdiskonteringsränta
                   href: localizations/tasks/configure-main-accounts-asset-retirement.md
+                - name: Konsumtionsskatterapport
+                  href: localizations/apac-jpn-consumption-tax-report.md
                 - name: Konsoliderade fakturor
                   href: localizations/apac-jpn-consolidate-invoices.md
                 - name: Skapa en anläggningstillgång med ytterligare avskrivning
@@ -3416,6 +3430,8 @@
                           href: localizations/rus-register-acquisition.md
                         - name: Anskaffa anläggningstillgångar och sätta dem i drift
                           href: localizations/rus-fixed-asset-acquisition.md
+                        - name: Fordon och fastigheter som anläggningstillgångar
+                          href: localizations/rus-vehicles-realty.md
                         - name: Beräkna avskrivning
                           href: localizations/rus-depreciation-calculation.md
                         - name: Delvis demontering (försäljning) av anläggningstillgång
@@ -3442,8 +3458,10 @@
                           href: localizations/rus-fa-inquiries-reports.md
                     - name: Anläggningstillgångar utan värde och arbetskläder
                       items:
-                        - name: NVFA (Not Valuable Fixed Assets) (Ryssland)
+                        - name: NVFA (Anläggningstillgångar utan värde) (Ryssland)
                           href: localizations/rus-not-valuable-assets.md
+                        - name: 'Primära formulär för NVFA, arbetskläder och specialutrustning (Ryssland)'
+                          href: localizations/rus-nvfa.md
                         - name: Redovisning av arbetskläder/särskild utrustning (Ryssland)
                           href: localizations/rus-working-clothes-instruments-accounting.md
                     - name: Integrera anläggningstillgångar med modulen för tillgångshantering
@@ -3520,6 +3538,8 @@
                       href: localizations/rus-land-tax-declaration.md
                     - name: Vinstskattdeklaration
                       href: localizations/rus-profit-tax-declaration.md
+                    - name: Rapport om åtgärder med spårbara varor
+                      href: localizations/rus-traceable-goods-operation-report.md
                 - name: Organisationsadministration
                   items:
                     - name: Momsregistreringsinformation som berör adress
@@ -3849,9 +3869,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/finance/toc.json
             - name: Hanteringsverktyg för privilegierade användare
               items:
-                - name: Power BI-integration med enhetslagring
+                - name: Power BI-integration med entitetslagring
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
-                - name: Lösa problem efter underhålla av enhetslagring
+                - name: Lösa problem efter underhållning av entitetslagring
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
                 - name: Konfigurera Power BI-integreringen
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
@@ -4585,7 +4605,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/finance/toc.json
             - name: Office-integration – självstudier
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
-            - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
+            - name: Öppna entitetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
             - name: Öppna i Excel-upplevelse – vanliga frågor
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json

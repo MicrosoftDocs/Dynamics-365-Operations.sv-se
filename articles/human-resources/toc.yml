@@ -84,9 +84,9 @@
                   href: hr-admin-integration-common-data-service.md
                 - name: Dataverse-tabeller
                   href: hr-developer-entities.md
-                - name: Konfigurera virtuella Dataverse-register
+                - name: Konfigurera virtuella Dataverse-tabeller
                   href: hr-admin-integration-common-data-service-virtual-entities.md
-                - name: Vanliga frågor och svar om virtuella register i Human Resources
+                - name: Vanliga frågor och svar om virtuella tabeller i Human Resources
                   href: hr-admin-virtual-entity-faq.md
                 - name: Konfigurera integration med Finance
                   href: hr-admin-integration-finance.md
@@ -100,7 +100,7 @@
                   items:
                     - name: Office-integration – självstudier
                       href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Uppdatera enhetsdata i Excel
+                    - name: Uppdatera entitetsdata i Excel
                       href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                     - name: Öppna i Excel-upplevelse – vanliga frågor
                       href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
@@ -110,9 +110,9 @@
                   items:
                     - name: Översikt över ramverk för datahantering
                       href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Datatabeller
+                    - name: Dataentiteter
                       items:
-                        - name: Översikt över datatabeller
+                        - name: Översikt över dataentiteter
                           href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: Konfigurationsdataprojekt
                           href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
@@ -126,15 +126,15 @@
                           href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: Konfigurationsdatamallar
                           href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Spåra ändringar av en enhet
+                        - name: Spåra ändringar av en entitet
                           href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Söka efter information om standarddatatabeller
+                        - name: Söka efter information om standarddataentiteter
                           href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: Datamallar med flera kalkylblad
                           href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Aktivera ändringsspårning för enheter
+                        - name: Aktivera ändringsspårning för entiteter
                           href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Konfigurationsnycklar och datatabeller
+                        - name: Konfigurationsnycklar och dataentiteter
                           href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: Konfigurationsdatapaket
                           href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
@@ -142,15 +142,15 @@
                       items:
                         - name: Översikt över jobb för import och export av data
                           href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
+                        - name: Bästa praxis för att importera verifikationer med hjälp av entiteten Allmän journal
                           href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Utveckling för datatabeller
+                    - name: Utveckling för dataentiteter
                       items:
-                        - name: Designprinciper och metodtips för datatabeller
+                        - name: Designprinciper och metodtips för dataentiteter
                           href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Skapa nya datatabeller
+                        - name: Skapa nya dataentiteter
                           href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Egenskaper för datatabell
+                        - name: Egenskaper för dataentitet
                           href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: Skapa beräknade kolumner och virtuella fält
                           href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
@@ -160,23 +160,23 @@
                           href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: Arvmönster
                           href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Guideregler för datatabell
+                        - name: Guideregler för dataentitet
                           href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: Metadataegenskaper
                           href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: 'Valideringar, standarder och omappade fält'
                           href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Säkerhet och datatabeller
+                        - name: Säkerhet och dataentiteter
                           href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                         - name: Använda testverktyg i tjänster från tredje part
                           href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Skapa skrivskyddade enheter som visar ekonomiska dimensioner
+                        - name: Skapa skrivskyddade entiteter som visar ekonomiska dimensioner
                           href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                     - name: Ta med din egen databas
                       href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                     - name: Optimera BYOD batchjobb
                       href: hr-admin-integration-byod-batch-jobs.md
-                    - name: Automatiserad uppdatering av Enhetslagring
+                    - name: Automatiserad uppdatering av Entitetslagring
                       href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                     - name: Automatisering av datauppgift
                       href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
@@ -496,6 +496,8 @@
                   items:
                     - name: Hantera processer för rekryteringsprojekt
                       href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Konfigurera rekryteringsprojekt
+                      href: hr-personnel-develop-open-job-requisition.md
                     - name: Ange sökanden och ansökningsdata manuellt
                       href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                     - name: Utveckla och öppna jobbrekvisitioner
@@ -626,6 +628,10 @@
                   items:
                     - name: Ställa in förmånsplaner
                       href: hr-benefits-plans-setup.md
+                    - name: Skapa förmånsplaner för arbetare
+                      href: hr-benefits-plans-worker.md
+                    - name: Konfigurera framtida livshändelser
+                      href: hr-benefits-plans-future-life-events.md
                     - name: Ställa in flexkreditprogram
                       href: hr-benefits-plans-flex-credit-programs.md
                 - name: Bearbeta förmånsplaner
@@ -818,7 +824,7 @@
               items:
                 - name: Office-integration – självstudier
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
-                - name: Uppdatera enhetsdata i Excel
+                - name: Uppdatera entitetsdata i Excel
                   href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
                 - name: Skapa Öppna i Excel-upplevelse
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
@@ -828,14 +834,18 @@
           items:
             - name: Optimera frågor för virtuell Dataverse-tabell
               href: hr-developer-optimize-virtual-table-queries.md
-            - name: Vanliga frågor och svar om virtuella register i Human Resources
+            - name: Vanliga frågor och svar om virtuella tabeller i Human Resources
               href: hr-admin-virtual-entity-faq.md
-        - name: Referens för enhets-API
+        - name: Referens för entitets-API
           items:
             - name: Autentisering
               href: hr-developer-api-authentication.md
-            - name: Enheter
+            - name: Entiteter
               items:
+                - name: Jobbinformation
+                  href: hr-admin-integration-api-job-detail.md
+                - name: Alternativ för anställningstyp
+                  href: hr-admin-integration-payroll-api-hcmemploymenttype.md
                 - name: MyLeaveRequests
                   items:
                     - name: Översikt över MyLeaveRequests
@@ -848,7 +858,7 @@
               href: hr-admin-integration-ats-api-introduction.md
             - name: Autentisering mellan servrar för ATS-integrationer
               href: hr-admin-integration-ats-api-s2s-auth.md
-            - name: Rekryteringsbegäran och relaterade enheter
+            - name: Rekryteringsbegäran och relaterade entiteter
               items:
                 - name: Rekryteringsbegäran
                   href: hr-admin-integration-ats-api-recruiting-request.md
@@ -872,7 +882,7 @@
                   href: hr-admin-integration-ats-api-recruiting-request-status.md
                 - name: Kategori för lagstadgade jobb
                   href: hr-admin-integration-ats-api-regulatory-job-category.md
-            - name: Kandidat att anställa och relaterade enheter
+            - name: Kandidat att anställa och relaterade entiteter
               items:
                 - name: Kandidat att anställa
                   href: hr-admin-integration-ats-api-candidate-to-hire.md
@@ -960,11 +970,11 @@
                   href: hr-admin-integration-payroll-api-leave-type.md
                 - name: Begäran om tjänstledighet
                   href: hr-admin-integration-payroll-api-leave-request.md
-            - name: Förmånsrelaterade enheter
+            - name: Förmånsrelaterade entiteter
               items:
                 - name: Förmånsplan för lönearbetare
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
-            - name: Andra enheter
+            - name: Andra entiteter
               items:
                 - name: Personens namnhistorik
                   href: hr-admin-integration-payroll-api-person-name-history.md

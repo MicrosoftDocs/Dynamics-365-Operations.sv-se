@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Plattformsuppdateringar för version 10.0.26 (maj 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Plattformsuppdateringar för version 10.0.25 (april 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -88,13 +86,13 @@
               href: data-entities/fin-ops-connector.md
             - name: Utveckling för integration
               items:
-                - name: Dataintegrering med datatabeller
+                - name: Dataintegrering med dataentiteter
                   items:
-                    - name: Översikt över dataintegrering med datatabeller
+                    - name: Översikt över dataintegrering med dataentiteter
                       href: data-entities/data-management-integration-data-entity.md
-                    - name: Utveckla en tabell för migrering av data
+                    - name: Utveckla en entitet för migrering av data
                       href: data-entities/develop-entity-for-data-migration.md
-                    - name: Utveckla sammansatta datatabeller
+                    - name: Utveckla sammansatta dataentiteter
                       href: data-entities/develop-composite-data-entities.md
                     - name: Konfigurera delning ekonomiska data mellan företag
                       href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
@@ -166,9 +164,9 @@
           items:
             - name: Översikt över datahantering
               href: data-entities/data-entities-data-packages.md
-            - name: Datatabeller
+            - name: Dataentiteter
               items:
-                - name: Översikt över datatabeller
+                - name: Översikt över dataentiteter
                   href: data-entities/data-entities.md
                 - name: Konfigurationsdataprojekt
                   href: data-entities/configuration-data-projects.md
@@ -182,15 +180,15 @@
                       href: data-entities/configuration-data-packages.md
                 - name: Konfigurationsdatamallar
                   href: data-entities/configuration-data-templates.md
-                - name: Spåra ändringar av en enhet
+                - name: Spåra ändringar av en entitet
                   href: data-entities/entity-change-track.md
-                - name: Söka efter information om standarddatatabeller
+                - name: Söka efter information om standarddataentiteter
                   href: data-entities/data-entities-report.md
                 - name: Datamallar med flera kalkylblad
                   href: data-entities/excel-template-multiple.md
-                - name: Aktivera ändringsspårning för enheter
+                - name: Aktivera ändringsspårning för entiteter
                   href: data-entities/entity-change-track.md
-                - name: Konfigurationsnycklar och datatabeller
+                - name: Konfigurationsnycklar och dataentiteter
                   href: data-entities/config-key-entities.md
                 - name: Konfigurationsdatapaket
                   href: data-entities/configuration-data-packages.md
@@ -200,17 +198,17 @@
                   href: data-entities/data-import-export-job.md
                 - name: Synkronisera datum och tid i importjobb
                   href: data-entities/data-synchronize-date-and-time.md
-                - name: Importera verifikationer med hjälp av enheten Allmän journal
+                - name: Importera verifikationer med hjälp av entiteten Allmän journal
                   href: data-entities/tips-tricks-import-general-journal-entity.md
                 - name: Optimera datamigrering för appar för ekonomi och drift
                   href: sysadmin/optimize-data-migration.md
-            - name: Utveckling för datatabeller
+            - name: Utveckling för dataentiteter
               items:
-                - name: Designprinciper och metodtips för datatabeller
+                - name: Designprinciper och metodtips för dataentiteter
                   href: dev-tools/design-best-practices.md
-                - name: Skapa nya datatabeller
+                - name: Skapa nya dataentiteter
                   href: data-entities/build-consuming-data-entities.md
-                - name: Egenskaper för datatabell
+                - name: Egenskaper för dataentitet
                   href: data-entities/behavioral-properties-data-entities.md
                 - name: Skapa beräknade kolumner och virtuella fält
                   href: data-entities/data-entity-computed-columns-virtual-fields.md
@@ -220,21 +218,21 @@
                   href: data-entities/countryregion-codes-configuration-keys.md
                 - name: Arvmönster
                   href: data-entities/support-super-type-sub-type.md
-                - name: Guideregler för datatabell
+                - name: Guideregler för dataentitet
                   href: data-entities/data-entity-wizard-rules.md
                 - name: Metadataegenskaper
                   href: data-entities/behavioral-properties-data-entities.md
                 - name: 'Valideringar, standarder och omappade fält'
                   href: data-entities/validations-defaults-unmapped-fields.md
-                - name: Säkerhet och datatabeller
+                - name: Säkerhet och dataentiteter
                   href: data-entities/security-data-entities.md
                 - name: Använda testverktyg i tjänster från tredje part
                   href: data-entities/third-party-service-test.md
-                - name: Skapa skrivskyddade enheter som visar ekonomiska dimensioner
+                - name: Skapa skrivskyddade entiteter som visar ekonomiska dimensioner
                   href: financial/read-only-entity-financial.md
             - name: Ta med din egen databas
               href: analytics/export-entities-to-your-own-database.md
-            - name: Automatiserad uppdatering av Enhetslagring
+            - name: Automatiserad uppdatering av Entitetslagring
               href: analytics/automated-entity-store-refresh.md
             - name: Automatisering av datauppgift
               href: data-entities/data-task-automation.md
@@ -252,7 +250,7 @@
               href: data-entities/finance-data-azure-data-lake.md
             - name: Lagrade data och metadata i Azure Data Lake
               href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
-            - name: Gör enhetslagring tillgängligt som en Data Lake
+            - name: Gör entitetslagring tillgängligt som en Data Lake
               href: data-entities/entity-store-data-lake.md
             - name: Affärshändelser som genererats av Exportera till Azure Data Lake-tjänsten (förhandsversion)
               href: data-entities/Azure-Data-Lake-Generates-Biz-events.md
@@ -376,11 +374,11 @@
                       href: deployment/on-premises-overview.md
                     - name: Planera och förbereda för lokala distributioner
                       href: deployment/plan-onprem-deployment.md
-                    - name: Program som stöds i Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Lokala program som stöds
                       href: deployment/onprem-compatibility.md
                     - name: Storlekskrav för maskinvara
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Autentisering i Dynamics 365 Finance + Operations (on-premises)
+                    - name: Autentisering i lokala miljöer
                       href: deployment/authentication-onprem.md
                 - name: Konfigurera och distribuera lokala miljöer
                   items:
@@ -408,9 +406,9 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurera proxyservrar för lokala miljöer
                       href: deployment/onprem-reverseproxy.md
-                    - name: Konfigurera lagerstyrningsappen för lokala distributioner
+                    - name: Konfigurera Warehousing-appen för lokala distributioner
                       href: deployment/warehousing-for-on-premise-deployments.md
-                    - name: Aktivera RSAT i Finance + Operations (on-premises)-miljöer
+                    - name: Aktivera RSAT i lokala miljöer
                       href: deployment/onprem-rsat-configuration.md
                     - name: Installera nätverksskrivare i lokala miljöer
                       href: analytics/install-network-printer-onprem.md
@@ -428,9 +426,9 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Återanvända samma AD FS-instans i flera miljöer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Uppgradera Windows Server i dina Microsoft Dynamics 365 Finance + Operations (on-premises)-miljöer
+                    - name: Uppgradera Windows Server i dina lokala miljöer
                       href: deployment/onprem-upgrade-os.md
-                    - name: Uppgradera SQL Server-instansen för Microsoft Dynamics 365 Finance + Operations (on-premises)-miljöer
+                    - name: Uppgradera eller ersätt SQL Server-instansen i lokala miljöer
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
@@ -980,8 +978,10 @@
               items:
                 - name: Konfigurationshanterare – översikt
                   href: lifecycle-services/configuration-manager-lcs.md
-                - name: Ställ in konfigurationshanterare
+                - name: Ställ in Konfigurationshanteraren
                   href: lifecycle-services/set-up-configuration-manager-lcs.md
+                - name: Kopiera konfigurationer
+                  href: lifecycle-services/copy-configuration-lcs.md
             - name: Konfigurera tjänsten för koduppgradering
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Skapa eller uppdatera metoder
@@ -1050,7 +1050,9 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Självstudier för Azure DevOps-tillägg (allmänt tillgänglig förhandsversion)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Tillägg för Dynamics 365 Translation Service Visual Studio Code (allmänt tillgänglig förhandsversion)
+                - name: Visual Studio-tillägg (privat förhandsversion)
+                  href: lifecycle-services/dts-visual-studio.md
+                - name: Visual Studio Code-tillägg (allmänt tillgänglig förhandsversion)
                   href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform-integration
           items:
@@ -1088,7 +1090,7 @@
                           href: data-entities/dual-write/requirements-and-prerequisites.md
                         - name: Använda guiden för dubbelriktad skrivning för att länka dina miljöer
                           href: data-entities/dual-write/link-your-environment.md
-                        - name: Aktivera enhetsmappning för dubbelriktad skrivning
+                        - name: Aktivera entitetsmappning för dubbelriktad skrivning
                           href: data-entities/dual-write/enable-entity-map.md
                     - name: Paket för separat dubbelriktad skrivning för programorkestrering
                       href: data-entities/dual-write/separated-solutions.md
@@ -1102,7 +1104,7 @@
                       href: data-entities/dual-write/uninstall-solutions.md
                 - name: Hantera dubbelriktad skrivning
                   items:
-                    - name: Anpassa enhets- och fältmappningar
+                    - name: Anpassa entitets- och fältmappningar
                       href: data-entities/dual-write/customizing-mappings.md
                     - name: Anpassningsriktlinjer för dubbelriktad skrivning
                       href: data-entities/dual-write/custom-best-practices.md
@@ -1224,7 +1226,7 @@
                   href: power-platform/enable-virtual-entities.md
                 - name: Power Apps-portaler med Ekonomi och drift
                   href: power-platform/power-portal-reference.md
-                - name: Vanliga frågor om Ekonomi och drift virtuella enheter
+                - name: Vanliga frågor om Ekonomi och drift virtuella entiteter
                   href: power-platform/faq.md
             - name: Affärshändelser
               items:
@@ -1602,6 +1604,8 @@
               href: sysadmin/implement-b2b.md
             - name: Dataunderhåll
               href: sysadmin/DataMaintenancePortal.md
+            - name: Hantera åtkomst till nätverksskrivare mellan juridiska personer
+              href: sysadmin/sys-admin-tools-network-printer.md
             - name: Säkerhet
               items:
                 - name: Rollbaserad säkerhet
@@ -1732,7 +1736,7 @@
                       href: migration-upgrade/workflow-subsystem.md
                     - name: Aggregerade modeller används i stället för kuber för analys
                       href: migration-upgrade/in-memory-real-time-aggregate-models.md
-                    - name: Migrera uppgraderade försäljningskuber till enhetslagringen
+                    - name: Migrera uppgraderade försäljningskuber till entitetslagringen
                       href: migration-upgrade/migrate-upgraded-cube-entity-store.md
                     - name: Uppgradera budgetplanering
                       href: migration-upgrade/upgrade-budget-planning.md
