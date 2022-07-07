@@ -11,16 +11,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-02
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 998a30786b3f457b24b6e3c755b2c00967adbd4b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c03109baaa341b25af70840b791ddf04f692fb1a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879175"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016577"
 ---
 # <a name="post-to-charge-account-accounting-principle"></a>Bokföringsprincip för att bokföra på debiteringskonto
 
-Med bokföringsprincipen *bokför på debiteringskonto* kan du redovisa och enklare stämma av eventuella skillnader som uppstår i enhetspriset mellan en fysisk bokföring och ekonomisk bokföring, indirekta kostnader för inköpta artiklar och avgifter på en inköpsorder. 
+Med bokföringsprincipen *bokför på debiteringskonto* kan du redovisa och enklare stämma av eventuella skillnader som uppstår i enhetspriset mellan en fysisk bokföring och ekonomisk bokföring, indirekta kostnader för inköpta artiklar och avgifter på en inköpsorder.
 
 Två konfigurationer för koder för leverantörsreskontraavgifter på sidan **Kod för avgifter** (**Leverantörsreskontra \> Ställa in avgifter \> Kod för avgifter**) kan leda till att en inköpsorder påverkar värderingen av lagertillgångar:
 

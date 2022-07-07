@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e09419f802b696179901c394b2b95c9208a12b26
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8f0469d7a3ada0dc30977978a7e9c616e8cf9781
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678302"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017417"
 ---
 # <a name="cancel-a-return-order"></a>Annullera en returorder 
 
@@ -34,11 +34,11 @@ Du kan annullera en returorder i stället för att ta bort den, om du vill spara
 > <P>Det är enbart returorder med statusen <STRONG>Skapad</STRONG> som kan annulleras. Returorder med status <STRONG>Öppen</STRONG> eller <STRONG>Stängd</STRONG> kan inte annulleras.</P>
 
 
-1.  Klicka på **Försäljning och marknadsföring** \> **Returorder** \> **Alla returorder** \> **Alla försäljningsorder**.
+1.  Klicka på **Försäljning och marknadsföring** \> **Försäljningsreturer** \> **Alla returorder**.
     
     –eller–
     
-    Klicka på **Försäljning och marknadsföring** \> **Returorder** \> **Alla returorder** \> **Skapa returorder**.
+    Klicka på **Försäljning och marknadsföring** \> **Försäljningsreturer** \> **Skapade returorder**.
 
 2.  Välj returordern att annullera.
 

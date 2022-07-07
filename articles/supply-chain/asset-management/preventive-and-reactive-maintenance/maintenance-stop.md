@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75e30c8b2d74cc2f1ca538b64e5fc801f9ca130a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42e8ba4e19333cb25464203a2583175ef082ad98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897702"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016490"
 ---
 # <a name="maintenance-downtime-activities"></a>Aktiviteter för underhållsstopp
 
@@ -38,14 +38,14 @@ När du har valt tillgångar för en underhållsstopptidsregistrering inkluderas
 
 ## <a name="maintenance-downtime-activities"></a>Aktiviteter för underhållsstopp
 
-Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** för att öppna en lista med alla aktiviteter för underhållsstopp och visa informationen relaterad till aktiviteterna. Klicka på en länk i kolumnen **Aktiviteter för underhållsstopp** om du vill öppna informationsvyn. Bilden nedan visar ett exempel på listan **Aktiviteter för underhållsstopp**.
+Klicka på **Tillgångshantering** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** för att öppna en lista med alla aktiviteter för underhållsstopp och visa informationen relaterad till aktiviteterna. Klicka på en länk i kolumnen **Aktiviteter för underhållsstopp** om du vill öppna informationsvyn. Bilden nedan visar ett exempel på listan **Aktiviteter för underhållsstopp**.
 
 ![Figur 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Skapa en aktivitet för underhållsstopp
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** eller **Aktiva aktiviteter för underhållsstopp**.
+1. Klicka på **Tillgångshantering** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** eller **Aktiva aktiviteter för underhållsstopp**.
 
 2. Klicka på **Ny**.
 

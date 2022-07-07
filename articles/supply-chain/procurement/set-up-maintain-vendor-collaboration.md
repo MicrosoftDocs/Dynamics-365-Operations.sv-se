@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890840"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023772"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Skapa och underhåll leverantörssamarbete
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890840"
 Lleverantörssamarbetesgränssnittet visar en begränsad uppsättning information om inköpsorder, fakturor och försändelselager till användare av externa leverantörer. Från det här gränssnittet kan en leverantör också svara på anbudsförfrågningar och visa och redigera grundläggande företagsinformation.
 
 Denna artikel förklarar hur du konfigurerar leverantörssamarbete i Dynamics 365 Supply Chain Management. Här förklaras också hur du konfigurerar ett arbetsflöde för nya leverantörers samarbetsanvändare och hu du hanterar säkerhetsrollerna för dessa användare.
-
-> [!NOTE]
-> Informationen om inställningen av säkerhetsroller för leverantörssamarbete gäller bara för den aktuella versionen av Ekonomi och drift. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. Mer information om användarbehörigheter för Leverantörsportalen i Microsoft Dynamics AX, se [användarsäkerheten för leverantörsportalen](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Skapa säkerhetsroller för leverantörssamarbete
 
@@ -138,13 +135,7 @@ Skapa ett arbetsflöde med typen **Inaktivera arbetsflödesplattform för använ
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>Aktivera leverantörssamarbete för en specifik leverantör
 
-Innan du skapar ett användarkonto för någon som ska använda leverantörssamarbete måste du konfigurera leverantören så att den kan använda leverantörssamarbete. Gå till sidan **Leverantörer** och ange fältet **Samarbetesaktivering** på fliken **Allmänt**. Följande alternativ är tillgängliga:
-
-- **Aktiv (IO bekräftas automatiskt)** - Inköpsorder bekräftas automatiskt när leverantören godkänner dem utan ändringar.
-- **Aktiv (IO bekräftas inte automatiskt)** – Din organisation måste manuellt bekräfta inköpsorder det att leverantören har godkänt dem.
-
-> [!NOTE]
-> Anskaffningspersonal i ditt företag kan också genomföra den här uppgiften.
+Innan du skapar ett användarkonto för någon som ska använda leverantörssamarbete måste du konfigurera leverantören så att den kan använda leverantörssamarbete. För mer information om hur du gör detta finns i [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Felsöka nya användare av leverantörssamarbete
 

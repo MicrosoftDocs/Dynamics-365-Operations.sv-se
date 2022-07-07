@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860679"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022535"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -263,9 +263,6 @@ En arbetare registrerar en rast genom att välja **rast** och sedan välja det k
 
 ## <a name="view-the-my-day-dialog"></a>Visa dialogrutan "Min dag"
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 I dialogrutan **Mitt dag** får medarbetare en översikt över sina registreringar och saldon. Dialogrutan är uppdelad i följande tre avsnitt:
 
 - Huvudavsnittet listar de registreringar som den aktuella arbetaren har gjort på ett valt datum. Här visas registreringar för den aktuella dagen och ett datumplockningsfält som gör att arbetaren kan visa andra dagar.
@@ -275,9 +272,6 @@ I dialogrutan **Mitt dag** får medarbetare en översikt över sina registrering
 Administratörer kan lägga till den här funktionen i gränssnittet genom att trycka på knappen **Min dag** på ett verktygsfält för varje relevant flik som beskrivs i [Designa gränssnittet för utförande av produktionsgolvet](production-floor-execution-tabs.md).
 
 ## <a name="working-in-teams"></a>Arbeta i team
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 När flera arbetare tilldelas samma produktionsjobb kan de ingå i ett team. Teamet kan utnämna en arbetare till ledare. De återstående arbetarna blir automatiskt medhjälpare till ledare. För det resulterande teamet måste bara ledaren registrera jobbstatus. Tidsposter gäller för alla gruppmedlemmar.
 

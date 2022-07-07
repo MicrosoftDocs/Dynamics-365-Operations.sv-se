@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8498d6099112cea2c57a6387e7596adb5bcd84e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874200"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016026"
 ---
 # <a name="introduction-to-assets"></a>Introduktion till tillgångar
 
@@ -36,7 +36,7 @@ En tillgång uppdateras automatiskt med relaterad information. Den här relatera
 
 ## <a name="all-assets"></a>Alla tillgångar
 
-Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar** Listsidan **Alla tillgångar** visar alla tillgångar och en del av den information som är relaterad till dem. Om du endast vill visa aktiva tillgångar du **Aktiva tillgångar**. Om du endast vill visa tillgångar som är installerade på de funktionsplatser som du är relaterad till som underhållsarbetare, välj **, Mina aktiva tillgångar**. (Den här relationen har ställts in på sidan **arbetare**. Mer information finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
+Välj **Tillgångshantering** \> **Tillgångar** \> **Alla tillgångar**. Listsidan **Alla tillgångar** visar alla tillgångar och en del av den information som är relaterad till dem. Om du endast vill visa aktiva tillgångar du **Aktiva tillgångar**. Om du endast vill visa tillgångar som är installerade på de funktionsplatser som du är relaterad till som underhållsarbetare, välj **, Mina aktiva tillgångar**. (Den här relationen har ställts in på sidan **arbetare**. Mer information finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
 
 I rutnätsvyn **Alla tillgångar** väljer du en länk i kolumnen **tillgång** för att visa information om den valda posten. Om du vill redigera posten väljer du knappen **redigera**. Detaljvyn visar detaljerad information som är relaterad till tillgången. En ruta för **relaterad informations** till höger innehåller ytterligare tillgångsrelaterad information. Expandera fönstret om du vill visa relaterad information för den valda tillgången.
 

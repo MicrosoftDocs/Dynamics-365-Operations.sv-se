@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c2c90ff76121b436d0fec532268cd3383de0eab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f21cda0abb334432d22cc7e0ccfdab724253d91e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888424"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016961"
 ---
 # <a name="create-item-requirements-for-service-orders"></a>Skapa artikelbehov för serviceorder
 
@@ -34,14 +34,14 @@ Artikelbehov för serviceorder bearbetas via ett projekt. För att kunna skapa e
 
 ## <a name="create-an-item-requirement-for-a-service-order"></a>Skapa ett artikelbehov för en serviceorder
 
-1. Klicka på **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
+1. Klicka på **Servicehantering** \> **Serviceorder** \> **Serviceorder**.
 1. Välj den serviceorder som du vill skapa ett artikelbehov för.
 1. På **Åtgärdsfönster**, på fliken **Varuutförsel**, klicka på **Artikelbehov**.
 1. I formuläret **Artikelbehov** ange information för krävd artikel. Mer information om ett specifikt fält finns i [Artikelbehov (formulär)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>Skapa ett artikelbehov för ett serviceavtal
 
-1. Gå till **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
+1. Gå till **servicehantering** \> **serviceavtal** \> **serviceavtal**.
 1. Öppna serviceavtalet som du vill skapa ett artikelbehov för.
 1. På snabbfliken **Rader**, klicka på **Lägg till** för att skapa en ny rad.
 1. I fältet **Transaktionstyp**, välj **Artikel**.

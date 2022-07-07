@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ae571f4ad7210b31d212b0472610b36dc5c488b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894513"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016084"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installera tillgångar på funktionsplatser
 
@@ -40,7 +40,7 @@ När du har installerat tillgångar på en funktionsplats kan du ersätta en öv
 
 ## <a name="install-an-asset-structure-on-a-functional-location"></a>Installera en tillgångsstruktur på en funktionsplats.
 
-1. Välj **Tillgångshantering** \> **allmänt** \> **funktionsplatser** \> **alla funktionsplatser** eller **aktiva funktionsplatser**.
+1. Välj **Tillgångshantering** \> **funktionsplatser** \> **Alla funktionsplatse** eller **Aktiva funktionsplatser**.
 2. Välj den funktionsplats som tillgången ska installeras på.
 3. Välj **Installera tillgång**.
 

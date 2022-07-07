@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df1e1fe352add8361309df54b2178ec27752466d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880463"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016809"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognoser, arbetsorder och projekt
 
@@ -60,7 +60,7 @@ Till exempel i följande illustration på grund av det sätt som tillgångstypen
 
 ![Figur 1.](media/01-integration-to-pma.png)
 
-Syftet med projekt-ID på arbetsorderjobbet och det relaterade aktivitetsnumret är att spåra kostnader som är relaterade till arbetsorderjobbet och tillgången som är vald i modulen **Projekthantering och redovisning**. (Om du vill visa projekt-ID och aktivitetsnummer väljer du **Tillgångshantering** > **vanliga** > **arbetsorder** > **alla arbetsorder** och väljer sedan arbetsordern. På snabbfliken **Raddetaljer** visar fältet **Projekt-ID** projekt-ID och fältet **aktivitetsnummer** visar aktivitetsnummer.) Mer information om kostnadskontroll i tillgångs hantering finns [Kostnad- och datumkontroll](../controlling-and-reporting/cost-and-date-control.md).
+Syftet med projekt-ID på arbetsorderjobbet och det relaterade aktivitetsnumret är att spåra kostnader som är relaterade till arbetsorderjobbet och tillgången som är vald i modulen **Projekthantering och redovisning**. (Om du vill visa projekt-ID och aktivitetsnummer väljer du **Tillgångshantering** > **arbetsorder** > **alla arbetsorder** och väljer sedan arbetsordern. På snabbfliken **Raddetaljer** visar fältet **Projekt-ID** projekt-ID och fältet **aktivitetsnummer** visar aktivitetsnummer.) Mer information om kostnadskontroll i tillgångs hantering finns [Kostnad- och datumkontroll](../controlling-and-reporting/cost-and-date-control.md).
 
 Följande bild visar en grafisk översikt över arbetsorderprojekt och relaterade projektaktiviteter.
 

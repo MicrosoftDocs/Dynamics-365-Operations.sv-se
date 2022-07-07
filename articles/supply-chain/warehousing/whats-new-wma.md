@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945735"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954675"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheter eller ändringar i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Denna artikel listar nya funktioner, korrigeringar, förbättringar och kända problem för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20250"></a>Version 2.0.25.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+
+- Högre prestanda.
+- Ökad stabilitet.
+- Förbättrad sidan **Förfrågan** som stöder längre texter i underrubriker.
+- Kommer att göra det möjligt att omedelbart avbryta ett flöde med ett enda ord eller klicka (när **Avbryt** är den enda åtgärden som finns under **Fler åtgärder**).
+- Har åtgärdat ett problem där fokus ibland kan gå förlorat mellan inmatningskontroller på sidan **Redigera anslutning** och anpassade sidor.
+- Fast ett problem där knappar ibland kan bli irresponsive och förblir visade som valda när de inkluderades i en rullningsvy.
+- Har åtgärdat ett problem där fel layout ibland kan användas på huvudsidan.
 
 ## <a name="version-20240"></a>Version 2.0.24.0
 

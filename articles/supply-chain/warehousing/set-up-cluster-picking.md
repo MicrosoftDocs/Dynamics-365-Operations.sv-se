@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862320"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014775"
 ---
 # <a name="set-up-cluster-picking"></a>Ställa in klusterplockning
 
@@ -74,9 +74,14 @@ När klusterplockning används, är objektbekräftelse avgörande för att kontr
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Ställa in objektverifiering med klusterplockning
 
-1. I den mobila enhetens menyalternativ öppnar du inställningsformuläret för arbetsbekräftelse: **Hantering av lagerställe** \> **Hantering av lagerställe** \> **Inställningar** \>  **Mobil enhet** \> **Menyobjekt för mobil enhet**.
+1. Gå till **Lagerstyrning** > **Inställningar** > **Mobil enhet** > **Menyalternativ på mobil enhet**.
+1. I listrutan väljer du menyalternativet du vill ställa in.
+1. I åtgärdsfönstret, välj **Inställningar för arbetsbekräftelse**.
+1. Gör något av följande åtgärd:
+    - Om det redan finns en rad för **arbetstypen** du vill ställa in väljer du den och sedan **Redigera** i åtgärdsfönstret.
+    - Om det inte finns någon lämplig rad väljer du **Ny** i åtgärdsfönstret och ställer sedan in **arbetstypen** på lämplig typ.
+1. Markera kryssrutan **Produkt bekräfta** för din nya eller valda rad. Detta gör det möjligt för arbetare att verifiera varje del av inventeringen med hjälp av den mobila enheten.
 
-1. Från mobila enhetens menyalternativ öppnar du **Inställning av arbetsbekräftelse**. Alternativet **Produktbekräftelse** låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af33dbd38b1eb70e79392860e48c6943a4192f78
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907389"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016461"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkänna och bekräfta inköpsorder
 
@@ -50,7 +50,7 @@ När ändringshantering är aktiverad genomgår inköpsorder sex godkännandesta
 ## <a name="confirming-purchase-orders"></a>Bekräfta inköpsorder
 Inköpsorder som har godkännandestatusen **Godkänd** kan genomgår ytterligare steg innan de bekräftas. Du kan exempelvis behöva skicka en förfrågan om inköp till leverantören och fråga om priser, rabatter eller leveransdatum. Du kan då ange statusen på inköpsordern till **Under extern granskning** med hjälp av åtgärden **Inköpsförfrågan**.
 
-Leverantörer som har ställts in för att använda Leverantörsportalen kan granska order via portalen och godkänna eller avvisa dem. Under granskningsprocessen har inköpsordern statusen **Under extern granskning**. Leverantörsportalen kan konfigureras så att en bekräftelse från leverantören automatiskt bekräftar ordern i Supply Chain Management. Du kan även bekräfta en inköpsorder manuellt efter att du har mottagit en bekräftelse från leverantören. Om en leverantör avvisar en inköpsorder kommer avvisandet att åtföljas av orsaken till avvisandet och förslag om ändringar. I det här fallet förblir statusen för inköpsordern **Under extern granskning**.
+Leverantörer som har ställts in för att samarbetsmodulen för leverantörer kan granska order via portalen och godkänna eller avvisa dem. Under granskningsprocessen har inköpsordern statusen **Under extern granskning**. Samarbetsmodulen för leverantörer kan konfigureras så att en bekräftelse från leverantören automatiskt bekräftar ordern i Supply Chain Management. Du kan även bekräfta en inköpsorder manuellt efter att du har mottagit en bekräftelse från leverantören. Om en leverantör avvisar en inköpsorder kommer avvisandet att åtföljas av orsaken till avvisandet och förslag om ändringar. I det här fallet förblir statusen för inköpsordern **Under extern granskning**.
 
 Det finns även ett alternativ för att generera en proformabekräftelse för en order innan den faktiska bekräftelsen har bearbetats. Det här alternativet skapar enbart en rapport som du kan dela med leverantören. Det skapar ingen journalinformation.
 

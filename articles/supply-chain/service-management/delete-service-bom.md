@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b189835528e2e1b6d746c767fb53f365fa194b46
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18e2323f0346e522e04a3d1e36d98846a66bea1e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865046"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015700"
 ---
 # <a name="delete-a-service-bom"></a>Ta bort en servicestrukturlista
 
 [!include [banner](../includes/banner.md)]
 
-1. Gå till **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**. Välj det serviceavtal som du vill ta bort en tjänststrukturlista (BOM) från.
+1. Gå till **servicehantering** \> **serviceavtal** \> **serviceavtal**. Välj det serviceavtal som du vill ta bort en tjänststrukturlista (BOM) från.
 1. Klicka på **åtgärdsfönstret**, klicka på **Serviceobjekt**.
 1. I formuläret **Serviceobjekt** väljer du den serviceobjekt som du vill ta bort en servicestrukturlista från. Klicka på **funktion**, och välj sedan **ta bort servicestrukturlista**.
 1. Välj **Ja**.

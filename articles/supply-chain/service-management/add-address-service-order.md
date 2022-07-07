@@ -2,30 +2,25 @@
 title: Lägg till en adress till en serviceorder
 description: I denna artikel beskrivs hur du lägger till en kundadress i en serviceorder.
 author: sorenva
-ms.date: 05/02/2018
+ms.date: 06/15/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce58ff7bbb491fd2d250b8986d02fca04bd5fad1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c485c50bab7c2e945aa0f0fc0601008dcebd3328
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844747"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015737"
 ---
-# <a name="add-an-address-to-a-service-order"></a>Lägg till en adress till en serviceorder    
+# <a name="add-an-address-to-a-service-order"></a>Lägg till en adress till en serviceorder
 
 [!include [banner](../includes/banner.md)]
-
 
 I denna artikel beskrivs hur du lägger till en kundadress i en serviceorder. När du skapar en serviceorder förs adressinformationen över från det projekt som serviceordern är kopplad till. Du kan dock välja en alternativ plats från adresser som redan finns i Microsoft Dynamics AX för kunder, leverantörer, platser, lagerställen, serviceorder och projekt.
 
@@ -35,43 +30,36 @@ Du kan också skapa en ny adress. Som standard överförs den nya adressen till 
 
 Om du vill lägga till en adress till en serviceorder:
 
-1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
+1. Klicka på **Servicehantering** \> **Serviceorder** \> **Serviceorder**.
 
-2.  Öppna den serviceorder som du vill skapa en adress för.
+1. Öppna den serviceorder som du vill skapa en adress för.
 
-3.  I **åtgärdsfönstret**, klicka på **Redigera** och klicka sedan på **Huvudvy**.
+1. Öppna fliken **huvud**.
 
-4.  På snabbfliken **adress** klicka på **lägga till adress**.
+1. Expandera snabbflikarna **Adress** och välj sedan **Lägg till adress** i verktygsfältet Snabbflik.
 
-5.  Ange ett unikt namn för adressen och fyll i de återstående fälten i formuläret **Ny adress**. 
-    
+1. Ange ett unikt namn för adressen och fyll i de återstående fälten i dialogrutan **Ny adress**. 
 
     > [!WARNING]
-    > <P>Om du anger samma namn som en befintlig adress, kommer informationen som du anger i de återstående fälten skriva över informationen för den befintliga adressen.</P>
+    > Om du anger samma namn som en befintlig adress, kommer informationen som du anger i de återstående fälten skriva över informationen för den befintliga adressen.
 
-
-6.  Klicka på **OK** för att kopiera den nya adressen till din serviceorder.
+1. Klicka på **OK** för att kopiera den nya adressen till din serviceorder.
 
 ## <a name="specify-an-alternative-address-on-a-service-order"></a>Ange en alternativ adress på en serviceorder
 
 Om du vill lägga till en alternativ adress till en serviceorder:
 
-1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
+1. Klicka på **Servicehantering** \> **Serviceorder** \> **Serviceorder**.
 
-2.  Öppna den serviceorder som du vill ange en alternativ adress för.
+1. Öppna den serviceorder som du vill ange en alternativ adress för.
 
-3.  I **åtgärdsfönstret**, klicka på **Redigera** och klicka sedan på **Huvudvy**.
+1. Öppna fliken **huvud**.
 
-4.  På snabbfliken **adress** klicka på **Annan adress**.
+1. Expandera snabbflikarna **Adress** och välj sedan **Annan adress** i verktygsfältet Snabbflik.
 
-5.  I formuläret **Val av adress** i fältet **posttyp** väljer du **serviceorder**.
+1. I dialogrutan **Adressurval** väljer du **Serviceorder** i listrutan ovanför nedrullningslistan.
 
-6.  Välj en adress och klicka sedan på **OK** om du vill kopiera den till din serviceorder.
-
-
-  
-
-
+1. Välj en adress och klicka sedan på **OK** om du vill kopiera den till din serviceorder.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

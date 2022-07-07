@@ -1,5 +1,5 @@
 ---
-title: Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
+title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
 description: Denna artikel beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.27.
 author: kamaybac
 ms.date: 04/22/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: a91f2cdae0fed75f07d6cae86d24aeedfca80e94
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a50fcbe313901beab610400d8c59dd375f1af93e
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844508"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022633"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management, förhandsversion 10.0.27. Den här versionen har ett versionsnummer för 10.0.1227 på följande schema:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.27. Den här versionen har ett versionsnummer för 10.0.1227 på följande schema:
 
 - **Förhandgranskning av version:** april 2022
 - **Allmän tillgänglighet för version (självuppdatering):** juni 2022
@@ -63,7 +62,7 @@ Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. D
 | Kostnadshantering | [Viktat genomsnittsdatum med Inkludera fysiskt värde och länkning](../cost-management/weighted-average-date.md) |
 | Distribuerad hybridtopologi | [Prova skalenheter i en distribuerad hybridtopologi](../cloud-edge/cloud-edge-try-out.md) |
 | Dubbelriktad skrivning | [Synkronisera på begäran med prissättningsmotorn Supply Chain Management](../../fin-ops-core/dev-itpro/data-entities/dual-write/pricing-engine.md) |
-| Warehouse management | [Släpp till distributionslager](../warehousing/release-to-warehouse-process.md) |
+| Lagerstyrning | [Släpp till distributionslager](../warehousing/release-to-warehouse-process.md) |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

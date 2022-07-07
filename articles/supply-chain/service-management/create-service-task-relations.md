@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80980d83248612037999c665b6058c4d0bbf6a7c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 51ea26a0f6519d26f5207a7b6c8afbcdfa358be9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678246"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015271"
 ---
 # <a name="create-service-task-relations"></a>Skapa serviceuppgiftsrelationer    
 
@@ -30,7 +30,7 @@ Du kan koppla serviceuppgifter till serviceavtal eller serviceorder för att bes
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Skapa en relation med ett serviceavtal
 
-1.  Gå till **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
+1.  Gå till **servicehantering** \> **serviceavtal** \> **serviceavtal**.
 
 2.  Välj ett befintligt serviceavtal eller skapa ett nytt serviceavtal.
 
@@ -48,7 +48,7 @@ En serviceuppgiftsrelation som skapas i ett serviceavtal är tillgänligt från 
 
 ## <a name="create-a-relation-with-a-service-order"></a>Skapa en relation med en serviceorder
 
-1.  Klicka på **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
+1.  Klicka på **Servicehantering** \> **Serviceorder** \> **Serviceorder**.
 
 2.  Välj en befintlig serviceorder eller skapa en ny serviceorder.
 

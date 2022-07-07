@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59271771a5f332ad8470b0b8f8f54b52a25543d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c9495bbc8e5f7cb603c027a125887feba1f0e2d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671686"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017215"
 ---
 # <a name="set-up-a-preferred-technician"></a>Ställa in en prioriterad tekniker 
 
@@ -31,13 +31,13 @@ Du kan välja valfri anställd som en prioriterad tekniker för ett serviceavtal
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>Lägga till en medarbetare i en servicegrupp
 
-1.  Klicka på **Personal** \> **Gemensamt** \> **Arbetare** \> **Arbetare**. Dubbelklicka på en anställd för att öppna arbetaredetaljsidan. I **åtgärdsfönstret**, klickar du på **inställningar**\>**serviceteam** för att öppna formuläret **servicearbetare**.
+1.  Klicka på **Personal** \> **Arbetare** \> **Arbetare**. Dubbelklicka på en anställd för att öppna arbetaredetaljsidan. I **åtgärdsfönstret**, klickar du på **inställningar**\>**serviceteam** för att öppna formuläret **servicearbetare**.
 
 2.  I fältet **Serviceteam**, välj teamet som ska tilldelas arbetare i fältet 
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Tilldela en prioriterad tekniker till ett serviceavtal
 
-1.  Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**. Dubbelklicka på ett serviceavtal att öppna detaljformuläret.
+1.  Klicka på **servicehantering** \> **serviceavtal** \> **serviceavtal**. Dubbelklicka på ett serviceavtal att öppna detaljformuläret.
 
 2.  På fliken **Allmänt**, välj fältet **Prioriterad tekniker** välj en medlem av en lämplig servicegrupp som den tekniker som föredras för serviceavtalet genom att använda listan.
 

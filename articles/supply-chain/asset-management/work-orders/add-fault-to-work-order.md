@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 210db3259a6c64a508119b30598a34dbda2d2dd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857907"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015010"
 ---
 # <a name="add-fault-to-work-order"></a>Lägg till fel i arbetsorder
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857907"
 
 Du kan lägga till fel som ställts in i feldesignern till en arbetsorder. Den tillgång som väljs i arbetsordern måste innehålla tillgångstyper som har en eller flera felposter kopplade till sig. Mer information om hur du konfigurerar finns i [Felhantering](../setup-for-work-orders/fault-management.md).
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
+1. Klicka på **Tillgångshantering** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 2. Välj den arbetsorder som du gör felregistreringen för och sedan i åtgärdsfönstret, på fliken **Arbetsorder** i gruppen **Tillgång**, välj **Tillgångsfel**.
 
@@ -64,7 +64,7 @@ På listsidan **Tillgångsfel** kan du få en översikt över alla fel som regis
 
 Från listsidan **Alla tillgångar** kan du skriva ut en rapport över tillgångsfel som visar alla felregistreringar samt en grafisk översikt över felstatistik.
 
-1. Välj **Tillgångshantering** > **Allmänt** > **Tillgångar** > **Alla tillgångar**.
+1. Välj **Tillgångshantering** > **Tillgångar** > **Alla tillgångar**.
 
 2. Välj alla tillgångar för att skriva ut en felrapport för.
 

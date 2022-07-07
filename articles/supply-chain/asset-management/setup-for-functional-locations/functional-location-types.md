@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0c44e503900bd157d7f0159cdf2b2d0c1fb3393f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879233"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015795"
 ---
 # <a name="functional-location-types"></a>Typer av funktionsplats
 
@@ -57,7 +57,7 @@ Standardfunktionsplatstypen som endast ska användas för en standardfunktionspl
 7. Fältet **tillgångstyp** används om du vill skapa *en* tillgång automatiskt för funktionsplatsen med samma ID och namn som den funktionsplatsen som du skapar. Detta kan till exempel vara relevant om du skapar en statisk funktionsplatsen, till exempel en byggnad eller en pipeline. I så fall väljer du den tillgångstyp som du vill använda för den automatiskt skapade tillgången. Kom ihåg att om du gör ett val i det här fältet måste växlingsknappen **Flera tillgångar** vara inställd på "nej".
 8. På snabbfliken **tillgångstyper** väljer du de tillgångstyper som ska relateras till funktionsplatstypen: Välj **Lägg till rad** och välj tillgångstypen. Om du lägger till tillgångstyper här kan endast tillgångar som använder dessa tillgångstyper installeras på en funktionsplats med den här funktionsplatstypen. Om inga tillgångstyper har valts på snabbfliken **tillgångstyper** kan alla tillgångstyper vara installerade.
 9. På snabbfliken **underhållsplaner** väljer du de underhållsplaner som automatiskt ska ställas in på nya funktionsplatser med den här funktionsplatstypen. Välj **Lägg till rad** och välj underhållsplaner. Om du lägger till underhållsplaner här kan endast dessa planer användas på en funktionsplats med den här funktionsplatstypen.
-10. På snabbfliken **Krav för tillgångsattribut** ställer du in de tillgångsattribut som automatiskt ska ställas in på nya funktionsplatser med den här funktionsplatstypen. Välj **Lägg till rad** och välj attribut. Dessa attributkrav fungerar som riktlinjer. De verifieras inte mot attribut som ställts in på en tillgång (**Tillgångshantering** > **allmänt** > **tillgångar** > **alla tillgångar** > välj tillgång på listsidan > fliken **allmänt** > knappen **attribut**). Attributkrav visas när du installerar tillgångar på funktionsplatser.
+10. På snabbfliken **Krav för tillgångsattribut** ställer du in de tillgångsattribut som automatiskt ska ställas in på nya funktionsplatser med den här funktionsplatstypen. Välj **Lägg till rad** och välj attribut. Dessa attributkrav fungerar som riktlinjer. De verifieras inte mot attribut som ställts in på en tillgång (**Tillgångshantering** > **tillgångar** > **alla tillgångar** > välj tillgång på listsidan > **allmänt** > **Attribut**). Attributkrav visas när du installerar tillgångar på funktionsplatser.
 11. På snabbfliken **tillåtna typer** väljer du de funktionsplatstyper som ska gälla för underfunktionsplatstyper som är relaterade till en överordnad funktionsplatstyp, som använder den valda funktionsplatstypen.
 12. På snabbfliken **Attribut** väljer du de funktionsplatsattribut som automatiskt ska ställas in på funktionsplatser med den här funktionsplatstypen. Välj **Lägg till rad** och välj attribut.
 

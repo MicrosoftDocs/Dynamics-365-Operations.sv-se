@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 73f2f9a819312d8d6e111b998c68b65ba85e7818
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850769"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954535"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.26 (maj 2022)
 
@@ -50,9 +50,9 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 | Anskaffning och källa | Synkronisera spårningsdimensioner på koncerninterna försäljnings- och inköpsorderrader | Med den här funktionen kan du kontrollera huruvida spårningsdimensionerna för serie- och batchnummer synkroniseras över koncerninterna försäljnings- och inköpsorderrader. Den lägger till nya inställningar på både fliken **Inköpsorderpolicyer** och fliken **Försäljningsorderpolicy** på inställningssidan **Koncernintern** för kunder och leverantörer. I tydlighetssyfte uppdaterar den även namnen på några relaterade, närliggande inställningar.<br><br>Om du använder avancerad lagerstyrning (WMS), notera då att denna funktion endast synkroniserar batch- och serienummer när dessa måt ligger ovanför platsen i målets reservationshierarki. |
 | Produktinformationshantering | Rensa produktattributvärden | Denna funktion lägger till den periodiska uppgiften **Rensa produktattributvärden**, som rensar värdeposter för produktattribut som inte längre är associerade med en produkt genom produktkategori. |
 | Hantering av lager och lagerstyrning | (Ryssland) Förhindra avvikelser vid utfärdande av GTD för inköpsorder som inkluderar WMS-aktiverade artiklar | Denna funktion är bara tillgänglig för Ryssland. Den förhindrar avvikelser som uppstår vid utfärdande av ryska tulldeklarationsnummer (GTDs) för importinköpsorder som omfattar artiklar som har aktiverats för avancerad lagring (WMS). GTD-utfärdandeprocessen ändrar vissa lagerdimensionsvärden på relaterade lagertransaktioner för fakturor som är inkluderade i den anpassade journalen, vilket leder till avvikelser mellan arbetsposterna för inköpsordern och lagertransaktionerna för inköpet. När den här funktionen är aktiverad genererar GTD-utfärdandeprocessen justeringsarbete som eliminerar sådana avvikelser. |
-| Warehouse management | Utökad parser för GS1-streckkoder | Denna funktion lägger till en förbättrad parser för GS1-symboldata. Den nya parsern implementerar GS1 General Specification-algoritmen för parsning av GS1-symboler och ger starkare datavalidering. Mer information finns i [Skanning av GS1-streckkoder](../warehousing/gs1-barcodes.md). |
-| Warehouse management | Nya sidor för lastplaneringsworkbench | Lägger till två nya workbench-sidor för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
-| Warehouse management | Lagerstyrningsprogram – tom GTD | Denna funktion är bara tillgänglig för Ryssland. Medarbetare som använder mobilapplikationen Warehouse Management kan lämna numren för ryska tulldeklarationer (GTD) tomma vid behov. Om GTD-spårningsdimensionen har ställts in för att tillåta tomma värden, accepterar systemet tomma värden för GTD för lageråtgärder under förutsättning att lagerbehållning är tillgänglig. |
+| Lagerstyrning | Utökad parser för GS1-streckkoder | Denna funktion lägger till en förbättrad parser för GS1-symboldata. Den nya parsern implementerar GS1 General Specification-algoritmen för parsning av GS1-symboler och ger starkare datavalidering. Mer information finns i [Skanning av GS1-streckkoder](../warehousing/gs1-barcodes.md). |
+| Lagerstyrning | Nya sidor för lastplaneringsworkbench | Lägger till två nya workbench-sidor för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
+| Lagerstyrning | Lagerstyrningsprogram – tom GTD | Denna funktion är bara tillgänglig för Ryssland. Medarbetare som använder mobilapplikationen Lagerstyrning kan lämna numren för ryska tulldeklarationer (GTD) tomma vid behov. Om GTD-spårningsdimensionen har ställts in för att tillåta tomma värden, accepterar systemet tomma värden för GTD för lageråtgärder under förutsättning att lagerbehållning är tillgänglig. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
@@ -61,11 +61,10 @@ Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. D
 | Funktionsområde | Nya eller uppdaterade artiklar |
 |---|---|
 | Kostnadshantering | Uppdaterade exempel och diagram har lagts till i följande artiklar:<ul><li>[FIFO med fysiskt värde och markering](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO med fysiskt värde och markering](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO-datum med fysiskt värde och markering](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Löpande genomsnittlig självkostnad](../cost-management/running-average-cost-price.md)</li><li>[Viktat genomsnitt med fysiskt värde och markering](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
-| Anskaffning och källa | [Avvikelser mellan inköpsorderraddata](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.26 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.26 av appar för ekonomi och drift (maj 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 

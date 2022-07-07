@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3a9ee0a96e6a9097608b4c7cd1f65085e95b8ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30c672286c16a4353556a507019960edb93f8b1b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897731"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016606"
 ---
 # <a name="manual-update-of-asset-counters"></a>Manuell uppdatering av tillgångsräknare
 
@@ -34,7 +34,7 @@ Den räknartyp som valts för en räknare kan vara inställd på att ärva räkn
 
 På sidan I **Alla tillgångar** kan du skapa tim- eller kvantitetsräknarregistreringar för en tillgång, baserat på dina avläsningar av tillgången.
 
-1. Välj **Tillgångshantering** > **Allmänt** > **Tillgångar** > **Alla tillgångar**.
+1. Välj **Tillgångshantering** > **Tillgångar** > **Alla tillgångar**.
 
 2. Välj tillgången och sedan, i åtgärdsfönstret på fliken **Tillgång** i gruppen **Förebyggande** väljer du **Räknare**. Sidan **Tillgångsräknare** visas en lista över alla tidigare räknarregistreringar som har gjorts för den valda tillgången.
 

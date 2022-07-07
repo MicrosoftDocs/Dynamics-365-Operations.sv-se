@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851287"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014631"
 ---
 # <a name="wave-creation-and-processing"></a>Skapa och bearbeta påfyllnad
 
@@ -60,9 +60,9 @@ Gör så här om du vill skapa en påfyllnad manuellt:
 1. Se till att de relevanta [Påfyllnadsmallarna](wave-templates.md) inte är inställda på att automatiskt skapa en påfyllnad för lager- och ordertyperna där du vill göra det manuellt.
 1. Klicka på något av följande, beroende på vilken typ av påfyllnad du ska skapa:
 
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**. Klicka på **Produktionspåfyllning** i åtgärdsfönstret.
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**. Klicka på **Skapa påfyllning** i åtgärdsfönstret.
+    - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
+    - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**. Klicka på **Produktionspåfyllning** i åtgärdsfönstret.
+    - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**. Klicka på **Skapa påfyllning** i åtgärdsfönstret.
 
 1. I fältet **Beskrivning** ange en kort beskrivning av påfyllnaden. Procentsatsen bör ange vad du bearbetar i påfyllnaden.
 
@@ -87,9 +87,9 @@ När en påfyllnad har skapats men ännu inte frisläppts kan du manuellt ange v
 
 1. Gör ett av följande, beroende på vilken typ av påfyllnad du ska lägga till rader för:
 
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**. Klicka på **Produktionspåfyllning** i åtgärdsfönstret.
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**. Klicka på **Skapa påfyllning** i åtgärdsfönstret.
+    - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
+    - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**. Klicka på **Produktionspåfyllning** i åtgärdsfönstret.
+    - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**. Klicka på **Skapa påfyllning** i åtgärdsfönstret.
 
 1. Välj påfyllnad. Gör något av följande i åtgärdsfönstret:
 
@@ -121,9 +121,9 @@ Gör på följande sätt om du vill bearbeta en påfyllnad manuellt som har allt
 
 1. Gör något av följande, beroende på vilken typ av påfyllnad du ska bearbeta:
 
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**. Klicka på **Produktionspåfyllning** i åtgärdsfönstret.
-    - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**. Klicka på **Skapa påfyllning** i åtgärdsfönstret.
+    - Välj **Lagerstyrning** \> **utgående påfyllningar** \> **leveranspåfyllningar** \> **alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
+    - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**. Klicka på **Produktionspåfyllning** i åtgärdsfönstret.
+    - Välj **Lagerstyrning** \> **Utgående påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**. Klicka på **Skapa påfyllning** i åtgärdsfönstret.
 
 1. Välj den påfyllnad som ska bearbetas. Välj **Process** i åtgärdsfönstret.
 
@@ -141,9 +141,9 @@ Gör så här om du vill frisläppa en påfyllnad manuellt:
 
 1. Gör något av följande, beroende på vilken typ av frisläppande du ska bearbeta:
 
-      - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
-      - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**. Klicka på **Produktionspåfyllning** i åtgärdsfönstret.
-      - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**. Klicka på **Skapa påfyllning** i åtgärdsfönstret.
+      - Välj **Lagerstyrning** \> **utgående påfyllningar** \> **leveranspåfyllningar** \> **alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
+      - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**. Klicka på **Produktionspåfyllning** i åtgärdsfönstret.
+      - Välj **Lagerstyrning** \> **Utgående påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**. Klicka på **Skapa påfyllning** i åtgärdsfönstret.
 
 1. Välj den påfyllnad som ska frisläppas. Klicka på **Frisläpp påfyllning** i åtgärdsfönstret.
 
@@ -179,9 +179,9 @@ Om det behövs kan du avbryta en påfyllnad som har bearbetats. Om du vill annul
 
 1. Gör något av följande, beroende på vilken typ av annullering du ska bearbeta:
 
-      - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**.
-      - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**.
-      - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**.
+      - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**.
+      - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Produktionspåfyllningar** \> **Alla produktionspåfyllningar**.
+      - Gå till **Lagerstyrning** \> **Utgående påfyllningar** \> **Kanban-påfyllningar** \> **Alla Kanban-påfyllningar**.
 
 1. Välj den påfyllnad som ska avbrytas. I åtgärdsfönstret på fliken **Arbete** välj **Avbryt**.
 

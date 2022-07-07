@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8eb0b152f0a4b4e0f61d519262c24d02b71b8fc3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 95d1e38db8e4658a57f36139836264b87d525e61
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849660"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016142"
 ---
 # <a name="calculate-capacity-load"></a>Beräkna kapacitetsbeläggning
 
@@ -35,7 +35,7 @@ I Tillgångshantering kan du beräkna kapacitetsbeläggningen på:
 
 Detta är användbart om du vill få en översikt över förväntad kapacitetsbeläggning för en viss period. Beräkning av kapacitetsbeläggnin kan göras på alla tillgångar eller valda tillgångar. Du kan också utföra en beräkning av aktiviteter för underhållsstopp och arbetsorderpooler.
 
-1. Klicka på **Tillgångshantering** > **Förfrågningar** > **Kapacitetsbeläggning**, eller **Tillgångshantering** > **Allmänt** > **Arbetsorderpooler** > **Alla arbetsorderpooler** / **Aktiva arbetsorderpooler** > välj arbetsorderpool i listan > knappen **Kapacitetsbeläggning**, eller **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** / **Aktiva aktiviteter för underhållsstopp** > välj aktiviteter för underhåll i listan > knappen **Kapacitetsbeläggning**.
+1. Klicka på **Tillgångshantering** > **Förfrågningar** > **Kapacitetsbeläggning** eller **Tillgångshantering** > **Arbetsorderpooler** > **Alla arbetsorderpooler** / **Aktiva arbetsorderpooler** > välj arebtsorderpool i listan > **Kapacitetsbeläggning** eller **Tillgångshantering** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** / **Aktiva aktiviteter för underhållsstopp** > välj aktiviteter för underhåll i listan > knappen > **Kapacitetsbeläggning**.
 
 2. I dialogrutan **Beräkna kapacitetsbeläggning** väljer du en period för beräkningen i fälten **Startdatum/tid** och **Slutdatum/tid.**
 

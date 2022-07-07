@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4ff01a8c4ed5fb8372ff7b498d0febdcd2f1e89
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f4942e455350844ac5614e70fef21b37461540a6
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672778"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017301"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Registrera inleverans av returnerade artiklar 
 
@@ -87,7 +87,7 @@ Du kan använda formuläret **Införselöversikt** för att identifiera en retur
 
 Ett alternativ till att använda formuläret **Införselöversikt** kan du använda formuläret **Registrering** om du vill registrera inleverans av returnerade artiklar.
 
-1.  Klicka på **Försäljning och marknadsföring** \> **Returorder** \> **Alla returorder** \> **Alla försäljningsorder**. Skapa en ny returorder eller öppna returordern från listan. På snabbfliken **Rader**, välj returorderrad. Klicka på **uppdatera**, och klicka sedan på **registrering**.
+1.  Klicka på **Försäljning och marknadsföring** \> **Försäljningsreturer** \> **Alla returorder**. Skapa en ny returorder eller öppna returordern från listan. På snabbfliken **Rader**, välj returorderrad. Klicka på **uppdatera**, och klicka sedan på **registrering**.
 
 2.  Tilldela en dispositionskod i fältet **Dispositionskod** och klicka sedan på **OK**.
     

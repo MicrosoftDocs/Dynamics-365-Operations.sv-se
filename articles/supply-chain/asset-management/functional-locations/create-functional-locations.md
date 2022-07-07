@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f7c36fe230db38bfdbfd70fec7bdfd0a313d5a15
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869732"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015853"
 ---
 # <a name="create-functional-locations"></a>Skapa funktionsplatser
 
@@ -41,7 +41,7 @@ För att kunna arbeta med funktionsplatser börjar du med att skapa två "katego
 
 När du använder funktionsplatser börjar du med att skapa en standardplats som ska användas när du skapar nya tillgångar. Den här funktionella platsen är den du väljer i fältet **Tillgångshantering** > **inställningar** > **parametrar för Tillgångshantering** > **tillgångar** länk > **funktionella standardplatser**. Den funktionella standardplatsen kan användas när du skapar nya tillgångar och du ännu inte har ställt in en funktionsplatsstruktur för dessa tillgångar.
 
-1. Välj **Tillgångshantering** > **allmänt** > **funktionsplatser** > **alla funktionsplatser**.  
+1. Välj **Tillgångshantering** > **Funktionsplatser** > **Alla funktionsplatser**.  
 2. I **alla funktionsplatser** väljer du **ny**.
 3. Infoga ett ID i fältet **funktionsplats**, till exempel "0000" eller "standard", för att indikera att detta är en speciell funktionsplats.
 4. Infoga namn för den funktionella standardplatsen i fältet **namn**.
@@ -53,7 +53,7 @@ När du använder funktionsplatser börjar du med att skapa en standardplats som
 
 Följande procedur beskriver hur du skapar de funktionsplatser som krävs för underhållshantering i ditt företag.
 
-1. Välj **Tillgångshantering** > **allmänt** > **funktionsplatser** > **alla funktionsplatser**. Du kan skapa en funktionsplats från rutnätsvy eller detaljerad vy.
+1. Välj **Tillgångshantering** > **Funktionsplatser** > **Alla funktionsplatser**. Du kan skapa en funktionsplats från rutnätsvy eller detaljerad vy.
 2. Välj knappen **Ny**.
 3. Infoga ett ID i fältet **funktionsplats**.
 4. Infoga ett namn för den funktionella standardplatsen i fältet **namn**.

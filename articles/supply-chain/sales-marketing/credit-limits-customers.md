@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4a98b90491093f55ce6974b9b11ff326c0c2f5c
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903881"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015333"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditgränser för kunder
 
@@ -117,7 +117,7 @@ Använd formuläret **Parametrar för kundreskontra** för att ange om du vill v
 
 Använd formuläret **Kunder** för att ange kreditgränsbeloppet för en viss kund. Du måste inneha en säkerhetsroll som har tilldelats tjänsten Behåll kundhuvud (CustCustomersMaintain) för att utföra ändringar i det här formuläret.
 
-1.  Klicka på **Kundreskontra** \> **Allmänt** \> **Kunder** \> **Alla kunder**. Dubbelklicka på ett kundkonto.
+1.  Klicka på **Kundreskontra** \> **Kunder** \> **Alla kunder**. Dubbelklicka på ett kundkonto.
 
 2.  I formuläret **Kunder**, klicka på **Redigera** i åtgärdsfönstret.
 
@@ -132,7 +132,7 @@ Använd formuläret **Kunder** för att ange kreditgränsbeloppet för en viss k
 
 Ibland kan behöva du kontrollera en kunds kreditgräns manuellt. Du kan exempelvis manuellt kontrollera en kunds kreditgräns innan du börjar ange en försäljningsorder. Du kan använda formuläret **Försäljningsorder** för att kontrollera kreditgränser manuellt. Du måste inneha en säkerhetsroll som har tilldelats tjänsten Behåll säljorder (CustCustomersMaintain) för att utföra ändringar i det här formuläret.
 
-1.  Klicka på **Försäljning och marknadsföring** \> **Allmänt** \> **Försäljningsorder** \> **Alla försäljningsorder**. Dubbelklicka på en försäljningsorder.
+1.  Gå till **Försäljning och marknadsföring** \> **Försäljningsorder** \> **Alla försäljningsorder**. Dubbelklicka på en försäljningsorder.
 
 2.  I formuläret **Försäljningsorder**, i fliken **Hantera** i åtgärdsfönstret, klickar du på **Kontrollera kreditgräns**.
 

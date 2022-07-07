@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969e3de9586c0c47214201b34a16f8afad5ca90
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1764d97d4492e7b982a5d2c9f7e7f1c15380be1d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678274"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014863"
 ---
 # <a name="create-service-orders-manually"></a>Skapa en serviceorder manuellt    
 
@@ -34,7 +34,7 @@ Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med form
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Skapa en serviceorder manuellt från serviceavtalet
 
-1.  Gå till **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
+1.  Gå till **servicehantering** \> **serviceavtal** \> **serviceavtal**.
 
 2.  Välj ett serviceavtal eller skapa ett nytt.
 
@@ -42,7 +42,7 @@ Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med form
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Skapa en serviceorder manuellt i formuläret för serviceorder
 
-1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
+1.  Välj **Servicehantering** \> **Serviceorder** \> **Serviceorder**.
 
 2.  Välj **Ny** för att skapa en ny serviceorder.
 
@@ -53,7 +53,7 @@ Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med form
 
 ## <a name="create-a-service-order-from-a-project"></a>Skapa en serviceorder från Projekt
 
-1.  Klicka på **Projekthantering och redovisning** \> **Vanligt** \> **Projekt** \> **Alla projekt**.
+1.  Gå till **Projekthantering och redovisning** \> **Projekt** \> **Alla projekt**.
 
 2.  I formuläret **Projekt** i **åtgärdsfönstret** klickar du på fliken **Hantera** \> och **Service** \> **Serviceorder**.
 
@@ -66,7 +66,7 @@ Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med form
 
 Du kan skapa en serviceorder från formuläret **försäljningsorder** genom att använda guiden **skapa en ny serviceorder baserat på försäljningsordern**.
 
-1.  Klicka på **Försäljning och marknadsföring** \> **Allmänt** \> **Försäljningsorder** \> **Alla försäljningsorder**.
+1.  Gå till **Försäljning och marknadsföring** \> **Försäljningsorder** \> **Alla försäljningsorder**.
 
 2.  Öppna relevant försäljningsordern.
 

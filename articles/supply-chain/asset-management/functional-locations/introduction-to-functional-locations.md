@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a94b366dc725db3af01c156ae517a241213f7d52
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882849"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016055"
 ---
 # <a name="introduction-to-functional-locations"></a>Introduktion till funktionsplatser
 
@@ -59,7 +59,7 @@ När du har skapat en funktionsplatshierarki är nästa steg att installera till
 
 ## <a name="all-functional-locations"></a>Alla funktionsplatser
 
-Välj **Tillgångshantering** \> **allmänt** \> **funktionsplatser** \> **alla funktionsplatser** för att öppna listsidan **alla funktionsplatser**. Den här sidan visar alla funktionsplatser och en del av den information som är relaterad till varje. Om du bara vill visa aktiva funktionsplatser väljer du **aktiva funktionsplatser**. Om du endast vill visa de funktionsplatser som du är relaterad till som arbetare, välj **, Mina aktiva funktionsplatser**. (Den här relationen har ställts in på sidan **arbetare**. Mer information finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
+Välj **Tillgångshantering** \> **funktionsplatser** \> **alla funktionsplatser** för att öppna listsidan **alla funktionsplatser** listsidan. Den här sidan visar alla funktionsplatser och en del av den information som är relaterad till varje. Om du bara vill visa aktiva funktionsplatser väljer du **aktiva funktionsplatser**. Om du endast vill visa de funktionsplatser som du är relaterad till som arbetare, välj **, Mina aktiva funktionsplatser**. (Den här relationen har ställts in på sidan **arbetare**. Mer information finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
 
 På listsidan **Alla funktionsplatser** väljer du en länk i kolumnen **funktionsplats** för att visa information om den valda posten. Om du vill redigera funktionsplatsen väljer du knappen **redigera**. Detaljvyn visar detaljerad information som är relaterad till platsen. Den innehåller också fönstret **relaterat information** till höger. I det här fönstret visas funktionsplatshierarkin. Du kan expandera och komprimera fönstret **relaterad information**.
 

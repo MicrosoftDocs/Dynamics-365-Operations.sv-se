@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2cc1f5b8eccb51b6bea8655fdee243c1a2df55
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902094"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015039"
 ---
 # <a name="manually-created-work-orders"></a>Manuellt skapade arbetsorder
 
@@ -34,7 +34,7 @@ Du kan skapa arbetsorder manuellt på två sätt:
 
 ## <a name="create-work-order"></a>Skapa arbetsorder
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
+1. Klicka på **Tillgångshantering** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 2. Välj **Ny**.
 
@@ -82,7 +82,7 @@ Observera följande:
 
 Du kan skapa en arbetsorder som är relaterad till en befintlig arbetsorder. Den här funktionen är användbar om du till exempel vill arbeta med primära och sekundära arbetsordrar. En ny arbetsorder baseras på ett arbetsorderjobb från en befintlig arbetsorder.
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
+1. Klicka på **Tillgångshantering** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 2. Välj arbetsorder för att skapa en relaterad arbetsordning för.
 
@@ -120,7 +120,7 @@ I bilden nedan visas ett exempel på sidan dialogrutan **Skapa relaterad arbetso
 
 Det är möjligt att snabbt skapa en ny arbetsorder utifrån en befintlig arbetsorder. Det här sättet att arbeta med arbetsorder skiljer sig från att skapa arbetsorder utifrån [underhållsplaner](../preventive-and-reactive-maintenance/maintenance-plans.md). Det är användbart om du till exempel har en arbetsorder som innehåller många arbetsorderjobb med olika jobb för olika till gångar som ska slutföras med jämna mellanrum.
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
+1. Klicka på **Tillgångshantering** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 2. Välj den arbetsorder från vilken du vill kopiera innehållet.
 
@@ -142,7 +142,7 @@ Illustrationen nedan visar ett exempel på dialogrutan **Kopiera arbetsorder**.
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Skapa en arbetsorder baserad på en underhållsbegäran
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Underhållsbegäranden** > **Alla underhållsbegäranden** eller **Aktiva underhållsbegäranden**.
+1. Klicka på **Tillgångshantering** > **Underhållsbegäranden** > **Alla underhållsbegäranden** eller **Aktiva underhållsbegäranden**.
 
 2. Välj den underhållsbegäran som du vill skapa en arbetsorder för och klicka på **Redigera**.
 

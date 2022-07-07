@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa4fe7af46996e8de76ea61d5395327e7617e736
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e63161aa32ecbc99baace9bb0cc649aedc600ed
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906136"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016004"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Garanti på tillgångar och tillgångstyper
 
@@ -39,7 +39,7 @@ Denna artikel förklarar hur du konfigurerar garantier för tillgångar och till
 
 ## <a name="set-up-a-warranty-on-an-asset"></a>Ställa in garanti på en tillgång
 
-1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**
+1. Välj **Tillgångshantering** \> **Tillgångar** \> **Alla tillgångar**.
 2. Välj tillgången och välj **Redigera.**
 3. På snabbfliken **Leverantör** i avsnittet **Leverantörsgaranti** väljer du garantiavtalet i fältet **Garanti**.
 4. Välj start- och slutdatum i fälten **Garantistart** och **Garantislut**.

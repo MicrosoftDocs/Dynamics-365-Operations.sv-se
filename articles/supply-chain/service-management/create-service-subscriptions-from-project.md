@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a57bc31a49c8671872ad02bc2721d42455a5217
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 38b0c28b013ef93c73b6963087d2d8e7787a77a6
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670944"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016932"
 ---
 # <a name="create-service-subscriptions-from-a-project"></a>Skapa serviceprenumerationer från ett projekt    
 
@@ -29,7 +29,7 @@ ms.locfileid: "8670944"
 
 Du kan skapa ett serviceabonnemang från ett projekt i **projekthantering och redovisning**.
 
-1.  Klicka på **Projekthantering och redovisning** \> **Vanligt** \> **Projekt** \> **Alla projekt**. Öppna projektet som du vill skapa ett abonnemang för.
+1.  Klicka på **Projekthantering och redovisning** \> **Projekt** \> **Alla projek**. Öppna projektet som du vill skapa ett abonnemang för.
 
 2.  I formuläret **projekt** i **åtgärdsfönstret** på fliken **hantera** klickar du på **Service**\>**serviceabonnemang**.
 

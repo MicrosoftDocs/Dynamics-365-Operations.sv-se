@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e75ed6e30ece1f4807ff036d831c269774d941a7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 228b76d6f6f0bb048662c8e82df76f51b7cb3652
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670984"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017388"
 ---
 # <a name="cancel-service-orders"></a>Avbryt serviceorder   
 
@@ -36,11 +36,11 @@ Du kan avbryta en serviceorder eller serviceorderrad från själva serviceordern
 
 ## <a name="cancel-a-service-order-in-the-service-orders-form"></a>Avbryta en serviceorder i formuläret för serviceorder
 
-1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**. Välj serviceorder och klicka sedan på **Avbryt order** i åtgärdsfönstret.
+1.  Klicka på **Servicehantering** \> **Serviceorder** \> **Serviceorder**. Välj serviceorder och klicka sedan på **Avbryt order** i åtgärdsfönstret.
 
 ## <a name="cancel-a-service-order-line"></a>Avbryta en serviceorderrad
 
-1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**. Dubbelklicka på den serviceorder som innehåller raden du vill annullera.
+1.  Klicka på **Servicehantering** \> **Serviceorder** \> **Serviceorder**. Dubbelklicka på den serviceorder som innehåller raden du vill annullera.
 
 2.  Välj serviceorderraden som du vill avbryta och klicka sedan på **Avbryt orderrad** för att ändra status för raden till **Har avbrutits**.
 

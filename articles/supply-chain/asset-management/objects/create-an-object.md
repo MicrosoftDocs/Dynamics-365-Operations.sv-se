@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ab715be3bfdc380f5736fadd901af3ed78d7035
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860940"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016316"
 ---
 # <a name="create-an-asset"></a>Skapa en tillgång
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860940"
 
 Denna artikel beskriver hur du skapar en tillgång i Tillgångshantering.
 
-1. Klicka på **Tillgångshantering** > **allmänt** > **tillgångar** > **alla tillgångar** eller **aktiva tillgångar**.
+1. Klicka på **Tillgångshantering** > **Tillgångar** > **Alla tillgångar** eller **Aktiva tillgångar**.
 2. Klicka på knappen **Nytt**.
 3. I dialogrutan **skapa tillgångar** infogar du data om **tillgången** (tillgångs-ID) och tillgångens namn. Välj datum och tid för tillgången i fältet **Giltighet**. Från och med det datumet kan du installera tillgången på en funktionsplats samt flytta och ersätta tillgången i en tillgångsstruktur.
 4. Välj tillgångstyp för tillgången (obligatoriskt fält) i fältet **tillgångstyp**. Om det behövs väljer du **tillgångstillverkare** och **tillgångsmodell** för tillgången. Om endast en produkt har ställts in, väljs den produkten automatiskt i fältet **tillgångstillverkare**. De val som är tillgängliga **tillgångstillverkare** och **tillgångsmodell** beror på inställningarna i [Tillgångstillverkare och-modeller](../setup-for-objects/product-and-model.md).

@@ -2,7 +2,7 @@
 title: Rapportering av EU-säljlista
 description: Det här avsnittet innehåller information om rapportering av försäljningslista för Europeiska unionen (EU).
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 8dfd3fafdfc011973b169516cd4e2d239751e96d
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323482"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012506"
 ---
 # <a name="eu-sales-list-reporting"></a>EU-säljlistrapportering
 
@@ -150,7 +150,7 @@ Transaktioner av följande typer kan anses handeln transaktioner:
 -   Projektfakturor
 -   Leverantörsfakturor
 
-En transaktion anses en gemenskapsintern handel transaktion om leveransadressen för transaktionen är i en medlemsstat i EU. För dessa länder/regioner, en post ska finnas på **land/region fliken Parametrar** i **utrikeshandeln parametrar sidan** och **land/region typ** värdet sättas till **EU**. Handeln inom gemenskapen transaktioner markeras i **listan** . Med det här fältet kan du även separat gemenskapsintern handel från triangelhandel transaktioner. Du kan samla information om inomeuropeiska handeltransaktioner på sidan **Lista över försäljning inom EU** (klicka på **Moms** &gt; **Deklarationer** &gt; **Utrikeshandel** &gt; **Lista över försäljning inom EU**) via funktionen **Överför**. Denna funktion låter dig inkludera transaktioner som har mängder av olika typer av rapportering (dvs. objekt eller tjänster), enligt punkt moms grupper som är angivna på transaktionsraderna. Du kan även tillämpa andra filter för att definiera transaktioner som ska inkluderas. **Överföringsfunktionen** skapar en post på **lista över försäljning inom EU** sida för varje handeln inom gemenskapen transaktion som ingår och anger en motpart kontonummer, land/region, ett momsregistreringsnummer, ett fakturanummer, datum, och den totala summan av rader per typ av rapportering. Dessutom kopierar **listan kodvärdet** från transaktionen. Du kan manuellt ändra listan for en transaktion på **lista över försäljning inom EU** . **Överföringsfunktionen** skapar poster där **rapportering status** värdet **ingår**. Du kan verifiera den information som samlas in på **EU-lista över försäljning på** sidan genom att använda **funktionen godkänn** .
+En transaktion anses en gemenskapsintern handel transaktion om leveransadressen för transaktionen är i en medlemsstat i EU. För dessa länder/regioner, en post ska finnas på **land/region fliken Parametrar** i **utrikeshandeln parametrar sidan** och **land/region typ** värdet sättas till **EU**. Handeln inom gemenskapen transaktioner markeras i **listan** . Med det här fältet kan du även separat gemenskapsintern handel från triangelhandel transaktioner. Du kan samla information om inomeuropeiska handeltransaktioner på sidan **Lista över försäljning inom EU** (klicka på **Moms** &gt; **Deklarationer** &gt; **Utrikeshandel** &gt; **Lista över försäljning inom EU**) via funktionen **Överför**. Denna funktion låter dig inkludera transaktioner som har mängder av olika typer av rapportering (dvs. objekt eller tjänster), enligt punkt moms grupper som är angivna på transaktionsraderna. Du kan även tillämpa andra filter för att definiera transaktioner som ska inkluderas. **Överföringsfunktionen** skapar en post på **lista över försäljning inom EU** sida för varje handeln inom gemenskapen transaktion som ingår och anger en motpart kontonummer, land/region, ett momsregistreringsnummer, ett fakturanummer, datum, och den totala summan av rader per typ av rapportering. Dessutom kopierar **listan kodvärdet** från transaktionen. Du kan manuellt ändra listan for en transaktion på **lista över försäljning inom EU** . **Överföringsfunktionen** skapar poster där **rapportering status** värdet **ingår**. Du kan verifiera den information som samlas in på **EU-lista över försäljning på** sidan genom att använda **funktionen godkänn** . Du kan få detaljerad information om fakturan (för försäljningsriktning) genom att använda funktionen **Summor**.
 
 ### <a name="generating-the-eu-sales-list-report"></a>Generera försäljning i EU listan rapport
 
@@ -160,8 +160,26 @@ Du kan generera en **lista över försäljning inom EU** rapport genom att anvä
 
 När du har slutfört rapporteringen för en specifik period (exempelvis när skattemyndigheten har godtagit **EU-försäljningslista** rapporten), kan du markera ESL poster som ingår i rapporten för perioden genom inställning av **rapporteringsstatusvärdet** som **stängd**. För att ställa denna status, använd **markera som avslutad** funktion på **EU-lista över försäljning** sida. Om du återställer periodslutet kan du markera ESL poster genom att ställa in **rapporteringsstatus** till **Inkluderad**. Dessa poster kan sedan ingå i en **lista över försäljning inom EU** rapport igen. För att ställa denna status, använd **markera som** **ingår** i **EU:s lista över försäljning** sida.
 
+## <a name="list-of-country-specific-topics"></a>Lista med landsspecifika ämnen
 
-
+| Land          | Länk      |
+|------------------|-----------|
+| Österrike          | [Lista över försäljning inom EU för Österrike.](emea-aut-eu-sales-list.md)| 
+| Belgien          |[Lista över försäljning inom EU för Belgien](emea-bel-eu-sales-list.md)|
+| Tjeckien          |[Lista över försäljning inom EU för Tjeckien.](emea-cze-eu-sales-list.md)|
+| Danmark          |[EU-försäljningslista för Danmark](emea-dnk-eu-sales-list.md)|
+| Estland          |[Lista över försäljning inom EU för Estland.](emea-est-eu-sales-list.md)|
+| Finland          |[EU-försäljningslista för Finland](emea-fin-eu-sales-list.md)|
+| Frankrike          |[EU-försäljningslista för Frankrike](emea-fra-eu-sales-list.md)|
+| Tyskland          |[EU-försäljningslista för Tyskland](emea-deu-eu-sales-list.md)|
+| Ungern          |[Lista över försäljning inom EU för Ungern.](emea-hun-eu-sales-list.md)|
+| Lettland          |[Lista över försäljning inom EU för Lettland.](emea-lva-eu-sales-list.md)|
+| Litauen          |[Lista över försäljning inom EU för Litauen.](emea-ltu-eu-sales-list.md)|
+| Nederländerna          |[EU-försäljningslista för Nederländerna](emea-nl-eu-sales-list.md)|
+| Polen          |[Lista över EU-försäljning för Polen](emea-pol-eu-sales-list.md)|
+| Spanien          |[EU-försäljningslista för Spanien (rapport 349)](emea-esp-sales-list.md)|
+| Sverige          |[Lista över EU-försäljning för Sverige](emea-swe-eu-sales-list.md)|
+| Storbritannien (Nordirland)          |[Lista över försäljning inom EU för Storbritannien (Nordirland)](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0a6b5a2904d21782ae422d06eaaf03c5d5e51ab9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872136"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015591"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytta, ersätt och installera tillgångar
 
@@ -44,7 +44,7 @@ Använd funktionen **Flytta tillgång** för att flytta en tillgång antingen ti
 > [!NOTE]
 > Använd inte den här funktionen om tillgångarna repareras eller tillfälligt ersätts. Använd i stället funktionen **Ersätt tillgång** som beskrivs senare i denna artikel.
 
-1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar** eller **Aktiva tillgångar**.
+1. Välj **Tillgångshantering** \> **Tillgångar** \> **Alla tillgångar** eller **Aktiva tillgångar**.
 2. Välj tillgången som ska flyttas i listan. Om tillgången har underordnade tillgångar kan du också flytta dessa tillgångar.
 3. Välj **Flytta tillgång**.
 4. Om du vill flytta tillgången så att den blir en del av en tillgångsstruktur väljer du den nya överordnade tillgången i fältet **överordnad tillgång**. Om du flyttar en underordnad tillgång och du vill göra den till en fristående tillgång som inte har några strukturrelationer lämnar du fältet **överordnad tillgång** tomt.
@@ -58,7 +58,7 @@ Använd funktionen **Ersätt tillgång** i samband med reparationer, renovering 
 > [!NOTE]
 > Om en reparationsverkstad är relaterad till din produktionsavdelning kan du skapa funktionsplatser som **reparation**, **kassation** och **lagring** för att hantera reparation och utbyte av tillgångar.
 
-1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar** eller **Aktiva tillgångar**.
+1. Välj **Tillgångshantering** \> **Tillgångar** \> **Alla tillgångar** eller **Aktiva tillgångar**.
 2. Välj den underordnade tillgången som ska bytas ut i listan. Om tillgången har underordnade tillgångar kan du också byta ut dessa tillgångar.
 3. Välj **Ersätt tillgång**.
 
@@ -79,7 +79,7 @@ Använd funktionen **installera tillgång** för att installera en tillgångsstr
 > [!NOTE]
 > Välj alltid en överordnad tillgång. Överordnad tillgång och relaterade underordnade tillgångar kommer att flyttas till den valda funktionsplatsen.
 
-1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar** eller **Aktiva tillgångar**.
+1. Välj **Tillgångshantering** \> **Tillgångar** \> **Alla tillgångar** eller **Aktiva tillgångar**.
 2. I listan väljer du den överordnade tillgången som ska installeras på en annan funktionsplats.
 3. Välj **Installera tillgång**.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899423"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022577"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -113,9 +113,6 @@ För att använda den här funktionen, aktivera följande funktion i [funktionsh
 
 ### <a name="enable-the-my-day-dialog"></a>Aktivera dialogrutan "Min dag"
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 I dialogrutan **Min dag** får medarbetare en översikt över sina dagliga registreringar och aktuella saldon för betald tid, betald övertid, frånvaro och betald frånvaro.
 
 För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -124,9 +121,6 @@ För att använda den här funktionen, aktivera följande funktion i [funktionsh
 
 ### <a name="enable-teams"></a>Aktivera team
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 När flera arbetare tilldelas samma produktionsjobb kan de ingå i ett team. Teamet kan utnämna en arbetare till ledare. De återstående arbetarna blir automatiskt medhjälpare till ledare. För det resulterande teamet måste bara ledaren registrera jobbstatus. Tidsposter gäller för alla gruppmedlemmar.
 
 För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -134,9 +128,6 @@ För att använda den här funktionen, aktivera följande funktion i [funktionsh
 - *Produktionsteam i körningsgränssnittet för produktionsgolvet*
 
 ### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Aktivera ytterligare konfiguration i körningsgränssnittet för produktionsgolvet
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Den här funktionen lägger till inställningar för följande funktioner på sidan **Konfigurera körning på produktionsgolv**:
 
@@ -178,7 +169,7 @@ Följande inställningar finns på snabbfliken **Allmänt**.
 - **En arbetare** – Ställ in det här alternativet på *Ja* om bara en av dem använder varje körningsgränssnitt för produktionsgolvet där denna konfiguration är aktiv. När det här alternativet är inställt på *Ja* alternativet **Lås medarbetare** automatiskt till *Ja*. Dessutom tar den här inställningen bort kravet (och möjligheten) för arbetaren att logga in med hjälp av ID-bricka (eller liknande ID). Istället loggar medarbetaren in Microsoft Dynamics 365 Supply Chain Management genom att använda ett systemanvändarkonto som är länkat till en *tidsregistrerad arbetare* (från tabellen *arbetaren*) och loggas in på körningsgränssnittet för produktionsgolvet samtidigt som medarbetaren.
 - **Tillåt låsning av pekskärm** – Ange detta alternativ till *Ja* medarbetare ska kunna låsa pekskärmen på körningsgränssnittet för produktionsgolvet så att de kan sanera den. När det här alternativet är inställt på *Ja* läggs knappen **Låsskärm för sanering** läggs till på inloggningssidan. När en medarbetare väljer den här knappen, låser sig pekskärmen tillfälligt för att förhindra indata. En nedräkningstimer visas också. Arbetaren kan nu rensa enheten och skärmen på ett säkert sätt. När nedräkningen är klar låses pekskärmen upp automatiskt.
 - **Tidslängd för skärmlåsning** – När alternativet **Tillåt låsning pekskärm** anges till *Ja*, använd det här alternativet för att ange antalet sekunder som pekskärmen ska vara låst för att desinficera. Längden måste vara mellan 5 och 120 sekunder.
-- **Generera ID-nummer** – Ange det här alternativet *Ja* om du vill generera ett nytt ID-nummer varje gång en medarbetare använder körningsgränssnittet för produktionsgolvet för att rapportera som färdig. ID-numret genereras från en nummerserie som ställs in på sidan **parametrar för Warehouse management**. Om alternativet *Nej* måste arbetare ange ett befintligt ID-nummer när den rapporteras som färdig.
+- **Generera ID-nummer** – Ange det här alternativet *Ja* om du vill generera ett nytt ID-nummer varje gång en medarbetare använder körningsgränssnittet för produktionsgolvet för att rapportera som färdig. ID-numret genereras från en nummerserie som ställs in på sidan **parametrar för Lagerstyrning**. Om alternativet *Nej* måste arbetare ange ett befintligt ID-nummer när den rapporteras som färdig.
 - **Skriv ut etikett** – Ställ in det här alternativet på *Ja* om du vill skriva ut ett ID-nummer när en medarbetare använder ett körningsgränssnitt för produktionsgolvet för att rapportera som färdig. Konfigurationen av etiketten ställs in i dokumentflödet som beskrivs i [Layout på dokumentflödet för ID-nummeretiketter](../warehousing/document-routing-layout-for-license-plates.md).
 
 ### <a name="the-tab-selection-fasttab"></a>Snabbfliken Flikval

@@ -1,8 +1,8 @@
 ---
-title: Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö
-description: I denna artikel beskrivs hur du konfigurerar "köp online, hämta i butik" (BOPIS) i en Microsoft Dynamics 365 Commerce-utvärderingsmiljö efter att den har etablerats.
+title: Konfigurera BOPIS i en Dynamics 365 Commerce sandbox-miljö
+description: I denna artikel beskrivs hur du konfigurerar "köp online, hämta i butik" (BOPIS) i en Microsoft Dynamics 365 Commerce sandbox-miljö efter att den har etablerats.
 author: BrianShook
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16cea7beb6ca05b5e96a9713b1217b414e27d56e
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861976"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013185"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö
+# <a name="configure-bopis-in-a-dynamics-365-commerce-sandbox-environment"></a>Konfigurera BOPIS i en Dynamics 365 Commerce sandbox-miljö
 
 [!include [banner](includes/banner.md)]
 
-I denna artikel beskrivs hur du konfigurerar "köp online, hämta i butik" (BOPIS) i en Microsoft Dynamics 365 Commerce-utvärderingsmiljö efter att miljön har etablerats.
+I denna artikel beskrivs hur du konfigurerar "köp online, hämta i butik" (BOPIS) i en Microsoft Dynamics 365 Commerce sandbox-miljö efter att miljön har etablerats.
 
 ## <a name="prerequisite"></a>Förutsättning
 
-Slutför procedurerna i denna artikel först när bedömningsmiljön för Commerce har etablerats och konfigurerats. Information om hur du etablerar och konfigurerar din miljö, se [Etablera en bedömningsmiljö av Dynamics 365 Commerce](provisioning-guide.md) och [Konfigurera en bedömningsmiljö av Dynamics 365 Commerce](./cpe-post-provisioning.md).
+Slutför procedurerna i denna artikel först när sandbox-miljön för Commerce har etablerats och konfigurerats. Information om hur du etablerar och konfigurerar din miljö, se [Etablera en sandbox-miljö av Dynamics 365 Commerce](provisioning-guide.md) och [Konfigurera en sandbox-miljö av Dynamics 365 Commerce](./cpe-post-provisioning.md).
 
 När hela Commerce-miljön har etablerats och konfigurerats kan du använda denna artikel för att aktivera BOPIS-scenarier.
 
@@ -67,7 +67,7 @@ BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustat
 5. En dialogrutan för verifiering visas. Välj det konto som använder e-postadressen som tidigare kopplades till medarbetaren **000713 – Anders Collette**.
 
     > [!NOTE]
-    > Om du ännu inte har associerat en medarbetare med din identitet kommer aktiveringen att misslyckas. Följ i så fall instruktionerna under avsnittet "Associera arbetare med din identitet" i artikeln [Konfigurera en bedömningsmiljö för Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Om du ännu inte har associerat en medarbetare med din identitet kommer aktiveringen att misslyckas. Följ i så fall instruktionerna under avsnittet "Associera arbetare med din identitet" i artikeln [Konfigurera en sandbox-miljö för Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. När du uppmanas att låta din organisation hantera enheten väljer du **Endast den här appen**.
 7. När aktiveringen är slutförd, välj **Kom igång**.
@@ -140,13 +140,9 @@ För alla allmänna problem bör du alltid läsa händelseloggarna i Modern POS-
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Dynamics 365 Commerce bedömningsmiljö – översikt](cpe-overview.md)
+[Etablera en Dynamics 365 Commerce sandbox-miljö](provisioning-guide.md)
 
-[Etablera en Dynamics 365 Commerce bedömningsmiljön](provisioning-guide.md)
-
-[Konfigurera valfria funktioner för en Dynamics 365 Commerce bedömningsmiljö](cpe-optional-features.md)
-
-[Dynamics 365 Commerce bedömningsmiljö – vanliga frågor](cpe-faq.md)
+[Konfigurera valfria funktioner för en Dynamics 365 Commerce sandbox-miljö](cpe-optional-features.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

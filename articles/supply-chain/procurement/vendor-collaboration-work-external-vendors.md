@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25561802996514f6f60fc9400c22dc61a30ef1c8
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907302"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023800"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
@@ -29,9 +29,6 @@ ms.locfileid: "8907302"
 Modulen för **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 Supply Chain Management. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I dnena artikel förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
 
 För mer information om vad externa leverantörer kan göra i gränssnittet för leverantörssamarbeten, se [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
-
-> [!NOTE]
-> Informationen i denna artikel om samarbete för leverantör gäller bara för den aktuella versionen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal**, se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
 
 För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
@@ -57,8 +54,25 @@ En administratör konfigurerar de allmänna inställningarna för leverantörssa
 
 Innan användarkonton kan skapas för en extern leverantör, måste du konfigurera leverantörskontot så att leverantören kan använda leverantörssamarbete. Gå till sidan **Leverantörer** och ange fältet **Samarbetesaktivering** på fliken **Allmänt**. Följande alternativ är tillgängliga:
 
-- **Aktiv (IO bekräftas automatiskt)** – Inköpsorder bekräftas automatiskt om leverantören godkänner dem utan ändringar.
+- **Aktiv (IO bekräftas automatiskt)** – Inköpsorder bekräftas automatiskt om leverantören godkänner dem utan ändringar. Om du använder det här alternativet ska du schemalägga batchjobbet *Bekräfta godkända inköpsorder från leverantörens samarbete*, som ansvarar för bearbetningen av bekräftelserna. Instruktioner finns i nästa avsnitt.
 - **Aktiv (IO bekräftas inte automatiskt)** – Din organisation måste manuellt bekräfta inköpsorder det att leverantören har godkänt dem.
+
+### <a name="scheduling-the-auto-confirmation-batch-job"></a>Tidsplanera batchjobbet för automatisk bekräftelse
+
+Om du använder alternativet **Aktivt (IO bekräftas automatiskt)** för en eller flera av dina leverantörer (som beskrivs i föregående avsnitt), måste du schemalägga batchjobbet *Bekräfta godkända inköpsorder från leverantörssamarbete* som ansvarar för att bearbeta och bekräfta dina inköpsorder. Annars görs aldrig automatiska bekräftelser. Gör på följande sätt när du schemalägger detta jobb.
+
+1. Gå till **Anskaffning och inköp \> Inköpsorder \> Bekräfta inköpsorder \> Bekräfta godkända inköpsorder från leverantörssamarbete**.
+1. I dialogrutan **Bekräfta godkända inköpsorder från leverantörssamarbete** på snabbfliken **Kör i bakgrunden**, välj **Återkommande**.
+1. I dialogrutan **Definiera återkommande** definiera schemat som jobbet ska köras på. När du väljer schema ska du tänka på följande:
+
+    - Om systemet bearbetar en stor mängd data och kör många batchjobb kan prestanda vara ett problem. I detta fall ska du troligtvis inte köra det här jobbet mer ofta än var 10:e minut (beroende på dina andra krav). Om prestanda inte är ett problem för dig kan du köra det så ofta som var 1 till 2 minut om det behövs.
+    - Om dina leverantörer snabbt vill leverera varor (inom den dag de enkom har avtalats) ska upprepningen ofta förekomma (var 10:a till 30:e minut). På det här sättet kan lagerarbetare ta emot varorna mot det bekräftade inköpsordern när bekräftelsen har gjort.
+    - Om dina leverantörer vill ha lång ledtid (mer än 24 timmar) kan du ställa in den här uppgiften så att den bara körs en gång om dagen eller så.
+
+1. Välj **OK** för att tillämpa ditt schema och återgå till dialogrutan **Bekräfta accepterade inköpsorder från dialogrutan för leverantörssamarbete**.
+1. Ställ in ytterligare bakgrundsalternativ om det behövs. Dialogrutan innehåller de vanliga alternativen för inställning av batchjobb i Supply Chain Management.
+
+Mer information om batchjobb finns i [Översikt över batchbearbetning](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Ange om leverantören ska se prisinformation
 

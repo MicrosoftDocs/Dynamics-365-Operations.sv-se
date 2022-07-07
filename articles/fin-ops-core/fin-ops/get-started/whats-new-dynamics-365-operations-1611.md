@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6e9454baa33e37fe62db2b7bd39ff00891ff855
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5be880a6d178743f4a2d3339609604d993f7e5d5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905036"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016432"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheter och ändringar i Dynamics 365 for Operations version 1611 (november 2016)
 
@@ -818,7 +818,7 @@ För närvarande är Retail Modern POS endast tillgänglig som Windows 8.1-progr
 | Justera det leverantörsägda lagret, med hjälp av en inventeringsjournal. | Det är viktigt att du synkroniserar systemlagerbehållningen med det faktiska fysiska lagret. Det leverantörsägda lagret kan justeras in och ut, med hjälp av redovisningsprocesser som t.ex. kvantitetsjustering och inventeringsjournal. |
 | Lär dig mer om stöd för försändelse i Dynamics 365 for Operations | För mer information om support för försändelseprocesses, se [Försändelse](../../../supply-chain/inventory/consignment.md), [Ställa in försändelse](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Skapa en order för försändelseåteranskaffning (uppgiftsgudie)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) och [Ändra ägarskapet för försändelselagret baserat på produktionsbegäran (uppgiftsgudie)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
-### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Leverantörssamarbete (tidigare känt som leverantörsportalen)
+### <a name="vendor-collaboration"></a>Leverantörssamarbete
 
 | Vad du kan göra | Varför detta är viktigt |
 |-----------------|-----------------------|

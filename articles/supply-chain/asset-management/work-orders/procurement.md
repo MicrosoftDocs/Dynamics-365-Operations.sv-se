@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6e41a28ec922924b0ef86858a881280fd44bfe63
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893654"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014964"
 ---
 # <a name="procurement"></a>Anskaffning
 
@@ -28,7 +28,7 @@ ms.locfileid: "8893654"
 
 I Tillgångshantering kan du få en översikt över inköpsrekvisitioner och inköpsorder relaterade till arbetsorder. Det går också att skapa en inköpsorder eller en inköpsrekvisition från en arbetsorder.
 
-På listsidan **Inköpsrekvisition för arbetsorder** (**Tillgångshantering** > **Allmänt** > **Anskaffning** > **Inköpsrekvisition för arbetsorder**) visas en lista över inköpsrekvisitioner som är relaterade till arbetsorder. När du väljer ett jobb för arbetsorder på den här sidan kan du använda knapparna i gruppen **Visa** i åtgärdsfönstret **Inköpsrekvisition för arbetsorder** för att utföra olika åtgärder:
+På listsidan **Inköpsrekvisition för arbetsorder** (**Tillgångshantering** > **Anskaffning** > **Inköpsrekvisition för arbetsorder**) visar en lista över inköpsrekvisitioner som är relaterade till arbetsorder. När du väljer ett jobb för arbetsorder på den här sidan kan du använda knapparna i gruppen **Visa** i åtgärdsfönstret **Inköpsrekvisition för arbetsorder** för att utföra olika åtgärder:
 
 - Om du vill öppna den relaterade inköpsrekvisitionen, välj **inköpsrekvisition**. 
 - Om du vill öppna en relaterad arbetsorder väljer du **arbetsorder**.
@@ -39,7 +39,7 @@ I bilden nedan visas ett exempel på listsidan **Inköpsrekvisition för arbetso
 ![Figur 1.](media/08-work-orders.png)
 
 
-På listsidan **Inköp för arbetsorder** (**Tillgångshantering** > **Allmänt** > **Anskaffning** > **Inköpsrekvisition för arbetsorder**) visas en lista över inköpsorder som är relaterade till arbetsorder. När du väljer ett jobb för arbetsorder på den här sidan kan du använda knapparna i gruppen **Visa** på fliken i åtgärdsfönstret **Inköpsrekvisition för arbetsorder** för att utföra olika åtgärder:
+På listsidan **Inköp för arbetsorder** (**Tillgångshantering** > **Anskaffning** > **Inköpsrekvisition för arbetsorder**) visas en lista över inköpsorder som är relaterade till arbetsorder. När du väljer ett jobb för arbetsorder på den här sidan kan du använda knapparna i gruppen **Visa** på fliken i åtgärdsfönstret **Inköpsrekvisition för arbetsorder** för att utföra olika åtgärder:
 
 - Om du vill öppna en relaterad inköpsorder väljer du **inköpsorder**. 
 - Om du vill öppna en relaterad arbetsorder väljer du **arbetsorder**.
@@ -69,7 +69,7 @@ För en inköpsrekvisition används datumet i fältet **Begärt datum** på snab
 
 På listsidan **Alla arbetsorder** kan du välja ett arbetsorderjobb och skapar sedan en relaterad inköpsorder eller relaterad inköpsrekvisition. Detta hjälper dig att säkerställa att projektrelationer finns mellan inköpsordern eller inköpsrekvisitionen och arbetsordern.
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
+1. Klicka på **Tillgångshantering** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 2. Markera arbetsordern som du vill skapa en inköpsorder för och välj sedan **redigera**.
 

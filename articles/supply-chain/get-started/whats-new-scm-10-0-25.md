@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 1fa2ec6e21026552a4f14a67188db0720d3feae5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850798"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954508"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.25 april 2022)
 
@@ -55,7 +55,7 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 | Anskaffning och källa | Visa äldre standardfältinställningar för svar på anbudsförfrågan | Den här funktionen återinför de äldre standardinställningarna för svarsfält för anbudsförfrågningar (RFQ), som tidigare togs bort från användargränssnittet. De här inställningarna har ingen funktion i rutan men de kan anpassas efter behov. Aktivera den här funktionen om organisationen redan har lagt till funktioner för standardinställningarna för anbudsförfrågans svarsfält eller planerar att göra det. När den här funktionen är aktiverad kan du öppna inställningarna genom att gå till sidan **Anskaffnings- och inköpparametrar**, öppna fliken **Anbudsförfrågan** och välj **Standardsvarsfält för anbudsförfrågan**. |
 | Anskaffning och källa | Sammanfoga ekonomiska dimensioner från providern med aktiv dimensionslänk för ekonomisk dimension på inköpsordern | Med den här funktionen kan du slå samman ekonomiska dimensioner från leverantörer med aktiva dimensionslänk ekonomiska dimensioner efter godkännande av inköpsrekvisition om du skapar en länk mellan en ekonomisk dimension och platsinventeringsdimensionen. Regler för inköpspolicy för inköpsorderskapande och efterfrågekonsolidering kan ställas in så att de styr beslutet att koppla ekonomiska dimensioner från leverantörer till den aktiva dimensionslänkens ekonomiska dimension på inköpsorderrubriknivå. |
 | Produktionskontroll | (Ryssland) Aktivera standardplatsinställningar för produktionsrecept/strukturlista och automatisk GTD-reservation/-förbrukning i produktion | Funktionen möjliggör ytterligare alternativ för produktion från importerade råvaror (endast rysk lokalisering):<ul><li>Möjlighet att konfigurera den automatiska standardplatsen för produktionsformler och stycklistor på både resursgrupper och lager.</li><li>Automatisk reservation av råmaterial genom dimensionen *GTD-nummer* på WMS-aktiverade lager enligt icke-WMS reservationsalgoritmen. Detta gäller i de fall en arbetspolicy för *Råmaterialhämtning* finns med **Arbetsskapande metod** inställt på *Aldrig* och inställningen av lager, plats och artikelnummer matchar lagertransaktionerna för produktionsordern (batch).</li><li>Automatisk förbrukning av råmaterial per dimensionen *GTD-nummer* vid bokföring av plocklista, enligt den anskaffade reservationen som beskrivs tidigare.</li></ul> |
-| Warehouse management | (Förhandsversion) Skalenhetsstöd för inkommande och utgående lagerorder | Den här funktionen gör att systemet skapar utgående lagerställeorder under processen frisläppning till lagerställe, och att man skapar inkommande lagerställeorder när överföringsorder bokförs som levererade. Systemet synkroniserar sedan varje inkommande eller utgående lagerställeorder till den vågsenhet som ansvarar för att skeppa eller ta emot ordern. Observera att dina arbetsbelastningar för lagerstyrning måste uppgraderas när du har aktiverat funktionen. För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>Den här funktionen *Avkoda platsarbete från ASN:er ASNs* och kommer att möjliggöra möjligheten att ta emot överföringsorder med hjälp av inleveransprocess för ID-nummer i Warehouse Management-mobilappen. |
+| Lagerstyrning | (Förhandsversion) Skalenhetsstöd för inkommande och utgående lagerorder | Den här funktionen gör att systemet skapar utgående lagerställeorder under processen frisläppning till lagerställe, och att man skapar inkommande lagerställeorder när överföringsorder bokförs som levererade. Systemet synkroniserar sedan varje inkommande eller utgående lagerställeorder till den vågsenhet som ansvarar för att skeppa eller ta emot ordern. Observera att dina arbetsbelastningar för lagerstyrning måste uppgraderas när du har aktiverat funktionen. För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>Den här funktionen *Avkoda platsarbete från ASN:er ASNs* och kommer att möjliggöra möjligheten att ta emot överföringsorder med hjälp av inleveransprocess för ID-nummer i Lagerstyrning-mobilappen. |
 
 ## <a name="feature-state-changes-in-this-release"></a>Funktionstillstånd ändras i den här versionen
 
@@ -133,53 +133,53 @@ Tabellen visar även funktioner som tidigare var offentliga, men som har ändrat
 | Försäljning och marknadsföring | [Registrering av försäljningsreturorderrad med decimalprecision med och utan faktisk/nominell vikt](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight) | På som standard |
 | Försäljning och marknadsföring | [Sparade vyer för försäljning och marknadsföring](saved-views-scm.md) | På som standard |
 | Försäljning och marknadsföring | Bekräftelse av försäljningsorder med ett klick | På som standard |
-| Warehouse management | [Mallar för direktleverans med platsdirektiv](../warehousing/planned-cross-docking.md) | Allmänt tillgängligt |
-| Warehouse management | [Inaktivera förväntade inleveranser från kvalitetsorder som ger exempel på blockerat lager](../inventory/inventory-blocking.md) | Allmänt tillgängligt |
-| Warehouse management | Inleveranshistorik för ID-nummer | Allmänt tillgängligt |
-| Warehouse management | [Materialhanteringsutrustningens gränssnitt](../warehousing/mhax.md) | Allmänt tillgängligt |
-| Warehouse management | [Avrunda kvantiteter neråt till närmaste försäljningsenhet vid frisläpp till lagerställe](whats-new-scm-10-0-19.md) | Allmänt tillgängligt |
-| Warehouse management | Stöd för skalningsenhet för arbetslistor för distributionslagerapp | Allmänt tillgängligt |
-| Warehouse management | Information om etikett för leveranspåfyllnad | Allmänt tillgängligt |
-| Warehouse management | [Använd snabbare API för behållare som stängs/öppnas igen på förpackningsstationen](whats-new-scm-10-0-21.md) | Allmänt tillgängligt |
-| Warehouse management | [Validera mallar valda för lagerpåfyllnadsjobb](whats-new-scm-10-0-20.md) | Allmänt tillgängligt |
-| Warehouse management | Tillåt lagerpåfyllnadsmall att använda befintligt omedelbart lagerpåfyllnadsarbete (mellan enheter) | Obligatoriskt |
-| Warehouse management | Automatisk tilldelning av GUID när användaren skapar något i WHS | Obligatoriskt |
-| Warehouse management | Inhämta produktvarianter och spårningsdimensioner i lagerstyrningsappen under mottagande av lastartikel | Obligatoriskt |
-| Warehouse management | [Ändra lagerstatus för artiklar som styrs av spårningsdimensioner](../inventory/inventory-statuses.md) | Obligatoriskt |
-| Warehouse management | [Ändra arbetspool för arbete](../warehousing/change-work-pool-on-work.md) | Obligatoriskt |
-| Warehouse management | [Klusterposition full](../warehousing/cluster-position-full.md) | Obligatoriskt |
-| Warehouse management | [Funktionen för klusterplats](../warehousing/putaway-clusters.md) | Obligatoriskt |
-| Warehouse management | [Bekräfta och överföra](../warehousing/confirm-and-transfer.md) | Obligatoriskt |
-| Warehouse management | [Bekräfta utgående leveranser från batchjobb](../warehousing/confirm-outbound-shipments-from-batch-jobs.md) | Obligatoriskt |
-| Warehouse management | [Kontrollera om en sammanfattningssida för inleverans ska visas på mobila enheter](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Obligatoriskt |
-| Warehouse management | [Uppskjuten bearbetning av manuell åtgärd för lagerrörelse](../warehousing/deferred-processing-manual-inventory-movement.md) | Obligatoriskt |
-| Warehouse management | Tillåt inte att skapa laster som inte uppfyller kraven i mallen för påfyllnadslastuppbyggnad | Obligatoriskt |
-| Warehouse management | [Förbättrad layout för ID-nummeretikett](../warehousing/document-routing-layout-for-license-plates.md) | Obligatoriskt |
-| Warehouse management | [Utvärdera alla åtgärder för platsdirektiv för flera SKU:er](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Obligatoriskt |
-| Warehouse management | Dölj fältet Totalt värde på sidorna Alla beläggningar och Beläggningsinformation | Obligatoriskt |
-| Warehouse management | ID-nummeretikettens byggkonfiguration | Obligatoriskt |
-| Warehouse management | Manuell korrigering av lastrad för administratör eller andra betrodda användare | Obligatoriskt |
-| Warehouse management | [Placering för plats-ID-nummer](../warehousing/location-license-plate-positioning.md) | Obligatoriskt |
-| Warehouse management | [Blandning av produktstorlekar på plats](../warehousing/location-product-dimension-mixing.md) | Obligatoriskt |
-| Warehouse management | Gör fältet med lagerstatus för mobilenhetslagerrörelse redigerbart | Obligatoriskt |
-| Warehouse management | Manuell plockningstjänst för försäljningsrad för admin eller liknande betrodda användare | Obligatoriskt |
-| Warehouse management | [Förhindra att levererade ID-nummer för överföringsorder används på i andra distributionslager än måldistributionslagret](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Obligatoriskt |
-| Warehouse management | Prompt för att lösa tvetydiga plats/ID-nummernamn | Obligatoriskt |
-| Warehouse management | [Kvalitetskontroll](../warehousing/quality-check.md) | Obligatoriskt |
-| Warehouse management | [Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen](../warehousing/install-configure-warehouse-management-app.md) | Obligatoriskt |
-| Warehouse management | [Ytterligare platszoner](../warehousing/additional-location-zones.md) | På som standard |
-| Warehouse management | [Skapa och bearbeta överföringsorder från lagerställeappen](../warehousing/create-transfer-order-from-warehouse-app.md) | På som standard |
-| Warehouse management | Aktivera snabbvalidering för lagerställets mobila enheter | På som standard |
-| Warehouse management | [Maximal körningstid för jobbet Rensning av behållningsposter för lagerstyrning](../warehousing/onhand-cleanup.md) | På som standard |
-| Warehouse management | [Visualisering av utgående arbetsbelastning](../warehousing/outbound-workload-visualization.md) | På som standard |
-| Warehouse management | [Bearbeta lagerställeapphändelser](../warehousing/warehouse-app-events.md) | På som standard |
-| Warehouse management | [Sparad vy för workbench vid lastplanering](saved-views-scm.md) | På som standard |
-| Warehouse management | [Sparad vy för sidan Information om arbete](saved-views-scm.md) | På som standard |
-| Warehouse management | [Sparad vy för påfyllnadsbearbetning](saved-views-scm.md) | På som standard |
-| Warehouse management | [Sparade vyer för lastbearbetning](saved-views-scm.md) | På som standard |
-| Warehouse management | [Sparade vyer för leveransbearbetning](saved-views-scm.md) | På som standard |
-| Warehouse management | [Information om påfyllnadsbatchjobb](../warehousing/wave-processing.md) | På som standard |
-| Warehouse management | [Meddelanden för påfyllnadskörning](../warehousing/wave-execution-notifications.md) | På som standard |
+| Lagerstyrning | [Mallar för direktleverans med platsdirektiv](../warehousing/planned-cross-docking.md) | Allmänt tillgängligt |
+| Lagerstyrning | [Inaktivera förväntade inleveranser från kvalitetsorder som ger exempel på blockerat lager](../inventory/inventory-blocking.md) | Allmänt tillgängligt |
+| Lagerstyrning | Inleveranshistorik för ID-nummer | Allmänt tillgängligt |
+| Lagerstyrning | [Materialhanteringsutrustningens gränssnitt](../warehousing/mhax.md) | Allmänt tillgängligt |
+| Lagerstyrning | [Avrunda kvantiteter neråt till närmaste försäljningsenhet vid frisläpp till lagerställe](whats-new-scm-10-0-19.md) | Allmänt tillgängligt |
+| Lagerstyrning | Stöd för skalningsenhet för arbetslistor för distributionslagerapp | Allmänt tillgängligt |
+| Lagerstyrning | Information om etikett för leveranspåfyllnad | Allmänt tillgängligt |
+| Lagerstyrning | [Använd snabbare API för behållare som stängs/öppnas igen på förpackningsstationen](whats-new-scm-10-0-21.md) | Allmänt tillgängligt |
+| Lagerstyrning | [Validera mallar valda för lagerpåfyllnadsjobb](whats-new-scm-10-0-20.md) | Allmänt tillgängligt |
+| Lagerstyrning | Tillåt lagerpåfyllnadsmall att använda befintligt omedelbart lagerpåfyllnadsarbete (mellan enheter) | Obligatoriskt |
+| Lagerstyrning | Automatisk tilldelning av GUID när användaren skapar något i WHS | Obligatoriskt |
+| Lagerstyrning | Inhämta produktvarianter och spårningsdimensioner i lagerstyrningsappen under mottagande av lastartikel | Obligatoriskt |
+| Lagerstyrning | [Ändra lagerstatus för artiklar som styrs av spårningsdimensioner](../inventory/inventory-statuses.md) | Obligatoriskt |
+| Lagerstyrning | [Ändra arbetspool för arbete](../warehousing/change-work-pool-on-work.md) | Obligatoriskt |
+| Lagerstyrning | [Klusterposition full](../warehousing/cluster-position-full.md) | Obligatoriskt |
+| Lagerstyrning | [Funktionen för klusterplats](../warehousing/putaway-clusters.md) | Obligatoriskt |
+| Lagerstyrning | [Bekräfta och överföra](../warehousing/confirm-and-transfer.md) | Obligatoriskt |
+| Lagerstyrning | [Bekräfta utgående leveranser från batchjobb](../warehousing/confirm-outbound-shipments-from-batch-jobs.md) | Obligatoriskt |
+| Lagerstyrning | [Kontrollera om en sammanfattningssida för inleverans ska visas på mobila enheter](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Obligatoriskt |
+| Lagerstyrning | [Uppskjuten bearbetning av manuell åtgärd för lagerrörelse](../warehousing/deferred-processing-manual-inventory-movement.md) | Obligatoriskt |
+| Lagerstyrning | Tillåt inte att skapa laster som inte uppfyller kraven i mallen för påfyllnadslastuppbyggnad | Obligatoriskt |
+| Lagerstyrning | [Förbättrad layout för ID-nummeretikett](../warehousing/document-routing-layout-for-license-plates.md) | Obligatoriskt |
+| Lagerstyrning | [Utvärdera alla åtgärder för platsdirektiv för flera SKU:er](/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions) | Obligatoriskt |
+| Lagerstyrning | Dölj fältet Totalt värde på sidorna Alla beläggningar och Beläggningsinformation | Obligatoriskt |
+| Lagerstyrning | ID-nummeretikettens byggkonfiguration | Obligatoriskt |
+| Lagerstyrning | Manuell korrigering av lastrad för administratör eller andra betrodda användare | Obligatoriskt |
+| Lagerstyrning | [Placering för plats-ID-nummer](../warehousing/location-license-plate-positioning.md) | Obligatoriskt |
+| Lagerstyrning | [Blandning av produktstorlekar på plats](../warehousing/location-product-dimension-mixing.md) | Obligatoriskt |
+| Lagerstyrning | Gör fältet med lagerstatus för mobilenhetslagerrörelse redigerbart | Obligatoriskt |
+| Lagerstyrning | Manuell plockningstjänst för försäljningsrad för admin eller liknande betrodda användare | Obligatoriskt |
+| Lagerstyrning | [Förhindra att levererade ID-nummer för överföringsorder används på i andra distributionslager än måldistributionslagret](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Obligatoriskt |
+| Lagerstyrning | Prompt för att lösa tvetydiga plats/ID-nummernamn | Obligatoriskt |
+| Lagerstyrning | [Kvalitetskontroll](../warehousing/quality-check.md) | Obligatoriskt |
+| Lagerstyrning | [Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen](../warehousing/install-configure-warehouse-management-app.md) | Obligatoriskt |
+| Lagerstyrning | [Ytterligare platszoner](../warehousing/additional-location-zones.md) | På som standard |
+| Lagerstyrning | [Skapa och bearbeta överföringsorder från lagerställeappen](../warehousing/create-transfer-order-from-warehouse-app.md) | På som standard |
+| Lagerstyrning | Aktivera snabbvalidering för lagerställets mobila enheter | På som standard |
+| Lagerstyrning | [Maximal körningstid för jobbet Rensning av behållningsposter för lagerstyrning](../warehousing/onhand-cleanup.md) | På som standard |
+| Lagerstyrning | [Visualisering av utgående arbetsbelastning](../warehousing/outbound-workload-visualization.md) | På som standard |
+| Lagerstyrning | [Bearbeta lagerställeapphändelser](../warehousing/warehouse-app-events.md) | På som standard |
+| Lagerstyrning | [Sparad vy för workbench vid lastplanering](saved-views-scm.md) | På som standard |
+| Lagerstyrning | [Sparad vy för sidan Information om arbete](saved-views-scm.md) | På som standard |
+| Lagerstyrning | [Sparad vy för påfyllnadsbearbetning](saved-views-scm.md) | På som standard |
+| Lagerstyrning | [Sparade vyer för lastbearbetning](saved-views-scm.md) | På som standard |
+| Lagerstyrning | [Sparade vyer för leveransbearbetning](saved-views-scm.md) | På som standard |
+| Lagerstyrning | [Information om påfyllnadsbatchjobb](../warehousing/wave-processing.md) | På som standard |
+| Lagerstyrning | [Meddelanden för påfyllnadskörning](../warehousing/wave-execution-notifications.md) | På som standard |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

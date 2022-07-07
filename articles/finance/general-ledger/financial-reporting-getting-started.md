@@ -2,7 +2,7 @@
 title: Översikt över ekonomisk rapportering
 description: Detta ämne beskriver hur du kommer åt ekonomisk rapportering i Microsoft Microsoft Dynamics 365 Finance och hur du använder funktionerna för finansiell rapportering.
 author: aprilolson
-ms.date: 03/31/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b09adc738ac36625436e5cc3197e79603fff9b8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853421"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033672"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med ekonomisk rapportering 
 
@@ -30,14 +30,17 @@ ms.locfileid: "8853421"
 
 Den här artikeln beskriver hur du kommer åt ekonomisk rapportering och hur du använder finansiella rapporteringsfunktioner. Den innehåller även en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 
-## <a name="accessing-financial-reporting"></a>Åtkomst till ekonomisk rapportering
+## <a name="enable-financial-reporting"></a>Aktivera ekonomisk rapportering
+Om du vill använda den ekonomiska rapporteringstjänsten för din organisation måste en Lifecycle Services-administratör (LCS)aktivera den här tjänsten i LCS-portalen för din organisation. Om ingen Financial Reporting har gjorts för din miljö bör du kontakta din LCS-administratör för att aktivera tjänsten. 
+
+## <a name="accessing-financial-reporting"></a>Åtkomst till Financial Reporting
 
 Menyn **Ekonomisk rapportering** finns på följande platser:
 
-- **Redovisning** &gt; **Förfrågningar och rapporter**
-- **Budgetering** &gt; **Förfrågningar och rapporter** &gt; **Grundläggande budgetering**
-- **Budgetering** &gt; **Förfrågningar och rapporter** &gt; **Budgetplanering**
-- **Budgetering** &gt; **Förfrågningar och rapporter** &gt; **Budgetkontroll**
+- **Redovisning** > **Förfrågningar och rapporter**
+- **Budgetering** > **Förfrågningar och rapporter** > **Grundläggande budgetering**
+- **Budgetering** > **Förfrågningar och rapporter** > **Budgetplanering**
+- **Budgetering** > **Förfrågningar och rapporter** > **Budgetkontroll**
 - Konsolideringar
 
 Om du vill skapa och skapa ekonomiska rapporter för en juridisk person måste du ange följande information för den juridiska personen:

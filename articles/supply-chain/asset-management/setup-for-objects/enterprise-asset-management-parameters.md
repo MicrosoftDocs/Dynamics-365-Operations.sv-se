@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 750776412ce9d87389a635ef108a34cffe12b68b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870823"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015824"
 ---
 # <a name="asset-management-parameters"></a>Parametrar för Tillgångshantering
 
@@ -37,7 +37,7 @@ På fliken **Tillgångar** finns följande inställningar:
 
 - **Standardfunktionsplats plats** är standardfunktionsplats, som väljs automatiskt på tillgångar när du skapar nya tillgångar.  
 - I den **standardkalender** väljer du en kalender som ska användas för att beräkna tillgångens KPI:er, om ingen resurs har valts på en tillgång.  
-- I fältet **Visa** väljer standardvy som visas när du öppnar **Tillgångsvy** (**Tillgångshantering** > **Allmänt** > **Tillgångar** > **Tillgångsvy**).
+- I fältet **Visa** väljer standardvy som visas när du öppnar **Tillgångsvy** (**Tillgångshantering** > **Allmänt** > **Tillgångar**).
 - **Standardbegärandetyp** är standardtypen för underhållsbegäran som väljs automatiskt när du skapar en ny begäran.  
 - Prognoser för jobbtyper lagras i det projekt som valts i fältet **prognosprojekt**. För varje jobbtyp skapas en ny aktivitet automatiskt i prognosprojektet. Prognoser för jobbtypen sparas sedan i prognosprojektet.  
 - I fältet **modell** väljer du den prognosmodell som används för jobbtyp och arbetsorderprognoser.

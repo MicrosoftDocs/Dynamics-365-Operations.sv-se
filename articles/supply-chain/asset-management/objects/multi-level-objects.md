@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5b13db8b8b12aaef2e067f9a55eb8754333eb16b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908784"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017157"
 ---
 # <a name="multi-level-assets"></a>Tillgångar på flera nivåer
 
@@ -30,7 +30,7 @@ ms.locfileid: "8908784"
 
 Denna artikel beskriver hur du skapar och tar bort tillgångar på flera nivåer. Du kan skapa tillgångar och relaterade undertillgångar i en hierarkisk trädstruktur. På så sätt kan du visa relationer och beroenden mellan tillgångar. Underhållsjobb kan relateras till alla nivåer i trädstrukturen. Statistik kan också skapas för en individuell nivå eller som en summa av alla nivåer av undertillgångar.
 
-På listsidan **Alla tillgångar** (**Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**), anger kolumnen **Tillgångar** alla tillgångar i hierarkisk ordning. Kolumnen **överordnade** visar den relaterade överordnade. Dessutom, om tillgångar och undertillgångar redan har skapats visar avsnittet **Tillgångsträd** i fönstret **Relaterad information** tillgången i trädstrukturen.
+På listsidan **Alla tillgångar** (**Tillgångshantering** \> **Tillgångar** \> **Alla tillgångar**), **Tillgångar** tillgångar hierarkisk ordning. Kolumnen **överordnade** visar den relaterade överordnade. Dessutom, om tillgångar och undertillgångar redan har skapats visar avsnittet **Tillgångsträd** i fönstret **Relaterad information** tillgången i trädstrukturen.
 
 Information om hur du skapar en tillgång finns i [Skapa en tillgång](../objects/create-an-object.md). Om du vill skapa en undertillgång väljer du den den överordnade tillgången i fältet **överordnad** på snabbfliken **allmänt**.
 
@@ -38,7 +38,7 @@ Information om hur du skapar en tillgång finns i [Skapa en tillgång](../object
 
 Om ditt företag har flera liknande tillgångsstrukturer, kan du använda funktionen Kopiera i Tillgångshantering för att snabbt skapa dem.
 
-1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**
+1. Välj **Tillgångshantering** \> **Tillgångar** \> **Alla tillgångar**.
 2. På listsidan **Alla tillgångar** väljer du den tillgång som ska kopieras. Om du till exempel vill kopiera hela tillgångsstrukturen, inklusive undertillgångar, väljer du en överordnad tillgång.
 3. Välj **Kopiera tillgång**. I avsnittet **Kopiera från** är fältet **Tillgång** inställt på den tillgång som du valde på listsidan.
 4. I avsnittet **Kopiera till** i fältet **Tillgång** anger du namnet på den nya tillgången.

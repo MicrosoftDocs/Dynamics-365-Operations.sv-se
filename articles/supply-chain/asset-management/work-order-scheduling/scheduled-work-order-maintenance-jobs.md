@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 99613369084ca1e708761179dfb2688014b011f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 72813325c19c639c3c8e7ea9c7436730d23eb61b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849631"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017041"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Schemalagda underhållsjobb för arbetsorder
 
@@ -32,7 +32,7 @@ Sidan **Schemalagda arbetsorder för underhållsjobb** visar en översikt över 
 
 ## <a name="view-scheduled-work-order-maintenance-jobs"></a>Visa schemalagda arbetsorder för underhållsjobb
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Schemalagda arbetsorder för underhållsjobb**. En lista över alla arbetsorder som har ställts in på arbetsorderns livscykeltillstånd "schemalagd" eller "pågår" visas.
+1. Klicka på **Tillgångshantering** > **Arbetsorder** > **Schemalagda arbetsorder för underhållsjobb**. En lista över alla arbetsorder som har ställts in på arbetsorderns livscykeltillstånd "schemalagd" eller "pågår" visas.
 
 2. Du kan sortera listan, till exempel efter underhållsarbetare. Du kan också använda filtret om du vill begränsa listan till att visa arbetsorder som har allokerats till en viss resurs eller underhållsarbetare.
 

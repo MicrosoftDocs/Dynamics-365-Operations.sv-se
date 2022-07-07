@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
+ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891101"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013567"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gång med Global lagerredovisning
 
@@ -69,37 +69,6 @@ Innan du kan aktivera tilläggsfunktionen måste du integrera Microsoft Power Pl
 
 Mer information finns i [Aktivera efter utveckling av miljön](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Ställ in Dataverse
-
-Innan du konfigurerar Dataverse lägger du till serviceprinciperna för global lagerredovisning till din innehavare genom att följa stegen nedan.
-
-1. Installera Azure AD-modul för Windows PowerShell v2 enligt beskrivningen i [Installera Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2).
-1. Kör följande PowerShell-kommando.
-
-    ```powershell
-    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
-
-    New-AzureADServicePrincipal -AppId "7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9" -DisplayName "d365-scm-costaccountingservice"
-
-    New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
-    ```
-
-Skapa sedan programanvändare för Global lagerredovisning i Dataverse genom att följa stegen nedan.
-
-1. Öppna URL-adressen för din Dataverse miljö.
-1. Gå till **Avancerade inställningar \> System \> Säkerhet \> Användare** och skapa en programanvändare. Använd fältet **Vy** för att ändra sidvisningen till *appanvändare*.
-1. Välj **Ny**.
-1. Ange fältet **App-ID** till *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Välj **Tilldela roll** och välj sedan *Systemadministratör*. Om det finns en roll med namnet *Common Data Service-användare* väljer du den också.
-1. Upprepa föregående steg, men ställ in fältet **Program-ID** på *5f58fc56-0202-49a8-ac9e-0946b049718b*.
-
-Mer information finns i [Skapa en appanvändare](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
-
-Om standardspråket i installationen Dataverse inte är engelska följer du dessa anvisningar.
-
-1. Gå till **Avancerad inställning \> Administration \> Språk**.
-1. Välj *Engelska* (*LanguageCode=1033*) och sedan **Verkställ**.
-
 ## <a name="install-the-add-in"></a><a name="install"></a>Installera tillägget
 
 Följ dessa steg för att installera tillägget så att du kan använda global lagerredovisning.
@@ -109,11 +78,21 @@ Följ dessa steg för att installera tillägget så att du kan använda global l
 1. Gå till **Fullständiga detaljer**.
 1. Gå till **Power Platform-integrering** och välj **Inställningar**.
 1. Markera kryssrutan i dialogrutan **Inställning av Power platform miljö** och välj sedan **Inställningar**. Normalt tar inställningen mellan 60 och 90 minuter.
-1. När inställningen av Microsoft Power Platform-miljön är klar väljer du på snabbfliken **Miljötillägg** välj **Installera ett nytt tillägg**.
+1. När inställningen av Microsoft Power Platform miljön är klar loggar du in på [Power Platform administrörscentret](https://admin.powerplatform.microsoft.com) och installerar sedan tillägget Global lagerredovisning genom att utföra följande steg:
+   1. Välj den miljö där du vill installera tillägget.
+   1. Välj **Dynamics 365-program**.
+   1. Välj **Installera program**.
+   1. Välj **Dynamics 365 Global lagerredovisning**.
+   1. Klicka på **Nästa** när du vill installera.
+1. Gå tillbaka till LCS-miljön. På snabbfliken **Miljötillägg** välj **Installera ett nytt tillägg**.
 1. Välj **Global lagerredovisning**.
 1. Följ installationsguiden och godkänn villkoren.
 1. Välj **Installera**.
 1. På snabbfliken **Miljötillägg** bör du se att Global lagerredovisning installeras. Efter några minuter bör statusen ändras från *installera* till *installerad*. (Du kan behöva uppdatera sidan för att se ändringen.) Vid den tidpunkten är Global lagerredovisning klar för användning.
+
+Om standardspråket i installationen Dataverse inte är engelska följer du dessa anvisningar:
+1. Gå till **Avancerad inställning \> Administration \> Språk**.
+1. Välj *Engelska* (*LanguageCode=1033*) och sedan **Verkställ**.
 
 ## <a name="set-up-the-integration"></a>Inställning och integrering
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fe5726203ffc7fef12c02196f511bc4c3c9be2a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 370722d5c2f66e316d7c37f711cdd086bc53f6a8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674853"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014834"
 ---
 # <a name="reduce-the-days-on-subscription-fees"></a>Minska antalet dagar på abonnemangsavgifter 
 
@@ -31,7 +31,7 @@ Om du vill minska antalet dagar för en befintlig abonnemangsavgift kan du skapa
 
 ## <a name="reduce-the-days-on-a-subscription-fee"></a>Minska antalet dagar för en abonnemangsavgift
 
-1.  Klicka på **Servicehantering** \> **Vanligt** \> **Serviceabonnemang** \> **Alla serviceabonnemang**. Välj serviceabonnemanget, och i åtgärdsfönstret, klickar du på **Abonnemangsavgifter**
+1.  Klicka på **Servicehantering** \> **Serviceabonnemang** \> **Alla serviceabonnemang**. Välj serviceabonnemanget, och i åtgärdsfönstret, klickar du på **Abonnemangsavgifter**
 
 2.  I fältet **abonnemang** väljer du **reduceringsdagar**.
 

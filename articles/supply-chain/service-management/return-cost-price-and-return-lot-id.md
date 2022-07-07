@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14442853152764fce7e5a8a275532ed553da16dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c1d236918eddf3203a544a6b047f8ccac777971
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677098"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017256"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Retursjälvkostnad och returparti-ID        
 
@@ -38,7 +38,7 @@ Om du vill använda en annan kostnad än den aktuella kostnaden för returer fö
 
 Som standard när du lägger till objekt mot en returorder returneras artiklarna till lagret till den aktuella självkostnaden. Följ dessa steg om du vill ange en annan retursjälvkostnaden.
 
-1.  Klicka på **Försäljning och marknadsföring** \> **Returorder** \> **Alla returorder** \> **Alla försäljningsorder**.
+1.  Klicka på **Försäljning och marknadsföring** \> **Försäljningsreturer** \> **Alla returorder**.
 
 2.  I **åtgärdsrutan** i gruppen **Ny** klickar du på **Returorder**.
 
@@ -54,7 +54,7 @@ Som standard när du lägger till objekt mot en returorder returneras artiklarna
 
 Detta är det bästa sättet att skapa returrader. Kostnaden för produkter som vid den tidpunkt då du sålde produkter till kunden, skapa en returorder och anger en försäljningsrad ska returneras.
 
-1.  Klicka på **Försäljning och marknadsföring** \> **Returorder** \> **Alla returorder** \> **Alla försäljningsorder**.
+1.  Klicka på **Försäljning och marknadsföring** \> **Försäljningsreturer** \> **Alla returorder**.
 
 2.  I **åtgärdsrutan** i gruppen **Ny** klickar du på **Returorder**.
 

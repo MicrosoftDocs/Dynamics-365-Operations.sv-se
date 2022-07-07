@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0087abebccca107a094a40d3e2d5a5de330532af
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872048"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014921"
 ---
 # <a name="set-up-consignment"></a>Ställa in försändelse
 
@@ -84,7 +84,7 @@ Om dina leverantörer använder leverantörsamarbetesgränssnittet, kan du anvä
 - **Mottagna produkter från försändelselager** - Visar information om de artiklar och kvantiteter som har produktinleveranser uppdaterade under ägandeskapets ändringsprocess.
 - **Behållning i försändelselager** - Visar information om försändelseartiklarna som de förväntas leverera och de artiklar som redan är fysiskt tillgängliga på kundsiten.
 
-Mer information finns i [Användarsäkerhet på leverantörsportalen](../procurement/configure-security-vendor-portal-users.md).
+Mer information finns i [Hantera användare av leverantörssamarbete](../procurement/manage-vendor-collaboration-users.md).
 
 ## <a name="inventory-owners"></a>Lagerägare
 

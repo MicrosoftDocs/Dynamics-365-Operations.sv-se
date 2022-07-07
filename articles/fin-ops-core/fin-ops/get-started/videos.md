@@ -1,8 +1,8 @@
 ---
 title: Videoklipp
-description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Finance and Operations-appar som är tillgängliga på YouTube och andra webbplatser.
+description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Finance and Operations-appar som är tillgängliga på YouTube och andra platser.
 author: sericks007
-ms.date: 09/15/2021
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488001"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958150"
 ---
 # <a name="videos"></a>Videoklipp 
 
@@ -30,9 +30,9 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 > [!Note]
 > Vissa av de angivna videorna publicerades under ett tidigare produktnamn, men är fortfarande tillämpliga.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videor för utveckling och administrering av Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videor för utveckling och administration för Finance and Operations
 
-### <a name="data-integration"></a>Dataintegration
+### <a name="data-integration"></a>Dataintegrering
 
 - [Synkronisera en arbetsorder mellan Dynamics 365 for Field Service och Finance and Operations-appar](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
@@ -42,7 +42,6 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 
 ### <a name="development"></a>Utveckling
 
-- [Så här löser du konflikter i Visual Studio](https://youtu.be/4rxO0zUN2zU)
 - [Rådgivning om optimering](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfigurera en utvecklingsgren och bygga](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Konfigurera en utvecklingsdator](https://www.youtube.com/watch?v=cqp9MetfiyM)
@@ -51,8 +50,8 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 ### <a name="intelligence"></a>Intelligence
 
 - [Hur du bäddar in en rapport i en analytisk arbetsyta](https://youtu.be/_8WlwmSggcQ)
-- [Så här bäddar du in PowerBI.com-rapporter i Finance and Operations-appar](https://youtu.be/gGWuNJDoi-M)
-- [Ta med din egen databas (Bring your own database, BYOD) till Finance and Operations-appar](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Så här bäddar du in PowerBI.coms-rapporter i Finance and Operations-appar](https://youtu.be/gGWuNJDoi-M)
+- [Ta med din egen databas (BYOD) till Finance and Operations-appar](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Använda Power BI-innehåll i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)

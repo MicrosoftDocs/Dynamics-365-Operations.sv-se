@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dfb75d69f20c68a40242bb1c0c25ca77f85e0c14
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 519431d84652e45dcd45aefbbaaa2a0e2afe6349
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852883"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016519"
 ---
 # <a name="maintenance-rounds"></a>Underhållsomgångar
 
@@ -87,7 +87,7 @@ Bilden nedan visar och exempel på en underhållsrunda som innehåller tre tillg
 
 När du har ställt in en underhållsomgång kör du ett schemajobb för att tidsplanera alla jobb som relaterar till underhållsomgången.
 
-1. Klicka på **Tillgångshantering** > **Periodiskt** > **Förebyggande underhåll** > **Schemalägg underhållsomgångar** eller **Tillgångshantering** > **Allmänt** > **Underhållsschema** > **Alla underhållsscheman** eller **Öppna rader för underhållsschema** eller **Öppna pooler för underhållsschema** > välj underhållsschemaraden i listan > knappen **Underhållsomgångar**.
+1. Klicka på **Tillgångshantering** > **Periodiskt** > **Förebyggande underhåll** > **Schemalägg underhållsomgångar** eller **Tillgångshantering** > **Underhållsschema** > **Alla underhållsscheman** eller **Öppna rader för underhållsschema** eller **Öppna pooler för underhållsschema** > välj underhållsschemaraden i listan > knappen **Underhållsomgångar**.
 
 2. I fältet **period** väljer du den periodtyp som ska användas för planeringsjobbet.
 
@@ -102,7 +102,7 @@ När du har ställt in en underhållsomgång kör du ett schemajobb för att tid
 
 6. Klicka på **OK**.
 
-7. Du kan nu se underhållsomgångsjobben i **Tillgångshantering** > **Allmänt** > **Underhållsschema** > **Alla underhållsscheman** eller **Öppna rader för underhållsschema**. Om schemalagda omgångar är kopplade till en pool för arbetsorder visas även underhållsschemarader i **Öppna pooler för underhållsschema**. Underhållsschemarader som skapas från en omgång av har referenstypen "Underhållsomgångar".
+7. Du kan nu se underhållsomgångsjobben i **Tillgångshantering** > **Underhållsschema** > **Alla underhållsscheman** eller **Öppna rader för underhållsschema**. Om schemalagda omgångar är kopplade till en pool för arbetsorder visas även underhållsschemarader i **Öppna pooler för underhållsschema**. Underhållsschemarader som skapas från en omgång av har referenstypen "Underhållsomgångar".
 
 De två bilderna nedan visar ett schemajobb i dialogrutan **Schemalägg underhållsomgångar** och de rader för underhållsschema som skapats i **Alla underhållsscheman** baserat på det schemajobbet.
 

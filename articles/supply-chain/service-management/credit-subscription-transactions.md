@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e23d471e270d7cbeda2bbaa161e729f30e1ebecd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 482a276a86d4b4174d276d775513069d423c17a4
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854077"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015911"
 ---
 # <a name="credit-subscription-transactions"></a>Kreditera abonnemangstransaktioner 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8854077"
 
 ## <a name="credit-subscription-transactions"></a>Kreditera abonnemangstransaktioner
 
-1.  Klicka på **Servicehantering** \> **Vanligt** \> **Serviceabonnemang** \> **Alla serviceabonnemang**.
+1.  Klicka på **Servicehantering** \> **Serviceabonnemang** \> **Alla serviceabonnemang**.
 
 2.  Välj det abonnemang som är kopplat till abonnemangstransaktionen som du vill skapa en kreditfaktura för.
 

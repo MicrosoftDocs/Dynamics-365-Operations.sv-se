@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c43424a0955d7a046186e8a4120c050990df6060
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872106"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015068"
 ---
 # <a name="condition-assessment"></a>Utvärdering av tillstånd
 
@@ -47,7 +47,7 @@ Villkorsutvärdering skapas på tillgångar. Du konfigurerar en mall för villko
 
 ## <a name="create-condition-assessment-registration-on-an-asset"></a>Skapa villkorsutvärderingsregistrering på en tillgång
 
-1. Välj **Tillgångshantering** > **Allmänt** > **Tillgångar** > **Alla tillgångar**.
+1. Välj **Tillgångshantering** > **Tillgångar** > **Alla tillgångar**.
 2. I listan väljer du den tillgång du vill skapa en villkorsutvärderingsregistrering för.
 3. Klicka på **villkorsutvärdering** på fliken **Allmänt**.
 4. Klicka på **Ny** om du vill göra en ny registrering.
@@ -62,7 +62,7 @@ Villkorsutvärdering skapas på tillgångar. Du konfigurerar en mall för villko
 När du har gjort en registrering av villkorsutvärdering på en tillgång kan du skriva ut en villkorsutvärderingsrapport.
 
 >[!NOTE]
->Du kan också registrera villkorsutvärdering på en arbetsorder (knappen **Tillgångshantering** > **allmänt** > **arbetsorder** > **alla arbetsorder** > **villkorsutvärdering**.)
+>Du kan också registrera villkorsutvärdering på en arbetsorder (knappen **Tillgångshantering** > **arbetsorder** > **alla arbetsorder** > **villkorsutvärdering**.)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

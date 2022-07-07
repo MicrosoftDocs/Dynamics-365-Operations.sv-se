@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886056"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015097"
 ---
 # <a name="register-consumption"></a>Registrera förbrukning
 
@@ -35,7 +35,7 @@ I vissa fall kanske kan lägga till eller ta bort prognosrader på en arbetsorde
 >[!NOTE]
 >Det är möjligt att konfigurera automatisk bokföring av journaler i ett livscykeltillstånd för arbetsorder. Mer information finns i [Livscykeltillstånd för arbetsorder](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
+1. Klicka på **Tillgångshantering** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 2. Välj arbetsorder och klicka på **Journaler**.
 
@@ -61,7 +61,7 @@ På bilden nedan visas ett exempel på tim- och artikelregistreringar i en arbet
 
 Om en arbetsorder innehåller flera jobb för arbetsorder kan du registrera arbetstimmar med funktionen **Dela timmar**, vilket innebär att en timregistreringsrad kan fördelas jämnt på varje arbetsorderjobb.
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
+1. Klicka på **Tillgångshantering** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 2. Välj arbetsorder och klicka på **Journaler**.
 

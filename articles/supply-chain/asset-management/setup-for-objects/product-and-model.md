@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95d0998bbacef7a4350d0fd0a58259ec35759d28
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b00cb62926f3a482ec655235b6e2f5880edbcd04
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868113"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016287"
 ---
 # <a name="asset-manufacturers-and-models"></a>Tillgångstillverkare och-modeller
 
@@ -53,7 +53,7 @@ Denna artikel förklarar hur du konfigurerar tillgångstillverkare och relaterad
 
 ## <a name="select-a-manufacturer-and-model-on-an-object"></a>Välja en tillverkare och modell på ett objekt
 
-1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**
+1. Välj **Tillgångshantering** \> **_Tillgångar_* \> **Alla tillgångar**.
 2. I kolumnen **tillgång**, välj länken för tillgången. Sidan **Detaljer** visas.
 3. Välj **Redigera**.
 4. På snabbfliken **allmänt** väljer du värden i fälten **tillverkare** och **modell**.

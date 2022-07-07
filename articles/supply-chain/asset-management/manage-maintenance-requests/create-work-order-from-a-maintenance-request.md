@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0c73f019951460dc7cb6395d616a0f0a22fd0b91
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb54ec3466086afbd87a023a40e346a6a3464c98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909713"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017186"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Skapa arbetsorder från underhållsbegäran
 
@@ -34,7 +34,7 @@ När du har skapat underhållsbegäran kan du enkelt konvertera dem till arbetso
 > [!NOTE]
 > Varje underhållsbegäran kan endast relateras till en arbetsorder. Flera underhållsbegäran kan dock inkluderas i en arbetsorder, även om underhållsbegäran har olika tillgångar.
 
-1. Välj **Tillgångshantering** \> **allmänt** \> **underhållbegäran** \> **alla underhållbegäran**.
+1. Välj **Tillgångshantering** \> **underhållbegäran** \> **alla underhållbegäran**.
 2. Innan du kan skapa en arbetsorder från underhållbegäran måste du minst välja en underhållsjobbtyp för underhållbegäran och även en underhålljobbtypvariant och handel, om den här informationen är relevant. I rutnätsvyn kan du enkelt uppdatera information för en underhållsbegäran.
 3. När du är redo att skapa en arbetsorder väljer du de underhållbegäran som ska inkluderas i den.
 
@@ -48,7 +48,7 @@ När du har skapat underhållsbegäran kan du enkelt konvertera dem till arbetso
 
     När du skapar en arbetsorder som baseras på en underhållbegäran, om tillgången som är relaterad till underhållbegäran ingår i ett garantiavtal, meddelar dessutom ett meddelandefält dig om garantiavtalet.
 
-6. Välj **Tillgångshantering** \> **allmänt** \> **arbetsorder** \> **alla arbetsorder** och öppna den nya arbetsordern.
+6. Välj **Tillgångshantering** \> **arbetsorder** \> **alla arbetsorder** och öppna den nya arbetsordern.
 
     ![Öppna ny arbetsorder.](media/05-manage-maintenance-requests.png)
 

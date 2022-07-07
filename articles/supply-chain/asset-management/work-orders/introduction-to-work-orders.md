@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dcee5fd729de6e96d57462879f7851756f287dc9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5eb911ec4ba9655c4ecaea3bf9a4f8736fa036c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902843"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016722"
 ---
 # <a name="introduction-to-work-orders"></a>Introduktion till arbetsorder
 
@@ -47,15 +47,15 @@ Arbetsorder kan skapas på följande sätt:
 
 ## <a name="all-work-orders"></a>Alla arbetsorder
 
-Välj **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** för att öppna listsidan **Alla arbetsorder**. Den här sidan visar alla arbetsorder och en del av den information som är relaterad till varje.
+Välj **Tillgångshantering** > **Arbetsorder** > **Alla arbetsorder** för att öppna listsidan **Alla arbetsorde**. Den här sidan visar alla arbetsorder och en del av den information som är relaterad till varje.
 
 I bilden nedan visas ett exempel på listsidan **Alla arbetsorder**.
 
 ![Figur 1.](media/01-work-orders.png)
 
-Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Aktiva arbetsorder** för att visa en lista med aktiva arbetsorder. 
+Om du vill visa en lista över endast aktiva arbetsorder väljer du **Tillgångshantering** > **Arbetsorder** > **Aktiva arbetsorder**. 
 
-Om du vill visa en lista med arbetsorderjobb som innehåller tillgångar som är installerade på funktionella platser som du är relaterad till som arbetare väljer du **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Mina underhållsjobb för arbetsorder för funktionsplats**. Relationen mellan arbetare och funktionella platser ställs in på sidan **arbetare**. Mer information finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
+Om du vill visa en lista med arbetsorderjobb som innehåller tillgångar som är installerade på funktionella platser som du är relaterad till som arbetare väljer du **Tillgångshantering** > **Arbetsorder** > **Mina underhållsjobb för arbetsorder för funktionsplats**. Relationen mellan arbetare och funktionella platser ställs in på sidan **arbetare**. Mer information finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
 
 Här följer några exempel på hur du kan använd sidan **Alla arbetsorder**:
 

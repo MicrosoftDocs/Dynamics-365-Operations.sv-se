@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ccd14493aac6484dc54ccf51ae159a071c8697a5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893712"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015621"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Skapa tillgångar baserade på inköpsorder
 
@@ -45,7 +45,7 @@ Först ställer du in de artiklar som ska användas för att skapa tillgångar f
 
 ## <a name="create-assets-from-pending-assets"></a>Skapa tillgångar från väntande tillgångar
 
-1. Klicka på **Tillgångshantering** > **allmänt** > **tillgångar** > **väntande tillgångar**.
+1. Klicka på **Tillgångshantering** > **tillgångar** > **väntande tillgångar**.
 2. Du kommer att se en uppdaterad lista över inköpsorder baserat på de artiklar som valts i **tillgångsartiklar**.
 3. Du kan filtrera status för inköpsorder för att välja vid vilket livscykeltillstånd som tillgången ska skapas. Du kanske till exempel bara vill skapa tillgångar när en produktinleverans har bokförts på en inköpsorder.
 4. Välj länken **referensnummer** på en inköpsorderrad om du vill visa detaljerad information om artikeln.
