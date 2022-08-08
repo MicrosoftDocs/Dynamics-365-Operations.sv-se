@@ -1,7 +1,7 @@
 ---
 title: Startsidan för kassa- och bankhantering
 description: Använd Kassa- och bankhantering till att underhålla den juridiska personens bankkonton och de finansiella instrument som är associerade med dessa bankkonton.
-author: kfend
+author: angelad116
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: kfend
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf423c61f4a7ac8648a09c25e30b47ce1b0e3300
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e49c9f514e79552dda2e7a6e10c7d84fa2560c2e
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710737"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151982"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startsidan för kassa- och bankhantering
 
@@ -89,9 +89,9 @@ Gå till [Utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-pla
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – ekonomibloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Det finns åsikter, nyheter och annan information i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 ekonomi och drift – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-I [partnercommunitybloggen för Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partner en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
+[Partnercommunitybloggen om Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) ger Microsoft Dynamics-partner en resurs där de får information om vad som är nytt och trendar i Dynamics 365.
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
@@ -102,3 +102,4 @@ Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

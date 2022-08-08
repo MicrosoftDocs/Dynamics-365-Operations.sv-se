@@ -1,6 +1,6 @@
 ---
-title: Dokumentation för appen Finance and Operations
-description: Dokumentation för appar för ekonomi och drift.
+title: Dokumentation till appar för ekonomi och drift
+description: Dokumentation till appar för ekonomi och drift.
 author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f9776038530438ba8d8046b735d95b2a5701594
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865844"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067475"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentation för appen Finance and Operations
+# <a name="finance-and-operations-application-documentation"></a>Dokumentation till appar för ekonomi och drift
 
 [!include [banner](includes/banner.md)]
 
-Läs hur du drar nytta av appar för ekonomi och drift i ditt företag. Använd resurserna i den här artikeln för att hitta passande innehåll för slutanvändare, utvecklare och IT-proffs. 
+Läs om hur du drar nytta av appar för ekonomi och drift i ditt företag. Använd resurserna i den här artikeln för att hitta passande innehåll för slutanvändare, utvecklare och IT-proffs. 
 
 Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce och Dynamics 365 Human Resources. 
 
@@ -41,7 +41,7 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 <h3><a href="get-started/before-you-buy.md">Innan du köper</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrera prenumeration på förhandsversionen</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Välj ett distributionsalternativ</a></p>
- <p><a href="get-started/purchase-on-premises.md">Köp Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Köp ekonomi och drift (lokalt)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementera livscykel</a></h3>
 <p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
@@ -143,3 +143,4 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

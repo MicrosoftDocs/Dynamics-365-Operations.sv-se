@@ -2,7 +2,7 @@
   items:
     - name: Utveckling och administration för appar för ekonomi och drift
       items:
-        - name: Dokumentation för appen Ekonomi och drift
+        - name: Dokumentation till appar för ekonomi och drift
           href: ../fin-ops/index.md
         - name: Utveckling och administration för appar för ekonomi och drift
           href: index.md
@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Plattformsuppdateringar för version 10.0.27 (juli 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Plattformsuppdateringar för version 10.0.26 (maj 2022)
-                  href: get-started/whats-new-platform-updates-10-0-26.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -46,11 +44,11 @@
               href: dev-tools/aio-deployable-packages.md
             - name: Uppdatera modellversioner i automatiskt skapande
               href: dev-tools/version-models-build.md
-        - name: Dataintegration
+        - name: Dataintegrering
           items:
             - name: Integrering mellan appar för ekonomi och drift och tjänster från tredje part
               href: data-entities/integration-overview.md
-            - name: 'API:er för dataintegration'
+            - name: 'API:er för dataintegrering'
               items:
                 - name: REST API för datahanteringspaket
                   href: data-entities/data-management-api.md
@@ -106,39 +104,39 @@
                       items:
                         - name: Potentiell kund till pengar
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkronisera konton direkt från försäljning till kunder i appar för ekonomi och drift
+                        - name: Synkronisera konton direkt från Sales till kunder i ekonomi och drift
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synkronisera produkter direkt från appar för ekonomi och drift till produkter i försäljning
+                        - name: Synkronisera produkter direkt från ekonomi och drift till produkter i Sales
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisera kontakter direkt från försäljning till kontakter i appar för ekonomi och drift
+                        - name: Synkronisera kontakter direkt från Sales till kontakter eller kunder i ekonomi och drift
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synkronisera huvuden och rader i försäljningsofferter direkt från försäljning till appar för ekonomi och drift
+                        - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till ekonomi och drift
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Synkronisering av försäljningsorder direkt mellan Sales och Ekonomi och drift
+                        - name: Synkronisering av försäljningsorder direkt mellan Sales och ekonomi och drift
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Ekonomi och drift till Sales
+                        - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från ekonomi och drift till Sales
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: Konfigurera integration med Field Service
                       items:
                         - name: Konfigurera integration med Field Service – översikt
                           href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: Synkronisera produkter i Ekonomi och drift till produkter i Field Service
+                        - name: Synkronisera produkter i ekonomi och drift till produkter i Field Service
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Ekonomi och drift
+                        - name: Synkronisera arbetsorder i Field Service till försäljningsorder i ekonomi och drift
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Ekonomi och drift
+                        - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i ekonomi och drift
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Synkronisera lageröverföringar och justeringar från Field Service till Ekonomi och drift
+                        - name: Synkronisera lageröverföringar och justeringar från Field Service till ekonomi och drift
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Synkronisera information om lagernivåer från Ekonomi och drift till Field Service
+                        - name: Synkronisera information om lagernivåer från ekonomi och drift till Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Synkronisera produkter med lagerenhet från Ekonomi och drift till Field Service
+                        - name: Synkronisera produkter med lagerenhet från ekonomi och drift till Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Synkronisera projektlista från Ekonomi och drift till Field Service
+                        - name: Synkronisera projektlista från ekonomi och drift till Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Synkronisera lagerställen från Ekonomi och drift till Field Service
+                        - name: Synkronisera lagerställen från ekonomi och drift till Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Synkronisera arbetsorder med projekt från Field Service till Ekonomi och drift
+                        - name: Synkronisera arbetsorder med projekt från Field Service till ekonomi och drift
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Konfigurera Project Service Automation-integration
                       items:
@@ -348,9 +346,9 @@
                   href: deployment/arm-onboarding.md
                 - name: Slutför den pågående registreringen av Azure Resource Manager för LCS-projekt för amerikanska myndigheter
                   href: deployment/arm-onbarding-us-goverment.md
-                - name: Azure ExpressRoute och Ekonomi och drift
+                - name: Azure ExpressRoute och ekonomi och drift
                   href: deployment/expressroute.md
-                - name: Arkitektur för Ekonomi och drift
+                - name: Arkitektur för ekonomi och drift
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Tillämpa uppdateringar i molnmiljöer
                   href: deployment/apply-deployable-package-system.md
@@ -584,7 +582,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller och paket
                   href: dev-tools/models.md
-                - name: Projekttypen Ekonomi och drift
+                - name: Projekttypen ekonomi och drift
                   href: dev-tools/projects.md
                 - name: Verktygstillägg för Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -1050,11 +1048,11 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Självstudier för Azure DevOps-tillägg (allmänt tillgänglig förhandsversion)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Visual Studio-tillägg (privat förhandsversion)
+                - name: Visual Studio-tillägg (allmänt tillgänglig förhandsversion)
                   href: lifecycle-services/dts-visual-studio.md
                 - name: Visual Studio Code-tillägg (allmänt tillgänglig förhandsversion)
                   href: lifecycle-services/dts-vscode-doc.md
-        - name: Microsoft Power Platform-integration
+        - name: Microsoft Power Platform-integrering
           items:
             - name: Översikt
               href: power-platform/overview.md
@@ -1224,9 +1222,9 @@
                   href: power-platform/admin-reference.md
                 - name: Aktivera virtuella Dataverse-entiteter
                   href: power-platform/enable-virtual-entities.md
-                - name: Power Apps-portaler med Ekonomi och drift
+                - name: Power Apps-portaler med ekonomi och drift
                   href: power-platform/power-portal-reference.md
-                - name: Vanliga frågor om Ekonomi och drift virtuella entiteter
+                - name: Vanliga frågor om virtuella entiteter i ekonomi och drift
                   href: power-platform/faq.md
             - name: Affärshändelser
               items:
@@ -1570,15 +1568,15 @@
                   href: lcs-solutions/regulatory-watch-communication.md
                 - name: Separation av lokaliseringsmodeller
                   href: lcs-solutions/separate-localization-models.md
-                - name: Skicka regleringsnotifieringar
+                - name: Skicka regelvarningar
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Support
           items:
-            - name: Få hjälp med Ekonomi och drift och Lifecycle Services
+            - name: Få hjälp med ekonomi och drift och Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Översikt över Dynamics 365-support
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Få support för Ekonomi och drift som drivs av 21Vianet i Kina
+            - name: Få support för ekonomi och drift som drivs av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
             - name: Konfigurera teknisk support för appar för ekonomi och drift
               href: lifecycle-services/support-experience.md
@@ -1698,9 +1696,9 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Uppgradera från AX 2012
               items:
-                - name: Uppgradera från AX 2012 till Ekonomi och drift
+                - name: Uppgradera från AX 2012 till ekonomi och drift
                   href: migration-upgrade/upgrade-overview-2012.md
-                - name: AX 2012-uppgradering – Planera med verktyget Uppgraderingsanalys
+                - name: AX 2012-uppgradering – planera med verktyget Uppgraderingsanalys
                   href: migration-upgrade/upgrade-analyzer-tool.md
                 - name: AX 2012-uppgradering – Beräkna insatsen med tjänsten Koduppgradering
                   href: migration-upgrade/analyze-code-upgrade.md
@@ -1758,7 +1756,7 @@
                       href: migration-upgrade/compress-tables-ax-2012.md
             - name: Migrera data från AX 2009
               items:
-                - name: Migrera data från AX 2009 till Finance and Operations
+                - name: Migrera data från AX 2009 till ekonomi och drift
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009-migrering – installera verktyg för datamigrering
                   href: migration-upgrade/install-dmt.md

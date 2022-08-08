@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbf77b57f7a107918c3b8a03290e208ed1c4803b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879088"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066070"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management – startsida
 
@@ -56,24 +56,24 @@ Mer information om Dynamics 365 Finance finns på [startsidan för Finance](../f
 
 ## <a name="videos"></a>Videor
 
-Den här korta videon sammanfattar de nya funktionerna för hantering av leveranskedjan som har lagts till i Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018).
+Den här korta videon sammanfattar de nya funktionerna för hantering av leveranskedjan som har lagts till i Microsoft Dynamics 365 Finance version 8.0 (april 2018).
 
-- [Synkronisera en arbetsorder mellan Field Service och Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synkronisera en arbetsorder mellan Field Service och ekonomi och drift](https://youtu.be/hAB4TDVMjxU)
 
-Dessa korta videoklipp sammanfattar de nya funktionerna för hantering av leveranskedjan som har lagts till i Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3 (december 2017).
+Dessa korta videoklipp sammanfattar de nya funktionerna för hantering av leveranskedjan som har lagts till i Microsoft Dynamics 365 Finance, Enterprise edition 7.3 (december 2017).
 
 - [Rådgivning om optimering](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Använd distributionslagermall för att kopiera konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Dessa korta videoklipp sammanfattar de nya funktionerna för hantering av leveranskedjan som har lagts till i Microsoft Dynamics 365 for Finance and Operations Enterprise edition (juli 2017).
+Dessa korta videoklipp sammanfattar de nya funktionerna för hantering av leveranskedjan som har lagts till i Microsoft Dynamics 365 Finance, Enterprise edition (juli 2017).
 
-- [Kom i gång med Kostnadsredovisning](https://youtu.be/1pUDtJQZ8FU)
+- [Kom i gång med kostnadsredovisning](https://youtu.be/1pUDtJQZ8FU)
 - [Mobil arbetsyta för kostnadskontroll](https://youtu.be/imsuTg8rUVk)
 - [Använd Excel för kostnadsanalys](https://youtu.be/-HKHYdClvx8)
 - [Godkänn inköpsorder från en mobil enhet](https://youtu.be/gZ-gOlJe7H8)
 - [Visuell tidsplanering med Gantt-diagram för produktions- och batchorder](https://youtu.be/BtbuShkGj4I)
 
-I följande inspelningar från en teknisk konferens diskuteras funktionaliteten för hantering av leveranskedjan från tidigare versioner av Finance and Operations. Dessa funktioner ingår nu i Dynamics 365 Supply Chain Management. Samma begrepp gäller fortfarande och procedurerna är ungefär desamma i den aktuella versionen.
+I följande inspelningar från en teknisk konferens diskuteras funktionaliteten för hantering av leveranskedjan från tidigare versioner av ekonomi och drift. Dessa funktioner ingår nu i Dynamics 365 Supply Chain Management. Samma begrepp gäller fortfarande och procedurerna är ungefär desamma i den aktuella versionen.
 
 - **Kostnadshantering:**
   - [Översikt över kostnadshantering](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -106,3 +106,4 @@ Information om onlinekurser och utbildning finns [Dynamics 365 Supply Chain Mana
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

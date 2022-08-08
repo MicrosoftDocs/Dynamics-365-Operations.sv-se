@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: abfba49c1b5e410cdc47db9965ffee26fbaebb9e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866549"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067695"
 ---
 # <a name="globalization-resources"></a>Globaliseringsresurser
 
@@ -63,7 +63,7 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 [Utgivningsplaner för Dynamics 365](/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Nyheter i appar för ekonomi och drift
-Listan [Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av appar för ekonomi och drift.
+[Nyheter och ändringar på startsidan för ekonomi och drift](../../fin-ops/get-started/whats-new-changed.md) visar funktionerna som ingår i olika versioner av appar för ekonomi och drift.
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 Verktyget Elektronisk rapportering (ER) gör det möjligt att konfigurera elektroniska dokumentformat i enligt rättsliga krav i olika länder/regioner. Med ER går det att hantera formaten under deras livscykel. Mer information finns i följande ämnen:
@@ -133,3 +133,4 @@ Mer information finns i [hjälpsystemet](../../fin-ops/get-started/help-overview
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
