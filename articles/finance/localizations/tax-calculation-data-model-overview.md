@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859707"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068861"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodell för momsberäkning
 
 Det här ämnet innehåller information om hur fältvärdena momsdatamodellen bestäms i momsberäkningstransaktioner.
 
-*Momsdatamodellen* består av fält som krävs för momsberäkningar. Microsoft tillhandahåller *momsberäkningsdatamodellen*, som inkluderar huvudfälten och radfälten för transaktionsdokument i Ekonomi och drift-appar. Fälten som definieras i datamodellen för momsberäkning är de tillgängliga kolumnerna för tabellerna med tillämplighetsregler i konfigurationen av funktionen för momsberäkning.
+*Momsdatamodellen* består av fält som krävs för momsberäkningar. Microsoft tillhandahåller *datamodellen för momsberäkning*, som inkluderar rubrikfält och radfält för transaktionsdokument i appar för ekonomi och drift. Fälten som definieras i datamodellen för momsberäkning är de tillgängliga kolumnerna för tabellerna med tillämplighetsregler i konfigurationen av funktionen för momsberäkning.
 
 > [!NOTE] 
 > Vissa noder som definieras i datamodellen, som **Post-ID** och **Tabell-ID** finns av tekniska skäl. De är inte tillgängliga kolumner i konfigurationen av momsberäkningsfunktionen.
@@ -54,7 +54,7 @@ Du kan också visa momsberäkningsdatamodellen och tillgängliga kolumner i tabe
 
     [![Hantera kolumner.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Datamodellen för momsberäkning är integrerad med Ekonomi och drift-appar. Under varje transaktion som rör momsberäkning samlas värdena i fälten som definieras i tabellerna för tillämplighetsregler in och skickas till momsberäkningstjänsten för beräkning. I version 40.46 är 57 fördefinierade datamodeller tillgängliga för följande transaktionstyper: inköpsorder, försäljningsorder, överföringsorder, inköpsrekvisitioner, anbudsförfrågningar och försäljningsofferter.
+Datamodellen för momsberäkning är integrerad i appar för ekonomi och drift. Under varje transaktion som rör momsberäkning samlas värdena i fälten som definieras i tabellerna för tillämplighetsregler in och skickas till momsberäkningstjänsten för beräkning. I version 40.46 är 57 fördefinierade datamodeller tillgängliga för följande transaktionstyper: inköpsorder, försäljningsorder, överföringsorder, inköpsrekvisitioner, anbudsförfrågningar och försäljningsofferter.
 
 ## <a name="version-updates-and-restrictions"></a>Versionsuppdateringar och -begränsningar
 
@@ -134,3 +134,4 @@ Tjugosex datamodeller är inkluderade som fält på en transaktions rader. När 
 | Enhet                          | <ul><li>**Försäljningsorder:** Enhet</li><li>**Inköpsorder:** Enhet</li><li>**Överföringsorder – leverera:** Enhet</li><li>**Överföringsorder – ta emot:** Enhet</li><li>**Inköpsrekvisitioner:** Enhet</li><li>**Anbudsförfrågan:** Enhet</li><li>**Försäljningsoffert:** Enhet</li></ul> |
 | Variantnummer                | <ul><li>**Försäljningsorder:** Variantnummer</li><li>**Inköpsorder:** Variantnummer</li><li>**Försäljningsoffert:** Variantnummer</li></ul> |
 | Lagerställe                     | <ul><li>**Försäljningsorder:**<ol><li>Rad &gt; Lagerställe</li><li>Produkt &gt; Lagerställe</li></ol></li><li>**Inköpsorder:**<ol><li>Rad &gt; Lagerställe</li><li>Produkt &gt; Lagerställe</li></ol></li><li>**Överföringsorder – leverera:** Från lagerställe</li><li>**Överföringsorder – ta emot:** Till lagerställe</li><li>**Inköpsrekvisition:** Rad &gt; Lagerställe</li><li>**Anbudsförfrågan:** Rad &gt; Lagerställe</li><li>**Försäljningsoffert:**<ol><li>Rad &gt; Lagerställe</li><li>Produkt &gt; Lagerställe</li></ol></li></ul> |
+

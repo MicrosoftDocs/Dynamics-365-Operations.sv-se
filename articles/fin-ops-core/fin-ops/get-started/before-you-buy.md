@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: fc3cf3b5d28a4e512f921db6ba090dd5731391cc
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713288"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123995"
 ---
 # <a name="before-you-buy"></a>Innan du köper
 
@@ -62,7 +62,7 @@ En Microsoft molnbaserad lösningsleverantör kan samarbeta med dig för att fö
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Köp via en Dynamics-partner (lokal)
 
-Du måste arbeta med en partner för att köpa Ekonomi och drift lokalt. Mer information finns i [Köpa Ekonomi och drift (on-premises)](purchase-on-premises.md).
+Du måste arbeta med en partner för att köpa Finance + Operations (on-premises). Mer information finns i [Köpa Ekonomi och drift (on-premises)](purchase-on-premises.md).
 
 ### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>Köp via volymlicensiering (molnbaserad eller lokal)
 
@@ -94,3 +94,4 @@ Om du är kund som uppgraderar från Microsoft Dynamics AX 2012 eller migrerar f
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

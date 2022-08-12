@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3916e70e4c9e3bc4ceae3a82e58bc4b0697ddb9f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7fd1cf208b9bae86bf25b19f4652890c15a617c9
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888684"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125000"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.13 (oktober 2020)
 
@@ -41,7 +41,7 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 
 - [Delegering av flera arbetsuppgifter för inköp](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Mer information finns i [delegera arbetsuppgifter till ett arbetsflöde](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
 
-- [Ange och serienummer vid rapportering som färdiga från jobbkortenheten](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Mer information finns i [Rapportera som färdig från jobbkortenhet](../production-control/report-finished-job-device.md).
+- [Ange och löpnummer vid rapportering som färdiga från jobbkortenheten](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Mer information finns i [Rapportera som färdig från jobbkortenhet](../production-control/report-finished-job-device.md).
 
 - [Nya lagerdimensioner för spårning av produktversioner och förbättrad utökning](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Mer information finns i [Produktdimensioner](../pim/product-dimensions.md).
 
@@ -53,9 +53,9 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.13 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.13 av Ekonomi och Drift-appar (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.13 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.13 av appar för ekonomi och drift (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

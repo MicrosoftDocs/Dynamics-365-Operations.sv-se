@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: cb2e2f53942015caf9462692515f24deb9689aed
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6234dfa61a5859e2ecaca75594c69c49ba326629
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873910"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167684"
 ---
 # <a name="voyage-creation-entities"></a>Enheter för skapandet av färd
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 Enheter för skapandet av färd grupperar de dataenheter som krävs för att skapa en arbetsinformation. Du eller din fraktspeditör kan använda dessa dataenheter för att skapa poster för färd, fraktbehållare, folio och färdlinje som refererar till befintliga inköpsorder- eller överföringsorderrader.
 

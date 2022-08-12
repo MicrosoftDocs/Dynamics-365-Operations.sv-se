@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25484efd7be026bfc3a209fb52822b87d6b76cc2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873504"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065529"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
 
 [!include [banner](../../includes/banner.md)]
 
-Denna artikel innehåller information om hur du konfigurerar ett enkelt platsdirektiv. I exemplet som visas skapas ett platsdirektiv som ska användas för att fastställa var du vill placera artiklar som har tagits emot för en inköpsorder. Du kan spela upp den här uppgiftsguiden med nämnda data med hjälp av demonstrationsdataföretaget USMF. Förutsättningar: Du måste skapa en dispositionskod. I den här proceduren använder vi dispositionskoden Relabel. Om du skapar ett platsdirektiv i dina egna data måste du ha ställt in avancerad lagerhantering för dina lagerställen och artiklar. Den här proceduren är avsedd för lagerchefen.
+Denna artikel innehåller information om hur du konfigurerar ett enkelt platsdirektiv. I exemplet som visas skapas ett platsdirektiv som ska användas för att fastställa var du vill placera artiklar som har tagits emot för en inköpsorder. Du kan spela upp den här uppgiftsguiden med nämnda data med hjälp av demonstrationsdataföretaget USMF. Förutsättningar: Du måste skapa en dispositionskod. I den här proceduren använder vi dispositionskoden Relabel. Om du skapar ett platsdirektiv i dina egna data måste du ha konfigurerat lagerstyrningsprocesser (WMS) för dina lagerställen och artiklar. Den här proceduren är avsedd för lagerchefen.
 
 1. I navigeringsfönstret, gå till **Moduler > Lagerstyrning > Inställningar > Platsdirektiv**.
 2. Välj **Inköpsorder** i fältet **Typ av arbetsorder**.
@@ -81,7 +81,7 @@ Denna artikel innehåller information om hur du konfigurerar ett enkelt platsdir
 2. Markera **Lägg till**.
 3. I fältet **Fält**, ange `location profile ID`. I det här exemplet ska du begränsa de möjliga platserna med hjälp av ett platsprofil-ID.  
 4. I fältet **Kriterier** skriver du ett värde.
-5. Välj **OK**. Du kan fortsätta att lägga till direktivrader och direktivåtgärder tills du har täckt alla möjliga scenarier i ditt lagerställe.  
+5. Välj **OK**. Du kan fortsätta lägga till direktivrader och direktivåtgärder tills du har täckt alla möjliga scenarier i ditt lagerställe.  
 
 
 

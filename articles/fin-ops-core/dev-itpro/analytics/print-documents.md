@@ -7,21 +7,21 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
-ms.reviewer: kfend
-ms.custom:
-- "69161"
-- intro-internal
-ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.custom:
+- "69161"
+- intro-internal
+ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.openlocfilehash: d8d40f7cb94e17370f04b0c97365600f68eb5090
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984918"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206738"
 ---
 # <a name="document-printing-overview"></a>Dokumentetutskrift – översikt
 
@@ -54,7 +54,7 @@ Eftersom lösningen varierar beroende på scenariet, innehåller appar inbyggda 
 - **Scenario 2** använder klientprogram och Microsoft 365-tjänster.
 - **Scenario 3** kräver stöd från klientprogram och från tjänster som finns i Microsoft Azure.
 
-Förutom den plattform som distribueras på Azure-abonnemanget ger Finance and Operations-.program kunderna en integrerad, första part Azure-program som kan användas för att enkelt använda domänhanterade enheter för att skriva ut dokument.
+Förutom den plattform som distribueras i Azure-abonnemanget ger appar för ekonomi och drift kunderna ett integrerat, förstaparts Azure-program som kan användas för att enkelt använda domänvärdbaserade enheter för att skriva ut dokument.
 
 ## <a name="service-overview"></a>Översikt över tjänsten
 När dokument som har skapats av värdprogram som väntar på att skrivas ut på en nätverksansluten enhet, förvaras de i Azure blobblagring. [Installera dokumentflödesagenten för att aktivera nätverksutskrift](install-document-routing-agent.md) använder Azure-autentisering för att upprätta en säker kanal till Azure-tjänsterna.

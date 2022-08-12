@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0449a13989bad45cf0456a2678e5724036d2af3d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883428"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070707"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering för skannade dokument
 
@@ -58,7 +58,7 @@ Ett datapaket är den arbetsenhet som måste skickas till, så att fakturahuvude
 
 Dokumentbilagor till leverantörsfakturan är en ny dataenhet som introduceras som en del av den här funktionen. Rubrikenheten för leverantörsfakturan har ändrats så att den stöder bilagor. Radenheten för leverantörsfakturan har inte ändrats för den här funktionen.
 
-Detaljerad information om datapaket finns i [Datahantering – en översikt](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Information om hur du skapar datapaket med hjälp av arbetsytan för datahantering finns i [Bearbeta och förbruka datapaket i Dynamics 365 Ekonomi och drift-applösning](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Detaljerad information om datapaket finns i [Datahantering – en översikt](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Information om hur du skapar datapaket med hjälp av arbetsytan för datahantering finns i [Bearbeta och förbruka datapaket i Dynamics 365-appar för ekonomi och drift](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Om du snabbt vill generera testdata som inkluderar fakturor och bilagor ska du följa dessa steg.
 
@@ -86,11 +86,11 @@ Fakturor som importeras med datapaket kan associeras med den juridiska person de
 
 ## <a name="exception-processing"></a>Behandling av undantag
 
-I fall där leverantörsfakturor kommer till Ekonomi och drift via integrering måste det finnas ett enkelt sätt för ansvariga för leverantörsreskontra att behandla undantag och felaktiga fakturor och att skapa väntande fakturor med utgångspunkt från felaktiga fakturor. Behandlingen av detta undantag för leverantörsfakturor ingår nu i Ekonomi och drift.
+I fall där leverantörsfakturor kommer till Ekonomi och drift via integrering måste det finnas ett enkelt sätt för teamet för Leverantörsreskontra att behandla undantag och felaktiga fakturor, samt att skapa väntande fakturor med utgångspunkt från felaktiga fakturor. Behandlingen av detta undantag för leverantörsfakturor ingår nu i Ekonomi och drift.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Leverantörsfakturor som inte kunde importera listsidan
 
-Den nya sidan med lista över undantag finns på **Leverantörsreskontra** > **Fakturor** > **Importfel** > **Leverantörsfakturor som inte importerades**. Den här sidan visar alla rubrikposter för leverantörsfakturan från mellanlagringsregistret för leverantörsfakturans rubrikdatapost. Observera att du kan visa samma poster från arbetsytan **Datahantering**. Du kan också utföra samma åtgärder som tillhandahålls i undantagshanteringsfunktionen från arbetsytan **Datahantering**. Funktionen för undantagshantering har optimerats för en funktionell användare, vilket gör det enklare att använda.
+Den nya sidan med lista över undantag finns på **Leverantörsreskontra** > **Fakturor** > **Importfel** > **Leverantörsfakturor som inte importerades**. Den här sidan visar alla rubrikposter för leverantörsfakturan från mellanlagringsregistret för leverantörsfakturans rubrikdatapost. Observera att du kan visa samma poster från arbetsytan **Datahantering**. Du kan också utföra samma åtgärder som tillhandahålls i undantagshanteringsfunktionen från arbetsytan **Datahantering**. Funktionen för undantagshantering har optimerats för en funktionsanvändare, vilket gör det enklare att använda.
 
 ![Sida med lista över undantag.](media/vendor_invoice_automation_02.png)
 
@@ -225,3 +225,4 @@ Som standard, om användarrollen ger redigeringsrättigheter på valfri sida, ha
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

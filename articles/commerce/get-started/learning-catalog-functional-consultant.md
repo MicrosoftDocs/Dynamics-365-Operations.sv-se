@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ed6f53d79e273ecc938ee8bd1a8c0990e60bc997
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 654ea18b3cb22bbdfad061f38653f654cef83bdc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883974"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066525"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-functional-consultants"></a>Utbildningskatalog för funktionella konsulter för Dynamics 365 Commerce
 
@@ -27,7 +27,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 För funktionella konsulter visade vår jobbuppgiftsanalys forskning att alla måste förstå huvudinnehållsuppsättningen och ett domänområde.
 
-Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [Dynamics 365 Finance utbildningskatalog](../../finance/get-started/learning-catalog-functional-consultant.md).
+Om du vill öva på funktioner som delas med andra appar för ekonomi och drift, se då [Utbildningskatalog för Dynamics 365 Finance](../../finance/get-started/learning-catalog-functional-consultant.md).
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
@@ -41,7 +41,7 @@ Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [
 
 | Innehåll  | beskrivning | Format  | Längd    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Distribuera Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | I den här utbildningssökvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar   |
+| [Distribuera Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | I den här utbildningsvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar   |
 | [Konfigurera och arbeta med förutsättningar för flera kanaler i Dynamics 365 Commerce](/learn/paths/configure-work-omnichannel-prequisites-commerce/)          | Innan någon av Dynamics 365 Commerce-kanalerna kan skapas och användas måste flera krav ställas in. Den här utbildningsvägen beskriver konfigurationen av dessa förutsättningar för att aktivera lyckad interaktion i Commerce-kanaler och hur du arbetar med dem. | Gratis, självstudier online utbildningsväg | 6.5 timmar |
 | [Konfigurera och använda kassa (POS) i Dynamics 365 Commerce](/learn/paths/configure-use-pos-commerce/) | Transaktionsdata skapas i POS och överförs sedan till Dynamics 365 Commerce administration för bearbetning. Den här utbildningsvägen beskriver hur du installerar och aktiverar POS samt hur du skapar dagliga transaktioner i POS. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
 | [Hantera erfarenhet av kundengagemang och shopping i Dynamics 365 Commerce](/learn/paths/manage-customer-engagement-shopping-experience-commerce/) | Att hantera kundengagemang och förbättra kundupplevelsen hjälper kunderna att fatta bättre köpbeslut och utveckla lojaliteten för återförsäljarnas varumärken som i slutändan leder till ökade intäkter. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
@@ -56,3 +56,4 @@ Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

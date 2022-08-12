@@ -1,26 +1,27 @@
 ---
 title: Kolumndefinitioner i ekonomiska rapporter
 description: Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent som definierar innehållet i kolumner i en rapport.
-author: ShylaThompson
+author: aprilolson
 ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 106601
-ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 199dceb91195a3488dd269786a8cd59811d8d828db686c3636e3d6320c77bbeb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "106601"
+ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
+ms.search.form: FinancialReports
+ms.openlocfilehash: 30d00f50844f7ad040d3c054726b7cc1a7e85d01
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729105"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206395"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
@@ -482,9 +483,9 @@ Följande exempel visar en del av en kolumnbeskrivning som har ett kontoattribut
 | Räkenskapsår                  |      | BASE                |
 | Period                       |      | 1:BASE              |
 | Täckta perioder              |      | PERIODISK            |
-| ...                          |      |                     |
+| …                           |      |                     |
 | Kolumnbredd                 | 30   |                     |
-| ...                          |      |                     |
+| …                           |      |                     |
 | Attributfilter             |      | Referens=\[01:10\] |
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimensionsfilter i en kolumndefinition
@@ -542,8 +543,8 @@ Följande tabell visar rapportresultaten som kan uppstå för olika kombinatione
 |----------------------------------------------|----------------------|---------------|
 | Transaktionsvaluta                 | **YEN**              | **6 000 Y** – Resultatet visas endast transaktioner som angavs i JPY. |
 | Redovisningsvaluta från redovisningen | **YEN**              |**60 $** – Resultatet visar endast transaktioner som angavs i JPY, och visar de transaktionerna i USD.<p><strong>Obs!</strong> konverteringskursen är ungefär 100 JPY per USD.</p> |
-| Redovisningsvaluta från redovisningen | Tom                | **2 310 $** - Resultatet visar alla data i redovisningsvalutan som anges i redovisningen.<p><strong>Obs!</strong> Detta belopp är summan av alla transaktioner i redovisningsvaluta.</p> |
-| Transaktionsvaluta                 | Tom                | **2 250 $** - Resultatet visar alla belopp i den valuta som transaktionen genomfördes i. Detta innebär att summan lägger ihop belopp från olika valutor. |
+| Redovisningsvaluta från redovisningen | Tom                | **2 310 $** – Resultatet visar alla data i redovisningsvalutan som anges i redovisningen.<p><strong>Obs!</strong> Detta belopp är summan av alla transaktioner i redovisningsvaluta.</p> |
+| Transaktionsvaluta                 | Tom                | **2 250 $** – Resultatet visar alla belopp i den valuta som transaktionen genomfördes i. Detta innebär att summan lägger ihop belopp från olika valutor. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Beräkningskolumn i en kolumndefinition
 

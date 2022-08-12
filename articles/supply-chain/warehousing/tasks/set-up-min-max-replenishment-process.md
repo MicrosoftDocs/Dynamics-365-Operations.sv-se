@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f032f95377fdc6f8ec7fbbfa7aadab8fc448be5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fb0fbfcceece2883c32a266bcbe659211b0b56ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577778"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069739"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Ställ in en min-max-process för lagerpåfyllnad
 
 [!include [banner](../../includes/banner.md)]
 
-Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin. När lager faller under den lägsta nivån kommer arbete att skapas för att fylla på platsen. Proceduren visar även hur du använder fasta plockplatser om du vill tillåta att fylla på lager även om lager faller under den lägsta nivån, och hur du aktiverar processen för lagerpåfyllnad att köras regelbundet med hjälp av ett batchjobb. Dessa uppgifter utförs vanligtvis av en lagerchef. Du kan köra den här proceduren i demonstrationsdataföretaget USMF som använder exempelvärdena nedan eller så kan du köra det på dina egna data. Om du använder dina egna data ska du kontrollera att du har ett lagerställe som aktiveras för Lagerstyrningsprocesser.
+Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin. När lager faller under den lägsta nivån kommer arbete att skapas för att fylla på platsen. Proceduren visar även hur du använder fasta plockplatser om du vill tillåta att fylla på lager även om lager faller under den lägsta nivån, och hur du aktiverar processen för lagerpåfyllnad att köras regelbundet med hjälp av ett batchjobb. Dessa uppgifter utförs vanligtvis av en lagerchef. Du kan köra den här proceduren i demonstrationsdataföretaget USMF som använder exempelvärdena nedan eller så kan du köra det på dina egna data. Om du använder dina egna data ska du kontrollera att du har ett lagerställe som aktiverats för lagerstyrningsprocesser (WMS).
 
 
 ## <a name="create-a-fixed-picking-location"></a>Skapa en fast plockplats

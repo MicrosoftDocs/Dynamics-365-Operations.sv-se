@@ -6,19 +6,19 @@ ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d2b20ec7af9f0c6b7899617c2b8fdbf0992d7397
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ''
+ms.openlocfilehash: 6cb418c331f0ad260f0c370b87404028e5a953f1
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892404"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205839"
 ---
 # <a name="data-mart-resets-faq"></a>Vanliga frågor om återställ datatorg
 
@@ -35,8 +35,8 @@ För att säkerställa att gamla data inte infogas kan en återställ datatorg s
 Om ett eller flera av följande gäller i din situation kan din organisation dra fördel av en återställ datatorg:
 
 - **Återställdes programdatabasen**
-- **Du har öppnat en supportbegäran** - en supporttekniker har uppmanat dig att återställa datatorg som ett del av ett felsökningssteg.
-- **Stor andel föråldrade poster** - Föråldrade poster ger inte själva nödvändigtvis rätt att återställa datatorg. En hög procentsats av föråldrade data kan försämra den totala genereringen av rapporter och integrationsprestanda och få extra användning av databasutrymme. Vi rekommenderar att du genomför en datamart-återställning för att ta bort inaktuell data när det finns mer än 80 % inaktuell data i datamarten.
+- **Du har öppnat en supportbegäran** – en supporttekniker har uppmanat dig att återställa datatorg som ett del av ett felsökningssteg.
+- **Stor andel föråldrade poster** – Föråldrade poster ger inte själva nödvändigtvis rätt att återställa datatorg. En hög procentsats av föråldrade data kan försämra den totala genereringen av rapporter och integrationsprestanda och få extra användning av databasutrymme. Vi rekommenderar att du genomför en datamart-återställning för att ta bort inaktuell data när det finns mer än 80 % inaktuell data i datamarten.
  
 > [!NOTE]
 > Processen för att återställa data påverkas av antalet redovisnings- och budgettransaktioner i databasen. Beroende på antalet transaktioner i ditt system kan en data-reset slutföras om bara 15 minuter eller så kan den ta upp till fyra timmar. Om återställningen tar längre än fyra timmar rekommenderar vi dock att du kontaktar Support.
@@ -53,7 +53,7 @@ Det finns vissa omständigheter när vi inte rekommenderar att du återställer 
 - Om du har ett återkommande återställt mönster på grund av någon av följande orsaker:
 
     - **Saknade eller oväntade data i rapporten** – Om du ser att data saknas öppnar du ett supportärende hos Microsoft för att granska ditt rapportformat och eventuella problem med datasynkronisering.
-    - **Låst integrationsläge** - Om du ser att integrationsstatusen har körts kan det bero på ett stort antal transaktioner i systemet. Denna stat kommer att lösa sig. Om du däremot ser att integreringsstatusen har körts i fler än fyra timmar måste du öppna en supportbiljett hos Microsoft. 
+    - **Låst integrationsläge** – Om du ser att integrationsstatusen har körts kan det bero på ett stort antal transaktioner i systemet. Denna stat kommer att lösa sig. Om du däremot ser att integreringsstatusen har körts i fler än fyra timmar måste du öppna en supportbiljett hos Microsoft. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Om jag återställer datatorg, förlorar jag rapporter som jag redan har utformat?
 
@@ -61,6 +61,6 @@ Nej. Dina rapporter lagras i SQL-register som inte påverkas av en återställd 
  
 ## <a name="do-all-users-have-to-exit-the-system-before-i-can-reset-the-data-mart"></a>Måste alla användare stänga systemet innan jag kan återställa data mart?
 
-Nej. Användarna kan fortsätta att arbeta i systemet när data mart återställs. De kan dock inte komma åt rapporter som har skapats med Financial Reporter förrän återställningen är klar.
+Nej. Användarna kan fortsätta arbeta i systemet när data mart återställs. De kan dock inte komma åt rapporter som har skapats med Financial Reporter förrän återställningen är klar.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

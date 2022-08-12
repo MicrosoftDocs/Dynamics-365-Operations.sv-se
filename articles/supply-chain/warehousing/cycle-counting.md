@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: da7aef93cf994c40410598ab9c4ff2b21f4750e7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902232"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065941"
 ---
 # <a name="cycle-counting"></a>Rullande inventering
 
@@ -52,11 +52,11 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 <tbody>
 <tr class="odd">
 <td>Artikel</td>
-<td>Artikeln måste aktiveras för lagerhanteringsprocesser.</td>
+<td>Artikeln måste aktiveras för lagerstyrningsprocesser (WMS).</td>
 </tr>
 <tr class="even">
 <td>Lagerställe</td>
-<td>Lagerstället måste aktiveras för lagerhanteringsprocesser. Om du vill aktivera lagerstället för lagerhanteringsprocesser, väljer du lagerstället på sidan <strong>Lagerställen</strong> och markerar sedan alternativet <strong>Använd lagerstyrningsprocesser</strong>. Om du vill att arbetare ska kunna flytta lastpallar under en rullande inventering markerar du alternativet <strong>Tillåt att lastpallar flyttas under rullande inventering</strong> på snabbfliken <strong>Lagerstyrning</strong>.</td>
+<td>Lagerstället måste aktiveras för lagerstyrningsprocesser (WMS). Om du vill aktivera lagerstället för WMS väljer du lagerstället på sidan <strong>Lagerställen</strong> och markerar sedan alternativet <strong>Använd lagerstyrningsprocesser</strong>. Om du vill att arbetare ska kunna flytta lastpallar under en rullande inventering markerar du alternativet <strong>Tillåt att lastpallar flyttas under rullande inventering</strong> på snabbfliken <strong>Lagerstyrning</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Arbetspooler</td>

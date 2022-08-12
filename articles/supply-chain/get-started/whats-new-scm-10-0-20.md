@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3eadc447d8c0c443fa9d3eab220300e3eedf051d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888655"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123821"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.20 augusti 2021
 
@@ -71,7 +71,7 @@ Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. D
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.20 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.20 av appar för ekonomi och drift (juli 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
@@ -98,3 +98,4 @@ För att bryta ändringar som endast påverkar kompileringen, men är binära ko
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

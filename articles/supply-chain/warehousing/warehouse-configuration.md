@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983014"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065200"
 ---
 # <a name="warehouse-configuration-overview"></a>Konfiguration av lagerställe – översikt
 
@@ -31,10 +31,10 @@ ms.locfileid: "7983014"
 Det här avsnittet innehåller information om hur du konfigurerar ett lagerställe. Det inkluderar information om att aktivera ett lagerställes layout och lagerställeprocesser.
 
 > [!NOTE]
-> Den här artikeln gäller funktioner i modulen **Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen **Lagerhantering**.
+> Denna artikel gäller funktioner i modulen **Warehouse management**. Den gäller inte lagerställefunktioner i modulen **Lagerhantering**.
 
 ## <a name="warehouse-layout"></a>Layout för lagerställe
-Lagerhanteringssystemet i Supply Chain Management ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå optimal lagereffektivitet.
+Lagerstyrningsprocesser (WMS) i Supply Chain Management ger dig flexibla sätt att definiera lagerställets layout i syfte att uppfylla föränderliga behov så att du kan uppnå optimal lagereffektivitet.
 
 -   Du kan fastställa högprioriterade och lågprioriterade lagerområden för optimal placering av varor.
 -   Du kan dela upp till lagerstället i zoner som tar hänsyn till olika lagringsbehov, till exempel temperaturkrav eller olika omsättningshastigheter för artiklar.
@@ -42,7 +42,7 @@ Lagerhanteringssystemet i Supply Chain Management ger flexibla sätt att definie
 -   Du kan gruppera platser genom att använda inställningar för begränsning för fysisk lagring.
 -   Du kan kontrollera hur artiklar lagras och plockas, baserat på frågedefinierade regler.
 
-Om du vill använda lagerstyrning i Supply Chain Management måste du skapa ett lagerställe och aktivera funktionen för mer avancerade eller specialiserade lagerstyrningsaktiviteter. Välj alternativet **Använd lagerstyrningsprocesser** på sidan **Lagerställen**.
+Om du vill använda WMS i Supply Chain Management måste du skapa ett lagerställe och aktivera det för WMS. Välj alternativet **Använd lagerstyrningsprocesser** på sidan **Lagerställen**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zongrupper, zoner, platstyper och platser
 

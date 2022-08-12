@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a1d86e7e9cca159d0a820680714a08dc73c0688
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850856"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068406"
 ---
 # <a name="inventory-costing-faq"></a>Vanliga frågor om kostnadsredovisning för lager
 
@@ -102,9 +102,9 @@ Ja. Du kan skapa noder för **summa** i kostnadsredovisningen för att skilja ko
 
 ## <a name="dimension-groups"></a>Dimensionsgrupper
 
-### <a name="can-i-manage-cost-at-the-batch-or-serial-number-level"></a>Kan jag hantera kostnader på batch- eller serienummernivå?
+### <a name="can-i-manage-cost-at-the-batch-or-serial-number-level"></a>Kan jag hantera kostnader på batch- eller löpnummernivå?
 
-Ja, om du använder en periodisk kostnadsmodell som FIFO, LIFO, LIFO-datum, viktat medelvärde eller datum för viktat medelvärde, kan du aktivera alternativet **Ekonomiskt lager** för dimensionen **batch** eller **serienummer** i spårningsdimensionsgruppen om du vill spåra kostnader på detaljerad nivå.
+Ja, om du använder en periodisk kostnadsmodell som FIFO, LIFO, LIFO-datum, viktat medelvärde eller datum för viktat medelvärde, kan du aktivera alternativet **Ekonomiskt lager** för dimensionen **batch** eller **löpnummer** i spårningsdimensionsgruppen om du vill spåra kostnader på detaljerad nivå.
 
 ### <a name="can-i-manage-costs-at-the-location-level"></a>Kan jag hantera kostnader på platsnivå?
 
@@ -112,11 +112,11 @@ Nej, du kan inte aktivera alternativet **Ekonomiskt lager** för dimensionen **P
 
 ### <a name="should-i-enable-the-use-warehouse-management-processes-option-for-the-storage-dimension-group"></a>Ska jag aktivera alternativet Använd lagerhanteringsprocesser för lagringsdimensionsgruppen?
 
-Om du tror att du kanske vill använda de avancerade lagerstyrningsfunktionerna i framtiden, bör du aktivera alternativet **Använd lagerstyrningsprocesser**. När du har sparat en lagringsdimensionsgrupp kan du inte längre ändra inställningen för alternativet **Använd lagerstyrningsprocesser** för den. Om du bestämmer dig för att använda lagerstyrningsprocesser senare måste du skapa ett nytt lagerställe där alternativet aktiveras. Det finns ingen automatiserad process som du kan använda för att flytta allt lager från ett lagerställe till ett annat, eller för att kopiera relaterade konfigurationer till ett nytt lagerställe.
+Om du tror att du kanske vill använda lagerstyrningsprocesser (WMS) i framtiden bör du aktivera alternativet **Använd lagerstyrningsprocesser**. När du har sparat en lagringsdimensionsgrupp kan du inte längre ändra inställningen för alternativet **Använd lagerstyrningsprocesser** för den. Om du bestämmer dig för att använda lagerstyrningsprocesser senare måste du skapa ett nytt lagerställe där alternativet aktiveras. Det finns ingen automatiserad process som du kan använda för att flytta allt lager från ett lagerställe till ett annat, eller för att kopiera relaterade konfigurationer till ett nytt lagerställe.
 
-### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-advanced-warehousing"></a>Kan jag aktivera Använd lagerstyrningsprocesser för lagringsdimensionsgruppen även om jag inte planerar att använda avancerad lagring?
+### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-warehouse-management-processes-wms"></a>Kan jag aktivera Använd lagerstyrningsprocesser för lagringsdimensionsgruppen även om jag inte planerar att använda lagerstyrningsprocesser (WMS)?
 
-Ja, även om du inte planerar att använda de avancerade lagerstyrningsfunktionerna, kan du aktivera alternativet **Använd lagerstyrningsprocesser** för lagringsdimensionsgruppen. Om du vill skapa och bearbeta transaktioner måste du slutföra den minsta konfigurationen, till exempel reservationshierarkier och enhetssekvensgrupper. Inställningarna för avancerad lagring ignoreras dock i allmänhet när du manuellt bearbetar plocklistor, följesedlar och produktinleveranser (till exempel på försäljningsorder- och inköpsordersidor).
+Ja, även om du inte planerar att använda funktionerna för lagerstyrningsprocesser (WMS) kan du aktivera alternativet **Använd lagerstyrningsprocesser** för lagringsdimensionsgruppen. Om du vill skapa och bearbeta transaktioner måste du slutföra den minsta konfigurationen, till exempel reservationshierarkier och enhetssekvensgrupper. Inställningarna för WMSg ignoreras dock i allmänhet när du manuellt bearbetar plocklistor, följesedlar och produktinleveranser (till exempel på försäljningsorder- och inköpsordersidor).
 
 ### <a name="when-should-i-enable-the-physical-inventory-option-for-a-storage-or-tracking-dimension-group"></a>När ska jag aktivera alternativet Fysiskt lager för en lagrings- eller spårningsdimensionsgrupp?
 
@@ -158,7 +158,7 @@ I de flesta organisationer vill du aktivera alternativet **Periodisera skulder v
 
 ### <a name="how-can-i-prevent-a-user-from-posting-a-purchase-order-product-receipt-if-a-receipt-registration-isnt-yet-posted"></a>Hur kan jag förhindra en användare från att bokföra en inleverans av en inköpsorderprodukt om en kvittoregistrering inte har bokförts än?
 
-Du kan förhindra en användare från att bokföra en inleverans av en inköpsorderprodukt om en inköpsorderregistrering ännu inte har uppstått genom att aktivera alternativet **Registreringskrav** för artikelmodellgruppen. Det här alternativet används vanligtvis i organisationer där en mottagningsprocess med två steg används, eller i scenarier där du måste registrera ett batch- eller serienummer, till exempel för de artiklar som du tar emot. Alternativet **Registreringskrav** gäller för *alla* lagerinleveranser för en artikel, inte bara för inköpsorder. Det gäller till exempel för en lagerjournal som har en positiv kvantitet och en tillverkningsorderrapport som färdig journal.
+Du kan förhindra en användare från att bokföra en inleverans av en inköpsorderprodukt om en inköpsorderregistrering ännu inte har uppstått genom att aktivera alternativet **Registreringskrav** för artikelmodellgruppen. Det här alternativet används vanligtvis i organisationer där en mottagningsprocess med två steg används, eller i scenarier där du måste registrera ett batch- eller löpnummer, till exempel för de artiklar som du tar emot. Alternativet **Registreringskrav** gäller för *alla* lagerinleveranser för en artikel, inte bara för inköpsorder. Det gäller till exempel för en lagerjournal som har en positiv kvantitet och en tillverkningsorderrapport som färdig journal.
 
 ### <a name="how-can-i-prevent-a-user-from-posting-a-purchase-order-invoice-if-a-product-receipt-isnt-yet-posted"></a>Hur kan jag förhindra en användare från att bokföra inköpsorderfaktura om ett produktkvitto ännu inte har bokförts?
 
@@ -209,7 +209,7 @@ Ja, systemet beräknar avvikelser när du manuellt anger en standardkostnad. Nä
 
 ### <a name="how-can-i-carry-the-variances-from-a-subproduction-order-to-the-parent-production-order"></a>Hur kan jag bära avvikelserna från en delproduktionsorder till den överordnade tillverkningsordern?
 
-När du använder en periodisk kostnadsmodell som FIFO, LIFO eller viktat medelvärde, redovisas kostnaderna från en delproduktion i den heuristiska modell som du har valt för artiklarna. Om du kräver faktisk kostnadsredovisning bör du använda markeringsprincipen för att ange vilken delproduktion som ges till en överordnad tillverkningsorder. Du kan också överväga att använda alternativet **Ekonomiskt lager** för dimensionen **batch** eller **serienummer** i exempelvis spårningsdimensionsgruppen.
+När du använder en periodisk kostnadsmodell som FIFO, LIFO eller viktat medelvärde, redovisas kostnaderna från en delproduktion i den heuristiska modell som du har valt för artiklarna. Om du kräver faktisk kostnadsredovisning bör du använda markeringsprincipen för att ange vilken delproduktion som ges till en överordnad tillverkningsorder. Du kan också överväga att använda alternativet **Ekonomiskt lager** för dimensionen **batch** eller **löpnummer** i exempelvis spårningsdimensionsgruppen.
 
 ### <a name="how-does-the-flushing-principle-affect-consumption"></a>Hur påverkar avräkningsprincip förbrukningen?
 

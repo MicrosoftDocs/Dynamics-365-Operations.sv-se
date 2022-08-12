@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5dbf8ab2ea875e902709215e249871474b17230f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c4c2a0954c8554da0b4c859d837ab6ca4839b36
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883521"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111943"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Uppgradera ditt format genom att implementera en ny basversion för det formatet
 
@@ -119,7 +119,7 @@ För att göra detta måste Prosewares, Inc. skapa en konfiguration med Litware 
     Observera att den skapade konfigurationen sparas som slutförd version 1.1.1. Det innebär att det är version 1 av det anpassade BACS-formatet (fiktiv kund från Storbritannien) baserat på version 1 av BACS-formatet (fiktiv från Storbritannien) baserat på version 1 av datamodellen Betalningar (förenklad modell).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Testa det anpassade formatet för att skapa betalningsfiler
-Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell, Ekonomi och drift-session. Välj det BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom introducerade XML-noden som innehåller IBANkod i korrespondens till regionala kraven.  
+Slutför stegen i procedure "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Ekonomi och drift-session. Välj det BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom introducerade XML-noden som innehåller IBANkod i korrespondens till regionala kraven.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Uppdatera den befintliga landsspecifika konfigurationen
 Litware, Inc. behöver uppdatera BACS-konfigurationen (fiktivt UK) och anta nya landskrav för hantering av formatet för elektroniskt dokument. Senare kommer detta att bifogas i en ny version av den här konfigurationen som ska erbjudas abonnenter, inklusive Proseware, Inc.  
@@ -213,7 +213,7 @@ För att göra detta måste Proseware, Inc. ändra baskonfigurationversionen fö
 ## <a name="resolve-rebase-conflicts"></a>Lös basera om konflikter
 1. Klicka på Designer.
     
-    Observera att ändringar i textlängdgränsen för leverantörens namn inte kan lösas automatiskt. Därför visas den i en konfliktlista. För varje konflikt av typen Uppdatera är följande alternativ tillgängliga: - Använd ett tidigare basvärde (knappen överst i rutnätet) om du vill ta med det föregående basversionsvärdet (0 i vårt fall).  - Använd ett basvärde (knappen överst i rutnätet) om du vill ta med det nya basversionsvärdet (100 i vårt fall).  - Behåll ditt eget (anpassade) värde (60 i det här fallet).  Klicka på Tillämpa basvärde för att använda den landsspecifika gränsen på 100 tecken för textländen på leverantörsnamnet.  
+    Observera att ändringar i textlängdgränsen för leverantörens namn inte kan lösas automatiskt. Därför visas den i en konfliktlista. För varje konflikt av typen Uppdatera är följande alternativ tillgängliga: – Använd ett tidigare basvärde (knappen överst i rutnätet) om du vill ta med det föregående basversionsvärdet (0 i vårt fall).  - Använd ett basvärde (knappen överst i rutnätet) om du vill ta med det nya basversionsvärdet (100 i vårt fall).  - Behåll ditt eget (anpassade) värde (60 i det här fallet).  Klicka på Tillämpa basvärde för att använda den landsspecifika gränsen på 100 tecken för textländen på leverantörsnamnet.  
 
     Observera att Proseware, Inc. och Litware, Inc. har anpassade och lokala versioner av det här formatet med hjälp av IBAN och SWIFT-koder med tillhörande komponenter som sammanslås automatiskt i det hanterade formatet.  
 
@@ -239,7 +239,7 @@ För att göra detta måste Proseware, Inc. ändra baskonfigurationversionen fö
     Observera att den skapade konfigurationen sparas som slutförd version 1.2.2: version 2 av BACS-basformatet (fiktiv UK kund) baserat på version 2 av BACS-basformatet (UK fiktivt) som baseras på version 1 av datamodellen Betalningar (förenklad modell).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testa det anpassade formatet för att skapa betalningsfiler
-Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell, Ekonomi och drift-session. Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven. Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.  
+Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Ekonomi och drift-session. Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven. Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.  
 
 
 

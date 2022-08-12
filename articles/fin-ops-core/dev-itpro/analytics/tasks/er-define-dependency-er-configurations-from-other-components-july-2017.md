@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aceb883e9182090a336c4c91aa0022a79495ce40
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883580"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111707"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera ER‑konfigurationers beroende av andra komponenter
 
@@ -25,7 +25,7 @@ ms.locfileid: "8883580"
 
 För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer, och ha åtkomst till Microsoft Dynamics Lifecycle Services (LCS).
 
-I den här proceduren beskrivs hur du skapar en konfiguration för elektronisk rapportering (ER) och anger beroendet från andra programvarukomponenter, så att du kan garantera att konfigurationen hämtas korrekt till en viss version av Finance and Operations. I det här exemplet ska du skapa erforderliga ER-konfigurationer för exempelföretaget Litware, Inc. 
+I den här proceduren beskrivs hur du skapar en konfiguration för elektronisk rapportering (ER) och anger beroende från andra programvarukomponenter, detta så att du kan garantera att konfigurationen hämtas korrekt till en viss version av Ekonomi och drift. I det här exemplet ska du skapa erforderliga ER-konfigurationer för exempelföretaget Litware, Inc. 
 
 Den här proceduren är avsedd för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Dessa steg kan utföras i alla företag, eftersom ER-konfigurationer delas mellan företag. 
 
@@ -46,7 +46,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 7. Välj Microsoft Dynamics 365 for Operations (1611).
 8. Skriv "[7.1.1541.3036,8)" i fältet Version.
     * [7.1.1541.3036,8)  
-    * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Ekonomi och drift, versionen måste vara 7.1.1541.3036 eller senare och den får inte vara senare än huvudversion 8.   
+    * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Ekonomi och drift version 7.1.1541.3036 eller senare, men den får inte vara senare än huvudversion 8.   
 9. Klicka på Spara.
 10. Stäng sidan.
 11. Klicka på Ändra status.
@@ -59,7 +59,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 18. Välj Microsoft Dynamics AX 7.0 RTW.
 19. Skriv "[7.0.1265.3015,7.1)" i fältet Version.
     * [7.0.1265.3015,7.1)  
-    * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, versionen måste vara 7.0.1265.3015 eller senare och den får inte vara senare än delversion 1.   
+    * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 Finance, Enterprise Edition, i en version som är 7.0.1265.3015 eller senare, men inte senare än delversion 1.   
 20. Klicka på Spara.
 21. Stäng sidan.
 22. Klicka på Ändra status.
@@ -136,10 +136,11 @@ Vi ska ta bort de skapade konfigurationerna från systemet och hämta tillbaka d
 25. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
 26. Expandera Sample data model i trädet.
     * Observera att modellkonfigurationen Exempelmappning har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Exempelmappning har definierats till att implementera den valda datamodellen, och eftersom den gäller för appen. Konfigurationen Exempelmappning (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
-    * Om du loggar in till Ekonomi och drift, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Sample mapping (alternative) medan konfigurationen Sample mapping hoppas över.  
+    * Om du loggar in på Ekonomi och drift, registrerar samma leverantör, öppnar samma LCS-projekt och hämtar samma datamodellkonfiguration, hämtas konfigurationen "Exempelmappning (alternativ)", medan konfigurationen "Exempelmappning" hoppas över.  
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hantera livscykeln för konfiguration av elektronisk rapportering (ER)](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

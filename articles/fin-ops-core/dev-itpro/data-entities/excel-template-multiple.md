@@ -1,6 +1,6 @@
 ---
 title: Datamallar med flera kalkylblad
-description: Den här artikeln beskriver hur du importerar data med hjälp av Excel-datatabellmallar till Ekonomi och drift.
+description: Den här artikeln beskriver hur du importerar data med hjälp av Excel-dataentitetsmallar till Ekonomi och drift.
 author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: eaad6f433329dd42c7ab6db839f2f9e61de91a13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f0845b111afb18205677b885c91fe1585b24ab14
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881113"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108819"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Datamallar med flera kalkylblad
 
@@ -45,7 +45,7 @@ Mappningen av ett kalkylblad till en datatabell i importjobbet kan åtgärdas i 
 
 ## <a name="re-map-to-a-new-file"></a>Mappa till en ny fil
 
-I fall där en ny version av samma fil eller en helt ny fil måste läsas in för befintliga entiteter i ett dataprojekt måste du använda upplevelsen **Lägg till filen** och lägga till entiteterna igen som om de lades till för första gången. Systemet bekräftar att du vill skriva över de befintliga entiteterna i dataprojektet innan du fortsätter. Entiteter som inte läggs till igen (eller över) fortsätter att hålla tidigare mappningar från den föregående filen.
+I fall där en ny version av samma fil eller en helt ny fil måste läsas in för befintliga entiteter i ett dataprojekt måste du använda upplevelsen **Lägg till filen** och lägga till entiteterna igen som om de lades till för första gången. Systemet bekräftar att du vill skriva över de befintliga entiteterna i dataprojektet innan du fortsätter. Entiteter som inte läggs till igen (eller över) fortsätter hålla tidigare mappningar från den föregående filen.
 
 ## <a name="upload-a-file-using-run-project"></a>Överför en fil genom att använda Kör projekt
 
@@ -53,3 +53,4 @@ Du kan överföra en Excel-fil när du använder alternativet **Köra projekt** 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

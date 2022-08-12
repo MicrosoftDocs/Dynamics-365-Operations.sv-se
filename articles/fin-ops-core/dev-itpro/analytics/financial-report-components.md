@@ -6,21 +6,22 @@ ms.date: 10/27/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 59071
-ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8512559ea33f16f3558b277999cc86240ee8277d1b3b0d6bf2aecba32df8e09f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "59071"
+ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
+ms.search.form: FinancialReports
+ms.openlocfilehash: 5ad13cfdc77e5e6cec1ffb6beac9a2c84088773e
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761450"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206013"
 ---
 # <a name="financial-report-components"></a>Komponenter i ekonomisk rapportering
 
@@ -95,7 +96,7 @@ Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp.
 6. I fältet **Filnamn** anger du ett namn för filen. Report Designer lägger automatiskt till ett .tdbx-filnamnstillägg.
 7. Klicka på **Spara**. Byggblocksgruppen sparas på den plats du anger.
 
-### <a name="import-a-building-block-group"></a> Importera en byggblockgrupp
+### <a name="import-a-building-block-group"></a>Importera en byggblockgrupp
 
 Du kan importera en byggblockgrupp till en befintlig byggblockgrupp. Alla importerade byggblocksgrupper behåller sina ursprungliga teckensnittsinställningar och företagsreferenser och inkluderar relevanta dimensionsuppsättningar.
 

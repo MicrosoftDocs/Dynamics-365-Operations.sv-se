@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716983"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065721"
 ---
 # <a name="establish-customer-payment-terms"></a>Upprätta villkor för kundbetalning
 
@@ -35,11 +35,11 @@ I den här proceduren definieras kassarabatt- och förfallodatuminställningar. 
 7. Klicka på **Spara**.
 8. Stäng sidan.
 9. Gå till **navigeringsfönstret > Moduler > Kundreskontra > Betalningsinställning > Betalningsvillkor**.
-10. Klicka på **Ny**. Betalningsvillkoren används för att definiera hur förfallodatumen ska beräknas. Kassarabattdatuminställningar definieras i en separat sida. 
+10. Klicka på **Ny**. **Betalningsvillkor** används för att definiera hur förfallodatumen ska beräknas. Kassarabattdatuminställningar definieras i en separat sida. 
 11. Ange ett ID i fältet **Betalningsvillkor**.
 12. Ange en beskrivning i fältet **beskrivning**.
-13. Välj en **betalningsmetod**, t.ex. COD, netto, aktuell månad, etc. Betalsättet används för att definiera starten på hur förfallo kommer att beräknas. Till exempel, netto används om förfallodatumet är alltid ett visst antal månader eller dagar efter fakturadatum. Postförskott kan användas för att, när betalning krävs vid faktura, så ett förfallodatum beräknas inte. Välj aktuell månad för den här uppgifthandbok.  
-14. Välj en **betalningsdag**, om en specifik dag i veckan eller datum tas med i beräkningen. Beroende på betalningsvillkoret kan du ange en kvantitet i månader eller dagar. Du kan använda **betalningsplanen**, eller **betalningsdagen** ”till” lägger till slutet av betalsättet. Om förfallodatumet är alltid 10:e i nästa månad, välj **betalningsdag** den 10:e. 
+13. Välj en **Betalningsmetod** som exempelvis **Postförskott**, **Netto**, **Aktuell månad** osv. **Betalningsmetod** används för att definiera starten på hur förfallodatumet beräknas. Till exempel används **Netto** om förfallodatumet alltid är ett visst antal månader eller dagar efter fakturadatum. **Postförskott** kan användas för när betalning krävs vid faktura, varför ett förfallodatum inte beräknas. Välj **Aktuell månad** för denna uppgiftsguide.  
+14. Välj en **betalningsdag**, om en specifik dag i veckan eller datum tas med i beräkningen. Beroende på betalningsvillkoret kan du ange en kvantitet i månader eller dagar. Du kan även använda **Betalningsschema** eller **Betalningsdag** för att "lägga till" i slutet av **Betalningsmetoden**. Om förfallodatumet är alltid 10:e i nästa månad, välj **betalningsdag** den 10:e. Om du använder en **betalningskalender** kan du definiera hur förfallodatumet bestäms när det beräknade datumet landar på en icke-arbetsdag. Det ursprungliga förfallodatumet beräknas med hjälp av kalenderdagar. Om det beräknade datumet landar på en dag som inte är arbetsdag kan du justera det beräknade förfallodatumet till antingen nästa arbetsdag eller tidigare arbetsdag.
 15. Klicka på **Spara**.
 16. Stäng sidan.
 17. Gå till **Kundreskontra > Betalningsinställning > Kassarabatter**.
@@ -50,7 +50,7 @@ I den här proceduren definieras kassarabatt- och förfallodatuminställningar. 
 22. Ange det antal **dagar** som används för att beräkna kassarabattdatumet. Om **Netto**-principen markeras, antal dagar ska läggas till fakturadatumet för att beräkna kassarabattdatumet.  
 23. I fältet **Rabatt i procent** anger du procentandelen av kassarabatten.
 24. I **Huvudkonto för kundrabatter** anger du det huvudkonto där kassarabatten ska bokföras för kundfakturor.
-25. Välj alternativ på samma sätt som i fältet **Rabattmotkonton**. Om du väljer ”konton på fakturaraderna, ska bokföra kassarabatten till samma tillgångs/utgifthuvudkontot på raderna för leverantörsfakturan. Om du väljer Använd huvudkonto för leverantörsfakturor, kassarabatten ska bokföras i huvudkontot som du definierar i Använd huvudkonto för leverantörsfakturor. För det här exemplet väljs Använd huvudkonto för leverantörsfakturor. 
+25. Välj alternativ på samma sätt som i fältet **Rabattmotkonton**. Om du väljer ”konton på fakturaraderna, ska bokföra kassarabatten till samma tillgångs/utgifthuvudkontot på raderna för leverantörsfakturan. Om du väljer **Använd huvudkonto för leverantörsfakturor** kommer kassarabatten att bokföra till huvudkontot som du definierar i **Huvudkonto för leverantörsfakturor**. För det här exemplet väljs **Använd huvudkonto för leverantörsfakturor**. 
 26. I **Huvudkonto för leverantörsrabatter** anger du det huvudkonto där kassarabatten ska bokföras för leverantörsfakturor.
 27. Klicka på **Spara**.
 

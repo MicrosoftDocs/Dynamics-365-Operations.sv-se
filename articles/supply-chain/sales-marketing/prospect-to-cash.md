@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 40398a481d23b8abed59556a3c6d70e783756017
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea07b40c0a1a7eae7cd167f46796556b1e0ecc46
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857240"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103607"
 ---
 # <a name="prospect-to-cash"></a>Prospekt till kontanter
 
@@ -43,13 +43,13 @@ I den aktuella versionen innehåller lösningen Potentiell kund till pengar föl
 ## <a name="system-requirements-for-supply-chain-management"></a>System krav för hantering av Supply Chain Management
 Potentiell kund till kontanter-integrering stöds på följande versioner:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (december 2017)
+### <a name="microsoft-dynamics-365-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 Ekonomi och drift, Enterprise edition 7.3 (december 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (december 2017) - programversion 7.3.11971.56116 med plattformsuppdatering 12 (7.0.4709.41129)
+- Dynamics 365 Ekonomi och drift, Enterprise Edition (december 2017) – Programversion 7.3.11971.56116 med plattformsuppdatering 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017)
+### <a name="dynamics-365-finance-enterprise-edition-july-2017"></a>Dynamics 365 Finance, Enterprise edition (juli 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017) - med plattformsuppdatering 8 (programversion 7.2.11792.56024 med plattformsuppdatering 7.0.4565.16212).
+- Dynamics 365 Ekonomi och drift, Enterprise Edition (juli 2017) – med plattformsuppdatering 8 (programversion 7.2.11792.56024 med plattformsversion 7.0.4565.16212).
 - Följande snabbkorrigeringar är nödvändiga:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Denna snabbkorrigering möjliggör synkronisering av försäljningsorder med funktionen för dataintegrering mellan Sales och Supply Chain Management. Den innehåller även flera förbättringar.
@@ -59,15 +59,15 @@ Potentiell kund till kontanter-integrering stöds på följande versioner:
     > [!NOTE]
     > Du måste bara installera KB4045570 eftersom installationen inkluderar ändringarna från andra snabbkorrigeringar. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations version 1611 (november 2016)
+### <a name="dynamics-365-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 Ekonomi och drift version 1611 (november 2016)
 
-- Dynamics 365 for Finance and Operations version 1611 (november 2016) med plattformsuppdatering 8 eller högre
+- Dynamics 365 Ekonomi och drift version 1611 (november 2016) med plattformsuppdatering 8 eller senare
 
 - Följande snabbkorrigeringar är nödvändiga:
 
   - **[KB4051266](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4051266&bugId=3863566&qc=ee80faaa7bc6c77b368d5eaf456c9c08e0b9fba5903a7b6fd8c13756c3a4b757)** -Aktivera synkronisering av försäljningsorder med Data integrator mellan Supply Chain Management och Sales. 
   - **[KB4037542](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4037542&bugId=3848253&qc=8323b93c15280172c5ab4159e0256e37104ced1729462c91ab2f7d00cb8d419c)** -Aktivera synkronisering av försäljningsorderrubriken med Data integrator mellan Supply Chain Management och Sales.
-  - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Stöd för Potentiell kund till pengar-integrering via datatabeller krävs.
+  - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** – Stöd för Potentiell kund till pengar-integrering via datatabeller krävs.
     
     > [!NOTE]
     > Du måste initiera följande batchjobb från formuläret **SalesPopulateProspectToCash** när du har installerat snabbkorrigeringarna. Detta formulär är dolt eftersom du bara behöver det en gång. För att komma åt formuläret loggar du in och lägger till följande i din webbläsaradress: *&mi=action:SalesPopulateProspectToCash*, t.ex., `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. När formuläret öppnas klickar du på OK. Då fylls ett nytt fält för **LineCreationSequnceNumber** i tabellerna **SalesLine**, **SalesQuotationLine** och **CustInvoiceTrans** med unika värden och produktraden uppdateras. Detta är nödvändigt för att integreringen Potentiell kund till kontanter ska fungera.

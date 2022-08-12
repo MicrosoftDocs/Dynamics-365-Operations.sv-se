@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4cc05d9fcea129cfb2ed8ed8df4bd4034a1fed4c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868681"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066403"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobil arbetsyta för fakturagodkännanden
 
@@ -26,11 +26,11 @@ ms.locfileid: "8868681"
 
 Den här artikeln innehåller information om den mobila arbetsytan för **fakturagodkännanden**. Denna arbetsyta tillhandahåller en lista med fakturor som har tilldelats till dig via arbetsflödet för leverantörsfakturahuvud. 
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Finance and Operations.
+Denna mobila arbetsyta är avsedd att användas med mobilappen för ekonomi och drift.
 
 ## <a name="overview"></a>Översikt
 
-Den mobila arbetsytan **Faktureringsgodkännanden** låter ansvariga och chefer inom leverantörsreskontra visa fakturor som har tilldelats till dem som ett led i arbetsflödet för leverantörsfakturahuvud. Du kan visa faktureringsinformationen - och till och med rad- och distributionsinformationen - för att hjälpa dig att fatta välinformerade godkännandebeslut. Från arbetsytan kan vidta du åtgärder för att flytta faktura genom arbetsflödesprocessen. 
+Den mobila arbetsytan **Faktureringsgodkännanden** låter ansvariga och chefer inom leverantörsreskontra visa fakturor som har tilldelats till dem som ett led i arbetsflödet för leverantörsfakturahuvud. Du kan visa faktureringsinformationen – och till och med rad- och distributionsinformationen – för att hjälpa dig att fatta välinformerade godkännandebeslut. Från arbetsytan kan vidta du åtgärder för att flytta faktura genom arbetsflödesprocessen. 
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -61,7 +61,7 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
-Hämta och installera mobilappen Ekonomi och drift:
+Hämta och installera mobilappen för ekonomi och drift:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -88,3 +88,4 @@ Hämta och installera mobilappen Ekonomi och drift:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

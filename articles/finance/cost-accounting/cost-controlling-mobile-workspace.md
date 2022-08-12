@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9e7d220639f5f3af26e892461928c646746963bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d6d3fdcc0b0387a92f138b0ba7cf537f473b91a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874679"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069576"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobil arbetsyta för kostnadskontroll
 
@@ -99,7 +99,7 @@ Om version 1611 med plattformsuppdatering 3 eller senare har använts i organisa
 <ol>
 <li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Hämta snabbkorrigeringar för metadata från Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS.</li>
 <li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a></li>
 
 </ol></td>
@@ -114,7 +114,7 @@ Om version 1611 med plattformsuppdatering 3 eller senare har använts i organisa
 
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
-Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
+Ladda ner och installera mobilappen för Ekonomi och drift (Dynamics 365):
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -146,3 +146,4 @@ Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

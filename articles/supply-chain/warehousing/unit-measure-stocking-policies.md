@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca1c18a293d66ab78f41cac857461249826ce4c9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714846"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069135"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Måttenheten och lagerpolicyer
 
@@ -28,10 +28,10 @@ ms.locfileid: "6714846"
 
 Den här artikeln beskriver hur standardenheter, enhetssekvenser och enhetskonverteringar används i lagerprocesser.
 
-Enhetssekvensgrupper definierar den sekvens av enheter som kan användas i lageroperationer. De skapas på sidan **Enhetssekvensgrupper**. Sekvensen visar förhållandet mellan de olika enheterna. Till exempel lagrar du lastpallar som innehåller kartonger, som innehåller enskilda delar av artiklar. I detta fall måste du tillhandahålla de tre olika enheterna och den logiska ordningen för skikten. I Enhetsekvensgrupper kan du definiera policyer för gruppering av registreringsskyltar och de standardenheter som ska användas för flera lagerställeprocesser. Denna artikel gäller både den avancerade lagerställelösningen som är tillgängliga i Lagerstyrning och den mer grundläggande lagerställelösningen, som är tillgänglig i Lagerhantering.
+Enhetssekvensgrupper definierar den sekvens av enheter som kan användas i lageroperationer. De skapas på sidan **Enhetssekvensgrupper**. Sekvensen visar förhållandet mellan de olika enheterna. Till exempel lagrar du lastpallar som innehåller kartonger, som innehåller enskilda delar av artiklar. I detta fall måste du tillhandahålla de tre olika enheterna och den logiska ordningen för skikten. I Enhetsekvensgrupper kan du definiera policyer för gruppering av registreringsskyltar och de standardenheter som ska användas för flera lagerställeprocesser. Denna artikel gäller både de lagerstyrningsprocesser (WMS) som är tillgängliga i modulen Lagerstyrning och den mer grundläggande lagerställeslösningen som är tillgänglig i modulen Lagerstyrning.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Enhetssekvensgrupper för frisläppta produkter
-Om du vill använda frisläppta produkter i lagerställearbeteprocesser, måste en enhetssekvensgrupp tilldelas till dem. Om du validerar en produkt som är kopplad till en Lagringsdimensionsgrupp och alternativet **Använd lagerstyrningsprocesser** för lagringsdimensiongruppen är inställd på **Ja** får du ett felmeddelande om ett enhetssekvensgrupp-ID inte har definierats för produkten. Om enhetssekvensgruppen som du använder innehåller flera rader (och därför flera enheter), måste du ställa in en enhetskonvertering mellan enheterna. Du slutför den här inställningen på sidan **Enhetskonverteringar**. Den minsta enheten i en sekvensgrupp, som du kopplar till en frisläppt produkt måste matcha den lagerenhet som definieras för motsvarande produkt. Lagerenheten är den enhet som används för basberäkningar av lagerbehållning. Du kan även ställa in måttenhetkonverteringar för produktvarianter av produktmallar, genom att använda alternativet **Aktivera måttenhetkonverteringar**.
+Om du vill använda frisläppta produkter i lagerställearbeteprocesser, måste en enhetssekvensgrupp tilldelas dem. Om du validerar en produkt som är kopplad till en Lagringsdimensionsgrupp och alternativet **Använd lagerstyrningsprocesser** för lagringsdimensiongruppen är inställd på **Ja** får du ett felmeddelande om ett enhetssekvensgrupp-ID inte har definierats för produkten. Om enhetssekvensgruppen som du använder innehåller flera rader (och därför flera enheter), måste du ställa in en enhetskonvertering mellan enheterna. Du slutför den här inställningen på sidan **Enhetskonverteringar**. Den minsta enheten i en sekvensgrupp, som du kopplar till en frisläppt produkt måste matcha den lagerenhet som definieras för motsvarande produkt. Lagerenheten är den enhet som används för basberäkningar av lagerbehållning. Du kan även ställa in måttenhetkonverteringar för produktvarianter av produktmallar, genom att använda alternativet **Aktivera måttenhetkonverteringar**.
 
 ## <a name="license-plate-grouping"></a>Registreringsskyltsgruppering
 Du kan ange om inleveranser av mindre än eller fler än en specifik enhet ska grupperas till en registreringsskylt eller delas upp på flera skyltar. För att ställa in det här beteendet använder du alternativet **Gruppering av registreringsskyltar** på fliken **Radinformation** på sidan **Enhetssekvensgrupper** . Om du vill använda registreringsskyltsgruppering när arbete bearbetas med en mobil enhet, måste du välja alternativet **ID-gruppering** på menyalternativet **Mobil enhet**. Du kan till exempel använda en mobil enhet för att registrera en artikel som är kopplad till en enhetssekvensgrupp, som har två rader. Första raden är för Enheter och alternativet **ID-gruppering** är inställt på **Ja**. Den andra raden är för Lastpallsenhet och alternativet **ID-gruppering** är inställt på **Nej**. I det här fallet kan systemet automatiskt guida delningen och skapandet av registreringsskyltar per 100 enheter.

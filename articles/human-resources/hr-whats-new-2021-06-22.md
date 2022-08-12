@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aacb605374d99a3c0bad3438c89e33a04a4d7faf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 61c457abf87ce2da554ddb1472512416159c4dca
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897789"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068437"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 22 juni 2021
 
@@ -82,7 +82,7 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 
 | Funktion | Information |
 | --- | --- |
-| Plattformsuppdatering 10.0.19 (43) | Plattformsuppdatering 10.0.19 planeras i och med nästa serviceversion den 28 juni 2021. Mer information finns i [Plattformsuppdateringar för version 10.0.19 av Ekonomi och Drift-appar (juni 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
+| Plattformsuppdatering 10.0.19 (43) | Plattformsuppdatering 10.0.19 planeras i och med nästa serviceversion den 28 juni 2021. Mer information finns i [Plattformsuppdateringar för version 10.0.19 av appar för ekonomi och drift (juni 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
 |  Växling av visningsperiod för service | Med den här funktionen kan du använda olika datum vid beräkning av serviceåren som visas i formuläret **Strömlinjeformad medarbetarpost** och i formuläret **Personer**.  Denna kommer att vara tillgänglig i Personal-parametrar. |
 |  Aktivera frånvarochefen för hantering av tjänstledighet | [Aktivera frånvarochefen för hantering av tjänstledighet](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Bestämd bilagor för specifika tjänstledighetstyper | Med den här funktionen kan administratörer lägga till fullmaktsbilagor när tjänstledighetsansökningar för specifika tjänstledighetstyper skickas. |
@@ -99,3 +99,4 @@ En fullständig lista över planerade funktioner och deras schemalagda versioner
 [Hantera funktioner](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dafd51a46b19f3709963ffc12b3c8c77b6c809ac
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856118"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070452"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurera ett lagerställe med hjälp av konfigurationsmall
 
@@ -67,7 +67,7 @@ För det här scenariot existerar redan konfigurationsinställningarna för ett 
 4. Kontrollera att du är i den juridiska persona som du vill exportera företagsspecifika data från.
 5. Markera **exportera** i arbetsytan.
 6. Skapa ett nytt exportprojekt.
-7. Välj **+ Lägg till mall** och hitta **400 - Lagerstyrningssystem** standardmall för lagerstället. Den här mallen lägger till datatabeller för lagerkonfiguration.
+7. Välj **+ Lägg till mall** och hitta **400 – Lagerstyrningssystem** standardmall för lagerstället. Den här mallen lägger till datatabeller för lagerkonfiguration.
 
     > [!NOTE]
     > Om den data du vill exportera måste filtreras (om du till exempel vill exportera data som hör till ett visst lagerställe), måste du utvärdera varje datatabell och lägga till filtrering via en frågeställning. Alternativt kan du exportera alla data och ta bort de poster som inte krävs i målfilerna.
@@ -90,7 +90,7 @@ Du kan hämta en zip-fil för datapaketet. Den här filen innehåller alla data 
 
 Loggen **Visa körning** ger detaljerad information om varje dataenhet som importeras. Du kan använda mellanlagringsdatavyn för att snabbt komma till måldata. På så sätt visas hur de importerade data ser ut på tillhörande sidor i programmet. När du använder standarddatamallar fungerar importsekvensen för varje datatabell på fördefinierade sätt, för att garantera att alla beroende data importeras först. Om anpassade datatabeller ingår i projektet, måste du kontrollera att du angett rätt sekvens. Mer information finns i [Konfigurationsdatamallar](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Om du vill veta mer om hur du använder lagermallar för att kopiera konfigurationen för ett lagerställe från ett företag till ett nytt företag inom samma instans kan du titta på den här 3-minuters videon på YouTube om [Hur du använder lagermall för att kopiera konfigurationen för Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs) i .
+Om du vill veta mer om hur du använder lagermallar för att kopiera konfigurationen för ett lagerställe från ett företag till ett nytt företag inom samma instans kan du titta på den här 3-minutersvideon på YouTube om [hur du använder lagermallar för att kopiera konfigurationen för Ekonomi och drift](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-article"></a>Relaterad artikel
 

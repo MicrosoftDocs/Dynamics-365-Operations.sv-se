@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fbb3e3b5569ec3c77c132a068202d496b2bd8a3d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ac5fcf4ccaac06eb58c1bc0915766e6aa0b13a6a
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865220"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124774"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management (10.0.14 november 2020)
 
@@ -37,9 +37,9 @@ Den här versionen innehåller en uppdaterad plattform och allmänna förbättri
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.14 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.14 av Ekonomi och Drift-appar (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.14 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.14 av appar för ekonomi och drift (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

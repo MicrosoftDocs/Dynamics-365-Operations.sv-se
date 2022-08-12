@@ -2,7 +2,7 @@
 title: Borttagna eller inaktuella funktioner i Dynamics 365 Commerce
 description: I denna artikel beskrivs funktioner som har tagits bort eller har planerats för borttagning från Dynamics 365 Commerce.
 author: josaw
-ms.date: 04/27/2022
+ms.date: 07/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
+ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910534"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9138597"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Borttagna eller inaktuella funktioner i Dynamics 365 Commerce
 
@@ -31,7 +31,20 @@ I denna artikel beskrivs funktioner som har tagits bort eller har planerats för
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 > [!NOTE]
-> Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av appar för ekonomi och drift.
+> Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i respektive version av appar för ekonomi och drift.
+
+## <a name="feature-deprecation-effective-july-2022"></a>Utfasning av funktioner från och med juli 2022
+
+### <a name="commerce-analytics-preview"></a>Commerce-analyser (förhandsversion)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Dynamics 365 Commerce-teamet har analyserat hur funktionen Commerce-analys (förhandsversion) används, och det har tagits ett beslut om att inte längre göra funktionen allmänt tillgänglig.   |
+| **Ersatt av en annan funktion?**   | Vid den här tidpunkten ersätts inte Commerce-analys (förhandsversion) av någon annan funktion eller lösning. Exporten av råtransaktioner och huvuddata från appar för ekonomi och drift till Azure Data Lake kommer även fortsatt vara tillgänglig, vilket förklaras i [Exportera till Data Lake i appar för ekonomi och drift.](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md) Partner och kunder kan utnyttja dataflödet till att skapa eventuella avsedda analysrapporter för verksamhetens behov.
+| **Produktområden som påverkas**         | Commerce-analyser (förhandsversion) |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Vi avser att inaktivera denna funktion senast den 30 augusti 2022.  Från och med detta datum sker ingen uppdatering i de aktuella Power BI-rapporter som tillhandahålls av Commerce-analys (förhandsversion).     |
+
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.25
 
@@ -102,7 +115,7 @@ Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPos.sln, POS.Extensio
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | I tidigare versioner av SDK för Retail måste kod sammanfogas och packas om för att uppdatera till den senaste kassaversionen (om kassatillägg finns). Kodsammanslagningen var en tidskrävande uppgraderingsprocess och man var tvungen att underhålla hela SDK för Retail i databasen. Man var också tvungen att kompilera kärnprojektet för POS.App. Genom att använda den oberoende förpackningsmodellen behöver du bara bibehålle ditt tillägg. Processen för uppdatering till den senaste versionen av kassatillägg är lika enkel som att uppdatera versionen av det NuGet-paket som ditt projekt använder. Tillägg kan distribueras oberoende, och tjänsterna använder installationsprogrammet för tillägg. Baskassan kan distribueras och hanteras separat, och ingen kodsammanfogning eller ompackning med basinstallationsprogram eller kod krävs. |
+| **Orsak till inaktuell/borttagning** | I tidigare versioner av SDK för Retail måste kod sammanfogas och packas om för att uppdatera till den senaste kassaversionen (om kassatillägg finns). Kodsammanslagningen var en tidskrävande uppgraderingsprocess och man var tvungen att underhålla hela SDK för Retail i databasen. Man var också tvungen att kompilera kärnprojektet för POS.App. Genom att använda den oberoende förpackningsmodellen behöver du bara bibehålle ditt tillägg. Processen för uppdatering till den senaste versionen av kassatillägg är lika enkel som att uppdatera versionen av det NuGet-paket som ditt projekt använder. Tillägg kan distribueras oberoende, och tjänsterna använder installationsprogrammet för tillägg. Baskassan kan distribueras och hanteras separat, och ingen kodsammanslagning eller ompackning med basinstallationsprogram eller kod krävs. |
 | **Ersatt av en annan funktion?**   | [SDK för kassaoberoende packning](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Produktområden som påverkas**         | Kassatillägg och distribution för Dynamics 365 Commerce |
 | **Distribueringsalternativ**              | Allt |
@@ -177,7 +190,7 @@ Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPos.sln, POS.Extensio
 | **Ersatt av en annan funktion?**   | Ja. Den ersätts av två nya kassaåtgärder: inkommande åtgärd (804) och utgående åtgärd (805).|
 | **Produktområden som påverkas**         | Program för kassa (POS) |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: Från version 10.0.10 kommer åtgärden för plockning och mottagning inte längre att erhålla funktionsuppdateringar. Endast viktiga felkorrigeringar kommer att utföras för den här åtgärden i framtida versioner. Alla kunder uppmuntras att flytta till de nya [Inkommande åtgärderna](../pos-inbound-inventory-operation.md) och [Utgående åtgärderna](../pos-outbound-inventory-operation.md) som fortsätter att ingå i vår långsiktiga produktplan. |
+| **Status**                         | Inaktuell: Från version 10.0.10 kommer åtgärden för plockning och mottagning inte längre att erhålla funktionsuppdateringar. Endast viktiga felkorrigeringar kommer att utföras för den här åtgärden i framtida versioner. Alla kunder uppmuntras att flytta till de nya [Inkommande åtgärderna](../pos-inbound-inventory-operation.md) och [Utgående åtgärderna](../pos-outbound-inventory-operation.md) som fortsätter ingå i vår långsiktiga produktplan. |
 
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.7
@@ -195,3 +208,4 @@ Om du vill veta mer om funktioner som har tagits bort eller ersatts i tidigare v
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

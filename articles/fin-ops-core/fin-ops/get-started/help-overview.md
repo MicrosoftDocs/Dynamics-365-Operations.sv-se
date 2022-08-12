@@ -1,6 +1,6 @@
 ---
 title: Hjälpsystem (innehåller video)
-description: Det här ämnet innehåller en översikt över hjälpsystemet för Ekonomi och drift-appar.
+description: Denna artikel innehåller en översikt över hjälpsystemet för appar för ekonomi och drift.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898381"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124207"
 ---
 # <a name="help-system"></a>Hjälpsystem
 
@@ -53,7 +53,7 @@ Du kan söka efter innehåll på docs.microsoft.com med hjälp av valfri sökmot
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få reda på ändringar via en RSS-feed
 
-Att prenumerera på ett RSS -flöde med alla uppdateringar som gjorts av innehållet på docs.microsoft.com i hela Finance and Operations använder du följande länk:
+För att prenumerera på ett RSS-flöde med alla uppdateringar som gjorts av innehållet på docs.microsoft.com i samtliga appar för ekonomi och drift använder du följande länk:
 
 [RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -64,7 +64,7 @@ Du kan också abonnera på en RSS-flöde per app:
 
 - [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
 - [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
-- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
+- [Personal](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
 - [Försörjningskedja](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
 - [Talang](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
 
@@ -98,7 +98,7 @@ Mer information finns i [Dokumentguiden för medarbetare](/contribute), som publ
 
 Uppgiftsguider är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en uppgift eller en affärsprocess. Du kan öppna (spela upp) en uppgiftsguide i fönstret **Hjälp**. När du först väljer en uppgiftsguide visar fönstret **Hjälp** steg för steg-instruktioner för uppgiften. Nu finns det lokaliserade uppgiftsguider att tillgå.
 
-Microsoft har släppt uppgiftsguidebibliotek för produktversioner fram till och med Dynamics 365 for Finance and Operations-versionen för december 2017. Avsnittet [Komma åt uppgiftsguider från hjälpfönstret](#accessing-task-guides-from-the-help-pane) för detta ämne förklarar hur du hittar rätt uppgiftsguider för just din produkt.
+Microsoft har släppt uppgiftsguidebibliotek för produktversioner fram till och med Dynamics 365 Ekonomi och drift-versionen för december 2017. Avsnittet [Komma åt uppgiftsguider från hjälpfönstret](#accessing-task-guides-from-the-help-pane) för detta ämne förklarar hur du hittar rätt uppgiftsguider för just din produkt.
 
 ![Läsvy för uppgiftsguide.](./media/task-guide-ops.png)
 
@@ -172,7 +172,7 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | Denna webbplats är värd för eller länkar till all produktdokumentation för Dynamics 365. |
 | [Microsoft Learn](/learn/) | Den här webbplatsen är den kostnadsfria Microsoft eLearning-webbplatsen. |
-| [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Denna webbplats ger en molnbaserad samarbetsarbetsyta som kunder och deras partners kan använda för att hantera projekt från förförsäljning till genomförande och drift. Den är användbar för alla implementeringsfaser. |
+| [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Denna webbplats ger en molnbaserad samarbetsarbetsyta som kunder och deras partner kan använda för att hantera projekt från förförsäljning till genomförande och drift. Den är användbar för alla implementeringsfaser. |
 | [Supportblogg](https://aka.ms/AXSupportBlog) | Denna webbplats ger tips som har lagts in av supportteamet. |
 | [Docs.microsoft.com/tidigare versioner](/previous-versions/dynamics/) | Denna webbplats är värd för innehåll från tidigare versioner. |
 | [Dynamics Community](https://community.dynamics.com/) | Denna webbplats är värd för bloggar, forum och videor. |
@@ -182,3 +182,4 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

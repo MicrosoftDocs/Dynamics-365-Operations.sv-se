@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 11a4b1667e3d97b651b8019c9dbe577ab30aed67
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868710"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068212"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobil arbetsyta för mitt team
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868710"
 
 Den här artikeln innehåller information om den mobila arbetsytan **Mitt team**. Den här arbetsytan låter chefer visa sina underställda och utökade personal. De kan också skicka beröm till enskilda personer i sin rapporteringskedja.
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Finance and Operations.
+Denna mobila arbetsyta är avsedd att användas med mobilappen för ekonomi och drift.
 
 ## <a name="overview"></a>Översikt 
 Den mobila arbetsytan **Mitt team** låter cheferna utföra följande uppgifter:
@@ -50,12 +50,12 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 <tbody>
 <tr class="odd">
 <td>Någon av följande produkter måste distribueras i organisationen:
-<ul><li>En Finance and Operations-app</li>
+<ul><li>En app för ekonomi och drift</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Systemadministratör</td>
-<td>Om du inte redan använder Finance and Operations-appen i din organisation, se <a href="../deployment/deploy-demo-environment.md"> Distribuera en demomiljö</a>. Om du inte redan använder Personal i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://dynamics.microsoft.com/human-resources/overview/">webbsidan Personal</a>.
+<td>Om du inte redan använder någon app för ekonomi och drift i din organisation, se <a href="../deployment/deploy-demo-environment.md">Distribuera en demomiljö</a>. Om du inte redan använder Personal i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://dynamics.microsoft.com/human-resources/overview/">webbsidan Personal</a>.
 </td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
-Hämta och installera mobilappen Ekonomi och drift:
+Hämta och installera mobilappen för ekonomi och drift:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -99,3 +99,4 @@ Hämta och installera mobilappen Ekonomi och drift:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

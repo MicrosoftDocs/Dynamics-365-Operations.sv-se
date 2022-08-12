@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876136"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135856"
 ---
 # <a name="posting-profiles-overview"></a>Översikt över bokföringsprofiler
 
-I Ekonomi och Drift-appar används termen *bokföringsprofiler* för att beskriva konfigurationerna som styr hur redovisningskonton konverteras till huvudkonton så att de kan användas i transaktioner som bokförs i redovisningen. De kontrollerar till exempel hur kunden konverteras till ett huvudkonto i Kundreskontra när en faktura bokförs.
+I appar för Ekonomi och Drift används termen *bokföringsprofiler* för att beskriva konfigurationerna som styr hur redovisningskonton konverteras till huvudkonton så att de kan användas i transaktioner som bokförs i redovisningen. De kontrollerar till exempel hur kunden konverteras till ett huvudkonto i Kundreskontra när en faktura bokförs.
 
 I vissa moduler och funktioner finns en sida som innehåller orden "bokföringsprofil" i namnet (till exempel **kundbokföringsprofil** eller **leverantörsbokföringsprofil**).  Dessutom har vissa moduler flera alternativ för att konfigurera redovisningsbokföring för transaktioner som genereras från redovisningen. I modulen **Produktionskontroll** kan du till exempel ställa in bokföringen efter produktionsgrupp, resurs eller resursgrupp.
 
@@ -34,7 +34,7 @@ Innan du kan konfigurera bokföringsprofiler, bokföringsdefinitioner eller sida
 
 ## <a name="posting-types"></a>Bokföringstyper
 
-I Ekonomi och Drift-appar används en bokföringstyp för att definiera en allmän kategori för debet eller kredit. Denna kategori är oberoende av huvudkontot i redovisningen. Det finns bokföringstyper för varje debet eller kredit i redovisningen.
+I appar för Ekonomi och drift används en bokföringstyp för att definiera en allmän kategori för debet eller kredit. Denna kategori är oberoende av huvudkontot i redovisningen. Det finns bokföringstyper för varje debet eller kredit i redovisningen.
 
 En och samma verifikation kan ha en eller flera bokföringstyper. En transaktion som till exempel bokförs via en allmän journal där kontot och motkontot är inställt på **Redovisning** kommer att ha bokföringstypen **Redovisningsjournal** för både debet och kredit. En leverantörsfaktura kommer däremot att ha flera bokföringstyper. Dessa bokföringstyper kommer att innehålla en rad för leverantörssaldot och ytterligare rader för motposten, t.ex. **redovisningsjournal**.
 
@@ -47,7 +47,7 @@ Du kan visa bokföringstypen i fältet **Bokföringstyp** på fliken **Allmänt*
 
 När du konfigurerar bokföringsprofiler definierar fältet **kontokod** nivån på inställningen. Följande alternativ är tillgängliga: **Tabell**, **Grupp** och **Alla**. Matchningen avslutas efter den första matchningen och ordern kommer från den mest specifika nivån till den minst specifika nivån. Även om fältet **kontokod** har något andra namn är det i vissa fall fortfarande fältets beteende och funktion. Lagerbokföringsprofilen innehåller till exempel ett fält för **artikelkod** och ett fält för **kontokod**. Båda fälten har **Tabell**, **Grupp** och **All** värden.
 
-Om fältet **huvudkonto** lämnas tomt för en bokföringsprofil och du inte har konfigurerat ett huvudkonto på sidan **konton för automatisk transaktion** eller på en modulspecifik eller funktionsspecifik sida visas ett felmeddelande när du bokför en transaktion som använder bokföringstypen.  Vanligtvis visas meddelandet "Kontot för \[bokföringstyp\] går inte att hitta."
+Om fältet **huvudkonto** lämnas tomt för en bokföringsprofil och du inte har konfigurerat ett huvudkonto på sidan **konton för automatisk transaktion** eller på en modulspecifik eller funktionsspecifik sida visas ett felmeddelande när du bokför en transaktion som använder bokföringstypen. Vanligtvis visas meddelandet "Kontot för \[bokföringstyp\] går inte att hitta."
 
 ### <a name="table-value"></a>Registervärde
 
@@ -111,13 +111,14 @@ Många moduler i Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dyn
 - Bokföring av utläggshantering (kommer snart)
 - [Bokföringsprofil för anläggningstillgång](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Bokföring av koncernintern redovisning (kommer snart)
-- Bokföringsprofil för lager (kommer snart)
+- [Lagerbokföring](inventory-posting.md)
 - [Bokföring av hemtagningskostnader](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Översikt av bokföringsdefinitioner](posting-definitions.md)
-- Bokföring av produktionskontroll (kommer snart)
+- [Produktionsbokföring](production-posting.md)
 - Bokföring av projekthantering och redovisning (kommer snart)
 - Bokföring av tjänsthantering (kommer snart)
 - Momsbokföring (kommer snart)
 - Tids- och närvarobokföring (kommer snart)
 - Bokföring av transporthantering (kommer snart)
 - Bokföringsprofiler för rabatthantering (kommer snart)
+

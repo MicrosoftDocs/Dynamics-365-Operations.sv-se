@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022535"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069799"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -74,13 +74,13 @@ Listan med aktiva jobb har följande kolumner:
 
 ## <a name="my-jobs-tab"></a>Fliken Mina jobb
 
-Fliken **Mina jobb** gör det enkelt för medarbetarna att visa alla icke-startade och icke-definierade jobb som har tilldelats enkom för dem. Det är användbart i företag där jobb ibland eller alltid tilldelas till specifika medarbetare (personal) istället för andra typer av resurser (till exempel maskiner).
+Fliken **Mina jobb** gör det enkelt för medarbetarna att visa alla icke-startade och icke-definierade jobb som har tilldelats enkom för dem. Det är användbart i företag där jobb ibland eller alltid tilldelas specifika medarbetare (personal) istället för andra typer av resurser (till exempel maskiner).
 
 Planeringssystemet tilldelar automatiskt varje produktionsjobb till en viss resurspost, och varje resurspost har en typ (till exempel maskin eller person). När du konfigurerar en medarbetare som produktionsmedarbetare kan du koppla medarbetarkontot till en unik personalpost.
 
 Fliken **Mina jobb** listar alla icke-startade och icke-definierade jobb som har tilldelats personalposten för den inloggade medarbetaren, om någon medarbetare är inloggad. Den listar aldrig jobb som har tilldelats en maskin eller annan typ av resurs, även om den inloggade medarbetaren har börjat arbeta med dessa jobb.
 
-Om du vill visa alla jobb som har startats av den inloggade arbetaren - oavsett vilken typ av resurs som varje jobb har tilldelats - använder du fliken **Aktiva jobb**. Om du vill visa alla icke-avslutade jobb som matchar konfigurationen för det lokala jobbfiltret - oavsett medarbetar- eller startstatus - använder du fliken **Alla jobb**.
+Om du vill visa alla jobb som har startats av den inloggade arbetaren – oavsett vilken typ av resurs som varje jobb har tilldelats – använder du fliken **Aktiva jobb**. Om du vill visa alla icke-avslutade jobb som matchar konfigurationen för det lokala jobbfiltret – oavsett medarbetar- eller startstatus – använder du fliken **Alla jobb**.
 
 ![Fliken Mina jobb.](media/pfei-my-jobs-tab.png "Fliken Mina jobb")
 
@@ -92,18 +92,18 @@ Fliken **Min maskin** låter arbetare välja en tillgång som är ansluten till 
 
 Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i föregående illustration.
 
-1. **Maskintillgång** - Välj maskintillgången som du vill spåra. Börja skriva ett namn för att välja från en lista med matchande tillgångar, eller välj förstoringsglasikonen för att välja från en lista över alla tillgångar som är associerade med de resurser som finns i jobblistan.
+1. **Maskintillgång** – Välj maskintillgången som du vill spåra. Börja skriva ett namn för att välja från en lista med matchande tillgångar, eller välj förstoringsglasikonen för att välja från en lista över alla tillgångar som är associerade med de resurser som finns i jobblistan.
 
     > [!NOTE]
     > Användare av Supply Chain Management kan tilldela en resurs till varje tillgång efter behov med hjälp av sidan **Alla tillgångar** (på fliken **Anläggningstillgång** med listrutan **Resurs**). Mer information finns i [Skapa en tillgång](../asset-management/objects/create-an-object.md).
 
-1. **Inställningar** - Välj kugghjulsikonen för att öppna en dialogruta där du kan välja vilka räknare som ska visas för den valda maskintillgången. Värden för dessa räknare visas längst upp på fliken **Tillgångshantering**. Menyn **Inställningar** (visas i följande skärmdump) kan du aktivera upp till fyra räknare. För varje räknare som du vill aktivera använder du sökfältet högst upp i panelen för att välja en räknare. Sökfältet listar alla räknare som är kopplade till tillgången som valts högst upp på sidan **Tillgångshantering**. Ställ in varje räknare till att övervaka antingen det **aggregerade** värdet eller det senaste **faktiska** värdet för räknaren. Om du till exempel konfigurerar en räknare som spårar hur många timmar maskinen har körts ska du konfigurera den på **Aggregerat**. Om du konfigurerar en räknare för att mäta den senaste uppdaterade temperaturen eller försiktighet, bör du konfigurera den på **Faktisk**. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
+1. **Inställningar** – Välj kugghjulsikonen för att öppna en dialogruta där du kan välja vilka räknare som ska visas för den valda maskintillgången. Värden för dessa räknare visas längst upp på fliken **Tillgångshantering**. Menyn **Inställningar** (visas i följande skärmdump) kan du aktivera upp till fyra räknare. För varje räknare som du vill aktivera använder du sökfältet högst upp i panelen för att välja en räknare. Sökfältet listar alla räknare som är kopplade till tillgången som valts högst upp på sidan **Tillgångshantering**. Ställ in varje räknare till att övervaka antingen det **aggregerade** värdet eller det senaste **faktiska** värdet för räknaren. Om du till exempel konfigurerar en räknare som spårar hur många timmar maskinen har körts ska du konfigurera den på **Aggregerat**. Om du konfigurerar en räknare för att mäta den senaste uppdaterade temperaturen eller försiktighet, bör du konfigurera den på **Faktisk**. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
 
     ![Inställningar för Min maskinflik.](media/pfei-my-machine-tab-settings.png "Inställningar för Min maskinflik")
 
-1. **Begär underhåll** - Välj den här knappen om du vill öppna en dialogruta där du kan skapa en underhållsbegäran. Du kan ange en beskrivning och en notering. Denna begäran visas för en användare av Supply Chain Management som sedan kan konvertera underhållsbehovet till en underhållsorder.
-1. **Registrera drifttid** - Välj den här knappen om du vill öppna en dialogruta där du kan registrera maskiners drifttid. Du kan välja en orsakskod och ange ett datum/tidsintervall för nedtiden. Registreringen av maskinens drifttid används för att beräkna maskintillgångens effektivitet.
-1. **Visa eller redigera** - Välj den här knappen om du vill öppna en dialogruta där du kan redigera eller visa befintliga nedtidsposter.
+1. **Begär underhåll** – Välj den här knappen om du vill öppna en dialogruta där du kan skapa en underhållsbegäran. Du kan ange en beskrivning och en notering. Denna begäran visas för en användare av Supply Chain Management som sedan kan konvertera underhållsbehovet till en underhållsorder.
+1. **Registrera drifttid** – Välj den här knappen om du vill öppna en dialogruta där du kan registrera maskiners drifttid. Du kan välja en orsakskod och ange ett datum/tidsintervall för nedtiden. Registreringen av maskinens drifttid används för att beräkna maskintillgångens effektivitet.
+1. **Visa eller redigera** – Välj den här knappen om du vill öppna en dialogruta där du kan redigera eller visa befintliga nedtidsposter.
 
 ## <a name="starting-and-completing-production-jobs"></a>Starta och slutföra produktionsjobb
 
@@ -165,7 +165,7 @@ När en arbetare slutför eller delvis slutför ett jobb kan de rapportera kassa
 
 Arbetare kan justera materialförbrukning för varje produktionsjobb. Denna funktion används i scenarier där den faktiska kvantiteten av material som förbrukades av ett produktionsjobb var mer eller mindre än den planerade kvantiteten. Därför måste den justeras för att hålla lagernivåerna aktuella.
 
-Arbetare kan även göra reservationer på parti- och serienummer för material. Den här funktionen används i scenarier där en arbetare manuellt måste ange vilka materialbatch- eller serienummer som förbrukats för att uppfylla kraven på materialspårning.
+Arbetare kan även göra reservationer på parti- och löpnummer för material. Den här funktionen används i scenarier där en arbetare manuellt måste ange vilka materialbatch- eller löpnummer som förbrukats för att uppfylla kraven på materialspårning.
 
 Arbetare kan ange kvantiteten som ska justeras genom att välja **Justera material**. Denna knapp är tillgänglig på följande platser:
 
@@ -217,7 +217,7 @@ Medarbetarna kan justera materialförbrukningen för nominella viktartiklar. Den
 
 I dialogrutan **Justera material** kan en arbetare göra och justera materialreservationer genom att välja **Reservera material**. I dialogrutan **Reservera material** som visas det fysiskt tillgängliga lagret för artikeln för varje lagrings- och spårningsdimension.
 
-Om material har aktiverats för de avancerade lagerställeprocesserna visar listan bara det fysiskt tillgängliga lagret för platsen för produktionsinleverans för materialet. Platsen för produktionsindata definieras på resursen där produktionsjobbet planeras. Om artikelnumret är batch- eller serienummerkontrollerat visas den fullständiga listan över fysiskt tillgängliga batch- och serienummer. Om du vill ange en kvantitet som ska reserveras kan arbetaren välja **Reservera material**. Om du vill ta bort en befintlig reservation kan arbetaren välja **Ta bort reservation**.
+Om materialet har aktiverats för de lagerstyrningsprocesserna (WMS) visar listan bara det fysiskt tillgängliga lagret för platsen för produktionsinleverans för materialet. Platsen för produktionsindata definieras på resursen där produktionsjobbet planeras. Om artikelnumret är batch- eller löpnummerkontrollerat visas den fullständiga listan över fysiskt tillgängliga batch- och löpnummer. Om du vill ange en kvantitet som ska reserveras kan arbetaren välja **Reservera material**. Om du vill ta bort en befintlig reservation kan arbetaren välja **Ta bort reservation**.
 
 Mer information om hur du konfigurerar platsen för produktionsindata finns i följande inlägg: [Ställa in platsen för produktionsindata](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 
@@ -289,7 +289,7 @@ När ett team vill välja en ny ledare måste den aktuella piloten välja en ann
 
 ### <a name="assistant-clocks-out"></a>Medhjälpare stämplar ut
 
-När en arbetare som arbetar som assistent stämplar ut lämnar de teamet. Om alternativen **Permanenta team** och **Starta om vid instämpling** ställs in på *Ja*, kommer en arbetare som stämplar ut automatiskt att ansluta till teamet nästa gång de stämplar in. De här alternativen finns på fliken **Allmänt** på sidan **Tids - och närvaroparametrar**.
+När en arbetare som arbetar som assistent stämplar ut lämnar de teamet. Om alternativen **Permanenta team** och **Starta om vid instämpling** ställs in på *Ja*, kommer en arbetare som stämplar ut automatiskt att ansluta till teamet nästa gång de stämplar in. De här alternativen finns på fliken **Allmänt** på sidan **Tids – och närvaroparametrar**.
 
 ## <a name="opening-instructions"></a>Öppnar instruktioner
 

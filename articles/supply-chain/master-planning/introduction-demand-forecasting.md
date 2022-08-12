@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
-ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
+ms.openlocfilehash: 5c764cc186b5c8742ccfd90b5928f6625f3360c8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8960204"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065626"
 ---
 # <a name="demand-forecasting-overview"></a>Översikt för efterfrågeprognosticering
 
@@ -34,7 +34,7 @@ Behovsprognoser används för att förutsäga oberoende efterfrågan från best�
 För att generera den ursprungliga prognosen, en sammanfattning av historiska transaktioner överförs till en Microsoft Azure Machine Learning som finns på Azure. Eftersom denna tjänst är inte delas mellan användare, det kan lätt anpassas till branschspecifika krav. Du kan använda Supply Chain Management för att visualisera prognosen, justera prognosen och visa viktiga resultatindikatorer (KPI) om prognosprecisionen.
 
 > [!NOTE]
-> Microsoft Azure Machine Learning Studio (klassisk) krävs för att skapa prognoser med maskininlärning. Från och med den 1 december 2021 kommer du inte att kunna skapa nya resurser för Machine Learning Studio (klassisk). Du kommer dock att kunna fortsätta att använda dina befintliga resurser för Machine Learning studio (klassisk) till den 31 augusti 2024. Uppdaterad information finns i [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
+> Microsoft Azure Machine Learning Studio (klassisk) krävs för att skapa prognoser med maskininlärning. Från och med den 1 december 2021 kommer du inte att kunna skapa nya resurser för Machine Learning Studio (klassisk). Du kommer dock att kunna fortsätta använda dina befintliga resurser för Machine Learning studio (klassisk) till den 31 augusti 2024. Uppdaterad information finns i [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
 > 
 > Dynamics 365 Supply Chain Management version 10.0.23 och senare stöd för nya Azure Machine Learning Studio.
 
@@ -56,7 +56,7 @@ Tre stora teman genomförs i behovsprognoser:
 - **Modularitet** – Behovsprognoser är modulär och enkel att konfigurera. Du kan aktivera och avaktivera funktionen genom att ändra konfigurationen på **Handel** &gt; **Lagerprognos** &gt; **Efterfrågeprognosticering**.
 - **Återanvändning av Microsoft Stack** – Med maskininlärning, som nu ingår i Microsoft Cortana Analytics Suite, kan du snabbt och enkelt skapa försök förutsägbara analysexperiment, till exempel experiment för efterfrågeuppskattning, genom att använda R-algoritmer eller programmeringsspråket Python och ett enkelt gränssnitt för dra och släpp.
   - Du kan hämta behovsprognoser experiment, ändra dem för att uppfylla dina affärsbehov, publicerar dem som en webbtjänst på Azure, och använda dem för att skapa prognoser. Experimenten är tillgängliga för nedladdning om du har köpt en Supply Chain Management-prenumeration för en produktionsplanerare som användare på företagsnivå.
-  - Du kan hämta några av de för närvarande tillgängliga efterfrågan prediction experiment från [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Medan experimenten för efterfrågeprognos automatiskt integreras med Supply Chain Management, måste kunder och partner hantera integreringen av experiment som de hämtar från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/). Experiment från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/) kan därför inte användas lika enkelt som experimenten för efterfrågeprognosticering för Finance and Operations. Du måste modifiera koden för experimenten så att de använder programmeringsgränssnittet (API) för Finance and Operations-program.
+  - Du kan hämta några av de för närvarande tillgängliga efterfrågan prediction experiment från [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Medan experimenten för efterfrågeprognos automatiskt integreras med Supply Chain Management, måste kunder och partner hantera integreringen av experiment som de hämtar från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/). Experiment från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/) kan därför inte användas lika enkelt som experimenten för efterfrågeprognosticering för Ekonomi och drift. Du måste modifiera koden för experimenten så att dessa använder programmeringsgränssnittet (API) för appar för ekonomi och drift.
   - Du kan skapar dina egna experiment i Microsoft Azure Machine Learning Studio (klassisk), publicerar dem som tjänster på Azure, och använda dem för att skapa prognoser.
   - Om du inte kräver höga prestanda, eller om du inte kräver att en stor mängd data som bearbetas kan du använda den fria Machine Learning-nivån. Vi rekommenderar att du alltid börja från denna planet, särskilt under implementering och testning faser. Om du behöver högre prestanda och ytterligare lagringsutrymme kan du använda maskinen lärande standard nivå. Denna nivå kräver en prenumeration på Azure och innebär ytterligare kostnader. För mer information om maskinen lärande prissättning, se [Machine Learning Studio prissättning](https://aka.ms/machine-learning-price-info).
 - **Prognostiserad minskning vid någon frikoppling** – Behovsprognoser bygger på denna funktionalitet, vilket låter dig prognosen både beroende och oberoende behov hos någon frikoppling.
@@ -101,3 +101,4 @@ Observera att efterfrågeprognosenhet inte behöver ha någon specifik betydelse
 - [Webbseminarier: efterfrågeprognosticering med Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

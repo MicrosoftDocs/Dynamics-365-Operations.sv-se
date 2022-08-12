@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 208cfc91f11d4893785538ce4874e85a5725e993
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892237"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109273"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Användargränssnitt i Microsoft Office-stil för hantering av affärsdokument
 
@@ -36,7 +36,7 @@ I exemplen i den här artikeln är den aktiva leverantören Contoso och du anvä
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 
-Videon [Skapa ett nytt affärsdokument med hjälp av hantering av affärsdokument](https://youtu.be/gAIYl-mM_pw) (visas ovan) ingår i [Ekonomi och Drift spellistan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) på YouTube.
+Videon [Skapa ett nytt affärsdokument med hjälp av hantering av affärsdokument](https://youtu.be/gAIYl-mM_pw) (visas ovan) ingår i [spellistan för Ekonomi och drift](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) på YouTube.
 
 ## <a name="make-the-new-document-ui-in-business-document-management-available"></a>Gör det nya dokumentgränssnittet tillgängligt i Hantering av affärsdokument
 
@@ -145,3 +145,4 @@ Detta exempel visat hur du använder knappen **Nytt dokument** i arbetsytan **Ha
 7. Välj **OK** för att bekräfta starten av redigeringsprocessen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

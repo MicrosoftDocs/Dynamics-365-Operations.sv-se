@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 4096089978032f150bf6d711711a948cf1d3232f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ef6a1574f55ad8a4222658887249db4a5490042
+ms.sourcegitcommit: 9cfccb5c260ce56a3457f9ea12e80f54ea55a3b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879787"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183848"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Jämförelse mellan funktioner i molnet och lokalt
 
@@ -57,7 +57,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 |                                      | ER: Integration med Regulatory Configuration Services (RCS)                              | Ja       | Nej              |
 |                                      | ER: Använder lokalt filsystem som lagringsplats för ER-konfigurationer som är tillgängliga via ER-databaser | Nej        | Ja             |
 |                                      | Integrering med PowerBI.com                                                              | Ja       | Nej              |
-|                                      | Integrering med PowerBI Desktop                                                          | Nej        | Ja             |
+|                                      | Integration med PowerBI Desktop                                                          | Nej        | Ja             |
 |                                      | Analytiska arbetsytor                                                                     | Ja       | Nej              |
 |                                      | Intelligent affärsprocess: Rekommendationer                                             | Ja       | Nej              |
 |                                      | Skapa Power BI-rapporter med OData med hjälp av stationära Power BI- eller Excel PowerQuery-verktyg    | Ja       | Nej              |
@@ -75,7 +75,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 | Säkerhet                             |                                                                                           | Ja       | Ja             |
 | Tjänsthantering                   |                                                                                           | Ja       | Ja             |
 | Webbklient                           |                                                                                           | Ja       | Ja             |
-|                                      | Uppgiftsregistrerare - Spara eller ladda uppgiftsregistreringar från BPM-biblioteket                         | Ja       | Nej              |
+|                                      | Uppgiftsregistrerare – Spara eller ladda uppgiftsregistreringar från BPM-biblioteket                         | Ja       | Nej              |
 | Support                              |                                                                                           | Ja       | Ja             |
 |                                      | Supportåtkomst via menyn Hjälp & Support                                             | Ja       | Nej              |
 |                                      | Affärshändelser                                                                           | Ja       | Ja (antingen är Internet-anslutningen obligatoriskt eller så måste anpassade slutpunkter implementeras för att skicka/ta emot affärshändelser inom intranätet)              |
@@ -118,7 +118,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 | Lokaliseringar                        |                                                                                           | Ja       | Ja             |
 | Tillverkning                        |                                                                                           | Ja       | Ja             |
 | Huvudplanering och prognosticering      |                                                                                           | Ja       | Ja             |
-| Planeringsoptimering                |                                                                                           | Ja       | Nej              |
+|                                      | Planeringsoptimering                                                                     | Ja       | Nej              |
 | Mobilapp, arbetsytor och plattform |                                                                                           | Ja       | Ja             |
 | Integrering med Office                   |                                                                                           | Ja       | Ja             |
 | Organisationsadministration          |                                                                                           | Ja       | Ja             |
@@ -141,7 +141,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 |                                      | Lagerapp för mobil                                                                      | Ja       | Ja             |
 |                                      | Power BI-rapporter för lagerställe                                                              | Ja       | Nej              |
 | Webbklient                           |                                                                                           | Ja       | Ja             |
-|                                      | Uppgiftsregistrerare - Spara eller ladda uppgiftsregistreringar från BPM-biblioteket                         | Ja       | Nej              |
+|                                      | Uppgiftsregistrerare – Spara eller ladda uppgiftsregistreringar från BPM-biblioteket                         | Ja       | Nej              |
 | Support                              |                                                                                           | Ja       | Ja             |
 |                                      | Supportåtkomst via menyn Hjälp & Support                                             | Ja       | Nej              |
 

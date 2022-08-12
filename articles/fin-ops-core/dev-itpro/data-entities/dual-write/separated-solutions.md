@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874824"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111673"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separat dubbelriktad skrivning programorkestrering-paket
 
@@ -26,14 +26,14 @@ ms.locfileid: "8874824"
 Tidigare var dubbelriktad skrivning programorkestrering-paketet ett enda paket som innehöll följande lösningar:
 
 - Dynamics 365 Anteckningar
-- Dynamics 365 Ekonomi och drift Gemensamt ankare
-- Dynamics 365 Ekonomi och drift entitetsmappningar för dubbelriktade appar
+- Gemensamt ankare för Dynamics 365 Ekonomi och drift
+- Entitetsmappningar för dubbel skrivning för Dynamics 365 Ekonomi och drift
 - Dynamics 365 tillgångshanteringsapp
 - Dynamics 365 tillgångshantering
 - Gemensamt för HCM
 - Dynamics 365 Supply Chain utökad
 - Dynamics 365 Finance Extended
-- Dynamics 365 Ekonomi och drift gemensamt
+- Dynamics 365 Ekonomi och drift (gemensamt)
 - Dynamics 365 företag
 - Valutakurser
 - Field Service Common
@@ -51,14 +51,14 @@ Paketet med applikationskärna med dubbelriktad skrivning låter användare inst
 | Unikt namn                           | Visa namn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 företag                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Ekonomi och drift gemensamt |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Ekonomi och drift (gemensamt) |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Entitetsmappningar för dubbelriktade appar   |
 | msdyn_DualWriteAppCoreAnchor          | Appkärna ankare med dubbla skrivningar        |
 
 Följande kartor finns i detta paket.
 
-| Ekonomi och drift-appar     | Kundengagemangsappar                    |
+| Appar för ekonomi och drift     | Kundengagemangsappar                    |
 |---------------------------------|---------------------------------------------|
 | Driftenhet                  | msdyn_internalorganizations                 |
 | Organisationshierarki          | msdyn_internalorganizationhierarchies       |
@@ -77,9 +77,9 @@ Följande kartor finns i detta paket.
 
 Paketet appkärna med dubbla skrivningar är inte beroende av andra paket.
 
-## <a name="dual-write-human-resources"></a>Dubbel skrivning Human Resources
+## <a name="dual-write-human-resources"></a>Dubbel skrivning Personal
 
-I paketet med dubbelriktad skrivning Human Resources finns de lösningar och kartor som krävs för att personaldata ska synkroniseras. Den innehåller följande tre lösningar.
+I paketet med dubbelriktad skrivning Personal finns de lösningar och kartor som krävs för att personaldata ska synkroniseras. Den innehåller följande tre lösningar.
 
 | Unikt namn                | Visa namn                             |
 |----------------------------|------------------------------------------|
@@ -89,7 +89,7 @@ I paketet med dubbelriktad skrivning Human Resources finns de lösningar och kar
 
 Följande kartor finns i detta paket.
 
-| Ekonomi och drift-appar | Kundengagemangsappar         |
+| Appar för ekonomi och drift | Kundengagemangsappar         |
 |-----------------------------|----------------------------------|
 | Etniska ursprung              | cdm_ethnicorigins                |
 | Jobbfunktion för kompensation   | cdm_jobfunctions                 |
@@ -105,7 +105,7 @@ Följande kartor finns i detta paket.
 
 **Beroendeinformation**
 
-Dubbelriktad Human Resources-paketet beror på dubbelriktad appkärnpaketet. Därför bör du installera applikationskärna med dubbla skrivningar-paketet innan du installerar paketet Human Resources med dubbla skrivningar.
+Dubbelriktad Personal-paketet beror på dubbelriktad appkärnpaketet. Därför bör du installera applikationskärna med dubbla skrivningar-paketet innan du installerar paketet Personal med dubbla skrivningar.
 
 ## <a name="dual-write-supply-chain"></a>Försörjningskedja med dubbel skrivning
 
@@ -119,7 +119,7 @@ I paketet Försörjningskedja finns de lösningar och kartor som krävs för att
 
 Följande kartor finns i detta paket.
 
-| Ekonomi och drift-appar                 | Kundengagemangsappar                      |
+| Appar för ekonomi och drift                 | Kundengagemangsappar                      |
 |---------------------------------------------|-----------------------------------------------|
 | Enheter                                       | uoms                                          |
 | CDS-försäljningsorderrubrik                     | salesorders                                   |
@@ -128,7 +128,7 @@ Följande kartor finns i detta paket.
 | Försäljningsoffertrader för CDS                   | quotedetails                                  |
 | CDS‑frisläppta specifika produkter              | produkter                                      |
 | Lagerställezoner                             | msdyn_warehousezones                          |
-| Grupper - lagerställezoner                       | msdyn_warehousezonegroups                     |
+| Grupper – lagerställezoner                       | msdyn_warehousezonegroups                     |
 | Lagerarbetesrader                        | msdyn_warehouseworklines                      |
 | Huvuden för lagerarbete                      | msdyn_warehouseworkheaders                    |
 | Lagerställen                                  | msdyn_warehouses                              |
@@ -182,7 +182,7 @@ Leveranskedjepaketet är beroende av följande tre paket. Därför bör du insta
 
 - Paket för appkärna med dubbla skrivningar
 - Dubbel riktad skrivning för Finance-paketet
-- Dubbel skrivning Human Resources-paketet
+- Dubbel skrivning Personal-paketet
 
 ## <a name="dual-write-finance"></a>Dubbel riktad skrivning för Finance
 
@@ -197,7 +197,7 @@ I paketet dubbelriktad skrivning för Finance finns de lösningar och kartor som
 
 Följande kartor finns i detta paket.
 
-| Ekonomi och drift-appar             | Kundengagemangsappar        |
+| Appar för ekonomi och drift             | Kundengagemangsappar        |
 |-----------------------------------------|---------------------------------|
 | Källskattegrupper                  | msdyn_withholdingtaxgroups      |
 | CDS kontakter V2 (kund)              | kontakter                        |
@@ -274,7 +274,7 @@ I paketet dubbelriktad skrivning för tillgångshantering innehåller de lösnin
 
 Följande kartor finns i detta paket.
 
-| Ekonomi och drift-appar                           | Kundengagemangsappar                |
+| Appar för ekonomi och drift                           | Kundengagemangsappar                |
 |-------------------------------------------------------|-----------------------------------------|
 | Garanti över tillgångshantering                             | msdyn_warranties                        |
 | Tillgångshanteringsmodeller                               | msdyn_models                            |
@@ -299,7 +299,7 @@ Project Operations är beroende av följande paket. Därför bör du installera 
 - Dubbel riktad skrivning för Finance-paketet
 - Försörjningskedja paket med dubbel skrivning
 - Dubbelriktad skrivning för tillgångshantering paket
-- Dubbel skrivning Human Resources-paketet
+- Dubbel skrivning Personal-paketet
 
 ## <a name="dual-write-party-and-global-address-book-solutions"></a>Lösningar för dubbelskrivningspart och global adressbok
 
@@ -314,7 +314,7 @@ Det paketet med dubbelskrivningspart och global adressbok innehåller följande 
 
 Följande kartor finns i detta paket.
 
-| appar för ekonomi och drift | Kundengagemangsappar | 
+| Appar för ekonomi och drift | Kundengagemangsappar | 
 |-----------------------------|--------------------------|
 | CDS-parter | msdyn_parties | 
 | Platser för postadressen för CDS | msdyn_postaladdresscollections | 
@@ -344,3 +344,4 @@ Lösningarna för dubbelriktad skrivning och global adressbok beror på följand
 - Paket för appkärna med dubbla skrivningar
 - Dubbel riktad skrivning för Finance-paketet
 - Försörjningskedja paket med dubbel skrivning
+

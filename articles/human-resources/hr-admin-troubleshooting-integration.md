@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879291"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067629"
 ---
 # <a name="integration-with-finance-faq"></a>Vanliga frågeställningar integrering med Finance
 
@@ -88,7 +88,7 @@ Inga särskilda inställningar krävs för undantagshantering. Dataintegrering k
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kan jag ställa in dubbelriktad integrering?
 
-Nej, integrering är för närvarande ensidig (Personal till Ekonomi och Drift). Det finns en standardmall för att skicka data från Personal till Finance.
+Nej, integrering är för närvarande ensidig (Personal till Ekonomi och drift). Det finns en standardmall för att skicka data från Personal till Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jag tillåta postborttagning som en del av min integrering?
 
@@ -150,7 +150,7 @@ Om enheten stöds och data som finns på Dataverse, verifiera att mappningen är
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Adresser för mina medarbetare är felaktiga när jag har importerat dem till Finance. Vad ska jag göra?
 
-Nummerserien för **plats-ID** använder samma mönster i både Personal och Finance. Nummerserien måste vara unika på båda sidor så att det inte finns några adresskollisioner när du integrerar data från Dataverse till Ekonomi och drift.
+Nummerserien för **plats-ID** använder samma mönster i både Personal och Finance. Nummerserien måste vara unik på båda sidor så att det inte finns några adresskrockar när du integrerar data från Dataverse till Ekonomi och drift.
 
 Under implementering av Personal, verifiera att nummerserier inte är desamma i Personal and Finance. Verifiera att alla nummerserier inte är identiska där data kan behållas i båda systemen.
 
@@ -184,3 +184,4 @@ Uppdatera datatabellerna i Finance genom att gå till **datahantering \> ramverk
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

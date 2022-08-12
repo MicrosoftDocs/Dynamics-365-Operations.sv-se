@@ -1,6 +1,6 @@
 ---
 title: Rådgivning om optimering – översikt
-description: Den här artikeln beskrivs hur du kan använda optimerings-advisor för att säkerställa optimal konfiguration av Ekonomi och drift.
+description: Den här artikeln beskriver hur du kan använda optimeringsguiden för att säkerställa en optimal konfiguration av Ekonomi och drift.
 author: roxanadiaconu
 ms.date: 07/23/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1dd66e27098b4125b03c4fe6b52825afe2ff34cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb71453c37572c4956d98d4309d3526a7fbc1124
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865873"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109053"
 ---
 # <a name="optimization-advisor-overview"></a>Rådgivning om optimering – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln beskrivs hur du kan använda optimerings-advisor för att säkerställa optimal konfiguration av Ekonomi och drift.
+Den här artikeln beskriver hur du kan använda optimeringsguiden för att säkerställa en optimal konfiguration av Ekonomi och drift.
 
 ## <a name="overview"></a>Översikt
 
@@ -44,7 +44,7 @@ Standardsäkerhetsprinciper gäller för optimeringsmöjligheter. Exempelvis vis
 
 När du utför en åtgärd på några optimeringsmöjligheter beräknar systemet effekten av affärsmöjligheten med avseende på minskning av affärsprocessernas körtid. Funktionen är tyvärr inte tillgänglig för alla optimeringsmöjligheter.
 
-Om du vill veta mer om klassificering av optimering kan titta på kort [ptimerings-advisor i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)-video.
+Om du vill veta mer om optimeringsguiden, titta då på den korta videon [Optimeringsguiden i Dynamics 365 Finance](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
 
 ## <a name="optimization-rules"></a>Optimeringsregler
 
@@ -90,7 +90,7 @@ Markera affärsmöjligheten som skapades av regeln om du vill inaktivera utvärd
 
 [Skapa regler för rådgivning om optimering](./create-rules-optimization-advisor.md)
 
-[Optimerings-advisor i Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Optimeringsguiden i Dynamics 365 Finance (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

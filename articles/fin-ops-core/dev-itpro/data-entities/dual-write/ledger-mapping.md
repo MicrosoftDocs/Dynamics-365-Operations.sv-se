@@ -1,6 +1,6 @@
 ---
 title: Integrerad redovisning
-description: I den här artikeln beskrivs integreringen av redovisning mellan Ekonomi och drift och andra Dynamics 365-appar med Dataverse.
+description: I den här artikeln beskrivs integreringen av redovisningsdata mellan Ekonomi och drift och andra Dynamics 365-program med hjälp av Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5598295a25e31b33cd8b4d7ce3250a982ab4e87
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847201"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112253"
 ---
 # <a name="integrated-ledger"></a>Integrerad redovisning
 
@@ -28,7 +28,7 @@ I ett affärsprogram definierar redovisningsdata den kärna som är inställd f�
 
 Redovisningsdata inkluderar en samling tabellmappningar för grundläggande ekonomiska som fungerar tillsammans under kunddatainteraktion, som visas i följande tabell.
 
-Finance and Operations-appar | Kundengagemangsappar     | beskrivning
+Appar för ekonomi och drift | Kundengagemangsappar     | beskrivning
 ---------------------------------|----------------------------------|------------
 [Valutakurser för CDS](mapping-reference.md#123) | msdyn_currencyexchangerates |
 [Kontoplan](mapping-reference.md#121) | msdyn_chartofaccountses |
@@ -45,3 +45,4 @@ Finance and Operations-appar | Kundengagemangsappar     | beskrivning
 [Huvudkontokategorier](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

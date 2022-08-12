@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 00e536241710fc8a75158472688757320abf4247
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710369"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067221"
 ---
 # <a name="collections-in-accounts-receivable"></a>Samlingar i kundreskontra
 
@@ -49,15 +49,15 @@ För varje kund innehåller en ögonblicksbild av åldersfördelning en ögonbli
 
 För varje åldersfördelningsperiod i åldersfördelningsperioddefinitionen skapas en ögonblicksbild av åldersfördelningdetaljpost. Varje ögonblicksbild av åldersfördelningdetaljpost innehåller åldersfördelningsperiod-ID och det totala beloppet för transaktioner med data som infaller under åldersfördelningsperioden. Transaktioner tilldelas en åldersfördelningsperiod, till exempel 30 dagar förfallen. Datumet är relativt till åldersfördelningen som det datum som anges, när du skapar ögonblicksbilden av åldersfördelning. Information om ögonblicksbilden av åldersfördelning visas ifaktaboxen Åldersfördelade saldon och på sidan Inkasso.
 
-## <a name="collections-customer-pools"></a> Kundinkassopooler 
+## <a name="collections-customer-pools"></a>Kundinkassopooler
 Kundpooler är frågor som definierar en grupp med kundposter som kan visas och hanteras för samlingar eller åldersfördelningsprocesser. Använd kundpooler för att filtrera information på listsidorna Åldersfördelade saldon, Inkassoaktiviteter och Inkassoärenden. Du kan även använda kundpooler för att filtrera de kundkonton som är inkluderade när ögonblicksbilder av åldersfördelning skapas.
 
 ## <a name="collections-agents"></a>Inkassohandläggare
 Som standard kan användare visa all kundinformation på listsidorna för inkasso. Du kan använda inkassohandläggareposter för att bestämma kundpoolerna som är tillgängliga för att filtrera information om listsidorna för Inkasso och sidan Inkasso. 
 
-En inkassohandläggare är en person som arbetar med kunder för att säkerställa att betalningarna samlas in i tid. Inkassohandläggare är arbetare som tilldelas till användare på sidan Användarinställningar.
+En inkassohandläggare är en person som arbetar med kunder för att säkerställa att betalningarna samlas in i tid. Inkassohandläggare är arbetare som tilldelas användare på sidan Användarinställningar.
 
-## <a name="collections-list-pages"></a> Listsidor för Inkasso 
+## <a name="collections-list-pages"></a>Listsidor för Inkasso
 Följande listsidor hjälper dig att ordna information om inkasso.
 -   Åldersfördelade saldon – kolumnerna på listsidan visar kundsaldon och föråldrade belopp per åldersfördelningsperiod. Den här informationen lagras i en ögonblicksbild över åldersfördelningen. Åldersfördelningsperioderna bestäms av åldersfördelningsperioddefinitionen som används. Åldersfördelningsperioddefinitionen hämtas från kundpoolen, om en sådan har angetts för poolfrågan. Om kundpoolen inte har någon åldersfördelningsperioddefinition används standardåldersfördelningsperioddefinitionen som angetts på sidan Parametrar för kundreskontra. Om ingen standardåldersfördelningsperioddefinition har angetts, används den första åldersfördelningsperioddefinitionen på sidan Definitioner för åldersfördelningsperiod.
 -   Inkassoaktiviteter – kolumnerna på listsidan visar aktiviteter som identifieras som inkassoaktiviteter. Dessa aktiviteter skapas, genom att använda sidan Inkasso. Använd aktiviteter för att spåra arbetet som du gör med inkasseringar.
@@ -70,7 +70,7 @@ Följande listsidor hjälper dig att ordna information om inkasso.
 > <li>Om en användare har ställts in som en inkassohandläggare, är endast poolerna som har valts för den inkassohandläggaren tillgängliga på listsidan. Om Tillåt handläggare att visa alla kundpooler har valts på sidan Inkassohandläggare för inkassohandläggaren, är alla pooler tillgängliga för den handläggaren.</li>
 
 
-## <a name="collections-page"></a> Sidan Inkasso
+## <a name="collections-page"></a>Sidan Inkasso
 Använd sidan Inkasso för att visa, hantera och vidta åtgärder om inkassoinformation, aktiviteter och ärenden för kunder. 
 
 Det övre fönstret visar ärenden för den valda kunden. Det mellersta fönstret visar transaktioner för kunden. Det nedre fönstret visar alla aktiviteter för kunden. Du kan skapa inkassoärenden för att spåra inkassoinformation för en eller flera transaktioner och aktiviteter. Informationen i det övre fönstret och lägre fönstret kan filtreras efter fallet. 
@@ -79,7 +79,7 @@ Faktaboxar innehåller åldriga saldon och information om kreditgräns för vald
 
 Åtgärdsfönstret innehåller knappar som visar relaterad information för vald kund, ärende, transaktion eller aktivitet. Du kan också utföra vanliga åtgärder till exempel ändra inkassostatusen för en transaktion, skicka e-postmeddelande genom integration med din e-postleverantör, återbetalning till kunder, bearbetning och NSF-betalningar och avskrivning av saldon som inte kan inkasseras.
 
-## <a name="waive-reinstate-or-reverse-interest-and-fees"></a> Avfärda, återinsätta eller återföra ränta eller avgifter
+## <a name="waive-reinstate-or-reverse-interest-and-fees"></a>Avfärda, återinsätta eller återföra ränta eller avgifter
 Du kan efterskänka, återinföra eller återföra hela räntefakturor eller avgifter och transaktionränta som är en del av räntefakturor. Du kan göra detta från fliken Inkasso i åtgärdsfönstret på sidan Alla kunder genom att klicka på Räntefaktura, Transaktionsränta eller Avgift. 
 
 Dessa justeringar påverkar endast räntefakturor, och ränta och avgifter som de innehåller. Använd stegen i ”Skapa avskrivningstransaktioner i ett steg" för att skriva av alla avgifter som en kund är skyldig.
@@ -110,3 +110,4 @@ Du kan bearbeta NSF-betalningar, genom att klicka på NSF-betalning på sidan In
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

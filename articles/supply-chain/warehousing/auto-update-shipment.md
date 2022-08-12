@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5816a7cddf509260511368b74655a9fd5bfc485
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903765"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067894"
 ---
 # <a name="shipment-auto-updates"></a>Automatiska uppdateringar för leveranser
 
@@ -30,7 +30,7 @@ Funktionen för automatisk leveransuppdatering uppdaterar automatiskt kvantitete
 
 När funktionen automatiska uppdateringar för leveranser inte används, minskar bara kvantiteten automatiskt tills lagerarbetet skapas. Användarna måste manuellt uppdatera eller ta bort rader och de måste sedan återsläppa rader om orderkvantiteter ökas eller nya order rader läggs till. Genom att använda funktionen för automatiska uppdateringar för leveranser kan företag sömlöst tillhandahålla uppdateringar av lagret utan att behöva oroa sig för att relaterade försändelser och laster inte ska återspegla uppdateringar av order rader.
 
-Funktionen automatiska uppdateringar för leveranser gäller både försäljningsorderrader och överföringsorderrader och den är aktiverad för ett visst lagerställe. Därför kan företagen använda olika policyer för automatiska uppdateringar för leveranser över lagerställen, eftersom de kräver det. Som standard används den policyn automatiska uppdateringar för leveranser för kvantitetsminskningar för alla lagerställen som använder lagerstyrningsprocesser. När den här standardpolicyinställningen används minskar bara kvantiteten automatiskt genom till en leverans och last tills lagerarbetet skapas. Detta beteende påminner om det beteende som användes innan funktionen för automatisk uppdatering av leveransen infördes.
+Funktionen automatiska uppdateringar för leveranser gäller både försäljningsorderrader och överföringsorderrader och den är aktiverad för ett visst lagerställe. Därför kan företagen använda olika policyer för automatiska uppdateringar för leveranser över lagerställen, eftersom de kräver det. Som standard används leveranspolicyn med automatiska uppdateringar för kvantitetsminskningar för samtliga lagerställen som använder lagerstyrningsprocesser (WMS). När den här standardpolicyinställningen används minskar bara kvantiteten automatiskt genom till en leverans och last tills lagerarbetet skapas. Detta beteende påminner om det beteende som användes innan funktionen för automatisk uppdatering av leveransen infördes.
 
 ## <a name="main-elements-of-the-functionality"></a>Huvudelement i funktionen
 

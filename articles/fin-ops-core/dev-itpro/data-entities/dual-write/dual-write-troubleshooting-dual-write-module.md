@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med dubbelriktad skrivning i Ekonomi och drift-appar
-description: Den här artikeln innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Ekonomi och Drift-appar.
+title: Felsöka problem med dubbelriktad skrivning i appar för ekonomi och drift
+description: Den här artikeln innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i appar för ekonomi och drift.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2743b99538b332af7cc6ad8d951eede562c14235
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864584"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111183"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Ekonomi och drift-appar
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i appar för ekonomi och drift
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Den här artikeln innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Det ger särskilt information som kan hjälpa dig att åtgärda problem med **dubbelriktad skrivning** i Ekonomi och Drift-appar.
+Den här artikeln innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan appar för ekonomi och drift och Dataverse. Den ger i synnerhet information som kan hjälpa dig att åtgärda problem med modulen **Dubbelriktad skrivning** i appar för ekonomi och drift.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan inte läsa in modulen för dubbelriktad skrivning i en Ekonomi och Drift-app
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan inte läsa in modulen för dubbelriktad skrivning i en app för ekonomi och drift
 
 Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen **dubbelriktad skrivning** i arbetsytan **datahantering** är dataintegreringstjänsten förmodligen nere. Skapa en supportbiljett för att begära en omstart av dataintegreringstjänsten.
 
@@ -35,7 +35,7 @@ Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen 
 
 **Nödvändiga autentiseringsuppgifter för att åtgärda problemet:** Samma användare som ställer in dubbelriktad skrivning.
 
-Följande felmeddelande kan visas när du försöker konfigurera en ny tabell för dubbelriktad skrivning. Den enda användare som kan skapa en karta är den användare som ställer in anslutningen med dubbelriktad skrivning.
+Följande felmeddelande kan visas när du försöker konfigurera en ny tabell för dubbelriktad skrivning. Den enda användare som kan skapa en mappning är den användare som ställer in anslutningen med dubbelriktad skrivning.
 
 *Svarsstatuskoden anger inte slutförande: 401 (obehörig)*.
 
@@ -49,9 +49,9 @@ Om du vill åtgärda problemet loggar du in på ett InPrivate-fönster i Microso
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Fel vid länkning av miljön för dubbelriktad skrivning eller tillägg av en ny tabellmappning
 
-**Den roll som krävs för att åtgärda problemet:** Systemadministratör i både Ekonomi och Drift-appar och Dataverse.
+**Erforderlig roll för att åtgärda problemet:** Systemadministratör i både appar för ekonomi och drift och Dataverse.
 
-Du kan stöta på följande fel när du länkar eller skapar kartor:
+Du kan stöta på följande fel när du länkar eller skapar mappningar:
 
 ```dos
 Response status code does not indicate success: 403 (tokenexchange).
@@ -59,7 +59,7 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-Det här felet kan uppstå om du inte har tillräcklig behörighet för att länka dubbelriktad skrivning eller skapa kartor. Det här felet kan också uppstå om Dataverse-miljön återställdes utan att dubbelriktig skrivning avlänkas. Alla användare med rollen systemadministratör i båda Ekonomi och Drift-apparna och Dataverse kan länka dessa miljöer. Det är bara användaren som installerar anslutningen för dubbelriktad skrivning som kan lägga till nya tabellmappningar. Efter installationen kan alla användare med rollen systemadministratör övervaka status och redigera mappningarna.
+Det här felet kan uppstå om du inte har tillräcklig behörighet för att länka dubbelriktad skrivning eller skapa mappningar. Det här felet kan också uppstå om Dataverse-miljön återställdes utan att dubbelriktig skrivning avlänkas. Alla användare med rollen systemadministratör i både appar för ekonomi och drift och Dataverse kan länka dessa miljöer. Det är bara användaren som installerar anslutningen för dubbelriktad skrivning som kan lägga till nya tabellmappningar. Efter installationen kan alla användare med rollen systemadministratör övervaka status och redigera mappningarna.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Fel när du stoppar tabellmappningen
 
@@ -69,15 +69,15 @@ Följande felmeddelande kan visas när du försöker att stoppa tabellmappningen
 
 Det här felet uppstår när den länkade Dataverse-miljön inte är tillgänglig.
 
-Lös problemet genom att skapa en biljett till dataintegreringsteamet. Koppla nätverksspårningen så att dataintegreringsteamet kan markera kartorna som **Inte körs** i servern.
+Lös problemet genom att skapa en biljett till dataintegreringsteamet. Koppla nätverksspårningen så att dataintegreringsteamet kan markera mappningarna som **Inte körs** i servern.
 
 ## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Aktivera parallell bearbetning i appar för ekonomi och drift för att förbättra prestandan
 
-Att aktivera parallell bearbetning kan minska den tid som behövs för att importera data från Dynamics 365 Customer Engagement-appar och Microsoft Dataverse till appar för ekonomi och drift. 
+Att aktivera parallell bearbetning kan minska den tid som behövs för att importera data från Dynamics 365-appar för kundengagemang och Microsoft Dataverse till appar för ekonomi och drift. 
 
 Slutför följande steg för att aktivera parallell bearbetning i appar för ekonomi och drift.
 
-1. Logga in i din appmiljö för ekonomi och drift.
+1. Logga in i din miljö för ekonomi och drift.
 2. Gå till **Datahantering > Ramverksparametrar**.
 3. Välj **Enhetsinställningar** och sedan **Konfigurera parametrar för enhetskörning**.
 4. Lägg till parametrarna för parallell bearbetning:
@@ -97,7 +97,7 @@ Följande felmeddelande kan komma att visas när du försöker köra den första
 Du kan komma att få detta felmeddelande när du försöker ange statusen för en mappning som **Körs**: Korrigeringen beror på orsaken till felet:
 
 + Om mappningen har beroende mappningar ska du se till att aktivera de beroende mappningarna för den här tabellmappningen.
-+ Mappningen kanske saknar käll- eller målkolumner. Om en kolumn i Ekonomi och Drift-appen saknas följer du stegen i avsnittet [Tabellkolumner som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Om en kolumn i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att kolumnerna automatiskt fylls i igen i mappningen.
++ Mappningen kanske saknar käll- eller målkolumner. Om en kolumn i appen för ekonomi och drift saknas följer du stegen i avsnittet [Problem med tabellkolumner som saknas i mappningar](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Om en kolumn i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att kolumnerna automatiskt fylls i igen i mappningen.
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Versionsmatchningsfel och uppgradering av lösningar med dubbelriktad skrivning
 
@@ -112,3 +112,4 @@ Följande felmeddelanden kan komma att visas när du försöker köra tabellmapp
 Du korrigerar problemen genom att uppdatera lösningsar med dubbelskrivning i Dataverse. Se till att du uppgraderar till den senaste lösningen som matchar erforderlig lösningsversion.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

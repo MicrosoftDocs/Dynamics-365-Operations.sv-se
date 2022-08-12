@@ -16,14 +16,14 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: de4bdd07127b65321540543040192eb7811850da
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 421d84b739faacbade711b01bfccb9f4efe6de32
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862552"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103288"
 ---
-# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisera huvuden och rader i försäljningsfakturor direkt från Ekonomi och drift till Sales
+# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisera rubriker och rader i försäljningsfakturor direkt från Ekonomi och drift till Sales
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +41,7 @@ För att gå till tillgängliga mallar, öppna [Power Apps administratörscenter
 
 Följande mallar och underliggande uppgifter används för att synkronisera huvuden och rader i försäljningsfakturor direkt i försäljningsofferter från Supply Chain Management till Sales:
 
-- **Namnet på mallen i dataintegrering:** försäljningsfaktura (Fin and Ops till Sales) - Direkt
+- **Namnet på mallen i dataintegrering:** försäljningsfaktura (Fin and Ops till Sales) – Direkt
 - **Namnen på uppgifterna i dataintegreringsprojektet:**
 
     - Rubrik på försäljningsfakturan
@@ -49,10 +49,10 @@ Följande mallar och underliggande uppgifter används för att synkronisera huvu
 
 Följande synkroniseringsuppgifter krävs före synkronisering av huvuden och rader i försäljningsfakturor kan uppstå:
 
-- Produkter (Supply Chain Management till Sales) - direkt
+- Produkter (Supply Chain Management till Sales) – direkt
 - Konton (Sales till Supply Chain Management)-direkt (om den används)
 - Kontakter (Sales till Supply Chain Management)-direkt (om den används)
-- Rubrik och rader i försäljningsfaktura (Supply Chain Management till Sales) - Direkt
+- Rubrik och rader i försäljningsfaktura (Supply Chain Management till Sales) – Direkt
 
 ## <a name="entity-set"></a>Ange entiteten
 
@@ -72,7 +72,7 @@ Försäljningsfakturor skapas i Supply Chain Management och synkroniseras med Sa
 
 - Ett fält för **fakturanummer** har lagts till i entiteten **Faktura** och visas på sidan.
 - Knappen **Skapa faktura** på sidan **Försäljningsorder** är dold eftersom fakturorna skapas i Supply Chain Management och synkroniseras med Sales. Sidan **Faktura** kan inte redigeras eftersom fakturorna synkroniseras från Supply Chain Management.
-- Värdet **Status för försäljningsorder** ändras automatiskt till **Fakturerad** när tillhörande faktura från Supply Chain Management har synkroniserats med Sales. Dessutom kan ägaren till den försäljningsorder som fakturan skapades från tilldelas till fakturaägaren. Därför kan ägaren till försäljningsordern kan visa fakturan.
+- Värdet **Status för försäljningsorder** ändras automatiskt till **Fakturerad** när tillhörande faktura från Supply Chain Management har synkroniserats med Sales. Dessutom kan ägaren till den försäljningsorder som fakturan skapades från tilldelas fakturaägaren. Därför kan ägaren till försäljningsordern kan visa fakturan.
 
 ## <a name="preconditions-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 

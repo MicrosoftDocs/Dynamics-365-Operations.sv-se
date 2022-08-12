@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863691"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070302"
 ---
 # <a name="planned-cross-docking"></a>Planerad direktleverans
 
@@ -118,7 +118,7 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
     - **Leveranskälla:** *inköpsorder*
 
 > [!NOTE]
-> Du kan konfigurera en frågeställning för att kontrollera när en specifik direktleveransmall används. Frågan för direktleveransmallar har bara *inventTable*-registret (artiklar) och den inre sammanfogade tabellen *WHSInventTable* (WHS-artiklar). Om du vill lägga till andra register i frågan kan du sammanfoga dem genom att bara använda *finns sammankopplingar* eller *finns inte sammankopplingar*. När du filtrerar på de sammanfogade registren hämtas en post från huvudregistret för varje matchande post i det sammanfogade registret. Om sammanfogningstypen är *finns sammanfogning* avslutas sökningen efter att den första matchningen har hittats. Om du till exempel sammanfogar registret för försäljningsorderraden till registret för artiklar validerar och returnerar systemet artiklar för vilka minst en försäljningsorderrad har det definierade villkoret. Data hämtas i praktiken från det överordnade (artikel) registret och inte från det underordnade registret (försäljningsorderraden). Därför går det inte att från början filtrera efter källdokument som försäljningsorderrader eller kunder.
+> Du kan konfigurera en frågeställning för att kontrollera när en specifik direktleveransmall används. Frågan för direktleveransmallar har bara *inventTable*-registret (artiklar) och den inre sammanfogade tabellen *WHSInventTable* (WMS-artiklar). Om du vill lägga till andra register i frågan kan du sammanfoga dem genom att bara använda *finns sammankopplingar* eller *finns inte sammankopplingar*. När du filtrerar på de sammanfogade registren hämtas en post från huvudregistret för varje matchande post i det sammanfogade registret. Om sammanslagningstypen är *finns sammanslagning* avslutas sökningen efter att den första matchningen har hittats. Om du till exempel sammanfogar registret för försäljningsorderraden till registret för artiklar validerar och returnerar systemet artiklar för vilka minst en försäljningsorderrad har det definierade villkoret. Data hämtas i praktiken från det överordnade (artikel) registret och inte från det underordnade registret (försäljningsorderraden). Därför går det inte att från början filtrera efter källdokument som försäljningsorderrader eller kunder.
 
 ### <a name="create-a-work-class"></a>Skapa en arbetsklass
 

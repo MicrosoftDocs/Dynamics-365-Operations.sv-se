@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14aaf40ce64c8f8ba6277fa0883318e08505a464
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6cceabe652429e1c50d27db865700926e211958a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904569"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066372"
 ---
 # <a name="general-ledger-home-page"></a>Startsida för redovisning
 
@@ -61,18 +61,19 @@ Gå till avsnittet [översikt över Financial reporting](../../fin-ops-core/dev-
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Ekonomi och drift – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Det finns åsikter, nyheter och annan information i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och i [Microsoft Dynamics 365 för ekonomi och drift – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
+I [partnercommunitybloggen om Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) har Microsoft Dynamics-partner en resurs där de kan få information om vad som är nytt och trendar i Dynamics 365.
 
 ### <a name="videos"></a>Videor
 
 Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
-#### <a name="community-blogs"></a>Bloggar
+#### <a name="community-blogs"></a>Community-bloggar
 
-- [Vad du bör veta om redovisningen i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
+- [vad du bör känna till om redovisningen i Dynamics 365 Finance](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

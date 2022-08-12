@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ced1300b268df9a6503ce1d33d74cae85ade3f20
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858602"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103163"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Självstudie för att ställa in och installera Regression Suite Automation Tool
 
@@ -34,7 +34,7 @@ Den här artikeln är en vägledning som hjälper dig att få installationsprogr
 
 - Förstå installationen och nödvändiga inställningar som krävs för de olika programmen som stöder RSAT (Regression Suite Automation Tool).
 - Förstå hur funktionen uppgiftsinspelare tillsammans med Microsoft Dynamics Lifecycle Services (LCS) och Microsoft Azure DevOps, gör det möjligt att skapa, konfigurera, köra, undersöka och rapportera om testfall.
-- Ge funktionella användare möjlighet att registrera affärsuppgifter med hjälp av uppgiftsregistrering och sedan konvertera inspelningsuppgifterna till en uppsättning automatiserade tester utan att källkoden behöver skrivas.
+- Ge funktionsanvändare möjlighet att registrera affärsuppgifter med hjälp av uppgiftsregistrering och sedan konvertera inspelningsuppgifterna till en uppsättning automatiserade tester utan att källkoden behöver skrivas.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 

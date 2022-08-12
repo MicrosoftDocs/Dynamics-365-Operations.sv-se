@@ -1,7 +1,7 @@
 ---
 title: Efterdaterade checkar
-description: Den här artikeln innehåller information om stöd för efterdaterade checkar i Microsoft Dynamics 365 Finance. Postdaterade checkar är checkar som har utfärdats för att skapa och ta emot betalningar vid ett framtida datum. Därför kan checken inte lösas in förrän på angivet datum.
-author: panolte
+description: Det här avsnittet innehåller information om stöd för efterdaterade checkar. Efterdaterade checkar som har utfärdats för att skapa och ta emot betalningar på ett framtida datum.
+author: angelad116
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 21741
 ms.assetid: 4eb7c7da-1e6b-4d35-9f41-373b66103229
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33de0d5180962f52ddb0770f8729ed147d144e6d
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 4d32ed9de66bc92e17c5515a4266f41aaeb9f2c1
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722867"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151384"
 ---
 # <a name="postdated-checks"></a>Efterdaterade checkar
 

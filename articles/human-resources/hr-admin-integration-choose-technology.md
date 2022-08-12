@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2c542684642e4f6eda0f862623889a68f85b2b20
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887817"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068891"
 ---
 # <a name="choose-a-data-integration-technology"></a>Välja en dataintegreringsteknik
 
@@ -30,7 +30,7 @@ ms.locfileid: "8887817"
 
 
 
-Denna artikel innehåller information om hur du integrerar med data som hanteras av Dynamics 365 Human Resources. Här beskrivs olika integreringstekniker som hjälper dig att avgöra vilka tekniker som bäst passar dina behov.
+Denna artikel innehåller information om hur du integrerar med data som hanteras av Dynamics 365 Human resources. Här beskrivs olika integreringstekniker som hjälper dig att avgöra vilka tekniker som bäst passar dina behov.
 
 ## <a name="data-integration-background"></a>Bakgrund för dataintegrering
 
@@ -70,7 +70,7 @@ Dataverse-register och tillhörande API:er är det bästa alternativet för åtk
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF-enheter
 
-Personal som huvudsakligen är baserade på samma plattform som Ekonomi och Drift-program, tillhandahåller en [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF kallas också för Data Import Export Framework (DIXF). Personal innehåller en uppsättning dataentiteter som du kan använda för att importera och exportera information om personaldata. Medan Dataverse-register är det föredragna dataintegreringsgränssnittet för Personal, är DMF-entiteterna fortfarande användbara i vissa fall, t. ex.:
+Personal, som huvudsakligen baseras på samma plattform som appar för ekonomi och drift, tillhandahåller ett [Datahanteringsramverk (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF kallas också för Data Import Export Framework (DIXF). Personal innehåller en uppsättning dataentiteter som du kan använda för att importera och exportera information om personaldata. Medan Dataverse-register är det föredragna dataintegreringsgränssnittet för Personal, är DMF-entiteterna fortfarande användbara i vissa fall, t. ex.:
 
 - Dataverse-register är ännu inte tillgängliga.
 
@@ -113,7 +113,7 @@ BYOD passar för rapporteringslösningar, dataintegreringer, datamashup, som dat
 
 ### <a name="odata-enabled-entities"></a>OData-aktiverade enheter
 
-De flesta DMF-enheterna är också aktiverade för åtkomst via datatjänsten för pesonal (OData). Dokumentationen för [Ekonomi och Drift OData-tjänsten](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gäller för Personal, förutom att skapa dina egna OData-exponerade enheter.
+De flesta DMF-enheterna är också aktiverade för åtkomst via datatjänsten för pesonal (OData). Dokumentationen för [OData-tjänsten för Ekonomi och drift](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gäller för Personal, förutom för att skapa dina egna OData-exponerade entiteter.
 
 Medan implementeringen av Dataverse och OData som ges av Dataverse (via [Dynamics 365 webb-API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) är föredraget framför datatjänsten för personal, har datatjänsten för personal för närvarande mer fullständig enhetstäckning för personaldata.
 
@@ -127,7 +127,7 @@ Excel-tillägget är lämpligt för import/export av ad hoc-data av företagsdom
 
 Du kan använda [Dataintegrerartjänsten](/powerapps/administrator/data-integrator) för att integrera data till och från Dataverse. Dataintegreraren låter dig definiera integreringsprojekt som ofta baseras på fördefinierade mallar som programutvecklare har anpassat för specifika integreringer. Du kan schemalägga integreringsprojekten kan schemaläggas att köras automatiskt på ett återkommande schema eller köras manuellt.
 
-Dataintegrerarprojekt är lämpliga för Dataverse batch-integrering. De är ett bra val för integrering mellan program familjen Dynamics 365. Microsoft tillhandahåller t.ex. en mall för Dataintegrerare för att integrera data från Human Resources i Dynamics 365 Finance. Mer information om mallen finns i [Integrering från Dynamics 365 Human Resources till Dynamics 365 Finance](hr-admin-integration-finance.md).
+Dataintegrerarprojekt är lämpliga för Dataverse batch-integrering. De är ett bra val för integrering mellan program familjen Dynamics 365. Microsoft tillhandahåller t.ex. en mall för Dataintegrerare för att integrera data från Personal i Dynamics 365 Finance. Mer information om mallen finns i [Integrering från Dynamics 365 Human Resources till Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ### <a name="power-query"></a>Power Query
 
@@ -153,3 +153,4 @@ Med så många olika integreringstekniker tillgängliga kan det vara överväldi
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

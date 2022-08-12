@@ -6,21 +6,22 @@ ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReportingSetup
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 10814
-ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "10814"
+ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
+ms.search.form: FinancialReportingSetup
+ms.openlocfilehash: 77756b9f32268b091361e1e69be05a11eac19846
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724453"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205677"
 ---
 # <a name="view-and-design-financial-reports"></a>Visa och utforma ekonomiska rapporter
 
@@ -69,8 +70,8 @@ För den här övning ska du generera och undersöka en befintlig standardrappor
 I den här övningen ska du ändra en befintlig standardrapport. Du kommer att uppdatera både raddefinitionen för att ta med alla konton och kolumndefinitionen så att den innehåller kontoattribut. När uppdateringarna är slutförd, ska du generera den nyligen skapade rapporten och undersöka rapporten. Vi börjar med listan över ekonomiska rapporter.
 
 1. Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
-2. Markera raden för rapporten som heter **Råbalanssammanfattning - standardinställning**.
-3. Välj **Redigera**. **Råbalanssammanfattning - standardinställning** öppnas i rapportdesignern.
+2. Markera raden för rapporten som heter **Råbalanssammanfattning – standardinställning**.
+3. Välj **Redigera**. **Råbalanssammanfattning – standardinställning** öppnas i rapportdesignern.
 4. Välj **Arkiv**, sedan **Spara som** och namnge rapporten Detaljerad råbalans med attribut.
 
     > [!NOTE]
@@ -86,7 +87,7 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kommer att u
 12. I kolumn C, markera **TOT** i listrutan.
 13. Skriv **50:11080** i kolumn D.
 14. **Spara** raddefinitionen. Raddefinitionen innehåller nu alla konton plus en summarad där du kan addera alla konton. Härnäst uppdaterar vi kolumndefinitionen så att den inkluderar ytterligare kontoattribut.
-15. I rapportdefinitionen **Detaljerad råbalans med attribut**, välj kolumndefinitionsikonen för att öppna kolumndefinitionen **Råbalanssammanfattning - standardinställning**.
+15. I rapportdefinitionen **Detaljerad råbalans med attribut**, välj kolumndefinitionsikonen för att öppna kolumndefinitionen **Råbalanssammanfattning – standardinställning**.
 16. Spara kolumndefinitionen som **Detaljerad råbalans med attribut**. Kolumndefinitionen innehåller kolumner med ekonomiska uppgifter, en beskrivningskolumn och beräkningskolumner. Vi ska lägga till attributkolumner i kolumndefinitionen för att ge den ytterligare information om konton.
 17. Följande attribut ska läggas till i kolumndefinitionen:
 

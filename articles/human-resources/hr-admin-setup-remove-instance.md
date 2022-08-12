@@ -1,6 +1,6 @@
 ---
 title: Ta bort en instans
-description: I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
+description: I denna artikel beskrivs hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,16 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ce676c93e133cc04ad9c49417ed2ca0d6791e93
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859645"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178485"
 ---
 # <a name="remove-an-instance"></a>Ta bort en instans
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gäller för:** Personal i den fristående infrastrukturen_ 
+
+> [!NOTE]
+> Från och med 2022 juli kan nya Personal-miljöer inte tilldelas för den fristående Personal-infrastrukturen, och nya Microsoft Dynamics Lifecycle Services-projekt (LCS) kan inte skapas i den. Kunder kan distribuera Personalmiljöer på infrastruktur för ekonomi och drift. Mer information finns i [tillhandahålla Personal i infrastruktur för ekonomi och drift](/hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Infrastrukturen för appar för ekonomi och drift stöder borttagning av en miljö. Mer information om hur du tar bort en miljö finns i [Ta bort en miljö](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 I denna artikel förklaras hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 
@@ -42,10 +48,13 @@ Den befintliga testkörningsmiljön tas bort. Om det tas bort kan du skaffa en n
 
 Den här artikeln förutsätter att du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). 
 
-Eftersom en enda Personal-miljö ”ingår” i en enda Power Apps-miljö, finns det två alternativ att välja mellan. Det första alternativet innebär att ta bort hela Power Apps-miljön. Det andra alternativet innebär att endast Personal tas bort. Det första alternativet är att föredra när du har skapat en Power Apps-miljö uttryckligen i syfte att etablera Personal och du har precis börjat genomförandet eller du har inte några fastställda integreringer. Det andra alternativet är lämpligt om du har en fastställd Power Apps-miljö fylld med rich-data som utnyttjas i Power Apps och Power Automate.
+Eftersom en enda Personal-miljö ingår i en enda Power Apps-miljö finns det två alternativ att ta hänsyn till när du tar bort en miljö. 
+- **Ta bort hela Power Apps-miljön.** Detta alternativ är att föredra när Power Apps-miljön uttryckligen skapade i syfte att tillhandahålla Personal, implementeringen precis har börjat eller du har inte några etablerade integreringar.  
+- **Endast ta bort Personal.** Detta alternativ är lämpligt om det finns etablerad Power Apps-miljö som är fylld med data som används i Microsoft Power Apps och Power Automate.
+
 
 > [!Important]
-> Innan du tar bort Power Apps-miljön, se till att den inte används för integrering av rich-data utanför Personal omfattning. Observera även att de standardinställda Power Apps-miljöerna inte kan tas bort. 
+> Innan du tar bort Power Apps-miljön, se till att den inte används för dataintegrering utanför Personals omfattning. Observera även att de standardinställda Power Apps-miljöerna inte kan tas bort. 
 
 För att ta bort hela Power Apps-miljön, inklusive Personal och tillhörande program och flöden:
 
@@ -73,7 +82,7 @@ Gör följande om du vill ta bort en Personal-miljö från en befintlig Power Ap
 
 ## <a name="recover-a-soft-deleted-environment"></a>Återställa en tyst, borttagen miljö
 
-Om du tar bort Power Apps-miljön som personalmiljön är ansluten till kommer status för personalmiljön i Lifecycle Services för personal att vara **mjukt borttagen**. I det här fallet kan användarna inte ansluta till personal.
+Om du tar bort den Power Apps-miljö som personalmiljön är ansluten till kommer statusen för personalmiljön i LCS att vara **Temporärt borttagen**. I det här fallet kan användarna inte ansluta till personal.
 
 Så här återställer du miljön:
 

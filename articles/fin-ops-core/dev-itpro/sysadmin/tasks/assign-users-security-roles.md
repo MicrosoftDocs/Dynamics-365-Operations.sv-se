@@ -1,6 +1,6 @@
 ---
-title: Tilldela användare till säkerhetsroller
-description: Om du vill komma åt Finance and Operations-appar måste användarna ha tilldelats säkerhetsroller.
+title: Tilldela användare säkerhetsroller
+description: För att komma åt appar för ekonomi och drift måste användarna ha tilldelats säkerhetsroller.
 author: Peakerbl
 ms.date: 02/09/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: b5e69a79f123daff3f85d0100647615ad818288e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105548"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103881"
 ---
 # <a name="manage-users-and-security-roles"></a>Hantera användare och säkerhetsroller
 
@@ -69,7 +69,8 @@ Användare som tilldelas säkerhetsroller manuellt måste också tas bort manuel
 3. Så här tar du bort flera användare:
    1. Välj en roll i trädet. 
    2. I området **Användare som är tilldelade till rollen**, välj **Tilldela/exkludera användare manuellt**.
-   3. På sidan **Tilldela användare till eller exkludera användare från rollen** har användare inte tilldelats roll **Ingen** i kolumnen **Tilldelningsläge**. Välj de användare som ska uteslutas från rollen. 
+   3. På sidan **Tilldela användare till eller exkludera användare från rollen** har användare inte tilldelats roll **Ingen** i kolumnen **Tilldelningsläge**. Välj de användare som ska uteslutas från rollen.
    4. På **Åtgärdsfönstret**, välj **Exkludera från roll**. Kolumnen **Tilldelningsläget** uppdateras nu till **Manuellt** och användarna exkluderas från rollen.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

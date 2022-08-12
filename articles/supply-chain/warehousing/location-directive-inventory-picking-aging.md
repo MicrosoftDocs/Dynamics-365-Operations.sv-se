@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885708"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068683"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Platsdirektiv för plockning i åldersfördelat lager
 
@@ -82,7 +82,7 @@ Demonstrationsdata kräver inställning och lagerjusteringar för att stödja sc
 
 1. Välj **OK** om du vill använda inställningarna och stänga dialogrutan för fråga.
 1. Välj **Spara** om du vill ändra platsdirektiv.
-1. På en mobil enhet eller i appen *Dynamics 365 for Finance and Operations – lagerhållning* på datorn ska du följa dessa steg för att ta bort befintligt lager från lagerstället för att stödja scenarierna:
+1. På en mobil enhet eller i appen *Dynamics 365 Supply Chain Management – lagerhållning* på datorn ska du följa dessa steg för att ta bort befintligt lager från lagerstället för att stödja scenarierna:
 
     1. Logga in på lagerställe *63* genom att använda rätt användar-ID och lösenord.
     1. På huvudmenyn, välj **Kvalitet**.

@@ -1,6 +1,6 @@
 ---
 title: Skapa en fraktsedel
-description: I denna artikel beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.
+description: I denna artikel beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser (WMS).
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 68a703475191255ff6ceaee25ef8e2bdf33ba0c2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885795"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069709"
 ---
 # <a name="create-a-bill-of-lading"></a>Skapa en fraktsedel
 
 [!include [banner](../includes/banner.md)]
 
-I denna artikel beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.  
+I denna artikel beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser (WMS).  
 
 En fraktsedel är ett juridiskt dokument mellan företaget som skeppar artiklarna och transportföretaget. Dokumentet medföljer de levererade artiklarna och fungerar som ett leveranskvitto när artiklarna levereras till målet. Om du använder lagerstyrning finns det två sätt att skapa en fraktsedel:
 

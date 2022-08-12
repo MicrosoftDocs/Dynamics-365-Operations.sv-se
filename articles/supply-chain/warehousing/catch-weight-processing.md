@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 881c3c4aa655a5ad30adffce108ba2fc3e6691c5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900692"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070422"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
@@ -82,11 +82,11 @@ Om den faktiska vikten registreras in på förpackningsstationen under packning 
 > [!NOTE]
 > Eftersom alternativet **förpackning** gör att inventeringen uppdateras med den genomsnittliga plockade vikten, kan detta utlösa en avvikelse som skulle kunna orsaka en justering av faktisk/nominell vikt och/eller en skillnad mellan lagerbehållningens vikt och kod för faktisk/nominell vikt.
 
-För interna lagerhanteringsprocesser som räkning och justeringskorrigeringar är det möjligt att definiera om vikten ska registreras eller inte. Om inte registrerad ska nominell vikt användas. Med andra alternativ kan du fånga faktisk/nominell vikt och kvantitet per inventering.
+För interna processer som exempelvis räkning och justeringskorrigeringar är det möjligt att definiera om vikten ska registreras eller inte. Om inte registrerad ska nominell vikt användas. Med andra alternativ kan du fånga faktisk/nominell vikt och kvantitet per inventering.
 
 Du kan definiera hur vikt registreras. I den ena av två huvudsakliga flöden fångstvikt taggar spåras och används för att hämta vikt. I det andra flödet spåras inte faktisk/nominell vikt.
 
-- **Ja** - artikel används i faktisk/nominell vikt taggar. Varje taggnummer motsvarar en enhet för faktisk/nominell vikt (låda) och en vikt och annan information som är associerad med taggen. Vikten som är associerad med taggen används för utgående processer.
+- **Ja** – artikel används i faktisk/nominell vikt taggar. Varje taggnummer motsvarar en enhet för faktisk/nominell vikt (låda) och en vikt och annan information som är associerad med taggen. Vikten som är associerad med taggen används för utgående processer.
 - **Nej** – artikeln använder inte nominella vikttaggar. Inkommande och utgående vägningsprocesser baseras på den faktiska vikten som registreras under varje process.
 
 Processen för att spåra faktisk/nominell vikt kan användas för artiklar där vikten inte förändras under lagringsperiodens. Vikten registreras bara i processer för ankommande lager. Under den utgående processen kommer taggar för faktisk/nominell vikt bara att skannas och vikterna som är associerade med taggarna kommer att användas för utgående transaktionsbehandling.
@@ -133,8 +133,8 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 - Produkter med faktisk/nominell vikt kan inte användas som tjänster.
 - Produkter med faktisk/nominell vikt kan endast användas som ”produkter som finns i lager” som del av artikelmodellgruppen.
 - Produker med faktisk/nominell vikt kan inte användas tillsammans med funktionen för att spåra ”Aktiv i försäljningsprocessen”.
-- Produker med faktisk/nominell vikt kan inte användas tillsammans med funktionen för att registrera serienummer. Därför kan inte produkter föras över från ”tom” till ett serienummer som en del av plockning/packningsprocessen.
-- Produker med faktisk/nominell vikt kan inte användas tillsammans med funktionen för att registrera serienummer före förbrukning.
+- Produker med faktisk/nominell vikt kan inte användas tillsammans med funktionen för att registrera löpnummer. Därför kan inte produkter föras över från ”tom” till ett löpnummer som en del av plockning/packningsprocessen.
+- Produker med faktisk/nominell vikt kan inte användas tillsammans med funktionen för att registrera löpnummer före förbrukning.
 - Produkter med faktisk/nominell vikt som är variantaktiverade kan inte användas tillsammans med funktionen för att konvertera en variant av måttenhet.
 - En produkt med faktisk/nominell vikt kan inte markeras som produktpaket i handel.
 - Produkt med faktisk/nominell vikt kan bara användas med en enhetssekvensgrupp med faktisk/nominell vikthanteringsenheter och som har som lägst sekvens av faktisk/nominell viktenhet.
@@ -171,9 +171,9 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 
 - För produkter med faktisk/nominell vikt stöds endast batchorder för formelprodukter.
 - Kanban-funktionen stöds inte för produkter med faktisk/nominell vikt.
-- Serienummer kan inte registreras före förbrukning för produkter med faktisk/nominell vikt.
+- Löpnummer kan inte registreras före förbrukning för produkter med faktisk/nominell vikt.
 - Funktionen för återföring av registreringsskylt från produktion stöds inte för produkter med faktisk/nominell vikt.
-- Produkter med faktisk/nominell vikt kan rapporteras som färdig registreras efter serienummer.
+- Produkter med faktisk/nominell vikt kan rapporteras som färdig registreras efter löpnummer.
 
 ### <a name="transportation-management-processing"></a>Transporthanteringsprocesser
 
@@ -183,7 +183,7 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andra begränsningar och beteenden för processer med produkter med faktisk/nominell vikt med lagerstyrning
 
 - Vid plockningsprocesser där användaren inte ombeds att identifiera spårningsdimensioner sker viktfördelningen utifrån den genomsnittliga vikten. Detta beteende uppstår när exempelvis en kombination av spårningsdimensioner används på samma plats och efter att en användare bearbetar plockning lämnas endast en spårningsdimension kvar på platsen.
-- När lagret reserveras för en produkt med faktisk/nominell vikt som är konfigurerad för lagerhanteringsprocesser görs bokningen baserat på den minsta vikten som definieras, även om den här kvantiteten är den sista hanteringskvantiteten. Detta beteende skiljer sig från funktionen för artiklar som inte är konfigurerade för hantering av lagerprocesser. Det finns ett undantag till den här begränsningen. För produktionsplockning används den faktiska vikten för den senaste hanteringen av en produkt av faktisk/nominell vikt som är serienummerkontrollerad.
+- När lager reserveras för en produkt med faktisk/nominell vikt som är konfigurerad för lagerstyrningsprocesser (WMS) görs reservationen baserat på den minsta vikten som definieras, även om den här kvantiteten är den sista befintliga hanteringskvantiteten. Detta beteende skiljer sig från funktionen för artiklar som inte är konfigurerade för WMS. Det finns ett undantag till den här begränsningen. För produktionsplockning används den faktiska vikten för den senaste hanteringen av en produkt av faktisk/nominell vikt som är löpnummerkontrollerad.
 - Processer som använder vikten som en del av kapacitetsberäkningar (vågtröskelvärden, arbetets maximala raster, maximal kapacitet för behållare, lastningskapacitet för platsen och så vidare) använder inte lagrets faktiska vikt. I stället baseras processer på vikten av fysisk hantering som är definierad för produkten.
 - I allmänhet stöds inte handelsfunktionen för produkter med faktisk/nominell vikt.
 - För produkter med faktisk/nominell vikt går det inte att uppdatera lagerstatus från **ändring av lagerstatus**.

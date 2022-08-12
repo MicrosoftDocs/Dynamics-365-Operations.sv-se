@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 591c93eef61992507188323909f37e3f33550a7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888395"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068647"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Frisläppning i batch av delvis reserverade överföringsorder
 
@@ -28,7 +28,7 @@ ms.locfileid: "8888395"
 Funktionerna för batchfrisläppande av delvis reserverade överföringsorder gör att du delvis kan frisläppa överföringsorder till ett lager med hjälp av ett batchjobb.
 Eftersom du kan välja att frisläppa en delkvantitet behöver du inte vänta på att hela orderkvantiteten ska vara tillgänglig i distributionslagret innan du frisläpper en order.
 
-Frisläppandet av order till ett lagerställe är en avancerad lagerhanteringsprocess. Denna process involverar aktiviteter, till exempel plockning, paketering och frakt, som en lagerarbetare kan utföra med en mobil enhet.
+Frisläppandet av order till ett lagerställe är en lagerhanteringsprocess (WMS). Denna process involverar aktiviteter, till exempel plockning, paketering och frakt, som en lagerarbetare kan utföra med en mobil enhet.
 
 ## <a name="where-it-applies"></a>Tillämpning
 

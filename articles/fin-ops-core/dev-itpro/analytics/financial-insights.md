@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 21d7d045c812c54d6776394ad9a0b025b55df8e1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464921"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109125"
 ---
 # <a name="financial-analysis"></a>Ekonomisk analys
 
@@ -73,12 +73,12 @@ Du måste uppdatera följande enheter om du vill se data i arbetsytan **Ekonomis
 Du kan definiera ett återkommande batchjobb för att regelbundet uppdatera data i enheterna. Eftersom varje enhet återskapas fullständigt under en uppdatering ska du noggrant välja tid och frekvens för uppdateringar. Den primära enhet som används för bokslut är enheten FinancialReportingTransactionData. Därför kanske du vill uppdatera just den enheten oftare.
 
 ## <a name="security"></a>Säkerhet
-För närvarande kan inte data i inbäddade Power BI-rapporter begränsas till de juridiska personer som användaren har åtkomst till. Därför kontrolleras inbäddade Power BI-rapporter via uppgifter i säkerhetsinställningarna. Behörigheterna som definierar åtkomst till data gäller antingen för alla juridiska personer eller endast för det aktiva företaget. Följande register visar de behörigheter som finns och vilka roller som de har tilldelats. Behörigheter kan tas bort eller tilldelas till olika roller, utifrån organisationens behov.
+För närvarande kan inte data i inbäddade Power BI-rapporter begränsas till de juridiska personer som användaren har åtkomst till. Därför kontrolleras inbäddade Power BI-rapporter via uppgifter i säkerhetsinställningarna. Behörigheterna som definierar åtkomst till data gäller antingen för alla juridiska personer eller endast för det aktiva företaget. Följande register visar de behörigheter som finns och vilka roller som de har tilldelats. Behörigheter kan tas bort eller tilldelas olika roller, utifrån organisationens behov.
 
 | Tullavgift                                    | Roller | beskrivning |
 |-----------------------------------------|-------|------------|
 | Visa aktuellt företag för ekonomisk analys | <ul><li>Redovisare</li><li>Redovisningschef</li><li>Redovisningsansvarig</li><li>Revisor</li><li>Budgetchef</li><li>Verkställande direktör</li><li>Ekonomichef</li><li>Ekonomicontroller</li></ul> | Behörigheten ger tillgång till Ekonomisk analys. Normalt används det aktiva företaget som ett filter. Du kan inte lägga till andra juridiska personer. |
-| Visa alla företag för ekonomisk analys   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, uppgiften inte är tilldelade till en roll. I nästa utgåva kommer behörigheten att tilldelas rollen ekonomichef. | Behörigheten ger åtkomst till menyn för arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
+| Visa alla företag för ekonomisk analys   | In Microsoft Dynamics 365 Finance, Enterprise edition 7.3, tilldelas detta uppdrag inte till någon roll. I nästa utgåva kommer behörigheten att tilldelas rollen ekonomichef. | Behörigheten ger åtkomst till menyn för arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
 
 
 ## <a name="financial-reporting-vs-financial-analysis"></a>Financial reporting jämfört med ekonomisk analys
@@ -96,7 +96,7 @@ Jämförelsediagrammet nedan hjälper dig att skilja de två alternativen:
 | **Stöd för rapportering av hierarki/organisationshierarki**   | Ja                                                               | Nej |
 | **Rapport för redovisningsjournal**                             | Ja Begränsat till en enda leverantör, kund                              | Ja Leverantör, kund, leverantör/kundgrupper, adresser för leverantör/kundgrupp osv. |
 | **Rapporteringsvaluta**                                   | Ja Redovisningsvaluta och översätt till rapporteringsvaluta       | Nej Endast redovisningsvaluta |
-| **Säkerhet**                                             | Ja Ansluter sig till Finance och rapportträdsäkerhet | Begränsad Visa rapporter för alla företag (oavsett Finance and Operations-säkerhet) eller endast aktiva företag |
+| **Säkerhet**                                             | Ja Ansluter sig till Finance och rapportträdsäkerhet | Begränsade rapporter för alla företag (oavsett Ekonomi och drift-säkerhet) eller endast aktiva företag |
 | **Stöd för olika kontoplaner och räkenskapsår** | Ja                                                               | Nej |
 | **rapport för externa data**                              | Nej                                                                | Nej |
 | **Ge stöd till konsolideringar**                               | Ja                                                               | Begränsad Kan rapportera om flera företag men endast använda redovisningsvalutan |
@@ -183,7 +183,7 @@ När du detaljgranskar en enda rad krävs flera val för att återgå till full 
 
 ![Knapp för ökad detaljnivå för råbalans.](./media/trial-balance4.png)
 
-Du kan fortsätta att använda knappen **upp** för att gå tillbaka till den högsta nivån av sammanfattning för raderna.
+Du kan fortsätta använda knappen **upp** för att gå tillbaka till den högsta nivån av sammanfattning för raderna.
 
 Power BI har även en knapp som gör att du kan gå till nästa nivå i hierarkin (den andra knappen efter fältet **detaljgranska**). Effekten av den här knappen skiljer sig från effekterna av knappen **expandera** (tredje knappen efter fältet **detaljgranska**), som används för att expandera hierarkin. När du expanderar hierarkin underhålls hierarkin i rapporten. Till exempel, som visades tidigare, om du expanderar på huvudkontotypen syns fortfarande huvudkontotypen i rapporten. Men när du går till nästa nivå i hierarkin visar rapporten inte längre den överordnade hierarkin, enligt följande illustration.
 
@@ -244,3 +244,4 @@ Informationen i följande resurser krävs inte för att aktivera inbäddade rapp
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 94363
 ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
 ms.search.region: Global
-ms.author: kweekley
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a5917a047d3098875f3ab95087e761e6428c18b
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867623"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135733"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importera verifikationer med hjälp av enheten Allmän journal
 
@@ -49,7 +49,7 @@ I följande avsnitt beskrivs effekterna av dessa inställningar. De förklarar o
 ### <a name="journal-batch-number"></a>Journalbatchnummer
 
 - Inställningen för **Uppsättningsbaserad bearbetning** i enheten Allmän journal påverkar inte hur att journalbatchnummer skapas.
-- Om fältet **Journalbatchnummer** är inställt på **Automatiskt skapad** skapas ett nytt journalbatchnummer för varje rad som importeras. Detta beteende rekommenderas inte. Inställningen **Automatiskt skapade** hittas i importprojektet under **Visa karta** i fliken **Mappningsdetaljer**.
+- Om fältet **Journalbatchnummer** är inställt på **Automatiskt skapad** skapas ett nytt journalbatchnummer för varje rad som importeras. Detta beteende rekommenderas inte. Inställningen **Automatiskt skapade** hittas i importprojektet under **Visa mappning** i fliken **Mappningsdetaljer**.
 - Om fältet **Journalbatchnummer** inte är inställt på **Automatiskt skapad** skapas ett nytt journalbatchnummer enligt följande:
 
     - Om journalbatchnumret som definieras i den importerade filen matchar en befintlig, ej bokförd daglig journal importeras alla rader som har ett matchande journalbatchnummer till den befintliga journalen. Raderna importeras aldrig in i ett bokfört journalbatchnummer. I stället skapas ett nytt nummer.

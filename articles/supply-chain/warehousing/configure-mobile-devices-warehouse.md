@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef392fd744a68c54bc0438152b3487233ac5c7f3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905585"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070362"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurera mobila enheter för distributionslagerarbete
 
@@ -123,13 +123,13 @@ Du kan konfigurera en menykommando som skapar arbete för en annan anställd, ef
 <td>Mottagning överföringsorderartikel</td>
 <td>Registrera inleverans av en kvantitet av en artikel genom att skapa inlagrat arbete för en annan arbetare.
 
-<strong>Obs!</strong> Använd endast det här alternativet, om artiklarna levererats från ett lagerställe som inte har aktiverats för lagerhanteringsprocesser.</td>
+<strong>Obs!</strong> Använd detta alternativ endast om artiklarna levererats från ett lagerställe som inte har aktiverats för lagerhanteringsprocesser (WMS).</td>
 </tr>
 <tr>
 <td>Inleverans och inlagring av överföringsorderartikel</td>
 <td>Registrera inleverans av en kvantitet av en artikel och inlagra artiklarna. Samma arbetare utför båda åtgärder.
 
-<strong>Obs!</strong> Använd endast det här alternativet, om artiklarna levererats från ett lagerställe som inte har aktiverats för lagerhanteringsprocesser.</td>
+<strong>Obs!</strong> Använd detta alternativ endast om artiklarna levererats från ett lagerställe som inte har aktiverats för lagerhanteringsprocesser (WMS).</td>
 </tr>
 <tr>
 <td>Mottagning överföringsorderrad</td>
@@ -185,7 +185,7 @@ Du kan konfigurera en menykommando som skapar arbete för en annan anställd, ef
 </tr>
 <tr>
 <td>Läs in registreringsskylt</td>
-<td>Använd det här alternativet när du konfigurerar ditt lagerställe för första gången. Skanna platser för alla ID-nummer på alla platser i lagerstället. Platserna måste vara registreringsskyltstyrda. Du kan inte använda det här alternativet, om <strong>Serienummer</strong> eller <strong>Batchnummer</strong> anges över <strong>Plats</strong> i lagerreservationshierarkin.</td>
+<td>Använd det här alternativet när du konfigurerar ditt lagerställe för första gången. Skanna platser för alla ID-nummer på alla platser i lagerstället. Platserna måste vara registreringsskyltstyrda. Du kan inte använda det här alternativet, om <strong>Löpnummer</strong> eller <strong>Batchnummer</strong> anges över <strong>Plats</strong> i lagerreservationshierarkin.</td>
 </tr>
 <tr>
 <td rowspan="3">Rullande inventering</td>
@@ -305,7 +305,7 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="even">
 <td>Räkna total artikelkvantitet först</td>
-<td>Välj det här alternativet om du vill tillåta att en arbetare ska inventera den totala kvantiteten först under en inventering. Om en skillnad hittas måste arbetaren ange ytterligare information, till exempel registreringsskyltnumret, batchnummer, serienummer osv.</td>
+<td>Välj det här alternativet om du vill tillåta att en arbetare ska inventera den totala kvantiteten först under en inventering. Om en skillnad hittas måste arbetaren ange ytterligare information, till exempel registreringsskyltnumret, batchnummer, löpnummer osv.</td>
 </tr>
 <tr class="odd">
 <td>Skapa förflyttning</td>

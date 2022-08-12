@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 44b56a59c3b6bb123151988c403382d7c57efd29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d3bb636ed3b807b6017e70ab2051a414cd69af40
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845037"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123911"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.12 augusti 2020
 
@@ -55,7 +55,7 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.12 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.12 av appar för ekonomi och drift (augusti 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 

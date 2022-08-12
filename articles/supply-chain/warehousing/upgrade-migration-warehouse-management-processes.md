@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7a88c5a615ec860890578873eaee736fabbeaf08
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857095"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065823"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Uppgradera lagerstyrning från Microsoft DynamicsAX 2012 till Supply Chain Management 
 
@@ -37,11 +37,11 @@ Under en uppgradering har alla produkter som hör till en lagringsdimensionsgrup
 Efter uppgraderingen kan du däremot använda en uppsättning alternativ i formuläret **Ändra lagringsdimensionsgruppen för artiklar** för att avblockera produkter som har blockerats under uppgraderingen och sedan bearbeta transaktioner för dessa produkter.
 
 ### <a name="enabling-items-in-supply-chain-management"></a>Aktivera artiklar i Supply Chain Management 
-Den här ändringen krävs eftersom i Supply Chain Management är spårning en del av lagerstyrningsprocesserna. För de här processerna måste alla lagerställen och deras platser associeras med en platsprofil. Om du vill använda lagerstyrningsprocesser, ska följande konfigureras:
--   Befintliga lagerställen måste aktiveras för lagerstyrningsprocesser. 
--   Befintliga frisläppta produkter måste associeras med en lagringsdimensionsgrupp som använder lagerstyrningsprocesser. 
+Den här ändringen krävs eftersom artikelspårning utgör en del av lagerstyrningsprocesserna (WMS) i Supply Chain Management. För de här processerna måste alla lagerställen och deras platser associeras med en platsprofil. Om du vill använda WMS måste följande konfigureras:
+-   Befintliga lagerställen måste aktiveras för att du ska kunna använda WMS 
+-   Befintliga frisläppta produkter måste associeras med en lagringsdimensionsgrupp som använder WMS 
 
-Om källan lagringsdimensionsgrupper använder lagerdimension lastpalls-ID, måste placeringen av befintliga lager som används för lagerdimension lastpalls-ID associeras med en platsprofil där parametern **Använd registreringsskyltsspårning** väljs. Om befintliga lagerställen inte ska aktiveras för att använda lagerstyrningsprocesser kan du ändra lagringsdimensionsgrupper för den befintliga lagerbehållningen till grupper som endast hanterar endast plats, lagerställe och platslagerdimensioner. 
+Om källan lagringsdimensionsgrupper använder lagerdimension lastpalls-ID, måste placeringen av befintliga lager som används för lagerdimension lastpalls-ID associeras med en platsprofil där parametern **Använd registreringsskyltsspårning** väljs. Om befintliga lagerställen inte ska aktiveras för att använda WMS kan du ändra lagringsdimensionsgrupperna för den befintliga lagerbehållningen till grupper som endast hanterar dimensionerna webbplats, lagerställe och platslager. 
 
 > [!NOTE] 
 >  Du kan ändra lagringsdimensionsgruppen för artiklar även om det finns öppna lagertransaktioner.
@@ -56,12 +56,12 @@ Artiklar som ska användas som en del av lagerstyrningsprocesser måste associer
 Om du vill upphäva blockeringen av produkter som blockerades under uppgraderingen måste du välja en ny lagringsdimensionsgruppen för produkterna. Observera att du kan ändra lagringsdimensionsgruppen även om det finns öppna lagertransaktioner. Om du vill använda artiklar som har blockerats under uppgraderingen har du två möjligheter:
 
 -   Ändra lagringsdimensionsgruppen för artikeln till en lagringsdimensionsgrupp som endast använder plats, lagerställe och platslagerdimensioner. Ändringen innebär att lagerdimensionen lastpalls-ID inte längre används.
--   Ändra lagringsdimensionsgruppen för artikeln till en lagringsdimensionsgrupp som endast använder lagerstyrningsprocesser. Ändringen innebär att lagerdimensionen registreringsskylt används nu.
+-   Ändra lagringsdimensionsgruppen för artikeln till en lagringsdimensionsgrupp som endast använder WMS. Ändringen innebär att lagerdimensionen registreringsskylt används nu.
 
-## <a name="configure-warehouse-management-processes"></a>Konfigurera lagerstyrningsprocesser
+## <a name="configure-wms"></a>Konfigurera WMS
 Innan du kan använda frisläppta produkter i **lagerstyrningsmodulen** måste produkterna använda en lagringsdimensionsgrupp där parametern **Använd lagerstyrningsprocesser** väljs.
 
-### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Aktivera lagerställen för att använda lagerstyrningsprocesser
+### <a name="enable-warehouses-to-use-wms"></a>Aktivera lagerställen för att använda WMS
 
 1.  Skapa minst en ny platsprofil.
 2.  Klicka på **Lagerstyrning** &gt; **Inställningar** &gt; **Aktivera lagerstyrningsprocesser** &gt; **Aktivera inställning av lagerställe**.
@@ -70,7 +70,7 @@ Innan du kan använda frisläppta produkter i **lagerstyrningsmodulen** måste p
 5.  Godkänn ändringarna. Som en del av valideringen kan olika valideringar av dataintegritet uppträda. Som en del av en större uppgraderingsprocess kan problem som uppstår justeras på källimplementeringen. I detta fall krävs ytterligare en datauppgradering.
 6.  Behandla ändringarna.
 
-### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Ändra lagringsdimensionsgruppen för artiklar, så att den använder lagerstyrningsprocesser
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-wms"></a>Ändra lagringsdimensionsgruppen för artiklar, så att denna använder WMS
 
 1.  Skapa ett nytt värde för **Lagerstatus** och tilldela det som **Status-ID för lager som standard** i inställningarna för **Lagerstyrningsparametrar**.
 2.  Skapa en ny lagringsdimensionsgrupp där parametern **Använd lagerstyrningsprocesser** väljs.

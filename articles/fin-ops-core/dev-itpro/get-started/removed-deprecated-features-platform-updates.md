@@ -1,6 +1,6 @@
 ---
 title: Borttagna eller utfasade plattformsfunktioner
-description: I denna artikel beskrivs funktioner som har tagits bort, eller som planerats för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
+description: I denna artikel beskrivs funktioner som har tagits bort eller som planeras för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,36 +12,36 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945816"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069935"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller utfasade plattformsfunktioner
 
 [!include [banner](../includes/banner.md)]
 
-I denna artikel beskrivs funktioner som har tagits bort, eller som planerats för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
+I denna artikel beskrivs funktioner som har tagits bort eller som planeras för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av appar för ekonomi och drift.
+Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i respektive version av appar för ekonomi och drift.
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Utfasning av funktioner från juni 2022
 
-### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Ekonomi och drift (Dynamics 365) mobilapp och mobil plattform 
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Mobilapp och mobil plattform för ekonomi och drift (Dynamics 365) 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Vi tar bort mobilapplikationen Ekonomi och drift (Dynamics 365) för konsolidering till en enda mobil plattform, det vill säga Power Apps. |
-| **Ersatt av en annan funktion?**   | Ja, mobilerfarenheter över data i programmet Ekonomi och drift kan byggas med Power Platform integration. Se [blogginlägget](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) och [Bygga mobila upplevelser](../power-platform/build-mobile-experiences.md) för mer information. |
-| **Produktområden som påverkas**         | Ekonomi och drift-appar |
+| **Orsak till inaktuell/borttagning** | Vi håller på att avveckla mobilappen och plattformen för ekonomi och drift (Dynamics 365) för att istället konsolidera till en enda mobil plattform, det vill säga Power Apps. |
+| **Ersatt av en annan funktion?**   | Ja, mobilupplevelser över appdata för Ekonomi och drift kan byggas med Power Platform-integrering. Se [blogginlägget](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) och [Bygga mobila upplevelser](../power-platform/build-mobile-experiences.md) för mer information. |
+| **Produktområden som påverkas**         | Appar för ekonomi och drift |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell. Slutdatum för supportdatum är till oktober 2024. |
 
@@ -67,7 +67,7 @@ Detaljerad information om objekt i appar för ekonomi och drift finns i [Teknisk
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Vi tar bort stöd för XML-URL-lösning eftersom detta har identifierats som en potentiell sårbar punkt. Det innebär att externa resurser som är kopplade till XML-filer inte längre kan lösas.  |
 | **Ersatt av en annan funktion?**   | Nej |
-| **Produktområden som påverkas**         | appar för ekonomi och drift |
+| **Produktområden som påverkas**         | Appar för ekonomi och drift |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell. |
 
@@ -77,11 +77,11 @@ Detaljerad information om objekt i appar för ekonomi och drift finns i [Teknisk
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Stödet för XSLT-skript i Datahantering blir avvecklas i syfte att förbättra säkerheten och datasäkerheten i apparna för ekonomi och drift.  |
+| **Orsak till inaktuell/borttagning** | Stödet för XSLT-skript i Datahantering kommer att avvecklas i syfte att förbättra säkerheten och datasäkerheten i appar för ekonomi och drift.  |
 | **Ersatt av en annan funktion?**   | Nej Kunder och ISV bör överväga att implementera om sina lösningar baserat på X++-språk i stället för på XSLT-skript. |
-| **Produktområden som påverkas**         | appar för ekonomi och drift |
+| **Produktområden som påverkas**         | Appar för ekonomi och drift |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell <br><br>**Undantag**: Kunder som för närvarande använder XLST-skript. Dessa kan fortsätta att använda den tills de uppdaterar till version 10.0.30 eller senare. För tidigare versioner upphör undantaget att gälla den 31 januari 2023. Kunder med detta undantag har fått ett meddelande i Meddelandecentret som är tillgängligt i administratörscentret för Microsoft 365. |
+| **Status**                         | Inaktuell <br><br>**Undantag**: Kunder som för närvarande använder XLST-skript. Dessa kan fortsätta använda den tills de uppdaterar till version 10.0.30 eller senare. För tidigare versioner upphör undantaget att gälla den 31 januari 2023. Kunder med detta undantag har fått ett meddelande i Meddelandecentret som är tillgängligt i administratörscentret för Microsoft 365. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Funktionsborttagning som gäller oktober 2021
 
@@ -196,7 +196,7 @@ Detaljerad information om objekt i appar för ekonomi och drift finns i [Teknisk
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den här funktionen har tagits bort för att minska omkostnaderna för hantering, övervakning och underhåll av indexhanteringen för kunder. |
 | **Ersatt av en annan funktion?**   | Framåt kommer indexunderhållet att utföras av Microsoft-tjänster. Detta sker kontinuerligt utan att användararbetsbelastningarna påverkas. |
-| **Produktområden som påverkas**         | appar för ekonomi och drift|
+| **Produktområden som påverkas**         | Appar för ekonomi och drift|
 | **Distribueringsalternativ**              | Molnbaserad distribution – påverkar Microsoft-hanterade produktionsmiljöer och Nivå 2 via Nivå 5 miljöer med begränsat läge. |
 | **Status**                         | Denna funktion är borttagen. |
 
@@ -228,7 +228,7 @@ Detaljerad information om objekt i appar för ekonomi och drift finns i [Teknisk
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Metadata som är associerade med Dynamics AX 2012 Enterprise Portal (EP) är utfasad eftersom EP aldrig haft stöd i Ekonomi- och Drift-appar. |
+| **Orsak till inaktuell/borttagning** | De metadataobjekt som är associerade med Dynamics AX 2012 Enterprise Portal (EP) har fasats ut eftersom EP aldrig haft stöd i apparna för ekonomi och drift. |
 | **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
@@ -280,7 +280,7 @@ Detaljerad information om objekt i appar för ekonomi och drift finns i [Teknisk
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | I allmänhet erbjuder anpassad kod begränsade fördelar men kräver samtidigt avsevärd resurshantering och beräkning för stöd. Anpassad kod används främst av rapportförfattare för att anropa offentliga metoder från en anpassad kodsammansättning. Den molnbaserade tjänsten stöder dock inte referenser till anpassade sammansättningar för SSRS-rapporter. |
-| **Ersatt av en annan funktion?**   | Rapportförfattare kan välja att fortsätta att referera till offentliga .NET API:er för matematik-, konverterings- och formatåtgärder från valfritt textruteuttryck. Mer information finns i [Lägga till kod i en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
+| **Ersatt av en annan funktion?**   | Rapportförfattare kan välja att fortsätta referera till offentliga .NET API:er för matematik-, konverterings- och formatåtgärder från valfritt textruteuttryck. Mer information finns i [Lägga till kod i en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Produktområden som påverkas**         | Delmängd av design för programrapport som definierats i RDL som innehåller anpassad kod. |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Med version 10.0.13 börjar kompileraren att utfärda en varning för instanser där anpassad kod identifieras i en rapportdefinition för SSRS. Lös problemet genom att öppna rapportdesignens definition och ta bort alla anpassade kodartefakter. Den här varningen kommer att ersättas med ett kompileringsfel i en framtida uppdatering.   |
@@ -322,7 +322,7 @@ Detaljerad information om objekt i appar för ekonomi och drift finns i [Teknisk
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Datagruppegenskapen för rutnäts- eller gruppkontroller används för att automatiskt visa alla fält i en fältgrupp. En rutnäts- eller gruppkontroll som läggs till av tillägget kan innehålla fält som inte längre definieras i fältgruppen, eller saknas fält som är definierade i fältgruppen. Detta kan orsaka inkonsekvent beteende vid körning. Plattformsuppdateringar för version 10.0.12 av appar för ekonomi och drift kategoriserar nu det här problemet som ett *kompilatorvarning*. Du åtgärdar det här problemet genom att öppna formulärtillägget och spara det.
+| **Orsak till inaktuell/borttagning** | Datagruppegenskapen för rutnäts- eller gruppkontroller används för att automatiskt visa alla fält i en fältgrupp. En rutnäts- eller gruppkontroll som läggs till av tillägget kan innehålla fält som inte längre definieras i fältgruppen, eller saknas fält som är definierade i fältgruppen. Detta kan orsaka inkonsekvent beteende vid körning. Plattformsuppdateringar för version 10.0.12 av appar för ekonomi och drift kategoriserar nu det här problemet som en *kompilatorvarning*. Du åtgärdar det här problemet genom att öppna formulärtillägget och spara det.
 | **Ersatt av en annan funktion?**   | Den här kompilatorvarningen kommer att ersättas med ett kompileringsfel i en framtida uppdatering. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
@@ -398,3 +398,4 @@ Om du vill veta mer om funktioner som har tagits bort eller ersatts i tidigare v
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

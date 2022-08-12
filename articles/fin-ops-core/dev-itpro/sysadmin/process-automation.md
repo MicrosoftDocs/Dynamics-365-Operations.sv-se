@@ -2,7 +2,7 @@
 title: Processautomatisering
 description: Den här artikeln innehåller information om hur processautomatisering tillåter enkel schemaläggning av processer som ska köras av batchservern.
 author: RyanCCarlson2
-ms.date: 04/20/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: f13392fd6610735f8c539d42b62cf71cece71fba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
+ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898621"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9114948"
 ---
 # <a name="process-automation"></a>Processautomatisering
 
@@ -30,7 +30,7 @@ Processautomatisering tillåter enkel schemaläggning av processer som ska köra
 
 Sidan Central administration för alla automatiseringar av processer finns i modulen systemadministration på menyn **Inställningar**. Den här sidan visar alla automatiserade processer (serier) som är inställda i systemet. Du kan också lägga till nya processautomatiseringar direkt från den här sidan. När en serie har ställts in kan du hantera varje serie från den här listan. Du kan välja att redigera hela serien, ta bort den, visa alla förekomster i en listvy eller inaktivera serien om du vill pausa det schemalagda arbetet under en tid. 
 
-Alla processer som inaktiveras i funktionshanteringen visas inte när funktionen är inaktiverad. Dessutom kommer schemaläggningsmotorn för processautomation inte att schemalägga några händelser eller bakgrundsprocesser för en inaktiverad funktion. Om du aktiverar funktionen igen kommer schemalagda förekomster eller bakgrundsprocesser tidigare att kunna köras omedelbart. Planeringsmotorn för processautomatisering använder sig av systemets batchjobb **Systemjobb för processautomatiseringssökning** för att kunna köras. Jobbet bör aldrig ändras eller modifieras. 
+Alla processer som inaktiveras i funktionshanteringen visas inte när funktionen är inaktiverad. Dessutom kommer schemaläggningsmotorn för processautomation inte att schemalägga några händelser eller bakgrundsprocesser för en inaktiverad funktion. Om du aktiverar funktionen igen kommer schemalagda förekomster eller bakgrundsprocesser tidigare att kunna köras omedelbart. Planeringsmotorn för processautomatisering använder sig av systemets batchjobb **Systemjobb för processautomatiseringssökning** för att kunna köras. Jobbet bör aldrig ändras eller modifieras. Om det här batchjobbet inte körs eller har drabbats av ett fel väljer du **Initiera processautomatisering** för att återställa batchjobbet. Denna återställning garanterar att alla nya automationer som frisläpps i en nyare version av programmet initieras. 
 
 ## <a name="calendar-view"></a>Kalendervy
 

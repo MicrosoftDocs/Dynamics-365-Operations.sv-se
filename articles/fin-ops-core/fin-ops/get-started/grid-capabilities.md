@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5259e1d7d6c95074337164d8427d7f035e00dbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 07791afb2de670a5b9b910e441395c2949460394
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890070"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124723"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -35,10 +35,10 @@ Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktion
 - Sträckbara kolumner
 
 ## <a name="calculating-totals"></a>Beräknar summor
-I appar för ekonomi och drift har användare möjlighet att visa summor längst ned på numeriska kolumner i rutnät. Dessa summor visas i ett sidfotsavsnitt längst ned i rutnätet. 
+I appar för ekonomi och drift har användare möjlighet att visa summor längst ned i numeriska kolumner i rutnät. Dessa summor visas i ett sidfotsavsnitt längst ned i rutnätet. 
 
 ### <a name="showing-the-grid-footer"></a>Visa rutnätets sidfot
-Det finns ett sidfotsområde längst ned i alla tabell rutnät i program för ekonomi och drift. Sidfoten kan visa värdefull information som är relaterad till de data som visas i rutnätet. Här följer några exempel på denna information:
+Det finns ett sidfotsområde längst ned i alla tabellrutnät i appar för ekonomi och drift. Sidfoten kan visa värdefull information som är relaterad till de data som visas i rutnätet. Här följer några exempel på denna information:
 
 - Antalet markerade rader i tabellen (om fler än en post har valts)
 - Total summor längst ned i konfigurerade numeriska kolumner
@@ -86,7 +86,7 @@ För att det nya beteendet ska fungera har en ny kolumn för radstatus lagts til
 När användarna skriver in data i förväg på den plats där servern bearbetas, kan de förvänta sig en del graderingar i data inmatningsupplevelsen, t.ex. brist på sökningar, validering på kontrollnivå och registrering av standardvärden. Användare som behöver en nedrullningsbar lista för att hitta ett värde bör vänta på att servern ska fånga upp den aktuella raden. Verifiering och inmatning av standardvärden på kontrollnivå görs också när servern bearbetar raden.
 
 ### <a name="pasting-from-excel"></a>Klistra in från Excel
-Användare har alltid kunnat exportera data från rutnät i appar för ekonomi och drift till Microsoft Excel med hjälp av funktionen **exportera till Excel**. Möjligheten att föra in data i förväg av systemet gör dock att det nya rutnätet kan användas för att kopiera tabeller från Excel och klistra in dem direkt i rutnät appar för ekonomi och drift. Rutnätscellen som Inklistringsåtgärden initieras från avgör var den kopierade tabellen börjar klistras in. Innehållet i rutnätet skrivs över av innehållet i den kopierade tabellen, utom i två fall:
+Användare har alltid kunnat exportera data från rutnät i appar för ekonomi och drift till Microsoft Excel med hjälp av funktionen **Exportera till Excel**. Möjligheten att mata in data före systemet gör emellertid att det nya rutnätet kan användas för att kopiera tabeller från Excel och klistra in dem direkt i rutnät appar för ekonomi och drift. Rutnätscellen som Inklistringsåtgärden initieras från avgör var den kopierade tabellen börjar klistras in. Innehållet i rutnätet skrivs över av innehållet i den kopierade tabellen, utom i två fall:
 
 - Om antalet kolumner i den kopierade tabellen överstiger antalet kolumner som finns kvar i rutnätet, från inklistringsplatsen meddelas användaren att de extra kolumnerna har ignorerats. 
 - Om antalet rader i den kopierade tabellen överstiger antalet rader i rutnätet, med början från inklistringsområdet, skrivs de befintliga cellerna över av det inklistrade innehållet och eventuella extra rader från den kopierade tabellen infogas som nya rader längst ned i rutnätet. 
@@ -97,7 +97,7 @@ Som en produktivitetsförstärkning kan användarna ange matematiska formler i n
 Om du vill att ett värde ska beaktas som ett uttryck i systemet startar du värdet med ett likhetstecken (**=**). Mer information om operatorer och syntax som stöds finns i [matematiska symboler som stöds](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppera data i tabellform
-Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen (förhandsversion) **gruppera i rutnät** som är beroende av den nya nätkontrollfunktionen, tillåter användare att organisera sina tabelldata på intressanta sätt i appar för ekonomi och drift. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
+Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Även om detta kan utföras genom att exportera data till Microsoft Excel och med hjälp av fästpunktstabeller gör funktionen **Gruppera i rutnät**, som är beroende av den nya kontrollfunktionen för rutnät, det möjligt för användare att organisera sina tabelldata på intressanta sätt i appar för ekonomi och drift. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
 
 Om du vill använda den här funktionen högerklickar du på den kolumn som du vill gruppera efter och väljer **gruppera efter denna kolumn**. Den här åtgärden sorterar data efter den markerade kolumnen, lägger till en ny **Gruppera efter**-kolumn i början av rutnätet och infogar "rubrikrader" i början av varje grupp. Dessa rubrikrader innehåller följande information om varje grupp:
 
@@ -136,7 +136,7 @@ Från och med version 10.0.24 för fälten Datum eller DateTime har alternativet
 ## <a name="freezing-columns"></a>Låsa kolumner
 En del kolumner i ett rutnät kan vara så viktiga för sammanhanget att du inte vill att de ska rulla ut ur visningen. Istället vill du att värdena i dessa kolumner alltid ska vara synliga. Funktionen **Lås kolumner i rutnät** flexibiliteten för användarna. 
 
-Om du vill låsa en kolumn högerklickar du i kolumnens rubrik och väljer sedan **Lås kolumn**. Första gången du slutför det här steget blir den valda kolumnen den första kolumnen och kan inte längre rulla ut ur visningen. Alla efterföljande kolumner som du fryser läggs till till höger om den sista låsta kolumnen. Du kan använda standardfunktionen Flytta om du vill beställa om låsta kolumner efter behov. Låsta kolumner kan emellertid inte flyttas så att de visas bland de olästa kolumnerna. Ej låsta kolumner kan emellertid inte flyttas så att de visas bland de låsta kolumnerna.
+Om du vill låsa en kolumn högerklickar du i kolumnens rubrik och väljer sedan **Lås kolumn**. Första gången du slutför det här steget blir den valda kolumnen den första kolumnen och kan inte längre rulla ut ur visningen. Alla efterföljande kolumner som du fryser läggs till höger om den sista låsta kolumnen. Du kan använda standardfunktionen Flytta om du vill beställa om låsta kolumner efter behov. Låsta kolumner kan emellertid inte flyttas så att de visas bland de olästa kolumnerna. Ej låsta kolumner kan emellertid inte flyttas så att de visas bland de låsta kolumnerna.
 
 Om du vill låsa upp en kolumn högerklickar du i kolumnens rubrik och väljer sedan **Lås upp kolumn**. 
 
@@ -168,7 +168,7 @@ Om du har valt att inte använda det nya rutnätet för en enskild sida kanske d
 ## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Utvecklare] Välja enskilda rutnät utanför skriva före systemkapaciteten
 Vissa scenarier har uppstått som inte lämpar sig för att fungera bra med funktionen *Skriva före systemet* för rutnätet. (Till exempel, en del kod som utlöses när en rad valideras gör att en datakällforskning utlöses, och forskningen kan sedan korrumpera oengagerade redigeringar på befintliga rader.) Om din organisation upptäcker ett sådant scenario finns ett API tillgängligt som låter en utvecklaren väljer bort ett individuellt rutnät från asynkron radvalidering och återgår till det äldre beteendet.
 
-När asynkron radvalidering inaktiveras i ett rutnät kan användarna inte skapa någon ny rad eller flytta till en annan befintlig rad i rutnätet när det finns valideringsproblem på den aktuella raden. Den här åtgärden innebär att register inte kan klistras in från Excel till rutnäten Ekonomi och Drift.
+När asynkron radvalidering inaktiveras i ett rutnät kan användarna inte skapa någon ny rad eller flytta till en annan befintlig rad i rutnätet när det finns valideringsproblem på den aktuella raden. En sidoeffekt av denna åtgärd är att tabeller inte kan klistras in från Excel till rutnät i Ekonomi och drift.
 
 För att välja bort asynkron radvalidering för ett enskilt rutnät, lägg till följande anrop efter `super()` i formulärets `run()`-metod.
 
@@ -200,3 +200,4 @@ I det här avsnittet finns en lista över kända problem för den nya rutnätsko
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

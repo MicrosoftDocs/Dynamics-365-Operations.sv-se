@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38a9e2740232b18255109ba867fcdddd5b890774
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849943"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151045"
 ---
 # <a name="purchase-order-posting"></a>Bokföring av inköpsorder
 
@@ -93,10 +93,10 @@ Följande tabell innehåller exempel på standardbokföringstyper med exempelhuv
 
 | Bokföringstyp | Huvudkonto exempel | Huvudkonto namnexempel | Kontotyp | Debit/kredit? | Clearingkonto | P/F | Följ | Beskrivning |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Kostnad för inköpt material som inlevererats | 140100</br>140101 | Materiallager</br>Levererade material, inte fakturerade | Tillgång | Debet | Ja | P | Kostnad för inköpt material som fakturerats | Används när en inköpsorder för produktinleverans bokförs. Motbokningen till kontot är Inköpsomkostnad, ej fakturerad. Beloppet på detta konto återförs när en inköpsorderfaktura bokförs. |
+| Kostnad för inköpt material som inlevererats | 140100</br>140101 | Materiallager</br>Levererade material, inte fakturerade | Tillgång | Debet | Ja | P | Kostnad för inköpt material som fakturerats | Används när ett produktkvitto för inköpsorder bokförs, kontoförskjutningen är Inköpsomkostnad, ofakturerad. Beloppet på detta konto återförs när en inköpsorderfaktura bokförs. |
 | Inköpsomkostnad, ej fakturerad | 600180 | Materialinleveranser | Utgift | Debet | Ja | P | |Används när en inköpsorder för produktinleverans bokförs. Två verifikationer skapas för inleveransen för att spåra inköpsprisavvikelser när standardkostnad används. Motbokningen till kontot på den första verifikationen är periodisering av inköp. Motbokningen på den andra verifikationen är summan av kontona Kostnad för inköpt material som inlevererats och Redovisningskonton för inköpsprisavvikelser.. Beloppen som bokfördes på detta konto återförs när en inköpsorderfaktura bokförs. |
 | Kostnad för inköpt material som fakturerats | 140100 | Materiallager | Tillgång | Debet | Nej | F  |Kostnad för inköpt material som inlevererats | Används när en inköpsorderfaktura bokförs. Motbokningen till kontot är Inköpsomkostnad för produkt. Detta konto representerar lagret i balansräkningen. Kontot som används är normalt samma konto som används för Kostnader för levererade enheter och Kostnader för enheter som fakturerats för försäljningsorder. |
-| Inköpsomkostnad för produkt | 600180 | Materialinleverans | Utgift | Kredit | Nej | F  | |Används när en inköpsorderfaktura bokförs. Motbokningen till detta konto är Kostnad för inköpt material. Detta konto representerar lagret i balansräkningen. |
+| Inköpsomkostnad för produkt | 600180 | Materialinleverans | Utgift | Kredit | Ja | F  | |Används när en inköpsorderfaktura bokförs. Två verifikationer skapas för fakturan i syfte att spåra inköpsprisavvikelser när standardkostnad används. Förskjutningen till detta konto är inköpsomkostnaden, ett icke-fakturerat konto som används på inleveransbokföringen och återförs under fakturabokföringen. Representerar kostnader för det lager som köpts in vid fakturering och inte återspeglas i lagerkontot i balansräkningen. Detta är en vinst- och förlustbokföring för inköpsprisavvikelse som vanligtvis ses i artikelinköp till standardkostnad.|
 | Fast inleveransprisvinst (Inköp, fast inleveransprisvinst*) | 510310 | Inköpsprisavvikelse | Utgift | Kredit | Nej | F | Fast inleveransprisdifferens (-) | Används när en inköpsorderfaktura bokförs och det finns en skillnad mellan det fakturerade priset och standardkostnaden för artikeln. Det här kontot används när differensen är högre. Motkontot är det här kontot är Motkonto för fast inleveranspris. |
 | Fast inleveransprisdifferens (Inköp, fast inleveransprisförlust*) | 510310 | Inköpsprisavvikelse | Utgift | Debet | Nej | F | Fast inleveransprisdifferens (+) | Används när en inköpsorderfaktura bokförs och det finns en skillnad mellan det fakturerade priset och standardkostnaden för artikeln. Det här kontot används när differensen är lägre. Motkontot är det här kontot är Motkonto för fast inleveranspris. |
 | Motkonto för fast inleveranspris (Inköp, motkonto för fast inleveranspris*) | 140900 | Lagervariation | Tillgång | Båda | Nej | F  | |Används när en inköpsorderfaktura bokförs och det finns en skillnad mellan det fakturerade priset och standardkostnaden för artikeln. Detta konto är motkonto till resultaträkningen för fast kvittopris. |
@@ -127,7 +127,7 @@ Inköpsrekvisitioner och inköpsorderbekräftelser kan också konfigureras för 
 
 Ett alternativ till att ställa in lagerbokföring för alla artiklar, en artikelgrupp eller en enskild artikel är att ställa in kategorier och kontrollera redovisningsbokföringen efter anskaffningskategorier. Mer information om hur du ställer in kategorier och tilldelar dem till produkter finns i [Exempel på bokföringsprofilkonfiguration](#sample-posting-profile-configuration) tidigare i den här artikeln.
 
-När du använder kategorier med inköpsorder eller leverantörsfakturor måste kategorihierarkin tilldelas till typen **Anskaffningskategorihierarki** på sidan **Rolltilldelningar för kategorihierarki**.
+När du använder kategorier med inköpsorder eller leverantörsfakturor måste kategorihierarkin tilldelas typen **Anskaffningskategorihierarki** på sidan **Rolltilldelningar för kategorihierarki**.
 
 ### <a name="vendor-invoices-with-procurement-categories"></a>Leverantörsfaktura med anskaffningskategorier
 

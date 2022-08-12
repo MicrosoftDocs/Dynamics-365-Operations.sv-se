@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 075e74845eb8e0363cdb706f1f3af0dc9cfddfaa
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893103"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069195"
 ---
 # <a name="replenishment-overview"></a>Lagerpåfyllnad – översikt
 
@@ -70,8 +70,8 @@ Du kan applicera en omedelbar påfyllnadsstrategi istället för att behöva sam
 
 |      Förutsättning       |                                                                                                                                beskrivning                                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          Artikel           |                                                                                                        Artikeln måste aktiveras för lagerhanteringsprocesser.                                                                                                        |
-|        Lagerställe        | Lagerstället måste aktiveras för lagerhanteringsprocesser. Välj lager på sidan <strong>Warehouses</strong> och sedan alternativet <strong>Använd hanteringsprocesser för lager</strong> om du vill aktivera ett lager för lagerhanteringsprocesser. |
+|          Artikel           |                                                                                                        Artikeln måste aktiveras för lagerstyrningsprocesser (WMS).                                                                                                        |
+|        Lagerställe        | Lagerstället måste aktiveras för lagerstyrningsprocesser (WMS). Om du vill aktivera ett lagerställe för WMS väljer du lagerstället på sidan <strong>Lagerställen</strong> och markerar sedan alternativet <strong>Använd lagerstyrningsprocesser</strong>. |
 | Mallar för lagerpåfyllnad |                                                                   Minst en lagerpåfyllnadsmall måste markeras för Minsta/största lagerpåfyllnad, Lagerpåfyllnad baserad på efterfrågan eller Lagerpåfyllnad för lastefterfrågan.                                                                   |
 |        Platser        |                                                                                                       Platser måste skapas och anslutas till en platsprofil.                                                                                                       |
 |    Platsprofiler    |                                                                                                        Platsprofiler krävs för att skapa platser.                                                                                                        |

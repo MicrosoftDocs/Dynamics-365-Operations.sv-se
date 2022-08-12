@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65d45eaf618075e0c78881634fc77bda0fab277e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849743"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065687"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lagringsavskrivning för Lifecycle Services (LCS)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8849743"
 
 Användningen av Microsoft Dynamics Lifecycle Services (LCS) som en lagringsdatabas för elektroniska rapporteringskonfigurationer (ER) håller på att avskrivas. Denna avskrivning kommer att innefatta följande ändringar:
 
-- Microsoft-framställda konfigurationer som används i Microsoft Dynamics 365-program kommer inte längre att publiceras i biblioteket för gemensamma tillgångar i LCS. I stället kommer de endast att publiceras via den globala RCS-databasen. Konfigurationer för Dynamics AX 2012 kommer emellertid att fortsätta att publiceras i biblioteket för gemensamma tillgångar i LCS ända tills supportlivscykeln för AX 2012 avslutas.
+- Microsoft-framställda konfigurationer som används i Microsoft Dynamics 365-program kommer inte längre att publiceras i biblioteket för gemensamma tillgångar i LCS. I stället kommer de endast att publiceras via den globala RCS-databasen. Konfigurationer för Dynamics AX 2012 kommer emellertid att fortsätta publiceras i biblioteket för gemensamma tillgångar i LCS ända tills supportlivscykeln för AX 2012 avslutas.
 - De funktioner som gör att du kan överföra konfigurationer till projekttillgångsbiblioteket i LCS från appar för ekonomi och drift samt från RCS kommer att inaktiveras. Du kommer emellertid fortfarande att kunna använda webbläsaren i LCS för att överföra konfigurationer till projekttillgångsbiblioteket. Därför kommer du fortfarande att kunna lägga till konfigurationer i LCS så att dessa kan inkluderas i lösningspaket.
 - Importen av konfigurationer från LCS kommer att vara fortsatt tillgänglig och stödjas i appar för ekonomi och drift samt i RCS, åtminstone under en viss tid. I slutändan kommer funktionen emellertid att avskrivas. (Det exakta datumet för avskrivning kommer att meddelas senare.)
 

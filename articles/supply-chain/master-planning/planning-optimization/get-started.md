@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900982"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112223"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom igång med Planeringsoptimering
 
@@ -40,7 +40,7 @@ Innan du aktiverar Planeringsoptimeringen rekommenderar vi att du utvärderar re
 
 ## <a name="availability"></a>Tillgänglighet
 
-Planeringsoptimering är för närvarande tillgänglig i följande Azure-områden: USA, Kanada, Brasilien, Europa, Storbritannien, Australien och Asien och Stillahavsområdet, Japan och Indien. Om du försöker installera tillägget från ett annat geografiskt område visas ett meddelande om att detta geografiska område inte stöds. Mer information om Azure-områden och relaterade regioner finns i [Azure-områden](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planeringsoptimering är för närvarande tillgänglig i följande Azure-områden: USA, Kanada, Brasilien, Europa, Frankrike, Storbritannien, Australien, Asien och Stillahavsområdet, Japan samt Indien. Om du försöker installera tillägget från ett annat geografiskt område visas ett meddelande om att detta geografiska område inte stöds. Mer information om Azure-områden och relaterade regioner finns i [Azure-områden](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Observera att Planeringsoptimering inte har stöd för lokala distributioner av Dynamics 365 Supply Chain Management.
 
@@ -58,7 +58,7 @@ Innan du installerar tillägget Planeringsoptimering måste följande förutsät
 
 - Du måste köra Supply Chain Management på en LCS-aktiverad miljö med hög tillgänglighet, lägst nivå 2, (inte en OneBox-miljö) med Dynamics 365 Supply Chain Management version 10.0.7 eller senare. Om du försöker installera tillägget i en OneBox-miljö kommer installationen inte att slutföras och du måste avbryta installationen.
 
-- Ditt system måste ha ställts in för Power Platform-integrering. Mer information finns i [Microsoft Power Platform-integrering med Ekonomi och drift-appar](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+- Ditt system måste ha ställts in för Power Platform-integrering. Mer information finns i [Microsoft Power Platform-integrering med appar för ekonomi och drift](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Aktivera licensen för Planeringsoptimeringen
 
@@ -135,3 +135,4 @@ Om Planeringsoptimeringen är aktiverad görs huvudplanering med tillägget Plan
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

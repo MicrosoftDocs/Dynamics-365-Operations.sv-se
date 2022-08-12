@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19a1fd53f19575a16ee8d8b7391c30f0cacf26a8
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876727"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111469"
 ---
 # <a name="note-integration"></a>Integrering av anteckning
 
@@ -30,7 +30,7 @@ Kundinformation kan klassificeras på följande sätt:
 + **Åtgärdsbar information för en Dynamics 365-användare** – En kund som köper en Surface-enhet anger speciella instruktioner som anger att enheten ska vara gift förpackad före leverans. Instruktionerna är åtgärdsbar information som ska hanteras av Contoso-medarbetaren som ansvarar för förpackning.
 + **Icke-åtgärdsbar information** – En kund besöker till exempel Contoso-butiken och uttrycker under sin dialog med en butiksrelation, intresse för *Halo* spel och speltillbehör. Butikens personal gör en notering om den här informationen. Produktrekommendationsmotorn använder sedan den för att göra rekommendationer till kunden.
 
-I allmänhet fångas handlingsbar information in som *aktiviteter* i Ekonomi och Drift-appar och kundengagemangsappar. Ej handlingsbar information fångas som *anteckningar* i Ekonomi och Drift-appar *kommentarer* i kundengagemangsappar.
+I allmänhet registreras information som kan ageras på som *aktiviteter* i appar för ekonomi och drift samt kundengagemangsappar. Information som ej kan ageras på registreras som *anteckningar* i appar för ekonomi och drift och som *kommentarer* i kundengagemangsappar.
 
 > [!TIP]
 > Även om noteringar är avsedda för icke-åtgärdsbar information hindrar programmen inte dig från att använda dem för att lagra och hantera åtgärdsbar information om du vill använda dem på det sättet.
@@ -39,7 +39,7 @@ Microsoft frisläpper för närvarande funktioner för noteringsintegrering. (Fu
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Skapa en notering i en kundengagemangsapp
 
-Följ de här stegen om du vill skapa en notering i en kundengagemangsapp och synkronisera den i Ekonomi och Drift-appen.
+Följ de här stegen om du vill skapa en anteckning i en kundengagemangsapp och sedan synkronisera den med en app för ekonomi och drift.
 
 1. I kundengagemangsapp, öppna kontopostför en kund.
 2. I fönstret **tidslinje** välj plustecknet (**+**) och välj sedan **Anteckning** för att skapa en anteckning.
@@ -54,7 +54,7 @@ Följ de här stegen om du vill skapa en notering i en kundengagemangsapp och sy
 
     ![Ny notering på kundens tidslinje.](media/notes-ce-3.png)
 
-4. Logga in på Ekonomi och Drift-appen och öppna samma kundpost. Lägg märke till att knappen **Bilagor** (gemsymbol) i det övre högra hörnet anger att posten har en bifogad fil.
+4. Logga in på appen för ekonomi och drift, och öppna samma kundpost. Lägg märke till att knappen **Bilagor** (gemsymbol) i det övre högra hörnet anger att posten har en bifogad fil.
 
     ![Meddelande om en bilaga.](media/notes-ce-4.png)
 
@@ -62,17 +62,17 @@ Följ de här stegen om du vill skapa en notering i en kundengagemangsapp och sy
 
     ![Notering från kundengagemangsappen.](media/notes-ce-5.png)
 
-Alla uppdateringar av noteringen synkroniseras fram och tillbaka mellan Ekonomi och Drift-appen och kundengagemangsappen.
+Alla uppdateringar av anteckningen synkroniseras fram och tillbaka mellan appen för appen för ekonomi och drift och kundengagemangsappen.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Skapa en anteckning i Ekonomi och Drift-app
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Skapa en anteckning i appen för ekonomi och drift
 
-Du kan också skapa en anteckning i en Ekonomi och Drift-app och den kommer att synkroniseras till kundengagemangsappen.
+Du kan också skapa en anteckning i en app för ekonomi och drift, och den kommer att synkroniseras med en kundengagemangsapp.
 
-Följ de här stegen om du vill skapa en notering i en Ekonomi och Drift-app och synkronisera den i kundengagemangsapp.
+Följ de här stegen om du vill skapa en anteckning i en app för ekonomi och drift, och sedan synkronisera den med en kundengagemangsapp.
 
-1. I Ekonomi och Drift-appen, på sidan **Bilagor**, välj **Ny** \> **Notering**.
+1. I appen för ekonomi och drift, på sidan **Bilagor**, väljer du **Ny** \> **Anteckning**.
 
-    ![Skapa en anteckning i Ekonomi och Drift-app.](media/notes-fo-1.png)
+    ![Skapa en anteckning i appen för ekonomi och drift.](media/notes-fo-1.png)
 
 2. Ange en rubrik och en kort uppsättning instruktioner och välj sedan **Spara**.
 
@@ -84,17 +84,17 @@ Följ de här stegen om du vill skapa en notering i en Ekonomi och Drift-app och
 
 Du kan klassificera en notering som intern eller extern.
 
-- I Ekonomi och Drift-app, på sidan **Bilagor**, öppna en anteckning och sedan i fältet **Begränsning** välj **Intern** eller **Extern**.
+- I appen för ekonomi och drift, på sidan **Bilagor**, öppna en anteckning innan du i fältet **Begränsning** väljer **Intern** eller **Extern**.
 
     ![Begränsningsfält.](media/notes-fo-4.png)
 
 Du kan även skapa en URL.
 
-1. I Ekonomi och Drift-appen, på sidan **Bilagor**, välj **Ny** \> **URL**.
+1. I appen för ekonomi och drift, på sidan **Bilagor**, väljer du **Ny** \> **URL**.
 2. Ange en rubrik och en URL.
 3. I fältet **Begränsning**, välj **Intern** eller **Extern**.
 
-    ![Skapa en URL i Ekonomi och Drift-app.](media/notes-fo-5.png)
+    ![Skapa en URL i appen för ekonomi och drift.](media/notes-fo-5.png)
 
 4. Välj **Spara**.
 
@@ -109,7 +109,7 @@ Du kan även skapa en URL.
 
 Integrering av anteckning inkluderar en samling tabellmappningar som fungerar tillsammans under kunddatainteraktion, som visas i följande tabell.
 
-| Ekonomi och Drift-appar | Kundengagemangsapp | Beskrivning |
+| Appar för ekonomi och drift | Kundengagemangsapp | Beskrivning |
 |----------------------------|-------------------------|-------------|
 | [Kundbilagor](mapping-reference.md#230) | Anteckning | Företag som använder vanlig text och URL-adresser för att samla in kundspecifik information (för både organisationer och personer). |
 | [Bilagor till leverantörsdokument](mapping-reference.md#231) | Anteckning | Företag som använder vanlig text och URL-adresser för att samla in leverantörsspecifik information (för både organisationer och personer). |
@@ -121,3 +121,4 @@ Integrering av anteckning inkluderar en samling tabellmappningar som fungerar ti
 När du har installerat anteckningslösningen kan du inte avinstallera den. 
 
 Mer information finns i [Mappningsreferens för dubbel skrivning](mapping-reference.md).
+

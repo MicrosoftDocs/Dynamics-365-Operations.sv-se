@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsstyrning för lagerprocesser
-description: Denna artikel innehåller information om funktionen för kvalitetshantering för lagerprocesser. Den här funktionen utökar möjligheterna för kvalitetshantering och låter användarna integrera artikelsamplingskontroller i den process som tar emot lager med hjälp av avancerad Warehouse management.
+description: Denna artikel innehåller information om funktionen för kvalitetshantering för lagerprocesser. Den här funktionen utökar möjligheterna för kvalitetshantering och låter användarna integrera artikelprovskontroller i den process som tar emot lager med hjälp av lagerstyrningsprocesser (WMS).
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857849"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069255"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyrning för lagerprocesser
 
 [!include [banner](../includes/banner.md)]
 
-Funktionen _Kvalitetshantering för lagerprocesser_ låter dig integrera artikelsamplingskontroller i den process som tar emot lager med hjälp av avancerad Warehouse management. Lagerställearbete kan skapas automatiskt för att flytta lagret till platsen för kvalitetskontroll, baserat på en procentsats eller en fast kvantitet, eller baserat på varje *n*-registreringsskylt. När en kvalitetsorder har slutförts kan arbetet skapas automatiskt för att flytta lagret till nästa plats i processen, beroende på kvalitets resultatet.
+Funktionen _Kvalitetshantering för lagerprocesser_ låter dig integrera artikelprovskontroller i den process som tar emot lager med hjälp av lagerstyrningsprocesser (WMS). Lagerställearbete kan skapas automatiskt för att flytta lagret till platsen för kvalitetskontroll, baserat på en procentsats eller en fast kvantitet, eller baserat på varje *n*-registreringsskylt. När en kvalitetsorder har slutförts kan arbetet skapas automatiskt för att flytta lagret till nästa plats i processen, beroende på kvalitets resultatet.
 
 Funktionen _Kvalitetshantering för lagerprocesser_ omfattar alla funktioner i grundläggande kvalitetshanteringsfunktioner. Det ger möjlighet att skapa kvalitetsorder för lagret som skickas till kvalitetskontrollplatsen, även om kvalitetsorder inte alltid behövs. Därför möjliggörs en enkel kontrollprocess baserad på arbete på lager.
 
@@ -77,7 +77,7 @@ Innan funktionen _Kvalitetshantering för lagerprocesser_ kan tillämpas för et
 
 1. Gå till **Warehouse management \> Inställningar \> Lagerställe \> Lagerställen**.
 1. Markera lagret för att aktivera kvalitetshantering.
-1. På snabbfliken **lagerställe**, ange alternativet **aktivera kvalitetsorder för lagerprocesser** till _Ja_. (Observera att det här alternativet kan anges till _ja_ endast för lagerställen som använder lagerhanteringsprocesser.)
+1. På snabbfliken **lagerställe**, ange alternativet **aktivera kvalitetsorder för lagerprocesser** till _Ja_. (Observera att det här alternativet kan anges som _Ja_ endast för lagerställen som använder lagerstyrningsprocesser (WMS).)
 
 När alternativet **aktivera kvalitetsorder för lagerprocesser** anges till _ja_, inställningen för kvalitetsorder styr om funktionen _kvalitetshantering för lagerprocesser_ ansökte faktiskt om det valda lagerstället. Du kan ändra inställningen för alternativet till ingen _Nej_ när du vill. I så fall gäller inte längre funktionen för lagerstället, oberoende av inställningen för kvalitetsorder.
 
@@ -97,7 +97,7 @@ Varje [kvalitetsassociationspost](enable-quality-management.md) definierar även
     - **Alla** – Inaktivera funktionen _Kvalitetshantering för lagerprocesser_. Välj det här värdet för alla referenstyper utom *inköp* och *produktion*.
 
 > [!NOTE]
-> Funktionen _Kvalitetshantering för lagerprocesser_ träder i kraft endast om objektet på källdokumentraden använder avancerade lagerhanteringsprocesser och om alternativet **aktivera kvalitetsorder för lagerprocesser** ställs in på _Ja_ för lager stället på källdokumentraden.
+> Funktionen _Kvalitetshantering för lagerprocesser_ träder i kraft endast om objektet på källdokumentraden använder lagerstyrningsprocesser (WMS) och om alternativet **Aktivera kvalitetsorder för lagerprocesser** ställts in på _Ja_ för lagerstället på källdokumentraden.
 
 När varje artikel är registrerad (eller rapporterad som färdig) avgör systemet vilka kvalitetsassociationer som gäller för den.
 

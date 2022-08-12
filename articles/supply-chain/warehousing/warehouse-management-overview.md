@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa2b62a0bfda57879850771488e6576592fbb894
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d22ed879f309c0fbb999bf166aefd13f27376042
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982862"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069105"
 ---
 # <a name="warehouse-management-overview"></a>Lagerstyrning – översikt
 
@@ -39,13 +39,13 @@ Du måste konfigurera komponenter för in- och utgående arbetsflöden för lage
 - [Ställ in ett platsdirektiv för inlagring av inköpsorder](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
 - [Ställ in en arbetsmall för inköpsorder](./tasks/set-up-work-template-purchase-orders.md)
 
-## <a name="warehouse-management-processes"></a>Processer för lagerhantering
+## <a name="warehouse-management-processes-wms"></a>Processer för lagerstyrning (WMS)
 - Integrerat stöd för källdokument för försäljningsorder, returer, överföringsorder, produktionsorder samt kanban  
 - Flexibelt stöd för in- och utgående materialarbetsflöden baserat på frågor
 - Full integrering med tillverknings- och transporterbjudanden
 - Full kontroll över lokala lagergränser och platsvolym
 - Lageregenskaper styrda efter lagerstatus
-- Stöd för full batch och varor med serienummer
+- Stöd för full batch och varor med löpnummer
 - Diverse funktioner för varumottagning
 - Flera olika plockstrategier
 - Färdig support för nästa generations streckkodsläsare

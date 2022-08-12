@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4981d72d76d6f865b919e90994a0ce1b0bcba494
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888906"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066120"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – Globaliseringsfunktioner
 
@@ -40,7 +40,7 @@ Innan du slutför procedurerna måste du utföra stegen som hör till följande 
 - Öppna en RCS-instans.
 - Skapa och aktivera en konfigurationsleverantör. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-I appinstansen för ekonomi och drift, följ dessa steg.
+I app-instansen för ekonomi och drift, följ dessa steg.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. Om ingen RCS-miljö har etablerats för ditt företag väljer du **Regulatory services – konfiguration** och följer sedan instruktionerna för att etablera en.

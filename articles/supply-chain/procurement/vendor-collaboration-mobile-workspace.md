@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 75c044d1133e1c4765cd97f4ab7e2a08ba998c35
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851664"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112163"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobil arbetsyta för leverantörssamarbete
 
@@ -110,7 +110,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
-Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
+Ladda ner och installera mobilappen för Ekonomi och drift (Dynamics 365):
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -171,3 +171,4 @@ När inköpsordern har bekräftats av kunden (dvs. när statusen för inköpsord
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

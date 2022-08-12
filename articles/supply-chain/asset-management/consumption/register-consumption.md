@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 729ef6aae228ad1e528945031567b92c44cdf256
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015097"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111767"
 ---
 # <a name="register-consumption"></a>Registrera förbrukning
 
@@ -90,7 +90,7 @@ När du gör förbrukningsregistreringar läggs ekonomiska dimensioner som hör 
 - *Artikelregistreringar:* Först läggs ekonomiska dimensioner från journalhuvudet till, om det finns några. Därefter läggs ekonomiska dimensioner från det relaterade arbetsorderprojektet till. Därefter läggs ekonomiska dimensioner från webbplatsen till. Slutligen läggs ekonomiska dimensioner från artikeln till.
 
 >[!NOTE]
->För alla tre registreringstyperna valideras kombinationen av ekonomisk dimension, och ogiltiga kombinationer görs tomma. Detta är standard inställningar med andra Finance and Operations-appar.
+>För alla tre registreringstyperna valideras kombinationen av ekonomisk dimension, och ogiltiga kombinationer görs tomma. Detta är standardinställningar med andra appar för ekonomi och drift.
 
 
 

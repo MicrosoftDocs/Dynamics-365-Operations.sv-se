@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 6d9b40409089e2050dc28c21040069107b766aa0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a53b7834271355aaf11c13c3f1886257a97b1da8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871258"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069003"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Överför delredovisning till redovisningen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8871258"
 
 I den här artikeln beskrivs funktioner som är relaterade till reglerna för överföring av delredovisningsjournalposter.
 
-I version 8.1 gjordes ändringar för att tillåta överföring av regler, vilket föråldrade alternativet **Synkront**. Mer information finns i [Borttagna eller utfasade funktioner för Ekonomi och drift](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
+I version 8.1 gjordes ändringar för att tillåta överföring av regler, vilket föråldrade alternativet **Synkront**. Mer information finns i [Borttagna eller inaktuella funktioner för Ekonomi och drift](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 
 Följande alternativ är tillgängliga för överföring av delredovisningsbatchar:
 
@@ -46,3 +46,4 @@ Effektivitetsändringen på batchnivå använder ett enda återkommande batchjob
 Mer information om inställning av processautomatisering finns i [processautomatisering](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

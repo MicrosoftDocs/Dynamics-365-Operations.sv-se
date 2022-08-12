@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849312"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065567"
 ---
 # <a name="flushing-principles"></a>Avräkningsprinciper
 
@@ -50,9 +50,9 @@ Avräkningsprinciperna konfigureras i en hierarki med standardvärden. Hierarkin
 ## <a name="description-of-the-flushing-principles"></a>Beskrivning av avräkningsprincipen
 
 ### <a name="manual"></a>Manuell
-Den manuella avräkningsprincipen anger att registrering av materialförbrukning är en manuell åtgärd. Denna princip gäller om du t.ex. vill kunna spåra tid och antalet förbrukade batchnummer eller serienummer måste redovisas för i spårningssyften. Manuell förbrukning registreras i en produktionsplocklistejournal. För artiklar som aktiveras för avancerade lagerprocesser kan ett handhållet flöde appliceras.
+Den manuella avräkningsprincipen anger att registrering av materialförbrukning är en manuell åtgärd. Denna princip gäller om du t.ex. vill kunna spåra tid och antalet förbrukade batchnummer eller löpnummer måste redovisas för i spårningssyften. Manuell förbrukning registreras i en produktionsplocklistejournal. För artiklar som aktiveras för lagerstyrningsprocesser (WMS) kan ett bärbart flöde tillämpas.
 
-### <a name="start"></a>Starta
+### <a name="start"></a>Start
 Startavräkningsprincipen anger att materialet förbrukas automatiskt när tillverkningsordern startas. Mängden material som används är proportionell mot den kvantitet som startas. När startavräkningsprincipen används tillsammans med tillverkningskörningssystemet kan den även användas till att avräkna material när en åtgärd eller ett processjobb startas. Denna princip är relevant om exempelvis avvikelsen i förbrukningen är låg, materialet är lågvärdesmaterial, det inte finns några spårningskrav eller det är kort bearbetningstid i åtgärder. 
 
 ### <a name="finish"></a>Slutför

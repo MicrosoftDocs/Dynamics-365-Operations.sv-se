@@ -1,26 +1,27 @@
 ---
 title: Gränssnitt för Report Designer
 description: Den här artikeln innehåller en beskrivning av hur du navigerar på Report Designer och hur du använder de olika alternativen för att uppfylla dina krav.
-author: ShylaThompson
+author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 59041
-ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2af539e9201456c46d1dd5fef5f31f9c4f225cdd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "59041"
+ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
+ms.search.form: FinancialReports
+ms.openlocfilehash: 2376f0a7e64398d9180f9074f532270487dbeec0
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844602"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206107"
 ---
 # <a name="report-designer-interface"></a>Gränssnitt för Report Designer
 
@@ -149,8 +150,8 @@ Menyn **Fönster** är tillgänglig för alla användare och inkluderar följand
 | Lägga sida vid sida horisontellt    | Visa alla öppna fönster bredvid varandra. |
 | Lägga sida vid sida vertikalt      | Visa alla öppna fönster, ovanpå ett annat. |
 | Kaskad              | Skikta alla öppna fönster, så att namnlisten för varje fönstret visas. |
-| Frysa horisontellt    | Frys den valda raden så att denna rad fortsätter att visas i fönstret medan du bläddrar. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
-| Frysa vertikalt      | Frys den valda kolumnen så att denna kolumn fortsätter att visas i fönstret medan du bläddrar. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
+| Frysa horisontellt    | Frys den valda raden så att denna rad fortsätter visas i fönstret medan du bläddrar. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
+| Frysa vertikalt      | Frys den valda kolumnen så att denna kolumn fortsätter visas i fönstret medan du bläddrar. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
 | Lista över öppna fönster | Visa en lista över fönster som är öppna. Välj ett fönster som du vill föra till framsidan. |
 
 ### <a name="help-menu"></a>Hjälp-menyn

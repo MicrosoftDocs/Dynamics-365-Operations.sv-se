@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 172f49c13c183eb4df986dc3e30ff3955bc1a605
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 838e3affd4e782bea463638e28da3943329671d4
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860998"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111869"
 ---
 # <a name="target-entities"></a>Målenheter
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860998"
 
 I arbetsytan **Datahantering** kan du få en översikt över målentiteter, relaterade entitetstyper och tillfälliga register som är relaterade till modulen **Tillgångshantering**. 
 
-1. Klicka på **Finance and Operations** i det övre vänstra hörnet på skärmen och klicka på **Datahantering.**
+1. Klicka på knappen **Ekonomi och drift** i det övre vänstra hörnet på skärmen och klicka på **Datahantering**.
 
 2. I avsnittet **Import/Export**, klicka på **Dataentiteter**. 
 

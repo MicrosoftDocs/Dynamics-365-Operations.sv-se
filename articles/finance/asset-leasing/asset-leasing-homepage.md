@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fa27e20bc0c0ff5c639dfb2d079adef8926f535f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889161"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069360"
 ---
 # <a name="asset-leasing-home-page"></a>Startsida för leasing av tillgångar
 
@@ -90,9 +90,9 @@ Gå till [Utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-pla
 
 ### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Ekonomi och drift – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Det finns åsikter, nyheter och annan information i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och i [Microsoft Dynamics 365 för ekonomi och drift – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
+I [partnercommunitybloggen om Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) har Microsoft Dynamics-partner en resurs där de kan få information om vad som är nytt och trendar i Dynamics 365.
 
 ### <a name="videos"></a>Videor
 
@@ -100,3 +100,4 @@ Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

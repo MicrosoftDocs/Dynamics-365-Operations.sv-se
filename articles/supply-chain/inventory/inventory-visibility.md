@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 274f9b368a6074725d1938de5f2172d2810a5985
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897644"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066653"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Översikt över tillägg för Lagersynlighet
 
@@ -61,9 +61,9 @@ Synligheten i ditt framtida projekterade lager (inklusive leverans, efterfrågan
 
 ATP-funktionen är lätt att använda i din dagliga beställningsprocess. Viktigast av allt, precis som andra erbjudanden om lagersynlighet, är ATP-funktionen *global och realtid*. Därför kan du konfigurera flera ATP-beräkningsformler för att få fullständiga frågor om lagertillgänglighet som täcker alla dina affärskanaler och datakällor. Mer information finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md).
 
-### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilitet med avancerade lagerstyrningsartiklar
+### <a name="compatibility-with-warehouse-management-processes-wms-items"></a>Kompatibilitet med artiklar för lagerstyrningsprocesser (WMS)
 
-Microsoft strävar efter att tillhandahålla fördefinierade integrering med avancerad lagerhantering (WHS), så att WHS-kunder också kan dra nytta av fördelarna med Lagersynlighet-tjänsten. Enligt utgivningscykel 1 2022 (offentlig förhandsvisning i mars) stöder inventeringstjänsten WHS-förfrågningar och ATP. Den mjuka reservationen och allokeringsfunktionen stöds för WHS-kunder i nästa påfyllnad. Mer information finns i [Stöd för lagersynlighet för WHS-artiklar](inventory-visibility-whs-support.md).
+Microsoft strävar efter att tillhandahålla färdig integrering med lagerstyrningsprocesser (WMS), detta så att WMS-kunder också kan dra nytta av fördelarna med lagersynlighetstjänsten. Enligt utgivningscykel 1 2022 (offentlig förhandsvisning i mars) stöder inventeringstjänsten WMS-förfrågningar och ATP. Den mjuka reservationen och allokeringsfunktionen stöds för WMS-kunder i nästa påfyllnad. Mer information finns i [Stöd för lagersynlighet för WMS-artiklar](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Licensiering
 

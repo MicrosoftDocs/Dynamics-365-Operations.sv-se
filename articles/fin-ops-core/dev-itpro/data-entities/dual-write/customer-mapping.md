@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890468"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111737"
 ---
 # <a name="integrated-customer-master"></a>Integrerad kundmaster
 
@@ -22,7 +22,7 @@ ms.locfileid: "8890468"
 
 
 
-Kunddata kan hanteras i fler än ett Dynamics 365-program. En kundrad kan till exempel ha sitt ursprung trots att det finns försäljningsaktiviteter i Dynamics 365 Sales (en kundengagemangsapp) eller så kan en rad ha sitt ursprung i detaljhandelsaktivitet i Dynamics 365 Commerce (en Finance and operations-app). Oavsett var informationen kommer från kunden integreras den bakom kulisserna. Integrerad kund huvud ger dig flexibiliteten att hantera kunddata i alla Dynamics 365-program och ger en omfattande översikt över kunden över Dynamics 365-programpaketet.
+Kunddata kan hanteras i fler än ett Dynamics 365-program. En kundrad kan till exempel ha sitt ursprung trots att det finns försäljningsaktiviteter i Dynamics 365 Sales (en kundengagemangsapp) eller så kan en rad ha sitt ursprung i detaljhandelsaktivitet i Dynamics 365 Commerce (en Ekonomi och drift-app). Oavsett var informationen kommer från kunden integreras den bakom kulisserna. Integrerad kund huvud ger dig flexibiliteten att hantera kunddata i alla Dynamics 365-program och ger en omfattande översikt över kunden över Dynamics 365-programpaketet.
 
 ## <a name="customer-data-flow"></a>Kunddataflöde
 
@@ -30,9 +30,9 @@ Kunddata kan hanteras i fler än ett Dynamics 365-program. En kundrad kan till e
 
 ![Kunddataflöde.](media/dual-write-customer-data-flow.png)
 
-Kunder kan i stort sett delas in i två typer: kommersiella/organisatoriska kunder och konsumenter/slutanvändare. Dessa två typer av kunder lagras och hanteras på olika sätt i Finance and Operations och Dataverse.
+Kunder kan i stort sett delas in i två typer: kommersiella/organisatoriska kunder och konsumenter/slutanvändare. Dessa två typer av kunder lagras och hanteras på olika sätt i Ekonomi och drift respektive Dataverse.
 
-I Ekonomi och Drift hanteras både kommersiella/organisatoriska kunder och konsumenter/slutanvändare i en enda tabell som kallas **CustTable** (CustCustomerV3Entity) och de klassificeras baserat på attributet **Typ**. (Om **typ** är inställd på **organisation** är kunden en kommersiell/organisatorisk kund och om **typ** är inställd på **person** är kunden en konsument/slutanvändare.) Den primära kontaktpersonens information hanteras via tabellen SMMContactPersonEntity.
+I Ekonomi och Drift hanteras både kommersiella/organisatoriska kunder och konsumenter/slutanvändare i en enda tabell som kallas **CustTable** (CustCustomerV3Entity), och de klassificeras baserat på attributet **Typ**. (Om **typ** är inställd på **organisation** är kunden en kommersiell/organisatorisk kund och om **typ** är inställd på **person** är kunden en konsument/slutanvändare.) Den primära kontaktpersonens information hanteras via tabellen SMMContactPersonEntity.
 
 I Dataverse hanteras kommersiella/organisatoriska kunder i kontotabellen och identifieras som kunder när attributet **RelationshipType** är inställt på **kund**. Både konsumenter/slutanvändare och kontaktpersonen representeras av kontakttabellen. För att ge en tydlig åtskillnad mellan en konsument/slutanvändare och en kontaktperson har tabellen **kontakt** en boolesk flagga som heter **säljbar**. När **säljbar** är **sant** är kontakten en konsument/slutanvändare och offerter och order kan skapas för den kontakten. När **säljbar** är **falskt** är kontakten bara en primär kontaktperson för en kund.
 
@@ -42,7 +42,7 @@ När en icke-säljbar kontakt deltar i en offert eller orderprocess är **säljb
 
 Kunddata innehåller all information om kunden, till exempel kundgruppen, adresser, kontaktinformation, betalningsprofil, fakturaprofil och förmånsstatus. En samling tabellmappningar fungerar tillsammans under kunddatainteraktion, som visas i följande tabell.
 
-Finance and Operations-appar | Kundengagemangsappar         | beskrivning
+Appar för ekonomi och drift | Kundengagemangsappar         | beskrivning
 ----------------------------|---------------------------------|------------
 [CDS-kontakter V2](mapping-reference.md#115) | kontakter | Den här mallen synkroniserar all primär, sekundär och tertiär kontaktinformation för både kunder och leverantörer.
 [Kundgrupper](mapping-reference.md#126) | msdyn_customergroups | Den här mallen synkroniserar kundgruppinformation.
@@ -57,3 +57,4 @@ Finance and Operations-appar | Kundengagemangsappar         | beskrivning
 [Betalningsvillkor](mapping-reference.md#161) | msdyn_paymentterms | Mallen synkroniserar referensdata för betalningsvillkor för både kunder och leverantörer.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

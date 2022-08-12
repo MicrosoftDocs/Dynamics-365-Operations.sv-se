@@ -1,5 +1,5 @@
 ---
-title: Etablera Human Resources
+title: Etablera Personal
 description: I denna artikel får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6fc44b52e2f7662fc6be609562cec903a8755d1b
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015358"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178516"
 ---
-# <a name="provision-human-resources"></a>Etablera Human Resources
+# <a name="provision-human-resources"></a>Etablera Personal
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gäller för:** Personal i den fristående infrastrukturen_ 
 
-
+> [!NOTE]
+> Från och med juni 2022 kan Personalmiljöer endast distribueras på infrastruktur för appar för ekonomi och drift. Mer information finns i [tillhandahålla Personal i infrastruktur för ekonomi och drift](hr-admin-setup-provision-fo.md).
 
 I denna artikel får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Human Resources. 
 
@@ -40,36 +41,36 @@ Följande förutsättningar måste vara på plats innan du kan etablera en ny pr
 ## <a name="provision-a-human-resources-trial-environment"></a>Skapa en utvärderingsmiljö för Personal
 
 >[!NOTE]
-> Från och med april 2022 finns inte utvärderingsmiljöerna för Personal tillgängliga i det fristående programmet. Potentiella kunder som är intresserade av att utvärdera Personalfunktionerna i apparna för ekonomi och drift kan göra detta med hjälp av gratisversionen på 30 dagar tillsammans med demodatan. Dynamics 365 Finance omfattar de Personalfunktioner som inkluderats i Ekonomiinfrastrukturen via sammanslagningen med det fristående programmet. Mer information finns i [Sammanslagning av Personalerbjudanden samlar funktioner för kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Mer information om utvärderingsversioner av Dynamics 365 Finance finns i den stegvisa [guiden](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+> Från och med april 2022 finns inte utvärderingsmiljöerna för Personal tillgängliga i det fristående programmet. Potentiella kunder som är intresserade av att utvärdera Personalfunktionerna i appar för ekonomi och drift kan göra detta med hjälp av gratisversionen på 30 dagar tillsammans med demodatan. Dynamics 365 Finance omfattar de Personalfunktioner som inkluderats i Ekonomiinfrastrukturen via sammanslagningen med det fristående programmet. Mer information finns i [Sammanslagning av Personalerbjudanden för samman funktioner för kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Mer information om Dynamics 365 Finance-provversioner finns i steg-för-steg[-guiden](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Innan du provisioner din första resurs eller produktionsmiljö kan du använda en [utvärderingsmiljö för Personal](https://go.microsoft.com/fwlink/p/?LinkId=2115962) för att validera personalfunktioner. Bedömningsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. Även om bedömningsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för Personal. 
 
-Med utvärderingsmiljöer kan du utvärdera personalfunktioner för personer som inte redan har tillgång till en personalmiljö. Om du inför en utvärderingsmiljö och den autentiserade användaren redan har tillgång till en eller flera befintliga personalmiljöer, omdirigeras användaren till den befintliga miljön eller listan över miljöer.
+Med utvärderingsmiljöer kan man utvärdera Personalfunktioner för personer som inte redan har tillgång till en Personalmiljö. Om du inför en utvärderingsmiljö och den autentiserade användaren redan har tillgång till en eller flera befintliga personalmiljöer, omdirigeras användaren till den befintliga miljön eller listan över miljöer.
 
-Testmiljöer är inte avsedda att användas som produktionsmiljöer. De är begränsade till en 30-dagars försöksperiod. När utvärderingsperioden löper ut är miljön och all data inte raderas och kan inte återställas. Miljön kan inte konverteras till en produktions- eller tillverkningsmiljö. Du kan registrera dig för en ny bedömningsmiljö när den befintliga miljön har gått ut.
+Testmiljöer är inte avsedda att användas som produktionsmiljöer. De är begränsade till en 30-dagars försöksperiod. När utvärderingsperioden löper ut kommer miljön och all data i denna att raderas och kan inte återställas. Miljön kan inte konverteras till en sandbox- eller produktionsmiljö. Du kan registrera dig för en ny bedömningsmiljö när den befintliga miljön har gått ut.
 
-När du skapar en Human Resources-utvärderingsmiljö skapas också en Power Apps-utvärderingsmiljö i klientorganisationen och kopplas till Human Resources-miljön. Power Apps-miljön, med namnet "TestDrive", har samma utvärderingsperiod som Human Resources-miljön.
+När du skapar en Personal-utvärderingsmiljö skapas också en Power Apps-utvärderingsmiljö i klientorganisationen och kopplas till Personal-miljön. Power Apps-miljön, med namnet "TestDrive", har samma utvärderingsperiod som Personal-miljön.
 
 > [!NOTE]
-> Om den autentiserade användaren inte har behörighet att skapa Power Apps-utvärderingsmiljöer kommer det inte att gå att etablera en Human Resources-utvärderingsmiljö. Användaren måste inkluderas i den användargrupp som kan skapa utvärderingsmiljöer i Power Platform-administratörscenter. Mer information finns i [Kontrollera vem som kan skapa och hantera miljöer i Power Platform-administratörscenter](/power-platform/admin/control-environment-creation).
+> Om den autentiserade användaren inte har behörighet att skapa Power Apps-utvärderingsmiljöer kommer det inte att gå att etablera en Personal-utvärderingsmiljö. Användaren måste inkluderas i den användargrupp som kan skapa utvärderingsmiljöer i Power Platform-administratörscenter. Mer information finns i [Kontrollera vem som kan skapa och hantera miljöer i Power Platform-administratörscenter](/power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planera Personal-miljöer
 
-Innan du skapar din första Personal-miljö bör du noggrant planera miljöbehoven för ditt projekt. Ett basabonnemang på Personal innehåller två miljöer: en produktionsmiljö och en sandbox-miljö. Beroende på hur komplext ditt projekt är, kanske du måste köpa in ytterligare sandbox-miljöer för att kunna stödja projektaktiviteter. 
+Innan du skapar din första Personal-miljö bör du noggrant planera miljöbehoven för ditt projekt. Ett basabonnemang på Personal innehåller två miljöer: en produktionsmiljö och en sandbox-miljö. Beroende på hur komplext ditt projekt är kanske du måste köpa in ytterligare sandbox-miljöer för att kunna stödja projektaktiviteter. 
 
 Att tänka på vid ytterligare miljöer:
 
-- **Datamigrering**: Du kan komma att behöva överväga en ytterligare miljö för datamigreringsaktiviteter så att din sandbox-miljö kan användas i testsyfte under hela projektets gångf. Om det finns ytterligare en miljö kan datamigreringsaktiviteter fortsätta samtidigt som tester och konfigurationsaktiviteter sker i en annan miljö.
-- **Integrering**: Du kanske måste överväga att skapa ytterligare en miljö för att konfigurera och testa integreringer. Detta kan innefatta inbyggda integreringar som Ceridian Dayforce- eller LinkedIn Talent Hub-integreringar eller anpassade integreringar som exempelvis för löner, sökandespårningssystem eller förmånssystem och leverantörer.
-- **Utbildning**: Du kan behöva en separat miljö som är konfigurerad med en uppsättning utbildningsdata för att utbilda dina medarbetare i användningen av det nya systemet. 
-- **Flerprojektfas**: Du kan behöva ytterligare en miljö för att stödja konfiguration, datamigrering, testning eller andra aktiviteter i en projektfas som planeras efter projektets ursprungliga start.
+- **Datamigrering**: Datamigreringsaktiviteter som gör att din sandbox-miljö kan användas i testsyfte under hela projektets gång. Om det finns ytterligare en miljö kan datamigreringsaktiviteter fortsätta samtidigt som tester och konfigurationsaktiviteter sker i en annan miljö.
+- **Integration**: Konfigurera och testa integrationer, vilket kan omfatta inbyggda integrationer, till exempel Ceridian Dayforce, eller anpassade integrationer.
+- **Utbildning**: Du kan komma att behöva en separat miljö som är konfigurerad med en uppsättning utbildningsdata för att kunna utbilda dina medarbetare i användningen av det nya systemet. 
+- **Flerprojektfas**: Konfigurationsstöd, datamigrering, testning eller andra aktiviteter i en projektfas som planeras efter projektets ursprungliga start.
 
  > [!IMPORTANT]
  > När det gäller din miljö rekommenderar vi följande:
  > - Använd din produktionsmiljö i hela projektet som din konfigurationsmiljö GULD. Detta är viktigt eftersom du inte kan kopiera en sandbox-miljö till en produktionsmiljö. När du går live nu är därför GULD-miljö din produktionsmiljö, och du utför dina övergångsaktiviteter i den här miljön.</br></br>
  > - Använd din sandbox- eller någon annan miljö för att utföra en testomställning innan du lanserar. Detta gör du genom att uppdatera produktionsmiljön med din GULD-konfiguration i din sandbox-miljö.</br></br>
- > - Upprätta en detaljerad övergångschecklista som inkluderar varje datapaket som krävs för att migrera den slutgiltiga datan till produktionsmiljön i samband med lanseringsövergången.</br></br>
+ > - Upprätta en detaljerad övergångschecklista som inkluderar varje datapaket som krävs för att migrera den slutgiltiga datan till produktionsmiljön i samband med publiceringsövergången.</br></br>
  > - Använd din produktionsmiljö i hela projektet som din konfigurationsmiljö TEST. Om du behöver fler miljöer kan organisationen köpa dem för en extra kostnad.</br></br>
 
 ## <a name="create-an-lcs-project"></a>Skapa ett LCS-projekt
@@ -100,7 +101,7 @@ När du har skapat ett LCS-projekt kan du införa Personal i en miljö.
 2. Ange om denna miljö är ett begränsat läge eller produktionsinstans av Personal. Funktionerna för förhandsgranskning kan finnas tillgängliga i begränsade instanser för att möjliggöra tidig återrapportering och testning.
    
     > [!NOTE]
-    > Det går inte att ändra Personal-instanstypen när den har angetts. Kontrollera att rätt instanstyp har valts innan du fortsätter.</br></br>
+    > Det går inte att ändra Personal-instanstypen när den väl har angetts. Kontrollera att rätt instanstyp har valts innan du fortsätter.</br></br>
     > Instanstypen Personal är separat från instanstypen för Microsoft Power Apps-miljön, som du anger i Power Apps-administrationscentret.
     
 3. Markera alternativet **Inkludera demodata** om du vill att din miljö med samma demodatauppsättning används i utvärderingsmiljön för Personal. Demodata är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer. Du måste välja det här alternativet vid den första implementeringen. Du kan inte uppdatera en befintlig distribution senare.
@@ -111,7 +112,7 @@ När du har skapat ett LCS-projekt kan du införa Personal i en miljö.
 
 6. Välj **Ja** för att acceptera villkoren och börja implementeringen.
 
-   Den nya miljön visas i listan över miljöer i navigeringsfönstret till vänster. Du kan emellertid inte börja att använda miljön förrän objektets implementeringsstatus uppdateras till **Implementera**. Den här processen tar normalt några minuter. Om försörjningprocessen misslyckas måste du kontakta Support.
+   Den nya miljön visas i listan över miljöer i navigeringsfönstret till vänster. Du kan emellertid inte börja använda miljön förrän dess distributionsstatus nått **Implementerad**. Den här processen tar normalt några minuter. Om tillhandahållandeprocessen misslyckas måste du kontakta supporten.
 
 7. Välj **Logga in på Personal** för att använda den nya miljön.
 
@@ -140,7 +141,7 @@ Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som sk
    
     - **Ej stödda områden** – Miljön måste finnas i ett geografiskt område som stöds. Mer information finns i [Områden som stöds](hr-admin-setup-provision.md#supported-geographies).
 
-6. Dubbla skrivfunktioner för att integrera Personal-data med miljön Power Apps kan bara användas om alternativet **Aktivera Dynamics 365-appar** har valts för miljön. Se [sidan Dubbelriktad skrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) för mer information för dubbelriktad skrivning.
+6. Dubbla skrivfunktioner för att integrera Personal-data med miljön Power Apps kan bara användas om alternativet **Aktivera Dynamics 365-appar** har valts för miljön. Mer information finns i [Startsida för dubbel skrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
     > Alternativet **Aktivera Dynamics 365-appar** måste väljas när Power Apps skapas. Om alternativet inte är valt vid administreringstillfället kommer du inte att kunna använda dubbelriktad skrivning för att integrera data mellan Dynamics 365 Human Resources och Power Apps miljön eller installera Dynamics 365-appar som Dynamics 365 Sales och Field Service i miljön. Det här alternativet kan inte ångras. 
@@ -175,3 +176,4 @@ Som standard har den globala administratör som skapade miljön åtkomst till de
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

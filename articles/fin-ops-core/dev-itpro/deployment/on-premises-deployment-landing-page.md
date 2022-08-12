@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867424"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103985"
 ---
 # <a name="on-premises-deployment-home-page"></a>Lokal distribution – startsida
 
@@ -53,7 +53,7 @@ Du kan distribuera Dynamics 365 Finance + Operations (on-premises). När du väl
 - [Importera konfigurationer för elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Skapa, publicera och skriva ut dokument i lokala distributioner](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurera proxyservrar för lokala miljöer](onprem-reverseproxy.md)
-- [Konfigurera teknisk support för Finance and Operations-appar](../lifecycle-services/support-experience.md)
+- [Konfigurera teknisk support för appar för ekonomi och drift](../lifecycle-services/support-experience.md)
 - [Internetanslutning för klient](../user-interface/client-disconnected.md)
 - [Uppdatera lokala distributioner](apply-updates-on-premises.md)
 - [Omdistribuera lokala miljöer](redeploy-on-prem.md)
@@ -73,9 +73,10 @@ Du kan distribuera Dynamics 365 Finance + Operations (on-premises). När du väl
 - [Skript för problemlösning i lokala miljöer](onprem-tsg-implementations.md)
 - [Certifikatrotation](certificate-rotation-on-prem.md)
 - [Lokal diagnostik](on-premises-diagnostics.md)
-- [Borttagna eller föråldrade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Borttagna eller inaktuella funktioner för Ekonomi och drift](../migration-upgrade/deprecated-features.md)
 - [Livscykelpolicy och lokala versioner av programmet](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

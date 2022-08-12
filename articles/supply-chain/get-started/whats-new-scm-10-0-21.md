@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a78b4c37bfca9fedbd46cd8a16b47bd4444fbfee
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91462cc589be6170418f7f78267feea5e25c037d
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849544"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123791"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -53,7 +53,7 @@ Följande register lista de funktionsförbättringar som ingår i denna version:
 |---|---|---|
 | Kostnadshantering | Information om lagerstängningsförlopp | Förhandsgranskningsfunktionen ger en detaljerad vy över förloppet för lagerstängning. |
 | Anskaffning och källa | Förhindra överkonsumering av huvudbudgetreservationer när flera inköpsrekvisitioner finns i arbetsflöde | Förhandsgranskningsfunktionen förbättrar felkontrollen när användarna skickar och godkänner inköpsrekvisitioner som överskrider återstående saldo på en generell budgetreserveringsrad. Det förhindrar att generella budgetreserveringar överkonsumeras när flera inköpsrekvisitioner är i ett arbetsflöde. |
-| Produktionskontroll | Visa fullständiga serienummer, batch- och ID-nummer i gränssnittet för produktionsgolvkörning | Funktionen ger en förbättrad upplevelse av att visa listor med serie-, batch- och ID-nummer i gränssnittet för körning på produktionsgolv. Visningen ändras från en kortvy med begränsat antal tecken till en listvy som har tillräckligt utrymme för att visa de fullständiga värdena. Du kan också söka efter särskilda nummer i listan. |
+| Produktionskontroll | Visa fullständiga löpnummer, batch- och ID-nummer i gränssnittet för produktionsgolvkörning | Funktionen ger en förbättrad upplevelse av att visa listor med serie-, batch- och ID-nummer i gränssnittet för körning på produktionsgolv. Visningen ändras från en kortvy med begränsat antal tecken till en listvy som har tillräckligt utrymme för att visa de fullständiga värdena. Du kan också söka efter särskilda nummer i listan. |
 | Försäljning och marknadsföring | Begränsa antalet försäljningsorder som går att välja för bokföring | Med hjälp av den här funktionen kan du definiera det högsta antalet försäljningsorder som kan väljas när du bokför bekräftelser, plocklistor, följesedlar och fakturor från listsidan för försäljningsorder. Den aktiveras automatiskt. Funktionen lägger till en inställning med namnet **Max. antal försäljningsorder för bokföring** på sidan **Parametrar för kundreskontra**. Den nya inställningen får standardvärdet *100*. Funktionen hjälper till att förbättra prestandan för listsidan för försäljningsorder när ett visst antal försäljningsorder väljs. Den påverkar inte antalet försäljningsorder som kan bearbetas med en periodisk uppgift. |
 | Lagerstyrning | Avkoda platsarbete från ASN:er | Funktionen måste skicka och ta emot avancerade leveransmeddelanden (ASNs) när du kör en arbetsbelastning för lagerhantering på en skalningsenhet (som en del av en distribuerad topologi). Det lägger till ett nytt databasregister avsett att lagra information om införselarbete. Tidigare lagrades denna information i register som även används för ASNs. |
 | Lagerstyrning | Blandade enheter i fack | Gör att systemet kan placera artiklar på platser med blandade enheter (till exempel både rutor och lådor). För varje placeringsmallrad kan du med funktionen välja om raden ska placera artiklar på platser med mixade enheter eller platser med enstaka enhet. |
@@ -137,9 +137,9 @@ Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. D
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.21 av Ekonomi och Drift-appar (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.21 av appar för ekonomi och drift (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 
@@ -164,3 +164,4 @@ För att bryta ändringar som endast påverkar kompileringen, men är binära ko
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

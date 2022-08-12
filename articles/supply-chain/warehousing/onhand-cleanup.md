@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900518"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065162"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Rensningsjobb för lagerbehållningsposter för lagerställe
 
@@ -26,13 +26,13 @@ ms.locfileid: "8900518"
 
 Prestanda för frågor som används för att beräkna lagerbehållning påverkas av antalet poster i registren som ingår. Ett sätt att förbättra prestandan är att minska antalet poster som måste beaktas i databasen.
 
-Denna artikel beskriver rensningsjobbet för lagerbehållningen, vilket innebär att poster som inte behövs i tabellerna InventSum och WHSInventReserve tas bort. Dessa register lagrar behållningsinformation för artiklar som aktiveras för bearbetning av lagerstyrning. (Dessa objekt kallas WHS-artiklar). Om du tar bort dessa poster kan du förbättra prestanda för lagerbehållningen avsevärt.
+Denna artikel beskriver rensningsjobbet för lagerbehållningen, vilket innebär att poster som inte behövs i tabellerna `InventSum` och `WHSInventReserve` tas bort. Dessa register lagrar behållningsinformation för artiklar som aktiveras för bearbetning av lagerstyrning. (Dessa objekt kallas WMS-artiklar). Om du tar bort dessa poster kan du förbättra prestanda för lagerbehållningen avsevärt.
 
 ## <a name="what-the-cleanup-job-does"></a>Vad rensningsjobbet gör
 
-Rensningsjobbet för lagerbehållningen tar bort alla poster i tabellerna WHSInventReserve och InventSum där alla fält värden är *0* (noll). Dessa poster kan tas bort eftersom de inte bidrar till behållningsinformationen. Jobbet tar bara bort poster som finns under nivån **lagerställe**.
+Rensningsjobbet för lagerbehållningen tar bort alla poster i tabellerna `WHSInventReserve` och `InventSum` där alla fältvärden är *0* (noll). Dessa poster kan tas bort eftersom de inte bidrar till behållningsinformationen. Jobbet tar bara bort poster som finns under nivån **lagerställe**.
 
-Om du tillåter negativa fysiska lager kan det hända att rensningsjobbet inte kan ta bort alla relevanta poster. Orsaken till den här begränsningen är att jobbet måste tillåtas för ett särskilt scenario där en ID-nummer har flera serienummer och ett av dessa serienummer har blivit negativt. Systemet har till exempel noll i behållning på ID-nummernivå när ett ID-nummer har + 1 dator med serienummer 1 och – 1 dator med serienummer 2. För det här speciella scenariot tar jobbet en första bredd, där det försöker ta bort från lägre nivåer först.
+Om du tillåter negativa fysiska lager kan det hända att rensningsjobbet inte kan ta bort alla relevanta poster. Orsaken till den här begränsningen är att jobbet måste tillåtas för ett särskilt scenario där en ID-nummer har flera löpnummer och ett av dessa löpnummer har blivit negativt. Systemet har till exempel noll i behållning på ID-nummernivå när ett ID-nummer har + 1 dator med löpnummer 1 och – 1 dator med löpnummer 2. För det här speciella scenariot tar jobbet en första bredd, där det försöker ta bort från lägre nivåer först.
 
 ## <a name="schedule-and-configure-the-cleanup-job"></a>Schemalägga och konfigurera rensningsjobbet
 

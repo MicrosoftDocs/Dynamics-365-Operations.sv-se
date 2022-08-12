@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3a399e1c7ccbd85b58286ec4f3d294f80332c3fd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 36d490832edcef025cb24a06288eb021eb794bd9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891304"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068497"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-20-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 20 maj 2021
 
@@ -41,8 +41,8 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 
 | Funktion | Utgivningsplan | Dokumentation |
 | --- | --- | --- |
-| Plattformsuppdatering 10.0.18 (42) | -- | [Plattformsuppdateringar för version 10.0.18 av Ekonomi och Drift-appar (maj 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
-| Appen Human Resources för nu Microsoft Teams har stöd för halvdagsdefinitioner och funktioner för uppdelade dagar | -- | [Hantera begäranden om ledighet i Teams](/dynamics365/human-resources/hr-teams-leave-app#create-a-new-request) |
+| Plattformsuppdatering 10.0.18 (42) | -- | [Plattformsuppdateringar för version 10.0.18 av appar för ekonomi och drift (maj 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
+| Appen Personal för nu Microsoft Teams har stöd för halvdagsdefinitioner och funktioner för uppdelade dagar | -- | [Hantera begäranden om ledighet i Teams](/dynamics365/human-resources/hr-teams-leave-app#create-a-new-request) |
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 
@@ -87,3 +87,4 @@ En fullständig lista över planerade funktioner och deras schemalagda versioner
 [Hantera funktioner](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

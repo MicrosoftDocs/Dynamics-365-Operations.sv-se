@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022577"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167774"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -90,11 +90,11 @@ Från och med version 10.0.25 av Supply Chain Management är denna funktion akti
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
-Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och serienummer. Vissa tillverkare, särskilt de som finns i bearbetningsindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. Medarbetare kan till exempel använda en våg för att väga hur mycket material som förbrukas medan de arbetar. För att garantera fullständig spårbarhet av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras.
+Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och löpnummer. Vissa tillverkare, särskilt de som finns i bearbetningsindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. Medarbetare kan till exempel använda en våg för att väga hur mycket material som förbrukas medan de arbetar. För att garantera fullständig spårbarhet av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras.
 
-Det finns två versioner av denna funktion. Den ena stöder artiklar som *inte* aktiverats för att använda avancerade lagerställeprocesser (WMS). Den andra stöder artiklar som *är* aktiverade för att använda WMS. Om du vill använda den här funktionen ska du aktivera en av eller båda följande funktioner i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i den här ordningen), beroende på om du har artiklar som är aktiverade för WMS:
+Det finns två versioner av denna funktion. Den ena stöder artiklar som *inte* aktiverats för att använda lagerstyrningsprocesser (WMS). Den andra stöder artiklar som *är* aktiverade för att använda WMS. Om du vill använda den här funktionen ska du aktivera en av eller båda följande funktioner i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i den här ordningen), beroende på om du har artiklar som är aktiverade för WMS:
 
-- *(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (inte WMS)*
+- *Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (icke-WMS)*
 - *(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)*
 
 > [!IMPORTANT]
@@ -164,8 +164,8 @@ Följande inställningar finns på snabbfliken **Allmänt**.
 - **Öppna dialogrutan Rapportförlopp automatiskt** – När detta alternativet är inställt på *Ja*, dialogrutan **Rapportförlopp** öppnas automatiskt när arbetare använder sökfältet för att hitta ett jobb.
 - **Aktivera justering av material** – Ställ in det här alternativet till *Ja* för att aktivera knappen **Justera material** i dialogrutan **Rapportförlopp**. Arbetare kan välja den här knappen för att justera materialförbrukningen för jobbet.
 - **Rapportera kvantitet vid utstämpling** – Ange detta alternativ till *Ja* för att be arbetare att rapportera återrapportering om pågående jobb när han eller hon stämplar ut. Om detta alternativ anges till *Nej* kommer medarbetarna inte att uppmanas.
-- **Lås medarbetare** – när det här alternativet är inställt på *Nej* kommer arbetstagarna att loggas ut omedelbart efter att de har gjort en registrering (t.ex. ett nytt jobb). Gränssnittet kommer sedan tillbaka till inloggningssidan. När det här alternativet är inställt på *Ja* kommer varje medarbetare att vara inloggad på körningsgränssnittet för produktionsgolvet. En arbetare kan dock manuellt logga ut så att en annan arbetare kan logga in medan ett körningsgränssnitt för produktionsgolvet fortsätter att köras under samma systemanvändarkonto. Mer information om dessa typer av konton finns i [Tilldela användare](config-job-card-device.md#assigned-users).
-- **Använd den faktiska tiden för registrering** – Ställ in detta alternativ på *Ja* att konfigurera tiden för varje ny registrering till den exakta tidpunkt då arbetstagaren lämnade in registreringen. När alternativet är inställt på *Nej*, används inloggningstiden istället. Du vill vanligtvis ange alternativet till *Ja* om du anger **Lås medarbetare** och/eller **Enskild arbetare** till *Ja* i fall där arbetstagare ofta förblir inloggade under längre perioder.
+- **Lås medarbetare** – när det här alternativet är inställt på *Nej* kommer arbetstagarna att loggas ut omedelbart efter att de har gjort en registrering (t.ex. ett nytt jobb). Gränssnittet kommer sedan tillbaka till inloggningssidan. När det här alternativet är inställt på *Ja* kommer varje medarbetare att vara inloggad på körningsgränssnittet för produktionsgolvet. En arbetare kan dock manuellt logga ut så att en annan arbetare kan logga in medan ett körningsgränssnitt för produktionsgolvet fortsätter köras under samma systemanvändarkonto. Mer information om dessa typer av konton finns i [Tilldela användare](config-job-card-device.md#assigned-users).
+- **Använd den faktiska tiden för registrering** – Ställ in detta alternativ på *Ja* att konfigurera tiden för varje ny registrering för den exakta tidpunkt då arbetstagaren lämnade in registreringen. När alternativet är inställt på *Nej*, används inloggningstiden istället. Du vill vanligtvis ange alternativet till *Ja* om du anger **Lås medarbetare** och/eller **Enskild arbetare** till *Ja* i fall där arbetstagare ofta förblir inloggade under längre perioder.
 - **En arbetare** – Ställ in det här alternativet på *Ja* om bara en av dem använder varje körningsgränssnitt för produktionsgolvet där denna konfiguration är aktiv. När det här alternativet är inställt på *Ja* alternativet **Lås medarbetare** automatiskt till *Ja*. Dessutom tar den här inställningen bort kravet (och möjligheten) för arbetaren att logga in med hjälp av ID-bricka (eller liknande ID). Istället loggar medarbetaren in Microsoft Dynamics 365 Supply Chain Management genom att använda ett systemanvändarkonto som är länkat till en *tidsregistrerad arbetare* (från tabellen *arbetaren*) och loggas in på körningsgränssnittet för produktionsgolvet samtidigt som medarbetaren.
 - **Tillåt låsning av pekskärm** – Ange detta alternativ till *Ja* medarbetare ska kunna låsa pekskärmen på körningsgränssnittet för produktionsgolvet så att de kan sanera den. När det här alternativet är inställt på *Ja* läggs knappen **Låsskärm för sanering** läggs till på inloggningssidan. När en medarbetare väljer den här knappen, låser sig pekskärmen tillfälligt för att förhindra indata. En nedräkningstimer visas också. Arbetaren kan nu rensa enheten och skärmen på ett säkert sätt. När nedräkningen är klar låses pekskärmen upp automatiskt.
 - **Tidslängd för skärmlåsning** – När alternativet **Tillåt låsning pekskärm** anges till *Ja*, använd det här alternativet för att ange antalet sekunder som pekskärmen ska vara låst för att desinficera. Längden måste vara mellan 5 och 120 sekunder.

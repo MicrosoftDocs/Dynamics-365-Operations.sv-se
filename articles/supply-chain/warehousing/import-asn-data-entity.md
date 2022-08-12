@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 66ed258ebddaadb5a306f41dea3e439e9b5a7be3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907128"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065881"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Importera inkommande ASN:er via V3-datatabellen
 
@@ -29,7 +29,7 @@ ASN kan hjälpa lagerarbetare att ta reda på vad som inkommer när. Därför ka
 I denna artikel finns en samling scenarier som med exempel visar hur du arbetar med ASN-filer.
 
 > [!IMPORTANT]
-> *Inkommande ASN*-import gäller bara för artiklar som är aktiverade för avancerad Warehouse management (WMS). Innan du får ett ASN måste en inköpsorder registreras i systemet mot leverantören som skickar detta ASN.
+> *Inkommande ASN*-import gäller bara för artiklar som är aktiverade för lagerstyrningsprocesser (WMS). Innan du får ett ASN måste en inköpsorder registreras i systemet mot leverantören som skickar detta ASN.
 
 ## <a name="inbound-asn-v3-entity"></a>Inkommande ASN V3-entitet
 

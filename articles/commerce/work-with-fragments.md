@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8824a42e46d94904f50d3f95b486673c231d9828
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f911c5ee209cfcde5d2b2aef2c8f7343eb694cd3
+ms.sourcegitcommit: 9cfccb5c260ce56a3457f9ea12e80f54ea55a3b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896848"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183300"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
@@ -145,6 +145,8 @@ Du kan byta namn på ett fragment efter att det har skapats genom att redigera d
 [Arbeta med förinställda layouter](work-with-layouts.md)
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
+
+[Visa versionshistorik för att återställa sidor och fragment](version-history-revert.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

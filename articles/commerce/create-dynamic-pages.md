@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83e20d9fc655a474a11521ec61d0b64d30603181
+ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884673"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "9169141"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Skapa dynamiska näthandelssidor baserade på URL-parametrar
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 I denna artikel beskrivs hur du konfigurerar en Microsoft Dynamics 365 Commerce-näthandelssida som kan betjäna dynamiskt innehåll baserat på URL-parametrar.
 
@@ -42,7 +41,7 @@ Följ stegen i [Lägg till en ny webbplatssida](add-new-page.md) om du vill skap
 
 ### <a name="create-the-base-url-for-the-dynamic-page"></a>Skapa bas-URL för den dynamiska sidan
 
-Skapa bas-URL för den dynamiska sidan i Commerce-webbplatsbyggaren genom att följa dessa steg.
+Skapa bas-URL för den dynamiska sidan i Commerce-webbplatsverktyget genom att följa dessa steg.
 
 1. Gå till **URLs** och välj sedan **Ny \> Ny URL**.
 1. I dialogrutan **Skapa ny URL** väljer du **Intern sida**. Under **URL-sökväg** anger du den sökväg som ska fungera som rot för den dynamiska sidan (i detta exempel **/blog**). Välj sedan **Nästa**.
@@ -51,7 +50,7 @@ Skapa bas-URL för den dynamiska sidan i Commerce-webbplatsbyggaren genom att f�
 
 ### <a name="configure-the-route-to-the-dynamic-page"></a>Konfigurera flödet till den dynamiska sidan
 
-Följ dessa steg om du vill konfigurera flödet till den dynamiska sidan i Commerce-webbplatsbyggaren.
+Följ dessa steg om du vill konfigurera flödet till den dynamiska sidan i Commerce-webbplatsverktyget.
 
 1. Gå till **Webbplatsinställningar \> Tillägg**.
 1. Under **PParameteriserade URL-sökvägar** väljer du **Lägg till** och anger sedan den URL-sökväg som du angav när du skapade URL:en (i detta exempel **/blog**).
@@ -61,7 +60,7 @@ När flödet har konfigurerats kommer alla förfrågningar till den parameterise
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Åsidosätta en parameteriserad URL med en anpassad sida
 
-Om du vill åsidosätta en parameteriserad URL med en anpassad sida i Commerce-webbplatsbyggaren gör du så här.
+Om du vill åsidosätta en parameteriserad URL med en anpassad sida i Commerce-webbplatsverktyget gör du så här.
 
 1. Gå till **URLs** och välj sedan **Ny \> Ny URL**.
 1. I dialogrutan **Skapa ny URL** väljer du **Intern sida**. Under **URL-sökväg** anger du den sökväg som omfattar det segment som ska åsidosättas (i detta exempel **/blog/about-this-blog**). Välj sedan **Nästa**.

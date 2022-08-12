@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: bd86d7b55d4185131ed57fce7d31f6cdcf542a50
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0688282c11b1276bfeeffa778558604e6527dd8d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880065"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066917"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-commerce"></a>Utbildningskatalog för projektledare för implementering som arbetar med Dynamics 365 Commerce
 
@@ -25,7 +25,7 @@ ms.locfileid: "8880065"
 
 Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner och från de flesta till de mest avancerade. Om det finns innehåll i flera format får vi meddela dig att du kan välja det utbildningsformat som bäst motsvarar dina behov.
 
-Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [Dynamics 365 Finance utbildningskatalog](../../finance/get-started/learning-catalog-project-manager.md).
+Om du vill öva på funktioner som delas med andra appar för ekonomi och drift, se då [Utbildningskatalog för Dynamics 365 Finance](../../finance/get-started/learning-catalog-project-manager.md).
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
@@ -37,3 +37,4 @@ Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

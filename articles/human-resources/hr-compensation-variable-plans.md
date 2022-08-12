@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2f51a095a23b651dca645b14e652519f20037e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853086"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070571"
 ---
 # <a name="create-variable-compensation-plans"></a>Skapa planer för variabel kompensation
 
@@ -42,7 +42,11 @@ Beräkningen av belopp i en variabel kompensation för medarbetarna kan baseras 
 Företag kan ställa in **överlåtelseregler** om de vill. **Överlåtelseregler** beskriver hur den variabla belöningen ska fördelas över tid. En överlåtelseregel kan exempelvis ange att medarbetaren ska få 25 procent av sin totala belöning varje år under de kommande fyra åren. Överlåtelseregler utgör ren information.
 
 ## <a name="variable-compensation-plans"></a>Planer för variabel kompensation
-**Planen för variabel kompensation** innehåller regler, beräkningsmetoder och standardvärden för beräkning av variabel kompensation för medarbetare. När du skapar en variabel kompensationsplan anger du den variabla kompensationstypen. Den variabla kompensationstypen avgör om systemet beräknar ett valutabelopp eller antalet enheter som belöning. Du måste även ange beräkningsmetoden:
+**Planen för variabel kompensation** innehåller regler, beräkningsmetoder och standardvärden för beräkning av variabel kompensation för medarbetare. När du skapar en variabel kompensationsplan anger du den variabla kompensationstypen. Den variabla kompensationstypen avgör om systemet beräknar ett valutabelopp eller antalet enheter som belöning. 
+
+Parametern **Begränsa åtkomst till valda roller** begränsar åtkomsten till kompensationsplanen till valda säkerhetsroller som har tilldelats den planen i Personal. När du till exempel skapar kompensationsplaner som är avsedda för chefer och inte ska vara synliga för alla personalspecifika roller, kan du använda den här parametern för att begränsa åtkomsten till dessa kompensationsplaner. 
+
+Du måste även ange beräkningsmetoden:
 
 -   **Tidpunkt** – Beräkningen av den variabla belöningen baseras på den fasta kompensationsplan som medarbetaren hade ett visst datum. Detta datum anges för den processhändelse när nya kompensationsbelopp bearbetas.
 -   **Sammansatt** – Ett kompensationsbelopp beräknas för varje unikt lönesats för fast kompensation som medarbetaren hade mellan startdatum och slutdatum i kompensationsperioden för processhändelsen. Tarifferna läggs därefter samman för att fastställa den slutliga belöningen. Under cykeln överförs till exempel en medarbetare till en annan befattning med en annan lönesats. I det här fallet justeras den variabla kompensationen för hur länge medarbetaren hade varje lönesats.

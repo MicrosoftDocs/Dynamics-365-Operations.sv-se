@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d6524cb9109263ad62d221ec98e546b962b89ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850450"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067541"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurera produktfilter för distributionslagertransaktioner
 
@@ -78,7 +78,7 @@ Så här ställer du in filtergrupper.
 
 Genom att konfigurera filterkoder för en artikelgrupp kan du skapa de koder som krävs för produkter som är kopplade till den artikelgruppen.
 
-Gör på följande sätt när du vill konfigurera filterkoder i artikelgrupper.
+Följ dessa steg när du vill konfigurera filterkoder i artikelgrupper.
 
 1. Gå till **Lagerhantering \> Inställningar \> Lager \> Artikelgrupper**.
 1. I åtgärdsfönstret, välj **Ny** för att skapa en artikelgrupp.
@@ -95,11 +95,11 @@ Gör på följande sätt när du vill konfigurera filterkoder i artikelgrupper.
     Om till exempel kryssrutorna **Använd filterkod 1** och **Använd filterkod 2** markeras måste både filterkod 1 och filterkod 2 för artikeln matcha inställningarna för filtergruppen för artikelgruppen innan filtergruppen kan väljas. När du skapar en ny artikel kommer den valda filtergruppen att vara standardfiltergruppen i fälten **Grupp 1** och **Grupp 2** på snabbfliken **Distributionslager** på sidan **Information om frisläppt produkt**.
 
 > [!IMPORTANT]
-> Produktfilterkoder aktiveras endast för artiklar som använder avancerad distributionslagerhantering.
+> Produktfilterkoder aktiveras endast för artiklar som använder lagerstyrningsprocesser (WMS).
 
 ## <a name="specify-filter-codes-for-released-products"></a>Ange filterkoder för släppta produkter
 
-Gör på följande sätt för att ange filterkoder för frisläppta produkter. Du kan till exempel använda filterkoder för att gruppera farliga produkter som specifika leverantörer köper.
+Följ dessa steg för att ange filterkoder för frisläppta produkter. Du kan till exempel använda filterkoder för att gruppera farliga produkter som specifika leverantörer köper.
 
 1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
 1. I åtgärdsfönstret, välj **Ny** för att skapa en produkt.
@@ -118,7 +118,7 @@ Du kan göra specifika lagerartiklar endast tillgängliga för kunder eller leve
 > [!NOTE]
 > Kundfilter och leverantörsfilter gäller inte för artiklar som ställs in som allmänt tillgängliga.
 
-Gör på följande sätt när du vill konfigurera allmänt tillgängliga artiklar.
+Följ dessa steg när du vill konfigurera allmänt tillgängliga artiklar.
 
 1. Gå till **Hantering av distributionslager \> Inställningar \> Produktfilter \> Allmänt tillgängliga produkter**.
 1. I åtgärdsfönstret, välj **Ny** för att skapa en post.
@@ -133,7 +133,7 @@ Gör på följande sätt när du vill konfigurera allmänt tillgängliga artikla
 
 Du kan använda denna valfria procedur för att visa hur du anger artiklar som ska vara tillgängliga för en kund utöver de artiklar som har gjorts tillgängliga via filterinställningar på sidan **Allmänt tillgängliga artiklar**. Du kan konfigurera filter för en enda kund.
 
-Gör på följande sätt när du vill konfigurera kundfilterkoder.
+Följ dessa steg när du vill konfigurera kundfilterkoder.
 
 1. Gå till **Försäljning och marknadsföring \> Kunder \> Alla kunder**.
 1. Välj en kund.
@@ -147,7 +147,7 @@ Gör på följande sätt när du vill konfigurera kundfilterkoder.
 
 Du kan använda denna valfria procedur för att visa hur du anger artiklar som ska vara tillgängliga för en leverantör utöver de artiklar som har gjorts tillgängliga via filterinställningar på sidan **Allmänt tillgängliga artiklar**. Du kan konfigurera filter för en enda säljare.
 
-Gör på följande sätt när du vill konfigurera leverantörsfilterkoder.
+Följ dessa steg när du vill konfigurera leverantörsfilterkoder.
 
 1. Gå till **Anskaffning och källa \> Leverantörer \> Alla leverantörer**.
 1. Välj en leverantör.
@@ -158,7 +158,7 @@ Gör på följande sätt när du vill konfigurera leverantörsfilterkoder.
 1. I fälten **Kod 1** till och med **Kod 10** väljer du de filterkoder som ska användas som villkor för att begränsa de artiklar som är tillgängliga för leverantörer i den valda artikelgruppen. Du måste göra ett val för varje filterkod som är inställd för artikelgruppen.
 
 > [!NOTE]
-> Inställningarna för leverantörsproduktfilter gäller frisläppta produkter där distributionslagerhanteringsprocesser är aktiverade för den associerade lagringsdimensionsgruppen. Filterkoderna används för att avgöra om systemet kommer att tillåta användare att köpa en given artikel från en given leverantör när de skapar inköpsorderrader. Microsoft Dynamics 365 Supply Chain Management har två metoder för hantering av leverantörsgodkännande. Om en eller flera frisläppta produkter där fältet **Kontrollmetod för godkänd leverantör** är inställt på *Endast varning* eller *Tillåts inte* kan båda metoderna för leverantörsgodkännande aktiveras för dessa artiklar. Den här situationen kan orsaka problem när användare skapar inköpsorderrader.
+> Inställningarna för leverantörsproduktfilter gäller frisläppta produkter där hanteringsprocesser för distributionslager (WMS) är aktiverade för den associerade lagringsdimensionsgruppen. Filterkoderna används för att avgöra om systemet kommer att tillåta användare att köpa en given artikel från en given leverantör när de skapar inköpsorderrader. Microsoft Dynamics 365 Supply Chain Management har två metoder för hantering av leverantörsgodkännande. Om en eller flera frisläppta produkter där fältet **Kontrollmetod för godkänd leverantör** är inställt på *Endast varning* eller *Tillåts inte* kan båda metoderna för leverantörsgodkännande aktiveras för dessa artiklar. Den här situationen kan orsaka problem när användare skapar inköpsorderrader.
 
 ## <a name="see-also"></a>Se även
 

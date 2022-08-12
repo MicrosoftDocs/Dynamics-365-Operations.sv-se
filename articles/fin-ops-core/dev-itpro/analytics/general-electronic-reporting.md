@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869269"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109593"
 ---
 # <a name="electronic-reporting-er-overview"></a>Översikt över elektronisk rapportering (ER)
 
@@ -66,11 +66,11 @@ ER stöder för närvarande formaten TEXT, XML, JSON, PDF, Microsoft Word, Micro
 
 ER-motorn har följande funktioner:
 
-- Den representerar ett enskilt verktyg som kan användas för elektronisk rapportering i olika domäner och ersätter fler än 20 olika motorer som används för någon form av elektronisk rapportering för Finance and Operations.
+- Den representerar ett enskilt delat verktyg för elektronisk rapportering inom olika domäner och ersätter fler än 20 olika motorer som används för någon form av elektronisk rapportering för Ekonomi och drift.
 - Den skapar ett rapportformat utanför den aktuella implementeringen. Formatet är med andra ord tillämpligt för olika versioner.
 - Den har stöd för att skapa ett anpassat format som är baserat på ett originalformat. Det innehåller även funktioner för automatisk uppdatering av det anpassade formatet när ursprungsformatet ändras på grund av nya lokaliserings-/anpassningskrav.
-- Det kommer att vara det primära standardverktyget för att stödja lokaliseringskrav vid elektronisk rapportering – både för Microsoft samt för Microsofts partners.
-- Den stöder funktionen för att distribuera format till partners och kunder via Microsoft Dynamics Lifecycle Services (LCS).
+- Det kommer att vara det primära standardverktyget för att stödja lokaliseringskrav vid elektronisk rapportering – både för Microsoft samt för Microsofts partner.
+- Den stöder funktionen för att distribuera format till partner och kunder via Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="key-concepts"></a>Viktiga begrepp
 
@@ -126,7 +126,7 @@ En ER-konfiguration delas av programföretag.
 
 #### <a name="provider"></a><a name="Provider"></a>Leverantör
 
-ER-leverantören är partens identifierare som används för att indikera författare (ägare) av varje ER-konfiguration. Med hjälp av ER kan du hantera listan över konfigurationsleverantörer. Formatkonfigurationer som släpps för elektroniska dokument som en del av Finance and Operations-lösningen markeras som ägda av **Microsoft**-konfigurationsleverantören.
+ER-leverantören är partens identifierare som används för att indikera författare (ägare) av varje ER-konfiguration. Med hjälp av ER kan du hantera listan över konfigurationsleverantörer. Formatkonfigurationer som släpps för elektroniska dokument som en del av Ekonomi och drift-lösningen markeras som ägda av konfigurationsleverantören **Microsoft**.
 
 För information om hur du registrerar en ny ER-leverantör, kör uppgiftsguiden **ER skapa en konfigurationstjänst och markera den som aktiv** (ingår i affärsprocessen **7.5.4.3 Införskaffa/utveckla IT-tjänst/-lösningskomponenter (10677)**).
 
@@ -143,7 +143,7 @@ En ER-databas lagrar ER-konfigurationer. Följande typer av ER-databaser stöds 
 
 En databas för **delat LCS-bibliotek** ger dig listan över konfigurationer i det delade tillgångsbiblioteket i Lifecycle Services (LCS). Den här typen av ER-databas kan endast registreras för Microsoft-leverantören. Från det delade LCS-tillgångsbiblioteket kan du importera de senaste versionerna av ER-konfigurationer till den aktuella instansen.
 
-En **LCS-projekt**-databas ger åtkomst till listan över konfigurationerna för ett visst LCS-projekt (tillgångsbibliotek för LCS-projekt) som valdes när databasen registrerades. ER låter dig överföra delade konfigurationer från den befintliga instansen till en specifik databas för **LCS-projekt**. Du kan även importera konfigurationer från en **LCS-projekt**-databas till den befintliga instansen av Finance and Operations-appar.
+En **LCS-projekt**-databas ger åtkomst till listan över konfigurationerna för ett visst LCS-projekt (tillgångsbibliotek för LCS-projekt) som valdes när databasen registrerades. ER låter dig överföra delade konfigurationer från den befintliga instansen till en specifik databas för **LCS-projekt**. Du kan även importera konfigurationer från en **LCS-projekt**-databas till den befintliga instansen av dina appar för ekonomi och drift.
 
 En **Filsystem**-datalager ger åtkomst till listan över konfigurationer som finns som XML-filer i en viss mapp i det lokala filsystemet på maskinen där AOS-tjänsten finns. Önskad mapp väljs vid registreringssteget för datalagret. Du kan även importera konfigurationer från ett **Filsystem**-datalager till den befintliga instansen. 
 
@@ -270,3 +270,4 @@ Listan över ER-konfigurationer för Finance uppdateras regelbundet. Öppna den 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

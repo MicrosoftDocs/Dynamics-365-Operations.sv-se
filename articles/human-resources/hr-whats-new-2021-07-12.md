@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7fb922a35504b69aa8cc3d92cb981e8fb060290
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870970"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067599"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 12 juli 2021
 
@@ -60,7 +60,7 @@ Den här versionen innehåller följande felkorrigeringar.
 | 593553 | Journaldatumfältet i prestandajournalen visas i UTC | Fältet **Journaldatum** för prestandatidskrifter visas i UTC-tidszonen snarare än den tidszon som definieras i systemdatuminställningen, vilket gör att datumet är felaktigt för vissa tidszoner. |
 | 586930 | När du öppnar aktiviteter för resultatmål öppnas en helt annan post | När funktionen "Prestandajournaler för utvidgade rapporter" är aktiverad i Funktionshantering väljer du prestandamål för utökade rapporter om fliken **Mitt team** i **Självbetjäning för medarbetare** öppnas målen för en anställd istället för den utvalda medarbetaren. |
 | 569959 |  HcmPositionWorkerAssignmentV2-entitet tilldelar inte en arbetare till en befattning | Användarna fick ett felmeddelande när en befattningstilldelningspost läggs till via enheten och publiceringen misslyckades. |
-| 582259 | VETS 4212-rapporten används formuläret 2017 i stället för formuläret 2020 | Uppdaterad till 2020-formatet.  Läs in det nya formatet genom att gå till **Rapportkonfigurationer** och ta VETS-4212 rapporten i den vänstra kolumnen. Gå till **Elektronisk rapportering - Databaser - Personalresurser** och välj **Öppna**.  Välj **VETS-4212 PDF utskrift** och välj sedan **Importera**.|
+| 582259 | VETS 4212-rapporten används formuläret 2017 i stället för formuläret 2020 | Uppdaterad till 2020-formatet.  Läs in det nya formatet genom att gå till **Rapportkonfigurationer** och ta VETS-4212 rapporten i den vänstra kolumnen. Gå till **Elektronisk rapportering – Databaser – Personalresurser** och välj **Öppna**.  Välj **VETS-4212 PDF utskrift** och välj sedan **Importera**.|
 
 
 ## <a name="in-preview"></a>I förhandsgranskning
@@ -80,7 +80,7 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 
 | Funktion | Information |
 | --- | --- |
-| Plattformsuppdatering 10.0.20 (44) | Plattformsuppdatering 10.0.20 planeras i och med nästa serviceversion den 26 juli 2021. Mer information finns i [Plattformsuppdateringar för version 10.0.20 av Ekonomi och Drift-appar (augusti 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20). |
+| Plattformsuppdatering 10.0.20 (44) | Plattformsuppdatering 10.0.20 planeras i och med nästa serviceversion den 26 juli 2021. Mer information finns i [Plattformsuppdateringar för version 10.0.20 av appar för ekonomi och drift (augusti 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20). |
 
 En fullständig lista över planerade funktioner och deras schemalagda versioner finns i [Översikt över Dynamics 365 Human Resources 2021 utgivningscykel 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
@@ -92,3 +92,4 @@ En fullständig lista över planerade funktioner och deras schemalagda versioner
 [Hantera funktioner](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

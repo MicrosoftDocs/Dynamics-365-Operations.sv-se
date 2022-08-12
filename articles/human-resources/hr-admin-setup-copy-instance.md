@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692434"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178546"
 ---
 # <a name="copy-an-instance"></a>Kopiera en instans
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gäller för:** Personal i den fristående infrastrukturen_ 
 
+> [!NOTE]
+> Från och med juni 2022 kan Personalmiljöer endast distribueras på infrastruktur för appar för ekonomi och drift. Mer information finns i [tillhandahålla Personal i infrastruktur för ekonomi och drift](hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Infrastrukturen för ekonomi och drift har inte stöd för funktionen för kopieringsinstans. Du kan distribuera nya miljöer och använda databasrörelser när du vill skapa kopior. Mer information om hur du distribuerar självbetjäning finns [Översikt över självbetjäningsdistribution](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). Mer information om databasrörelser i infrastruktur för ekonomi och drift finns på [Startsidan för databasrörelseåtgärder](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 Du kan använda Microsoft Dynamics Lifecycle Services (LCS) för att kopiera en Microsoft Dynamics 365 Human Resources-databas till en miljö i begränsat läge. Om du har en annan miljö med begränsat läge kan du även kopiera databasen från den miljön till en miljö med begränsat läge.
 
@@ -50,7 +55,7 @@ Följande händelser inträffar när du kopierar en personaldatabas:
 
 - Dokument i Microsoft Azure Blob-lagring kopieras inte från en miljö till en annan. Därför kopieras inte de kopplade dokumenten och mallarna och de blir kvar i källmiljön.
 
-- Alla användare utom de som har säkerhetsrollen Systemadministratör och andra interna tjänsteanvändarkonton är inte tillgängliga. Administratörsanvändaren kan ta bort eller dölja data innan andra användare tillåts tillbaka till systemet.
+- Alla användare utom de som har säkerhetsrollen Systemadministratör och andra interna tjänsteanvändarkonton är inte tillgängliga. Administratörsanvändaren kan ta bort eller dölja data innan andra användare tillåts återvända till systemet.
 
 - Alla användare med säkerhetsrollen "Systemadministratör" måste göra obligatoriska konfigurationsändringar, t.ex. återansluta integreringsslutpunkter för specifika tjänster eller URL:er.
 
@@ -76,6 +81,8 @@ Om du vill slutföra den här uppgiften kopierar du först en instans och loggar
    ![[Välj Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Markera den Power Apps-miljö du vill kopiera och välj sedan **kopiera**.
+
+Mer information om hur du kopierar Power Apps-miljöer finns i [Kopiera en miljö](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. När kopieringsprocessen har slutförts loggar du in på målinstansen och aktiverar Dataverse-integreringen. Mer information och anvisningar finns i [Konfigurera Dataverse-integration](./hr-admin-integration-common-data-service.md).
 
@@ -115,7 +122,7 @@ Dessutom ändras följande statusvärden när du kopierar en instans:
 
 ## <a name="environment-admin"></a>Miljöadministration
 
-Alla användare i målmiljön i begränsat läge, inklusive administratörer, ersätts av användarna i källmiljön. Kontrollera att du är administratör i källmiljön innan du kopierar en instans. Om du inte är det kan du inte logga in till målmiljön efter att kopieringen har slutförts.
+Alla användare i målmiljön i begränsat läge, inklusive administratörer, ersätts av användarna i källmiljön. Kontrollera att du är administratör i källmiljön innan du kopierar en instans. Om du inte är det kan du inte logga in i målsandbox-miljön efter att kopieringen har slutförts.
 
 Alla användare som inte är administratörer i målmiljön i begränsat läge är inaktiverade för att förhindra oönskade inloggningar i miljön i begränsat läge. Administratörer kan återaktivera användare om det behövs.
 

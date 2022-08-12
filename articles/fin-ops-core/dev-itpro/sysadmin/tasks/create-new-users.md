@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 00da7c69ff18abd02ca0cd7984e9b2de5e453a0c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595396"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103338"
 ---
 # <a name="create-new-users"></a>Skapa nya användare
 
 [!include [banner](../../includes/banner.md)]
 
-Innan du får åtkomst till Finance and Operations-appar måste du först lägga till på sidan **Användare** (**Systemadministration \> Användare \> Användare**). Användare inkluderar interna medarbetare inom organisationen eller externa kunder och leverantörer. Användare kan importeras eller läggas till manuellt. Alla användare måste ha rätt licens för kompatibel användning.
+Innan du får åtkomst till appar för ekonomi och drift måste du först läggas till på sidan **Användare** (**Systemadministration \> Användare \> Användare**). Användare inkluderar interna medarbetare inom organisationen eller externa kunder och leverantörer. Användare kan importeras eller läggas till manuellt. Alla användare måste ha rätt licens för kompatibel användning.
 
-Mer information om hur du köper och licens för Finance and Operations-appar, se [Microsoft Dynamics 365 licenshandboken](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
+Mer information om hur du köper, samt om licens för appar för ekonomi och drift, finns i [Licensguiden för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Tilldela en licens till en användare.
-Systemadministratörer kan [tilldela licenser till användare](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) i [Microsoft 365 administrationscenter](/office365/admin/admin-overview/about-the-admin-center)
+Systemadministratörer kan [tilldela licenser till användare](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) i [administrationscentret för Microsoft 365](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Lägg till en extern användare i Azure AD och tilldela en licens 
-Externa användare måste finnas med i klientkatalogen (Azure Active Directory (Azure AD)) så att de kan tilldelas licenser. Dessa externa användare ska läggas till i innehavaren av Azure AD som gästanvändare och sedan tilldelas de lämpliga licenserna. Ett krav för Finance and Operations-appar är att gästanvändarens företag måste använda Azure AD. Mer information finns i [lägga till Azure Active Directory B2B samarbetsanvändare i Azure-portalen](/azure/active-directory/b2b/add-users-administrator).
+Externa användare måste finnas med i klientkatalogen (Azure Active Directory (Azure AD)) så att de kan tilldelas licenser. Dessa externa användare ska läggas till i innehavaren av Azure AD som gästanvändare och sedan tilldelas de lämpliga licenserna. Ett krav för appar för ekonomi och drift är att gästanvändarens företag måste använda Azure AD. Mer information finns i [lägga till Azure Active Directory B2B samarbetsanvändare i Azure-portalen](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Importera ny användare från Azure AD 
 1. Gå till **Systemadministration** \> **Användare** \> **Användare**.

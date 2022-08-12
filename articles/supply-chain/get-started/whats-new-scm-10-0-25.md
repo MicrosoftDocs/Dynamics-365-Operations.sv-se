@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954508"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167744"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.25 april 2022)
 
@@ -36,8 +36,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 | Lager&nbsp;och&nbsp;logistik | [Förbättringar av farliga material](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Kommer snart | Funktionshantering:<br>*Förbättringar av farliga material* |
 | Lager&nbsp;och&nbsp;logistik | [Förpackningsstationer för packningsarbete](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Kommer snart | Funktionshantering:<br>*Förpackningsstationer för packningsarbete* |
 | Lager&nbsp;och&nbsp;logistik | [Skanna streckkoder på lagerstället med standarder för GS1-format](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-streckkoder och QR-koder](../warehousing/gs1-barcodes.md) | Funktionshantering:<br>*Skanna GS1-streckkoder* |
-| Tillverkning | [Materialförbrukning och reservationer i körningsgränssnittet för produktionsgolv](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Hur arbetare använder körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-use.md) | Funktionshantering:<br>*(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (inte WMS)*<br><br>Och/eller:<br><br>Funktionshantering:<br>*(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)* |
-| Tillverkning | [Registrera materialförbrukning skalningsenheter](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Arbetsbelastningar för tillverkningskörning för moln- och kantskalenheter](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionshantering:<br>*Registrera materialförbrukning i mobilappen på en skalenhet* |
+| Tillverkning | [Materialförbrukning och reservationer i körningsgränssnittet för produktionsgolv](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Hur arbetare använder körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-use.md) | Funktionshantering:<br>*Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (icke-WMS)*<br><br>Och/eller:<br><br>Funktionshantering:<br>*(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)* |
 | Planering | [Centralunderhåll för Planeringsoptimering](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalendrar och huvudplanering](../master-planning/supply-chain-calendars-master-planning.md) | Aktiverad som standard |
 | Planering | [Förslag till Planeringsoptimering för att optimera befintligt leverans](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Åtgärdsmeddelanden](../master-planning/action-messages.md) | Aktiverad som standard |
 | Planering | Förenklade planerade order | [Förenklade planerade order](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funktionshantering:<br>*Förenklade planerade order* |
@@ -120,7 +119,7 @@ Tabellen visar även funktioner som tidigare var offentliga, men som har ändrat
 | Produktionskontroll | [Funktionen för Tillgångshantering för körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-configure.md) | På som standard |
 | Produktionskontroll | [Jobbsökning för produktionsgolvets körningsgränssnitt](../production-control/production-floor-execution-configure.md) | På som standard |
 | Produktionskontroll | [Åsidosätta standardproduktionsreservation](../production-control/override-default-reservation-principle.md) | På som standard |
-| Produktionskontroll | [Visa fullständiga serienummer, batch- och ID-nummer i gränssnittet för produktionsgolvkörning](whats-new-scm-10-0-21.md) | På som standard |
+| Produktionskontroll | [Visa fullständiga löpnummer, batch- och ID-nummer i gränssnittet för produktionsgolvkörning](whats-new-scm-10-0-21.md) | På som standard |
 | Försäljning och marknadsföring | [Prestandaförbättringar för försäljningsorderinformation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Allmänt tillgängligt |
 | Försäljning och marknadsföring | Prestandaförbättringar för försäljningsoffertinformation | Allmänt tillgängligt |
 | Försäljning och marknadsföring | Dataexportpolicy som refereras i försäljningsorder | Obligatoriskt |
@@ -209,3 +208,4 @@ Innan någon funktion tas bort från produkten kommer meddelandet om inaktualite
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

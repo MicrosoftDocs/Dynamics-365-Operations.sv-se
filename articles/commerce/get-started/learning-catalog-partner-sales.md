@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4fdf8cd9d27b0ea6a629339e9c09c2cfc0924957
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eb0a3f26761f922225aa4b50bc709ae64aab9934
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864900"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070264"
 ---
 # <a name="learning-catalog-for-commerce-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-commerce"></a>Utbildningskatalog för Commerce Microsoft Partner försäljnings- och marknadsföringsroller för Dynamics 365 Commerce
 
@@ -25,7 +25,7 @@ ms.locfileid: "8864900"
 
 Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner och från de flesta till de mest avancerade. Om det finns innehåll i flera format får vi meddela dig att du kan välja det utbildningsformat som bäst motsvarar dina behov.
 
-Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [Dynamics 365 Finance utbildningskatalog](../../finance/get-started/learning-catalog-partner-sales.md).
+Om du vill öva på funktioner som delas med andra appar för ekonomi och drift, se då [Utbildningskatalog för Dynamics 365 Finance](../../finance/get-started/learning-catalog-partner-sales.md).
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
@@ -37,3 +37,4 @@ Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

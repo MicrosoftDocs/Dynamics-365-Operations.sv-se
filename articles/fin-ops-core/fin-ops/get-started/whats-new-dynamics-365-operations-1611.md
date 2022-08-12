@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5be880a6d178743f4a2d3339609604d993f7e5d5
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: dfe5eeee10bbe7812155018f4ff552eaa10a14e1
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016432"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125065"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheter och ändringar i Dynamics 365 for Operations version 1611 (november 2016)
 
@@ -48,7 +48,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 </tr>
 <tr>
 <td>Definiera dimensioner för kostnadsobjekt och importera dimensionsmedlemmar för kostnadsobjekt.</td>
-<td>Kostnadobjekt är en typ av objekt som kostnader tilldelas till. Typiska kostnadsobjekt inkluderar produkter, projekt, resurser, avdelningar, kostnadsställen och geografiska regioner. Du kan använda antingen en Microsoft Dynamics 365 for Operations-datakoppling för att få ekonomiska dimensioner och värden från Operations eller använda en allmän datakoppling, där du kan få dimensioner och värden från Excel via någon annan typ av källsystem. Om du till exempel använder den ekonomiska dimensionen kostnadsställe är alla kostnadsställen som importeras dimensionsmedlemmarna för kostnadsobjektet.</td>
+<td>Kostnadobjekt är en typ av objekt som kostnader tilldelas. Typiska kostnadsobjekt inkluderar produkter, projekt, resurser, avdelningar, kostnadsställen och geografiska regioner. Du kan använda antingen en Microsoft Dynamics 365 for Operations-datakoppling för att få ekonomiska dimensioner och värden från Operations eller använda en allmän datakoppling, där du kan få dimensioner och värden från Excel via någon annan typ av källsystem. Om du till exempel använder den ekonomiska dimensionen kostnadsställe är alla kostnadsställen som importeras dimensionsmedlemmarna för kostnadsobjektet.</td>
 </tr>
 <tr>
 <td>Definiera eller importerade statistikdimensioner.</td>
@@ -942,7 +942,7 @@ För närvarande är Retail Modern POS endast tillgänglig som Windows 8.1-progr
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Nyheter och ändringar på hemsidan för Finance and Operations](whats-new-changed.md)
+[Nyheter och ändringar på hemsidan för Ekonomi och drift](whats-new-changed.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Ställ in direkt integration av italiensk FatturaPA med SDI
 description: Det här ämnet ger information som hjälper dig att komma igång med elektronisk fakturering för Italien och ställa in direkt integration av italiensk FatturaPA med Exchange-systemet (SDI).
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853204"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203182"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Ställ in direkt integration av italiensk FatturaPA med SDI
 
@@ -69,10 +69,13 @@ Denna artikel kompletterar avsnittet [Landsspecifik konfiguration för programko
     - Fö åtgärden **Logga in dokument**, i fältet **Certifikatnamn**, ange certifikatet för digital signatur.
     - För åtgärden **Skicka** ange fälten **URL-adress** och **Certifikat**. Värdet för fältet **Certifikat** är en kedja av certifikat, varav det första är rot-CA-certifikatet (caentrate.cer), och det andra är klientens certifikat.
 
-4. Välj **Validera** om du vill vara säker på att alla obligatoriska fält har ställts in.
-5. Spara ändringarna och stäng sidan.
-6. På fliken **Inställningar**, välj **Projektfakturor** och välj **Redigera**.
-7. Upprepa steg 3 till 5 för projektfakturor.
+4. I avsnittet **Tillämpningsregler** går du igenom klausulerna och granskar eller ställer in de obligatoriska fälten:
+    - Granska klausulen **LegalEntityID** och uppdatera den med korrekt värde från din juridiska person.
+
+5. Välj **Validera** om du vill vara säker på att alla obligatoriska fält har ställts in.
+6. Spara ändringarna och stäng sidan.
+7. På fliken **Inställningar**, välj **Projektfakturor** och välj **Redigera**.
+8. Upprepa steg 3 till 6 för projektfakturor.
 
 ### <a name="configure-the-processing-pipeline-for-import"></a>Konfigurera ett bearbetningsförlopp för import
 

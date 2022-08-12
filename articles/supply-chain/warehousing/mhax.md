@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907099"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068372"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Materialhanteringsutrustningens gränssnitt (MHAX)
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan använda *materialhanteringsutrustningens gränssnitt* (MHAX) för att ansluta externa fysiska materialhanteringssystem (MH) till ett lager som hanteras av avancerad lagerhantering (WMS) i Microsoft Dynamics 365 Supply Chain Management. Gränssnittet mellan WMS- och MJ-systemen består av två köer: en för utgående händelser (WMS till MH) och en för inkommande händelser (MH till WMS). WMS-systemet genererar utgående händelser baserade på arbetsrader som skapas under olika arbetsskapande- och körningsprocesser. MH-systemet söker sedan regelbundet i WMS-systemet efter nya händelser och bearbetar svaren. När MH-systemet har slutfört hanteringen av händelserna i enlighet med arbetsinstruktioner skickar det inkommande händelser, till exempel slutförande av arbetsrad och kort plockning.
+Du kan använda *utrustningsgränssnittet för materialhantering* (MHAX) för att ansluta externa fysiska materialhanteringssystem (MH) till ett lager som hanteras av lagerstyrningsprocesser (WMS) i Microsoft Dynamics 365 Supply Chain Management. Gränssnittet mellan WMS- och MJ-systemen består av två köer: en för utgående händelser (WMS till MH) och en för inkommande händelser (MH till WMS). WMS-systemet genererar utgående händelser baserade på arbetsrader som skapas under olika arbetsskapande- och körningsprocesser. MH-systemet söker sedan regelbundet i WMS-systemet efter nya händelser och bearbetar svaren. När MH-systemet har slutfört hanteringen av händelserna i enlighet med arbetsinstruktioner skickar det inkommande händelser, till exempel slutförande av arbetsrad och kort plockning.
 
 I följande bild visas de olika elementen och ordningen som processer uppstår i när du använder MHAX-integrering.
 
@@ -102,7 +102,7 @@ Händelser för att skapa arbete skapas efter att arbetet har genererats av prog
 
 Ett undantag till detta är att du arbetar med arbetsuppgift för rullande inventering, som för närvarande inte stöds. Lagerinventering i MH-systemet ligger utanför MHAX-området och resultatet av inventeringar måste importeras till en lagerinventeringsjournal.
 
-När arbetet har skapats bearbetar MHAX-tjänsten de arbetsrader som skapas och tilldelar ett arbetsradpar-ID till alla genererade arbetsrader för varje arbetsrubrik. Målet är att gruppera alla plockarbetesrader med de på varandra följande under ett arbetsradspar-ID. (Grupperna motsvarar plock-/placeringspar i arbetsmallar.) På det här sättet kan ett enskilt ID användas för att rapportera slutförande av arbete för alla relaterade plocknings- och placeringsrader. Grupperingsprocessen startar med den första raden och fortsätter sedan med samma ID tills den stöter på ett efterföljande par placering-/plockarbetsrader. Det löpande ID:t tilldelas till placeringsrad för det paret. Ett nytt ID som sedan används för plockraden för paren vidare. Den här processen fortsätter tills alla rader som tillhör arbetsrubriken har bearbetats.
+När arbetet har skapats bearbetar MHAX-tjänsten de arbetsrader som skapas och tilldelar ett arbetsradpar-ID till alla genererade arbetsrader för varje arbetsrubrik. Målet är att gruppera alla plockarbetesrader med de på varandra följande under ett arbetsradspar-ID. (Grupperna motsvarar plock-/placeringspar i arbetsmallar.) På det här sättet kan ett enskilt ID användas för att rapportera slutförande av arbete för alla relaterade plocknings- och placeringsrader. Grupperingsprocessen startar med den första raden och fortsätter sedan med samma ID tills den stöter på ett efterföljande par placering-/plockarbetsrader. Det löpande ID:t tilldelas placeringsrad för det paret. Ett nytt ID som sedan används för plockraden för paren vidare. Den här processen fortsätter tills alla rader som tillhör arbetsrubriken har bearbetats.
 
 Som en särskild funktion för händelser för att skapa arbete om alternativet **Spärrad påfyllnad** anges till *Ja* i arbetsrubriken har händelserna som genereras status *Spärrad* istället för den vanliga statusen för *Klar* som används för att skicka dem till MH-systemet. Flaggan **Spärrad påfyllnad** i arbetsrubriken indikerar att arbetsrubriken ännu inte är klar för arbetare som ska köras, kanske på grund av att påfyllnaden inte är klar. När flaggan **Spärrad påfyllnad** är avmarkerad tas händelser som redan skapats bort och är tillgängliga för MH-systemet att hämta från kön.
 

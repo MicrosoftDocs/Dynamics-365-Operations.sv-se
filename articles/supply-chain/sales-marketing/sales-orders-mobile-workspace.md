@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc04a90c0c071508c9ebee57862a029de0e58f9a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38971f2a5f3f3d2692de0e52365e2215170101cc
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844776"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103193"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Mobil arbetsyta för försäljningsorder
 
@@ -118,7 +118,7 @@ Om Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller se
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
-Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
+Ladda ner och installera mobilappen för Ekonomi och drift (Dynamics 365):
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -143,3 +143,4 @@ Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

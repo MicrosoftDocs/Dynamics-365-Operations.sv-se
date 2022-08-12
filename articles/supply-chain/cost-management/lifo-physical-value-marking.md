@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670452"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135582"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysiskt värde och markering
 
@@ -128,7 +128,7 @@ Illustrationen som följer visar dessa transaktioner:
 - 6a. Lagrets fysiska utleverans för kvantiteten 1 till en självkostnad på 23,00 USD kronor vardera (löpande medelvärde eller ekonomiskt bokförda transaktioner)
 - 7\. Lagerstängningen utförs. Baserat på markeringsprincipen som använder LIFO-metoden kvittas de markerade transaktionerna mot varandra. I det här exemplet kvittas 3b mot 2b och en justering för 6,00 USD bokförs på 3b för att få värdet 22,00 USD. I det här exemplet görs inga ytterligare kvittningar eftersom stängningen bara skapar kvittningar för finansiellt uppdaterade transaktioner.
 
-Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD.
+Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 17,50 USD.
 
 I illustrationen nedan visas hur den här serien med transaktioner påverkas av LIFO-lagermodellen när länkning mellan utleverans och inleverans används.
 

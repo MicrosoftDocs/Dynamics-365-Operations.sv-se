@@ -1,26 +1,26 @@
 ---
 title: Ändra raddefinitionceller
 description: Den här artikeln innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen.
-author: ShylaThompson
+author: aprilolson
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b06c59e3ec35d0eea7fc4b81af540e0bcca144fb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c3e9323c2011f7ca6ceb9926575d661c5269e22
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905124"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135552"
 ---
 # <a name="modify-row-definition-cells"></a>Ändra raddefinitionceller
 
@@ -132,7 +132,7 @@ Cellen **Relaterade formler/rader/enheter** har flera syften. Beroende på vilke
 
 ### <a name="use-a-row-total-in-a-row-definition"></a>Använd enradsumma i en raddefinition
 
-Använd en radsummaformel om du vill lägga till eller dra ifrån belopp i andra rader. En formel för att skapa en radsumma kan inkludera operatorerna + och - som kombinerar enskilda rader och intervall. Intervall anges av ett kolon (:). Formeln kan innehålla upp till 1 024 tecken. Här är ett exempel på en standardsummeringsformel: 400+420+430+450+460LIABILITIES+EQUITY520:546520:546-LIABILITIES
+Använd en radsummaformel om du vill lägga till eller dra ifrån belopp i andra rader. En formel för att skapa en radsumma kan inkludera operatorerna + och – som kombinerar enskilda rader och intervall. Intervall anges av ett kolon (:). Formeln kan innehålla upp till 1 024 tecken. Här är ett exempel på en standardsummeringsformel: 400+420+430+450+460LIABILITIES+EQUITY520:546520:546-LIABILITIES
 
 ### <a name="components-of-a-row-total-formula"></a>Komponenter i en formel för radsumma
 
@@ -245,14 +245,14 @@ I följande exempel sorteras värdena i rapportkolumnen D i stigande ordning på
 | 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
 | 160      | Försäljning                                               |             |                             | C              |                    | 4100                         |
 | 190      | Försäljningsreturer                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
+|          | …                                                  |             |                             |                |                    |                              |
 | 490      | Räntainkomst                                     |             |                             | C              |                    | 7000                         |
 | 520      |                                                     | DES         |                             |                |                    |                              |
 | 550      | Sorterat efter YTD absolut avvikelse i fallande ordning | DES         |                             |                |                    |                              |
 | 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
 | 610      | Försäljning                                               |             |                             | C              |                    | 4100                         |
 | 640      | Försäljningsreturer                                       |             |                             |                |                    | 4 110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
+|          | …                                                  |             |                             |                |                    |                              |
 | 940      | Ränteintäkter                                     |             |                             | C              |                    | 7000                         |
 
 
@@ -276,7 +276,7 @@ Cellen **Formatåsidosätt** anger formateringen som används för raden när ra
 Valutaformatering gäller för ett räkenskapsbelopp och inkluderar valutasymbolen. Följande alternativ är tillgängliga:
 
 - **Valutasymbol** – Rapportens valutasymbol. Det här värdet åsidosätter inställningen **Nationella alternatv** för företagsinformationen.
-- **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
+- **Negativa nummer** – Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
 - **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
 - **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**.
 
@@ -287,7 +287,7 @@ Valutaformatering gäller för ett räkenskapsbelopp och inkluderar valutasymbol
 
 Numerisk formatering gäller för alla belopp och inkluderar inte en valutasymbol. Följande alternativ är tillgängliga:
 
-- **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
+- **Negativa nummer** – Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
 - **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
 - **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**.
 
@@ -298,7 +298,7 @@ Numerisk formatering gäller för alla belopp och inkluderar inte en valutasymbo
 
 Procentsatsformatering inkluderar procenttecknet (%). Följande alternativ är tillgängliga:
 
-- **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
+- **Negativa nummer** – Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
 - **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
 - **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**.
 

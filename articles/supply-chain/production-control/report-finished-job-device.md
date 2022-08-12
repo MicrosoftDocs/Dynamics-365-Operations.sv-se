@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857385"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070482"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Rapportera som färdigt från jobbkortsenheten
 
@@ -28,7 +28,7 @@ Arbetstagarna använder **rapportförlopp** på jobbkortsenheten för att rappor
 
 - Kontrollera om och hur kvantiteter som rapporteras som färdiga ska läggas till i lagret.
 - Ange om och hur batchnummer genereras och används vid rapportering som färdigt.
-- Ange om och hur serienummer genereras och används vid rapportering som färdigt.
+- Ange om och hur löpnummer genereras och används vid rapportering som färdigt.
 - Kontrollera om och hur du rapporterar som färdig till en registreringsskylt
 
 ## <a name="control-whether-quantities-that-are-reported-as-finished-are-added-to-inventory"></a>Kontrollera om kvantiteter som rapporteras som färdiga ska läggas till i lagret
@@ -50,7 +50,7 @@ För mer information om hur du arbetar med sidan **Standarder för produktionsor
 
 ## <a name="report-batch-controlled-items-as-finished"></a>Rapportera batchkontrollerade artiklar som färdiga
 
-Jobbkortsenheten stöder tre scenarier för rapportering av batch-artiklar. Dessa scenarier gäller både artiklar som aktiveras för avancerade lagerprocesser och artiklar som inte är aktiverade för avancerade lagerprocesser.
+Jobbkortsenheten stöder tre scenarier för rapportering av batch-artiklar. Dessa scenarier gäller både artiklar som aktiveras för lagerstyrningsprocesser (WMS) och artiklar som inte är aktiverade för WMS.
 
 - **Manuellt tilldelade batchnummer:** arbetare registrerar ett anpassat batchnummer. Det här batchnumret kan komma från en extern källa som inte är känd för systemet.
 - **Fördefinierade batchnummer:** arbetare väljer ett batchnummer i en lista med batchnummer som genereras automatiskt innan tillverknings ordern frisläpps till jobbkortsenheten.
@@ -62,7 +62,7 @@ Jobbkortsenheten stöder tre scenarier för rapportering av batch-artiklar. Dess
 Om du vill att dina jobbkortsenheter ska kunna acceptera ett batchnummer när de rapporteras som färdiga, måste du använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera följande funktioner (i den här ordningen):
 
 1. Förbättrad användarupplevelse för dialogrutan Rapportförlopp i jobbkortenheten
-1. Aktivera för att ange batch- och serienummer vid rapportering som färdigt från jobbkortenheten
+1. Aktivera för att ange batch- och löpnummer vid rapportering som färdigt från jobbkortenheten
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurera produkter som kräver rapportering av batchnummer
 
@@ -73,7 +73,7 @@ Gör så här om du vill aktivera en produkt som stöder alla tillgängliga batc
 1. På snabbfliken **Hantera lager** i fältet **batchnummergrupp** väljer du den spårningsnummergrupp som har angetts som stöd för ditt scenario.
 
 > [!NOTE]
-> Om ingen batchnummergrupp tilldelas till en batchkontrollerad produkt innehåller jobbkortsenheten som standard manuell inmatning för batchnumret vid rapportering som färdigt.
+> Om ingen batchnummergrupp tilldelas en batchkontrollerad produkt innehåller jobbkortsenheten som standard manuell inmatning för batchnumret vid rapportering som färdigt.
 
 I följande avsnitt beskrivs hur du konfigurerar spårningsnummergrupper för att stödja var och en av de tre scenarierna för rapportering av batch-artiklar.
 
@@ -100,7 +100,7 @@ För att tillhandahålla fördefinierade batchnummer följer du dessa steg för 
 1. Gå till **Lagerhantering \> Inställning > Dimensioner \> Spårningsnummergrupper**.
 1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Bara för lagertransaktioner** till **Ja**.
-1. Använd fältet **per kvantitet** om du vill dela upp batchnummer per kvantitet, baserat på det värde som du anger. Du har till exempel en tillverkningsorder på tio enheter och fältet **per kvantitet** anges till *2*. I det här fallet kommer fem batchnummer att tilldelas tillverkningsordern när den skapas.
+1. Använd fältet **per kvantitet** om du vill dela upp batchnummer per kvantitet, baserat på det värde som du anger. Du har till exempel en tillverkningsorder på tio enheter och fältet **per kvantitet** anges till *2*. I det här fallet kommer fem batchnummer att tilldelasverkningsordern när den skapas.
 
     ![En spårningsnummergrupp för fördefinierade batchnummer.](media/tracking-number-group-predefined.png "En spårningsnummer grupp för fördefinierade batchnummer")
 
@@ -129,20 +129,20 @@ När du använder det här scenario **batchnummer** som sidan **Rapportförlopp*
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Rapportera seriekontrollerade artiklar som färdiga
 
-Jobbkortsenheten stöder tre scenarier för rapportering av seriekontrollerade artiklar. Dessa scenarier gäller både artiklar som aktiveras för avancerade lagerprocesser och artiklar som inte är aktiverade för avancerade lagerprocesser.
+Jobbkortsenheten stöder tre scenarier för rapportering av seriekontrollerade artiklar. Dessa scenarier gäller både artiklar som aktiveras för lagerstyrningsprocesser (WMS) och artiklar som inte är aktiverade för WMS.
 
-- **Manuellt tilldelade serienummer:** arbetare registrerar ett anpassat serienummer. Det här serienumret kan komma från en extern källa som inte är känd för systemet.
-- **Fördefinierade serienummer:** arbetare väljer ett serienummer i en lista med serienummer som genereras automatiskt innan tillverknings ordern frisläpps till jobbkortsenheten.
-- **Fast serienummer:** arbetare anger eller väljer inte ett serienummer. I stället tilldelar systemet automatiskt ett serienummer till produktionsordern innan den frigörs.
+- **Manuellt tilldelade löpnummer:** arbetare registrerar ett anpassat löpnummer. Det här serienumret kan komma från en extern källa som inte är känd för systemet.
+- **Fördefinierade löpnummer:** arbetare väljer ett löpnummer i en lista med löpnummer som genereras automatiskt innan tillverknings ordern frisläpps till jobbkortsenheten.
+- **Fast löpnummer:** arbetare anger eller väljer inte ett löpnummer. I stället tilldelar systemet automatiskt ett löpnummer till produktionsordern innan den frigörs.
 
 ### <a name="enable-the-feature-on-your-system"></a>Aktivera funktionen i systemet
 
-Om du vill att dina jobbkortsenheter ska kunna acceptera ett serienummer när de rapporteras som färdiga, måste du använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera följande funktioner (i den här ordningen):
+Om du vill att dina jobbkortsenheter ska kunna acceptera ett löpnummer när de rapporteras som färdiga, måste du använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera följande funktioner (i den här ordningen):
 
 1. Förbättrad användarupplevelse för dialogrutan Rapportförlopp i jobbkortenheten
-1. Aktivera för att ange batch- och serienummer vid rapportering som färdigt från jobbkortenheten
+1. Aktivera för att ange batch- och löpnummer vid rapportering som färdigt från jobbkortenheten
 
-### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurera produkter som kräver rapportering av serienummer
+### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurera produkter som kräver rapportering av löpnummer
 
 Gör så här om du vill aktivera en produkt som stöder alla tillgängliga seriestyrda scenarier:
 
@@ -150,69 +150,69 @@ För att aktivera varje scenario följer du stegen nedan.
 
 1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
 1. Välj produkten som ska konfigureras.
-1. På snabbfliken **Hantera lager** i fältet **serienummergrupp** väljer du den spårningsnummergrupp som har angetts som stöd för ditt scenario.
+1. På snabbfliken **Hantera lager** i fältet **löpnummergrupp** väljer du den spårningsnummergrupp som har angetts som stöd för ditt scenario.
 
 > [!NOTE]
-> Om ingen serienummergrupp tilldelas till en seriekontrollerad produkt innehåller jobbkortsenheten som standard manuell inmatning för serienumret vid rapportering som färdigt.
+> Om ingen löpnummergrupp tilldelas en seriekontrollerad produkt innehåller jobbkortsenheten som standard manuell inmatning för serienumret vid rapportering som färdigt.
 
 I följande avsnitt beskrivs hur du konfigurerar spårningsnummergrupper för att stödja var och en av de tre scenarierna för rapportering av seriestyrda artiklar.
 
-### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-serial-number"></a>Skapa en spårningsnummergrupp som gör att arbetare manuellt kan tilldela ett serienummer
+### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-serial-number"></a>Skapa en spårningsnummergrupp som gör att arbetare manuellt kan tilldela ett löpnummer
 
-För att tillåta manuellt tilldelade serienummer följer du dessa steg för att konfigurera en spårningsgrupp.
+För att tillåta manuellt tilldelade löpnummer följer du dessa steg för att konfigurera en spårningsgrupp.
 
 1. Gå till **Lagerhantering \> Inställning \> Dimensioner \> Spårningsnummergrupper**.
 1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Manuellt** till **Ja**.
 
-    ![Sidan Spårningsnummergrupper, serienummer.](media/tracking-number-group-manual-serial.png "Sidan spårningsnummergrupper, serienummer")
+    ![Sidan Spårningsnummergrupper, löpnummer.](media/tracking-number-group-manual-serial.png "Sidan spårningsnummergrupper, löpnummer")
 
-1. Ange andra värden som du behöver och välj sedan spårningsnummergruppen som serienummergrupp för frisläppta produkter som du vill använda det här scenariot för.
+1. Ange andra värden som du behöver och välj sedan spårningsnummergruppen som löpnummergrupp för frisläppta produkter som du vill använda det här scenariot för.
 
-När du använder det här scenario **serienummer** som sidan **Rapportförlopp** på jobbkortsenheten ger är en textruta där arbetare kan ange vilket värde som helst för serienumret. När du anger ett värde läggs det till i serienummer listan. I denna lista kan arbetare göra på följande sätt:
+När du använder det här scenario **löpnummer** som sidan **Rapportförlopp** på jobbkortsenheten ger är en textruta där arbetare kan ange vilket värde som helst för serienumret. När du anger ett värde läggs det till i löpnummer listan. I denna lista kan arbetare göra på följande sätt:
 
-- Om du vill markera ett serienummer som kasserat väljer du knappen **kassation** för lämplig rad. Arbetaren uppmanas att ange en **felorsak**.
-- Om du vill ta bort ett serienummer väljer du knappen **Ta bort** för lämplig rad.
+- Om du vill markera ett löpnummer som kasserat väljer du knappen **kassation** för lämplig rad. Arbetaren uppmanas att ange en **felorsak**.
+- Om du vill ta bort ett löpnummer väljer du knappen **Ta bort** för lämplig rad.
 
-![Rapportstatussida med ett fält för manuella serienummer.](media/job-card-device-serial-manual.png "Rapportstatussida med ett fält för manuella serienummer")
+![Rapportstatussida med ett fält för manuella löpnummer.](media/job-card-device-serial-manual.png "Rapportstatussida med ett fält för manuella löpnummer")
 
-### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Ställ in en spårningsnummergrupp som innehåller en lista över fördefinierade serienummer
+### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Ställ in en spårningsnummergrupp som innehåller en lista över fördefinierade löpnummer
 
-För att tillhandahålla fördefinierade serienummer följer du dessa steg för att konfigurera en spårningsgrupp.
+För att tillhandahålla fördefinierade löpnummer följer du dessa steg för att konfigurera en spårningsgrupp.
 
 1. Gå till **Lagerhantering \> Inställning \> Dimensioner \> Spårningsnummergrupper**.
 1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Bara för lagertransaktioner** till **Ja**.
-1. Använd fältet **per kvantitet** om du vill dela serienummer per kvantitet av ett.
+1. Använd fältet **per kvantitet** om du vill dela löpnummer per kvantitet av ett.
 
-    ![En spårningsnummergrupp för fördefinierade serienummer.](media/tracking-number-group-predefined-sn.png "En spårningsnummer grupp för fördefinierade serienummer")
+    ![En spårningsnummergrupp för fördefinierade löpnummer.](media/tracking-number-group-predefined-sn.png "En spårningsnummer grupp för fördefinierade löpnummer")
 
-1. Ange andra värden som du behöver och välj sedan spårningsnummergruppen som serienummergrupp för frisläppta produkter som du vill använda det här scenariot för.
+1. Ange andra värden som du behöver och välj sedan spårningsnummergruppen som löpnummergrupp för frisläppta produkter som du vill använda det här scenariot för.
 
-När du använder det här scenario kommer fältet **serienummer** som sidan **Rapportförlopp** på jobbkortsenheten är en listruta där arbetare måste välja ett fördefinierat värde.
+När du använder det här scenario kommer fältet **löpnummer** som sidan **Rapportförlopp** på jobbkortsenheten är en listruta där arbetare måste välja ett fördefinierat värde.
 
-![Rapportstatussida med en lista över fördefinierade serienummer.](media/job-card-device-serial-predefined.png "Rapportstatussida med en lista över fördefinierade serienummer")
+![Rapportstatussida med en lista över fördefinierade löpnummer.](media/job-card-device-serial-predefined.png "Rapportstatussida med en lista över fördefinierade löpnummer")
 
-### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Skapa en spårningsnummergrupp som automatiskt tilldelar serienummer
+### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Skapa en spårningsnummergrupp som automatiskt tilldelar löpnummer
 
-Om serienummer ska tilldelas automatiskt, utan indata från arbetare, följer du dessa steg för att skapa en spårningsnummergrupp.
+Om löpnummer ska tilldelas automatiskt, utan indata från arbetare, följer du dessa steg för att skapa en spårningsnummergrupp.
 
 1. Gå till **Lagerhantering \> Inställning \> Dimensioner \> Spårningsnummergrupper**.
 1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Bara för lagertransaktioner** till **Nej**.
 1. Ange alternativet **Manuell** till **Nej**.
 
-    ![En spårningsnummergrupp för fasta serienummer.](media/tracking-number-group-fixed-sn.png "En spårningsnummer grupp för fasta serienummer")
+    ![En spårningsnummergrupp för fasta löpnummer.](media/tracking-number-group-fixed-sn.png "En spårningsnummer grupp för fasta löpnummer")
 
-1. Ange andra värden som du behöver och välj sedan spårningsnummergruppen som serienummergrupp för frisläppta produkter som du vill använda det här scenariot för.
+1. Ange andra värden som du behöver och välj sedan spårningsnummergruppen som löpnummergrupp för frisläppta produkter som du vill använda det här scenariot för.
 
-När du använder det här scenario **serienummer** som sidan **Rapportförlopp** på jobbkortsenheten ger visas ett värde med arbetare kan inte redigera det. Det här scenariot är bara relevant när en tillverkningsorder skapas för en kvantitet av ett serienummer som kontrolleras av en artikel.
+När du använder det här scenario **löpnummer** som sidan **Rapportförlopp** på jobbkortsenheten ger visas ett värde med arbetare kan inte redigera det. Det här scenariot är bara relevant när en tillverkningsorder skapas för en kvantitet av ett löpnummer som kontrolleras av en artikel.
 
-![Rapportstatussida med ett fast serienummer.](media/job-card-device-serial-fixed.png "Rapportstatussida med ett fast serienummer")
+![Rapportstatussida med ett fast löpnummer.](media/job-card-device-serial-fixed.png "Rapportstatussida med ett fast löpnummer")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Rapportera som färdig till ett ID-nummer
 
-Avancerade lagerprocesser kan använda dimensionen ID-nummer för att spåra lager på lagerställen som har ställts in för detta syfte. I det här fallet krävs ID-nummer när en arbetare rapporterar kvantiteter som färdiga.
+Lagerstyrningsprocesser (WMS) kan använda dimensionen för ID-nummer för att spåra lager på lagerställen som har ställts in för detta syfte. I det här fallet krävs ID-nummer när en arbetare rapporterar kvantiteter som färdiga.
 
 ### <a name="enable-license-plate-reporting-and-label-printing"></a>Aktivera rapportering och etikettutskrift av ID-nummer
 

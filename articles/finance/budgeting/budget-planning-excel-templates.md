@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8996ad5d03327b9273be7860a3905dc25efa7e90
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872511"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070677"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplaneringsmallar för Excel
 
@@ -79,7 +79,7 @@ Den valda fältgruppen visar de kolumner som finns i mallen. Klicka på **Formel
 [![Lägg till och infoga kolumn.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Ange formeln genom att skapa den i kalkylbladet och kopiera den sedan till fönstret **Design**. Ett register avsett för Ekonomi och drift namnges vanligtvis "AXTable1". För att till exempel summera Begäran K1 : Begäran K4-kolumner i kalkylbladet blir formeln = AxRegister1\[Begäran K1\]+ AxRegister1\[Begäran K2\]+ AxRegister1\[Begäran K3\]+ AxRegister1\[Begäran K4\].
+> Ange formeln genom att skapa den i kalkylbladet och kopiera den sedan till fönstret **Design**. En tabell avsedd för ekonomi och drift namnges vanligtvis "AXTable1". För att till exempel summera Begäran K1 : Begäran K4-kolumner i kalkylbladet blir formeln = AxRegister1\[Begäran K1\]+ AxRegister1\[Begäran K2\]+ AxRegister1\[Begäran K3\]+ AxRegister1\[Begäran K4\].
 
 Upprepa dessa steg för att infoga kolumnen **Justering**. Använd formeln = AxRegister1\[Total begäran\]\*$I$ 1 för den här kolumnen. Detta kommer ta värdet i cell I1 och multiplicera värdena i kolumnen **Total begäran** för att beräkna justeringsbeloppen.
 
@@ -122,10 +122,11 @@ Klicka på pilen för att visa en ytterligare meny. Välj **Lås**.
 
 Ja, de flesta vanliga Excel-funktioner fungerar i budgetplansmallar. Vi rekommenderar att använda färgkodning så att användare kan skilja mellan skrivskyddade och redigerbara kolumner. Villkorsstyrd formatering kan användas för att framhäva vissa problematiska delar av budgeten. Totalsummor för kolumner kan enkelt visas med vanliga Excel-formler ovanför tabellen.
 
-Du kan också skapa och använda pivottabeller och diagram för ytterligare grupper och visualiseringar av budgetdata. På fliken **Data**, i gruppen **Anslutningar**, klickar du på **Uppdatera alla** och sedan på **Anslutningsegenskaper**. Klicka på fliken **Användning**. Under fliken **Uppdatera** markerar du kryssrutan **Uppdatera data när filen öppnas**. 
+Du kan också skapa och använda fästpunktstabeller och diagram för ytterligare grupper och visualiseringar av budgetdata. På fliken **Data**, i gruppen **Anslutningar**, klickar du på **Uppdatera alla** och sedan på **Anslutningsegenskaper**. Klicka på fliken **Användning**. Under fliken **Uppdatera** markerar du kryssrutan **Uppdatera data när filen öppnas**. 
 
 
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

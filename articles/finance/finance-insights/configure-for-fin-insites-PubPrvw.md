@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d05403113c9b178553134ce1a9066bb2acf59b0f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868530"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068118"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguration för Finance Insights – före version 10.0.20 och senare
 
@@ -38,7 +38,7 @@ Finance Insights kombinerar funktioner från Microsoft Dynamics 365 Finance med 
 
 Följ dessa steg för att distribuera miljöerna.
 
-1. I Microsoft Dynamics Lifecycle Services (LCS) skapar eller uppdaterar du en Finance-miljö. För miljön krävs appversion 10.0.20 eller senare av Ekonomi och drift-apparna.
+1. I Microsoft Dynamics Lifecycle Services (LCS) skapar eller uppdaterar du en Finance-miljö. För miljön krävs programversion 10.0.20 eller senare av appar för ekonomi och drift.
 2. Miljön måste vara en miljö med hög tillgänglighet (HA) i sandbox-miljö. (Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Om du konfigurerar Finance Insights i en sandbox-miljö måste du kanske kopiera produktionsdata till den miljön för att förutsägelser ska fungera. I modellen för förutsägelse används flera års data för att skapa förutsägelser. Contoso-demodatan innehåller inte tillräckligt med historiska data för på ett adekvat sätt mata förutsägelsemodellen. 
 
@@ -66,7 +66,7 @@ Följ dessa steg för att konfigurera Dataverse för Finance Insights.
 Ett Windows PowerShell-skript har tillhandahållits så att du enkelt kan ställa in de Azure-resurser som beskrivs i [Konfigurera export till Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). Om du föredrar att konfigurera manuellt hoppar du över den här proceduren och slutför proceduren i avsnittet [Manuell konfiguration](#manual-setup) istället.
 
 > [!NOTE]
-> Gör på följande sätt när du vill köra Windows PowerShell-skriptet: Konfigureringen kanske inte fungerar om du använder alternativet **Testa** i Azure CLI eller om du kör skriptet på datorn.
+> Följ dessa steg när du vill köra Windows PowerShell-skriptet: Konfigureringen kanske inte fungerar om du använder alternativet **Testa** i Azure CLI eller om du kör skriptet på datorn.
 
 Följ dessa steg för att använda Windows PowerShell-skriptet för att konfigurera Azure. Du måste ha behörighet att skapa en Azure-resursgrupp, Azure-resurser och ett Azure AD-program. Information om vilka behörigheter som krävs finns i [Kontrollera Azure AD-behörigheter](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
@@ -126,7 +126,7 @@ Om du inte hittar något av ovanstående program gör du på följande sätt.
         - **Prestanda** – Vi rekommenderar att du väljer **Standard**.
         - **Kontotyp** – Du måste välja **StorageV2**.
 
-    3. I dialogrutan **Avancerade alternativ**, för alternativet **Data Lake Storage Gen2** väljer du **Aktivera** under funktionen **Hierarkiska namnrymder**. Om du inte aktiverar den här funktionen kan du inte använda data som Ekonomi och drift-appar skriver med hjälp av tjänster som exempelvis Power BI-dataflöden.
+    3. I dialogrutan **Avancerade alternativ**, för alternativet **Data Lake Storage Gen2** väljer du **Aktivera** under funktionen **Hierarkiska namnrymder**. Om du inte aktiverar den här funktionen kan du inte använda data som appar för ekonomi och drift skriver med hjälp av tjänster som exempelvis Power BI-dataflöden.
     4. Välj **Granska och skapa**. När distributionen har slutförts visas den nya resursen i Azure-portalen.
     5. Gå till det lagringskonto som du har skapat.
     6. Välj **Åtkomstnycklar** i menyn till vänster.
@@ -755,3 +755,4 @@ Tillägget kan ta flera minuter att installera.
 Om du är intresserad av att lämna feedback, eller om du behöver support, skicka då ett e-postmeddelande till [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4e49b63bf7c88b40010967a7f8c1de571e6d7485
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a53522acb89fc2b766e5b245a5b095a038d1b282
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845270"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067161"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-finance"></a>Utbildningskatalog för Microsoft Partner försäljnings- och marknadsföringsroller för Dynamics 365 Finance
 
@@ -31,9 +31,9 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 |-------------|-----------------|-------------|------------|
 | [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 7 timmar |
 | [Dynamics 365 och Power Platform grunder](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar |
-| [Komma igång med Ekonomi och Drift-apparna](/learn/paths/get-started-finance-operations/) | Lär dig hur Ekonomi och Drift-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Ekonomi och Drift-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg | 2 timmar |
+| [Kom igång med appar för ekonomi och drift](/learn/paths/get-started-finance-operations/) | Lär dig hur appar för ekonomi och drift ger stöd till företag för att hantera deras globala finanssystem, operativa affärsprocesser och effektiviserade leveranskedjor i syfte att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med appar för ekonomi och drift är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill inneha. | Gratis, självstudier online utbildningsväg | 2 timmar |
 | [Kom igång med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gör det möjligt för företagsanvändare att anpassa sig till att snabbt byta affärsmiljöer. Det förser företagen med allt de behöver för att kontrollera ekonomin och hantera fonder med exakt information för ekonomisk planering och prognosticering och hjälper dem att hålla sig uppdaterade med analysverktyg. Eftersom ekonomi är kärnan i alla verksamheter är det viktigt att du är bekant med funktionerna i Dynamics 365 Finance. | Gratis, självstudier online utbildningsmodul | 1 timma |
-| [Kurs MB-900T01-A: Dynamics 365 - grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
+| [Kurs MB-900T01-A: Dynamics 365 – grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
 
 ## <a name="exam"></a>Prov<a name="exam"></a>
 
@@ -43,3 +43,4 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

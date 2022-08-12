@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f75176781620cd6f845c002876eba6e34d5793e7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1f379cd7783cc984666582d2c680a1db013627ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692238"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070185"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimera frågor för virtuell Dataverse-tabell
 
@@ -49,12 +49,12 @@ En orsak till långsam prestanda med virtuella Dataverse-register för Personal 
 Ett exempel där denna effekt kan komma att uppstå är i frågor som gäller enheten Arbetare **(mshr_hcmworkerentity)** eller Grundarbetare **(mshr_hcmworkerbaseentity)**. Prestandaproblemet kan manifesteras på några olika sätt:
 
 - **Långsam frågekörning:** Frågan mot det virtuella registret kan returnera förväntat resultat, men det tar längre tid än förväntat att köra frågan fullständigt.
-- **Tidsgräns för fråga**: Frågan kan timeout och returnera följande fel: "En token erhölls för att anropa Ekonomi och Drift, men Ekonomi och Drift returnerade ett fel av typen InternalServerError."
+- **Tidsgräns för fråga**: Frågan kan komma att löpa ut tidsmässigt och returnera följande fel: "En token erhölls för att anropa Ekonomi och Drift, men Ekonomi och Drift returnerade ett fel av typen InternalServerError."
 - **Oväntat fel**: Frågan kan komma att returnera feltypen 400 med följande meddelande: "Ett oväntat fel har inträffat."
 
   ![Feltyp 400 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Begränsning**: Frågan kan komma att överanvända serverresurser och drabbas av begränsningar. I det här fallet returnerar frågan följande fel: "En token erhölls för att anropa Ekonomi och Drift, men Ekonomi och Drift returnerade ett fel av typen 429." Mer information om begränsning i Personal finns i [Frågor och avar om begränsningar](./hr-admin-integration-throttling-faq.md).
+- **Begränsning**: Frågan kan komma att överanvända serverresurser och drabbas av begränsningar. I det här fallet returnerar frågan följande fel: "En token erhölls för att anropa Ekonomi och drift, men Ekonomi och drift returnerade ett fel av typen 429." Mer information om begränsning i Personal finns i [Frågor och avar om begränsningar](./hr-admin-integration-throttling-faq.md).
 
   ![Feltyp 429 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -128,7 +128,7 @@ Du kan sedan börja skapa din Power BI-rapport baserat på kolumnerna som marker
 
 #### <a name="selecting-columns-in-power-apps"></a>Välja kolumner i Power Apps
 
-Du kan förbättra frågeställningsprestandan för Power Apps baserat på virtuella Dataverse-register genom att - liknande för webb-API-frågeställningar för Dataverse och Power BI - exkludera kolumner tillhörande relaterade register från din app. Om några kolumner från ett relaterat register har inkluderats på en sida kommer den URL-adress för begäran som skapas för att hämta data att innehålla egenskaper för sekundärnyckel för det relaterade registret. Detta sänker prestandan genom att förorsaka ytterligare datasökningar på samma sätt som i exemplen i [Välja kolumner i en OData-frågeställning](#selecting-columns-in-power-apps) ovan.
+Du kan förbättra frågeställningsprestandan för Power Apps baserat på virtuella Dataverse-register genom att – liknande för webb-API-frågeställningar för Dataverse och Power BI – exkludera kolumner tillhörande relaterade register från din app. Om några kolumner från ett relaterat register har inkluderats på en sida kommer den URL-adress för begäran som skapas för att hämta data att innehålla egenskaper för sekundärnyckel för det relaterade registret. Detta sänker prestandan genom att förorsaka ytterligare datasökningar på samma sätt som i exemplen i [Välja kolumner i en OData-frågeställning](#selecting-columns-in-power-apps) ovan.
 
 För att kringgå detta kan du validera att inga datafält från relaterade register har inkluderats i några som helst dataformulär i ditt Power App.
 
@@ -161,3 +161,4 @@ Mer information om sidnumrering finns i [Ange antalet entiteter som ska returner
 - [Vanliga frågor och svar om begränsning](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

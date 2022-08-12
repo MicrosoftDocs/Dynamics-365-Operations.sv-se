@@ -1,31 +1,32 @@
 ---
 title: Organisationsutbildning Power BI-innehåll
-description: Den här artikeln beskriver Ekonomi och drift - organisationsutbildning Power BI-innehåll.
+description: Den här artikeln beskriver Ekonomi och drift – Power BI-innehåll för organisationsutbildning.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: kfend
-ms.custom: 263874
-ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ba332fc0c241969cbe0c25e7985101a2bbe12be4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "263874"
+ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
+ms.openlocfilehash: 7b8f6c1b32876af3a6992ff73c6898ce5307c5a2
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892433"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206768"
 ---
 # <a name="organizational-training-power-bi-content"></a>Organisationsutbildning Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln beskriver Ekonomi och drift - organisationsutbildning Power BI-innehåll.
+Den här artikeln beskriver Ekonomi och drift – Power BI-innehåll för organisationsutbildning.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som ingår i innehållspaketet
 När du har anslutit innehållspaketet till dina data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.

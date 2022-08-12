@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: a50fcbe313901beab610400d8c59dd375f1af93e
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: ff92e6904b8042232159a0aea095d7a91c17d4b7
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022633"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124113"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
 
@@ -45,7 +45,7 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 
 | Modul | Funktionsnamn i funktionshantering | Mer information |
 |---|---|---|
-| Huvudplanering | Ta hänsyn till ledtid för lager när du skapar en planerad överföringsorder | När en planerad överföringsorder skapas leder den här funktionen till att systemet tar hänsyn till lagerleveranstiden angiven i artikelns standardorderinställningar vid beräkning av inleveransdatumet för planerad överföringsorder för leveransdatumkontroll inställd på Ingen eller Produktionstid för försäljning. När överföringstid anges används det värdet till beräkning av inleveransdatum och transportdagar ignoreras typ *Ingen* eller *Försäljning*. När överförings leadtid anges används dess värde för beräkningen av inleveransdatum, och transportdagar ignoreras. |
+| Huvudplanering | Ta hänsyn till ledtid för lager när du skapar en planerad överföringsorder | När en planerad överföringsorder skapas leder den här funktionen till att systemet tar hänsyn till lagerleveranstiden angiven i artikelns standardorderinställningar vid beräkning av inleveransdatumet för planerad överföringsorder för leveransdatumkontroll inställd på Ingen eller ledtid för försäljning. När överföringstid anges används det värdet till beräkning av inleveransdatum och transportdagar ignoreras typ *Ingen* eller *Försäljning*. När överförings leadtid anges används dess värde för beräkningen av inleveransdatum, och transportdagar ignoreras. |
 | Anskaffning och källa | Momsinformation för standardmäklarkontrakt på leverantörsfakturarader | Den här funktionen introducerar logik för att ange standardvärden för fälten **Moms** och **Artikelmoms** på mäklarkontrakt leverantörs fakturarader. Den här logiken används bara om avgiftstypen på mäklarkontraktsraden är redovisning/redovisning. Artikelmomsgruppen tar sitt standardvärde antingen från mäklaranskaffningskategorin (om den är inställd) eller från avgiftstypen. Momsgruppen tar sitt standardvärde från leverantörskontot. |
 | Anskaffning och källa | Begränsa antalet inköpsorderrader per batchuppgift | Med den här funktionen kan du optimera systemets prestanda när bekräftelser och produktinleveranser bokförs. Den lägger till en ny inställning som heter **Rader per uppgift** på fliken **Leverans** på sidan **Anskaffnings- och inköpsparametrar**. Med den här nya inställningen kan du begränsa antalet inköpsorderrader som varje batchuppgiftsprocess bearbetar. Det kan därför förhindra att stora batchuppgifter gör systemet långsammare. |
 | Produktinformationshantering | Fyll i produktattributvärden | Den här funktionen lägger till en periodisk uppgift som kallas *Fyll i produktattributvärden*. Den här nya periodiska uppgiften skapar saknade produktattributvärdeposter för attribut associerade med produkter genom en produktkategori. |
@@ -92,3 +92,4 @@ Innan någon funktion tas bort från produkten kommer meddelandet om inaktualite
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

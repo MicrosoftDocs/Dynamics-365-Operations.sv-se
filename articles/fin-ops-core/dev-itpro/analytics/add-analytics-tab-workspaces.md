@@ -7,24 +7,24 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fba78f091a9e1ba209489b0e324027c4885a198d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b06821f02e6a80f2e15db7d0dd95ef6c9a30d5bc
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884561"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206429"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Lägg till analyser i arbetsytor genom att använda Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Den här funktionen stöds i Finance and Operations (version 7.2 och senare).
+> Den här funktionen stöds i Ekonomi och drift (version 7.2 och senare).
 
 ## <a name="introduction"></a>Introduktion
 Den här artikeln beskriver hur du bäddar in en Microsoft Power BI-rapport på fliken **analys** i en arbetsyta. För det exempel som anges här utökar vi arbetsytan **Reservationshantering** i programmet Hantering av vagnpark att bädda in en analytisk arbetsyta på fliken **analys**.

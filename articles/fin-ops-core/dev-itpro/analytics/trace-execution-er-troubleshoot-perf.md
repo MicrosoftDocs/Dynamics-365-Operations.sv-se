@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851963"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108869"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spåra körning av ER-format för att felsöka prestanda problem
 
@@ -98,9 +98,9 @@ Anta att du har börjat designa en ny ER-lösning för att skapa en ny rapport s
 
 Anta att du har skapat den första versionen av ER-lösningen. Du vill nu testa instansen och analysera körningsprestanda.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importera en ER-konfiguration från RCS till Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importera en ER-konfiguration från RCS till Ekonomi och drift
 
-1. Logga in på programinstansen.
+1. Logga in på app-instansen.
 2. För den här självstudien ska du importera konfigurationer från din RCS-instans (där du utformar dina ER-komponenter) instansen (där du testar och slutligen använder dem.) Därför måste du se till att alla nödvändiga artefakter har förberetts. För mer information, se proceduren [Importera e-rapporteringskonfigurationer från Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
 3. Följ dessa steg för att importera konfigurationerna från RCS till programmet:
 
@@ -134,7 +134,7 @@ Motsvarande versioner av datamodell- och modellmappningskonfigurationer importer
             - Kör varje datakälla i formatmappningen som anropas för att hämta data
             - Behandla varje formatobjekt för att ange data i de utdata som genereras
 
-            Värdet **Sammansatt spårningsformat** finns tillgängligt i Microsoft Microsoft Dynamics 365 Finance version 10.0.20 och senare.
+            Värdet **Sammansatt spårningsformat** finns tillgängligt i Microsoft Dynamics 365 Finance version 10.0.20 och senare.
 
             I ER-formatdesignern för ER modellmappningsdesignern kan du visa den totala körningstiden för en enskild komponent. Spårningen innehåller även information om körningen, t.ex. antalet körningar samt den minsta och maximala tiden för en enda körning.
 
@@ -305,7 +305,7 @@ Det kan också vara användbart om du vill minska antalet anrop som görs till d
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importera den modifierade ER-modellmappningskonfigurationen från RCS till programmet
 
-Upprepa stegen i avsnittet [Importera en ER-konfiguration från RCS till Ekonomi och drift](#import-configuration) tidigare i den här artikeln om du vill importera version 1.2 av konfigurationen **Prestandaspårningsmappning**.
+Upprepa stegen i avsnittet [Importera en ER-konfiguration från RCS till Ekonomi och drift](#import-configuration) tidigare i den här artikeln om du vill importera version 1.2 av konfigurationen **Mappning av prestandaspårning**.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Kör modifierad ER-lösning för att spåra körning
 
@@ -363,7 +363,7 @@ Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller 
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Använd externa verktyg för att granska en körningsspårning som omfattar databasfrågor
 
-På grund av de förbättringar som har gjorts i ER-ramverk innehåller den prestandaspårning som genereras i PerfView-format fler detaljer om ER-formatkörning. I Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (juli 2019) kan den här spårningen även innehålla information om utförda SQL-frågor till programdatabasen.
+På grund av de förbättringar som har gjorts i ER-ramverk innehåller den prestandaspårning som genereras i PerfView-format fler detaljer om ER-formatkörning. I Microsoft Dynamics 365 Finance version 10.0.4 (juli 2019) kan den här spårningen även innehålla information om utförda SQL-frågor till programdatabasen.
 
 ### <a name="configure-user-parameters"></a>Konfigurera användarparametrar
 
@@ -392,3 +392,4 @@ Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

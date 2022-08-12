@@ -1,5 +1,5 @@
 ---
-title: Få hjälp med Finance and Operations-appar eller Lifecycle Services (LCS)
+title: Få hjälp med appar för ekonomi och drift eller Lifecycle Services (LCS)
 description: I den här artikeln beskrivs hur du kan få hjälp med appar för ekonomi och drift eller Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
 ms.date: 08/02/2021
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f36709ddc2a64c31fe3c2d63fbe073fd9bc159bb
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866443"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103416"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få hjälp med Finance and Operations-appar eller Lifecycle Services (LCS)
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få hjälp med appar för ekonomi och drift eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,7 +51,7 @@ I den här artikeln beskrivs hur du kan få hjälp med appar för ekonomi och dr
 <td>I <a href="https://lcs.dynamics.com/">LCS</a> använder du verktyget <strong>Problemsökning</strong> för att snabbt söka Microsoft Knowledge Base-artiklar, snabbkorrigeringar och lösningar på problem som rapporterats. Du kan se vilka rapporterade problem som håller på att lösas eller för ett visst funktionsområde och vilka problem som redan har åtgärdats. Mer information finns i <a href="issue-search-lcs.md">problemsökning (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Få support inom programmet Ekonomi och Drift.</td>
+<td>Få support inom din app för ekonomi och drift.</td>
 <td>Markera knappen <strong>hjälp</strong> (<strong>?</strong>) i det övre högra hörnet på appen och välj <strong>Support</strong>. Problem rapporteras på fliken <strong>aktiva problem</strong> i LCS. Där kan administratörerna avgöra om de ska ge support inom företaget eller skicka in problemen till Microsoft.</td>
 </tr>
 <tr>
@@ -72,3 +72,4 @@ I den här artikeln beskrivs hur du kan få hjälp med appar för ekonomi och dr
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

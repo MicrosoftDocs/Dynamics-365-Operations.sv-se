@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6d440a0d0d95fe93ed633fa588e1c3a193757d9d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016171"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070392"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametrar i Tillverkningskörning
 
@@ -71,7 +71,7 @@ För varje steg i fältet **Automatisk förbrukning av strukturlista** kan du v�
   - Tom (inget alternativ har valts).
   - **Tillgänglig på plats**
 
-    Vid Tillverkningskörning, om **Avräkningsprincip** väljs i fältet **Automatisk förbrukning av strukturlista** på fliken **Starta**, dras allt material som är inställt på **Starta** i Strukturlista från lagret när åtgärden startas. Alternativet **Finns på plats** används för produkter som är aktiverade för avancerade lagerprocesser. Om du väljer denna avräkningsprincip töms material när lagerställearbete för plockning av råmaterial har slutförts. Material töms även när en strukturlisterad som använder denna avräkningsprincip frisläpps till ett lagerställe och material finns på platsen för produktionsinleverans.
+    Vid Tillverkningskörning, om **Avräkningsprincip** väljs i fältet **Automatisk förbrukning av strukturlista** på fliken **Starta**, dras allt material som är inställt på **Starta** i Strukturlista från lagret när åtgärden startas. Alternativet **Finns på plats** används för produkter som är aktiverade för lagerstyrningsprocesser (WMS). Om du väljer denna avräkningsprincip töms material när lagerställearbete för plockning av råmaterial har slutförts. Material töms även när en strukturlisterad som använder denna avräkningsprincip frisläpps till ett lagerställe och material finns på platsen för produktionsinleverans.
 
     > [!NOTE]
     > Om fältet **Avräkningsprincip** ställs in på flien **Starta** vid tillverkningskörning måste du välja samma princip antingen på fliken **Åtgärder** eller fliken **Rapportera som färdig**. Detta krav bidrar till att säkerställa att material dras från lagret på strukturlistor med **Slutför** som en avräkningsprincip på tillverkningsordern. Om samma avräkningsprincip väljs, antingen på fliken **Åtgärder** eller fliken **Rapportera som färdig**, kan material dras av från lagret två gånger.

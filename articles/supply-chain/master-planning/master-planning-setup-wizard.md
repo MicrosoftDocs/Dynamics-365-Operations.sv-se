@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 1c79e1df53dfabc33aeacb56096b113e62b765d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a53dfd02ac2f42fd680eb71509dbd41214160f19
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8875345"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066031"
 ---
 # <a name="master-planning-setup-wizard"></a>Inställningsguide för huvudplanering
 
@@ -31,7 +31,7 @@ Denna artikel innehåller en guide för **Installationsguide för huvudplanering
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-[Inställningsguide för huvudplanering i Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (visas ovan) ingår i [Finance and Operations spellista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som finns tillgänglig på YouTube.
+Videon [Installationsguiden för huvudplanering i Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (visas ovan) ingår i [spellistan för ekonomi och drift](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som finns tillgänglig på YouTube.
 
 
 ## <a name="specific-requirements-of-your-company"></a>Specifika krav för ditt företag
@@ -142,7 +142,7 @@ I guiden anges följande värden för Contoso tillverkare:
     - **Fråga:** "vill du ange antalet dagar i planeringshorisonten?"
     - **Svar:** "Ja, enligt definitionen i disponeringsgrupperna."
 
-    Eftersom ledtiden för artiklar är mycket olika, behöver Contoso inte planera alla artiklar för samma period i framtiden. Disponeringsgrupper för artiklarna skapas. Artiklar som har en liknande ledtid tilldelas samma disponeringsgrupp. Planeringshorisonten för varje disponeringsgrupp (som är tidsgränsen för disponering) är ungefär ledtiden plus en marginal på en vecka. Huvudplaneringen ser sedan till att artiklarna planeras i förväg, baserat på deras produktionstid.
+    Eftersom ledtiden för artiklar är mycket olika, behöver Contoso inte planera alla artiklar för samma period i framtiden. Disponeringsgrupper för artiklarna skapas. Artiklar som har en liknande ledtid tilldelas samma disponeringsgrupp. Planeringshorisonten för varje disponeringsgrupp (som är tidsgränsen för disponering) är ungefär ledtiden plus en marginal på en vecka. Huvudplaneringen ser sedan till att artiklarna planeras i förväg, baserat på deras ledtid.
 
     Därför kommer två disponeringsgrupper att skapas för det här exemplet. En disponeringsgrupp kommer att ha en disponeringstidsgräns på två veckor och den andra kommer att ha en disponeringstidsgräns på åtta veckor.
 
@@ -160,7 +160,7 @@ I guiden anges följande värden för Contoso tillverkare:
     - **Fråga:** "vill du schemalägga med resursernas kapacitet?"
     - **Svar:** "Ja, enligt definitionen i den här huvudplanen." **10 dagar** anges.
 
-    Antalet fräs- och borrmaskiner är begränsat. Produktionsplaneringen måste ta hänsyn till denna begränsning och ordna jobben i tid beroende på resursernas kapacitet. Med andra ord kommer jobben som planeras att planeras om baserat på resursernas begränsningar. Planering kommer att använda produktionstiden utöver den period som har definierats. (Planerade produktionsorder kan överlappa varandra.) Eftersom produktionsledtiden för artiklarna är sju dagar, kommer kapaciteten för resurserna för huvudplaneringen att övervägas under 10 dagar.
+    Antalet fräs- och borrmaskiner är begränsat. Produktionsplaneringen måste ta hänsyn till denna begränsning och ordna jobben i tid beroende på resursernas kapacitet. Med andra ord kommer jobben som planeras att planeras om baserat på resursernas begränsningar. Planering kommer att använda ledtiden utöver den period som har definierats. (Planerade produktionsorder kan överlappa varandra.) Eftersom produktionsledtiden för artiklarna är sju dagar, kommer kapaciteten för resurserna för huvudplaneringen att övervägas under 10 dagar.
 
 - **Ordningsföljd:**
 
@@ -182,7 +182,7 @@ Contoso återförsäljare är ett distributionsföretag inom modebranschen. Den 
 
 - Contoso återförsäljare använder en efterfrågeprognos för att förutsäga försäljning. Inköpsorder kommer att planeras enligt prognosen.
 - Butiker används rekvisitioner för påfyllnad.
-- Produktionstiden från huvudlagerställe till varje butik är ungefär två veckor för alla artiklar.
+- ledtiden från huvudlagerställe till varje butik är ungefär två veckor för alla artiklar.
 
 I guiden anges följande värden för Contoso återförsäljare:
 

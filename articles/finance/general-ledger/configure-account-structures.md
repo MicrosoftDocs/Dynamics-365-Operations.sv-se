@@ -2,7 +2,7 @@
 title: Konfigurera kontostrukturer
 description: Den här artikeln innehåller information om kontostrukturer och ekonomiska dimensioner.
 author: aprilolson
-ms.date: 06/03/2019
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0a3febf8d269caec847ad879f60ac042e5fec9e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f816f0fc894b902c444a3113abfd48d4146d485
+ms.sourcegitcommit: e59990780830ac8e3382fea5df851abe86fbf496
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907992"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9141291"
 ---
 # <a name="configure-account-structures"></a>Konfigurera kontostrukturer
 
@@ -79,18 +79,20 @@ När du registrerar en journal och väljer ett konto i vinst- och förlustinterv
 
 ## <a name="more-than-7-criteria-needed"></a>Mer än 7 villkor krävs
 
-Du kan fortsätta att lägga till dem på nästa rad om du har mer än 7 villkor som behövs. Du märker att när du arbetar i avsnittet **Information om tillåtna värden** att villkoret **+Lägg till ny** inte längre är aktiv efter att det sjunde villkoret har angetts. Det beror på många faktorer såsom: 
+Du kan fortsätta lägga till dem på nästa rad om du har mer än 7 villkor som behövs. Du märker att när du arbetar i avsnittet **Information om tillåtna värden** att villkoret **+Lägg till ny** inte längre är aktiv efter att det sjunde villkoret har angetts. Det beror på många faktorer såsom: 
  - Kolumnbredd 
  - Hur data lagras. 
  - Prestanda för kontrollen **Information om tillåtna värden**
  - Användbarhet  
  
-Om du vill fortsätta att lägga till ytterligare villkor klickar du på **duplicera i segmentet** och **avsnittet tillåtna värden**. Kriterierna kommer att kopieras till en ny rad. Du kan sedan skriva över eller ändra avsnittet **Information om tillåtna värden**.
+Om du vill fortsätta lägga till ytterligare villkor klickar du på **duplicera i segmentet** och **avsnittet tillåtna värden**. Kriterierna kommer att kopieras till en ny rad. Du kan sedan skriva över eller ändra avsnittet **Information om tillåtna värden**.
 
 ## <a name="best-practices"></a>Regelverk
 När du ställer in dina kontostrukturer finns det metodtips som du kan följa. Detta är bara riktlinjer så att en holistisk diskussion om ditt företag, planering för tillväxt och underhållsplan bör betraktas som en del av denna diskussion.
 
 - Kontrollera först huvudkontot eller så nära framför kontostrukturen som möjligt, så att användarna får den bästa guidade upplevelsen de kan under kontoposten.
+  
+  - Kontrollera att eventuella lösningar från tredje part som du tänker använda stöder huvudkontot på den första positionen.
 
 - Återanvänd kontostrukturer så mycket som möjligt för att minimera underhåll över dina juridiska personer.
 
@@ -101,7 +103,7 @@ När du ställer in dina kontostrukturer finns det metodtips som du kan följa. 
 - Placera inte bara en asterisk för varje segment i kontostrukturen och lita sedan endast på avancerade regler. Detta kan vara svårt att hantera och leder ofta fram till användarfel under underhåll som kan göra att systemet inte kan bokföras.
 
 ## <a name="account-structure-activation"></a>Aktivering av kontostruktur
-När du är nöjd med dina nya inställningar eller en ändring av en kontostruktur måste du aktivera den. Om en kontostruktur tilldelas till redovisningen kommer denna aktivering vara en tidskrävande process eftersom alla ej bokförda transaktioner i systemet måste vara synkroniserade med den nya strukturen. Bokförda transaktioner påverkas inte med hänsyn till förändringar struktur.
+När du är nöjd med dina nya inställningar eller en ändring av en kontostruktur måste du aktivera den. Om en kontostruktur tilldelas redovisningen kommer denna aktivering vara en tidskrävande process eftersom alla ej bokförda transaktioner i systemet måste vara synkroniserade med den nya strukturen. Bokförda transaktioner påverkas inte med hänsyn till förändringar struktur.
 
 Mer information finns i [planera din kontoplan](plan-chart-of-accounts.md), [ekonomiska dimensioner](financial-dimensions.md) och [och dimensionskombinationer (indelad kontroll) ange](enter-account-dimension-combinations-segmented-entry-control.md).
 

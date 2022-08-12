@@ -12,18 +12,18 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 54a3dfe64d46b082db12ef05b88075831c9f525e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 473977a7a75bb7bbe493225c6455a918ba5f748e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898555"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070799"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Utbildningskatalog för administratörer för Dynamics 365 Commerce
 
 Behöver du hålla system och data flödande, etablerade och säker dygnet runt?
 
-Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner och från de flesta till de mest avancerade. Om det finns innehåll i flera format får vi meddela dig att du kan välja det utbildningsformat som bäst motsvarar dina behov. Katalogen innehåller endast särskilda funktioner för Dynamics 365 Commerce. Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [Dynamics 365 Finance utbildningskatalog](../../finance/get-started/learning-catalog-administrator.md).
+Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner och från de flesta till de mest avancerade. Om det finns innehåll i flera format får vi meddela dig att du kan välja det utbildningsformat som bäst motsvarar dina behov. Katalogen innehåller endast särskilda funktioner för Dynamics 365 Commerce. Om du vill öva på funktioner som delas med andra appar för ekonomi och drift, se då [Utbildningskatalog för Dynamics 365 Finance](../../finance/get-started/learning-catalog-administrator.md).
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
@@ -37,7 +37,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 | Innehåll  | beskrivning  | Format  | Längd    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Driftsätta och utöka Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | I den här utbildningssökvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar   |
+| [Driftsätta och utöka Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | I den här utbildningsvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar   |
 | [Konfigurera och använda kassa (POS) i Dynamics 365 Commerce](/learn/paths/configure-use-pos-commerce/)         | Transaktionsdata skapas i POS och överförs sedan till Dynamics 365 Commerce administration för bearbetning. Den här utbildningsvägen beskriver hur du installerar och aktiverar POS samt hur du skapar dagliga transaktioner i POS. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
 | [Konfigurera och arbeta med kundtjänst i Dynamics 365 Commerce](/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce är en flerkanalslösning som tillhandahåller en kundtjänstkanal med funktioner som standard för specifika orderbearbetningsinställningar och standardvärden för försäljnings order som skapas av kundtjänstanvändare.                                  | Gratis, självstudier online utbildningsväg | 2 timmar   |
 
@@ -49,3 +49,4 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0055757a0d012896232de58330ee142f702e4ed1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f148d4c6ece543c8a11eee3e6dcdff47b3767936
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8875406"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135518"
 ---
 # <a name="conventions"></a>Praxis
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 En regel är en behållare för en uppsättning principer som påverkar systemets beteende. Baserat på dina affärsbehov måste du definiera konventioner genom att använda en kombination av olika principer som fastställer hur kostnader ska redovisas i global lagerredovisning. Du kan koppla varje konferens till en eller flera redovisningar för att säkerställa överensstämmelse i redovisningsprinciperna som tillämpas i hela redovisningen.
 

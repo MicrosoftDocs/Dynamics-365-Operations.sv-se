@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13a25d3f1f72d8053ed3951b036522cfa3a15959
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856292"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065657"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurera Personal-parametrar
 
@@ -27,7 +27,7 @@ ms.locfileid: "8856292"
 
 Inställningarna för vissa Personalparametrar delas av alla företag, medan inställningarna för andra parametrar är företagsspecifika. Det här ämnet innehåller information om hur du ställer in personalparametrar.
 
-Två sidor används för att ställa in personalparametrar. För parametrar som delas mellan företag, kan du använda de **mänskliga resurserna delas parametrar sidan** . För parametrar som är företagsspecifika (med andra ord inställningar tillämpas på ett enda företag) kan du använda den **mänskliga resursen parametrar sidan** .
+Två sidor används för att ställa in personalparametrar. För parametrar som delas mellan företag, kan du använda de **mänskliga resurserna delas parametrar sidan** . För parametrar som är företagsspecifika kan du använda sidan **Parametrar för Personal**.
 
 ![Gå till personalparametrar.](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -74,9 +74,10 @@ I Dynamics 365 Finance anger inställningarna på fliken **Kompensation** om anv
 
 I Personal kan du använda fliken **Kompensation** om du vill välja att begränsa åtkomsten till kompensationsplaner och att ange en standardvaluta.
 
-Mer information om att kompensationsplaner finns i [Översikt över kompensationsplaner](hr-compensation-overview.md).
+> [!NOTE]
+> I den sammanslagna infrastrukturen har standardparametern **Valuta** på fliken **Kompensation** på sidan **Parametrar för Personal** tagits bort. Hädanefter kommer valutan att hanteras via parametern **Redovisningsvaluta** i syfte att säkerställa att det inte finns några konflikter för befintliga ekonomi- och driftfunktioner, samt för att förhindra dubbletter. Mer information om att använda funktionen för redovisningsvaluta finns i [Konfigurera redovisning](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
-![Fliken Kompensation.](./media/hr-setup-parameters-compensation.png)
+Mer information om att kompensationsplaner finns i [Översikt över kompensationsplaner](hr-compensation-overview.md).
 
 ## <a name="number-sequences"></a>Nummerserier
 
@@ -122,7 +123,7 @@ Mer information om hur du konfigurerar **Självbetjäning för medarbetare** fin
 Inställningarna på fliken **Självbetjäning för chef** påverkar det som cheferna ser i **Självbetjäning för chef**. På den här fliken kan du konfigurera följande alternativ:
 
 - Intervallet för utgående poster
-- Informationschefer kan visa i utgångsposter
+- Information som chefer kan visa i utgående poster
 - Information om huruvida chefer kan visa öppna befattningar för utökade rapporter
 - Vyer av medarbetare
 - Användbara länkar för chefer

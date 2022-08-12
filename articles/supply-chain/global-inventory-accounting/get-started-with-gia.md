@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
-ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
+ms.openlocfilehash: 463a66002ec7a6536c9ff829f9ea2c3734138eae
+ms.sourcegitcommit: 6221a25f81aa83ab335de7cb6b6c3014dbec0116
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013567"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "9177161"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gång med Global lagerredovisning
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Global lagerredovisning låter dig utföra flera lagerredovisningar i de globala lagerredovisningar som du har skapat. Du kopplar varje redovisning med en Global lagerredovisning till en *konvention*. En konvention är en samling av följande typer av redovisningsprinciper:
 
@@ -69,28 +67,34 @@ Innan du kan aktivera tilläggsfunktionen måste du integrera Microsoft Power Pl
 
 Mer information finns i [Aktivera efter utveckling av miljön](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install-the-add-in"></a><a name="install"></a>Installera tillägget
+## <a name="install-or-update-the-add-in-and-solution"></a><a name="install"></a>Installera eller uppdatera tillägget och lösningen
 
-Följ dessa steg för att installera tillägget så att du kan använda global lagerredovisning.
+Använd följande procedur för att installera eller uppdatera tillägget och lösningen för global lagerredovisning. Den del av proceduren du ska följa beror på om du installerar för första gången eller bara behöver uppdatera lösningen för en befintlig installation.
+
+- Om du aldrig har installerat tillägget tidigare följer du hela proceduren för att installera både tillägget och lösningen.
+- Om du redan använder global lagerredovisning men behöver uppdatera lösningen i [administrationscentret för Power Platform](https://admin.powerplatform.microsoft.com), ska du bara utföra steg 6 och hoppa över alla andra steg.
+
+För att installera eller uppdatera tillägget och lösningen:
 
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Öppna LCS-miljön där du vill lägga till tjänsten.
 1. Gå till **Fullständiga detaljer**.
 1. Gå till **Power Platform-integrering** och välj **Inställningar**.
 1. Markera kryssrutan i dialogrutan **Inställning av Power platform miljö** och välj sedan **Inställningar**. Normalt tar inställningen mellan 60 och 90 minuter.
-1. När inställningen av Microsoft Power Platform miljön är klar loggar du in på [Power Platform administrörscentret](https://admin.powerplatform.microsoft.com) och installerar sedan tillägget Global lagerredovisning genom att utföra följande steg:
-   1. Välj den miljö där du vill installera tillägget.
+1. När inställningen av Microsoft Power Platform-miljön är klar loggar du in på [administrationscentret för Power Platform](https://admin.powerplatform.microsoft.com) och installerar eller uppdaterar sedan tillägget för global lagerredovisning genom att utföra följande steg:
+   1. Välj den miljö där du vill installera eller uppdatera lösningen.
    1. Välj **Dynamics 365-program**.
    1. Välj **Installera program**.
    1. Välj **Dynamics 365 Global lagerredovisning**.
    1. Klicka på **Nästa** när du vill installera.
-1. Gå tillbaka till LCS-miljön. På snabbfliken **Miljötillägg** välj **Installera ett nytt tillägg**.
+1. När lösningen är helt installerad går du tillbaka till LCS-miljön. På snabbfliken **Miljötillägg** välj **Installera ett nytt tillägg**.
 1. Välj **Global lagerredovisning**.
 1. Följ installationsguiden och godkänn villkoren.
 1. Välj **Installera**.
 1. På snabbfliken **Miljötillägg** bör du se att Global lagerredovisning installeras. Efter några minuter bör statusen ändras från *installera* till *installerad*. (Du kan behöva uppdatera sidan för att se ändringen.) Vid den tidpunkten är Global lagerredovisning klar för användning.
 
 Om standardspråket i installationen Dataverse inte är engelska följer du dessa anvisningar:
+
 1. Gå till **Avancerad inställning \> Administration \> Språk**.
 1. Välj *Engelska* (*LanguageCode=1033*) och sedan **Verkställ**.
 

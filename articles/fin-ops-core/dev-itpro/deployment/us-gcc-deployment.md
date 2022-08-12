@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 90e64fec512307af209ace128d5897475de7aee5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 41789d574cc7348dbf8a18db97da9c428da09602
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867285"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103951"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance, Supply Chain Management och Commerce i US Government Community Cloud (GCC)
 
@@ -38,9 +38,9 @@ När den initiala introduktionen är slutförd följer du instruktionerna i [Pro
 
 ## <a name="environment-deployment"></a>Distribuera miljö
 
-När du har slutfört introduktionen till projekt kan du granska den ytterligare kapaciteten hos LCS som beskrivs i [Lifecycle Services (LCS) för Ekonomi och Drift-programkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Gå sedan vidare till miljödistributionen.
+När du har slutfört projektregistreringen kan du granska den ytterligare kapaciteten hos LCS som beskrivs i [Lifecycle Services (LCS) för kunder för appar för ekonomi och drift](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Gå sedan vidare till miljödistributionen.
 
-- Om du vill distribuera Microsoft-hanterade miljöer via LCS följer du instruktionerna i [Lifecycle Services (LCS) för Ekonomi och Drift-programkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Om du vill distribuera Microsoft-hanterade miljöer via LCS följer du instruktionerna i [Lifecycle Services (LCS) för kunder för appar för ekonomi och drift](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - För molnstyrda miljöer , se [Distribuera och få tillgång till utvecklingsmiljöer](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Du måste också slutföra resurshanterarens onboardingprocess för dina anslutningar, enligt beskrivningen i [Slutför Azure Resource Manager integreringsprocess för US government Lifecycle Services-projekt](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
@@ -84,3 +84,4 @@ Ja. Om din partner använder en icke GCC-identitet skickas supportbiljetten till
 - [Molndistribution – översikt](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

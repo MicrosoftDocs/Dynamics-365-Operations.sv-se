@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c7199f5a5a401e627bb5fac9dece3950900e5f97
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903794"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067924"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frisläppning av försändelse för direktutleverans
 
@@ -34,14 +34,14 @@ Direktutleverans är ett lagerhanteringsflöde där den kvantitet som krävs fö
 De här funktionerna för direktutleverans har två fördelar:
 
 - Lageråtgärderna kan hoppa över steget med att föra in kvantiteter av färdiga varor i det vanliga lagret, om dessa kvantiteter bara hämtas igen för att genomföra den utgående ordern. I stället kan kvantiteterna flyttas en gång, från utleveransplatsen till en förpacknings-/leveransplats. På så sätt kan funktionen minimera det antal gånger som lagret hanteras och i slutändan maximerar du tid och sparar pengar för lagrets arbetsstyrning.
-- Lageråtgärderna kan senarelägga frisläppningen av försäljningsorder och överföringsorder till lagerstället tills produktionen av färdiga varor för den associerade tillverkningsordern rapporteras som färdig. Den här fördelen kan vara särskilt relevant i produktionsmiljöer för tillverka på beställning, där tillverkningstid för produktion brukar vara längre än produktionstiderna i tillverka mot lager-miljöer.
+- Lageråtgärderna kan senarelägga frisläppningen av försäljningsorder och överföringsorder till lagerstället tills produktionen av färdiga varor för den associerade tillverkningsordern rapporteras som färdig. Den här fördelen kan vara särskilt relevant i produktionsmiljöer för tillverka på beställning, där tillverkningstid för produktion brukar vara längre än ledtiderna i tillverka mot lager-miljöer.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
 | Förutsättning | Beskrivning |
 |---|---|
-| Objekt | Artikeln måste aktiveras för lagerhanteringsprocesser.<p>**Obs!** Artiklar som aktiverats för faktisk/nominell vikt kan inte inkluderas i direktutleveransen.</p> |
-| Lagerställe | Lagerstället måste aktiveras för lagerhanteringsprocesser. |
+| Objekt | Artikeln måste aktiveras för lagerstyrningsprocesser (WMS).<p>**Obs!** Artiklar som aktiverats för faktisk/nominell vikt kan inte inkluderas i direktutleveransen.</p> |
+| Lagerställe | Lagerstället måste aktiveras för lagerstyrningsprocesser (WMS). |
 | Mallar för direktleverans | Minst en mall för direktutleverans som använder principen för frisläppning av efterfrågan **Vid leverans av inleverans** måste ställas in för ett visst lagerställe. |
 | Arbetsklass | Ett ID för direktutleverans måste skapas för arbetsordertypen **direktleverans**. |
 | Arbetsmallar | Du måste använda arbetsmallar för arbetstypen **direktleverans** för att kunna skapa och lägga in arbete för direktleverans. |

@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5372d91a757416933f225411ed0f55347e25df12
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4ac123bea3b3cc2c6c0645a4ecc8cf119119408
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892029"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066198"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-developers"></a>Utbildningskatalog för Dynamics 365 Commerce utvecklare
 
@@ -25,7 +25,7 @@ Behöver du skriva kod för att integrera med andra datakällor, utöka kärnsys
 
 Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner och från de flesta till de mest avancerade. Om det finns innehåll i flera format får vi meddela dig att du kan välja det utbildningsformat som bäst motsvarar dina behov.
 
-Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [Dynamics 365 Finance utbildningskatalog](../../finance/get-started/learning-catalog-developer.md).
+Om du vill öva på funktioner som delas med andra appar för ekonomi och drift, se då [Utbildningskatalog för Dynamics 365 Finance](../../finance/get-started/learning-catalog-developer.md).
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
@@ -39,7 +39,8 @@ Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [
 
 | Innehåll  | beskrivning  | Format  | Längd    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Driftsätta och utöka Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | I den här utbildningssökvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar |
+| [Driftsätta och utöka Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | I den här utbildningsvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

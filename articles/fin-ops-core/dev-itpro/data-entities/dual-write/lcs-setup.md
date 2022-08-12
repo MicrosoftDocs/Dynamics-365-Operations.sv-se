@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879816"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111983"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Inställning av dubbelriktad skrivning från Lifecycle Services
 
@@ -28,8 +28,8 @@ I den här artikeln beskrivs hur du aktiverar en dubbelriktad skrivning från Mi
 
 Kunder måste slutföra Power Platform-integreringen enligt beskrivningen i följande avsnitt:
 
-- Om du ännu inte använder Microsoft Power Platform och vill expandera dina ekonomi- och driftmiljöer genom att lägga till plattformsfunktionerna, ska du se [Power Platform integration - Aktivera under miljödistributionen](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
-- Om du redan har Dataverse och Power Platform-miljöer och vill ansluta dem till ekonomi- och driftmiljöer, se [Power Platform integration - Aktivera efter utveckling av miljön](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
+- Om du ännu inte använder Microsoft Power Platform men vill expandera dina ekonomi- och driftmiljöer genom att lägga till plattformsfunktionerna, se då [Power Platform-integrering- Aktivera under miljödistributionen](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Om du redan har Dataverse- och Power Platform-miljöer och vill ansluta dessa till ekonomi- och driftmiljöer, se då [Power Platform-integrering – Aktivera efter distribution av miljön](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Ställ in dubbelriktad för ny eller befintlig Dataverse-miljö
 
@@ -53,7 +53,7 @@ Följ dessa steg när du vill ställa in dubbelriktad skrivning från LCS **milj
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Länk till Power Platform-miljö.":::
 
-8. När länkningen är slutförd visas en hyperlänk. Använd länken för att logga in på administrationsområdet för dubbelriktad skrivning i Ekonomi och Drift-miljön. Därifrån kan du ställa in enhetsmappningar.
+8. När länkningen är slutförd visas en hyperlänk. Använd länken för att logga in i administrationsområdet för dubbelriktad skrivning i Ekonomi och Drift-miljön. Därifrån kan du ställa in enhetsmappningar.
 
 ## <a name="linking-mismatch"></a>Koppla matchningsfel
 
@@ -71,3 +71,4 @@ Om du får den här varningen försöker du med någon av följande lösningar:
 Tidigare var ett manuellt alternativ för supportbegäran tillgängligt, men det var före alternativen 1 ovan.  Microsoft stöder inte längre manuella omkopplingar av förfrågningar via supportbegäran.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

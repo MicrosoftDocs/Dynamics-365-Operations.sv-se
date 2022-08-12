@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a05c34454e27244bb08bfff84f2ada6ff498f23
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 388be651164af622dbabd7b2c7b3437233454bea
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862167"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108614"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Visa och uppdatera enhetsdata i Excel 
 
@@ -31,7 +31,7 @@ ms.locfileid: "8862167"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-Den här artikeln beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget. För att öppna entitetsdata kan du starta från antingen Excel eller Ekonomi och Drift-appar.
+Den här artikeln beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget. För att öppna entitetsdata kan du starta från antingen Excel eller appar för ekonomi och drift.
 
 Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och redigera data med tillägget för Excel. Det här tillägget kräver Microsoft Excel 2016 eller senare.
 
@@ -40,15 +40,15 @@ Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och
 
 Om du vill veta mer om hur du använder Excel-tillägg, titta på den korta videon [Skapa en Excel-mall för rubriker och mönster](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Öppna enhetsdata i Excel när du startar från Ekonomi och Drift-app
-1. På en sida i Ekonomi och Drift-app väljer du **Öppna i Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Öppna entitetsdata i Excel när du startar från en app för ekonomi och drift
+1. På en sida i appen för ekonomi och drift väljer du **Öppna i Microsoft Office**.
 
     Om rotdatakällan (register) för sidan är samma som rotdatakällan för alla enheter skapas standardalternativet **öppna i Excel** för sidan. Alternativet **Öppna i Excel** finns på ofta använda sidor, t.ex. **alla leverantörer** och **alla kunder**.
  
 2. Klicka på alternativet **öppnas i Excel** och öppna en arbetsbok som har skapats. Den här arbetsboken har bindningsinformation för enheten, en pekare till din miljö och en länk till Excel-tillägget.
 3. I Excel klickar du på **skrivskyddet** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget**.
-5. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in på Ekonomi och Drift-app. Excel-tillägget använder en tidigare inloggningskontext från webbläsaren och loggar automatiskt in dig, om det kan. (Mer information om webbläsaren som används baserat på operativsystemet finns i [Webbläsare som används av Office-tillägg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). För att säkerställa att inloggningen lyckades, verifiera användarnamnet i det övre högra hörnet av Excel-tillägget. 
+5. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in i appen för ekonomi och drift. Excel-tillägget använder en tidigare inloggningskontext från webbläsaren och loggar automatiskt in dig, om det kan. (Mer information om webbläsaren som används baserat på operativsystemet finns i [Webbläsare som används av Office-tillägg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). För att säkerställa att inloggningen lyckades, verifiera användarnamnet i det övre högra hörnet av Excel-tillägget. 
 
 Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg märke till att det finns inga data i arbetsboken förrän Excel-tillägget läser in den.
 
@@ -57,7 +57,7 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 2. I Office Store.söker du efter nyckelordet **Dynamics** och väljer sedan **Lägg till** bredvid **Microsoft Dynamics Office-tillägget** (Excel-tillägget).
 3. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4. Klicka på **lägga till information om server** för att öppna fönstret **alternativ**.
-5. I webbläsaren kopierar du webbadressen från Ekonomi och Drift-appinstansen, klistra in den i fältet **Server-URL** och ta bort allt efter värdnamnet. Den resulterande URL:en ska ha bara värdnamnet.
+5. I webbläsaren kopierar du webbadressen från din målappinstans för ekonomi och drift, klistrar in den i fältet **Server-URL** och tar sedan bort allt efter värdnamnet. Den resulterande URL:en ska ha bara värdnamnet.
 
     Om URL-adressen är till exempel `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, ta bort allt utom `https://xxx.dynamics.com`.
 
@@ -67,7 +67,7 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 
 7. Välj **Design**. Excel-tillägget hämtar enhetsmetadata.
 8. Välj **Lägg till registrer**. En lista över enheter visas. Enheterna anges i formatet "Namn – etikett".
-9. Välj en enhet i listan, till exempel **kund - kunder**, och klicka sedan på **nästa**.
+9. Välj en enhet i listan, till exempel **kund – kunder**, och klicka sedan på **nästa**.
 10. Lägg till ett fält från listan **tillgängliga fält** till listan **markerade fält**, klicka på fältet och sedan på **Lägg till**. Du kan också dubbelklicka på fältet i listan **tillgängliga fält**.
 11. När du är klar med att lägga till fält till listan **markerade fält**, kontrollera att markören är på rätt plats i kalkylbladet (till exempel cell A1) och klicka sedan på **Klar**. Klicka på **Klart** för att stänga designverktyget.
 12. Klicka på **uppdatera** för att dra in en uppsättning data.
@@ -76,7 +76,7 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 När Excel-tillägget har läst in enhetsdata i arbetsboken, kan du uppdatera informationen när som helst genom att klicka på **uppdatera** i Excel-tillägget.
 
 ## <a name="edit-entity-data-in-excel"></a>Redigera enhetsdata i Excel
-Du kan ändra enhetsdata som du vill och sedan publicera den igen i Ekonomi och Drift-appen genom att klicka på **publicera** i Excel-tillägget. Markera en cell i kalkylbladet om du vill redigera en post och ändra värdet i cellen. Om du vill lägga till en ny post, gör du något av följande:
+Du kan ändra entitetsdata som du vill och sedan publicera den igen i appar för ekonomi och drift genom att klicka på **Publicera** i Excel-tillägget. Markera en cell i kalkylbladet om du vill redigera en post och ändra värdet i cellen. Om du vill lägga till en ny post, gör du något av följande:
 
 - Klicka var som helst i registret för datakällor och klicka sedan på **Ny** i Excel-tillägg.
 - Klicka i den sista raden i registret för datakällor och tryck på TAB tills markören flyttas från den sista kolumnen på samma rad och en ny rad skapas.
@@ -126,7 +126,7 @@ Författare till Excel-arbetsboksmallar kan använda samma procedur för att st�
 
 ## <a name="copy-environment-data"></a>Kopiera miljödata
 
-De data som läses in i arbetsboken från en miljö kan kopieras till en annan miljö. Du kan inte bara ändra anslutnings-URL eftersom datacachen i arbetsboken fortsätter att hantera informationen som befintliga data. I stället måste du använda funktionen Kopiera miljödata och publicera data till en ny miljö som nya data.
+De data som läses in i arbetsboken från en miljö kan kopieras till en annan miljö. Du kan inte bara ändra anslutnings-URL eftersom datacachen i arbetsboken fortsätter hantera informationen som befintliga data. I stället måste du använda funktionen Kopiera miljödata och publicera data till en ny miljö som nya data.
 
 1. Välj knappen **alternativ** (växelsymbol) och sedan på snabbfliken **dataanslutning** väljer du **Kopiera miljödata**. 
 2. Ange serverns URL för den nya miljön. 
@@ -142,7 +142,8 @@ Det finns några problem som kan lösas genom några enkla steg.
 - **Länken "Läs in appletar" visas** – För mer information om detta problem se [Läs in appletar](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) felsökningsposten. 
 - **Felmeddelandet "Förbjudet" visas** – Om felmeddelandet "Förbjudet" visas medan Excel-tillägget läser in metadata, har det konto som är inloggat i Excel-tillägget inte behörighet att använda den riktade tjänsten, instansen eller databasen. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 - **En tom webbsida visas över Excel** – Om en tom webbsida öppnas när du loggar in, kräver kontot AD FS, men versionen av Excel som kör Excel-tillägget är inte tillräcklig nytt för att läsa in dialogrutan för inloggning. Uppdatera versionen av Excel som du använder för att lösa problemet. Uppdatera Excel-versionen när du arbetar i ett företag på den uppskjutna kanalen med [Office distributionsverktyg](/deployoffice/overview-office-deployment-tool) för att [flytta från uppskjuten kanal till den aktuella kanalen](/deployoffice/overview-update-channels).
-- **Du får en timeout medan du publicerar dataändringar** - Om du får timeout-meddelanden när du försöker publicera dataändringar till en enhet kan du överväga att minska publiceringsbatchstorleken för den berörda arbetsboken. Enheter som utlöser större mängder logik i poständringar kan kräva uppdateringar som skickas i mindre batchar för att förhindra timeout.
+- **Du får en timeout medan du publicerar dataändringar** – Om du får timeout-meddelanden när du försöker publicera dataändringar till en enhet kan du överväga att minska publiceringsbatchstorleken för den berörda arbetsboken. Enheter som utlöser större mängder logik i poständringar kan kräva uppdateringar som skickas i mindre batchar för att förhindra timeout.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

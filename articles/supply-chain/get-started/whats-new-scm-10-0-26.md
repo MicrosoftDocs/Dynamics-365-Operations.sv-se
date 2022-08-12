@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954535"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124511"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.26 (maj 2022)
 
@@ -33,7 +33,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 
 | Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
-| Lager och logistik | [Frågor om tillgängligt lager som stöd för avancerade artiklar för lagerstyrning](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Stöd för lagersynlighet för WHS-artiklar](../inventory/inventory-visibility-whs-support.md) | Funktionshantering:<br>*Aktivera lagerartiklar i lagersynlighet* |
+| Lager och logistik | [Frågor om tillgängligt lager som stöd för avancerade artiklar för lagerstyrning](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Stöd för lagersynlighet för WMS-artiklar](../inventory/inventory-visibility-whs-support.md) | Funktionshantering:<br>*Aktivera lagerartiklar i lagersynlighet* |
 | Lager och logistik | [Framtida kvatiteter för tillägget Lagersynlighet](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](../inventory/inventory-visibility-available-to-promise.md) | Aktiveras via tjänstekonfiguration |
 | Tillverkning | [Artiklar med nominell vikt för produktionsgolvets körningsgränssnitt](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Hur arbetare använder körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-use.md) | Funktionshantering:<br>*(Förhandsversion) Rapport med fångstviktartiklar från körningsgränssnittet för produktionsgolvet* |
 | Tillverkning | Fliken Mina jobb på körningsgränssnittet för produktionsgolvet <!-- KFM: Add link to release plan when available --> | [Hur arbetare använder körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-use.md) | Funktionshantering:<br>*Fliken Mina jobb på körningsgränssnittet för produktionsgolvet* |
@@ -47,9 +47,9 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 | Modul | Funktionsnamn i funktionshantering | Mer information |
 |---|---|---|
 | Anskaffning och källa | Bokför registrerade kvantiteter av produkter i lager och rester av produkter som inte finns i lager för inleveranser och leverantörsfakturor | Denna funktion ändrar hur kvantiteter av produkter som inte finns i lager (t.ex. tjänster) bokförs vid bearbetning av leverantörsfakturor och inkommande försändelser mot inköpsorder. Funktionen ändrar beteendet för kvantitetsalternativet *Registrerad kvantitet och registrerade tjänster* för bokföring av inleveranser och leverantörsfakturor genom att matcha det med beteendet för det alternativ för *Registrerad kvantitet och produkter som inte finns i lager* som redan tillhandahållits vid bokföring av kvantiteter för försäljningsföljesedlar.<br><br>När du bokför en produktinleverans- eller leverantörsfaktura med kvantitetsalternativet *Registrerad kvantitet och registrerade tjänster* bokför systemet den registrerade kvantiteten av lagrade produkter och bokför resterande kvantitet av produkter som inte finns i lager (inklusive både tjänster och icke-tjänster). Utan denna funktion bokför systemet fortfarande den registrerade kvantiteten av produkter i lager (inklusive tjänster som konfigurerats lagerartiklar) men bokför alltid den fullständiga beställda kvantiteten av tjänsteprodukter som inte finns i lager (och ignorerar icke-lagerförda produkter som inte är av typen *Tjänst*). |
-| Anskaffning och källa | Synkronisera spårningsdimensioner på koncerninterna försäljnings- och inköpsorderrader | Med den här funktionen kan du kontrollera huruvida spårningsdimensionerna för serie- och batchnummer synkroniseras över koncerninterna försäljnings- och inköpsorderrader. Den lägger till nya inställningar på både fliken **Inköpsorderpolicyer** och fliken **Försäljningsorderpolicy** på inställningssidan **Koncernintern** för kunder och leverantörer. I tydlighetssyfte uppdaterar den även namnen på några relaterade, närliggande inställningar.<br><br>Om du använder avancerad lagerstyrning (WMS), notera då att denna funktion endast synkroniserar batch- och serienummer när dessa måt ligger ovanför platsen i målets reservationshierarki. |
+| Anskaffning och källa | Synkronisera spårningsdimensioner på koncerninterna försäljnings- och inköpsorderrader | Med den här funktionen kan du kontrollera huruvida spårningsdimensionerna för serie- och batchnummer synkroniseras över koncerninterna försäljnings- och inköpsorderrader. Den lägger till nya inställningar på både fliken **Inköpsorderpolicyer** och fliken **Försäljningsorderpolicy** på inställningssidan **Koncernintern** för kunder och leverantörer. I tydlighetssyfte uppdaterar den även namnen på några relaterade, närliggande inställningar.<br><br>Om du använder lagerstyrningsprocesser (WMS), notera då att denna funktion endast synkroniserar batch- och löpnummer när dessa mått ligger ovanför platsen i målets reservationshierarki. |
 | Produktinformationshantering | Rensa produktattributvärden | Denna funktion lägger till den periodiska uppgiften **Rensa produktattributvärden**, som rensar värdeposter för produktattribut som inte längre är associerade med en produkt genom produktkategori. |
-| Hantering av lager och lagerstyrning | (Ryssland) Förhindra avvikelser vid utfärdande av GTD för inköpsorder som inkluderar WMS-aktiverade artiklar | Denna funktion är bara tillgänglig för Ryssland. Den förhindrar avvikelser som uppstår vid utfärdande av ryska tulldeklarationsnummer (GTDs) för importinköpsorder som omfattar artiklar som har aktiverats för avancerad lagring (WMS). GTD-utfärdandeprocessen ändrar vissa lagerdimensionsvärden på relaterade lagertransaktioner för fakturor som är inkluderade i den anpassade journalen, vilket leder till avvikelser mellan arbetsposterna för inköpsordern och lagertransaktionerna för inköpet. När den här funktionen är aktiverad genererar GTD-utfärdandeprocessen justeringsarbete som eliminerar sådana avvikelser. |
+| Hantering av lager och lagerstyrning | (Ryssland) Förhindra avvikelser vid utfärdande av GTD för inköpsorder som inkluderar WMS-aktiverade artiklar | Denna funktion är bara tillgänglig för Ryssland. Den förhindrar avvikelser som uppstår vid utfärdande av ryska tulldeklarationsnummer (GTD) för importinköpsorder som omfattar artiklar som har aktiverats för lagerstyrningsprocesser (WMS). GTD-utfärdandeprocessen ändrar vissa lagerdimensionsvärden på relaterade lagertransaktioner för fakturor som är inkluderade i den anpassade journalen, vilket leder till avvikelser mellan arbetsposterna för inköpsordern och lagertransaktionerna för inköpet. När den här funktionen är aktiverad genererar GTD-utfärdandeprocessen justeringsarbete som eliminerar sådana avvikelser. |
 | Lagerstyrning | Utökad parser för GS1-streckkoder | Denna funktion lägger till en förbättrad parser för GS1-symboldata. Den nya parsern implementerar GS1 General Specification-algoritmen för parsning av GS1-symboler och ger starkare datavalidering. Mer information finns i [Skanning av GS1-streckkoder](../warehousing/gs1-barcodes.md). |
 | Lagerstyrning | Nya sidor för lastplaneringsworkbench | Lägger till två nya workbench-sidor för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
 | Lagerstyrning | Lagerstyrningsprogram – tom GTD | Denna funktion är bara tillgänglig för Ryssland. Medarbetare som använder mobilapplikationen Lagerstyrning kan lämna numren för ryska tulldeklarationer (GTD) tomma vid behov. Om GTD-spårningsdimensionen har ställts in för att tillåta tomma värden, accepterar systemet tomma värden för GTD för lageråtgärder under förutsättning att lagerbehållning är tillgänglig. |
@@ -64,7 +64,7 @@ Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. D
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.26 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.26 av appar för ekonomi och drift (maj 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
@@ -90,3 +90,4 @@ Innan någon funktion tas bort från produkten kommer meddelandet om inaktualite
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

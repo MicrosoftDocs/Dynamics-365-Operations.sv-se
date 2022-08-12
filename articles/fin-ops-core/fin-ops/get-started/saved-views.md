@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845425"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125163"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
@@ -125,7 +125,7 @@ Med den här publiceringsfunktionen kan företag definiera företags standardvye
 
 ## <a name="publishing-views"></a>Publicerande vyer
 
-Under publiceringsprocessen kan vyer tilldelas till en eller flera säkerhetsroller för en eller flera juridiska personer. Därför kan alla användare som har åtkomst till en juridisk person och som har tilldelats en av dessa roller komma åt och använda vyerna. Användaren kan dock inte redigera vyerna. Som standard har systemadministratörer åtkomst till åtgärden **publicering** på vyväljarens rullgardinsmeny. Andra betrodda användare i organisationen kan emellertid också ges åtkomst att visa publicering via administratörsrollen **sparade vyer**.
+Under publiceringsprocessen kan vyer tilldelas en eller flera säkerhetsroller för en eller flera juridiska personer. Därför kan alla användare som har åtkomst till en juridisk person och som har tilldelats en av dessa roller komma åt och använda vyerna. Användaren kan dock inte redigera vyerna. Som standard har systemadministratörer åtkomst till åtgärden **publicering** på vyväljarens rullgardinsmeny. Andra betrodda användare i organisationen kan emellertid också ges åtkomst att visa publicering via administratörsrollen **sparade vyer**.
 
 Gör så här om du vill publicera en vy:
 
@@ -215,7 +215,7 @@ En lista med kända problem med sparade vyer finns i [skapa formulär som utnytt
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hur aktiverar jag sparade vyer i min miljö?
 
 > [!NOTE]
-> Funktionen **sparade vyer** kräver att anpassningssystemet i Ekonomi och Drift aktiveras. Om anpassningar inaktiveras för hela miljön inaktiveras vyer även om du följer stegen nedan. 
+> Funktionen **Sparade vyer** kräver att anpassningssystemet i appar för ekonomi och drift aktiveras. Om anpassningar inaktiveras för hela miljön inaktiveras vyer även om du följer stegen nedan. 
 
 Du kan aktivera och inaktivera funktionen **Sparade vyer** via funktionshantering i alla miljöer. När den har aktiverats aktiveras sparade vyer i alla efterföljande användarsessioner.
 
@@ -255,3 +255,4 @@ Om du publicerar en vy till en specifik juridisk person men inte publicerar den 
 - **Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** aktiveras, visar visningsväljaren vyn enbart för angivna juridiska personer. Detta beteende inträffar eftersom funktionen gör det möjligt att länka vyer (inklusive personliga vyer) till specifika juridiska personer.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

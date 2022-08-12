@@ -1,5 +1,5 @@
 ---
-title: Konfigurera hjälpupplevelsen för Ekonomi och Drift-appar
+title: Konfigurera hjälpupplevelsen för appar för ekonomi och drift
 description: I den här artikeln finns information om komponenterna i hjälpsystemet för vissa Microsoft Dynamics 365-appar.
 author: margoc
 ms.date: 08/11/2021
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 35f5d73075d118079ccb0616fbd1c5e1a8e00424
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900141"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123637"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurera hjälpupplevelsen för Ekonomi och Drift-appar
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurera hjälpupplevelsen för appar för ekonomi och drift
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I den här artikeln finns en översikt över komponenterna i hjälpsystemet för Ekonomi och Drift-appar, t.ex. Microsoft Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce och Dynamics 365 Human Resources. Ämnet förklarar även hur du ansluter dessa komponenter samt tillhandahåller en sammanfattning av processen för att skapa egen hjälp.
+I den här artikeln finns en översikt över komponenterna i hjälpsystemet för appar för ekonomi och drift, t.ex. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce och Dynamics 365 Human Resources. Ämnet förklarar även hur du ansluter dessa komponenter samt tillhandahåller en sammanfattning av processen för att skapa egen hjälp.
 
 ## <a name="help-architecture"></a>Hjälparkitektur
 
-Ekonomi och Drift-appar innehåller begreppsmässiga översikter och andra ämnen som publiceras på [Microsoft Dynamics 365 dokumentation](/dynamics365/)-webbplatsen. Du når detta innehåll från **Hjälp**-fönstret i produkten. Följande bild visar delarna i hjälpsystemet.
+Appar för ekonomi och drift innehåller begreppsmässiga översikter och andra ämnen som publiceras på [Microsoft Dynamics 365 dokumentation](/dynamics365/)-webbplatsen. Du når detta innehåll från **Hjälp**-fönstret i produkten. Följande bild visar delarna i hjälpsystemet.
 
 [![Hjälparkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -42,7 +42,7 @@ Hjälpsystemet i produkten hämtar artiklar från docs.microsoft.com och andra a
 ## <a name="adding-task-guides"></a>Lägga till uppgiftsguider
 
 > [!NOTE]
-> Fliken **Uppgiftsguider** finns för närvarande inte i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Uppgiftsguiderna i Komma igång i Human Resources täcker emellertid fortsatt basfunktionerna. Procedurhjälp för såväl Human Resources som Commerce finns att tillgå på [Microsoft Dynamics 365 dokumentation](/dynamics365/)-webbplatsen.
+> Fliken **Uppgiftsguider** finns för närvarande inte i Personal eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Uppgiftsguiderna i Komma igång i Personal täcker emellertid fortsatt basfunktionerna. Procedurhjälp för såväl Personal som Commerce finns att tillgå på [Microsoft Dynamics 365 dokumentation](/dynamics365/)-webbplatsen.
 
 På sidan **Systemparametrar** kan systemadministratörer konfigurera åtkomst till relevanta bibliotek för uppgiftsguider för en implementering.
 
@@ -63,7 +63,7 @@ Om du vill konfigurera uppgiftsguider för en lösning följer du instruktionern
 2. Välj BPM-biblioteken (inom det valda projektet) att hämta uppgiftsregistreringar från.
 3. Välj BPM-bibliotekens visningsordning. Visningsordningen bestämmer i vilken ordning som uppgiftsregistreringar från biblioteken visas i fönstret **Hjälp**.
 
-När du har slutfört dessa steg kan du öppna fönstret **Hjälp** och klicka på fliken **Uppgiftsguider**. Du kan nu se de uppgiftsguider som gäller den sida som du för tillfället befinner dig på i Ekonomi och Drift-appar. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen.
+När du har slutfört dessa steg kan du öppna fönstret **Hjälp** och klicka på fliken **Uppgiftsguider**. Du kan nu se de uppgiftsguider som gäller den sida som du för tillfället befinner dig på i appar för ekonomi och drift. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen.
 
 ### <a name="showing-translated-task-guides"></a>Visa översatta uppgiftsguider
 
@@ -81,13 +81,13 @@ Du kan använda uppgiftsguiderna för att skapa anpassad hjälp eller ansluta en
 
 ### <a name="create-custom-help-by-using-task-guides"></a>Skapa anpassad hjälp genom att använda uppgiftsguider
 
-Du kan skapa anpassad hjälp för dina stödda appar genom att skapa uppgiftsinspelningar som speglar din implementering och sedan spara dem i ett bibliotek för arbetsprocesser i LCS. Du kan inte skapa anpassade uppgiftsguider för Human Resources.
+Du kan skapa anpassad hjälp för dina stödda appar genom att skapa uppgiftsinspelningar som speglar din implementering och sedan spara dem i ett bibliotek för arbetsprocesser i LCS. Du kan inte skapa anpassade uppgiftsguider för Personal.
 
 Om du är partner och befordrar ett bibliotek till ett företagsbibliotek och inkluderar det i en lösning, blir det tillgängligt även för dina kunder. Du kan också göra en kopia av APQC Unified Library och sedan öppna uppgiftsinspelningarna i din kopia, redigera dem och sedan spara dina ändringar. Mer information finns i [Uppgiftsinspelarresurser](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-help-site"></a>Ansluta en anpassad hjälpwebbplats
 
-Ekonomi och Drift-appar används sällan i sina färdiga formulär. Lösningen är i stället anpassad och utökad så att den passar organisationens behov. Du kan också anpassa och utöka hjälpfunktionen. Du kan till exempel lägga till egen hjälp i produktens egna **Hjälp**-fönster.
+Appar för ekonomi och drift används sällan i sin färdiga form. Lösningen är i stället anpassad och utökad så att den passar organisationens behov. Du kan också anpassa och utöka hjälpfunktionen. Du kan till exempel lägga till egen hjälp i produktens egna **Hjälp**-fönster.
 
 Microsoft tillhandahåller en verktygslåda som hjälper dig att distribuera och ansluta anpassad hjälp till **Hjälp**-fönstret. Information om hur du ställer in en anpassad hjälp-lösning som är ansluten till **Hjälp**-fönstret finns i [Översikt över anpassad hjälp](../../dev-itpro/help/custom-help-overview.md).
 
@@ -103,3 +103,4 @@ Om du vill samarbeta med Microsoft angående verktyg och processer för att anpa
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

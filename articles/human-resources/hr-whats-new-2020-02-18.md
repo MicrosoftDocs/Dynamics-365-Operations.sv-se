@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 42d00f570403af6e7a6a39a6643eec1f59ccdc20
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ec7d8dbc73dce57d3968c4d239a51d27673a2493
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687936"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066296"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (18 februari 2020)
 
@@ -31,7 +31,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 
 ## <a name="platform-update-32"></a>Plattform update 32 
 
-Plattformsuppdateringen 32 finns nu tillgänglig. Mer information finns i [Nyheter och ändringar i plattformsuppdatering 32 för Ekonomi och Drift-appar (februari 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Plattformsuppdateringen 32 finns nu tillgänglig. Mer information finns i [Nyheter och ändringar i plattformsuppdatering 32 för Ekonomi och drift (februari 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>Sökvärden sparas vid ändring av visningsalternativ i förenklat medarbetarformulär (383833)
 

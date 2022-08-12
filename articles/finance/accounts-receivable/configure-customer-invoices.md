@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876337"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129525"
 ---
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
@@ -90,6 +90,14 @@ Du kan konfigurera uppdelningen av försäljningsorderkundfakturor efter webbpla
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Bokför på intäktskontot för försäljningsorderrader utan pris och kostnad
 Du kan uppdatera **intäktskontot** i **redovisningen** för försäljningsorderrader som saknar pris och kostnad. Om du vill ställa in eller visa denna information går du till parametern **Bokför på intäktskontot för försäljningsorderfakturarader med nollpris och nollkostnad** på fliken **Redovisning och moms** på sidan **Parametrar för kundreskontra**. (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). Välj **Ja** om du vill uppdatera **intäktskontot** för försäljningsorderfakturarader som saknar pris och kostnad. Om det här alternativet är valt kommer verifikationen att innehålla 0,00 poster för bokföringstyperna **Kundsaldo** och **Intäkt**. Ett intäktskonto definieras på parametersidan **lagerbokföring**, på fliken kontodefinitionsfliken **Försäljningsorder**. Om detta alternativ inte markeras kommer rader som inte har pris- eller kostnadsinformation inte att bokföras på **intäktskontot**. Istället kommer verifikationen att innehålla en 0,00-post för bokföringstypen **Kundsaldo**.
+
+## <a name="line-creation-sequence-number-information"></a>Nummerinformation för radskapande
+När du bokför rader på en kundfaktura kan du skapa löpnummer för radskapande. Löpnummer för radskapande tilldelas under bokföringsprocessen. Genom att tillåta icke-sekventiell numrering kan du förbättra prestandan när kundfakturan bokförs. Löpnummer för radskapande kan användas av tredjepartsintegrationer som förväntar sig sekventiella order. Kontakta din IT-avdelning om eventuella tillägg som kan integreras med löpnummer för radskapande.
+
+Konfigurera eller visa denna information genom att, på sidan **Parametrar för kundreskontra**, på fliken **Uppdateringar**, ställa in alternativet **Tilldela sekventiella radnummer vid bokföring av kundfakturarader** på följande sätt:
+
+- Ställ in alternativet som **Nej** om du vill använda icke-sekventiell numrering för löpnummer för radskapande.
+- Ställ in det här alternativet som **Ja** om du vill använda löpnummer. Du måste ställa in alternativet som **Ja** för juridiska personer som har en primär adress i Italien. Du måste även ställa in det som **Ja** om förhandsversionen **CustInvoiceTransLineCreationSeqNumFlight** är inaktiverad.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Ytterligare inställningar som ändrar bokföringsbeteendet
 Följande fält ändrar beteendet för bokföringsprocessen.

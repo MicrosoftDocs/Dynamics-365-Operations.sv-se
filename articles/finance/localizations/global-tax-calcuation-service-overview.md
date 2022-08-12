@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 24d4a722ee143dc0869f758475aaf377e7a9e084
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954551"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166852"
 ---
 # <a name="tax-calculation-overview"></a>Översikt över momsberäkning
 
@@ -29,7 +29,7 @@ Skatteberäkningen är en hyperskalbar tjänst för flera innehavare som gör de
 Momsberäkning integreras med Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Så småningom kommer den också att integreras Dynamics 365 Project Operations, Dynamics 365 Commerce och andra applikationer från första och tredje part.
 
 > [!IMPORTANT]
-> När du aktiverar tjänsten Momsberäkning kan vissa åtgärder på relaterade data utföras i ett annat datacenter än det datacenter som underhåller dina tjänstedata. Granska [Användarvillkoren](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) innan du aktiverar Momsberäkning. Din sekretess är viktig för oss. Mer information finns i vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
+> När du aktiverar tjänsten Momsberäkning kan vissa åtgärder på relaterade data utföras i ett annat datacenter än det datacenter som underhåller dina tjänstedata. Granska [Användarvillkoren](https://go.microsoft.com/fwlink/?linkid=2156043) innan du aktiverar Momsberäkning. Din sekretess är viktig för oss. Mer information finns i vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Momsberäkning är en mikrotjänstbaserad momsmotor som erbjuder exponentiell skalbarhet och kan hjälpa dig att utföra följande uppgifter:
 
@@ -69,7 +69,7 @@ Vi rekommenderar att du importerar och ställer in din momsberäkningskonfigurat
 
 | Finance eller Supply Chain Management version | Skattekonfigurationsversion               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Momskonfiguration - Europa 30.12.82     |
+| 10.0.18         | Momskonfiguration – Europa 30.12.82     |
 | 10.0.19         | Momsberäkningskonfiguration 36.38.193 |
 | 10.0.20         | Momsberäkningskonfiguration 40.43.208 |
 | 10.0.21         | Momsberäkningskonfiguration 40.48.215 |
@@ -90,7 +90,7 @@ Här finns en översikt över dataflödesprocessen för momsberäkning.
 2. Skapa eller underhåll momsfunktioner i RCS. Du kan använda momsfunktioner när du vill hantera momssatser och tillämplighetsregler för moms.
 3. När konfigurationen av momsfunktionen är klar publicerar du momskonfigurationerna och momsfunktionerna från RCS till den globala databasen.
 4. I Finance väljer du vilken konfigurationsversion för momsfunktionen som ska användas för en specifik juridisk person.
-5. Du hanterar transaktioner i Finance och Supply Chain Management precis som vanligt. När momsberäkning behövs samlar klienten in information från transaktionen - till exempel försäljningsorder eller inköpsorder - och paketerar informationen som nyttolast. En begäran skickas sedan för beräkning av momsen.
+5. Du hanterar transaktioner i Finance och Supply Chain Management precis som vanligt. När momsberäkning behövs samlar klienten in information från transaktionen – till exempel försäljningsorder eller inköpsorder – och paketerar informationen som nyttolast. En begäran skickas sedan för beräkning av momsen.
 6. Momsberäkningsförfrågan tas emot från klienten och beräkningen slutförs. Momsresultatet returneras sedan till klienten.
 7. Dynamics 365-klienten får momsresultatet och visar resultatet av momsberäkningen på en momssida.
 
@@ -132,8 +132,8 @@ Följande transaktioner stöds i version 10.0.21:
 
 - Lager
 
-    - Överföringsorder - leverera
-    - Överföringsorder - ta emot
+    - Överföringsorder – leverera
+    - Överföringsorder – ta emot
 
 Följande transaktioner stöds i version 10.0.23: 
 

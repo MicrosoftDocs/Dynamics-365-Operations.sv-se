@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 939066fbf4ab7b316283d406c321f1a7936c187f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856060"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066559"
 ---
 # <a name="batch-balancing"></a>Batchbalansering
 
@@ -96,7 +96,7 @@ När du använder batchbalanseringsprocessen när **beståndsdeltypen** är *ing
 
 #### <a name="none-ingredient-example"></a>Exempel på ingen beståndsdel
 
-beståndsdel A tilldelas till en beståndsdel av typen *Ingen* och läggs till i en formel för en färdig produkt. Formeln kräver 10 liter av en beståndsdel för varje 100 liter av slutprodukt. När en batchorder kräver 200 liter, beräknas både den uppskattade kvantiteten och den balanserade kvantiteten för beståndsdel Akvantitet som 20 liter.
+beståndsdel A tilldelas en beståndsdel av typen *Ingen* och läggs till i en formel för en färdig produkt. Formeln kräver 10 liter av en beståndsdel för varje 100 liter av slutprodukt. När en batchorder kräver 200 liter, beräknas både den uppskattade kvantiteten och den balanserade kvantiteten för beståndsdel Akvantitet som 20 liter.
 
 ### <a name="compensating-ingredients"></a>Ersättningsbeståndsdelar
 
@@ -165,22 +165,22 @@ I delprocessen för balansbatchkomponent beräknas mängden ingredienser som ska
 
 ### <a name="confirm-and-release-the-formula"></a>Bekräfta och frisläpp formeln
 
-När beståndsdelkvantiteterna har beräknats kan du bekräfta och frisläppa formeln. Frisläppningsprocessen beror på om produkterna är aktiverade för lagerstyrningsprocesser:
+När beståndsdelkvantiteterna har beräknats kan du bekräfta och frisläppa formeln. Frisläppningsprocessen varierar beror på om produkterna är aktiverade för lagerstyrningsprocesser (WMS):
 
-- Om en produkt är aktiverad för lagerstyrningsprocesser frisläpps receptraden till lagret enligt principerna för lagerstyrningsprocesser. Receptraden frisläpps i kvantiteter som motsvarar balanserade kvantiteter och frisläpps för speciella batcher som väljs för den aktiva komponenten.
+- Om en produkt är aktiverad för WMS frisläpps formelraden till lagret enligt principerna för WMS. Receptraden frisläpps i kvantiteter som motsvarar balanserade kvantiteter och frisläpps för speciella batcher som väljs för den aktiva komponenten.
 
     > [!NOTE]
     > Receptrader kan frisläppas till lagerstället som en del av batchbalanseringsprocessen. Även om det finns andra alternativ för att frisläppa material för tillverkning på lagerstället, kan inte dessa alternativ användas för receptrader.
 
-- Om en produkt inte har aktiverats för lagerstyrningsprocesser skapas en produktionsplocklista för produkten när du bekräftar och frisläpper formeln.
+- Om en produkt inte har aktiverats för WMS skapas en produktionsplocklista för produkten när du bekräftar och frisläpper formeln.
 
-Du kan kombinera produkter som är aktiverade för lagerstyrningsprocesser och produkter som inte är aktiverade för lagerstyrningsprocesser i en enstaka formel. När två typer av produkter ingår i en formel kommer produkter som är aktiverade för lagerstyrningsprocesser frisläppas till lagret. För produkter som inte är aktiverade för lagerstyrningsprocesser skapas en plocklista när du bekräftar och frisläpper formeln.
+Du kan kombinera produkter som är aktiverade för lagerstyrningsprocesser och produkter som inte är aktiverade för lagerstyrningsprocesser i en enstaka formel. När två typer av produkter ingår i en formel kommer de produkter som är aktiverade för WMS att frisläppas till lagret. För produkter som inte är aktiverade för WMS skapas en plocklista när du bekräftar och frisläpper formeln.
 
 ### <a name="batch-orders-that-arent-applicable-for-batch-balancing"></a>Batchorder som inte gäller för batchbalansering
 
 Det finns två undantag från regeln om att batchorder gäller för batchbalansering om formeln har minst en receptrad där **beståndsdelstypen** är *aktiv*.
 
-1. Om en formel innehåller en aktiv beståndsdel för en produkt som har aktiverats för lagerstyrningsprocesser och batchnumret är under plats i reservationshierarkin gäller inte batchordern för batchbalansering.
+1. Om en formel innehåller en aktiv beståndsdel för en produkt som har aktiverats för WMS men batchnumret är under plats i reservationshierarkin, gäller inte batchordern för batchbalansering.
 1. Om formelns måttenhet skiljer sig från lagermåttenheten för den aktiva beståndsdelen, kan batchordern inte användas för batchbalansering.
 
 En batchorder inte gäller för batchbalansering genomgår den vanliga processcykeln för batchorder.

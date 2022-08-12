@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ad9c91051c1a1140661c93d7c5e86a78de5ec3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0e53b7667dd4589a7c6c14b8aaf8ba51017eee0d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877346"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068343"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planera beläggning och utleveranser med workbench för lastplanering
 
@@ -38,7 +38,7 @@ I denna artikel visas hur du använder workbench för lastplanering för att ska
 7. Välj artikel **A0001**. **A0001** har aktiverats för transporthantering.  
 8. I fältet **Plats** klicka på nedrullningsbara knappen för att öppna sökningen och välj sedan en artikel.
 9. Ange ett nummer i fältet **Kvantitet**.
-10. I fältet **Lagerställe** skriver du "24" för det här exemplet. Lagerstället aktiveras för transportledning och avancerad lagerstyrning.  
+10. I fältet **Lagerställe** skriver du "24" för det här exemplet. Lagerstället aktiveras för transportstyrning och lagerstyrningsprocesser (WMS).  
 11. Välj **Spara**.
 12. Stäng sidan.
 

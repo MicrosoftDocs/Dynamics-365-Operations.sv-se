@@ -9,22 +9,22 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 33b4f17cd46338b62bed96f0a285e7b9634cc87a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886916"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067830"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Förbättringar av funktionen för bokföring av utdrag
 
 [!include [banner](includes/banner.md)]
 
-Denna artikel beskriver den första uppsättningen förbättringar som har gjorts i funktionen för bokföring av utdrag. Dessa förbättringar är tillgängliga i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+Denna artikel beskriver den första uppsättningen förbättringar som har gjorts i funktionen för bokföring av utdrag. Dessa förbättringar är tillgängliga i Microsoft Dynamics 365 Finance 7.3.2.
 
 ## <a name="activation"></a>Aktivering
 
-Som standard ställs under distributionen av Finance and Operations 7.3.2 programmet in äldre funktionen för bokföring av utdrag. Om du vill aktivera funktionen för bokföring av utdrag måste du aktivera konfigurationsnyckeln för den.
+Under distributionen av Ekonomi och drift version 7.3.2 konfigureras programmet för att använda den äldre funktionen för bokföring av utdrag. Om du vill aktivera funktionen för bokföring av utdrag måste du aktivera konfigurationsnyckeln för den.
 
 - Gå till **Systemadministration** \> **Inställningar** \> **Licenskonfigurationen** och sedan under noden **Retail och Commerce**, avmarkera kryssrutan **Utdrag (äldre)** och markera kryssrutan **Utdrag**.
 
@@ -36,7 +36,7 @@ Commerce omfattar följande valideringar som hör till dessa konfigurationsnyckl
 - Samma konfigurationsnycklarna måste användas för alla åtgärder som utförs på ett visst utdrag under dess livscykel (skapa, beräkna, radera, bokföra och så vidare). Exempelvis kan du inte skapa och beräkna ett utdrag när konfigurationsnyckeln **Utdrag (äldre)** aktiveras och sedan försöker bokföra samma uttryck när konfigurationsnyckeln **Utdrag**.
 
 > [!NOTE]
-> Vi rekommenderar att du använder konfigurationsnyckeln **Utdrag** för förbättrad funktion för bokföring av utdrag om du inte måste använda konfigurationsnyckeln **Utdrag (äldre)** istället. Microsoft fortsätter att investera i nya och förbättrade funktioner för bokföring av utdrag och det är viktigt att du växlar till det så snart som möjligt för att kunna utnyttja denna. Funktionen för bokföring av äldre utdrag kommer att tas bort från och med version 8.0.
+> Vi rekommenderar att du använder konfigurationsnyckeln **Utdrag** för förbättrad funktion för bokföring av utdrag om du inte måste använda konfigurationsnyckeln **Utdrag (äldre)** istället. Microsoft fortsätter investera i nya och förbättrade funktioner för bokföring av utdrag och det är viktigt att du växlar till det så snart som möjligt för att kunna utnyttja denna. Funktionen för bokföring av äldre utdrag kommer att tas bort från och med version 8.0.
 
 ## <a name="setup"></a>Konfigurera
 
@@ -87,7 +87,7 @@ I följande tabell beskrivs de olika tillstånden och deras ordning under bokfö
 | 9           | Bokförda presentkort       | Presentkortstransaktioner bokförs som verifikationer. |
 | 10          | Publicerat                  | Utdraget markeras som bokfört. |
 
-Alla tillstånden i föregående tabell är av oberoende karaktär och hierarkiska beroenden skapas mellan tillstånden. Detta beroende flödas uppifrån och ned. Om systemet stöter på ett fel när det bearbetar ett tillstånd, återställs status för utdraget till föregående tillstånd. Alla efterföljande återförsök i processen fortsätter från det tillstånd som har misslyckats och fortsätter att gå vidare. Den här metoden har följande fördelar:
+Alla tillstånden i föregående tabell är av oberoende karaktär och hierarkiska beroenden skapas mellan tillstånden. Detta beroende flödas uppifrån och ned. Om systemet stöter på ett fel när det bearbetar ett tillstånd, återställs status för utdraget till föregående tillstånd. Alla efterföljande återförsök i processen fortsätter från det tillstånd som har misslyckats och fortsätter gå vidare. Den här metoden har följande fördelar:
 
 - Användaren har fullständig överblick över det tillstånd där felet uppstod.
 - Datafel undviks. Exempelvis i funktionen för bokföring av äldre utdrag fanns exempel där vissa försäljningsorder fakturerades, men andra utelämnades. Det fanns även vissa exempel där en del betalningsjournaler inte hade en motsvarande faktura att betalas, eftersom bokföringen av fakturan hade ett fel.
@@ -153,7 +153,7 @@ Vyn sammanlagd transaktion ger följande fördelar:
 - Sammanlagd XML-filen gör det enklare att identifiera problem vid upprättande av försäljningsorder och fakturering.
 
 > [!NOTE]
-> När transaktioner aggregeras är den personal som tilldelats transaktionen inte längre tillgänglig för **Främsta personalförsäljning - rapport**, som innebär att **Främsta personalförsäljning - rapport** inte visar alla transaktioner. Vi rekommenderar att du inte använder **Främsta personalförsäljning - rapport** med aggregerade transaktioner.
+> När transaktioner aggregeras är den personal som tilldelats transaktionen inte längre tillgänglig för **Främsta personalförsäljning – rapport**, som innebär att **Främsta personalförsäljning – rapport** inte visar alla transaktioner. Vi rekommenderar att du inte använder **Främsta personalförsäljning – rapport** med aggregerade transaktioner.
 
 ### <a name="journal-vouchers"></a>Bokföringsorder
 
@@ -190,3 +190,4 @@ Andra interna förbättringar som användarna kan se att de har gjorts till funk
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

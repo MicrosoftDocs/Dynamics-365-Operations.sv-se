@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860176"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109475"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -85,13 +85,13 @@ Körningsenheten, nivån i körningsenheten samt en enhets ordningsföljd hjälp
 
 - Enheter i olika körningsenheter behandlas parallellt.
 - Om enheterna har samma nivå bearbetas de parallellt i respektive körningsnivå.
-- På respektive nivå bearbetas enheterna enligt sina serienummer för just den nivån.
+- På respektive nivå bearbetas enheterna enligt sina löpnummer för just den nivån.
 - När en nivå har bearbetats, bearbetas nästa nivå.
 
 #### <a name="resequencing"></a>Omsekvensering
 Du kanske vill omsekvensera dina enheterna i följande situationer:
 
-- Om endast ett datajobb används för alla dina ändringar, kan du använda alternativen för omsekvensering för att optimera körningstiden för hela jobbet. I så fall kan du använda körningsenheten för att representera modulen, nivån för att representera modulens funktionsområde, samt sekvensen för att representera enheten. Med den här metoden kan du arbeta mellan olika moduler parallellt, men du kan ändå fortsätta att arbeta i följd i en modul. För att garantera att parallella operationer lyckas, måste du beakta alla beroenden.
+- Om endast ett datajobb används för alla dina ändringar, kan du använda alternativen för omsekvensering för att optimera körningstiden för hela jobbet. I så fall kan du använda körningsenheten för att representera modulen, nivån för att representera modulens funktionsområde, samt sekvensen för att representera enheten. Med den här metoden kan du arbeta mellan olika moduler parallellt, men du kan ändå fortsätta arbeta i följd i en modul. För att garantera att parallella operationer lyckas, måste du beakta alla beroenden.
 - Du kan använda ordningsföljd för att enheternas nivå och serie i syfte att få en optimal körning om flera datajobb används (t.ex. ett jobb för varje modul).
 - Om det inte finns några beroenden alls kan du ordna enheterna i olika körningsenheter i syfte att få en maximal optimering.
 
@@ -109,7 +109,7 @@ Mappning är en funktion som gäller både import- och exportjobb.
 - Mappning beskriver vilka kolumner i källfilen som blir kolumner i det tillfälliga registret i samband med import. Därför kan systemet avgöra vilka kolumndata i källfilen som måste kopieras till vilken kolumn i det tillfälliga registret.
 - Mappning beskriver vilka kolumner i det tillfälliga registret (dvs. källan) som kolumner i målfilen i samband med exportjobb.
 
-Om kolumnnamnen i det tillfälliga registret och i filen stämmer överens, skapar systemet mappningen automatiskt baserat på namnen. Om namnen emellertid skiljer sig åt, mappas kolumnerna inte automatiskt. I så fall måste du slutföra mappningen genom att välja alternativet **Visa karta** alternativ för enheten i datajobbet.
+Om kolumnnamnen i det tillfälliga registret och i filen stämmer överens, skapar systemet mappningen automatiskt baserat på namnen. Om namnen emellertid skiljer sig åt, mappas kolumnerna inte automatiskt. I så fall måste du slutföra mappningen genom att välja alternativet **Visa mappning** alternativ för enheten i datajobbet.
 
 Det finns två vyer för mappning: **Mappningsvisualisering**, som är standard, och **Mappningsdetaljer**. En röd asterisk (\*) markerar alla obligatoriska fält i enheten. Dessa fält måste mappas innan du kan arbeta med entiteten. Du kan ta bort mappningen av andra fält efter behov när du arbetar med enheten. Markera fältet som du vill ta bort mappningen för i kolumnen **Enhet** eller i kolumnen **Källa**, och välj sedan **Ta bort val**. Välj **Spara** om du vill spara ändringarna, och stäng sedan sidan om du vill återgå till projektet. Du kan använda samma process för att redigera fältmappning från källa till mellanlagring när du har importerat.
 
@@ -209,7 +209,7 @@ När du schemalägger rensningsprocessen måste följande parametrar anges för 
 ## <a name="job-history-clean-up-and-archival"></a>Rensning och arkivering för jobbhistorik 
 Funktionen för rensning och arkivering av jobbhistorik ersätter de tidigare versionerna av rensningsfunktionen. Det här avsnittet innehåller en beskrivning av de nya funktionerna.
 
-En av de viktigaste ändringarna i rensningsfunktionen är användningen av systembatchjobbet för att rensa historiken. Med systembatchjobbet kan Finance and Operations-appar automatiskt schemaläggas att köra batchjobbet så snart systemet är redo. Du behöver inte längre tidsplanera batchjobbet manuellt. I detta standardkörningsläge körs batchjobbet varje timme med början vid midnatt, och bibehåller sedan körningshistoriken för de senaste sju dagarna. Den rensade historiken arkiveras för framtida hämtning. Från och med version 10.0.20 är den här funktionen alltid på.
+En av de viktigaste ändringarna i rensningsfunktionen är användningen av systembatchjobbet för att rensa historiken. Med systembatchjobbet kan appar för ekonomi och drift schemaläggas att köra rensningsbatchjobbet automatiskt så fort systemet är redo. Du behöver inte längre tidsplanera batchjobbet manuellt. I detta standardkörningsläge körs batchjobbet varje timme med början vid midnatt, och bibehåller sedan körningshistoriken för de senaste sju dagarna. Den rensade historiken arkiveras för framtida hämtning. Från och med version 10.0.20 är den här funktionen alltid på.
 
 Den andra ändringen i rensningsprocessen är arkiveringen av den rensade körningshistoriken. Rensningsjobbet kommer att arkivera de raderade posterna till den blob-lagring som DIXF använder för vanliga integreringar. Den arkiverade filen kommer att vara i DIXF-paketformat och den kommer att vara tillgänglig i blobben för hämtning i sju dagar. Standardlivslängden på sju dagar för den arkiverade filen kan ändras i parametrarna till maximalt 90 dagar.
 
@@ -235,3 +235,4 @@ För att hämta den arkiverade körningshistoriken ska du gå till arbetsytan f�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

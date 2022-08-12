@@ -1,6 +1,6 @@
 ---
 title: Videoklipp
-description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Finance and Operations-appar som är tillgängliga på YouTube och andra platser.
+description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om appar för ekonomi och drift som är tillgängliga på YouTube och andra webbplatser.
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
@@ -14,27 +14,27 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: a21a9122badc308940c0182061a18051bfcc0abd
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958150"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124967"
 ---
-# <a name="videos"></a>Videoklipp 
+# <a name="videos"></a>Videor 
 
 [!include [banner](../includes/banner.md)]
 
-På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), hittar du videoklipp som skapats av Microsoft för olika affärslösningar för Dynamics 365-produkter. Det här avsnittet visar instruktionsvideor för Finance and Operations-appar som finns på kanalen.
+På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), hittar du videoklipp som skapats av Microsoft för olika affärslösningar för Dynamics 365-produkter. Det här avsnittet visar instruktionsvideor för appar för ekonomi och drift som finns på kanalen.
 
 > [!Note]
 > Vissa av de angivna videorna publicerades under ett tidigare produktnamn, men är fortfarande tillämpliga.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videor för utveckling och administration för Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videor för utveckling och administration för Ekonomi och drift
 
 ### <a name="data-integration"></a>Dataintegrering
 
-- [Synkronisera en arbetsorder mellan Dynamics 365 for Field Service och Finance and Operations-appar](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synkronisera en arbetsorder mellan Dynamics 365 for Field Service och appar för ekonomi och drift](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Datahantering
 
@@ -50,8 +50,8 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 ### <a name="intelligence"></a>Intelligence
 
 - [Hur du bäddar in en rapport i en analytisk arbetsyta](https://youtu.be/_8WlwmSggcQ)
-- [Så här bäddar du in PowerBI.coms-rapporter i Finance and Operations-appar](https://youtu.be/gGWuNJDoi-M)
-- [Ta med din egen databas (BYOD) till Finance and Operations-appar](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Så här bäddar du in PowerBI.com-rapporter i appar för ekonomi och drift](https://youtu.be/gGWuNJDoi-M)
+- [Ta med din egen databas (BYOD) i appar för ekonomi och drift](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Använda Power BI-innehåll i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -163,9 +163,10 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 
 ## <a name="fasttrack-tech-talks"></a>Tekniksnack om FastTrack
 
-[Tekniksnack om FastTrack](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) fokuserar på att tillhandahålla teknisk kunskap och metoder som ger kunder och partners utförlig kunskap som gäller för vissa ämnesområden.
+[Tekniksnack om FastTrack](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) fokuserar på att tillhandahålla teknisk kunskap och metoder som ger kunder och partner utförlig kunskap som gäller för vissa ämnesområden.
 
 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

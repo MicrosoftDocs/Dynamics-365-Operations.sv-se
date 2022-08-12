@@ -6,21 +6,22 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 68873
-ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e175d1e3de1f5db31de9c4600c8a5935f0cb11a9d39bc0f4e142edf5fc00ce86
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "68873"
+ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
+ms.search.form: FinancialReports
+ms.openlocfilehash: a60e66c372d85cc05219eaa17b7924aca5f3f337
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745922"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206331"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Rapportdefinitioner i designer för ekonomiska rapporter
 
@@ -38,11 +39,11 @@ En raddefinition är en rapportkomponent eller byggblock som anger innehållet p
 2. Dubbelklicka på namnet på raddefinitionen som du vill öppna.
 3. Om du vill visa alla byggblock som är associerade med raddefinitionen, högerklicka på raddefinitionen och välj sedan **Associationer**.
 
-## <a name="contents-of-a-row-definition"></a> Innehåll i en raddefinition
+## <a name="contents-of-a-row-definition"></a>Innehåll i en raddefinition
 En raddefinition kan innehålla upp till 20 000 rader för ekonomiska dimensioner och kan innehålla följande information:
 
 - Beskrivande text som tillför något till rapporten genom att skapa avsnittsrubriker, rader och mellanslag såsom **Kontant** eller **Total intäkt**
-- Länkar till ekonomiska data, vilket kan omfatta dimensionsvärden i Microsoft Dynamics 365 Finance
+- Länkar till ekonomiska data, som kan omfatta dimensionsvärden i Microsoft Dynamics 365 Finance
 
     > [!NOTE]
     > Du kan konfigurera en raddefinition så att data hämtas från det ekonomiska dimensionssystemet varje gång rapporten genereras.
@@ -60,7 +61,7 @@ Det finns två metoder för att lägga till information i en raddefinition:
 - Ange information om raden manuellt i en ny raddefinition. Mer information finns i [Ändra raddefinitionceller](modify-row-definition-cells-financial-reporting.md).
 - Använd rapportdesigner för att hämta radinformation direkt från de ekonomiska dimensionerna. Mer information hittar du i avsnittet "Relaterade formler/rader/enheter" i [Modifiera raddefinitionsceller](modify-row-definition-cells-financial-reporting.md).
 
-## <a name="add-dimensions-in-a-row-definition"></a> Lägg till dimensioner i en raddefinition
+## <a name="add-dimensions-in-a-row-definition"></a>Lägg till dimensioner i en raddefinition
 En dimension är en skärningspunkt av data och värden. Du kan gruppera data och värden i rapportdesignern. Du kan sedan klassificera och analysera transaktioner mer ingående. Du kan använda dialogrutan **Infoga rader från dimensioner** om du vill lägga till flera rader i en raddefinition samtidigt. Dialogrutan visar en kolumn för varje dimension. I tabellen nedan beskrivs den typ av information som kan anges för varje dimension.
 
 | Alternativ                | Beskrivning |
@@ -69,7 +70,7 @@ En dimension är en skärningspunkt av data och värden. Du kan gruppera data oc
 | Dimensionsintervallets början | Dimensionens inledande värde som ska läggas till i raddefinitionen. |
 | Dimensionsintervallets slut   | Det sista värdet för denna dimension för att lägga till raddefinitionen. |
 
-Gör på följande sätt för att lägga till dimensioner i en raddefinition:
+Följ dessa steg för att lägga till dimensioner i en raddefinition:
 
 1. Öppna Rapport Designer, klicka på **Raddefinitioner** och öppna sedan den raddefinition som ska modifieras.
 2. Klicka på menyn **Redigera** och klicka på **Infoga rapportenheter från dimensioner**.
@@ -83,7 +84,7 @@ Gör på följande sätt för att lägga till dimensioner i en raddefinition:
 6. Ange avståndet mellan efterföljande radkoder i fältet **Öka varje rad med**. Om den första radkoden är 100 och stegvärdet är 30 har de nya raderna koderna 100, 130, 160, 190 och 220. Använd ett stegvärde som ger tillräckligt med utrymme för att infoga nya rader för format och formel.
 7. Klicka på **OK**. En rad per valt dimensionsvärde läggs till i raddefinitionen.
 
-## <a name="adjust-rounding-in-a-row-definition"></a> Justera avrundning i en raddefinition
+## <a name="adjust-rounding-in-a-row-definition"></a>Justera avrundning i en raddefinition
 Om du har en balansräkning där beloppen avrundas kan det hända att summorna inte balanseras. Det här problemet kan uppstå om du exempelvis använder alternativet avrundning i en balansräkningsrapport och om även rapportdefinitionen använder avrundning. Du kan använda alternativet **Avrundningsjusteringar** i raddefinitionen för att balansera beloppen i balansräkningarna. Du kan inaktivera avrundning eller ändra den på fliken **Inställningar** i rapportdefinitionen. Följande tabell visar hur beloppen avrundas. I den här tabellen skiljer sig summorna av raderna 100 och 200, när avrundning slås på.
 
 | Radkod | Belopp utan avrundning | Belopp med avrundning till hela tusental |
@@ -92,7 +93,7 @@ Om du har en balansräkning där beloppen avrundas kan det hända att summorna i
 | 200      | 3,700                    | 4                                       |
 | Summa    | 7,300                    | 8                                       |
 
-Gör på följande sätt för att justera avrundningen i en balansräkning.
+Följ dessa steg för att justera avrundningen i en balansräkning.
 
 1. I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
 2. Klicka på **Avrundningsjustering** på **Redigera**-menyn.

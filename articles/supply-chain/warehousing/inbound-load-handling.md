@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855944"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070332"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerstyrning av inkommande laster för inköpsorder
 
@@ -56,7 +56,7 @@ Följande bild visar det typiska flödet för hantering av inkommande laster som
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Registrera artikelkvantiteter som ankommer på en inkommande last
 
-Microsoft Dynamics 365 Supply Chain Management har stöd för flera driftsmetoder för registrering av ankomst till beställda produkter. Därför kan du konfigurera systemet så att det motsvarar dina specifika affärsbehov. I det här avsnittet beskrivs hur du registrerar inkommande artikelkvantiteter med hjälp av en mobil enhet när avancerad lagerhantering är aktiverat i systemet. Det finns dock ett alternativt flöde som baseras på att artikelinförseljournal används i stället för en mobil enhet. För mer information om det flödet, se [Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal](tasks/register-items-advanced-warehousing.md).
+Microsoft Dynamics 365 Supply Chain Management har stöd för flera driftsmetoder för registrering av ankomst till beställda produkter. Därför kan du konfigurera systemet så att det motsvarar dina specifika affärsbehov. I det här avsnittet beskrivs hur du registrerar inkommande artikelkvantiteter med hjälp av en mobil enhet när lagerstyrningsprocesser (WMS) är aktiverade i systemet. Det finns dock ett alternativt flöde som baseras på att artikelinförseljournal används i stället för en mobil enhet. För mer information om det flödet, se [Registrera artiklar för lagerstyrningsprocesser med hjälp av en artikelinförselsjournal](tasks/register-items-advanced-warehousing.md).
 
 När en inkommande last först inkommer till lagret måste lagerarbetarna registrera de artikelkvantiteter som ingår i leveransen. De använder vanligtvis handhållna skannrar. Det här arbetsflödet är endast tillgängligt om följande objekt finns i systemet:
 

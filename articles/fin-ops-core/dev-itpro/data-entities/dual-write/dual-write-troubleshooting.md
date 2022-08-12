@@ -1,6 +1,6 @@
 ---
 title: Allmän felsökning
-description: Den här artikeln innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse.
+description: Den här artikeln innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan appar för ekonomi och drift och Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853667"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112377"
 ---
 # <a name="general-troubleshooting"></a>Allmän felsökning
 
@@ -22,7 +22,7 @@ ms.locfileid: "8853667"
 
 
 
-Den här artikeln innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse.
+Den här artikeln innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan appar för ekonomi och drift och Dataverse.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.
@@ -49,34 +49,34 @@ När de har aktiverats fortsätter loggarna för inloggningsspårning att samlas
 Så här visar du spårningslogg.
 
 1. På inställningssidan för Dynamics 365 väljer du **Inställningar** högst upp i navigeringsfältet. 
-2. Välj **Spårningslogg för insticksprogram** i avnittet **Anpassningar** på sidan.
+2. Välj **Spårningslogg för plugin-program** i avnittet **Anpassningar** på sidan.
 3. Posterna i listan med spårningsloggar baseras på typen av namn och/eller meddelandenamn.
 4. Öppna önskad post för att visa hela loggen. Meddelandeblocket i körningsavsnittet ger tillgänglig information för insticksmodulen. Om tillgänglig anges även undantagsinformation. 
 
 Du kan kopiera innehållet i spårningsloggar och klistra in dem i ett annat program som exempelvis Anteckningar eller andra verktyg om du vill visa loggar eller textfiler för att lättare kunna se allt innehåll. 
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivera felsökningsläget för att felsöka problem med direkt synkronisering i Ekonomi och Drift-appar
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivera felsökningsläget för att felsöka problem med direkt synkronisering i appar för ekonomi och drift
 
 **Den roll som krävs för att visa felen:** systemadministratör
 
-Fel i dubbelriktad skrivning som har sitt ursprung i Dataverse kan visas i Ekonomi och Drift-appen. Följ dessa steg om du vill aktivera detaljerad loggning för felen:
+Fel i dubbelriktad skrivning som har sitt ursprung i Dataverse kan visas i appen för ekonomi och Drift. Följ dessa steg om du vill aktivera detaljerad loggning för felen:
 
-1. För samtliga projektkonfigurationer i Ekonomi och Drift-appen finns en **IsDebugMode**-flagga i tabellen **DualWriteProjectConfiguration**.
-2. Öppna **DualWriteProjectConfiguration** genom att använda Excel-tillägget. Aktivera designläget i Excel-tillägget för Ekonomi och Drift och lägg till **DualWriteProjectConfiguration** i arket om du vill använda tillägget. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
+1. För samtliga projektkonfigurationer i appen för ekonomi och drift finns en **IsDebugMode**-flagga i tabellen **DualWriteProjectConfiguration**.
+2. Öppna **DualWriteProjectConfiguration** genom att använda Excel-tillägget. Aktivera designläget i Excel-tillägget för Ekonomi och drift och lägg till **DualWriteProjectConfiguration** i arket om du vill använda tillägget. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
 3. Ange **IsDebugMode** som **Ja** i projektet.
 4. Kör scenariot som genererar fel.
 5. De detaljerade loggarna lagras i tabellen **DualWriteErrorLog**.
 6. Om du vill söka efter data i en tabellwebläsare använder du följande länk: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog` och ersätter `999` efter behov.
 7. Uppdatera igen efter [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), som är tillgängligt för uppdatering av plattform 37 och senare. Om du har den här korrigeringen installerad kommer felsökningsläget att samla in fler loggar.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollera synkroniseringsfel på den virtuella datorn för Ekonomi och Drift-appen
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollera synkroniseringsfel på den virtuella datorn för appen för ekonomi och drift
 
 **Den roll som krävs för att visa felen:** systemadministratör
 
 1. Logga in på Microsoft Dynamics Lifecycle Services (LCS).
 2. Öppna LCS-projektet som du valde att utföra testning av dubbelriktad skrivning för.
 3. Välj panelen **Molnstyrda miljöer**.
-4. Logga in på den virtuella datorn (VM) för Ekonomi och Drift-appen med hjälp av fjärrskrivbord. Använd det lokala kontot som visas i LCS.
+4. Logga in på den virtuella datorn (VM) för appen för ekonomi och drift med hjälp av fjärrskrivbordet. Använd det lokala kontot som visas i LCS.
 5. Öppna händelsevisningsprogrammet.
 6. Välj **Program- och tjänstloggar \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**.
 7. Granska listan över de senaste felen.
@@ -109,11 +109,11 @@ Andra alternativet:
 1.  Navigera till Inställningar -> Webbplatsbehörigheter -> Cookies och webbplatsdata.
 2.  Stäng av "Blockera tredjepartscookies".  
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Ta bort länken till och länka en annan Dataverse-miljö från Ekonomi och Drift-app
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Ta bort länken till och länka en annan Dataverse-miljö från en app för ekonomi och drift
 
-**Nödvändiga autentiseringsuppgifter för ta bort länken till miljö**: systemadministratör för antingen Ekonomi och Drift-appen eller Dataverse.
+**Erforderlig roll för ta bort länken till miljön:** Systemadministratör för antingen appen för ekonomi och drift eller Dataverse.
 
-1. Logga in på Ekonomi och Drift-appen.
+1. Logga in på appen för ekonomi och drift.
 2. Gå till **Arbetsytor \> Datahantering** och välj panelen **Dubbelriktad skrivning**.
 3. Markera alla mappningar och sedan **stoppa**.
 4. Välj **Ta bort länk till miljö**.
@@ -134,25 +134,25 @@ Så här aktiverar du alternativet för formuläret **informations** igen:
 
 ## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Se till att dataintegrationen använder det senaste ekonomi- och driftschemat
 
-Det kan uppstå dataproblem i dataintegrationen om det senaste schemat inte används. Följande steg hjälper dig att uppdatera enhetslistan i ekonomi- och driftapparna och enheterna i dataintegratorn.
+Det kan uppstå dataproblem i dataintegrationen om det senaste schemat inte används. Följande steg hjälper dig att uppdatera entitetslistan i appar för ekonomi och drift och entiteterna i dataintegreraren.
 
 ### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Uppdatera entitetslistan i miljön för ekonomi och drift
 1.  Logga in i din miljö för ekonomi och drift.
 2.  Välj **Datahantering**.
 3.  Inne i Datahantering, välj **Ramverksparametrar**.
 4.  På sidan **Ramverksparametrar för dataimport/export** välj fliken **Entitetsinställningar** och välj **Uppdatera entitetslistan**. Det kan ta mer än 30 minuter att uppdatera, beroende på antalet enheter som berörs.
-5.  Navigera till **Datahantering** och välj **Dataentiteter** som ska valideras när de förväntade enheterna visas. Om de förväntade enheterna inte visas i listan ska du validera att enheterna visas i din ekonomi- och driftmiljö och återställa de enheter som saknas efter behov.
+5.  Navigera till **Datahantering** och välj **Dataentiteter** som ska valideras när de förväntade enheterna visas. Om de förväntade entiteterna inte visas i listan ska du validera att entiteterna visas i din miljö för ekonomi och drift och återställa de entiteter som saknas efter behov.
 
 #### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Om det inte går att lösa problemet genom att uppdatera tas bort och läggas till entiteterna på ett annat sätt
 
 > [!NOTE]
 > Du kanske måste stoppa alla bearbetningsgrupper som förs genom att använda enheterna innan de tas bort.
 
-1.  Välj **datahantering** i din ekonomi- och driftmiljö och välj **dataenheter**.
+1.  Välj **Datahantering** i din miljö för ekonomi och drift och välj **Dataentiteter**.
 2.  Sök efter enheter som har problem och anteckna målenheten, mellanställningstabellen, enhetens namn och andra inställningar. Ta bort enheten eller enheterna från listan.
 3.  Välj **Ny** och lägg till enheten eller enheterna på nytt med hjälp av data från steg 2. 
 
-#### <a name="refresh-entities-in-data-integrator"></a>Uppdatera enheter i dataintegratorn
+#### <a name="refresh-entities-in-data-integrator"></a>Uppdatera enheter i dataintegreraren
 Logga in på Power Platform administrationscenter och välj **Dataintegration**. Öppna projektet där ut problemen uppstår och välj **Uppdatera entiteter**.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Så här aktiverar och sparar du nätverksspårning så att spårningar kan kopplas till supportbegäranden
@@ -174,3 +174,4 @@ Supportteamet kanske måste granska nätverksspårningar för att felsöka vissa
 4. Välj **Spara** för att exportera resultaten som HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

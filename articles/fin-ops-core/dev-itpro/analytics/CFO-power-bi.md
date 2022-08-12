@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1ea8f12102cc2fac1948027f7c15d45bf5d1b15d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e98b9d772c3b42162566fe666c3eeba5d1fb2392
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881563"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108999"
 ---
 # <a name="cfo-overview-power-bi-content"></a>Översikt över ekonomichef Power BI-innehåll
 
 [!include [banner](../includes/banner.md)] 
 
-Den här artikeln beskriver översikt över **ekonomichef** Microsoft Power BI-innehåll. Detta Power BI-innehåll riktar sig till de som använder Microsoft Dynamics 365 for Finance and Operations version 7.2. Om du använder version 7.3 eller senare läs [Ekonomiska insikter](financial-insights.md).
+Den här artikeln beskriver översikt över **ekonomichef** Microsoft Power BI-innehåll. Detta Power BI-innehåll riktar sig till dem som använder Microsoft Dynamics 365 Finance version 7.2. Om du använder version 7.3 eller senare läs [Ekonomiska insikter](financial-insights.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 
@@ -36,7 +36,7 @@ Följande tabell visar Power BI-innehållet som rapporten kopieras från och de 
 
 | Power BI-innehåll som ingår | Rapporter |
 |-----------------------------------|---------|
-| [Finansiellt resultat](financial-performance-power-bi-content-pack.md) | <ul><li>Intäkt</li><li>Utgifter</li><li>Nettoinkomst</li><li>Bruttomarginal</li><li>Aktuell kvot</li><li>Summa leverantörsreskontra</li><li>Summa för kundreskontra</li><li>Utgifter efter kontokategori</li><li>Utgifter - Utfall kontra budget</li><li>Intäkt - utfall kontra budget</li></ul> |
+| [Finansiellt resultat](financial-performance-power-bi-content-pack.md) | <ul><li>Intäkt</li><li>Utgifter</li><li>Nettoinkomst</li><li>Bruttomarginal</li><li>Aktuell kvot</li><li>Summa leverantörsreskontra</li><li>Summa för kundreskontra</li><li>Utgifter efter kontokategori</li><li>Utgifter – Utfall kontra budget</li><li>Intäkt – utfall kontra budget</li></ul> |
 | [Kassaöversikt](../../../finance/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li>Kassaflödesprognos</li><li>Bankkontosaldo</li><li>Saldo per valuta</li></ul> |
 | [Försäljnings- och lönsamhet](sales-profitability-performance-content-pack.md) | <ul><li>Intäkter per region</li><li>Bästa 10 kunderna per intäkt</li><li>Bästa 10 produkterna per intäkt</li></ul> |
 | [Hantering av kredit och inkasso](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Förfallna kunder</li><li>Kundens över kreditgräns</li><li>Åldersfördelade saldon</li></ul> |
@@ -44,3 +44,4 @@ Följande tabell visar Power BI-innehållet som rapporten kopieras från och de 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

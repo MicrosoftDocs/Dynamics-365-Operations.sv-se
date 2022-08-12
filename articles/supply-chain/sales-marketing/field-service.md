@@ -1,5 +1,5 @@
 ---
-title: Integrering med Microsoft Dynamics 365 Field Service - översikt
+title: Integrering med Microsoft Dynamics 365 Field Service – översikt
 description: Denna artikel innehåller en översikt över integrering med Microsoft Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 07/25/2019
@@ -15,14 +15,14 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b0427d33ac39d34bccc302e58bb84e1ad4c3598c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 12a9c57e2587150914c6087c041d63af9783c1f3
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888453"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103714"
 ---
-# <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Integrering med Microsoft Dynamics 365 Field Service - översikt
+# <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Integrering med Microsoft Dynamics 365 Field Service – översikt
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ Integrering av katalogtjänst i Field Service bygger vidare på befintliga funkt
 
 ![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service.](./media/field-service-integration.png)
 
-Den första fasen av integreringen mellan Field Service och Supply Chain Management fokuserar på arbetsorder och avtal i Field Service som ska faktureras i Supply Chain Management. Flödet som stöds startar i Field Service där information från arbetsorder synkroniseras till Supply Chain Management som försäljningsorder. I Supply Chain Management faktureras försäljningsorder för generering av fakturadokument. Dessutom synkroniseras informationen från avtalsfakturor för Field Service till Supply Chain Management. Microsoft Dynamics 365-dataintegratören synkroniserar data med hjälp av anpassningsbara projekt. Standardmallar kan användas för att skapa anpassade integreringsprojekt där ytterligare standardiserade och anpassade kolumner och tabeller kan mappas för att justera integreringen och uppfylla särskilda krav.
+Den första fasen av integreringen mellan Field Service och Supply Chain Management fokuserar på arbetsorder och avtal i Field Service som ska faktureras i Supply Chain Management. Flödet som stöds startar i Field Service där information från arbetsorder synkroniseras till Supply Chain Management som försäljningsorder. I Supply Chain Management faktureras försäljningsorder för generering av fakturadokument. Dessutom synkroniseras informationen från avtalsfakturor för Field Service till Supply Chain Management. Microsoft Dynamics 365-dataintegreraren synkroniserar data med hjälp av anpassningsbara projekt. Standardmallar kan användas för att skapa anpassade integreringsprojekt där ytterligare standardiserade och anpassade kolumner och tabeller kan mappas för att justera integreringen och uppfylla särskilda krav.
 
 Den första fasen av integreringen mellan Field Service och Supply Chain Management tillåter synkronisering av följande artiklar:
 
@@ -60,25 +60,25 @@ Ytterligare funktioner i den här andra fasen fokuserar på att ge fälttekniker
 ![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service, inklusive lager- och projektinformation.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Den andra fasen av integreringen mellan Field Service och Supply Chain Management tillåter synkronisering med följande mallar:
-- Lagerställen (Supply Chain Management till Field Service) - Lagerställen från Supply Chain Management till Field Service [avancerad fråga] 
-- Produktlager (Supply Chain Management till Field Service) - Information om lagernivåer från Supply Chain Management till Field Service [avancerad fråga] 
-- Lagerjustering (Field Service till Supply Chain Management) - Lagerjusteringar från Field Service till Supply Chain Management [avancerad fråga] 
-- Lageröverföringar (Field Service till Supply Chain Management) - Lageröverföringar från Field Service till Supply Chain Management [avancerad fråga] 
-- Projekt (Supply Chain Management till Field Service) - Projektlista från Supply Chain Management till Field Service 
-- Arbetsorder med projekt (Field Service till Supply Chain Management) - arbetsorder i Field Service till försäljningsorder i Supply Chain Management, med stöd för projekt [avancerad fråga] 
-- Field Service-produkter med lagerenhet (Supply Chain Management till Sales) - Supply Chain Management "Säljbara frisläppta produkter" till Sales "produkter" för Field Service, inklusive lagerenhet 
+- Lagerställen (Supply Chain Management till Field Service) – Lagerställen från Supply Chain Management till Field Service [avancerad fråga] 
+- Produktlager (Supply Chain Management till Field Service) – Information om lagernivåer från Supply Chain Management till Field Service [avancerad fråga] 
+- Lagerjustering (Field Service till Supply Chain Management) – Lagerjusteringar från Field Service till Supply Chain Management [avancerad fråga] 
+- Lageröverföringar (Field Service till Supply Chain Management) – Lageröverföringar från Field Service till Supply Chain Management [avancerad fråga] 
+- Projekt (Supply Chain Management till Field Service) – Projektlista från Supply Chain Management till Field Service 
+- Arbetsorder med projekt (Field Service till Supply Chain Management) – arbetsorder i Field Service till försäljningsorder i Supply Chain Management, med stöd för projekt [avancerad fråga] 
+- Field Service-produkter med lagerenhet (Supply Chain Management till Sales) – Supply Chain Management "Säljbara frisläppta produkter" till Sales "produkter" för Field Service, inklusive lagerenhet 
 
 ## <a name="system-requirements"></a>Systemkrav
 
 ### <a name="system-requirements-for-supply-chain-management"></a>System krav för hantering av Supply Chain Management
 Field Service-integrering stöder följande versioner:
 
-- Dynamics 365 for Finance and Operations version 8.1.2 (december 2018) släpptes i december 2018 och har programversionsnummer 8.1.195 med plattformsuppdatering 22 (7.0.5095). 
+- Dynamics 365 för Ekonomi och drift version 8.1.2 (december 2018) släpptes i december 2018 och har programversionsnummer 8.1.195 med plattformsuppdatering 22 (7.0.5095). 
 
 ### <a name="system-requirements-for-field-service"></a>Systemkrav för Field Service
 Om du vill använda integreringslösningen för Field Service måste du installera följande komponenter:
 
-- Field Service (version 8.2.0.286) eller en senare version på Dynamics 365 9.1.x - utgiven i november 2018
+- Field Service (version 8.2.0.286) eller en senare version på Dynamics 365 9.1.x – utgiven i november 2018
 - Lösningen Potentiell kund till kontanter (P2C) för Dynamics 365, version 1.15.0.1 eller senare. Lösningen finns att hämta från [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Lösningen "Field Service integrering, projekt och lager" för Dynamics 365, version 2.0.0.0 eller en senare version. Lösningen finns att hämta från [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
 

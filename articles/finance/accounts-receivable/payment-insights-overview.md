@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 54655d2b1cfb4b11f32842d4c3cff2f4d8e97ef5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2c811ac48a6bf29267192f61a33b6b47721659
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856811"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068179"
 ---
 # <a name="customer-payment-insights-preview"></a>Customer payment insights (förhandsversion)
 
@@ -69,9 +69,10 @@ Skicka e-post till [Kundbetalningsinsikter (förhandsversion)](mailto:fiap@micro
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
-Förhandsversioner (1) kan dessutom använda mindre sekretess- och säkerhetsfunktioner än tjänsten Dynamics 365 Ekonomi och drift (2), ingår inte i servicenivåavtalet för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterföljande krav, samt (4) har begränsad support.
+Förhandsversioner (1) kan dessutom använda mindre sekretess- och säkerhetsfunktioner än tjänsten Dynamics 365 Ekonomi och drift, (2), ingår inte i serviceavtalet för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av juridiska och andra regelefterlevande krav, samt (4) har begränsad support.
 
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

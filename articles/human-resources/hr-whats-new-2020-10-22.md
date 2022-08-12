@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d58c8d5eab86779a764cee5a3ee8ca17ade471de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b183ea08a2decc2696ca3bc3997b5cf7f04652d4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862813"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068074"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources 22 oktober 2020
 
@@ -41,7 +41,7 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 
 | Funktion | Utgivningsplan | Dokumentation |
 | --- | --- | --- |
-| Plattformsuppdatering 10.0.14(38) | -- | [Plattformsuppdateringar för version 10.0.14 av Ekonomi och Drift-appar (November 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md) |
+| Plattformsuppdatering 10.0.14(38) | -- | [Plattformsuppdateringar för version 10.0.14 av appar för ekonomi och drift (november 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md) |
 | Arbetsflöden för organisation och personalhantering | [Arbetsflöden för organisation och personalhantering](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsalternativ för placering av lista över arbetsartiklar tilldelade till mig](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 
 
@@ -59,7 +59,7 @@ Den här versionen innehåller följande felkorrigeringar.
 | 458639 | Entiteten **Arbetarkontakter** stöder inte ändringsspårningsläge. | Vi uppdaterade entiteten **Arbetarkontakter** så att du kan använda den för att ta med dina egna databas (BYOD) scenarier.|
 | 505347 | Utbildningsansvariga kan skicka en begäran om att lämna en medarbetare när den strömlinjeformade funktionen för arbetare aktiverades. | Andra roller än personal assistenten och anställande chef får inte skicka ansökningar om ledighet för medarbetare. |
 | 513490 | Loggning av fördelarhantering: lägg till loggning för planer utan täckningsalternativ. | Vi aktiverade loggningsresultat för **Planera utan täckningsalternativ**. Nu visas de i tabellen **Processresultat** och de sorteras korrekt så att de visas överst. |
-| 517021 | Det går inte att välja flera planer med samma **plantyp** kod om **plantypen** kan anmäla sig till en per typ. | Vi har ändrat begränsningarna för urvalsplaner där endast en registrering tillåts. Begränsningarna är nu på **plantypskoden** nivå i stället för **plantyp**. Den här ändringen gör det möjligt att planera som HSA och FSA, som är både samma typ, men du kan ge dem en separat **plantypskod**. På så sätt kan du välja båda för samma registreringsperiod. |
+| 517021 | Det går inte att välja flera planer med samma **plantyp** kod om **plantypen** kan anmäla sig till en per typ. | Vi har ändrat begränsningarna för urvalsplaner där endast en registrering föråts. Begränsningarna är nu på **plantypskoden** nivå i stället för **plantyp**. Den här ändringen gör det möjligt att planera som HSA och FSA, som är både samma typ, men du kan ge dem en separat **plantypskod**. På så sätt kan du välja båda för samma registreringsperiod. |
 | 444791 | Kan inte se ersättning i självbetjäning för medarbetare när **begränsad åtkomst** är aktiverat i kompensationsplanen. | I kort självbetjäning för medarbetare **Kompensation**, det aktuella ersättningsbeloppet och ökningsprocenten som visas "0" om den anställde var inskriven i en plan med **Begränsa åtkomsten** aktiverat och tilldelats specifika roller. Vi har löst problemet så att medarbetaren och chefen alltid kan se kompensationsdetaljer för sig själva och deras direkt rapporter. |
 | 457542 | Uppdatera kursinformation när kursen stängs uppdaterar inte också samma information för medarbetaren som tog kursen. | Medarbetarens information uppdateras nu på rätt sätt när du ändrar kursinformation när en kurs stängs och sedan öppnas igen. |
 | 515342 | Det går inte att infoga data via **CDSLeaveRequestDetailEntity**. Företaget hittas inte eller finns inte. | Du kan nu använda **CDSLeaveRequestDetailEntity** till infoga data. |

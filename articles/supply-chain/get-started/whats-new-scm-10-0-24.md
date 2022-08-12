@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 94e465616338b0c905ccf6b8244324c18c7a59e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849457"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166888"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.24 (februari 2022)
 
@@ -46,7 +46,7 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 | Modul | Funktionsnamn i funktionshantering | Mer information |
 |---|---|---|
 | Produktionskontroll | Kontroll av materialtillgänglighet på begäran för tillverkningsorder | Denna funktion gör det snabbare att öppna sidan **Tillverkningsorder som ska frisläppas** som är tillgänglig från arbetsytan **Hantering av produktionsgolvskörning**. Om den här funktionen inte har den här funktionen kontrollerar systemet automatiskt om material är tillgängliga för alla listade tillverkningsorder så snart du öppnar sidan, vilket kan ta lång tid om du har ett stort antal order. När den här funktionen har aktiverats används i stället en verktygsfältsknapp som du kan använda för att initiera materialkontrollen enbart för valda order och vid behov. |
-| Produktionskontroll | (Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (inte WMS) | Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och serienummer. Den här funktionen stöder bara artiklar som inte är aktiverade för att använda avancerade lagerställeprocesser (WMS). Stöd för WMS-aktiverade artiklar planeras för en framtida version.<p>Vissa tillverkare, särskilt de som finns i processindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. En arbetare kan till exempel använda en våg för att väga hur mycket material som förbrukats medan de arbetar. För att garantera fullständig spårning av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras. |
+| Produktionskontroll | Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (icke-WMS) | Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och löpnummer. Den här funktionen stöder bara artiklar som inte är aktiverade för att använda lagerstyrningsprocesser (WMS). Stöd för WMS-aktiverade artiklar planeras för en framtida version.<p>Vissa tillverkare, särskilt de som finns i processindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. En arbetare kan till exempel använda en våg för att väga hur mycket material som förbrukats medan de arbetar. För att garantera fullständig spårning av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras. |
 | Produktionskontroll | Rapportera som klar om arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet | Med den här funktionen kan personalen använda mobilappen Warehouse Management för att rapportera en tillverknings- eller batchorder som färdig när programmet körs mot en arbetsbörda för lagerstyrning i en enhet för molnbaserad eller kantskala. Mer information finns i [Rapportera som färdig och inlagrad på en skalningsenhet](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
 | Warehouse management | Nya sidor för lastplaneringsworkbench | Aktiverar två nya workbench-sidorna för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
 
@@ -68,9 +68,9 @@ Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. D
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Finance and Operations-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.24 av Ekonomi och Drift-appar (februari 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.24 av appar för ekonomi och drift (februari 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 
@@ -94,3 +94,4 @@ Innan någon funktion tas bort från produkten kommer meddelandet om inaktualite
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

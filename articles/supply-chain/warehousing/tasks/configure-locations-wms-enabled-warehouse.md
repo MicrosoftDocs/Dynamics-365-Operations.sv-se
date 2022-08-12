@@ -1,6 +1,6 @@
 ---
 title: Konfigurera platser i ett WMS-aktiverat lagerställe
-description: Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-aktiverat lagerställe (ett lagerställe som använder avancerade lagerstyrningsprocesser).
+description: Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-aktiverat lagerställe (ett lagerställe som använder avancerade lagerstyrningsprocesser (WMS)).
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599358"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067286"
 ---
-# <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurera platser i ett WMS-aktiverat lagerställe
+# <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurera platser i ett WMS-aktiverat distributionslager
 
 [!include [banner](../../includes/banner.md)]
 
-Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-aktiverat lagerställe (ett lagerställe som använder avancerade lagerstyrningsprocesser). Processen normalt utförs av en lagerchef. Du kan köra den här guiden för demonstrationsföretaget USMF eller på dina egna data. En förutsättning är att du har konfigurerat minst en webbplats.
+Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-aktiverat lagerställe (ett lagerställe som använder avancerade lagerstyrningsprocesser (WMS)). Processen normalt utförs av en lagerchef. Du kan köra den här guiden för demonstrationsföretaget USMF eller på dina egna data. En förutsättning är att du har konfigurerat minst en webbplats.
 
 
 ## <a name="create-a-new-warehouse"></a>Skapa ett nytt lagerställe
@@ -35,7 +35,7 @@ Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-
 4. Skriv ett värde i fältet **Namn**.
 5. I fältet **Webbplats** väljer eller anger du ett värde för en befintlig webbplats.
 6. Expandera valet **Lagerställe**.
-7. Ange alternativet **Använd lagerstyrningsprocesser** till Ja. Den här inställningen gör det möjligt att köra avancerade lagerprocesser med hjälp av lagerarbete och mobila enheter.
+7. Ange alternativet **Använd lagerstyrningsprocesser** till Ja. Den här inställningen gör det möjligt att köra lagerstyrningsprocesser (WMS) med hjälp av lagerarbete och mobila enheter.
 8. Stäng sidan.
 
 ## <a name="define-a-location-format"></a>Definiera ett platsformat
@@ -68,7 +68,7 @@ Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-
 5. Stäng sidan.
 
 ## <a name="define-location-profile"></a>Definiera platsprofil
-1. Gå till **Navigeringsfönstret > Moduler > Lagerstyrning > Inställningar > Lagerställe > Platsprofiler**. Definitionen av platsprofiler är mycket viktig. Grupperad platskapacitet kan kontrolleras här, men även policyer som är relaterade till vilket lager som lagras, och hur det lagras. Platsprofiler kan användas som filtreringsalternativ för att styra de olika lagerstyrningsprocesserna. Som minimum måste du skapa en användarplatsprofil för att kunna aktivera lagerstyrningsprocesserna.
+1. Gå till **Navigeringsfönstret > Moduler > Lagerstyrning > Inställningar > Lagerställe > Platsprofiler**. Definitionen av platsprofiler är mycket viktig. Grupperad platskapacitet kan kontrolleras här, men även policyer som är relaterade till vilket lager som lagras, och hur det lagras. Platsprofiler kan användas som filtreringsalternativ för att styra de olika lagerstyrningsprocesserna. Som minimum måste du skapa en användarplatsprofil för att kunna aktivera WMS.
 2. Klicka på **Ny**.
 3. Skriv ett värde i fältet **Platsprofil-ID.**
 4. Skriv ett värde i fältet **Namn**.
@@ -97,7 +97,7 @@ Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-
 10. Stäng sidan.
 
 ## <a name="define-warehouse-zone-groups"></a>Definiera grupper för lagerställezoner
-1. Gå till **Navigeringsfönster > Moduler > Lagerstyrning > Inställningar > Lagerställe > Grupper - lagerställezoner**. Lagerställezoner kan användas som filtreringsalternativ för att styra de olika lagerstyrningsprocesserna. Du måste skapa en zongrupp innan du kan definiera en zon.   
+1. Gå till **Navigeringsfönster > Moduler > Lagerstyrning > Inställningar > Lagerställe > Grupper – lagerställezoner**. Lagerställezoner kan användas som filtreringsalternativ för att styra de olika lagerstyrningsprocesserna. Du måste skapa en zongrupp innan du kan definiera en zon.   
 2. Klicka på **Ny**.
 3. Skriv ett värde i fältet **Zongrupps-ID**.
 4. Skriv ett värde i fältet **Zongruppnamn**.

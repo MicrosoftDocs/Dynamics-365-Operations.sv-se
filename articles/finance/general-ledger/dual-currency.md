@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19337b2651830d79543361d525bf24c4f794e825
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906367"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065759"
 ---
 # <a name="dual-currency"></a>Dubbel valuta
 
 [!include [banner](../includes/banner.md)]
 
-Funktion som infördes i Microsoft Dynamics 365 for Finance and Operations version 8.1 (oktober 2018) gör det möjligt att återanvända rapporteringsvalutan och använda den som en andra redovisningsvaluta. Den här funktionen kallas ibland för *dubbel valuta*. Ändringarna för dubbel valuta kan inte inaktiveras via en konfigurationsnyckel eller parameter. Eftersom rapporteringsvalutan används som en andra redovisningsvaluta, har sättet att beräkna rapporteringsvaluta i bokföringslogiken ändrats.
+En funktion som infördes i Microsoft Dynamics 365 Finance version 8.1 (oktober 2018) gör det möjligt att återanvända rapporteringsvalutan och använda den som en andra redovisningsvaluta. Den här funktionen kallas ibland för *dubbel valuta*. Ändringarna för dubbel valuta kan inte inaktiveras via en konfigurationsnyckel eller parameter. Eftersom rapporteringsvalutan används som en andra redovisningsvaluta, har sättet att beräkna rapporteringsvaluta i bokföringslogiken ändrats.
 
 Dessutom har flera moduler förbättrats för att spåra, rapportera och använda rapporteringsvaluta i olika processer. Modulerna som påverkas är:
 
@@ -190,7 +190,7 @@ Dessutom har större ändringar gjorts i avskrivningsprocessen. Ändringarna kr�
     - I anläggningstillgångens parametrar (**anläggningstillgångar** \> **inställningar** \> **parametrar för anläggningstillgångar**), på snabbfliken **allmänna** finns fältet **Lägsta avskrivningsbelopp i rapporteringsvaluta**.
     - I räkenskapsböcker (**anläggningstillgångar** \> **inställningar** \> **räkenskapsböcker**) på snabbfliken **allmänna** finns två nya fält: **Avrunda avskrivning i rapporteringsvaluta** och **Lämna bokfört nettovärde i rapporteringsvaluta**.
 
-- Eftersom avskrivningsförslaget nu beräknar beloppen i både redovisningsvalutan och rapporteringsvaluta har journalen för anläggningstillgångar uppdaterats så att den visar avskrivningsbeloppen i rapporteringsvalutan. För avskrivningstransaktioner är transaktionsvalutan alltid bokföringsvaluta. Därför kan dessa värden fortsätta att visas i kolumnerna **debet** och **kredit**. Två nya kolumner **debet i rapporteringsvaluta** och **kredit i rapporteringsvaluta**, har lagts till i rutnätet.
+- Eftersom avskrivningsförslaget nu beräknar beloppen i både redovisningsvalutan och rapporteringsvaluta har journalen för anläggningstillgångar uppdaterats så att den visar avskrivningsbeloppen i rapporteringsvalutan. För avskrivningstransaktioner är transaktionsvalutan alltid bokföringsvaluta. Därför kan dessa värden fortsätta visas i kolumnerna **debet** och **kredit**. Två nya kolumner **debet i rapporteringsvaluta** och **kredit i rapporteringsvaluta**, har lagts till i rutnätet.
 
     - De nya fälten är endast tillgängliga när transaktionstypen är en av de fyra avskrivningstyperna: **Avskrivning**, **Avskrivningsjustering**, **Extraordinär avskrivning**, eller **Särskild avskrivning**.
     - Om transaktionstypen för avskrivning anges i journalen för anläggningstillgångar visas rapporteringsvalutabeloppen i de nya kolumnerna. Dessa belopp kan ändras.
@@ -209,3 +209,4 @@ I redovisningskonsolidering har ett nytt alternativ lagts till för att konsolid
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

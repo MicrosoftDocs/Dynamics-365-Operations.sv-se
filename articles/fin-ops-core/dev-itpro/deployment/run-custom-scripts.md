@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aad48fbd3ee2f28f39f6061b5e922f5c4f47c8f6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867341"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103533"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Köra anpassade X++-skript utan avbrott
 
@@ -120,7 +120,7 @@ I listan nedan beskrivs några exempel på hur du kan skriva, implementera och k
 
 Använd följande procedur för att ladda upp och köra ett skript.
 
-1. I din Ekonomi och Drift-app, gå till **Systemadministration \> Periodiska uppgifter \> Databas \> Anpassade skript**.
+1. I ditt appar för ekonomi och drift går du till **Systemadministration \> Periodiska uppgifter \> Databas \> Anpassade skript**.
 1. Välj **överför**.
 1. Välj det paket som kan distribueras och som du skapat på det sätt som beskrivs tidigare i den här artikeln. Du uppmanas att ange syftet med skriptet.
 1. Skriptet måste nu godkännas av en annan användare än den som förde över det. Godkännaren måste följa dessa steg:
@@ -149,6 +149,7 @@ Det som du väljer i det sista steget definierar den slutliga statusen för skri
 
 ## <a name="upload-and-run-a-deployable-package-through-lcs"></a>Överföra och köra ett paket som kan distribueras via LCS
 
-I stället för att distribuera ditt distribuerade paket via användargränssnittet för din app Ekonomi och Drift, enligt beskrivningen i det föregående avsnittet, kan du överföra det till LCS och använda den vanliga proceduren för att distribuera det. För mer information, se [Installera distribuerbara paket från kommandoraden](../deployment/install-deployable-package.md).
+I stället för att distribuera ditt distribuerade paket via användargränssnittet för ditt appar för ekonomi och drift kan du i enlighet med beskrivningen i föregående avsnitt överföra det till LCS och använda den vanliga proceduren för att distribuera det. För mer information, se [Installera distribuerbara paket från kommandoraden](../deployment/install-deployable-package.md).
 
 Även om det här arbetssättet har färre begränsningar ger det mindre felsskydd. Eftersom det kräver en omstart av alla servrar orsakar det dessutom ett visst antal drifttid.
+

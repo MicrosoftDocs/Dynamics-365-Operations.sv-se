@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91cc0e59405bc085e09f01f05ef02e4a0260481e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894278"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111907"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Flytta potentiell kund till kontantdata från dataintegrerare till dubbelriktad skrivning
 
@@ -32,7 +32,7 @@ Du måste installera den manuellt. Efter installationen förblir allt exakt dets
 
 Följ dessa steg för att migrera din potentiell kund till kontantdata från dataintegrerare till dubbelriktad skrivning.
 
-1. Kör potentiell kund till kontant dataintegererare jobb för att göra en slutgiltig fullständig synkronisering. På det här sättet ser du till att båda systemen (Ekonomi och Drift-appar och kundengagemangsappar) har all data.
+1. Kör potentiell kund till kontant dataintegererare jobb för att göra en slutgiltig fullständig synkronisering. På det här sättet ser du till att båda systemen (appar för ekonomi och drift samt kundengagemangsappar) har all data.
 2. Om du vill förhindra dataförlust kan du exportera potentiell kund till kontantdata från Microsoft Dynamics 365 Sales till en Excel-fil eller en CSV-fil. Exportera data från följande enheter:
 
     - [Konto](#account-table)
@@ -47,25 +47,25 @@ Följ dessa steg för att migrera din potentiell kund till kontantdata från dat
 
 3. Avinstallera lösningen Potentiell kund till kontantlösning från Sales-miljön. Detta steg tar bort kolumnerna och motsvarande data som lösningen Potentiell kund till kontantlösningen innehåller.
 4. Installera lösningen för dubbelriktad skrivning.
-5. Skapa en dubbelriktad koppling mellan Ekonomi och Drift-app och kundengagemangsapp för en eller flera juridiska personer.
+5. Skapa en dubbelriktad anslutning mellan appen för ekonomi och drift och kundengagemangsapp för en eller flera juridiska personer.
 6. Aktivera dubbelriktade registermappningar och kör den initiala synkroniseringen för nödvändiga referensdata. (Mer information finns i [Att tänka på vid ursprunglig synkronisering](initial-sync-guidance.md).) Exempel på obligatoriska data är kundgrupper, betalningsvillkor och betalningsscheman. Aktivera inte dubbelriktade mappningar för register som kräver initialisering, till exempel konto, offert, offertrad, order och orderradsregister.
 7. I kundengagemangsappen, gå till **Avancerade inställningar \> Systeminställningar \> Datahantering \> Duplicera detekteringsregler** och inaktivera alla regler.
 8. Initiera registren som listas i steg 2. Instruktioner finns i de återstående avsnitten i den här artikeln.
-9. Öppna Ekonomi och Drift-appen och aktivera registermappningar, till exempel konto, offert, offertrad, order och orderrad registermappningar. Kör sedan initial synkronisering. (Mer information finns i [Att tänka på vid ursprunglig synkronisering](initial-sync-guidance.md).) Den här processen synkroniserar ytterligare information från Ekonomi och Drift-appen, såsom bearbetningsstatus, leverans- och faktureringsadresser, webbplatser och lager.
+9. Öppna appen för ekonomi och drift och aktivera tabellmappningarna, till exempel konto, offert, offertrad, order och orderrad. Kör sedan initial synkronisering. (Mer information finns i [Att tänka på vid första synkronisering](initial-sync-guidance.md).) Den här processen synkroniserar ytterligare information från appen för ekonomi och drift, till exempel bearbetningsstatus, leverans- och faktureringsadresser, webbplatser och lagerställen.
 
 ## <a name="account-table"></a>Kontoregister
 
 1. I kolumnen **Företag** anger du företagsnamnet, till exempel **USMF**.
 2. I kolumnen **Relationstyp**, ange **Kund** som ett statiskt värde. Du kanske inte vill klassificera varje kontopost som en kund i din affärslogik.
-3. I kolumnen **kundgrupp-ID** ange kundgruppnumret från Ekonomi och Drift-appen. Standardvärdet från potentiell kund till kontantlösning är **10**.
-4. Om du använder potentiell kund till en kontantlösning utan anpassning av **kontonummer**, ange ett värde för **kontonummer** i kolumnen **partnummer**. Om det finns anpassningar, och du inte känner till partnumret, hämtar du denna information från Ekonomi och Drift-appen.
+3. I kolumnen **Kundgrupps-ID** anger du kundgruppsnumret från appen för ekonomi och drift. Standardvärdet från potentiell kund till kontantlösning är **10**.
+4. Om du använder potentiell kund till en kontantlösning utan anpassning av **kontonummer**, ange ett värde för **kontonummer** i kolumnen **partnummer**. Om det finns anpassningar och du inte känner till partnumret hämtar du denna information från appen för ekonomi och drift.
 
 ## <a name="contact-table"></a>Kontaktregister
 
 1. I kolumnen **Företag** anger du företagsnamnet, till exempel **USMF**.
 2. Ställ in följande kolumner baserat på värdet **IsActiveCustomer** i CSV-filen:
 
-    - Om **IsActiveCustomer** anges till **Ja** i CSV-filen, ange kolumnen **Säljbar** till **Ja**. I kolumnen **kundgrupp-ID** ange kundgruppnumret från Ekonomi och Drift-appen. Standardvärdet från potentiell kund till kontantlösning är **10**.
+    - Om **IsActiveCustomer** anges till **Ja** i CSV-filen, ange kolumnen **Säljbar** till **Ja**. I kolumnen **Kundgrupps-ID** anger du kundgruppsnumret från appen för ekonomi och drift. Standardvärdet från potentiell kund till kontantlösning är **10**.
     - Om **IsActiveCustomer** anges till **Nej** i CSV-filen ställer du in kolumnen **Säljbart** till **Nej** och ställer in kolumnen **Kontakt för** på **Kund**.
 
 3. Om du använder potentiell kund till en kontantlösning utan anpassning av **kontaktnumret** ställer du in följande kolumner:
@@ -76,7 +76,7 @@ Följ dessa steg för att migrera din potentiell kund till kontantdata från dat
 
 ## <a name="invoice-table"></a>Fakturaregister
 
-Eftersom data från tabellen **faktura** har utformats för att flöda ett sätt, från Ekonomi och Drift-appen till kundengagemangsappen krävs inte initialisering. Kör den ursprungliga synkroniseringen om du vill flytta alla nödvändiga data från Ekonomi och Drift-appen till kundengagemangsappen. Mer information finns i [Att tänka på vid ursprunglig synkronisering](initial-sync-guidance.md).
+Eftersom data från tabellen **Faktura** har utformats för att flöda åt ett visst håll, från appen för ekonomi och drift till kundengagemangsappen, krävs ingen initialisering. Kör den ursprungliga synkroniseringen om du vill migrera alla nödvändiga data från appen för ekonomi och drift till kundengagemangsappen. Mer information finns i [Att tänka på vid ursprunglig synkronisering](initial-sync-guidance.md).
 
 ## <a name="order-table"></a>Orderregister
 
@@ -94,7 +94,7 @@ Eftersom data från tabellen **faktura** har utformats för att flöda ett sätt
 
 ## <a name="products-table"></a>Register för produkter
 
-Eftersom data från tabellen **Produkter** har utformats för att flöda ett sätt, från Ekonomi och Drift-appen till kundengagemangsappen krävs inte initialisering. Kör den ursprungliga synkroniseringen om du vill flytta alla nödvändiga data från Ekonomi och Drift-appen till kundengagemangsappen. Mer information finns i [Att tänka på vid ursprunglig synkronisering](initial-sync-guidance.md).
+Eftersom data från tabellen **Produkter** har utformats för att flöda åt ett visst håll, från appen för ekonomi och drift till kundengagemangsappen, krävs ingen initialisering. Kör den ursprungliga synkroniseringen om du vill migrera alla nödvändiga data från appen för ekonomi och drift till kundengagemangsappen. Mer information finns i [Att tänka på vid ursprunglig synkronisering](initial-sync-guidance.md).
 
 ## <a name="quote-and-quote-product-tables"></a>Produktregister för offert och offert
 
@@ -102,3 +102,4 @@ För tabellen **offert**, följ instruktionerna i avsnittet [orderregistret](#or
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

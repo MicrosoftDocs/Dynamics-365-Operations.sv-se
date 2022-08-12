@@ -1,6 +1,6 @@
 ---
 title: Översikt över ekonomisk rapportering
-description: Detta ämne beskriver hur du kommer åt ekonomisk rapportering i Microsoft Microsoft Dynamics 365 Finance och hur du använder funktionerna för finansiell rapportering.
+description: Detta ämne beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder funktionerna för finansiell rapportering.
 author: aprilolson
 ms.date: 06/20/2022
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
-ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
+ms.openlocfilehash: 9d0c2e821ee504cd62a536674ef91ee89a25c0a9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "9033672"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066430"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med ekonomisk rapportering 
 
@@ -151,7 +151,7 @@ Du kan skapa ett obegränsat antal rapportträd för att visa ditt företags dat
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Uppdatera den ekonomiska rapporteringsversionen via slipstreaming
 
-Ekonomi och drift-appar uppdateras varje månad. Ekonomisk rapportering behöver emellertid inte nödvändigtvis uppdateras på den cadencen. Kunder kan dessutom ha fler alternativ om när de implementerar uppdateringar för Ekonomi och drift-program. Uppdateringar av ekonomiska rapporter installeras automatiskt. Ekonomisk rapportering har en särskild version som förbrukas i en kundmiljö när en serviceuppdatering implementeras, när drifttid har initierats eller när en kunds miljö är i underhållsläge. Den här processen kallas *slipstreaming* eller *stämmer*, eftersom alla kundimplementeringar är inställda på samma version av finansiell rapportering.
+appar för ekonomi och drift uppdateras varje månad. Ekonomisk rapportering behöver emellertid inte nödvändigtvis uppdateras på den cadencen. Kunder kan dessutom ha fler alternativ gällande när de implementerar uppdateringar för appar för ekonomi och drift. Uppdateringar av ekonomiska rapporter installeras automatiskt. Ekonomisk rapportering har en särskild version som förbrukas i en kundmiljö när en tjänsteuppdatering implementeras, när drifttid har initierats eller när en kunds miljö är i underhållsläge. Den här processen kallas *slipstreaming* eller *stämmer*, eftersom alla kundimplementeringar är inställda på samma version av finansiell rapportering.
 
 Ändringar som frisläpps i respektiv version finns i [Nyheter och ändringar i Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Uppdateringar av plattformar och uppdateringskorrigeringar finns i avsnittet "Ytterligare resurser" längst ned på sidan för varje version.
 
@@ -195,7 +195,7 @@ Problem 2: användaren har inte tilldelats de behörigheter som krävs för att 
 * De behörigheter som krävs visas ovan i [beviljande av säkerhetsåtkomst till Financial Reporting](#granting-security-access-to-financial-reporting). Säkerheten i Financial Reporting baseras på dessa behörigheter. Du får inte åtkomst om inte dessa privilegier (eller någon annan säkerhetsroll som omfattar dessa privilegier) tilldelas dig. 
 * Integreringsuppgift **Företagets användarleverantör till företaget** (som också ansvarar för och kallas användarintegration) körs med ett 5-minuters intervall. Det kan ta upp till 10 minuter innan alla behörighetsändringar börjar gälla i Financial Reporting. 
 
-    Om en annan användare kan öppna rapportdesigner, väljer du **verktyg** och väljer **integrationsstatus**. Kontrollera att integrationskartan, "Företagets användarleverantör till företaget", har körts korrekt eftersom du tilldelades behörighet att använda Financial Reporting. 
+    Om en annan användare kan öppna rapportdesigner, väljer du **verktyg** och väljer **integrationsstatus**. Kontrollera att integrationsmappningen, "Företagets användarleverantör till företaget", har körts korrekt eftersom du tilldelades behörighet att använda Financial Reporting. 
 
 * Det kan vara möjligt att ett annat fel har hindrat **Dynamics-användare till den Financial Reporting användarintegration** från att slutföras. Det kan också hända att en återställning av datamart har initierats och ännu inte slutförts, eller att ett annat systemfel har inträffat. Försök köra processen igen senare. Kontakta systemadministratören om problemet kvarstår.
 
@@ -254,3 +254,4 @@ Problem: Du får felmeddelandet "Det gick inte att ansluta till den ekonomiska r
 - [Rapportträddefinitioner i ekonomiska rapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 title: Kortkommandon
 description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med appar för ekonomi och drift.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0f833e3a6d45329fd8a69af658f392df32e4db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
+ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866129"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9140452"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
@@ -197,6 +197,7 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 | Stäng navigeringlistan på formuläret Detaljer (med fokus i navigeringlistan) | Esc                        |
 | Flytta till huvudsidans innehåll (med fokus i ett annat fönster)                    | Alt+M,M                    |
 | Flytta till faktaboxen (som kan inkludera att öppna den)                       | Alt+M,B eller Ctrl+F2         |
+| Flytta till nästa bildtext för funktioner                                              | Alt+M,C                    |
 
 > [!NOTE]
 > Funktionen **Strömlinjeforma funktionen för flikar i helsidesformulär**, som introduceras i version 10.0.26, gör det möjligt för användarna att via tabb förflytta sig mellan alla delar på en sida utan att behöva använda mus eller ett särskilt kortkommando. Du kan fortfarande använda de befintliga kortkommandona (t.ex. tangentbordskortkommando via Alt+M-tangenterna) för att snabbt förflytta dig mellan delar på en sida.
@@ -269,3 +270,4 @@ I fokushantering beskrivs hur användarfokus hanteras i ett program. Appar för 
 [Tangentbordsgenvägar för analys av saknade konton](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

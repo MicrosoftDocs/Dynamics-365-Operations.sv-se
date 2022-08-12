@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6254d15d13e40007396c9f2a36a8cd3122dc2609
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892781"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109353"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisera testning med elektronisk rapportering
 
@@ -57,7 +57,7 @@ Funktionella privilegierade användare kan köra tester av användarens acceptan
 Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande förutsättningar:
 
 - Distribuera en topologi som stöder testautomatisering. Du måste ha tillgång till instansen av denna topologi för rollen **systemadministratör**. Den här topologin måste innehålla de demodata som ska användas i det här exemplet. Mer information finns i [distribuera och använd en miljö som stöder kontinuerlig automatisering av bygga och testa](../perf-test/continuous-build-test-automation.md).
-- Om du vill köra acceptans- och integrationstest automatiskt måste du installera RSAT i den topologi som du använder och konfigurera det på lämpligt sätt. Information om hur du installerar och konfigurerar RSAT och konfigurerar den så att den fungerar med Finance and Operations-appar och Azure DevOps, se [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Var uppmärksam på förutsättningarna för att använda verktyget. Följande illustration visar ett exempel på RSAT-inställningar. Den blå rektangeln innesluter parametrarna som anger åtkomsten till Azure DevOps. Den gröna rektangeln innesluter parametrarna som anger åtkomsten till instansen.
+- Om du vill köra acceptans- och integrationstest automatiskt måste du installera RSAT i den topologi som du använder och konfigurera det på lämpligt sätt. Information om hur du installerar och konfigurerar RSAT och konfigurerar det så att det fungerar med appar för ekonomi och drift samt Azure DevOps finns i [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Var uppmärksam på förutsättningarna för att använda verktyget. Följande illustration visar ett exempel på RSAT-inställningar. Den blå rektangeln innesluter parametrarna som anger åtkomsten till Azure DevOps. Den gröna rektangeln innesluter parametrarna som anger åtkomsten till instansen.
 
     ![RSAT-inställningar.](media/GER-Configure.png "Skärmbild av dialogrutan RSAT-inställningar")
 

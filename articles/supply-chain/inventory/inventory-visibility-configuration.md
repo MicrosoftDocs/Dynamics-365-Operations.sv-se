@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895827"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066683"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera Inventory Visibility
 
@@ -55,7 +55,7 @@ Tillägget Lagersynlighet lägger till flera nya funktioner i Power Apps-install
 | *OnHandMostSpecificBackgroundService* | Denna funktion ger en lagersammanfattning för produkter tillsammans med alla dimensioner. Data för lagersammanfattningen synkroniseras regelbundet från Lagersynlighet. Mer information finns i [Lagersammanfattning](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Med hjälp av denna valfria funktion får du åtkomst till funktionerna för lagerändringsschema för lagerbehållning och disponibelt att lova (ATP). Mer information finns i [Ändringsschema för lagersynlighet för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md). |
 | *Allokering* | Denna valfria funktion gör att Lagersynlighet kan skydda lagret ("ringfencing") och överförsäljningskontroll. Mer information finns i [Lagerallokering för Lagersynlighet](inventory-visibility-allocation.md). |
-| *Aktivera lagerartiklar i lagersynlighet* | Denna tillvalsfunktion gör att Lagersynlighet kan stödja artiklar som har aktiverats för avancerade lagerstyrningsprocesser (WHS-artiklar). Mer information finns i [Stöd för lagersynlighet för WHS-artiklar](inventory-visibility-whs-support.md). |
+| *Aktivera lagerartiklar i lagersynlighet* | Denna tillvalsfunktion gör att Lagersynlighet kan stödja artiklar som har aktiverats för lagerstyrningsprocesser (WMS). Mer information finns i [Stöd för lagersynlighet för WMS-artiklar](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Hitta tjänstslutpunkten
 
@@ -63,7 +63,7 @@ Om du inte känner till rätt tjänstslutpunkt för Lagersynlighet öppnar du si
 
 ## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfiguration för datakälla
 
-Varje datakälla representerar ett system som dina data kommer från. Källnamn för exempeldata är till exempel `fno` (som står för "Dynamics 365-appar för ekonomi och drift") samt `pos` (som står för "kassa"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
+Varje datakälla representerar ett system som dina data kommer från. Namnexempel på datakällor är till exempel `fno` (som står för "Dynamics 365-appar för ekonomi och drift") samt `pos` (som står för "kassa"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
 
 > [!NOTE]
 > Datakällan `fno` är reserverad för Supply Chain Management. Om tillägget Lagerhantering är integrerat i en miljö för Supply Chain Management rekommenderar vi att du inte tar bort konfigurationer som är relaterade till `fno` datakällan.
@@ -809,3 +809,4 @@ Följande tabell visar standardhierarkin för reservation.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

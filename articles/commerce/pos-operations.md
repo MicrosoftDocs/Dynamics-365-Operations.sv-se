@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 3948fff15108568df514406ad443d4f538653e62
+ms.sourcegitcommit: 1af2b01aea6b5a4d88ee3fae6faa0eaf1976c5dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027293"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9146496"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -36,7 +36,7 @@ Följande tabell innehåller information om de åtgärder som är tillgängliga 
 
 Följande kolumner anger var åtgärderna kan startas:
 
-- **Användaråtgärd** – En åtgärd kan tilldelas till knappar i kassaknappsatser som ingår i en kassaskärmlayout.
+- **Användaråtgärd** – En åtgärd kan tilldelas knappar i kassaknappsatser som ingår i en kassaskärmlayout.
 - **Transaktionsskärmen** – En åtgärd kan startas från kassaknappsatser som har konfigurerats på kassatransaktionsskärmen.
 - **Välkomstskärmen** – En åtgärd kan startas från kassaknappsatser som har konfigurerats på kassavälkomstskärmen.
 
@@ -79,7 +79,7 @@ Följande kolumner anger var åtgärderna kan startas:
 | 133  | Köp garanti                                      | Välj garantin för en produkt.                                                                                                                                                                       | Ja            | Ja                | Nej             | Ja               | Nej              |
 | 134  | Lägg till anknytning                                   | Lägg till en förvald anknytning till en transaktion. Välj anknytningen på sidan **Knappegenskaper**.                                                                                                          | Ja            | Ja                | Nej             | Ja               | Nej              |
 | 135  | Lägg till anknytning från lista                         | Lägg till en anknytning till en transaktion i en lista.                                                                                                                                                 | Ja            | Ja                | Ja            | Ja               | Nej              |
-| 136  | Lägg till serienummer                                 | Ange ett serienummer för den aktuella produkten.                                                                                                                       | Ja            | Ja                | Nej             | Ja               | Nej              |
+| 136  | Lägg till löpnummer                                 | Ange ett löpnummer för den aktuella produkten.                                                                                                                       | Ja            | Ja                | Nej             | Ja               | Nej              |
 | 137  | Lägg till anknytning till kund                       | Lägg till en anknytning till en kund på sidan **kunduppgifter**.                                                                                                                                                 | Nej             | Nej                 | Nej             | Ja               | Nej              |
 | 138  | Ta bort anknytning från kund                  | Ta bort en anknytning på sidan kunduppgifter.                                                                                                                                                            | Nej             | Nej                 | Nej             | Ja               | Nej              |
 | 139  | Genomför transaktion                              | Uppmanar användaren att välja betalningsmetod                                                                                                                                                                          | Ja            | Ja                | Nej             | Ja               | Nej              |
@@ -249,7 +249,7 @@ Följande kolumner anger var åtgärderna kan startas:
 | 1 000 | Öppna kassalåda                                       | Utför en "ingen försäljning"-åtgärd och öppna den valda kassalådan.                                                                                                                                    | Ja            | Ja                | Ja            | Ja               | Nej              |
 | 1003 | Visa rapporter                                      | Visa rapporter som har konfigurerats för den aktuella användaren.                                                                                                                                               | Ja            | Ja                | Ja            | Nej                | Nej              |
 | 1004 | Uppgiftsinspelare                                     | Öppna uppgiftsregistrering om du vill registrera procedurmässig steg i POS.                                                                                                                                                      | Nej             | Nej                 | Nej             | Ja               | Nej              |
-| 1052 | Kassaavstämning                                | Ange penningbelopp i kassan för varje räknat betalningssätt.                                                                                                                                     | Ja            | Ja                | Ja            | Ja               | Nej              |
+| 1052 | Kassaavstämning                                | Ange penningbelopp i kassan för varje räknat betalningsmetoder.                                                                                                                                     | Ja            | Ja                | Ja            | Ja               | Nej              |
 | 1053 | Stäng skift dolt                                 | Ange den aktuella övergången till skift som har stängts dolt och användaren loggar ut. Ett skift som har stängts dolt är stängt för ytterligare transaktioner, men är fortfarande öppet för kassaåtgärder såsom borttagning av betalningsmedel och kassaavstämning. | Ja            | Ja                | Ja            | Nej                | Nej              |
 | 1054 | Skjut upp skift                                     | Avbryt det aktuella skiftet så att ett nytt eller annat skift kan aktiveras på den aktuella journalen.                                                                                                          | Ja            | Ja                | Ja            | Nej                | Nej              |
 | 1055 | Stäng skift                                       | Stäng det aktuella skiftet, skriv ut en Z-rapport och logga ut användaren ur systemet.                                                                                                                                | Ja            | Ja                | Ja            | Nej                | Nej              |
@@ -271,7 +271,7 @@ Följande kolumner anger var åtgärderna kan startas:
 | 1218 | Tvinga upp lås av kringutrustning                           | Systemet använder denna åtgärd internt för att låsa upp kringutrustning för kassa.                                                                                                                                           | Inte tillämpligt | Inte tillämpligt     | Inte tillämpligt | Inte tillämpligt    | Nej              |
 | 1219 | Öppna URL i kassa                                   | Öppna en administratörskonfigurerad URL i kassan.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Nej              |
 | 1220 | Hantera kassaskåp                                       | Hantera kassaskåp för olika kassor.                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Nej              |
-| 1221 | Ogiltiggör uppskjutna transaktioner                       | Ogiltiggör uppskjutna transaktioner.                                                                                                                                                                               | Ja            | Ja                | Ja            | Ja               | Nej              |
+| 1221 | Ogiltiggör uppskjutna transaktioner                       | Ogiltiggör uppskjutna transaktioner.                                                                                                                                                                               | Ja            | Nej                | Nej            | Ja               | Nej              |
 | 1300 | Hoppa över skatteregistrering                          | Hoppa över skatteregistrering.                                                                                                                                                                                       | Nej            | Nej                | Nej            | Ja               | Nej             |
 | 1301 | Markera skattehändelse som registrerad                      |  Markera skattehändelse som registrerat.                                                                                                                                                                                  | Nej            | Nej                | Nej            | Ja               | Nej             |
 | 1302 | Slutför skatteregistreringsprocessen              | Slutför skatteregistreringsprocessen.                                                                                                                                                                           | Nej            | Nej                | Ja            | Ja               | Ja             |

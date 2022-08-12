@@ -1,22 +1,22 @@
 ---
 title: Initiera Commerce Scale Unit (moln)
 description: I den här artikeln beskrivs hur du initierar Commerce Scale Unit (moln) i Microsoft Dynamics 365 Commerce.
-author: AamirAllaq
-ms.date: 06/03/2022
+author: jashanno
+ms.date: 07/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: jashanno
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
-ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
+ms.openlocfilehash: 93fbf2893fecc7b731f946797907bce4f8448309
+ms.sourcegitcommit: 8032d6275e6d9994ef9759ee16e743b483f7689e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8942864"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183376"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Initiera Commerce Scale Unit (moln)
 
@@ -27,7 +27,7 @@ I den här artikeln beskrivs hur du initierar Commerce Scale Unit (moln) i Micro
 Om du använder en Nivå 2-sandbox eller produktionsmiljö som har appversion 8.1.2.x eller senare måste du initiera Commerce Scale Unit (moln) innan du kan använda butikskanalfunktioner antingen för kassaåtgärder (POS) eller för e-handelsverksamhet som använder Retail Server i molnet. Initialiseringen distribuerar en Commerce Scale Unit (moln).
 
 > [!IMPORTANT]
-> För att befintliga kunder ska kunna använda butikskanalsfunktionen i molnbaserade, för att säkerställa att supporten för din verksamhet fortsätter och avbryts, kräver vi att du uppdaterar butikskanalerna så att du använder Commerce Scale Unit. Nya miljöer som distribueras utan Commerce Scale Unit får inte längre kvalitets- och serviceuppdateringar för komponenter för butikskanaler som har en molnbaserad värd. Det krävs ingen åtgärd för kunder som bara använder Commerce Scale Unit (självvärdbaserad). Kontakta din Microsoft FastTrack Solution Architect om du behöver ett filnamnstillägg.
+> För att befintliga kunder ska kunna använda butikskanalsfunktionen i molnbaserade, för att säkerställa att supporten för din verksamhet fortsätter och avbryts, kräver vi att du uppdaterar butikskanalerna så att du använder Commerce Scale Unit. Nya miljöer som distribueras utan Commerce Scale Unit får inte längre kvalitets- och tjänsteuppdateringar för komponenter för butikskanaler som har en molnbaserad värd. Det krävs ingen åtgärd för kunder som bara använder Commerce Scale Unit (självvärdbaserad). Kontakta din Microsoft FastTrack Solution Architect om du behöver ett filnamnstillägg.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -51,30 +51,30 @@ Commerce Scale Unit är tillgängligt för distribution i följande regioner.
 
 | Global plats | Region              | Tillgänglighet        | Kommentarer                  |
 |-----------------|---------------------|---------------------|---------------------------|
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra USA             | Allmänt tillgängligt |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra USA 2           | Allmänt tillgängligt |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Norra centrala USA    | Begränsad kapacitet    |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Södra centrala USA    | Begränsad kapacitet    |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Centrala USA          | Allmänt tillgängligt |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Västra USA             | Allmänt tillgängligt |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Västra USA 2           | Allmänt tillgängligt |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Centrala Kanada      | Begränsad kapacitet    |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra Kanada         | Begränsad kapacitet    |                           |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | USA, västra centrala     | Begränsad kapacitet    |                           |
-| APAC            | Östra Australien      | Allmänt tillgängligt |                           |
-| APAC            | Sydostasien      | Begränsad kapacitet | Inga distribueringar är tillåtna    |
-| APAC            | Östra Japan          | Allmänt tillgängligt |                           |
-| APAC            | Västra Japan          | Allmänt tillgängligt |                           |
-| APAC            | Sydöstra Australien | Allmänt tillgängligt |                           |
-| APAC            | Östasien           | Begränsad kapacitet    |                           |
-| APAC            | Indien, syd         | Begränsad kapacitet | Inga distribueringar är tillåtna    |
-| APAC            | Indien, centrala       | Begränsad kapacitet    | Kräver godkännandeprocess |
-| EMEA            | Västeuropa         | Allmänt tillgängligt |                           |
-| EMEA            | Nordeuropa        | Allmänt tillgängligt |                           |
-| EMEA            | Storbritannien, södra            | Begränsad kapacitet    |                           |
-| EMEA            | Storbritannien, västra             | Begränsad kapacitet    |                           |
-| Schweiz     | Schweiz, norra   | Begränsad kapacitet    | Kräver godkännandeprocess |
-| UAE             | Förenade Arabemiraten, norra           | Begränsad kapacitet    | Kräver godkännandeprocess |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra USA             | Allmänt tillgängligt |  Inga kommentarer.                         |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra USA 2           | Allmänt tillgängligt |  Inga kommentarer.                          |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Norra centrala USA    | Begränsad kapacitet    |  Inga kommentarer.                            |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Södra centrala USA    | Begränsad kapacitet    |  Inga kommentarer.                            |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Centrala USA          | Allmänt tillgängligt |  Inga kommentarer.                            |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Västra USA             | Allmänt tillgängligt |  Inga kommentarer.                            |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Västra USA 2           | Allmänt tillgängligt |  Inga kommentarer.                            |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Centrala Kanada      | Begränsad kapacitet    |  Inga kommentarer.                            |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra Kanada         | Begränsad kapacitet    |   Inga kommentarer.                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | USA, västra centrala     | Begränsad kapacitet    |   Inga kommentarer.                           |
+| APAC            | Östra Australien      | Allmänt tillgängligt |   Inga kommentarer.                           |
+| APAC            | Sydostasien      | Begränsad kapacitet | Inga distributioner tillåtna.    |
+| APAC            | Östra Japan          | Allmänt tillgängligt |  Inga kommentarer.                            |
+| APAC            | Västra Japan          | Allmänt tillgängligt |   Inga kommentarer.                           |
+| APAC            | Sydöstra Australien | Allmänt tillgängligt |   Inga kommentarer.                           |
+| APAC            | Östasien           | Begränsad kapacitet    |   Inga kommentarer.                           |
+| APAC            | Indien, syd         | Begränsad kapacitet | Inga distributioner tillåtna.    |
+| APAC            | Indien, centrala       | Begränsad kapacitet    | Kräver godkännandeprocess. |
+| EMEA            | Västeuropa         | Begränsad kapacitet    | Inte tillgänglig(t) i LCS just nu. |
+| EMEA            | Nordeuropa        | Begränsad kapacitet    | Inte tillgänglig(t) i LCS just nu. |
+| EMEA            | Storbritannien, södra            | Allmänt tillgängligt |    Inga kommentarer.                          |
+| EMEA            | Storbritannien, västra             | Allmänt tillgängligt |    Inga kommentarer.                          |
+| Schweiz     | Schweiz, norra   | Begränsad kapacitet    | Kräver godkännandeprocess. |
+| UAE             | Förenade Arabemiraten, norra           | Begränsad kapacitet    | Kräver godkännandeprocess. |
 
 Distributionskapaciteten i regioner med begränsad kapacitet är ytterst begränsad. Begäran om distribution utvärderas från fall till fall. Om du har ett tvingande affärsbehov av distribution i regioner med begränsad kapacitet kan du göra en supportbegäran och lägga till den i väntelistan. Kapacitetsbegränsade områden för närvarande tillåter för närvarande inte distribution av Commerce Scale Unit. 
 
@@ -96,7 +96,7 @@ När Commerce Scale Unit har distribuerats måste du se till att dina kanaler ä
 
 Konfigurera kanalerna så att de använder databasen Commerce Scale Unit genom att följa dessa steg.
 
-1. I Commerce-administration, gå till **Retail och Commerce \> Administrationsinställning \> Commerce-schemaläggare \> Kanaldatabas**.
+1. I Commerce headquarters, gå till **Retail och Commerce \> Administrationsinställning \> Commerce-schemaläggare \> Kanaldatabas**.
 1. Välj en kanaldatabas i den vänstra rutan.
 1. På snabbfliken **Butikskanal**, välj **Lägg till** och välj sedan din återförsäljarkanal i listrutan.
 1. Välj **Lägg till** och välj sedan din onlinekanal i listrutan. 
@@ -161,10 +161,10 @@ Migreringsprocessen är genomskinlig för kanalerna. När initieringen av skalni
 
 Du måste utföra följande ytterligare steg innan du initierar Commerce Scale Unit.
 
-- **Stäng alla kassaskift** - Efter migreringen kan kassaanvändare inte stänga några skift som var aktiva under migreringsprocessen.
-- **Bekräfta att alla P-jobb har slutförts framgångsrikt** - Det rekommenderas att P-jobb för att synkronisera väntande transaktioner har slutförts innan CSU initieras.
-- **Logga ut från alla kassaenheter** - Kassaåtgärder stöds inte under migrering.
-- **Återkalla och annullera alla uppskjutna transaktioner i kassan** - Uppskjutna transaktioner sparas inte som en del av initieringen.
+- **Stäng alla kassaskift** – Efter migreringen kan kassaanvändare inte stänga några skift som var aktiva under migreringsprocessen.
+- **Bekräfta att alla P-jobb har slutförts framgångsrikt** – Det rekommenderas att P-jobb för att synkronisera väntande transaktioner har slutförts innan CSU initieras.
+- **Logga ut från alla kassaenheter** – Kassaåtgärder stöds inte under migrering.
+- **Återkalla och annullera alla uppskjutna transaktioner i kassan** – Uppskjutna transaktioner sparas inte som en del av initieringen.
 
 > [!IMPORTANT]
 > Som en del av initialiseringen av Commerce Scale Unit går tidigare uppskjutna transaktioner förlorade och kan inte återkallas. 
@@ -180,7 +180,7 @@ Följande sker under initieringsperioden:
 Så här sker det som sker efter att initieringen är klar:
 
 - Enhetens aktiveringsläge för alla aktiverade kassaenheter bevaras, vilket innebär att enheterna inte behöver återaktiveras.
-- Fristående maskinvaruinstanser kommer att fortsätta att fungera.
+- Fristående maskinvaruinstanser kommer att fortsätta fungera.
 - Rapporterna på kassakanalen återställs och visar inga data från före initieringen.
 - Visa journaloperationen kommer också att återställas och inga data visas före initieringen.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853360"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070647"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Planera kontoplanen
 
@@ -43,7 +43,7 @@ Här är några av faktorerna du måste ta hänsyn till när du lägger upp kont
 Du skapar kontoplanen på sidan **Kontoplan**. Du kan skapa huvudkonton från sidan **Kontoplan** eller **Huvudkonton**. I dina huvudkonton ska inte användas specialtecken som används som kontoplanavgränsare. Annars kan det uppstå instabilitet eller du kanske alltid måste använda sökningar eller dialogrutan när du anger kombinationer av konton och dimensioner. Mer information finns i [Skapa ett huvudkonto](tasks/create-main-account.md).
 
 > [!NOTE]
-> I Dynamics 365 for Finance and Operations version 8.0 (april 2018), kan du ändra kontoplansavgränsare från sidan **Allmänna redovisningsparametrar**.
+> I Dynamics 365 Finance version 8.0 (april 2018) kan du ändra kontoplansavgränsaren från sidan **Parametrar för allmän redovisning**.
 
 Det är en bra idé att länka huvudkontona till huvudkontokategorier, så att du kan använda ekonomiska standardrapporterna utan att behöva göra några ändringar. Därför kan du snabbt och enkelt designa och underhålla rapporter.
 
@@ -60,3 +60,4 @@ Mer information finns i följande avsnitt:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

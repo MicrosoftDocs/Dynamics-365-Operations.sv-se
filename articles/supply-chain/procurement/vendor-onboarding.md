@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8143280e85a670cf9ba672734e07c3d306f63df1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b3660e1c7a0e236456d1a16c628fd5d538f045f
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862610"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111378"
 ---
 # <a name="onboard-vendors"></a>Integrera leverantörer
 
@@ -31,11 +31,11 @@ Nya leverantörer kan integreras och registreras som leverantörer i Microsoft D
 Processen består av följande steg, där olika roller utför åtgärder i systemet:
 
 1. **Datahantering OData** – Importera enhet – Den första begäran är den potentiella leverantörens registreringsbegäran. Denna begäran kommer vanligtvis från en källa som exempelvis webbplats som kunden agerar värd för och som tillåter anonym åtkomst. Leverantörer kan registrera sig genom att tillhandahålla grundläggande information, till exempel leverantörens namn, berättigande, organisationsnummer samt kontaktpersonens namn och e-postadress. Begäran importeras via gränssnittet för datahantering.
-2. **Listsida för registreringsbegäran för potentiell leverantör** - Baserat på den information som tillhandahålls i registreringsbegäran för potentiell leverantör beslutar en inköpsperson huruvida leverantören ska integreras. Inköpspersonen granskar den inkommande begäran på listsidan **Registreringsbegäran för potentiell leverantör**.
-3. **Arbetsflöde för användarreserveringar** - När en inköpare har bekräftat informationen i en inkommande begäran och har beslutat att fortsätta med integreringsprocessen, reserverar arbetsflödet för användare den nya användaren och skickar en inbjudan via e-post att godkänna kontaktpersonen som en autentiserad användare av Microsoft Dynamics 365.
-4. **Registreringsguide för leverantörer** - Leverantörens kontaktperson loggar in på med hjälp av det nya användarkontot. De slutför registreringsguiden för leverantörer i syfte att tillhandahålla information som exempelvis adresser, företagsinformation, inköpskategorier och enkätfrågor.
-5. **Arbetsflöde för godkännande** - En leverantörsförfrågan som innehåller registreringsinformationen skapas. Denna leverantörsförfrågan skickas till ett arbetsflöde och sedan vidare för granskning och godkännande.
-6. **Skapande av en överordnad leverantör och ändring av användarroll** - När en leverantörsförfrågan har godkänts skapas en leverantörspost. Användarkontot för leverantörens kontaktperson får antingen behörighet för leverantörssamarbete, eller också inaktiveras det.
+2. **Listsida för registreringsbegäran för potentiell leverantör** – Baserat på den information som tillhandahålls i registreringsbegäran för potentiell leverantör beslutar en inköpsperson huruvida leverantören ska integreras. Inköpspersonen granskar den inkommande begäran på listsidan **Registreringsbegäran för potentiell leverantör**.
+3. **Arbetsflöde för användarreserveringar** – När en inköpare har bekräftat informationen i en inkommande begäran och har beslutat att fortsätta med integreringsprocessen, reserverar arbetsflödet för användare den nya användaren och skickar en inbjudan via e-post att godkänna kontaktpersonen som en autentiserad användare av Microsoft Dynamics 365.
+4. **Registreringsguide för leverantörer** – Leverantörens kontaktperson loggar in på med hjälp av det nya användarkontot. De slutför registreringsguiden för leverantörer i syfte att tillhandahålla information som exempelvis adresser, företagsinformation, inköpskategorier och enkätfrågor.
+5. **Arbetsflöde för godkännande** – En leverantörsförfrågan som innehåller registreringsinformationen skapas. Denna leverantörsförfrågan skickas till ett arbetsflöde och sedan vidare för granskning och godkännande.
+6. **Skapande av en överordnad leverantör och ändring av användarroll** – När en leverantörsförfrågan har godkänts skapas en leverantörspost. Användarkontot för leverantörens kontaktperson får antingen behörighet för leverantörssamarbete, eller också inaktiveras det.
 
 Följande tabell anger de steg och roller som ingår i processen.
 
@@ -46,7 +46,7 @@ Följande tabell anger de steg och roller som ingår i processen.
 | Administratör            | | | Skapa en användare i Supply Chain Management och Microsoft Azure. | | | |
 | Leverantörens kontaktperson    | | | Skicka e-post till kontaktpersonen. | Registrera leverantörsinformation. | | |
 
-Titta på den här korta YouTube om [Hur du integrerar en ny leverantör i Ekonomi och drift](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+Titta på den här korta YouTube-videon om [Hur du registrerar en ny leverantör i Ekonomi och drift](https://www.youtube.com/watch?v=0KUc3AGaTKk) om du vill ha en snabb demonstration av registreringsprocessen för leverantörer.
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importera begäran om registrering för potentiell leverantör
 

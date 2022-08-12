@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849486"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124541"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.23 (januari 2022)
 
@@ -83,7 +83,7 @@ Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. D
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.23 av Ekonomi och drift-appar (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.23 av appar för ekonomi och drift (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 
@@ -107,3 +107,4 @@ Innan någon funktion tas bort från produkten kommer meddelandet om inaktualite
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

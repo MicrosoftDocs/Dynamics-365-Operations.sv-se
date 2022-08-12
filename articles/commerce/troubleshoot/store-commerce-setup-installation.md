@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 92d4a9d78485b681b4e802f695d54f44ecd7c5de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8af2c476ced05fc159a53131f8b51ad914a6c7c3
+ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870476"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "9168958"
 ---
 # <a name="troubleshoot-store-commerce-setup-and-installation-issues"></a>Felsöka problem vid konfiguration och installation av Store Commerce
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 I den här artikeln förklaras hur du felsöker konfigurations- och installationsproblem i programmet Microsoft Dynamics 365 Commerce Store Commerce.
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f6f3f2db6efcc4d4d6ae3d278751a230fca9a64
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899336"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068609"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Exempel på scenarier med rullande inventering
 
@@ -127,7 +127,7 @@ Följ dessa steg för att bekräfta att alla de demodata som krävs för scenari
 1. I listrutan välj lagerställe *61*. Om det inte finns någon befintlig post med det här namnet skapar du den.
 1. PÅ snabbfliken **Lagerställe**, ange följande värden:
 
-    - **Använd Warehouse managementsprocessen:** *Ja* (Detta värde aktiverar lagerstället för Warehouse managementsprocesser.)
+    - **Använda lagerstyrningsprocessen:** *Ja* (Detta värde aktiverar lagerstället för lagerstyrningsprocesser (WMS).)
     - **Tillåt flytt av ID-nummer under rullande inventering:** *Ja* (Detta värde gör det möjligt för arbetstagare att flytta ID-nummer under rullande inventering.)
 
 ## <a name="scenario-1-guided-cycle-counting"></a>Scenario 1: Guidad rullande inventering
@@ -292,7 +292,7 @@ Ett sätt att skapa arbete för rullande inventering är att använda tröskelv�
 
 Det finns till exempel 60 artiklar på en plats som har en tröskel för rullande inventering på 40. Under en försäljningsordertransaktion plockas 25 artiklar från platsen och placeras på en mellanlagringsplats. Eftersom det nya artikelantalet är 35, d.v.s. mindre än tröskelkvantiteten, skapas arbete för rullande inventering automatiskt för platsen.
 
-Gör på följande sätt när du vill konfigurera tröskelvärden för rullande inventering.
+Följ dessa steg när du vill konfigurera tröskelvärden för rullande inventering.
 
 1. Gå till **Warehouse management \> Inställningar \> Rullande inventering \> Trösklar för rullande inventering**.
 1. I åtgärdsfönstret väljer du **Ny** för att skapa en tröskel och anger följande värden:
@@ -319,7 +319,7 @@ Rullande inventering skapas nu för artikel *L0101* på valfri plats om lagerhå
 
 Med hjälp av planer för rullande inventering kan du automatisera skapandet av rullande inventeringsarbete. Du kan konfigurera varje plan för för rullande inventering med specifika artikel- och platsfrågor. När batchjobbet körs skapas rullande inventeringsarbete för alla platser som matchar artikel- och platskriterierna (upp till det maximala antalet inventeringar som har angetts för planen). När rullande inventeringsarbete skapas innehåller raden för rullande inventering information om vilken plats som ska räknas. Den lagerbehållning som är kopplad till den platsen är inte spärrad. Det är därför tillgängligt för reservationer och utgående bearbetningar, även om det finns öppna inventeringsarbete.
 
-Gör på följande sätt när du vill konfigurera plan för rullande inventering.
+Följ dessa steg när du vill konfigurera plan för rullande inventering.
 
 1. Gå till **Warehouse management \> Inställningar \> Rullande inventering \> Planer för rullande inventering**.
 1. I åtgärdsfönstret, välj **Ny** om du vill lägga till en rad i rutnätet och ange följande värden:

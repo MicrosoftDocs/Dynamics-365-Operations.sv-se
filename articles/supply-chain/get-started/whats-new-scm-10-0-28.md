@@ -1,5 +1,5 @@
 ---
-title: Förhandsversion av Dynamics 365 Supply Chain Management 10.0.28 (augusti 2022)
+title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.28 augusti 2022
 description: Denna artikel beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.28.
 author: kamaybac
 ms.date: 05/27/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902065"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186532"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.28 (augusti 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.28 augusti 2022
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management, förhandsversion 10.0.28. Den här versionen har ett versionsnummer för 10.0.1264 på följande schema:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.28. Den här versionen har ett versionsnummer för 10.0.1264 på följande schema:
 
 - **Förhandsversion:** maj 2022
 - **Allmän tillgänglighet för version (självuppdatering):** juli 2022
@@ -35,7 +34,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 | Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
 | Lager och logistik | [Landade kostnadsintegreringsenheter för tredjeparts speditörer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Landade kostnadsenheter – översikt](../landed-cost/landed-cost-entities-overview.md) | Aktiverad som standard |
-| Planering | [Efterfrågebaserad materialbehovsplanering (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Kommer snart | Funktionshantering:<br>*(Förhandsversion) DDMRP för Planeringsoptimering* |
+| Planering | [Efterfrågebaserad materialbehovsplanering (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Planeringsöversikt för efterfrågebaserade materialbehov](../master-planning/planning-optimization/ddmrp-overview.md) | Funktionshantering:<br>*(Förhandsversion) DDMRP för Planeringsoptimering* |
 | Planering | [Stöd för Planeringsoptimering för CTP ("capable to promise")](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Kommer snart | Funktionshantering:<br>*(Förhandsversion) CTP för Planeringsoptimering* |
 | Planering | [Planering Optimeringsstöd för hållbarhetstid](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Kommer snart | Aktiverad som standard |
 
@@ -66,7 +65,7 @@ Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. D
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.28 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.28 av appar för ekonomi och drift (juni 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
@@ -92,3 +91,4 @@ Innan någon funktion tas bort från produkten kommer meddelandet om inaktualite
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

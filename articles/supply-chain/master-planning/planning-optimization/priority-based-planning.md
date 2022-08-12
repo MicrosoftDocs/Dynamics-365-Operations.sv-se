@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873823"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186496"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbaserad planering
 
 [!include [banner](../../includes/banner.md)]
 
-I denna artikel beskrivs funktionen för prioritetsbaserad planering i Microsoft Dynamics 365 Supply Chain Management. Funktionen ger stöd för efterfrågestyrd planering, som är ett steg i DDMRP (Demand Driven Material Requirements Planning). Med prioriterad planering kan Planeringsoptimering generera planerade order som baseras på planeringsprioritet istället för behovsdatum.
+I denna artikel beskrivs funktionen för prioritetsbaserad planering i Microsoft Dynamics 365 Supply Chain Management. Funktionen ger stöd för efterfrågestyrd planering, som är ett steg i DDMRP [(Demand Driven Material Requirements Planning)](ddmrp-overview.md). Med prioriterad planering kan Planeringsoptimering generera planerade order som baseras på planeringsprioritet istället för behovsdatum.
 
 Med prioriterad planering kan du prioritera lagerpåfyllnadsorder för att säkerställa att brådskande efterfrågan prioriteras över mindre viktig efterfrågan. En lagerpåfyllnadsorder prioriteras till exempel över en standardpåfyllnadsorder. Systemet kan automatiskt dela större order i separata mindre order där orderrader grupperas efter prioritet. Därefter kan alla order med hög prioritet bearbetas först.
 
@@ -171,7 +171,7 @@ Planeringsprioriteten visas och anges i fältet **Planeringsprioritet**. Fältet
 
 | Sida | Fältplats | Värdekälla |
 |---|---|---|
-| Rader i efterfrågeprognos | <p>Fliken **Artikel**</p><p>(Markera en rad i det övre avsnittet och välj sedan fliken **Artikel**.)</p> | Standardvärde eller värde som ställs in manuellt |
+| Rader i efterfrågeprognos | <p>Fliken **Artikel**</p><p>(Markera en rad i det övre avsnittet och välj sedan panelen **Artikel**.)</p> | Standardvärde eller värde som ställs in manuellt |
 | Försäljningsorderinformation | <p>Fliken **Leverans** på snabbfliken **Raddetaljer**</p><p>(Välj en rad på snabbfliken **Försäljningsorderrader** innan du på snabbfliken **Raddetaljer** väljer fliken **Leverans**.)</p> | Standardvärde, koncerninternt värde, eller värde som ställs in manuellt |
 | Inköpsorderdetaljer | <p>Fliken **Leverans** på snabbfliken **Raddetaljer**</p><p>(Välj en rad på snabbfliken **Försäljningsorderrader** innan du på snabbfliken **Raddetaljer** väljer fliken **Leverans**.)</p> | Värde som ställs in under bekräftelse från planerade order, värde från koncernintern eller värde som ställs in manuellt |
 | Information om överföringsorder | <p>Fliken **Leverans** på snabbfliken **Raddetaljer**</p><p>(Välj en rad på snabbfliken **Överföringsorderrader** innan du på snabbfliken **Raddetaljer** väljer fliken **Leverans**.)</p> | Värde som ställs in under bekräftelse från planerade order eller värde som ställs in manuellt |

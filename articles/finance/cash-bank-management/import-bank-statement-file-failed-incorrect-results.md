@@ -1,7 +1,7 @@
 ---
 title: Felsökning av fel på bankutdragsfilen
 description: Artikeln förklarar hur du åtgärdar problem orsakade av små skillnader i bankutdragsfilen.
-author: panolte
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,22 @@ ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 44658ea48b9f7dae76c34c5f3d8828c9e8c4ac32
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711185"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151773"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Felsökning av fel på bankutdragsfilen
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Den här funktionen kommer att avaktiveras i september 2022 – nya användare bör använda elektronisk rapportering.
 
 Det är viktigt att bankutdragsfilen från banken matchar den layout som Microsoft Dynamics 365 Finance stöder. På grund av de strikta standarder som gäller för bankutdrag kommer de flesta integreringar att fungera korrekt. Ibland kan emellertid utdragsfilen inte importeras, eller också har den felaktiga resultat. Vanligtvis orsakas dessa problem av små skillnader i bankutdragsfilen. Denna artikel förklarar hur du korrigerar dessa skillnader och löser problemen.
 
@@ -39,7 +42,7 @@ Gå till jobbhistoriken för datahantering och dess utförandedetaljer för att 
 Jämför definitionen av bankfilens layout med Finance importdefinitionen, och notera eventuella skillnader i fält och element. Jämför bankutdragsfilen med relaterad Finance-exempelfil. Skillnader i ISO20022-filerna bör vara lätta att se.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Tidszonsskillnader i importerade bankutdrag
-Datum- och tidsvärden i importfilen kan skilja sig från datum- och tidsvärden som visas i Ekonomi och drift. Du kan förhindra den här avvikelsen genom att ange en tidszonsskillnad på sidan **konfigurera datakällor**. För mer information om hur du anger en inställning av tidszonen, se [Ställ in importprocess för avancerad bankavstämning](set-up-advanced-bank-reconciliation-import-process.md).
+Datum- och tidsvärden i importfilen kan skilja sig åt från datum- och tidsvärden som visas i Ekonomi och drift. Du kan förhindra den här avvikelsen genom att ange en tidszonsskillnad på sidan **konfigurera datakällor**. För mer information om hur du anger en inställning av tidszonen, se [Ställ in importprocess för avancerad bankavstämning](set-up-advanced-bank-reconciliation-import-process.md).
 
 ## <a name="transformations"></a>Transformeringar
 Normalt måste ändringen utföras i en av de tre transformeringarna. Varje transformering skrivs för en viss standard.
@@ -109,3 +112,4 @@ Följande tabell anger exempel på tekniska layoutdefinitioner för importfiler 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -1,5 +1,5 @@
 ---
-title: Blandad planering - Kombinera diskret, process- och lean-försörjning
+title: Blandad planering – Kombinera diskret, process- och lean-försörjning
 description: Denna artikel innehåller information om läget för blandad planering.
 author: johanhoffmann
 ms.date: 11/03/2017
@@ -16,14 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 186dcdca9d6db5ca16d84f084c66700ddfe8bb5d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 335bdc9690b3111f4a04adc7e82d62de36ff4caf
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857443"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066001"
 ---
-# <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandad planering - Kombinera diskret, process- och lean-försörjning
+# <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandad planering – Kombinera diskret, process- och lean-försörjning
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,7 +33,7 @@ Du kan välja din övergripande strategi för att leverera en produkt, oavsett p
 
 Du kan till exempel ha kanban i församlingen, där material köps för montering av produktionsorder, kanban, överföringar, batch beställningar, eller någon kombination som är lämpliga för din supply chain, men du kan fortfarande ha full överblick över förbrukningsmaterial. Denna förmåga leder till optimerad supply chain processer och förbättrad synlighet in i leveranskedjan.  
 
-Granulariteten av utbudspolicy som används i huvudplanering beror på lagring dimensioner som är aktiverade som täckning måtten. Om du vill aktivera huvudplanering för återfyllning och utbudet av olika typer av platser (t.ex. genom att separera fabriksgolvet för olika produktionsenheter, eller genom att separera olika typer av material och färdiga varor lagerlokaler), rekommenderar vi att du aktiverar ort och lager som täckning måtten. Alternativt kan lagret kan uteslutas som en täckning dimension. I så fall, när du använder avancerad lagerhantering, alla rörelser inuti ett lager styrs av lagerarbetet, medan alla rörelser över lager kan styras genom tillbakadragande kanban.
+Granulariteten av utbudspolicy som används i huvudplanering beror på lagring dimensioner som är aktiverade som täckning måtten. Om du vill aktivera huvudplanering för återfyllning och utbudet av olika typer av platser (t.ex. genom att separera fabriksgolvet för olika produktionsenheter, eller genom att separera olika typer av material och färdiga varor lagerlokaler), rekommenderar vi att du aktiverar ort och lager som täckning måtten. Alternativt kan lagret kan uteslutas som en täckning dimension. När du använder avancerad lagerstyrning (WMS) kommer därför alla rörelser inuti ett lager att styras av lagerarbetet, medan alla rörelser mellan lager kan styras genom uttagskanban.
 
 ## <a name="supply-policies"></a>Utbudspolicyn
 Blandad planering styr hur produkten levereras samt (baserat på tillgång) hur härledda krav (förbrukning av artiklar från en strukturlista \[BOM\]) utfärdas. Baserat på vilken typ av order automatiskt källor material som matchar kraven.  

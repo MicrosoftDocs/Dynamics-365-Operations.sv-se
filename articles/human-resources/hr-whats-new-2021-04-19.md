@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fffe9c042c71dc220179bb6d1ba7fd59d5e53cc0
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846312"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069546"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Vad är nytt eller har ändrats i Dynamics 365 Human Resources (19 april 2021)
 
@@ -41,7 +41,7 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 
 | Funktion | Utgivningsplan | Dokumentation |
 | --- | --- | --- |
-| Plattformsuppdatering 10.0.17 (41) | -- | [Plattformsuppdateringar för version 10.0.17 av Ekonomi och Drift-appar (april 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Plattformsuppdatering 10.0.17 (41) | -- | [Plattformsuppdateringar för version 10.0.17 av appar för Ekonomi och Drift (april 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Stöd för anpassade fält i formulär för förmånshantering | [Stöd för anpassade fält i förmånshantering](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Hantering av förmåner – översikt](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
@@ -55,7 +55,7 @@ Den här versionen innehåller följande felkorrigeringar.
 | --- | --- | --- |
 | 552164 | **Sparad vy** i **Självbetjäning för medarbetare > Öppna kurser** fungerar inte för kurser som innehåller en agenda | Om en sparad vy används på öppna kurser (ESS) och en av kurserna har en kopplad agenda, visar vyn inte längre flera rader för den kursen. |
 | 560614 | **Förmåner > Alternativ för livshändelser** visar avvikelser i verktygstipsdokumentationen och kodbeteendet. | Uppdaterade knappbeskrivningar i **Alternativ för livshändelse** för att visa korrekt beteende. |
-| 560616 | **Förmåner > Alternativ för livshändelser** kan redigeras i förmånsplanen för medarbetare, men ändringarna påverkas inte. | Uppdaterat beteende för alternativ för livshändelse växlar till aktivera eller inaktivera - baserat på beroende alternativ - per verktygstipsdokumentation. |
+| 560616 | **Förmåner > Alternativ för livshändelser** kan redigeras i förmånsplanen för medarbetare, men ändringarna påverkas inte. | Uppdaterat beteende för alternativ för livshändelse växlar till aktivera eller inaktivera – baserat på beroende alternativ – per verktygstipsdokumentation. |
 | 565054 | Det gick inte att visa listinnehåll för **Medarbetare utan anställning** när **Avancerad åtkomst** är aktiverat. | Denna version löser problemet med att endast systemadministratörer kan visa innehållet i listan **Medarbetare utan anställning** när **Avancerad åtkomst** är aktiverat. Eftersom denna korrigering är en säkerhetsändring måste du välja den i funktionshanteringen. När funktionen väl är aktiverad kommer de roller som har åtkomst till formuläret att se innehållet, även om avancerad åtkomst är aktiverad. Mer information finns i [Medarbetare utan anställning](hr-personnel-workers-without-employment.md). |
 | 570586 | Tjänstledighetsvalidering misslyckas när anställningen slutar före den senaste transaktionen för medarbetaren i alla tjänstledighetsplaner. | När en anställning är slut misslyckas inte valideringen av ledighetsförfrågningar baserat på medarbetarens tjänstledighetstransaktioner.|
 | 570783 | Att aktivera och inaktivera tjänstledighet mellan företag i gemensamma parametrar för Personal ändrar det som medarbetare som är anställda i ett enskilt företag ser i tjänstledighetsansökningar. | Medarbetare som är anställda i ett enskilt företag ser inga ändringar i begäran om ledighet om parametern är aktiverad eller inaktiverad. |
@@ -77,7 +77,7 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 | Funktion | Information |
 | --- | --- |
 | Färdigheter som en chef har angett för sina medarbetare kan godkännas automatiskt av ett arbetsflöde | Kommer snart. |
-| Plattformsuppdatering 10.0.18 (42) | Plattformsuppdatering 10.0.18 planeras i och med nästa serviceversion den 17 maj 2021. Mer information finns i [Plattformsuppdateringar för version 10.0.18 av Ekonomi och Drift-appar (maj 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Plattformsuppdatering 10.0.18 (42) | Plattformsuppdatering 10.0.18 planeras i och med nästa serviceversion den 17 maj 2021. Mer information finns i [Plattformsuppdateringar för version 10.0.18 av program för Ekonomi och drift (maj 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Stöd för anpassade fält i behörighetsregler för förmånshantering  | [Stöd för anpassade fält för bearbetning av berättigande](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 En fullständig lista över planerade funktioner och deras schemalagda versioner finns i [Översikt över Dynamics 365 Human Resources 2021 utgivningscykel 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
@@ -90,3 +90,4 @@ En fullständig lista över planerade funktioner och deras schemalagda versioner
 [Hantera funktioner](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

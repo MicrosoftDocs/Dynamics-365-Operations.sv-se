@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771882"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108777"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planera en organisationshierarki
 
@@ -42,7 +42,7 @@ När du skapar planeringshierarkier för dimensionsuppsättningar, är det ocks�
 
 Du måste ha minst en juridisk person som representerar din verksamhet. En juridisk person kan ingå juridiska avtal och måste förbereda bokslut som visar dess resultat.
 
-Juridiska personer kan användas för transaktionsaffärer eller för konsolidering. Detta innebär att en juridisk person i Finance and Operations inte nödvändigtvis representerar en verklig entitet i verksamheten. Ett företag som medverkar i transaktioner kan till exempel äga dotterbolag som är juridiska personer. I det här scenariot krävs en juridisk person för transaktioner, och en virtuell juridisk person krävs för att konsolidera resultat och saldon från dotterbolagens juridiska personer.
+Juridiska personer kan användas för transaktionsaffärer eller för konsolidering. Detta innebär att en juridisk person i Ekonomi och drift inte nödvändigtvis representerar en verklig entitet i verksamheten. Ett företag som medverkar i transaktioner kan till exempel äga dotterbolag som är juridiska personer. I det här scenariot krävs en juridisk person för transaktioner, och en virtuell juridisk person krävs för att konsolidera resultat och saldon från dotterbolagens juridiska personer.
 
 Interna organisationer i din verksamhet, till exempel regionkontor, kan representeras som ytterligare juridiska personer, eller som driftenheter i den huvudsakliga juridiska personen. En driftenhet behöver inte vara en juridiskt definierad organisation. Driftenheter används för att kontrollera ekonomiska resurser och driftprocesser i verksamheten. Avdelningar och kostnadsställen är till exempel driftenheter.
 
@@ -171,7 +171,7 @@ I länder/regioner som stöds kan de flesta lagstadgade rapporter skapas.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Om organisationen modelleras som en driftenhet
 
-Lagstadgade rapporter måste skapas med hjälp av ett annat program. Du måste du se till att data samlas in i Finance and Operations för att stödja kraven för varje driftenhet, där de skiljer sig från kraven för huvudkontoret.
+Lagstadgade rapporter måste skapas med hjälp av ett annat program. Du måste du se till att data samlas in i appar för Ekonomi och drift i syfte att stödja kraven för respektive driftenhet, där de skiljer sig från kraven för huvudkontoret.
 
 ### <a name="currency"></a>Valuta
 
@@ -210,7 +210,7 @@ Nummerserier för alla referenser kan konfigureras per driftenhet. Vissa nummers
 Produktdefinitioner delas och de måste frisläppas till enskilda juridiska personer innan de kan inkluderas i transaktioner. Varje juridisk person har en egen uppsättning frisläppta produkter som kan inkluderas i transaktionsdokument. Om dina interna organisationer måste använda andra uppsättningar av produkter, måste du utforma organisationerna som juridiska personer.
 
 > [!NOTE]
-> Även om produktdefinitioner delas kan du ange olika försäljnings-, inköps - och lagerparametrar för artikeln på varje lagerplats i varje juridisk person där en produkt har frisläppts.
+> Även om produktdefinitioner delas kan du ange olika försäljnings-, inköps – och lagerparametrar för artikeln på varje lagerplats i varje juridisk person där en produkt har frisläppts.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Om organisationen modelleras som en driftenhet
 
@@ -233,7 +233,7 @@ Tänk på följande när du implementerar en organisationshierarki:
 - Skapa en avdelning för modellering av skärningspunkten mellan en juridisk person och en affärsenhet. Du kan sedan rulla upp data från en avdelning till en juridisk person för lagstadgad rapportering och från en avdelning till en affärsenhet för intern rapportering. Avdelningar kan fungera som resultatenheter. Om du använder avdelningar, behöver du inte använda juridiska personer och affärsenheter som dimensioner i kontostrukturen. Du kan bara använda avdelningar som en dimension. Du måste dock använda både kostnadsställen och avdelningar som dimensioner i kontostrukturen om kostnadsställen bara används som kostnadsackumulatorer och avdelningar används för intäktsredovisning.
 - Modellera flera hierarkier för driftenheter om du har komplexa krav för att rapportera vinst och förlust.
 - I en enskild juridisk person ska du inte skapa flera hierarkier för samma hierarkisyfte.
-- Skapa inte en hierarki för varje syfte. Vanligtvis kan du skapa en hierarki för flera syften. En hierarki med driftenheter kan till exempel tilldelas till alla policyrelaterade syften.
+- Skapa inte en hierarki för varje syfte. Vanligtvis kan du skapa en hierarki för flera syften. En hierarki med driftenheter kan till exempel tilldelas alla policyrelaterade syften.
 - Skapa balanserade hierarkier. I en hierarki definieras alla noder som är på samma avstånd från rotnoden som en nivå. I en balanserad hierarki kan endast en typ av driftenhet inträffa vid varje nivå, och avståndet från rotnoden till varje nivå är konsekvent. Om det finns mellanstadier mellan en avdelning och en juridisk person eller en affärsenhet, kan platshållareorganisationer krävas för att skapa en allsidig hierarki.
 - Modellera inte en separat hierarki med driftenheter om strukturen för juridiska personer också är din driftstruktur. En blandad hierarki med juridiska personer och driftenheter kan uppfylla båda syftena.
 - Innan du utformar stora omstruktureringsscenarier använder du hierarkins giltighetsdatum för att utföra en följdanalys och ett valideringstest.
@@ -242,3 +242,4 @@ Tänk på följande när du implementerar en organisationshierarki:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

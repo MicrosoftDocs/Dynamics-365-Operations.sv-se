@@ -14,18 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b9ab27b443e5ec675ea03e13aa7be4ea84bfb45
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722253"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178457"
 ---
 # <a name="update-process"></a>Uppdatera process
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gäller för:** Personal i den fristående infrastrukturen_ 
 
+> [!NOTE]
+> Från och med 2022 juli kan nya Personal-miljöer inte tilldelas för den fristående Personal-infrastrukturen, och nya Microsoft Dynamics Lifecycle Services-projekt (LCS) kan inte skapas i den. Kunder kan distribuera Personalmiljöer på infrastruktur för ekonomi och drift. Mer information finns i [tillhandahålla Personal i infrastruktur för ekonomi och drift](/hr-admin-setup-provision-fo.md).
 
+> [!IMPORTANT]
+> Uppdaterings- och snabbkorrigeringsprocessen för infrastrukturen med avseende på appar för ekonomi och drift skiljer sig från den fristående uppdaterings- och snabbkorrigeringsprocessen för Personal. Om du vill ha mer information om uppdateringsprocessen går du till [Process för att flytta till den senaste uppdateringen av Ekonomi och drift](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Mer information om snabbkorrigeringar finns i [Hämta uppdateringar från Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
 
 Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (SaaS) som tillhandahåller kontinuerliga, beröringsfria tjänstuppdateringar. Uppdateringarna innehåller både program- och plattformsändringar som ofta ger viktiga förbättringar av tjänsten, inklusive regler för uppdatering av regler.
 
@@ -37,16 +41,14 @@ Uppdateringar släpps regelbundet för alla miljöer. Personal stöds enligt [Mi
 
 Personaluppdateringar tillämpas automatiskt på alla miljöer. I personal finns två typer av utgåvor:
 
-- **Tjänstuppdateringar**: uppdateringar sker varannan vecka som innehåller felkorrigeringar och nya funktioner. Tjänstuppdateringar inkluderar även tillämpliga plattformsuppdateringar när de släpps. Mer information om plattformsversioner finns i [Nyheter och ändringar i Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Uppdateringar varannan vecka har en stegvis global introduktion över regioner. Mer information om uppdateringar varannan vecka finns i [Nyheter eller ändringar i Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Tjänstuppdateringar**: uppdateringar sker varannan vecka som innehåller felkorrigeringar och nya funktioner. Tjänsteuppdateringar inkluderar även tillämpliga plattformsuppdateringar när dessa släpps. Mer information om plattformsversioner finns i [Nyheter och ändringar i Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Uppdateringar har en stegvis global publicering över regioner. Mer information om uppdateringar finns i [Nyheter eller ändringar i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
-    Alla datacenter som stöds uppdateras varannan vecka, om inget annat anges. Regionerna USA, Australien, Europa, Storbritannien, Asien och Kanada ingår i uppdateringar varannan vecka. 
-
-- **Uppdateringar av Dataverse-lösning**: dessa uppdateringar sker var sjätte vecka, efter behov. De innehåller nya entiteter och ändringar i befintliga entiteter i Dataverse. Dessa uppdateringar frisläpps på samma områden som uppdateringar varannan vecka och de tar ungefär sex veckor att replikera genom alla datacenter. Uppdateringar av lösningen kan eventuellt justeras med tjänstuppdateringar varannan vecka.
+- **Uppdateringar av Dataverse-lösning**: dessa uppdateringar sker var sjätte vecka, efter behov. De innehåller nya entiteter och ändringar i befintliga entiteter i Dataverse. Dessa uppdateringar frisläpps i samma regioner som uppdateringarna varannan vecka och tar ungefär sex veckor att upprepa i samtliga datacenter. Uppdateringar av lösningen kan eventuellt justeras med tjänstuppdateringar varannan vecka.
 
 > [!NOTE]
 > Lösningsuppdateringar är tillgängliga på alla datacenter när de har frisläppts. Om du inte vill vänta på att uppdateringarna ska replikeras automatiskt kan du installera dessa uppdateringar manuellt på alla miljöer i datacentret.
 
-Vid behov innehåller personal även följande typer av korrigeringar:
+Vid behov innehåller Personal även följande typer av korrigeringar:
 
 - **Ändring (snabbkorrigering)**: felkorrigeringar som kan uppstå med eller utanför en tjänstuppdateringsversion varannan vecka
 
@@ -83,11 +85,11 @@ Du kan ta reda på vad som finns i arbetet för personal och vad vi har publicer
 
 Du kan validera förhandsgranskningsfunktionerna i en miljö med begränsat läge innan du gör dem i produktionsmiljön. Mer information om hur du aktiverar funktioner finns i [Översikt över funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Alla nya funktioner förblir i förhandsgranskning i minst 30 dagar, vanligtvis 30-60 dagar. Huvudfunktionerna är vanligtvis tillgängliga i oktober och april varje år efter förhandsgranskningsperioden. Så snart du ser nya funktioner på arbetsytan Funktionshantering kan du aktivera dem. Vissa funktioner kan vara aktiverade som standard.
+Alla nya funktioner förblir i förhandsgranskning i minst 30 dagar, vanligtvis 30-60 dagar. Huvudfunktionerna är vanligtvis tillgängliga i oktober och april varje år efter förhandsgranskningsperioden. Så snart du ser nya funktioner på arbetsytan **Funktionshantering** kan du aktivera dem. Vissa funktioner kan vara aktiverade som standard.
 
 I vissa situationer är en integrerad funktion som standard och kan inte inaktiveras (t.ex. arbetsytan funktionshantering).
 
-När en funktion är allmänt är tillgänglig kan den aktiveras eller inaktiveras i produktionsmiljöer. Arbetsytan funktionshantering anger när en förhandsgranskningsfunktion blir obligatorisk. Detta datum är vanligtvis den 1 oktober eller 1 april för anpassning till halvårs frisläppningsplanerna. De kan inte inaktivera obligatoriska funktioner. Du kan aktivera och inaktivera en funktion i alla miljöer tills den blir obligatorisk.
+När en funktion är allmänt är tillgänglig kan den aktiveras eller inaktiveras i produktionsmiljöer. Arbetsytan **funktionshantering** anger när en förhandsgranskningsfunktion blir obligatorisk. Detta datum är vanligtvis den 1 oktober eller 1 april för anpassning till halvårs frisläppningsplanerna. De kan inte inaktivera obligatoriska funktioner. Du kan aktivera och inaktivera en funktion i alla miljöer tills den blir obligatorisk.
 
 Vi rekommenderar starkt förhandsgranskningsfunktionerna i en miljö med begränsat läge eller en testmiljö. Det är bäst att skapa en kopia av den aktuella produktionsmiljön eller databasen i en miljö med begränsat läge så att du kan få den fullständiga upplevelsen av de nya funktionerna med dina data.
 
@@ -100,7 +102,7 @@ När du testar förhandsgranskningsfunktioner eller försöker med nya funktione
 ## <a name="see-also"></a>Se även
 
 [Utgivningsplaner för Dynamics 365 och Power Platform](/dynamics365/release-plans)</br>
-[Nyheter och ändringar i Dynamics 365 Personal](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Dynamics 365 Human resources](hr-admin-whats-new.md)</br>
 [Livscykelpolicy för programmet](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
 
 

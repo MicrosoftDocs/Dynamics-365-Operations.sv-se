@@ -1,6 +1,6 @@
 ---
 title: Förbättra spårningsresultat av genererade ER-rapporter för att jämföra med originalvärden
-description: Det här ämnet beskriver förbättringar av ER-baslinjefunktionen i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019).
+description: Denna artikel beskriver förbättringar av ER-baslinjefunktionen i Microsoft Dynamics 365 Finance version 10.0.3 (juni 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb2e76492ac9f6feb71811d0fbfd25919b59ac4d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847413"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109155"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Förbättra spårningsresultat av genererade ER-rapporter för att jämföra med originalvärden
 
 [!include[banner](../includes/banner.md)]
 
-I den här artikeln beskrivs den första uppsättningen med förbättringar av funktionen för baslinje i det elektroniska rapportramverket (ER). Dessa förbättringar finns i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019) och senare.
+I den här artikeln beskrivs den första uppsättningen med förbättringar av funktionen för baslinje i det elektroniska rapportramverket (ER). Dessa förbättringar finns i Microsoft Dynamics 365 Finance version 10.0.3 (juni 2019) och senare.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Automatisera inställningen av baslinjeregler
 
@@ -208,3 +208,4 @@ Om du vill importera baslinjeinställningar från en XML-fil som är lagrad på 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

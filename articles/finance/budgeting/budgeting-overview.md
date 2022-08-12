@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6a00bdae34e2aebcc4a015626eb044d90cd2887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: db15c52ddde08bcc9d390c51efc676c20aac0a7e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864409"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067446"
 ---
 # <a name="budgeting-home-page"></a>Startsidan Budgetering
 
@@ -60,7 +60,7 @@ Det finns ytterligare funktioner för planering och budgetering som är integrer
 Information om att hämta planeringsdata från andra moduler till budgetplaner finns i [Integrering av budgetplanering med andra moduler](budget-planning-integration-other-modules.md).
 
 ## <a name="user-interface-and-reporting-capabilities"></a>Användargränssnitt och rapporteringsfunktioner
-Användarna kan skapa budgetplaner antingen direkt på klienten (genom att använda en konfigurerbar sida i budgetplansdokumentet) eller i Excel. Excel innehåller flera ytterligare funktioner. Det går till exempel att använda externa uppgifter som källa till en budgetplan, göra egna beräkningar och använda Microsoft pivottabeller och diagram. De flesta variablerna i budgetplaneringsprocessen går att konfigurera. 
+Användarna kan skapa budgetplaner antingen direkt på klienten (genom att använda en konfigurerbar sida i budgetplansdokumentet) eller i Excel. Excel innehåller flera ytterligare funktioner. Det går till exempel att använda externa uppgifter som källa till en budgetplan, göra egna beräkningar och använda Microsoft fästpunktstabeller och diagram. De flesta variablerna i budgetplaneringsprocessen går att konfigurera. 
 
 Det går till exempel att definiera vem som gör budgeten, vad som budgeteras och hur processen går till. Även om du använder Excel till budgetplanering, behålls appen som en enda sanningskälla som förhindrar budgetkontrollproblem. Periodiska processer kan användas för att införa startuppgifter för budgeteringen i budgetplanen. För rapporteringsändamål innehåller appen en uppsättning standardförfrågningssidor som gör det möjligt att visa och analysera budgeteringsdata. Budgetplandata går att öppna i [Ekonomisk rapportering](../general-ledger/financial-reporting-getting-started.md) och enskilda budgetplansscenarier går att visa som kolumner i den ekonomiska rapporten.
 
@@ -72,3 +72,4 @@ Det går till exempel att definiera vem som gör budgeten, vad som budgeteras oc
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

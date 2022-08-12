@@ -1,6 +1,6 @@
 ---
 title: Ställ in mobil arbetsyta för Tillgångshantering
-description: I denna artikel beskrivs hur du konfigurerar Microsoft Dynamics 365 Supply Chain Management  och mobilappen Ekonomi och drift (Dynamics 365) för att köra den mobila arbetsytan Tillgångshantering som arbetstagare kan använda för att utföra uppgifter för hantering av tillgångar.
+description: I denna artikel beskrivs hur du konfigurerar Microsoft Dynamics 365 Supply Chain Management och mobilappen för ekonomi och drift (Dynamics 365) för att köra den mobila arbetsytan Tillgångshantering som arbetstagare kan använda för att utföra uppgifter inom tillgångshantering.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef4e6bf2ae59adb05c7d4aacc3f5675a5adcafc9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870854"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070066"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Ställ in mobil arbetsyta för Tillgångshantering
 
 [!include [banner](../includes/banner.md)]
 
-I denna artikel beskrivs hur du konfigurerar Microsoft Dynamics 365 Supply Chain Management och mobilappen Ekonomi och drift (Dynamics 365) för att köra den mobila arbetsytan **Tillgångshantering** som arbetstagare kan använda för att utföra uppgifter för hantering av tillgångar.
+I denna artikel beskrivs hur du konfigurerar Microsoft Dynamics 365 Supply Chain Management och mobilappen Ekonomi och drift (Dynamics 365) för att köra den mobila arbetsytan **Tillgångshantering** som arbetstagare kan använda för att utföra uppgifter inom tillgångshantering.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Ställ in användare av underhållsarbetare i Supply Chain Management
 
@@ -41,23 +41,23 @@ För varje användare som kräver åtkomst till den mobila arbetsytan för **Han
 
 ## <a name="publish-the-asset-management-mobile-workspace"></a>Publicera mobil arbetsyta för Tillgångshantering
 
-Om du vill göra Tillgångshanteringsfunktioner tillgängliga i Ekonomi och drift (Dynamics 365) mobilappen måste du publicera mobila arbetsytan **Tillgångshantering**.
+Om du vill göra funktioner för tillgångshantering tillgängliga i mobilappen för ekonomi och drift (Dynamics 365) måste du publicera den mobila arbetsytan **Tillgångshantering**.
 
 1. I Supply Chain Management väljer du knappen **Inställningar** (kugghjulssymbolen i det övre högra hörnet) och väljer sedan **Mobilapp** på menyn.
-1. I dialogrutan **hantera mobilapp** hitta panelen **Hantera tillgång**. Om den innehåller texten "I metadata - inte publicerats" har arbetsytan ännu inte publicerats. Om den innehåller texten "I metadata - publicerat" har arbetsytan redan publicerats och du kan hoppa över resten av den här proceduren.
+1. I dialogrutan **hantera mobilapp** hitta panelen **Hantera tillgång**. Om den innehåller texten "I metadata – inte publicerats" har arbetsytan ännu inte publicerats. Om den innehåller texten "I metadata – publicerat" har arbetsytan redan publicerats och du kan hoppa över resten av den här proceduren.
 
     ![Dialogrutan Hantera mobilapp.](media/mobile-workspaces.png "Dialogrutan Hantera mobilapp")
 
-1. Välj panelen för **Tillgångshantering** och välj sedan **Publicera** i verktygsfältet. Efter några sekunder bör du få ett meddelande som anger att arbetsytan har publicerats utan resultat. Dessutom ska texten på panelen ändras till "I metadata - publicerat".
+1. Välj panelen för **Tillgångshantering** och välj sedan **Publicera** i verktygsfältet. Efter några sekunder bör du få ett meddelande som anger att arbetsytan har publicerats utan resultat. Dessutom ska texten på panelen ändras till "I metadata – publicerat".
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Installera och konfigurera Ekonomi och drift (Dynamics 365) mobilappen
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Installera och konfigurera mobilappen för ekonomi och drift (Dynamics 365)
 
-1. Gå till någon av följande appbutiker för att installera **Microsoft Ekonomi och drift (Dynamics 365)** appen på din mobila enhet:
+1. Gå till någon av följande appbutiker för att installera appen **Microsoft Ekonomi och drift (Dynamics 365)** på din mobila enhet:
 
     - [För Google Android enheter](https://go.microsoft.com/fwlink/?linkid=850662)
     - [För Apple iOS-enheter](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Öppna appen Ekonomi och drift (Dynamics 365). Inloggningssidan ska visas. I fältet **Logga in** ange Supply Chain Management URL, eller välj senaste URL i listan **senaste miljöer** och tryck **anslut**.
+1. Öppna appen för ekonomi och drift (Dynamics 365). Inloggningssidan ska visas. I fältet **Logga in** ange Supply Chain Management URL, eller välj senaste URL i listan **senaste miljöer** och tryck **anslut**.
 
     ![Inloggningssida.](media/mobile-app-sign-in.png "Inloggningssida")
 
@@ -80,7 +80,7 @@ Om du vill göra Tillgångshanteringsfunktioner tillgängliga i Ekonomi och drif
 
 Mer information om hur du arbetar med den mobila arbetsytan **Tillgångshantering** finns i [Använda den mobila arbetsytan för Tillgångshantering](asset-management-mobile-workspace.md).
 
-Mer information om Ekonomi och drift (Dynamics 365) mobilappen finns i [Startsida för mobilapp](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+Mer information om mobilappen för ekonomi och drift (Dynamics 365) finns i [Startsida för mobilapp](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d8d59def24fd138b4cf1d36e286b786e13b096e
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890418"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124041"
 ---
 # <a name="upgrade-budget-planning"></a>Uppgradera budgetplanering
 
@@ -27,10 +27,10 @@ ms.locfileid: "8890418"
 
 Det finns väsentliga skillnader i budgetplanering mellan Microsoft Dynamics AX 2012 och Dynamics 365 Finance. Vissa funktioner har inte uppgraderats och kräver därför omkonfigurering. Den här artikeln beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.  
 
-Budgetplanering i Finance innehåller många förbättringar som inte var tillgängliga i Dynamics AX 2012. Den här artikeln beskriver de ändringar som kunder som uppgraderar måste göra. Den pekar även ut de nya funktionerna som ska beaktas under uppgraderingsprocessen. På grund av omfattningen av förändringarna kommer eventuella befintliga budgetplaner inte at kunna öppnas förrän du har gjort ändringarna som beskrivs i den här artikeln. Rapporterna bör emellertid fortsätta att fungera och kräver inte ytterligare ändringar.
+Budgetplanering i Finance innehåller många förbättringar som inte var tillgängliga i Dynamics AX 2012. Den här artikeln beskriver de ändringar som kunder som uppgraderar måste göra. Den pekar även ut de nya funktionerna som ska beaktas under uppgraderingsprocessen. På grund av omfattningen av förändringarna kommer eventuella befintliga budgetplaner inte at kunna öppnas förrän du har gjort ändringarna som beskrivs i den här artikeln. Rapporterna bör emellertid fortsätta fungera och kräver inte ytterligare ändringar.
 
 ## <a name="overview-of-changes"></a>Översikt över ändringar
-Många viktiga förändringar har gjorts i budgetering för Finance and Operations. Dessa ändringar är avsedda att göra budgetplaneringen enklare att konfigurera och mer återanvändningsbar för att minska årligt underhåll och inställningar. Följande områden i AX 2012 finns inte längre i Finance:
+Många viktiga förändringar har gjorts inom Budgetering för Ekonomi och drift. Dessa ändringar är avsedda att göra budgetplaneringen enklare att konfigurera och mer återanvändningsbar för att minska årligt underhåll och inställningar. Följande områden i AX 2012 finns inte längre i Finance:
 
 -   Budgetplansmallar (budgetplaneringskonfiguration)
 -   Budgetplansmappar (budgetplaneringskonfiguration)
@@ -47,7 +47,7 @@ Kolumnerna är nya koncept som ersätter delar av Excel-mallen och även matrisf
 
 ### <a name="layouts"></a>Layouter
 
-Layouter är ett nytt koncept som ersätter Excel-mallen. Layouterna innehåller kolumner som definierar vilka budget- eller utfallsdata och perioder som ska visas. Layouter delas även mellan klienten och Excel-tillägget. Användargränssnittet när du registrerar eller granskar data i Finance and Operations-klienten är därför bättre än användarupplevelsen i AX 2012. Om du vill ange data i Finance-klienten är du inte längre begränsad till att visa och ange ett enda scenario i transaktionsvyn. I stället kan du med en jämförelsevy enkelt visa och ange belopp för flera perioder och konton samtidigt. Layouter kan också definieras så att du kan ange och visa valuta, kommentarer och andra valfria data. Layouter låter dig ange vilka redovisningsdimensioner och dimensionsbeskrivningar som ska visas. Layouter inkludera också scenariobegränsningar som definierar vilka kolumner i en mall som kan redigeras och vilka kolumner som ska vara tillgängliga i Excel. När du har definierat en layout skapas en mall för den. Den här mallen skapar i sin tur motsvarande Excel-mall. Du kan redigera Excel-mallen om du vill lägga in fler formler och formatering och överför sedan bilden igen. Layouter tilldelas sedan varje fasregel på sidan **Budgetplaneringsprocess**. Därför ersätter layouterna mallar, som tilldelats och som används på liknande sätt.
+Layouter är ett nytt koncept som ersätter Excel-mallen. Layouterna innehåller kolumner som definierar vilka budget- eller utfallsdata och perioder som ska visas. Layouter delas även mellan klienten och Excel-tillägget. Användarupplevelsen när du registrerar eller granskar data i klienten för Ekonomi och drift är därför bättre än användarupplevelsen i AX 2012. Om du vill ange data i Finance-klienten är du inte längre begränsad till att visa och ange ett enda scenario i transaktionsvyn. I stället kan du med en jämförelsevy enkelt visa och ange belopp för flera perioder och konton samtidigt. Layouter kan också definieras så att du kan ange och visa valuta, kommentarer och andra valfria data. Layouter låter dig ange vilka redovisningsdimensioner och dimensionsbeskrivningar som ska visas. Layouter inkludera också scenariobegränsningar som definierar vilka kolumner i en mall som kan redigeras och vilka kolumner som ska vara tillgängliga i Excel. När du har definierat en layout skapas en mall för den. Den här mallen skapar i sin tur motsvarande Excel-mall. Du kan redigera Excel-mallen om du vill lägga in fler formler och formatering och överför sedan bilden igen. Layouter tilldelas sedan varje fasregel på sidan **Budgetplaneringsprocess**. Därför ersätter layouterna mallar, som tilldelats och som används på liknande sätt.
 
 ### <a name="budget-planning-processes"></a>Budgetplaneringsprocesser
 
@@ -69,7 +69,7 @@ För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, 
    -   Budgetplanscenarier: verkliga, baslinje, Budgetförfrågan, budget godkänd
    -   Budgetplansrader för alla scenarier i 2017 och utfall för både 2017 och 2016
 
-   Följande kolumner skapas Finance and Operations:
+   Följande kolumner skapas Ekonomi och drift:
 
    | Kolumnnamn    | Budgetplanscenario | Kolumntidsperiod | Förskjutning för år |
    |----------------|----------------------|--------------------|-------------|
@@ -79,7 +79,7 @@ För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, 
    | Jan Scenario 4 | budget godkänd      | 1                  | 0           |
    | Jan Scenario 5 | Utfall              | 1                  | -1          |
    | Feb Scenario 1 | Utfall              | 1                  | 0           |
-   | ...            | ...                  | ...                | ...         |
+   | …             | …                   | …                 | …          |
 
    I det här exemplet skapas en kolumn som heter **Jan Scenario 1** för den senaste transaktionsdatan för budgetplan som finns där det finns transaktioner i januari. En liknande kolumn skapas för varje scenario som innehåller data. Kolumnerna skapas för alla perioder det året, kolumner skapas för tidigare år.
 2. Ändra kolumnnamn och beskrivningar och övriga detaljer, antingen manuellt på klienten eller genom att göra bulkuppdateringar via Excel-tillägget som refererar till budgetplankolumnernas dataentitet. Alla filter som har tidigare angetts för matrisfält anges nu inne i kolumnerna.

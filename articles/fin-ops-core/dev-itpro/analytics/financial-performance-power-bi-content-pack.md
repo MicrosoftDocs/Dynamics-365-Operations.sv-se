@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7b6fb9643873178f1cb93e3da15e83598af51de0
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910427"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109563"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Innehållspaket för ekonomiska resultat för PowerBI.com
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Den här PowerBI.com lösningen är föråldrad som dokumenteras i [borttagna eller inaktuella funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Denna PowerBI.com-lösning är numera inaktuell enligt beskrivet i [Borttagna eller inaktuella funktioner för Ekonomi och drift](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Den här artikeln beskriver PowerBI.com-lösning för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa lösningen.
 
@@ -74,8 +74,8 @@ Följande enheter användes till grund för PowerBI.com-lösningen för **ekonom
 
 **Enheter för aggregerade data**
 
-- **GeneralLedgerActivities** - Denna enhet sammanställer redovisningssaldon efter kontokategori.
-- **BudgetActivities** - Denna enhet sammanställer budgetsaldon efter kontokategori.
+- **GeneralLedgerActivities** – Denna enhet sammanställer redovisningssaldon efter kontokategori.
+- **BudgetActivities** – Denna enhet sammanställer budgetsaldon efter kontokategori.
 
 **Dataenheter**
 

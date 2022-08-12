@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a420c5b2a036ac63a1a179f93462d152c3941fda
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853629"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124237"
 ---
 # <a name="create-alert-rules"></a>Skapa notifieringsregler
 
@@ -75,7 +75,7 @@ På snabbfliken **Notifiera mig** i dialogrutan **Skapa notifieringsregel** kan 
 
 ## <a name="alerts-as-business-events"></a>Notifierar som affärshändelser
 
-Du kan skicka notifieringar externt med hjälp av ramverket för affärshändelse. När du skapar en notifiering ställer du in **Organisationsomfattande** till **Nej** och anger **Skicka externt** till **Ja**. När notifieringen utlöser affärshändelsen kan du utlösa ett flöde som skapats i Power Automate med hjälp av **När en affärshändelse händer** utlöses på Ekonomi och drift kopplingen eller uttryckligen skicka händelsen till en slutpunkt för affärs händelser via **Katalogen affärshändelser**.
+Du kan skicka notifieringar externt med hjälp av ramverket för affärshändelse. När du skapar en notifiering ställer du in **Organisationsomfattande** till **Nej** och anger **Skicka externt** till **Ja**. När notifieringen utlöser affärshändelsen kan du utlösa ett flöde som skapats i Power Automate med hjälp av utlösaren **När en affärshändelse inträffar** i anslutningsappen för ekonomi och drift, eller uttryckligen skicka händelsen till en slutpunkt för affärshändelser via **Katalogen Affärshändelser**.
 
 ## <a name="create-an-alert-rule"></a>Skapa en notifieringsregel.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f9e6472fa9024f19b5c35e91b3c7c36eb311bc31
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861717"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125095"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
 
@@ -118,7 +118,7 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 | Bädda in BI-rapporter (Business Intelligence) och visualiseringar i Microsoft Dynamics AX-klienten. | Inte tillgänglig | Skapa mycket intuitiva och smidiga visualiseringar. | Du får beslutsgrundande insikter som baseras på BI. |
 | Integration med Microsoft Office. | Inte tillgänglig | Nya möjligheter inkluderar appen Excel Data Connector, sidan **Arbetsboksdesigner**, Exportera API och Dokumenthantering. | Du kan skapa produktivitetslösningar för dina slutanvändare. |
 | Automatisera version, test och distribution. | Delvis tillgänglig | Distribuera utvecklartopologin med hjälp av VM för utvecklare och version. Konfigurera automatiskt versions-VM för att upptäcka, bygga moduler från Visual Studio Online (VSO) och för att köra tester. C\# och X++-modulkompilering och -referenser stöds. | Utvecklarens produktivitet ökar genom att kostnaden för och arbetet med testning och validering minskas. |
-| Anpassa med överlägg och tillägg. | Tillägg är inte tillgängliga. | Den aktuella versionen av Dynamics AX har en ny anpassningsmodell. | Du kan anpassa källkoden och metadata för modellelement som skickats av Microsoft eller externa Microsoft-partners. |
+| Anpassa med överlägg och tillägg. | Tillägg är inte tillgängliga. | Den aktuella versionen av Dynamics AX har en ny anpassningsmodell. | Du kan anpassa källkoden och metadata för modellelement som skickats av Microsoft eller externa Microsoft-partner. |
 | Bygg nya kontroller och UI-element genom att använda X++ och ett modernt webbramverk. | Anpassade kontroller förlitar sig på externa ramverk som Microsoft ActiveX och Windows Presentation Foundation (WPF). | Det är enklare att bygga kontroller i den aktuella versionen. X++-ramverket kan användas för programbeteende och affärslogik, och en HTML-/JavaScript-baserad klient stöder moderna visualiseringar. | Dina kontroller kan utformas för att se ut och uppföra sig precis som våra OOB-kontroller för Dynamics AX. |
 | Utvärdera och finjustera prestanda genom att använda nya verktyg. | PerfSDK, Data Expansion Toolkit, appen Trace Parser WEb och PerfTimer är inte tillgängliga. | PerfSDK, Data Expansion Toolkit, appen Trace Parser Web och PerfTimer är nya. | Med SDK (Software Development Kit) kan du testa och validera prestanda i alla kritiska affärsprocesser genom att köra tester med en enskild användare eller, vid behov, med flera användare. Med Data Expansion Toolkit kan du korrekt expandera alla prestandatester vars huvuddata och transaktionella data måste utökas korrekt. Med Trace Parser kan du validera ett prestandatest med en enskild användare eller en körning med flera användare. Med PerfTimer kan du se om en fråga eller specifikt metodanrop medför prestandaproblem. Därför måste du inte använda spårning och analysera allt i detalj. |
 | Exponera uppdaterad vy genom att använda OData. | Inte tillgänglig | Den aktuella versionen av Dynamics AX introducerar en offentlig OData-tjänstslutpunkt som aktiverar åtkomst till Dynamics AX-data på ett konsekvent sätt mellan många klienter. | Dina lösningar kan interagera med RESTful-tjänster, dela data på ett identifierbart sätt och stödja bred integrering med hjälp av HTTP-stackprotokollet. |
@@ -234,7 +234,7 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 </tr>
 <tr>
 <td>Skapa layouter för budgetplaner och prognoser.</td>
-<td>Dokumentet <strong>Budgetplan</strong> visas som en lista med rader som har giltighetsdatum och belopp för kombinationer av ekonomiska dimensioner. Användaren måste skapa och använda Excel-mallar för att visa budgetplandata i en pivottabell.</td>
+<td>Dokumentet <strong>Budgetplan</strong> visas som en lista med rader som har giltighetsdatum och belopp för kombinationer av ekonomiska dimensioner. Användaren måste skapa och använda Excel-mallar för att visa budgetplandata i en fästpunktstabell.</td>
 <td>Det finns ett obegränsat antal tillgängliga layouter för budgetplaner och prognoser. Du kan kombinera valda ekonomiska dimensioner, användardefinierade kolumner och andra radattribut (till exempel kommentarer, projekt och tillgångar) i layouten. Användarna kan ändra layouten för budgetplandokumentet när som helst och redigera data genom att använda vald layout. Konfigurationen av budgetplaneringen förenklas genom elimineringen av scenariebegränsningar och användningen av layouter för att definiera vilka data som kan visas och redigeras i varje fas av budgetplandokumentet.</td>
 <td>Det ger flexibilitet att skapa och redigera budgetplaner genom att använda både Excel- och Dynamics AX-klienten. Mallar för Excel-arbetsböcker kan skapas med hjälp av layoutinställningarna för budgetplanen.</td>
 </tr>
@@ -425,8 +425,8 @@ Inga nya funktioner har lagts till.
 <tr>
 <td>Konfigurera och skapa elektroniska handlingar för att uppfylla lagkraven i olika länder/regioner.</td>
 <td>Elektroniska dokument är hårdkodade i X++ eller som XSLT:er (Extensible Stylesheet Language Transformation). Vissa formatjusteringar kräver insatser av utvecklare. Åtkomst till data och formatering är inte isolerad. En justerad formatdistribution kräver en ny Microsoft Dynamics AX-snabbkorrigering som åsidosätter det befintliga formatet. Anpassade ändringar av respektive format måste porteras manuellt till källkoden i ett nytt Microsoft Dynamics AX-snabbkorrigeringspaket.</td>
-<td>Elektronisk rapportering (ER) är ett nytt verktyg för att konfigurera och skapa elektroniska dokument som är avsett för affärsanvändare i stället för utvecklare. Med hjälp av ER kan du ställa in datamodeller som är domänspecifika och oberoende av Microsoft Dynamics AX-databasen som datakällor för dokumentformat. En affärsanvändare kan konfigurera format som baseras på dessa domänspecifika datamodeller (exempelvis för betalningar, Intrastat-rapporter eller momsrapporter). Användaren konfigurerar formaten genom att använda enkla visuella verktyg som liknar Excel. ER har stöd för generering av elektroniska dokument i text-, XML- och Excel-format. Dessa dokument kan skapas samtidigt och packas i ZIP-filer. Datamodeller och format stöder versionshantering. Formatversioner kan ha giltighetsperioder. Varje version av datamodellen eller formatet lagras i en separat konfiguration och distribueras till partner och kunder via LCS. Partner och kunder kan anpassa Microsofts datamodeller och format, eller skapa sina egna. ER sparar partner- och kundkonfigurationsändringar som deltaförändringar till Microsoft-konfigurationer, vilket förenklar uppgraderingar till nya versioner av Microsofts konfigurationer. Genom att använda LCS kan partners också dela sina konfigurationer av datamodellen och format med andra partners och kunder, som i sin tur kan anpassa och dela dem vidare. Deltaanpassning och enkel uppgradering stöds genom hela anpassningskedjan.</td>
-<td>ER förenklar skapandet, underhållet och uppgraderingen av elektroniska dokumentformat för att uppfylla juridiska krav i olika länder/regioner. ER gör processen för att skapa eller ändra elektroniska dokumentformat snabbare och enklare. Dessa ändringar kan göras av affärsanvändare i stället för utvecklare. ER gör det snabbare och enklare för partners och kunder att uppgradera sina formatanpassningar till nya versioner av format som släpps av Microsoft eller andra partner. ER tillhandahåller en gemensam metod (via LCS) för Microsoft och partners att distribuera konfigurationer av elektroniska dokument till andra partner och kunder. ER gör det också enklare för partners och kunder att anpassa, uppgradera och distribuera format för elektroniska dokument för sina specifika affärsbehov.</td>
+<td>Elektronisk rapportering (ER) är ett nytt verktyg för att konfigurera och skapa elektroniska dokument som är avsett för affärsanvändare i stället för utvecklare. Med hjälp av ER kan du ställa in datamodeller som är domänspecifika och oberoende av Microsoft Dynamics AX-databasen som datakällor för dokumentformat. En affärsanvändare kan konfigurera format som baseras på dessa domänspecifika datamodeller (exempelvis för betalningar, Intrastat-rapporter eller momsrapporter). Användaren konfigurerar formaten genom att använda enkla visuella verktyg som liknar Excel. ER har stöd för generering av elektroniska dokument i text-, XML- och Excel-format. Dessa dokument kan skapas samtidigt och packas i ZIP-filer. Datamodeller och format stöder versionshantering. Formatversioner kan ha giltighetsperioder. Varje version av datamodellen eller formatet lagras i en separat konfiguration och distribueras till partner och kunder via LCS. Partner och kunder kan anpassa Microsofts datamodeller och format, eller skapa sina egna. ER sparar partner- och kundkonfigurationsändringar som deltaförändringar till Microsoft-konfigurationer, vilket förenklar uppgraderingar till nya versioner av Microsofts konfigurationer. Genom att använda LCS kan partner också dela sina konfigurationer av datamodellen och format med andra partner och kunder, som i sin tur kan anpassa och dela dem vidare. Deltaanpassning och enkel uppgradering stöds genom hela anpassningskedjan.</td>
+<td>ER förenklar skapandet, underhållet och uppgraderingen av elektroniska dokumentformat för att uppfylla juridiska krav i olika länder/regioner. ER gör processen för att skapa eller ändra elektroniska dokumentformat snabbare och enklare. Dessa ändringar kan göras av affärsanvändare i stället för utvecklare. ER gör det snabbare och enklare för partner och kunder att uppgradera sina formatanpassningar till nya versioner av format som släpps av Microsoft eller andra partner. ER tillhandahåller en gemensam metod (via LCS) för Microsoft och partner att distribuera konfigurationer av elektroniska dokument till andra partner och kunder. ER gör det också enklare för partner och kunder att anpassa, uppgradera och distribuera format för elektroniska dokument för sina specifika affärsbehov.</td>
 </tr>
 <tr>
 <td>(MEX) Skapa lagstadgade rapporter för mexikansk mervärdesskatt.</td>
@@ -631,15 +631,15 @@ Arbetsytan <strong>Kataloghantering</strong> aktiverar följande funktioner:
 <li>Ta de nödvändiga stegen för att utföra en uppgift eller ange information om att genomföra uppgiften.</li>
 <li>Följa status för enheter och direkt validera och hämta programinstallationen för Retail Modern POS (MPOS) i butiker.</li>
 <li>Få åtkomst till alla relaterade sidor.</li>
-</ul>På arbetsytan
-<strong>Butikshantering</strong> kan du utföra följande uppgifter:
+</ul>
+<strong>Butikshantering</strong>-arbetsytan låter du utföra följande uppgifter:
 <ul>
 <li>Hantera arbetare och arbetarnas POS-behörighet (Point of Sale).</li>
 <li>Följa skiftstatus för en viss butik eller grupp av butiker.</li>
 <li>Direkt validera och hämta MPOS-programinstallationen i butiker.</li>
 <li>Skriva ut rapporter och komma åt relaterade sidor.</li>
-</ul>På arbetsytan 
-<strong>Butiksekonomi</strong> kan du utföra följande uppgifter:
+</ul>
+<strong>Butiksekonomi</strong>-arbetsytan låter dig utföra följande uppgifter:
 <ul>
 <li>Skapa, beräkna och bokföra utdrag för en viss kanal.</li>
 <li>Tidsplanera batchjobb för att uppdatera lagret och beräkna och bokföra utdrag.</li>
@@ -740,7 +740,7 @@ Retail Server och datahantering låter konsumenter och företag skapa en shoppin
 <li>Commerce Data Exchange: Real-time Service finns som en Microsoft Dynamics AX anpassad tjänst.</li>
 <li>MPOS hanterar synkroniseringen mellan offlinedatabaser och Retail Server.</li>
 </ul></td>
-<td>Commerce Data Exchange har anpassats för molnplattformen. Det fortsätter att hantera överföringen av data mellan Microsoft Dynamics AX och detaljhandelskanaler, till exempel onlinebutiker eller fysiska butiker.</td>
+<td>Commerce Data Exchange har anpassats för molnplattformen. Det fortsätter hantera överföringen av data mellan Microsoft Dynamics AX och detaljhandelskanaler, till exempel onlinebutiker eller fysiska butiker.</td>
 </tr>
 <tr>
 <td>Ge stöd för Plug-and-Play-aktiverad, halvintegrerad betalningsbearbetning mellan kanaler med hjälp av betalnings-SDK.</td>
@@ -933,7 +933,7 @@ Dessutom är ett ramverk tillgängligt som låter dig bygga och paketera dessa k
 
 ### <a name="lifecycle-management"></a>Livscykelhantering
 
-Lifecycle Services (LCS) tillhandahåller ett antal tjänster som kunder och partner kan använda för att hantera livscykeln för systemet från registrering till dagliga uppgifter.
+Lifecycle Services (LCS) tillhandahåller ett antal tjänster som kunder och partner kan använda för att hantera livscykeln för systemet från registrering för dagliga uppgifter.
 
 <table>
 <thead>
@@ -1034,3 +1034,4 @@ Inga nya funktioner har lagts till.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
