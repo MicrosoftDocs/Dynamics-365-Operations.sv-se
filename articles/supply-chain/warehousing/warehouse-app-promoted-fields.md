@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857066"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218987"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurera befordrade fält för steg i mobilappen Warehouse Management
 
@@ -32,13 +32,7 @@ Denna artikel beskriver hur du främjar och lyfter fram specifik information fö
 Innan du kan konfigurera befordrade fält måste du slutföra följande procedur för att aktivera de nödvändiga funktionerna och generera de obligatoriska fältnamnen i mobilappen Warehouse Management.
 
 1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
-1. I arbetsytan [**Funktionshantering**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aktivera funktionen som anges på följande sätt:
-
-    - **Modul:** *Warehouse management*
-    - **Funktionsnamn:** *Steginstruktioner för lagerapp*
-
-    Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Den här funktionen är en förutsättning för funktionen *Lagerställeapp som stöds fält*.
-
+1. Se till att funktionen *Steginstruktioner för lagerställeapp* är aktiverad för systemet. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Den här funktionen är en förutsättning för funktionen *Lagerställeapp som stöds fält*.
 1. Aktivera funktionen som visas på följande sätt:
 
     - **Modul:** *Warehouse management*
@@ -67,7 +61,7 @@ Använd följande procedur för att konfigurera befordrade fält.
 
 ### <a name="enable-sample-data"></a>Aktivera exempeldata
 
-För att använda de angivna exempelposterna och värdena för att arbeta igenom det här scenariot måste du använda ett system där standarddemodata är installerade. Du måste också välja den **USMF** juridiska personen innan du börjar.
+För att använda de angivna exempelposterna och värdena för att arbeta igenom det här scenariot måste du använda ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) är installerade. Du måste också välja den **USMF** juridiska personen innan du börjar.
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>Konfigurera försäljningsplockning med stegvisa steg i licenssteget
 

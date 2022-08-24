@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 1b45cc2ba26f60ab444edca6c513c581e8332a2a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124541"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219137"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.23 (januari 2022)
 
@@ -55,7 +55,7 @@ Om du vill aktivera eller inaktivera någon av dessa funktioner måste du göra 
 | Hantering av lager och lagerstyrning | (Ryssland) Använd översättning till lokalt språk i lands- eller regionsspecifika primära formulär i Lagerhantering | För ryska lokaliseringar av Supply Chain Management gör denna funktion det möjligt att använda ryska översättningar av produkt-/artikelnamn och måttenheter i följande specifika ryska lagerutskrifter:Inventeringslista (INV-3),Inventeringslista (INV-5),Inventeringslista (INV-6). |
 | Huvudplanering | Azure Machine Learning Service för efterfrågeprognosticering | Med denna funktion kan Azure Machine Learning Service generera efterfrågeprognoser baserade på historiska data. Mer information finns i [Inställning av efterfrågeprognosticering](../master-planning/demand-forecasting-setup.md). |
 | Anskaffning och källa | Rensa inköpsorderns uppdateringshistorik | Med hjälp av den här funktionen kan du rensa tillfälliga historiska poster som är relaterade till inköpsorderuppdateringar. Den lägger till en ny knapp med namnet **Rensa inköpsuppdateringshistorik** i åtgärdsfönstret på sidan **Alla inköpsorder**. Den här funktionen aktiveras som standard. |
-| Produktionskontroll | (Förhandsversion) Automatisk plockning av lagerställeaktiverade material för automatiskt bokförda plocklistor | Den här funktionen gör det möjligt att välja och lösa lagerdimensioner för automatiskt bokförda, härledda/bakåtavräknade plocklistejournaler. |
+| Produktionskontroll | Automatisk plockning av lagerställeaktiverade material för automatiskt bokförda plocklistor | Den här funktionen gör det möjligt att välja och lösa lagerdimensioner för automatiskt bokförda, härledda/bakåtavräknade plocklistejournaler. |
 | Produktionskontroll | Validera råmaterialets utgång mot planerat förbrukningsdatum | Den här funktionen ändrar hur utgångsdatum för batchar valideras när en batch med råmaterial reserveras för användning under produktionen. När den här funktionen är aktiverad valideras batchutgångsdatumet mot det planerade förbrukningsdatumet (råmaterialdatumet), enligt vad som är upprättat på produktionsstrukturlisteraden eller batchorderformelraden. När den här funktionen inaktiveras valideras batchens utgångsdatum mot det planerade leveransdatumet för tillverknings- eller batchordern (som tidigare). |
 | Försäljning och marknadsföring | Rensa försäljningsuppdateringshistorik grundat på ålder | Med hjälp av den här funktionen kan du ange en högsta ålder för poster som ska behållas när den periodiska uppgiften **Rensning av försäljningsuppdateringshistorik**. Äldre poster raderas. Detta är användbart när du konfigurerar uppgiften så att den körs periodiskt, detta eftersom ålder alltid beräknas i relation till det datum då uppgiften körs. Utan den här funktionen kan du bara ange ett visst datum för de äldsta posterna som ska behållas. Mer information finns i [Schemalägga datarensning i försäljningshistorik](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Försäljning och marknadsföring | Förbättra rapportresultat för de 100 främsta kunderna | Den här funktionen förbättrar prestandan hos de **100 bästa** kunderna genom att alltid köra rapporten över alla kunder (som är avsedd att användas) istället för att tillåta anpassade frågor. När den här funktionen är aktiverad, alla inställningar **Poster att inkludera** inaktiveras i rapportdialogrutan **Bästa 100**. |

@@ -1,7 +1,7 @@
 ---
 title: Momsdeklaration (Sverige)
 description: I denna artikel beskrivs hur du konfigurerar in och genererar en momsdeklaration för Sverige.
-author: anasyash
+author: AdamTrukawka
 ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Sweden
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4bf94d7155e8e5839c51ab60cd3e4e0b9a430c37
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a98ad38c9fd675c37b067d0bb2b1e127088b97f4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872362"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276485"
 ---
 # <a name="vat-declaration-sweden"></a>Momsdeklaration (Sverige)
 

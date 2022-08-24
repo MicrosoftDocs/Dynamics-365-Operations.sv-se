@@ -1,28 +1,26 @@
 ---
 title: Översikt över elektronisk rapportering (ER)
 description: Det här ämnet ger en översikt till verktyget Elektronisk rapportering. Det beskriver viktiga begrepp, scenarier som stöds och format som är en del av lösningen.
-author: NickSelin
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "58941"
-- intro-internal
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: e94846dd565abb6de2c1f07532d285e28307e9a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109593"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269704"
 ---
 # <a name="electronic-reporting-er-overview"></a>Översikt över elektronisk rapportering (ER)
 
@@ -78,7 +76,7 @@ ER-motorn har följande funktioner:
 
 [![ER-huvuddataflöde.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### <a name="components"></a>Komponenter
+### <a name="component"></a>Komponent
 
 ER stöder följande typer av komponenter:
 
@@ -89,32 +87,7 @@ ER stöder följande typer av komponenter:
 
 Mer information finns i [Komponenter för elektronisk rapportering](er-overview-components.md).
 
-
-#### <a name="component-versioning"></a>Komponentversionsnumrering
-
-Versionsnumrering stöds för ER-komponenter. Följande arbetsflöde tillhandahålls för att hantera ändringar i ER-komponenter:
-
-1. Den version som ursprungligen skapades är markerad som en **Utkast**-version. Den här versionen kan redigeras och är tillgänglig för provkörningar.
-2. **Utkast**-versionen kan konverteras till en **Slutförd** version. Den här versionen kan användas i lokala rapporteringsprocesser.
-3. Den **Slutförda** versionen kan konverteras till en **Delad** version. Denna version publiceras på LCS och kan användas inom globala rapporteringsprocesser.
-4. **Delad**-versionen kan konverteras till en **Avslutad** version. Den här versionen kan sedan tas bort.
-
-Versioner som har statusen **Slutförd** eller **Delad** är tillgängliga för annan dataöverföring. Följande åtgärder kan utföras på en komponent som har dessa statusvärden:
-
-- Komponenten kan serialiseras i XML-format och exporteras från en XML-fil.
-- Komponenten kan omserialiseras från en XML-fil och importeras till programmet som en ny version av en ER-komponent.
-
-#### <a name="component-date-effectivity"></a>Komponent giltighetsdatum
-
-ER-komponentversionerna har giltighetsdatum. Du kan ange **Gäller från**-datumet för en ER-komponent för att ange från och med vilket datum komponenten ska aktiveras för rapporteringsprocesser. Programmets sessionsdatum används för att definiera om en komponent är giltig för körning. Den senaste versionen används för rapporteringsprocesser om fler än en version är giltig för ett visst datum.
-
-#### <a name="component-access"></a>Åtkomsten till komponenter
-
-Åtkomsten till ER-formatkomponenter beror på inställningen för ISO-lands-/regionskod. När den här inställningen är tom för en vald version av en formatkonfiguration kan formatkomponenten nås från vilket företag som helst vid körning. När inställningen innehåller ISO-lands-/regionskoder är formatkomponenten endast tillgänglig från de företag som har en primäradress som är definierad för en av en formatkomponents ISO-lands-/regionskoder.
-
-Olika versioner av en dataformatkomponent kan ha olika inställningar för ISO-lands-/regionskoder.
-
-#### <a name="configuration"></a><a name="Configuration"></a>Konfiguration
+### <a name="configuration"></a><a name="Configuration"></a>Konfiguration
 
 En ER-konfiguration är omslaget (wrappern) för en viss ER-komponent. Komponenten kan antingen vara en datamodellskomponent eller en formatkomponent. En konfiguration kan omfatta olika versioner av en ER-komponent. Varje konfiguration markeras som ägda av en viss konfigurationsleverantör. **Utkast**-versionen av en komponent i en konfiguration kan redigeras om ägaren av en konfiguration har valts som en aktiv leverantör i ER-inställningarna i programmet.
 
@@ -124,13 +97,13 @@ Formatkonfigurationen som skapas innehåller en formatkomponent. Datamodellkompo
 
 En ER-konfiguration delas av programföretag.
 
-#### <a name="provider"></a><a name="Provider"></a>Leverantör
+### <a name="provider"></a><a name="Provider"></a>Leverantör
 
 ER-leverantören är partens identifierare som används för att indikera författare (ägare) av varje ER-konfiguration. Med hjälp av ER kan du hantera listan över konfigurationsleverantörer. Formatkonfigurationer som släpps för elektroniska dokument som en del av Ekonomi och drift-lösningen markeras som ägda av konfigurationsleverantören **Microsoft**.
 
 För information om hur du registrerar en ny ER-leverantör, kör uppgiftsguiden **ER skapa en konfigurationstjänst och markera den som aktiv** (ingår i affärsprocessen **7.5.4.3 Införskaffa/utveckla IT-tjänst/-lösningskomponenter (10677)**).
 
-#### <a name="repository"></a><a name="Repository"></a>Databas
+### <a name="repository"></a><a name="Repository"></a>Databas
 
 En ER-databas lagrar ER-konfigurationer. Följande typer av ER-databaser stöds för närvarande: 
 
@@ -265,6 +238,7 @@ Listan över ER-konfigurationer för Finance uppdateras regelbundet. Öppna den 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
+- [Komponenter för elektronisk rapportering](er-overview-components.md)
 - [Skapa konfigurationer för elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Hantera livscykeln för konfiguration av elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
 

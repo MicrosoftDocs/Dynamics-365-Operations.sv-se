@@ -1,24 +1,24 @@
 ---
 title: ER konfigurera mål
 description: Den här proceduren visar hur du ställer in och använder olika mål för utdatakomponenter för elektronisk rapportering (ER) som till exempel en mapp eller en fil.
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1e679b52b28ff1ca117c5224fc7e2825feb26e5e5aea1c8b5bc3a88d1eaf235
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
+ms.openlocfilehash: 3c8d03e9783013183fbe76cb36014fa9e1e1cbed
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743273"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291067"
 ---
 # <a name="er-configure-destinations"></a>ER konfigurera mål
 
@@ -26,7 +26,7 @@ ms.locfileid: "6743273"
 
 Den här proceduren visar hur du ställer in och använder olika mål för utdatakomponenter för elektronisk rapportering (ER) som till exempel en mapp eller en fil. Det demonstrationsdataföretag som används för att skapa den här proceduren är DEMF. Tyskland är land/region för den juridiska personens primära adress, men du kan använda valfri juridisk person för denna procedur. 
 
-Formatet som används i det här exemplet är kreditöverföringen ISO20022, men du kan använda valfritt format som du redan har importerat. Observera att den här proceduren är ett exempel på en enda fil och en enda målsinställning. Mer information om hantering av elektroniska rapporteringsmål finns i hjälpen för Dynamics 365 Finance.
+Formatet som används i det här exemplet är kreditöverföringen ISO20022, men du kan använda valfritt format som du redan har importerat. Observera att den här proceduren är ett exempel på en enda fil och en enda målsinställning. Mer information om Destinationshantering för elektronisk rapportering hittar du i hjälpen för Dynamics 365 Finance.
 
 1. Gå till Organisationsadministration > Elektronisk rapportering > Elektroniska rapporteringsmål.
 2. Klicka på Ny för att skapa en ny uppsättning mål för ett format.

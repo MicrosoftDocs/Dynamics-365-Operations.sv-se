@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e3d709a185796152b03f8ed83088cb5c3d137bae
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895479"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219761"
 ---
 # <a name="release-to-warehouse-rule"></a>Frisläpp till regel för lagerställe
 
@@ -69,7 +69,7 @@ I det här avsnittet finns två scenarier som du kan arbeta igenom för att lär
 
 ### <a name="make-sample-data-available"></a>Gör exempeldata tillgängliga
 
-Om du vill arbeta genom dessa scenarier med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) har installerats. Dessutom måste du välja den **USMF** juridiska personen innan du börjar.
+Om du vill arbeta genom dessa scenarier med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) har installerats. Dessutom måste du välja den **USMF** juridiska personen innan du börjar.
 
 Du kan också använda dessa scenarier som vägledning för funktionen när du arbetar med ett produktionssystem. I så fall måste du emellertid ersätta dina egna värden och du kanske saknar vissa typer av obligatoriska poster som används i standard demodata.
 

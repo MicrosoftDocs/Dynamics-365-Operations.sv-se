@@ -1,20 +1,20 @@
 ---
 title: Kopiera en näthandelsplats
 description: I denna artikel beskrivs hur du kopierar en befintlig näthandelsplats i eller mellan näthandelsmiljöer i Microsoft Dynamics 365 Commerce-webbplatsverktyget.
-author: psimolin
+author: josaw1
 ms.date: 06/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: cb53a76b2ebe5b511bf5009727f20f20755e5720
-ms.sourcegitcommit: 13c7a1cc4c90417e3e88db59b7d2165b3c40a56c
+ms.openlocfilehash: 9b74e0d48be29272b893c855c229e4003f0c161e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "8935754"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276303"
 ---
 # <a name="copy-an-e-commerce-site"></a>Kopiera en näthandelsplats
 

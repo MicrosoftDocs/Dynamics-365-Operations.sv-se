@@ -1,26 +1,26 @@
 ---
 title: Komponenter för elektronisk rapportering
 description: Det här ämnet beskriver komponenterna för Elektronisk rapportering (ER).
-author: nselin
+author: kfend
 ms.date: 09/28/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.topic: overview
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2b8b197fdea0cd49fc5161a12b8f547cc1a27bf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58941
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: 4851374ca4943a84d35f063e0ee65b537ec3b6cd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892462"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285044"
 ---
 # <a name="electronic-reporting-components"></a>Komponenter för elektronisk rapportering
 
@@ -123,15 +123,37 @@ Versioner som har statusen **Slutförd** eller **Delad** är tillgängliga för 
 - Komponenten kan serialiseras i XML-format och exporteras från en XML-fil.
 - Komponenten kan omserialiseras från en XML-fil och importeras till programmet som en ny version av en ER-komponent.
 
+Mer information finns i [Importera en ny datamodellkonfiguration](er-quick-start1-new-solution.md#ImportDataModel) och [Exportera slutförd justerad version av ett härlett format](er-calculated-field-type.md#export-completed-version-of-a-derived-format).
+
+### <a name="draft-versions-at-runtime"></a>Utkastversioner vid körning
+
+I dina personliga användarparametrar för ER-ramverket kan du aktivera alternativet som gör att du kan ange om utkastversionen av en ER-konfiguration måste användas vid körning. Information om hur du gör alternativet **Kör utkast** tillgängligt för ER-konfigurationer finns i [Markera ett anpassat format som kan köras](er-quick-start2-customize-report.md#MarkFormatRunnable).
+
+> [!NOTE]
+> ER-användarparametrar är företagsspecifika och användarspecifika.
+
+### <a name="draft-format-versions-at-runtime"></a>Utkastformat versioner vid körning
+
+När du kör en ER-lösning ignoreras som standard utkastversionerna av dess formatkomponenter. I stället används bara den relevanta version som har ett annat status än **Utkast**. Ibland kanske du vill tvinga ER att använda utkastversionen av ER-formatkonfigurationen vid körning. När du har presenterat nödvändiga ändringar i utkastversionen kan du till exempel använda den utkastversionen för att testa körningen. På så sätt kan du verifiera att dina ändringar är korrekta. För att börja använda versionen av utkastformatet måste du [ange](er-quick-start2-customize-report.md#MarkFormatRunnable) alternativet **Kör utkast** av den relevanta ER-konfigurationen till **Ja**.
+
+### <a name="draft-model-mapping-versions-at-runtime"></a>Utkastmodell mappningsversioner vid körning
+
+När du kör en ER-lösning ignoreras som standard utkastversionerna av komponenter för modellmappning används alltid. Ibland kanske du vill tvinga ER att ignorera utkastversionen av konfiguration av ER-modellmappning vid körning. I **version 10.0.29 och senare** kan du aktivera alternativet **Alltid ta hänsyn till alternativet "Kör utkast" för ER-modellmappning** för att kontrollera den modellmappningsversion som används när programmet körs. När den här funktionen är aktiverad, sker följande beteende:
+
+- När alternativet **Kör utkast** ställs in på **Nej** för en modellmappning konfiguration används den högsta icke-utkastversionen av den konfigurationen vid körning. Ett undantag utlöstes av en konfiguration som inte är tillgänglig i den aktuella ekonomiinstansen.
+- När alternativet **Kör utkast** ställs in på **Ja** för en modellmappning konfiguration används utkastversionen av den konfigurationen vid körning.
+
 ## <a name="component-date-effectivity"></a>Komponent giltighetsdatum
 
-ER-komponentversionerna har giltighetsdatum. Du kan ange Gäller från-datumet för en ER-komponent för att ange från och med vilket datum komponenten ska aktiveras för rapporteringsprocesser. Programmets sessionsdatum används för att definiera om en komponent är giltig för körning. Den senaste versionen används för rapporteringsprocesser om fler än en version är giltig för ett visst datum.
+ER-format komponentversionerna har giltighetsdatum. Du kan ange Gäller från-datumet för en ER-format komponent för att ange från och med vilket datum komponenten ska aktiveras för rapporteringsprocesser. Programmets sessionsdatum används för att definiera om en komponent är giltig för körning. Den senaste versionen används för rapporteringsprocesser om fler än en version är giltig för ett visst datum.
 
 ## <a name="component-access"></a>Åtkomsten till komponenter
 
-Åtkomsten till ER-formatkomponenter beror på inställningen för Internationella standardiseringsorganisationen (ISO) lands-/regionskod. När den här inställningen är tom för en vald version av en formatkonfiguration kan formatkomponenten nås från vilket företag som helst vid körning. När inställningen innehåller ISO-lands-/regionskoder är formatkomponenten endast tillgänglig från de företag som har en primäradress som är definierad för en av en formatkomponents ISO-lands-/regionskoder.
+Åtkomsten till ER-format och modellmappning komponenter vid körning beror på inställningen för Internationella standardiseringsorganisationen (ISO) lands-/regionskod. När den här inställningen är tom för en vald version av en konfiguration av format eller modellmappning kan format- eller modellmappningskomponenten nås från vilket företag som helst vid körning. När inställningen innehåller ISO-lands-/regionskoder är format- eller modellmappningskomponent endast tillgänglig från de företag som har en primäradress som är definierad för en av en formatkomponents ISO-lands-/regionskoder.
 
-Olika versioner av en dataformatkomponent kan ha olika inställningar för ISO-lands-/regionskoder.
+Olika versioner av en format- eller modellmappningskomponent kan ha olika inställningar för ISO-lands-/regionskoder.
+
+För mer information, se [Konfigurera ER-modellmappningar som är beroende av landssammanhang](er-country-dependent-model-mapping.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849196"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219455"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidering – platsutnyttjande
 
@@ -30,10 +30,10 @@ I denna artikel finns information om funktioner som gör det enkelt för lageran
 
 Innan du kan använda funktionerna som beskrivs i denna artikel måste du aktivera dem i systemet. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera status för dessa funktioner och aktivera dem om de behövs. Aktivera båda följande funktioner i angiven ordning. (Båda funktionerna gäller för modulen **Lagerstyrning** .)
 
-1. Distributionslagrets platsstatus
-2. Utnyttjande av artikelns konsolideringsplats
+1. *Lagerställets platsstatus* version 10.0.29 är den här funktionen aktiverad som standard. Mer information finns i [Lagerställets platsstatus](warehouse-location-status.md).
+2. *Utnyttjande av artikelns konsolideringsplats*
 
-## <a name="warehouse-location-status"></a>Distributionslagrets platsstatus
+## <a name="warehouse-location-status"></a>Lagerställets platsstatus
 
 Funktionen *platsstatus för lagerställe* lägger till fyra nya fält på sidan **Platser** för att spåra ytterligare information om platsens aktuella status:
 

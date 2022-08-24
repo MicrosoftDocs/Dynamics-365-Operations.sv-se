@@ -2,19 +2,19 @@
 title: Part och global adressbok
 description: I den här artikeln beskrivs funktionerna för part och global adressbok för dubbelriktad skrivning.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f06b6e69b76bf12092fdceca5b45a6750b52233
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892205"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9229003"
 ---
 # <a name="party-and-global-address-book"></a>Part och global adressbok
 
@@ -119,11 +119,11 @@ Rutnätet innehåller följande kolumner:
 
 Du kan använda knappen **Ny adress** ovanför rutnätet för att skapa så många postadresser du vill.
 
-Fälten **Adress 1** och **Adress 2** på fliken **Sammanfattning** på sidan **Konto** motsvarar adresserna **Leverans** respektive **Faktura**.
+I appar för kundengagemang, när en användare anger adresserna på flik **Sammanfattning** för sidan **Konton** motsvarar fälten **Adress 1** och **Adress 2** till adresser för **leverans** och **faktura**. Men när en användare skapar en postadress i appar för ekonomi och drift kommer de två första adresserna i kundposten att visas i fälten **Adress1** och **Adress2** och användaren har möjlighet att ändra adressändamålet till **leverans** och **faktura**.
 
 ![Fliken Sammanfattning för postadresser.](media/party-gab-image5.png)
 
-Fälten **Adress 1**, **Adress 2** och **Adress 3** på fliken **Sammanfattning** på sidan **Kontakt** motsvarar adresserna för **Företag**, **Leverans** respektive **Faktura**.
+På liknande sätt fälten **Adress 1**, **Adress 2** och **Adress 3** på fliken **Sammanfattning** på sidan **Kontakt** motsvarar adresserna för **Företag**, **Leverans** respektive **Faktura**.
 
 ## <a name="electronic-addresses"></a>Elektroniska adresser
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854309"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219920"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Förbättra schemaläggningsmotorns prestanda
 
@@ -294,7 +294,9 @@ Ett alternativ till att använda parallella åtgärder är att antingen modeller
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Rutt med resursmängder högre än 1
 
-Om du konfigurerar den kvantitet av resurser som behövs för en åtgärd som är högre än en, resulterar detta i ett effektivt resultat som att använda primära/sekundära åtgärder eftersom flera parallella jobb skickas till motorn. I detta fall kan du dock inte använda specifika resurstilldelningar eftersom en större kvantitet än en kräver att fler än en resurs kan användas för åtgärden.
+Om den kvantitet av resurser som behövs för en åtgärd som är högre än en, resulterar detta i ett effektivt resultat som att använda primära/sekundära åtgärder eftersom flera parallella jobb skickas till motorn. I detta fall går det inte att använda specifika resurstilldelningar eftersom en större kvantitet än en kräver att fler än en resurs kan användas för åtgärden.
+
+En sekundär åtgärd som har en resursbeläggningskvantitet som är större än ett innebär att den angivna kvantiteten för sekundära resurser behövs för varje resurs i den primära åtgärd. Om till exempel en primär åtgärd har sina resurser inställda på två och dess sekundära åtgärd har sin resurskvantitet inställd på tre, behövs totalt sex resurser för den sekundära åtgärden.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Överdriven användning av begränsad kapacitet
 

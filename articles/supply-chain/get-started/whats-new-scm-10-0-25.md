@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167744"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219107"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.25 april 2022)
 
@@ -34,7 +34,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 | Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
 | Lager&nbsp;och&nbsp;logistik | [Förbättringar av farliga material](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Kommer snart | Funktionshantering:<br>*Förbättringar av farliga material* |
-| Lager&nbsp;och&nbsp;logistik | [Förpackningsstationer för packningsarbete](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Kommer snart | Funktionshantering:<br>*Förpackningsstationer för packningsarbete* |
+| Lager&nbsp;och&nbsp;logistik | [Förpackningsstationer för packningsarbete](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | [Förpackningsarbete för att packa utgående behållare och bearbeta försändelser](../warehousing/packing-work.md) | Funktionshantering:<br>*Förpackningsstationer för packningsarbete* |
 | Lager&nbsp;och&nbsp;logistik | [Skanna streckkoder på lagerstället med standarder för GS1-format](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-streckkoder och QR-koder](../warehousing/gs1-barcodes.md) | Funktionshantering:<br>*Skanna GS1-streckkoder* |
 | Tillverkning | [Materialförbrukning och reservationer i körningsgränssnittet för produktionsgolv](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Hur arbetare använder körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-use.md) | Funktionshantering:<br>*Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (icke-WMS)*<br><br>Och/eller:<br><br>Funktionshantering:<br>*(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)* |
 | Planering | [Centralunderhåll för Planeringsoptimering](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalendrar och huvudplanering](../master-planning/supply-chain-calendars-master-planning.md) | Aktiverad som standard |

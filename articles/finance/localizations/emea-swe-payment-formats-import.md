@@ -1,25 +1,25 @@
 ---
 title: Importformat för betalning för Sverige
 description: Den här artikeln innehåller information om BankGirot MAX, importera via BankGirot OCR och BankGirot-returformat för Sverige.
-author: anasyash
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCustPaym, VendPaymMode
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 262684
 ms.search.region: Sweden
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fd27b6d65be3d28f3d7701fc66407dffc16d4e9a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 262684
+ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCustPaym, VendPaymMode
+ms.openlocfilehash: 2fa49e18ca2d7fb40ea8ab512e123e1eb8a46399
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883060"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280657"
 ---
 # <a name="import-payment-formats-for-sweden"></a>Importformat för betalning för Sverige
 

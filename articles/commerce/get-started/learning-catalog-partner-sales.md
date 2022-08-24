@@ -1,23 +1,23 @@
 ---
 title: Utbildningskatalog för Microsoft Partner försäljnings- och marknadsföringsroller för Dynamics 365 Commerce
 description: Hitta alla utbildningsalternativ för personer i Microsoft Partner försäljnings- och marknadsföringsroller som arbetar med Dynamics 365 Commerce.
-author: margoc
-ms.topic: article
+author: josaw1
 ms.date: 07/27/2020
-ms.author: margoc
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: eb0a3f26761f922225aa4b50bc709ae64aab9934
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: f80acca743ed3abc39e93b9d37f658cb9c24a88e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070264"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291493"
 ---
 # <a name="learning-catalog-for-commerce-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-commerce"></a>Utbildningskatalog för Commerce Microsoft Partner försäljnings- och marknadsföringsroller för Dynamics 365 Commerce
 

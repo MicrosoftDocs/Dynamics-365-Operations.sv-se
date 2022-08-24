@@ -1,25 +1,25 @@
 ---
 title: Lista över ER-funktioner i listkategorin
 description: Det här ämnet ger information om listfunktionerna som stöds i elektronisk rapportering (ER).
-author: NickSelin
+author: kfend
 ms.date: 04/01/2020
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b39da482578636d94faaa3117bd40a579f3ae636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 6c28445f731393857cdb0c75c1244e557b5ff4a4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869067"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277705"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Lista över ER-funktioner i listkategorin
 
@@ -47,6 +47,7 @@ Listfunktioner för elektronisk rapportering (ER) kan användas för att extrahe
 | [ListOfFields](er-functions-list-listoffields.md)         | Den här funktionen returnerar ett *postlista*-värde som skapas baserat på strukturen för det angivna argumentet i typen *uppräkning* eller *behållare (post)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Den här funktionen returnerar ett *postlista*-värde som endast består av den första posten i den angivna listan.|
 | [OrderBy](er-functions-list-orderby.md)                   | Den här funktionen returnerar den angivna listan som ett värde för *postlista* efter att den har sorterats enligt de angivna argumenten. Du kan definiera följande argument som uttryck. |
+| [Upprepa](er-functions-list-repeat.md)                     | Den här funktionen bygger på en post som innehåller fältet som har ett värde som matchar den angivna indata. Den returnerar sedan en ny *postlista* över en post som upprepas ett angivet antal gånger. |
 | [Återför](er-functions-list-reverse.md)                   | Den här funktionen returnerar den angivna listan som ett värde *postlista* i omvänd sorteringsordning. |
 | [Dela](er-functions-list-split.md)                       | Den här funktionen delar den angivna indatasträngen i delsträngar och returnerar resultatet som ett nytt värde för *postlistan*. |
 | [SplitList](er-functions-list-splitlist.md)               | Den här funktionen delar upp angivna listan i underlistor (eller batchar) som var och en innehåller det definierade antalet poster. Den returnerar sedan resultatet som ett nytt värde för *postlistan* som består av batchar. |

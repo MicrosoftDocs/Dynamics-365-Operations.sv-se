@@ -2,7 +2,7 @@
 title: Borttagna eller inaktuella funktioner i Dynamics 365 Finance
 description: I den här artikeln beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068935"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219581"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna eller inaktuella funktioner i Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 > [!NOTE]
 > Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i respektive version av appar för ekonomi och drift.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.29 utgåva
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Lageröverföringsorder som har moms på överföringspriset
+
+[Lageröverföringsorder som har moms på överföringspriset](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Orsak till inaktuell/borttagning** | Ersatt av förbättrad funktionalitet, [lageröverföringsorder för Indien](../../finance/localizations/apac-ind-stock-transfer.md)|
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas** | Ansökning |
+| **Distribueringsalternativ** | Allt |
+| **Status** | Inaktuell: Efter april 2023, funktionen **Lageröverföringsorder som har moms på överföringspriset** kommer inte längre att få support med felkorrigeringar och säkerhetskorrigeringar. Kunder uppmanas att använda den förbättrade funktionen [Lageröverföringsorder för Indien](../../finance/localizations/apac-ind-stock-transfer.md). Efter oktober 2023 kommer funktionen **Lageröverföringsorder som har moms på överföringspriset** inte längre att vara tillgängliga och kunder uppmanas att flytta till den förbättrade funktionen. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.26 utgåva
 

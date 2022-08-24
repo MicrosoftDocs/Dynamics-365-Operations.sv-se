@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901159"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227910"
 ---
 # <a name="benefits-management-overview"></a>Hantering av förmåner – översikt
 
@@ -147,6 +147,16 @@ Innan du kan bearbeta livshändelser måste du redan ha kört öppna registrerin
 - [Bearbeta livshändelser](hr-benefits-process-life-events.md)
 - [Bearbeta ändringar av livshändelser](hr-benefits-process-life-event-changes.md)
 - [Bearbeta livshändelseberättigande](hr-benefits-process-life-event-eligibility.md)
+
+Efter att bearbetningen av livshändelser är klar och så länge registreringsperioden för livshändelser är öppen, kan anställda göra ändringar i planalternativen som påverkas av livshändelsen. Administratörer kan göra ändringarna på uppdrag av medarbetare. När anmälningsperioden har avslutats och inga obekräftade plantyper är relaterade till livscykeltransaktionen, stängs transaktionen.
+
+Alla planer som påverkas av livscykelhändelsen måste antingen väljas eller efterskänkas och sedan bekräftas. Om en plan inte valts, och därför inte avsagts och därför inte bekräftats, kommer livshändelsetransaktionen inte att stängas.
+
+Administratörer kan stänga en händelsetransaktion manuellt om det behövs, genom att markera den och sedan välja **Stäng** . Om det finns obekräftade planer i transaktionen, och en admin vill stänga den, kan händelsen begränsa redigeringar till dessa planer.
+
+Det går inte att ta bort stängda händelser.
+
+Administratörer kan öppna upp en händelsetransaktion manuellt om det behövs, genom att markera den och sedan välja **Öppna igen** .
 
 ## <a name="rate-updates-optional"></a>Kursuppdateringar (valfritt)
 

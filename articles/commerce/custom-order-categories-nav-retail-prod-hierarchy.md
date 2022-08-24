@@ -2,7 +2,7 @@
 title: Ändra sorteringsordning för marknadsföringsenheter
 description: I denna aritkel beskrivs begreppen för att styra visningsordningen för olika marknadsföringsrelaterade entiteter i Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/05/2019
+ms.date: 08/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,27 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 80586597f4f60476b341e4cf1cfd90f3681e15c0
+ms.sourcegitcommit: 52e31b1ef2b3ed8675de931d06090cd57e057fc2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847664"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9265847"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ändra sorteringsordning för marknadsföringsenheter
 
 
 [!Include [banner](includes/banner.md)]
 
-Återförsäljare betraktar produktidentifiering som ett primärt verktyg för kundinteraktion i alla kanaler. Olika funktioner kan hjälpa kunder att enkelt hitta produkter. De kan till exempel bläddra bland kategorier, söka och filtrera.
+Återförsäljare betraktar produktidentifiering som ett primärt verktyg för kundinteraktion i alla kanaler. Det finns flera funktioner som hjälper kunderna att enkelt upptäcka produkter. Kunder kan till exempel bläddra bland kategorier, söka och filtrera.
 
 I denna artikel beskrivs begreppen för att styra visningsordningen för olika marknadsföringsrelaterade entiteter. Det innehåller även information om hur du ändrar sorteringsordning.
 
 ## <a name="overview"></a>Översikt
 
-Stödet för sortering av olika marknadsföringsrelaterade entiteter har förbättrats. Det här stödet är nu bättre justerat med befintliga kundscenarier som tidigare krävde tillägg från implementeringspartners.
+I Handel stämmer sorteringen av olika marknadsföringsrelaterade enheter efter befintliga kundscenarier och kräver inte längre tillägg från implementeringspartner.
 
-I tidigare versioner av Retail än version 10.0.5 var sorteringsordningen för kategorier i navigeringsvyn alfabetisk. Med den nya anpassade sorteringsordningen kan du konfigurera sorteringsordningen för olika marknadsföringsrelaterade enheter för alla slutanvändarklienter. Dessa klienter inkluderar huvudkontor (HQ) och kundtjänster.
+I Handel version 10.0.5 och tidigare var sorteringsordningen för kategorier i navigeringsvyn alfabetisk. Med den nuvarande anpassade sorteringsordningen kan du konfigurera sorteringsordningen för olika marknadsföringsrelaterade enheter för alla slutanvändarklienter. Dessa klienter inkluderar huvudkontor (HQ) och kundtjänster.
 
 ## <a name="configure-the-display-order-for-categories-in-the-product-hierarchy"></a>Konfigurera visningsordningen för kategorier i produkthierarki
 
@@ -67,7 +67,7 @@ Innan du kan slutföra den här proceduren måste demonstrationsdata vara instal
 6. Ange ett tal i fältet **Visningsordning**.
 7. Välj **Mode \> Damkläder \> Överdelar** i trädet.
 
-    På samma sätt kan du definiera sorteringsordningen för underkategorierna.
+På samma sätt kan du definiera sorteringsordningen för underkategorierna.
 
 8. Välj **Mode \> Herrkläder \> Lediga skjortor** i trädet.
 9. Ange ett tal i fältet **Visningsordning**.
@@ -84,7 +84,7 @@ Visningsordningen för kanalnavigeringshierarkin visas i huvudkontor, katalog oc
 ![Kassa med anpassade, sorterade kategorier.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Funktionen för anpassad sorteringsordning är avstängd som standard. Mer information om hur du aktiverar den här funktionen och andra funktioner finns i [Funktionshantering](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
-
+> Som standard är funktionen **Aktivera visningsordning för marknadsföringsenheter** inaktiverad. Använd [funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera den. När du har aktiverat funktionen kör du CDX-jobbet **Global konfiguration -1110** från distributionsschemat.
+> Om kategorierna inte uppdateras i kassan måste du återaktivera enheten. Kategoriinformation hämtas när enhetsaktivering inträffar, så enheten kan behöva tillbakavisa kategoriinformationen med uppdaterade visningsordning. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

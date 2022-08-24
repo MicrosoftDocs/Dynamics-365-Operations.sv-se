@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b881f9c6f872061864d4254ce880d981ca71c479
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857588"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219047"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Kontrollera kvaliteten på varor
 
@@ -27,7 +27,7 @@ ms.locfileid: "8857588"
 
 I denna artikel beskrivs hur du bearbetar kvalitetsorder. Kvalitetsinspektioner utförs vanligtvis av en kvalitetsansvarig.
 
-Om standarddemonstrationsdatan har installerats kan du använda den för att genomföra procedurerna i denna artikel. Om du vill använda demonstrationsdatan väljer du den juridiska personen *USMF* innan du börjar. Du måste sedan bekräfta inköpsordern *000016* och bokföra en produktinleverans. En kvalitetsorder genereras automatiskt.
+Om standard [demonstrationsdata](../../../fin-ops-core/fin-ops/get-started/demo-data.md) har installerats kan du använda den för att genomföra procedurerna i denna artikel. Om du vill använda demonstrationsdatan väljer du den juridiska personen *USMF* innan du börjar. Du måste sedan bekräfta inköpsordern *000016* och bokföra en produktinleverans. En kvalitetsorder genereras automatiskt.
 
 ## <a name="step-1-select-a-quality-order"></a>Steg 1: Välj en kvalitetsorder
 

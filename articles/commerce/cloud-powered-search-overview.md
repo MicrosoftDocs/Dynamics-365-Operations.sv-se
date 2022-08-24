@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: ed80ff42ea5c6e6a904ea2855953d006f66aad37
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850366"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273677"
 ---
 # <a name="cloud-powered-search-overview"></a>Översikt över molnbaserade sökningar
 
@@ -64,11 +64,14 @@ Följande illustration visar ett exempel där integrerade automatiska förslag a
 
 ## <a name="sort"></a>Sortera
 
-Förbättrad sortering i Commerce låter kunderna sortera, söka och bläddra bland sökresultat och justera dem efter kriterier såsom t.ex. pris, produktnamn och produktnummer. Kunder kan också sortera resultat baserat på om en produkt är ny, bästsäljare eller nyligen tillagd.
+Sorteringsfunktioner möjliggör att kunderna sorterar, söker och bläddrar i kategoriresultat och justera dem efter kriterier, t.ex. pris, produktnamn och produktnummer. Om du aktiverar [produktrekommendationer](product-recommendations.md) i din miljö kan kunderna också sortera resultaten utifrån avancerade sorteringskriterier som ny, säljande och populär.
+
 
 > [!NOTE]
 > De här molndrivna sökfunktionerna är tillgängliga från och med version 10.0.8. Se till att det finns en post för "ProductSearch.UseAzureSearch" märkt "true" i **Commerce Parameters > Configuration Parameters**. 
 ![Konfigurationsparametrar för molndriven sökning.](./media/CloudPoweredSearchConfigurationParameters.png)
+>Avancerade sorteringsalternativ som nya, mest sålda och trendade alternativ finns i Commerce SSK-versionen 9.35+ och Dynamics 365 Commerce 10.0.20 utgåva.  
+
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

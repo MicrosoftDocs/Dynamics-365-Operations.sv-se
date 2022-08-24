@@ -2,7 +2,7 @@
 title: Installera tillägget för IoT-information i LCS
 description: lagerbehållning beskrivs hur du installerar IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS).
 author: johanhoffmann
-ms.date: 07/07/2020
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e18b05be1f2ba78c71515e4e76f180355d044b98
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887498"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227861"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Installera tillägget för IoT-information i LCS
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 lagerbehållning beskrivs hur du installerar IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS). Lägg märke till att tillägg inte kan installeras i en demo/utvärderingsmiljö. Innan du kan installera tillägget måste du [skapa Azure-resurserna](iot-azure-setup.md).
 

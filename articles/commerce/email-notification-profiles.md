@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: db6c46d471e3b54982132df3e4819236833cf4a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878496"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292146"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Ställa in en meddelandeprofil för e-post
 
@@ -31,17 +31,9 @@ När du skapar kanaler kan du konfigurera en e-postmeddelandeprofil. E-postnotif
 
 För ytterligare information om e-postkonfiguration, se [konfigurera och skicka e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
-## <a name="create-an-email-notification-profile"></a>Skapa en meddelandeprofil för e-post
 
-Skapa en meddelandeprofil för e-post enligt följande instruktioner.
 
-1. I Navigeringsfönstret, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> E-postmeddelandeprofil för Commerce**.
-1. Klicka på **Nytt** i Åtgärdsfönstret.
-1. I fältet **Meddelandeprofil för e-post** ange ett namn för att identifiera profilen.
-1. Ange relevant beskrivning i fältet **beskrivning**.
-1. Ställ in **aktiva** växeln på **ja**.
-
-### <a name="create-an-email-template"></a>Skapa en e-postmall
+## <a name="create-an-email-template"></a>Skapa en e-postmall
 
 Innan en e-postmeddelandetyp kan aktiveras måste du skapa en e-postmall för organisationen i Commerce headquarters för varje aviseringstyp du vill stödja. I den här mallen definieras ämnes-, avsändar-, standardspråk och e-posttext för alla språk som stöds.
 
@@ -63,14 +55,24 @@ I bilden nedan visas några exempel på Inställningar för e-postmallar.
 
 Mer information om hur du skapar e-postmallar finns i [Skapa e-postmallar för transaktionshändelser](email-templates-transactions.md). 
 
-### <a name="create-an-email-event"></a>Skapa en e-posthändelse
+## <a name="create-an-email-notification-profile"></a>Skapa en meddelandeprofil för e-post
+
+Skapa en meddelandeprofil för e-post i administration enligt följande instruktioner.
+
+1. I Navigeringsfönstret, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> E-postmeddelandeprofil för Commerce**.
+1. Klicka på **Ny** i åtgärdsfönstret.
+1. I fältet **Meddelandeprofil för e-post** ange ett namn för att identifiera profilen.
+1. Ange relevant beskrivning i fältet **beskrivning**.
+1. Ställ in **aktiva** växeln på **ja**.
+
+## <a name="add-a-notification-type"></a>Lägg till en meddelandetyp
 
 Gör så här om du vill skapa en e-posthändelse.
 
 1. I Navigeringsfönstret, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> E-postmeddelandeprofil för Commerce**.
-1. Hitta och markera önskad post i listan. 
-1. Välj e-postmallen i listrutan **E-post-ID**.
+1. Under **Inställningar för butikens e-postmeddelande**, välj **Ny**.
 1. Välj rätt **Typ av e-postmeddelande** i listrutan.
+1. Välj den e-postmall som du skapat ovan i listrutan **E-post-ID**.
 1. Markera kryssrutan **Aktiv**.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
@@ -78,14 +80,12 @@ I bilden nedan visas några exempel på Inställningar för meddelande för hän
 
 ![Inställningar för händelsemeddelande.](media/email-notification-profile.png)
 
-> [!NOTE]
-> Den kund som har skapat notifieringstypen kräver att en anpassning måste implementeras innan ett e-postmeddelande kan skickas.
 
-### <a name="schedule-a-recurring-email-notification-process-job"></a>Tidsplana ett återkommande jobb med e-postaviseringar
+## <a name="schedule-a-recurring-email-notification-process-job"></a>Tidsplana ett återkommande jobb med e-postaviseringar
 
 Om du vill skicka ut e-postmeddelanden måste du köra jobbet **Bearbeta butikorders e-postmeddelande**.
 
-Om du vill konfigurera fliken **Bearbeta butikorders e-postmeddelande** i Commerce headquarters om du inte redan har gjort det, följer du dessa steg.
+Ställ in ett batchjobb i huvudkontoret för att skicka transaktionsmeddelanden via e-post genom att följa stegen nedan.
 
 1. Gå till **Butik och handel \> Butik och handel IT \> E-post och meddelanden \> Skicka e-postmeddelanden**.
 1. I dialogrutan **Bearbeta butikorders e-postmeddelande** välj **Återkommande**.
@@ -94,9 +94,9 @@ Om du vill konfigurera fliken **Bearbeta butikorders e-postmeddelande** i Commer
 1. Välj **OK** för att återgå till dialogrutan **Bearbeta butikorders e-postmeddelande**.
 1. Välj **OK** för att slutföra konfigurationen av jobbet.
 
-### <a name="next-steps"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 
-Innan du kan skicka e-post måste du konfigurera den utgående e-posttjänsten och konfigurera ett batchjobb. Om du vill ha mer information, se [Konfigurera och skicka e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+Innan e-post kan skickas måste du konfigurera den utgående e-posttjänsten. Om du vill ha mer information, se [Konfigurera och skicka e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

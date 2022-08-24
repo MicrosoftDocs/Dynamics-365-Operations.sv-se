@@ -1,24 +1,24 @@
 ---
 title: EUR-00015 Skapa moms-ID
 description: Denna procedur går igenom registreringsförutsättningarna för moms-ID, till exempel hur du skapar en registreringstyp och tilldelar den till en registreringskategori.
-author: v-oloski
+author: AdamTrukawka
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: v-oloski
+ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1533e634a623abfb931612e94069ff204b4a2a9b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes
+ms.openlocfilehash: 26120765b61a27cab544c37163a34a0ef18da30a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896164"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283795"
 ---
 # <a name="eur-00015-set-up-vat-id"></a>EUR-00015 Skapa moms-ID
 

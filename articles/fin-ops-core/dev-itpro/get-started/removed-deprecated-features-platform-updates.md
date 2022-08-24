@@ -2,7 +2,7 @@
 title: Borttagna eller utfasade plattformsfunktioner
 description: I denna artikel beskrivs funktioner som har tagits bort eller som planeras för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
 author: sericks007
-ms.date: 05/24/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
+ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069935"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9262311"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller utfasade plattformsfunktioner
 
@@ -31,6 +31,50 @@ I denna artikel beskrivs funktioner som har tagits bort eller som planeras för 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i respektive version av appar för ekonomi och drift.
+
+## <a name="feature-deprecation-effective-august-2022"></a>Utfasning av funktioner från augusti 2022
+
+### <a name="lifecycle-services-lcs-features-deprecated-in-august-2022"></a>Funktionen Lifecycle Services (LCS) är inaktuell i augusti 2022
+
+Som en del av [En dynamisk en plattform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) arbetsinsats, är följande LCS-funktioner utfasade.
+
+| Funktionsnamn | Används med AX 2012? | Använd med appar för ekonomi och drift? | Ersatt av en annan funktion? |
+|--------------|--------------------|----------------------------------------|------------------------------|
+| Meddelanden | Ja | Ja | Ja: Banners finns på enskilda projekt- och miljösidor för meddelanden. |
+| Konfigurationshanteraren | Ja | Nej | Nej |
+| Krasch- och dumpsanalys | Ja | Nej | Nej |
+| Återkoppling och buggar | Ja | Ja | Nej |
+| Min prenumeration | Ja | Ja | Nej |
+| Office 365 | Ja | Ja | Ja: Azure Active Directory eller Microsoft administratörsportal. |
+| Följdanalys | Nej | Ja | Nej |
+| Beräknare av total ekonomisk effekt | Nej | Ja | Nej |
+| Tjänstbegäranden | Nej | Ja | Ja: [Självbetjäning för distribution](../deployment/infrastructure-stack.md) |
+| SharePoint-integrering | Ja | Ja | Nej |
+| Konfigurations- och datahanteraren | Nej | Ja | Nej |
+| Processdatapaket | Nej | Ja | Ja: Data Import/Export Framework (DIXF) |
+| Uppgradera miljö | Nej | Ja | Ja: [En version](../lifecycle-services/oneversion-overview.md) tjänstuppdateringar finns. |
+| Infrastrukturberäknaren | Ja | Nej | Nej |
+| Licens | Ja | Nej | Nej |
+| Användningsprofileraren | Ja | Nej | Nej |
+| Anpassningsanalys | Ja | Nej | Nej |
+| Systemdiagnostik | Ja | Ja | Nej |
+| Visio-hanteringen för Affärsprocessmodelleraren | Ja | Ja | Nej |
+| AX 2012 molnmiljöhantering | Ja | Nej | Nej |
+| RDFE Azure-kopplingar | Ja | Ja | Nej |
+| AX 2012 versioner | Ja | Nej | Nej |
+| Artiklar som lagrats i LCS-lagring | Ja | Ja | Nej |
+| Begäranden av snabbkorrigeringar | Ja | Ja | Nej |
+
+
+### <a name="transport-layer-security-tls-rsa-cipher-suites"></a>Transport Layer Security (TLS) RSA chiffersvit
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi tar bort följande lista med chiffersviter för att följa våra nuvarande säkerhetsprotokoll.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
+| **Ersatt av en annan funktion?**   | Från och med 30 november 2022 kan kunder bara använda vår [standard chiffersvit](/power-platform/admin/server-cipher-tls-requirements). Den här ändringen påverkar dina klienter och servrar som kommunicerar med våra servrar. Det kan t.ex. påverka dina tredjepartsintegrationer som inte rättar sig efter vår standardstandard. |
+| **Produktområden som påverkas**         | Appar för ekonomi och drift |
+| **Distribueringsalternativ**              | Molndistributioner |
+| **Status**                         | Inaktuell. Kunderna måste uppgradera sina servrar före den 30 november 2022. Mer information om hur du konfigurerar TLS chiffersvit order finns i [Hantera Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Utfasning av funktioner från juni 2022

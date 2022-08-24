@@ -1,28 +1,26 @@
 ---
 title: Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
 description: Den här artikeln innehåller information om hur du anpassar konfigurationer av elektronisk rapportering (ER) från Microsoft som används för att generera ett anpassat elektroniskt dokument.
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: cd3200bea07d622632dc5781638ec825c21233e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854710"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278959"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
 
@@ -310,7 +308,7 @@ Som användare i rollen funktionell konsult för elektronisk rapportering kan du
 5. I fältet **Namn** ange **fakturamodell (Litware)**.
 6. Välj **Skapa konfiguration** för att lägga till den nya ER-konfigurationen.
 
-Du kan nu använda designer för ER-datamodell designer för att redigera version 50.1 av **fakturamodell (Litware)** ER-konfiguration i **utkast** [status](general-electronic-reporting.md#component-versioning).
+Du kan nu använda designer för ER-datamodell designer för att redigera version 50.1 av **fakturamodell (Litware)** ER-konfiguration i **utkast** status.
 
 ![Version 50.1 av ER-konfigurationen på sidan Konfigurationer.](./media/er-quick-start3-added-custom-model.png)
 
@@ -337,7 +335,7 @@ Du måste ändra din anpassad datamodell genom att lägga till ett nytt fält so
 
 #### <a name="complete-a-custom-data-model-configuration"></a>Slutför en anpassad konfiguration för datamodell
 
-Du måste [slutföra](general-electronic-reporting.md#component-versioning) arbetet med version 50.1 av din konfiguration av din ER-datamodell för att göra den tillgänglig så att andra anpassade ER-konfigurationer kan läggas till.
+Du måste slutföra arbetet med version 50.1 av din konfiguration av din ER-datamodell för att göra den tillgänglig så att andra anpassade ER-konfigurationer kan läggas till.
 
 1. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. På sidan **konfigurationer** i konfigurationsträdet i vänster fönster expanderar du **Fakturamodell** och väljer sedan **Fakturamodell (Litware)**.
@@ -394,7 +392,7 @@ Du måste ändra din anpassade modellmappning och ange hur det anpassade **Feder
 
 #### <a name="complete-a-custom-model-mapping-configuration"></a>Slutför en anpassad konfiguration för modellmappning
 
-Du måste [slutföra](general-electronic-reporting.md#component-versioning) arbetet med version 50.19.1 av din konfiguration av din ER-modellmappning för att göra den tillgänglig för användning.
+Du måste slutföra arbetet med version 50.19.1 av din konfiguration av din ER-modellmappning för att göra den tillgänglig för användning.
 
 1. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. På sidan **konfigurationer** i konfigurationsträdet i vänster fönster expanderar du **Kundfakturamodell** \> **Mappning av kundfakturamodell** och väljer **Mappning av fakturamodell (Litware)**.
@@ -428,7 +426,7 @@ Som användare i rollen funktionell konsult för elektronisk rapportering kan du
 
 ![Lägga till en anpassad formatkonfiguration på sidan Konfigurationer.](./media/er-quick-start3-adding-custom-format.png)
 
-Du kan nu använda ER-åtgärdsdesigner för att redigera version 11.2.2.1 av **Peppol försäljningsfaktura (Litware)** ER-konfiguration i **utkast** [status](general-electronic-reporting.md#component-versioning).
+Du kan nu använda ER-åtgärdsdesigner för att redigera version 11.2.2.1 av **Peppol försäljningsfaktura (Litware)** ER-konfiguration i **utkast** status.
 
 ![Version 11.2.2.1 av ER-konfigurationen på sidan Konfigurationer.](./media/er-quick-start3-added-custom-format.png)
 
@@ -463,7 +461,7 @@ Du måste ändra det anpassade formatet genom att lägga till ett nytt formatele
 
 #### <a name="complete-a-custom-format-configuration"></a>Slutför en anpassad formatkonfiguration
 
-Du måste [slutföra](general-electronic-reporting.md#component-versioning) arbetet med version 11.2.2.1 av din konfiguration av din ER-format för att göra den tillgänglig för användning.
+Du måste slutföra arbetet med version 11.2.2.1 av din konfiguration av din ER-format för att göra den tillgänglig för användning.
 
 1. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. På sidan **konfigurationer** i konfigurationsträdet i vänster fönster expanderar du **Kundfakturamodell** \> **UBL försäljningsfaktura** \> **Peppol försäljningsfaktura** och **Peppol försäljningsfaktura (Litware)**.
@@ -650,7 +648,7 @@ Status för version 32.6.7.2 ändras från **utkast** till **slutfört** och ver
 3. I åtgärdsfönstret i gruppen **Dokument** välj **Skicka** \> **Ursprunglig**.
 
     > [!NOTE] 
-    > Eftersom du nu har två versioner av **Peppol försäljningsfaktura Invoice (Litware)** konfiguration för ER-fomat och ingen av versionerna har ett [giltighetsdatum](general-electronic-reporting.md#component-date-effectivity)-värde används den senaste versionen för att generera en e-faktura.
+    > Eftersom du nu har två versioner av **Peppol försäljningsfaktura (Litware)** konfiguration för ER-fomat och ingen av versionerna har ett giltighetsdatum-värde används den senaste versionen för att generera en e-faktura.
 
 4. Stäng sidan **Fritextfaktura**.
 

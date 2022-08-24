@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: d99a7a7d0261ba0afd19efbb237dff329527723d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123821"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219167"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.20 augusti 2021
 
@@ -49,7 +49,7 @@ Följande register lista de funktionsförbättringar som ingår i denna version:
 | Modul | Funktionsnamn&nbsp;&nbsp;i&nbsp;funktionshantering | Mer information |
 |---|---|---|
 | Huvudplanering | Parallell auktorisering av justerad efterfrågeprognos | Med den här funktionen kan du parallellt skapa justerad efterfrågeprognos från sidan **Justerad efterfrågeprognos**. Syftet med funktionen är att öka prestanda när ett stort antal prognoser godkänns. Vid auktorisering kan användaren ange **Antal trådar** i dialogrutan för godkänna. |
-| Huvudplanering | (Förhandsversion) Batchbar bekräftelse och konsolidering för planerade bulk- och paketbatchorder | Den här funktionen gör det möjligt att använda batchjobb för att bekräfta och konsolidera planerade bulk- och paketorder. |
+| Huvudplanering | Batchbar bekräftelse och konsolidering för planerade bulk- och paketbatchorder | Den här funktionen gör det möjligt att använda batchjobb för att bekräfta och konsolidera planerade bulk- och paketorder. |
 | Produktionskontroll | Kopiera allmänna flöden | Med den här funktionen utökas kopieringsflödesfunktionen så att användarna kan kopiera flöden som inte är artikelspecifika. Det gör att systemet kan uppdatera all relevant information (till exempel plats, flödesgrupp, resursbehov och olika tider) när funktionen för kopiering av flöde har använts för att skriva över ett flöde som ännu inte tilldelats en artikel. |
 | Produktionskontroll | Uppdatera relaterade resurskrav när en flödesåtgärd ändras | Den här funktionen gör det möjligt för systemet att uppdatera de relaterade resurskraven när en användare ändrar åtgärden för ett befintligt flödessteg. |
 | Produktinformationshantering | Förbearbetning av strukturlistasrapport för att förhindra tidsgräns | Med den här funktionen kan strukturlistasrapporten förbearbetas. På så sätt undviker du tidsutjämningsproblem när du har en stor databelastning för rapporten. |

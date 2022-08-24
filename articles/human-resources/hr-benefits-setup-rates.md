@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aae3d53c1005f096551b107c46ddafb37357f03c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868171"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219851"
 ---
 # <a name="configure-rates"></a>Konfigurera satser
 
@@ -84,7 +84,7 @@ Du kan också använda dubbla nivåer. Om du väljer **dubbla nivåer** för vä
    | **Beskrivning** | Värdet i fältet **Beskrivning** kommer att användas från beskrivningen i posten för prisnivåer. Detta hjälper dig att identifiera vilken prisinställning som nivåpriserna är kopplade till. |
    | **Nivåkod** | Välj en nivåkod. Nivåkoder definieras i formuläret **Nivåkoder**. I systemet visas automatiskt beskrivningen av nivåkoden i rutnätet till vänster. |
    | **Nivåtyp** | Anger vilket fält som ska användas som urvalskriterium för beräkningsprocessen för nivåpriser. Exempel:</br></br><ul><li>Om **ålder** används använder systemet medarbetarens födelsedatum under beräkningsprocessen för förmånspriset.</li><li>Om **lön** används använder systemet medarbetarens årliga inkomsten av förmånen under beräkningsprocessen för förmånspriset.</li><li>Om **Jobbtyp** används, används medarbetarens aktuella aktiva befattningspost för att fastställa jobbtypen genom den jobbpost som är kopplad till befattningen.</li></ul></br></br>Nivåtyperna är **ålder**, **lön**, **fysisk**, **kön**, **heltidslön**, **jobbtyp**, **kompensationsregion** och **nivå**. | 
-   | **Nivå** | Det värde som ska användas med nivåtypen under beräkningsprocessen av förmånspriset. Exempel:</br></br><ul><li>Om nivåtypen är **ålder** är detta värdet för ålder.</li><li>Om nivåtypen är **lön** är detta lönebeloppet.</li><li> Om nivåtypen är **jobbtyp** är detta jobbtypen.</li></ul></br></br>Med en nivåtyp av **ålder** eller **lön** representerar värdet i fältet **nivå** den övre gränsen för nivån. Med en nivåtyp av **Jobbtyp** används en exakt matchningsmetod under valet av nivåpris. |
+   | **Nivå** | Det värde som ska användas med nivåtypen under beräkningsprocessen av förmånspriset. Exempel:</br></br><ul><li>Om nivåtypen är **ålder** är detta värdet för ålder.</li><li>Om nivåtypen är **lön** är detta lönebeloppet.</li><li> Om nivåtypen är **jobbtyp** är detta jobbtypen.</li></ul></br></br>Med en nivåtyp av **ålder** eller **lön** representerar värdet i fältet **nivå** den nedre gränsen för nivån. Med en nivåtyp av **Jobbtyp** används en exakt matchningsmetod under valet av nivåpris. |
    | **Beräkningstyp** | Anger hur beloppet i fältet beräkningsbelopp ska användas och vilken matematik beräkning som ska utföras vid behov. Om beräkningstypen är ett fast belopp används beloppsfälten som de är. Om beräkningstypen är per $ lönebelopp eller disponering används beräkningsbeloppet och beräkningsriktningen i sin matematiska beräkning.</br></br>Om beräkningstypen är per $ lönebelopp används följande matematiska ekvation:</br></br>Årslönen dividerat med beräkningsbeloppet (avrundat uppåt eller nedåt) gånger mängden rökare eller ickerökare för anställd eller arbetsgivare.</br></br>Om beräkningstypen är per $ försäkringsbelopp används följande matematiska ekvation:</br></br>Försäkringsbelopp dividerat med beräkningsbeloppet (avrundat uppåt eller nedåt) gånger mängden rökare eller ickerökare för anställd eller arbetsgivare.</br></br>I båda beräkningarna används beräkningsriktningen för att bestämma om den årliga förmånslönen eller försäkringsbeloppet ska avrundas genom beräkningsbeloppet upp eller ned. |
    | **Beräkningsbelopp** | Beloppet som ska användas under beräkningsprocessen för förmånspriset. Det här beloppet blir avgränsare under den matematiska beräkningen av nivåpriset. |
    | **Beräkningsriktning** | Riktningen som det beräknade resultatbeloppet ska avrundas till. Systemet har stöd för tre beräkningsriktningar: tom (exakt metod), **öka** och **minska**.</br></br><ul><li>Om fältet är tomt används den exakta beräkningen av lönen/försäkringsbeloppet delat med beräkningsbeloppet. Om det här värdet har en kvot används denna i beräkningen.</li><li>Om **ökning** ökas matematikberäkningen för lönen/försäkringsbeloppet dividerat med beräkningsbeloppet med nästa heltal, vilket innebär att 12,25 skulle öka till 13.</li><li>Om **minskning** minskas matematikberäkningen för lönen/försäkringsbeloppet dividerat med beräkningsbeloppet med aktuellt heltal, vilket innebär att 12,25 skulle minska till 12.</li></ul> |

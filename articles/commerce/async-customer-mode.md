@@ -2,23 +2,24 @@
 title: Skapningsläge asynkron kund
 description: Denna artikel beskriver det asynkrona läget för att skapa kunder i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 12/10/2021
+ms.date: 08/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 4ca63fe06a804035e976a3432454078c1cca0020
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1ac1bc842d5d12ece8951ffed18157e6f9b50d14
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880150"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228734"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Skapningsläge asynkron kund
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Denna artikel beskriver det asynkrona läget för att skapa kunder i Microsoft Dynamics 365 Commerce.
 
@@ -27,24 +28,35 @@ I Commerce finns det två sätt att skapa kunder: Synkron (eller Synk) och Asynk
 Om alternativet **Skapa kund i asynkront läge** anges till **Ja** i butikens funktionsprofil (**Retail och Commerce \> Kanalinställning \> Inställning av online-butik \> Funktionsprofiler**), realtidssamtal används inte för att skapa kundposter i kanaldatabasen. Asynkront kundgenereringsläge påverkar inte prestandan i Commerce headquarters. En tillfällig, global unik identifierare (GUID) tilldelas varje ny asynkron kundpost och används som kundkonto-ID. Denna GUID inte visas för kassaanvändare. I stället visas **väntande synkronisering** som kundkonto-ID.
 
 > [!IMPORTANT]
-> När kassan är offline växlar systemet automatiskt till läget för asynkron kundgenerering, även om läget för asynkron kundgenerering är inaktiverat. Oavsett om du väljer synkron eller asynkron kundgenerering måste Commerce headquarters-administratörer därför skapa och schemalägga ett återkommande batchjobb för **P-jobbet**, jobbet **Synkronisera kunder och affärspartner från asynkront läge** (kallades tidigare jobbet **Synkronisera kunder och affärspartner från asynkront läge**) och **1010**-jobbet, så att alla asynkrona kunder konverteras till synkrona kunder i Commerce headquarters.
+> När kassan är offline växlar systemet automatiskt till läget för asynkron kundgenerering, även om läget för asynkron kundgenerering är inaktiverat. Därför, oavsett ditt val mellan synkronisera och asynkronisera kundskapande måste Commerce headquarters-administratörer skapa och schemalägga ett återkommande batchjobb för **P-jobbet**, jobbet **Synkronisera kunder och affärspartners från asynkront läge** och **1010** så att eventuella asynkrona kunder konverteras till synkrona kunder i Commerce headquarters.
 
 ## <a name="async-customer-limitations"></a>Asynkrona kundbegränsningar
 
 Asynkrona kundfunktionen har för närvarande följande begränsningar:
 
-- Asynkrona kundposter kan inte redigeras om inte kunden har skapats i Commerce headquarters och det nya kundkonto-ID:t har synkroniserats tillbaka till kanalen.
 - Förmånskort kan inte utfärdas till asynkrona kunder såvida inte det nya kundkonto-ID:t har synkroniserats tillbaka till kanalen.
 
 ## <a name="async-customer-enhancements"></a>Asynkrona kundbegränsningar
 
-Från och med versionen av Commerce 10.0.24, kan du aktivera funktionen **Aktivera förbättrad asynkronisering av skapa kunder** i arbetsytan **Funktionshantering**. Den här funktionen överlappar skillnaden mellan asynkron och synkronisera lägen för kundskapande i kassa och näthandel på följande sätt:
+Om du vill hjälpa organisationer att använda läget för att skapa asynkrona kunder för att hantera kunder, och hjälpa till att minska realtidskommunikationen med Commerce headquarters, har följande förbättringar skapats för att få paritet mellan synkroniserade och asynkrona lägen i kanaler. 
 
-- Anknytningar kan inte associeras med asynkrona kunder.
-- Titlar kan läggas till i asynkrona kunder.
-- Sekundära e-postadresser och telefonnummer kan inte fångas in för asynkrona kunder.
+| Förbättrad funktion | Handel version | Information om funktionen |
+|---|---|---|
+| Prestandaförbättringar när kundinformation hämtas från kanaldatabasen | 10.0.20 och senare | För att förbättra prestandan delas kundenheten upp i mindre enheter. Då hämtar systemet endast den information som krävs från kanaldatabasen. |
+| Möjlighet att skapa adress asynkront under utcheckning | 10.0.22 och senare | <p>Funktionsändring: **Aktivera att skapa kundadresser asynkront**</p><p>Information om funktionen:</p><ul><li>Möjlighet att lägga till adresser utan att göra realtidstjänstsamtal i Commerce headquarters</li><li>Möjlighet att identifiera adresser unikt i kanaldatabasen utan att använda ett post-ID (**RecId-värde**)</li><li>Spåra tidsstämplar för att skapa adresser</li><li>Synkronisering av adresser i Commerce headquarters</li></ul><p>Den här funktionen påverkar både synkroniserade kunder och asynkrona kunder. Om du vill redigera adresser asynkront förutom att skapa dem asynkront måste du aktivera funktionen **Redigering av kunder i asynkront läge**.</p> |
+| Aktivera paritet mellan synkron och asynkron kundgenerering. | 10.0.24 och senare | <p>Funktionsändring: **Aktivera utökat skapa asynkron kund**</p><p>Funktionsdetaljer: Möjlighet att samla in ytterligare information, till exempel titel, anknytningar från standardkunden och sekundär kontaktinformation (telefonnummer och e-postadress), medan du skapar kunder asynkront</p> |
+| Användarvänliga felmeddelanden | 10.0.28 och senare | Dessa förbättringar förbättra användarvänliga felmeddelanden om en användare inte kan redigera information direkt när synkroniseringen pågår. Du aktiverar dessa förbättringar genom att använda inställningen **Tillåt att vissa UI-element inte kan ändras av en asynkron kund** på **Webbplatsinställningar \> Tilläggen** i Commerce-webbplatsbyggaren. |
+| Möjlighet att redigera kundinformation asynkront | 10.0.29 och senare | <p>Funktionsändring: **Aktivera redigering av kunder i asynkront läge**</p><p>Funktionsdetaljer: förmåga att redigera kunddata asynkront</p><p>Vanliga frågor om problem som är relaterade till redigering av kundinformation asynkront finns i [Asynkront läget för att skapa kunder](async-customer-mode-faq.md).</p> |
 
-Från och med versionen av Commerce 10.0.22, kan du aktivera funktionen **Aktivera asynkron generering för kundadresser** i arbetsytan **Funktionshantering**. Med denna funktion kan nya kundadresser sparas asynkront för både synkronisera kunder och async-kunder.
+### <a name="feature-switch-hierarchy"></a>Hierarki för funktionsändring
+
+På grund av hierarki för funktionsändring, innan du aktiverar funktionen **Aktivera redigering av kunder i asynkront läge** måste du aktivera följande funktioner: 
+
+- **Prestandaförbättringar för kundorder och kundtransaktioner** – Den här funktionen har varit obligatorisk sedan versionen av Commerce version 10.0.28. 
+- **Aktivera utökat skapa asynkron kund**
+- **Aktivera att skapa kundadresser asynkront**
+
+Vanliga frågor för kunder finns i [Asynkront kundgenereringsläge, där du hittar svar på vanliga felsökningsfrågor](async-customer-mode-faq.md). 
 
 När du har aktiverat de tidigare nämnda funktionerna måste du schemalägga ett återkommande batchjobb för **P-jobb**, jobb **Synkronisera kunder och affärspartner från det asynkrona läget** och jobbet **1010** så att alla asynkroniserade kunder konverteras till synkroniseringskunder i Commerce headquarters.
 

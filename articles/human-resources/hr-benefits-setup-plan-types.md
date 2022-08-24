@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 833d6cc131b3fb45d273b60ecf6778b2be31fc8a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 87be947c829641ba809e6850ccf41ea6d142161d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687119"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228973"
 ---
 # <a name="plan-type-overview"></a>Översikt över plantyp
 
@@ -27,6 +27,8 @@ ms.locfileid: "8687119"
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 En plantyp är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp har en plantypkod som bestämmer regler för plantypen. Till exempel plantypen **Enkel liv** kommer att ha plantypkoden **Liv** eftersom det är en typ av livförsäkringsplan och måste överensstämma med regler som har fastställts för plantypkoden **Liv**. En annan plantyp kan vara **Tillägg liv**.  Den här plantypen innehåller också plantypkoden **Liv**.
 
@@ -67,12 +69,12 @@ En plantyp kan definiera täckningsalternativ. Täckningsalternativen definieras
    | --- | --- |
    | **Plantyp** | Plantypen för att konfigurera livshändelsealternativ för. |
    | **ID för livshändelsetyp** | ID för livshändelsetypen. |
-   | **Tillåt annullering** | Anger om en medarbetare kan annullera en förmånsplan under en livshändelse. |
    | **Ändra omfattningsalternativ** | Anger om en medarbetare kan ändra omfattningsalternativ under en livshändelse. |
    | **Ändra till en ny plan** | Anger om en medarbetare kan ändra planer under en livshändelse. |
-   | **Annullera plan automatiskt** | Anger om planen ska annulleras automatiskt under livshändelsen. |
    | **Öppna berättigandekontrollen igen automatiskt** | Anger om berättigandekontrollen av förmånsanmälan automatiskt ska öppnas igen under livshändelsen. |
-   | **Rapportfönster** | Anger rapportfönstret, i dagar, för livshändelsen. **Obs**! om du inte anger ett belopp, förutsätts att rapportfönstret är noll och livshändelsen bearbetas inte. |
+   | **Anmälningsperiod för livshändelse** | Anger rapportfönstret, i dagar, för livshändelsen. **Obs**! om du inte anger ett belopp, förutsätts att rapportfönstret är noll och livshändelsen bearbetas inte. |
+   | **Kan bara redigeras av administratör** | Anger om en administratörer kan annullera eller redigera en plan under en livshändelse. Medarbetaren kan inte göra några ändringar i arbetstytan **Självbetjäning för medarbetare**. |
+   | **Annullera plan automatiskt** | Anger om planen ska annulleras automatiskt under livshändelsen. När ändringarna av livscykelhändelsen har bearbetats kommer alternativet **Annullera plan automatiskt** att behålla valet av plan. Endast status **bekräftad** eller **utcheckad** kommer att tas bort. Planen förblir markerad. Medarbetare som inte gör planval under anmälningsperioden för livscykeln förlorar alltså inte planvalet. 
 
 5. Välj **Spara**. 
 

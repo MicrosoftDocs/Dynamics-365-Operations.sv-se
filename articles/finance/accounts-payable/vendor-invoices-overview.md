@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b88390085d86956c38c0fc167395509d0c54f860
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 565e45a1c396b9144b4a6437056a0040b2fbde1d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894183"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228764"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
@@ -71,10 +71,10 @@ Organisationen kan använda arbetsflöden för att hantera granskningen för lev
 
 Nedan kan du på flera sätt förhindra att en faktura skickas till ett arbetsflöde.
 
-- **Fakturatotal och den registrerade totalen är inte lika.** Den person som har skickat fakturan får en notifiering om att summorna inte är identiska. Notifieringen ger dig möjlighet att korrigera saldona innan du skickar fakturan till arbetsflödet på nytt. Den här funktionen är tillgänglig om parametern **förbjuden överföring till arbetsflödet när faktura summan och den registrerade faktura summan inte lika** på sidan **funktionshantering** är aktiverad. 
-- **Fakturan innehåller icke-allokerade tillägg.** Den person som skickade fakturan får en notifiering om att fakturan innehåller icke-allokerade tillägg så att de kan korrigera fakturan innan den skickas vidare till arbetsflödet. Den här funktionen är tillgänglig om parametern **förbjuden överföring där det finns icke-allokerade tillägg på en leverantörsfaktura** på sidan **funktionshantering** är aktiverad.
-- **Fakturan innehåller samma fakturanummer som en annan bokförd faktura.** Den person som har skickat fakturan får ett meddelande om att en faktura med ett dubblettnummer har hittats. Dubblettnumret kan korrigeras innan fakturan skickas till arbetsflödet på nytt. Denna notifiering visas när parametern **Kontrollera använt fakturanummer** under Leverantörsreskontra anges som **Avvisa dubblett**. Den här funktionen är tillgänglig om parametern **Förbud att skicka till arbetsflöde när fakturanumret redan finns på en bokförd faktura och ditt system inte är inställt för att acceptera duplicerade fakturanummer** på sidan **funktionshantering** aktiveras.
-- **Fakturan innehåller en rad där fakturakvantiteten är mindre än den matchade produktinleveranskvantiteten.** Den person som skickar fakturan eller försöker att bokföra får ett meddelande om att kvantiteterna inte är lika. Detta meddelande ger dig möjlighet att korrigera värdena innan du skickar fakturan till arbetsflödet på nytt. Den här funktionen är tillgänglig om parametern **Blockera bokföring och inlämning av leverantörsfakturor till arbetsflödet** på sidan **Funktionshantering** aktiveras och parametern **Blockera publicering och inlämning till arbetsflöde** på sidan **Parametrar för leverantörsreskontra** aktiveras.
+- **Fakturatotal och den registrerade totalen är inte lika.** Den användare som har skickat fakturan får en notifiering om att summorna inte är identiska. Denna notifiering ger användaren möjlighet att korrigera saldona innan de skickar fakturan till arbetsflödessystemet på nytt. Den här funktionen är tillgänglig om alternativet **Förhindra överföring till arbetsflödet när fakturasumman och den registrerade fakturasumman inte är lika.** parametern på sidan **Funktionshantering** och **Arbetsflödesalternativ när faktura och registrerad summa inte är desamma** parametern på sidan **Parametrar för leverantörsreskontra** är aktiverad. 
+- **Fakturan innehåller icke-allokerade tillägg.** Den användare som har skickat fakturan får en notifiering om att fakturan har ej allokerade ändringar. På det här sättet kan användaren korrigera fakturan innan han eller hon skickar den till arbetsflödessystemet igen. Den här funktionen är tillgänglig om parametern **Tillåt inte överföring till arbetsflödet när det finns ej allokerade avgifter på en leverantörsfaktura** på sidan **Funktionshantering** aktiveras och parametern **Arbetsflödesalternativ när det finns ej allokerade avgifter** på sidan **Parametrar för leverantörsreskontra** aktiveras.
+- **Fakturan innehåller samma fakturanummer som en annan bokförd faktura.** Den användare som har skickat fakturan får en avisering om att en faktura med dubblettnummer har hittats. Användaren kan korrigera den duplicerade fakturan innan han eller hon skickar fakturan till arbetsflödessystemet igen. Aviseringen visas om parametern **Kontrollera använt fakturanummer** under Leverantörsreskontra anges som **Avvisa dubblett**. Den här funktionen är tillgänglig om parametern **Förbud att skicka till arbetsflöde när fakturanumret redan finns på en bokförd faktura och ditt system inte är inställt för att acceptera duplicerade fakturanummer** på sidan **funktionshantering** aktiveras.
+- **Fakturan innehåller en rad där fakturakvantiteten är mindre än den matchade produktinleveranskvantiteten.** Den användare som skickar fakturan eller försöker att bokföra får ett meddelande om att kvantiteterna inte är lika. Detta meddelande ger användaren möjlighet att korrigera värden innan de skickar fakturan till arbetsflödessystemet på nytt. Den här funktionen är tillgänglig om parametern **Blockera bokföring och inlämning av leverantörsfakturor till arbetsflödet** på sidan **Funktionshantering** aktiveras och parametern **Blockera publicering och inlämning till arbetsflöde** på sidan **Parametrar för leverantörsreskontra** aktiveras.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Matcha leverantörsfakturor mot produktinleveranser
 

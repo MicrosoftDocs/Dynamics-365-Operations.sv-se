@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167774"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220375"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -87,29 +87,23 @@ Från och med version 10.0.25 av Supply Chain Management är denna funktion akti
 
 ### <a name="enable-registering-of-material-consumption"></a>Aktivera registrering av materialförbrukning
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och löpnummer. Vissa tillverkare, särskilt de som finns i bearbetningsindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. Medarbetare kan till exempel använda en våg för att väga hur mycket material som förbrukas medan de arbetar. För att garantera fullständig spårbarhet av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras.
 
 Det finns två versioner av denna funktion. Den ena stöder artiklar som *inte* aktiverats för att använda lagerstyrningsprocesser (WMS). Den andra stöder artiklar som *är* aktiverade för att använda WMS. Om du vill använda den här funktionen ska du aktivera en av eller båda följande funktioner i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i den här ordningen), beroende på om du har artiklar som är aktiverade för WMS:
 
 - *Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (icke-WMS)*
-- *(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)*
+- *Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)*
 
 > [!IMPORTANT]
 > Du kan använda enbart versionen utan WMS. Om du använder WMS måste du emellertid aktivera båda funktioner.
 
 ### <a name="enable-reporting-on-catch-weight-items"></a>Aktivera rapportering av artiklar med nominell vikt
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Medarbetare kan använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg rörande batchorder för artiklar med nominell vikt. Batchorder skapas från formler, vilkar kan definieras så att de har artiklar med nominell vikt som formelartiklar, samprodukter och biprodukter. En formel kan också definieras till att ha formelrader för ingredienser som är definierade för nominell vikt. Artiklar med nominell vikt använder två måttenheter för att spåra lager: nominell viktkvantitet och lagerkvantitet. Inom till exempel livsmedelsindustrin kan förpackat kött definieras som en nominell viktartikel, där den nominella viktkvantiteten används för att spåra antalet kartonger och lagerkvantiteten används för att spåra kartongerna.
 
 För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *(Förhandsversion) Rapport med fångstviktartiklar från körningsgränssnittet för produktionsgolvet*
+- *Rapportera artiklar med faktisk/nominell vikt från körningsgränssnittet för produktionsgolvet*
 
 ### <a name="enable-the-my-day-dialog"></a>Aktivera dialogrutan "Min dag"
 

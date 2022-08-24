@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845936"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219545"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurera konsolideringspolicyer för leverans
 
@@ -61,8 +61,7 @@ Följ de här stegen om du vill konfigurera standardpolicyer för leveranskonsol
 1. På snabbfliken **Lageerställe** ställer du in alternativet **Konsolidera leverans vid släpp till lagerställe** som *Ja*.
 1. Upprepa steg 2 till och med 4 för alla andra lagerställen där konsolidering krävs.
 1. Stäng sidan.
-1. Använd [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera funktionen *Policyer för leveranskonsolidering*. I arbetsytan **Funktionshantering** heter funktionen *Konsolidera leverans*.
-1. Gå till **Lagerstyrnings \> Inställningar \> Släpp till lagerställe \> Policyer för leveranskonsolidering**. Du kanske måste uppdatera webbläsaren för att se det nya menyalternativet **Policyer för leveranskonsolidering** när du har aktiverat funktionen.
+1. Gå till **Warehouse managements \> Inställningar \> Släpp till lagerställe \> Policyer för leveranskonsolidering**. Du kanske måste uppdatera webbläsaren för att se det nya menyalternativet **Policyer för leveranskonsolidering** när du har aktiverat funktionen.
 1. I åtgärdsfönstret väljer du **Skapa standardinställningar** för att skapa följande policyer:
 
     - En **CrossOrder**-policy för policytypen *Försäljningsorder* (förutsatt att du har minst ett lagerställe som har ställts in för att använda den tidigare konsolideringsfunktionen)
@@ -81,8 +80,7 @@ Följ de här stegen om du vill konfigurera standardpolicyer för leveranskonsol
 
 Följ de här stegen om du vill konfigurera standardpolicyer för leveranskonsolidering i en helt ny miljö.
 
-1. Använd [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera funktionen *Policyer för leveranskonsolidering* om du inte redan har gjort det. I arbetsytan **Funktionshantering** heter funktionen *Konsolidera leverans*.
-1. Gå till **Lagerstyrnings \> Inställningar \> Släpp till lagerställe \> Policyer för leveranskonsolidering**.
+1. Gå till **Warehouse managements \> Inställningar \> Släpp till lagerställe \> Policyer för leveranskonsolidering**.
 1. I åtgärdsfönstret väljer du **Skapa standardinställningar** för att skapa följande policyer:
 
     - En **standard**-policy för policytypen *försäljningsorder*

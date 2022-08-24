@@ -1,26 +1,26 @@
 ---
 title: Designa ett ER-format i syfte att generera en rapport i Excel-format med inbäddade bilder i sidhuvuden eller sidfötter
 description: I denna artikel beskrivs hur du använder Elektronisk rapportering (ER) för att generera affärsdokument som har bilder och figurer inbäddade i sidhuvuden eller sidfötter.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 5b46d92094bb3f2dab67a5cb2f0e1a34b05d52f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854855"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281825"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Designa ett ER-format i syfte att generera en rapport i Excel-format med inbäddade bilder i sidhuvuden eller sidfötter
 
@@ -196,7 +196,7 @@ Som representant för Litware, Inc. måste du i detta fall skapa (härleda) en n
 
 ![Skapa en konfiguration för ett anpassat betalningsformat i dialoglistrutan Skapa konfiguration.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Version 240.112.1 av ER-formatkonfigurationen **Fritextfaktura (Excel) anpassad** skapas. Den här versionen har [status](general-electronic-reporting.md#component-versioning) av **utkast** och kan redigeras. Det aktuella innehållet i det anpassade ER-formatet matchar innehållet i det format som tillhandahålls av Microsoft.
+Version 240.112.1 av ER-formatkonfigurationen **Fritextfaktura (Excel) anpassad** skapas. Den här versionen har status av **utkast** och kan redigeras. Det aktuella innehållet i det anpassade ER-formatet matchar innehållet i det format som tillhandahålls av Microsoft.
 
 ![Nya versioner av den ER-formatkonfiguration som skapats på sidan Konfigurationer.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -244,7 +244,7 @@ Konfigurera ditt eget format så att en bild med företagslogotypen läggs i sid
 
 ### <a name="mark-the-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Markera det anpassade formatet som körbart
 
-Eftersom den första versionen av det anpassade formatet har skapats och bär statusen **Utkast** kan du köra formatet i testsyfte. Om du vill köra rapporten måste du bearbeta en leverantörsbetalning genom att använda den betalningsmetod som refererar till det anpassade ER-formatet. Som standard, när du anropar ett ER-format från appen kan endast versioner som har status **slutförd** eller **delad** [beaktas](general-electronic-reporting.md#component-versioning). Det här beteendet gör det enklare att använda ER-format som inte innehåller färdiga designer. För att testet ska kunna köras kan du dock tvinga appen att använda den version av ditt ER-format som har statusen **utkast**. På det här sättet kan du justera den aktuella formatversionen om du behöver göra ändringar. Mer information finns i [Tillämplighet](electronic-reporting-destinations.md#applicability).
+Eftersom den första versionen av det anpassade formatet har skapats och bär statusen **Utkast** kan du köra formatet i testsyfte. Om du vill köra rapporten måste du bearbeta en leverantörsbetalning genom att använda den betalningsmetod som refererar till det anpassade ER-formatet. Som standard, när du anropar ett ER-format från appen kan endast versioner som har status **slutförd** eller **delad** beaktas. Det här beteendet gör det enklare att använda ER-format som inte innehåller färdiga designer. För att testet ska kunna köras kan du dock tvinga appen att använda den version av ditt ER-format som har statusen **utkast**. På det här sättet kan du justera den aktuella formatversionen om du behöver göra ändringar. Mer information finns i [Tillämplighet](electronic-reporting-destinations.md#applicability).
 
 Om du vill använda utkastversionen av ett ER-format måste du markera ER-format på tydligt sätt.
 

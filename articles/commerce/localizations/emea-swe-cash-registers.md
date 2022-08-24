@@ -1,50 +1,51 @@
 ---
-title: Kassaapparatfunktioner för Sverige
-description: Den här artikeln innehåller en översikt över kassaapparatfunktioner för Sverige.
-author: EvgenyPopovMBS
-ms.date: 12/02/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
-audience: Application User
-ms.reviewer: josaw
-ms.search.region: Sweden
-ms.search.industry: retail
-ms.author: epopov
-ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 371ae61e2bf305765f9f551f95579093c5df9a62
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 31ff361280cda94d475507bab148267ee5638318
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903640"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281524"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
+---
 
-[!include [banner](../includes/banner.md)]
+titel: Kassaapparatfunktioner för Sverige [!include [banner](../includes/banner.md)]
+beskrivning: Den här artikeln innehåller en översikt över kassaapparatfunktioner för Sverige.
 
-Den här artikeln innehåller en översikt över kassaapparatfunktioner för Sverige i Dynamics 365 Commerce. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
+författare: EvgenyPopovMBS Den här artikeln innehåller en översikt över kassaapparatfunktioner för Sverige i Dynamics 365 Commerce. Den innehåller även riktlinjer för att konfigurera funktionen. Funktionen innehåller följande delar: ms.date: 12/02/2019
 
-- Vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner som ett alternativ för att förhindra försäljning och returer från att slås samman i ett kvitto
-- Sverige-specifika funktioner, t.ex. ytterligare räknare i dagliga kassarapporter
+ms.topic: artikel
+- Vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner som ett alternativ för att förhindra försäljning och returer från att slås samman i ett butikskvitto ms.prod: 
+- Sverige-specifika funktioner, t.ex. ytterligare räknare i dagliga kassarapporter ms.technology: 
 - Ett exempel för att integrera kassa med Sverige-specifika kvittoskrivarenheter som kallas kontrollenheter.
+publik: programanvändare
 
+ms.reviewer: josaw
 ## <a name="overview-of-cash-register-functionality-for-sweden"></a>Översikt över kassaapparatfunktioner för Sverige
+ms.search.region: Sverige
 
+ms.author: josaw
 ### <a name="common-pos-features"></a>Vanliga kassafunktioner
+ms.search.validFrom: 2017-06-30
 
-Mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Commerce-startsida](../index.md).
+ms.dyn365.ops.version: juli 2017 uppdatering För mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Commerce-startsida](../index.md).
+ms.search.industry: detaljhandel
 
-Dessutom har följande kassafunktioner som implementerades för Sverige gjorts tillgängliga för kunder i alla länder eller regioner:
+ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable Dessutom har följande kassafunktioner som implementerats för Sverige gjorts tillgängliga för kunder i alla länder eller regioner:
 
+---
 - **Förbjuda försäljning och returer från att slås samman i ett kvitto.** När du anger parametern **förbjuda blandning av försäljning och returer i ett kvitto** i kassafunktionsprofilen till **Ja**, kommer Cloud POS och Modern POS inte låta användarna skapa en transaktion som innehåller både positiva och negativa rader.
+
 - **Skriva ut textfälten på kvittot i en stor teckenstorlek.** Du kan använda parametern **Teckenstorlekstorlek** i kvittoformatdesignern för att ange att stort teckenstorlek ska användas för ett fält i ett kvittoformat. (Stor teckenstorlek är ungefär dubbelt så stor som normal storlek.) Du kan exempelvis använda denna parameter för att skriva ut indikatorn ”kopia” på ett kvitto med stora bokstäver.
+    
 - **Registrera utskrift av kvittokopior i händelseloggen kassagranskning.** Du kan använda parametern **granska** i kassafunktionsprofilen för utskrift av kvittokopior och andra kassagranskningshändelser som ska registreras. Granskningshändelserna registreras i kanaldatabasen och i administrationen. Du kan visa granskningshändelser på sidan **granskningshändelser**.
+
 - **Förhindra att en kopia av ett kvitto skrivs ut mer än en gång.** När parametern **granska** i kassafunktionsprofilen är aktiverad kan kassabehörigheten **Tillåt utskrift av kassakopior** kontrollera om kvittokopiorna kan skrivas ut. Det finns också ett alternativ för att förhindra att en kopia av ett kvitto skrivs ut mer än en gång.
 
+
+
 ### <a name="sweden-specific-pos-features"></a>Sverige-specifika kassafunktioner
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod** i kassafunktionsprofilen ställs in till **SE**:
 
@@ -153,9 +154,3 @@ Du måste ange följande allmänna inställningar för Sverige.
   Mer information om inställning och konfiguration av styrenhetens integrationsprov finns i [Exempel på integration av kontrollenhet för Sverige](./emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 
 ---
-
-    
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

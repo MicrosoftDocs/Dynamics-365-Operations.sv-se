@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068683"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219485"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Platsdirektiv för plockning i åldersfördelat lager
 
@@ -34,8 +34,8 @@ När lagret först tas emot eller skapas i lagerstället uppdaterar systemet det
 
 Om du vill göra den här funktionen tillgänglig aktiverar du följande funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i denna ordning:
 
-1. Distributionslagrets platsstatus
-1. Platsdirektiv för plockning i åldersfördelat lager
+1. *Lagerställets platsstatus* version 10.0.29 är den här funktionen aktiverad som standard. Mer information finns i [Lagerställets platsstatus](warehouse-location-status.md).
+1. *Platsdirektiv för plockning i åldersfördelat lager*
 
 ## <a name="feature-requirements"></a>Funktionskrav
 
@@ -50,7 +50,7 @@ Det här avsnittet innehåller exempel som visar hur du konfigurerar och använd
 
 ### <a name="make-sample-data-available"></a>Gör exempeldata tillgängliga
 
-Om du vill arbeta genom dessa scenarier med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) har installerats. Dessutom måste du välja den **USMF** juridiska personen innan du börjar.
+Om du vill arbeta genom dessa scenarier med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) har installerats. Dessutom måste du välja den **USMF** juridiska personen innan du börjar.
 
 Du kan också använda dessa scenarier som vägledning för funktionen när du använder ett produktionssystem. I så fall måste du dock ersätta dina egna värden för varje inställning som beskrivs här.
 

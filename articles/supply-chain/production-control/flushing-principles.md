@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 89fd38ea6d2c1635e9d8974ab99c2e4cdae4d6be
+ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065567"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9266441"
 ---
 # <a name="flushing-principles"></a>Avräkningsprinciper
 
@@ -56,7 +56,10 @@ Den manuella avräkningsprincipen anger att registrering av materialförbrukning
 Startavräkningsprincipen anger att materialet förbrukas automatiskt när tillverkningsordern startas. Mängden material som används är proportionell mot den kvantitet som startas. När startavräkningsprincipen används tillsammans med tillverkningskörningssystemet kan den även användas till att avräkna material när en åtgärd eller ett processjobb startas. Denna princip är relevant om exempelvis avvikelsen i förbrukningen är låg, materialet är lågvärdesmaterial, det inte finns några spårningskrav eller det är kort bearbetningstid i åtgärder. 
 
 ### <a name="finish"></a>Slutför
-Avslutavräkningsprincipen anger att materialet ska förbrukas automatiskt, när produktionsordern rapporteras som färdig eller när en åtgärd som har ställts upp för att använda materialet registreras som slutförd. Mängden material som används är proportionell mot den kvantitet som rapporteras som klar. När avslutaavräkningsprincipen används tillsammans med tillverkningskörningssystemet kan den även användas till att avräkna material när en åtgärd eller ett processjobb slutförts. Denna princip gäller i samma situationer som startprincipen. Emellertid är avslutaprincipen för åtgärder som har en längre körtid där material inte anges till PIA innan åtgärden är slutförd. 
+Avslutavräkningsprincipen anger att materialet ska förbrukas automatiskt, när produktionsordern rapporteras som färdig eller när en åtgärd som har ställts upp för att använda materialet registreras som slutförd. Mängden material som används är proportionell mot den kvantitet som rapporteras som klar. När avslutaavräkningsprincipen används tillsammans med tillverkningskörningssystemet kan den även användas till att avräkna material när en åtgärd eller ett processjobb slutförts. Denna princip gäller i samma situationer som startprincipen. Emellertid är avslutaprincipen för åtgärder som har en längre körtid där material inte anges till PIA innan åtgärden är slutförd.
+
+> [!NOTE]
+> Du kan inte använda Slutför avräkningsprincip tillsammans med planeringsartiklar. Vi rekommenderar att du använder starta avräkningsprincip i stället. Planering av artiklar har en produktionstyp av *Planering av artikel* och endast biprodukter och biprodukter kan rapporteras som färdiga på batchordrar som skapas för planeringsartiklar.
 
 ### <a name="available-at-location"></a>Tillgänglig på plats
 Tillgänglig på platsen-avräkningsprincipen anger att materialet ska förbrukas automatiskt, när det registreras som plockat för produktion. Materialet har registrerats som plockat från plats när arbetet med råmaterialplockningen har slutförts eller när material finns på platsen för produktionsinleverans och materialraden släppts till lagret. Plocklistan som skapas under processen bokförs i ett batchjobb. Denna princip är användbar om du till exempel har många plockaktiviteter mot en tillverkningsorder. I det här fallet behöver du inte manuellt uppdatera plocklistan och du får en aktuell vy över PIA-saldo.

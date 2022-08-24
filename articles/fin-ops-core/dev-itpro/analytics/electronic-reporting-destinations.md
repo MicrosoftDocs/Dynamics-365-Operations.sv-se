@@ -1,26 +1,26 @@
 ---
 title: Destinationer för elektronisk rapportering (ER)
 description: I den här artikeln finns information om hantering av mål för elektroniska rapportering, vilka typer av destinationer som stöds samt säkerhetsaspekter.
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851089"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281980"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -118,7 +118,7 @@ När du konfigurerar filmål för ett valt format, konfigurerar du dem för hela
 
 [![Konfigurationslänk.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-På samma gång har du kanske flera [versioner](general-electronic-reporting.md#component-versioning) av formatet som har importerats till den aktuella Finance-instansen. Du kan visa dem om du väljer länken **konfigurationer** som erbjuds när du väljer fältet **referens**.
+På samma gång har du kanske flera versioner av formatet som har importerats till den aktuella Finance-instansen. Du kan visa dem om du väljer länken **konfigurationer** som erbjuds när du väljer fältet **referens**.
 
 [![Konfigurationsversioner.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -180,6 +180,16 @@ Det producerade PDF-dokumentet är begränsat till en maximal längd på 300 sid
 I Finance **version 10.0.9** stöds endast liggande sidorientering i PDF-dokumentet som har skapats från en Excel-utdatafil. Med start i Finance **version 10.0.10**, kan du [ange sidorientering](#SelectPdfPageOrientation) för PDF-dokument som har skapats från ett Excel-format när du konfigurerar ett ER-mål.
 
 Endast de vanligaste systemteckensnitten i Windows-operativsystemet används för att konvertera utdata som inte innehåller inbäddade teckensnitt.
+
+### <a name="resources"></a>Resurser
+
+Före Ekonomi version 10.0.29 kan PDF-konvertering bara göras utanför den aktuella Ekonomiinstansen. En genererad fil skickas ut från Ekonomi till konverteringstjänsten, och den tjänsten returnerar sedan det konverterade dokumentet. Men i version **10.0.29 och senare**, utöver funktionen **Konvertera utgående dokument för elektronisk rapportering från Microsoft Office till PDF** hon aktivera funktionen **Använd appresurser för att utföra konvertering av CBD-dokument från Word till PDF-format**. Med hjälp av den här funktionen kan du konvertera genererade Word-dokument till PDF-format lokalt med hjälp av programserverresurser i den aktuella ekonomiinstansen. 
+
+Här är fördelarna med lokal PDF-konvertering när funktionen **Använd appresurser för att utföra konvertering av CBD-dokument från Word till PDF-format** är avaktiverad:
+
+- PDF-dokumentet som produceras är det inte [begränsat](#limitations) till ett maximalt antal sidor.
+- Word-dokumentet som konverteras kan innehålla [ett stort antal innehållskontroller](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- Internet-anslutning krävs inte i lokala distributioner.
 
 ### <a name="use-the-pdf-conversion-option"></a>Använd PDF-konverteringsalternativet
 

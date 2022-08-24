@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 543afe2e689fa787158551bec64e2458141be71c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899249"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220100"
 ---
 # <a name="replenishment-over-location-capacity"></a>Lagerpåfyllnad över platskapacitet
 
@@ -41,7 +41,7 @@ Det här avsnittet innehåller riktlinjer och ett exempel som visar hur du konfi
 
 ### <a name="enable-sample-data"></a>Aktivera exempeldata
 
-Om du vill arbeta genom detta [exempelscenario](#example-scenario) med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) har installerats. Dessutom måste du välja den **USMF** juridiska personen innan du börjar.
+Om du vill arbeta genom detta [exempelscenario](#example-scenario) med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) har installerats. Dessutom måste du välja den **USMF** juridiska personen innan du börjar.
 
 ### <a name="location-profile"></a>Platsprofiler
 

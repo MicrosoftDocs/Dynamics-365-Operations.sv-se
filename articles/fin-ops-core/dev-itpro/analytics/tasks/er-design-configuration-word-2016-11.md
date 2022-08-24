@@ -1,24 +1,24 @@
 ---
 title: Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format
 description: I den här artikeln beskrivs hur rapportformat som har utformats för att generera rapporter som Excel-arbetsböcker kan konfigureras för att generera rapporter som Word-dokument.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e0fe9ba55be435fb214c9d0885dd4ef942f5081
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: eea037751bc7ae4cb5e45fcaa0166d1f2f0b8292
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910398"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291187"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format
 

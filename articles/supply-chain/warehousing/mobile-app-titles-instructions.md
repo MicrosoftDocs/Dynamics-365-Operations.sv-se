@@ -4,19 +4,19 @@ description: I denna artikel beskrivs hur du skapar och visar anpassade instrukt
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895508"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220162"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Anpassa stegtitlar och instruktioner för mobilappen Warehouse Management
 
@@ -30,10 +30,7 @@ I denna artikel bekrivs hur du skapar och visar anpassade instruktioner för var
 
 ## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>Aktivera steginstruktionsfunktionen för lagerställeappen
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *Warehouse management*
-- **Funktionsnamn:** *Steginstruktioner för lagerapp*
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Steginstruktioner för lagerställeapp* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>Stegtitlar och steginstruktioner i appen
 

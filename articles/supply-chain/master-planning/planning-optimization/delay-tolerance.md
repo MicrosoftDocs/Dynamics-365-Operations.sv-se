@@ -10,28 +10,35 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4bd6042f9dd33ba15773b251911e965cb870c5aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865133"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219980"
 ---
 # <a name="delay-tolerance-negative-days"></a>Fördröjningstolerans (negativa dagar)
 
 [!include [banner](../../includes/banner.md)]
 
-Med funktionen för fördröjningstolerans kan ett värde för Planeringsoptimering ta hänsyn till värdet för **Negativa dagar** som har angetts för disponeringsgrupper. Den används för att utöka den fördröjningstoleransperiod som används vid huvudplanering. På det här sättet kan du undvika att skapa nya leveransorder om befintlig leverans kommer att täcka efterfrågan efter en kort fördröjning. Syftet med funktionen är att avgöra om det är logiskt att skapa en ny leveransorder för en given efterfrågan.
+Med funktionen för fördröjningstolerans kan ett värde för Planeringsoptimering ta hänsyn till värdet för **Negativa dagar** som har angetts för disponeringsgrupper, artikeldisponering och/eller översiktsplaner. Den används för att utöka den fördröjningstoleransperiod som används vid huvudplanering. På det här sättet kan du undvika att skapa nya leveransorder om befintlig leverans kommer att täcka efterfrågan efter en kort fördröjning. Syftet med funktionen är att avgöra om det är logiskt att skapa en ny leveransorder för en given efterfrågan.
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
 
-Om du vill göra funktionen för fördröjningstolerans tillgänglig i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Negativa dagar för Planeringsoptimering*.
+Om du vill göra funktionen för fördröjningstolerans tillgänglig i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen:
+
+- *Negativa dagar för planeringsoptimering* – Med den här funktionen aktiveras inställningar för negativa dagar för disponeringsgrupper och artikel disponering.
+- *Leveransautomatisering på beställning* – Med den här funktionen aktiveras inställningar för huvudplaner i negativa dagar. (Mer information finns i [Leveransautomatisering på beställning](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Fördröjningstolerans vid Planeringsoptimering
 
 Fördröjningstoleransen representerar antalet dagar efter den lead-tid du är villiga att vänta innan du beställer nya påfyllnader när befintlig leverans redan har planerats. Fördröjningstolerans definieras genom att använda kalenderdagar, inte arbetsdagar.
 
-Vid huvudplaneringen, när systemet beräknar fördröjningstoleransen, tar det hänsyn till inställningen **Negativa dagar**. Du kan ange värdet **negativa dagar** på sidan **Disponeringsgrupper** eller på sidan **Artikeldisponering**.
+Vid huvudplaneringen, när systemet beräknar fördröjningstoleransen, tar det hänsyn till inställningen **Negativa dagar**. Du kan ange värdet **negativa dagar** på sidan **Disponeringsgrupper** eller på sidan **Artikeldisponering** eller **Huvudplaner**. Om negativa dagar tilldelas på mer än en nivå används följande hierarki för att avgöra vilken inställning som ska användas:
+
+- Om negativa dagar har aktiverats på sidan **Huvudplaner** åsidosätter den inställningen alla andra negativa dagar när planen körs.
+- Om negativa dagar har konfigurerats på sidan **Artikel disponering** åsidosätter den inställningen för disponeringsgrupp.
+- Negativa dagar som konfigureras på sidan **Disponeringsgrupper** gäller bara om negativa dagar inte har konfigurerats för en relevant artikel eller plan.
 
 Systemet kopplar förseningtoleransberäkningen till det *tidigaste påfyllnadsdatumet*, som är lika med dagens datum plus ledtiden. Fördröjningstoleransen beräknas med följande formel, där *max()* hittar det större av två värden:
 

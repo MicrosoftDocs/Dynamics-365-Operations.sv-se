@@ -1,24 +1,26 @@
 ---
 title: Utforma en ny ER-konfiguration för att generera rapporter i Word-format
 description: I den här artikeln beskrivs hur användare kan konfigurera ett nytt ER-format (elektronisk rapportering) för att generera rapporter som Microsoft Word-dokument.
-author: NickSelin
+author: kfend
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: caf87659ca4ceb7b25aa43e09893d2a0ef014884
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: b56b328aa2a2b53dc177a02a4d453e5dbcb8340c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893024"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273351"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Utforma en ny ER-konfiguration för att generera rapporter i Word-format
 
@@ -35,7 +37,7 @@ Om du vill använda ett Word-dokument som mall för rapporter i Word-format kan 
 
 ![Skapa en anpassad konfiguration av format på sidan Konfigurationer.](./media/er-design-configuration-word-image2.gif)
 
-ER-formatkomponenten i lösningen måste innehålla ormatelementet **Excel\\Fil** och det formatelementet måste länkas till det Word-dokument som ska användas som mall för genererade rapporter vid körning. Om du vill konfigurera ER-formatkomponenten måste du öppna [utkast](general-electronic-reporting.md#component-versioning) versionen för den skapade ER-konfigurationen i ER-formatdesignern. Lägg sedan till elementet **Excel\\Fil**, koppla Word-mallen till det redigerbara ER-formatet och länka mallen till **Excel\\Fil** som du har lagt till.
+ER-formatkomponenten i lösningen måste innehålla ormatelementet **Excel\\Fil** och det formatelementet måste länkas till det Word-dokument som ska användas som mall för genererade rapporter vid körning. Om du vill konfigurera ER-formatkomponenten måste du öppna utkast versionen för den skapade ER-konfigurationen i ER-formatdesignern. Lägg sedan till elementet **Excel\\Fil**, koppla Word-mallen till det redigerbara ER-formatet och länka mallen till **Excel\\Fil** som du har lagt till.
 
 > [!NOTE]
 > När du bifogar en mall manuellt måste du använda en [dokumenttyp](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) som tidigare har [konfigurerats](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) i ER-parametrar för att lagra mallar i ER-format.

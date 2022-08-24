@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895208"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227788"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Förskottsfakturor kontra förskottsbetalningar
 
@@ -78,6 +78,8 @@ Förskottsbetalningen kan tas bort från inköpsordern om du inte redan har kvit
 Om du vill registrera leverantörens förskottsbetalningsfaktura går du till sidan **Leverantörsfaktura** genom att välja alternativet **Förskottsbetalningsfaktura** på sidan **Inköpsorder** (**Leverantörsreskontra \> Vanliga \> Inköpsorder \> Alla inköpsorder \> fliken Faktura \> Förskottsbetalningsfaktura**). Ange information om förskottsfakturan, bland annat fakturanumret. Du kan inte ändra kvantiteter för en förskottsfaktura. Om leverantören har fakturerat ett delbelopp av förskottsbetalningsvärdet som har definierats på inköpsordern kan du uppdatera enhetspriset så att det återspeglar delvärdet.
 
 När förskottsfakturan bokförs kommer leverantörsbalansen och förskottskontot att uppdateras. Värde **förskottsbetalningsprogram** på förskottsdefinitionen i inköpsordern kommer också att uppdateras. De ekonomiska standarddimensionsposterna för den bokförda förskottsbetalningsverifikationen tas från huvudinformationen på inköpsordern.
+
+Om funktionen **Lås ekonomiska dimensioner på fakturarader på faktura för förskottsbetalning till leverantör** på sidan **funktionshantering** är aktiverat, kan dimensionerna i förskottsbetalningsrubriken eller raderna inte uppdateras. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Bokföra och kvitta betalningar för förskottsbetalningsfakturan
 Fakturan förskottsbetalningen betalas sedan från sidan **Betalningsjournal**. Om du vill öppna betalningsjournaler klickar du på **Leverantörsreskontra \> Journaler \> Betalningar \> Betalningsjournal**. Efter att betalningen har betalats till förskottsfakturan, inköpsorderns värde **Återstående ansökning om förskottsbetalning** kommer att uppdateras.

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2f1902ba76db59b61b0437eb3cd68ee94018b7c5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844480"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219950"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Lagermarkeringen med Planeringsoptimering
 
@@ -43,9 +43,15 @@ Pegging startar genom att inkludera relevanta markeringar, lagerbehållningar oc
 
 När du bekräftar en planerad order innehåller dialogrutan **Bekräftelse** ett fält för **Uppdatera markering** som du använder för att konfigurera markeringsalternativ för de beställningar som skapas under bekräftelse. Välj ett av följande värden:
 
-- **Nej** – ingen lagermarkering används.
-- **Standard** – Lagermarkeringen uppdateras baserat på pegging. Posterna i en order (efterfrågan) markeras i jämförelse med en uppfyllelseorder (tillgång). Om en kvantitet finns kvar i uppfyllelseorder markeras den inte och referensinformationen lämnas tom. Om till exempel en försäljningsorder för 100 ea peggas mot en inköpsorder för 150 ea, tilldelas referensinformation endast till försäljningsordern.
-- **Utökad** – Både behovsordern (efterfrågan) och uppfyllelseordern (tillgång) markeras, oberoende av om någon kvantitet återstår i uppfyllelseordern. Om till exempel en försäljningsorder för 100 ea peggas mot en inköpsorder för 150 ea, tilldelas referensinformation till både försäljningsordern och inköpsordern.
+- *Nej* – ingen lagermarkering används.
+- *Standard* – Lagermarkeringen uppdateras baserat på pegging. Posterna i en order (efterfrågan) markeras i jämförelse med en uppfyllelseorder (tillgång). Om en kvantitet finns kvar i uppfyllelseorder markeras den inte och referensinformationen lämnas tom. Om till exempel en försäljningsorder för 100 ea peggas mot en inköpsorder för 150 ea, tilldelas referensinformation endast till försäljningsordern.
+- *Utökad* – Både behovsordern (efterfrågan) och uppfyllelseordern (tillgång) markeras, oberoende av om någon kvantitet återstår i uppfyllelseordern. Om till exempel en försäljningsorder för 100 ea peggas mot en inköpsorder för 150 ea, tilldelas referensinformation till både försäljningsordern och inköpsordern.
+- *Standard på en nivå* – Markering på en nivå används. Markeringar på en nivå markerar endast huvudartikeln, inte dess strukturlistekomponenter. Därför kan du vara flexibel i komponenttilldelningen för tillverkningsorder när du har bekräftat. Med en nivåmarkering kan systemet optimera för ändringar av efterfrågan i sista minuten. I *standard* markering på en nivå markeras behovsorder mot uppfyllelseorder, men uppfyllelseorder markeras inte om de har resterande kvantitet.
+- *Utökad på en nivå* – Markering på en nivå används. I *utökad* markering på en nivå markeras behovsorder mot uppfyllelseorder, men uppfyllelseorder markeras alltid oavsett om hur många som finns kvar.
 
+Om du vill ställa in standardmarkeringsalternativ för ditt system går du till parametrarna **Huvudplanering \> Inställningar \> Parametrar för huvudplanering**. Sedan på fliken **Standarduppdatering** anger du **Uppdateringsmarkering** i önskat alternativ.
+
+> [!NOTE]
+> Alternativen *En nivå, standard* och *En nivå, utökad* är bara tillgängliga om funktionen *Tillverka mot order-automation* har aktiverats i systemet. Mer information om den här funktionen och hur du aktiverar den finns i [Tillverka mot order-automation](../make-to-order-supply-automation.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

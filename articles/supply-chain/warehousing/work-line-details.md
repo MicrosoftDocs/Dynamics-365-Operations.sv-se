@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3dd9f4930303b1e3506e613d5437613138944430
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1017527419acc2e4cb42b2bcb83131339d82b665
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877317"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218895"
 ---
 # <a name="work-line-details"></a>Arbetsradsdetaljer
 
@@ -52,7 +52,7 @@ Det här avsnittet innehåller en demonstration på tre delar som visar hur du a
 
 ### <a name="make-sample-data-available"></a>Gör exempeldata tillgängliga
 
-Om du vill arbeta genom denna demo med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) har installerats. Dessutom måste du välja den **USMF** juridiska personen innan du börjar.
+Om du vill arbeta genom denna demo med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) har installerats. Dessutom måste du välja den **USMF** juridiska personen innan du börjar.
 
 Du kan också använda denna demo som vägledning när du arbetar med ett produktionssystem. Du måste emellertid ersätta dina egna värden och du kanske saknar vissa typer av obligatoriska poster som används i standard demodata.
 

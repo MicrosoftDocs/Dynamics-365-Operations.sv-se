@@ -4,19 +4,19 @@ description: Denna artikel beskriver hur du konfigurerar omvägar för menyalter
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863604"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219017"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurera omvägar för steg i menyalternativ för mobila enheter
 
@@ -34,20 +34,8 @@ En omväg är ett separat menyalternativ som kan öppnas från ett steg i en huv
 Innan du kan konfigurera omvägar för steg i menyalternativ för mobila enheter måste du slutföra följande procedur för att aktivera de nödvändiga funktionerna och generera de obligatoriska fältnamnen i mobilappen Warehouse Management.
 
 1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
-1. I arbetsytan [**Funktionshantering**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aktivera funktionen som anges på följande sätt:
-
-    - **Modul:** *Warehouse management*
-    - **Funktionsnamn:** *Steginstruktioner för lagerapp*
-
-    Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Den här funktionen är en förutsättning för funktionen *Omvägar för lagerstyrningsapp*.
-
-1. Aktivera funktionen som visas på följande sätt:
-
-    - **Modul:** *Warehouse management*
-    - **Funktionsnamn:** *Omvägar för lagerstyrningsapp*
-
-    Den här funktionen är den funktion som beskrivs i denna artikel.
-
+1. Se till att funktionen *Steginstruktioner för lagerställeapp* är aktiverad för systemet. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Den här funktionen är en förutsättning för funktionen *Omvägar för lagerstyrningsapp*.
+1. Aktivera funktionen *Omvägar för lagerstyrningsappen Warehouse Management*. Den här funktionen är en som beskrivs i denna artikel.
 1. Uppdatera fältnamnen i Warehouse Management-mobilappen genom att gå till **Warehouse Management \> Inställningar \> Mobil enhet \> Fältnamn i lagerställeapp** och väljer **Skapa standardinställningar**. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
 1. Upprepa föregående steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management.
 
@@ -65,7 +53,7 @@ I det här scenariot visas hur du konfigurerar en platsförfrågan som en omväg
 
 ### <a name="enable-sample-data"></a>Aktivera exempeldata
 
-För att använda de angivna exempelposterna och värdena för att arbeta igenom det här scenariot måste du använda ett system där standarddemodata är installerade. Du måste också välja den **USMF** juridiska personen innan du börjar.
+För att använda de angivna exempelposterna och värdena för att arbeta igenom det här scenariot måste du använda ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) är installerade. Du måste också välja den **USMF** juridiska personen innan du börjar.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Skapa en menyspecifik åsidosättning och konfigurera omvägen för scenario 1
 
@@ -118,7 +106,7 @@ Du kan ersätta platsförfrågan med ett ID-nummer förfrågan eller en artikelf
 
 ### <a name="enable-sample-data"></a>Aktivera exempeldata
 
-För att använda de angivna exempelposterna och värdena för att arbeta igenom det här scenariot måste du använda ett system där standarddemodata är installerade. Du måste också välja den **USMF** juridiska personen innan du börjar.
+För att använda de angivna exempelposterna och värdena för att arbeta igenom det här scenariot måste du använda ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) är installerade. Du måste också välja den **USMF** juridiska personen innan du börjar.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Skapa en menyspecifik åsidosättning och konfigurera omvägen för scenario 2
 

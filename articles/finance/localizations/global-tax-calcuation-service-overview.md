@@ -1,24 +1,24 @@
 ---
 title: Översikt över momsberäkning
 description: Detta ämne innehåller information om momsberäkningsfunktionens övergripande omfattning och funktioner.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: c6dabb9d2aae6f1fc759c40f870c66304d7f7c8d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166852"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270682"
 ---
 # <a name="tax-calculation-overview"></a>Översikt över momsberäkning
 
@@ -54,10 +54,15 @@ Skatteberäkningstjänsten distribueras på följande Azure-områden: Fler Azure
 
 - Asien och stillahavsområdet
 - Australien
+- Brasilien
 - Kanada
 - Europa
+- Frankrike
+- Indien
 - Japan
+- Sydafrika
 - Schweiz
+- Förenade Arabemiraten
 - Storbritannien
 - USA
 
@@ -149,11 +154,15 @@ Följande transaktioner stöds i version 10.0.28:
 - Leverantörsbetalningsjournal
 - Kundbetalningsjournal
 
+Följande transaktioner stöds i version 10.0.29: 
+
+- Periodisk journal
+
 ## <a name="supported-countriesregions"></a>Länder/regioner som stöds
 
-Momsberäkning kan aktiveras av juridisk person. 
+Momsberäkning kan köras med de localization-funktioner som stöds i följande länder/regioner för en juridisk persons primära adress: 
 
-Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.21:
+Stöds i version 10.0.21:
 
 - Österrike
 - Belgien
@@ -176,7 +185,7 @@ Följande länder/regioner för en juridisk persons primära adress stöds i ver
 - Storbritannien
 - USA
 
-Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.22:
+Stöds i version 10.0.22:
 
 - Australien
 - Bahrain
@@ -191,22 +200,24 @@ Följande länder/regioner för en juridisk persons primära adress stöds i ver
 - Sydafrika
 - Förenade Arabemiraten
 
-Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.23:
+Stöds i version 10.0.23:
 
 - Thailand
 - Japan
 - Malaysia
 - Singapore
 
-Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.24:
+Stöds i version 10.0.24:
 
 - Mexiko
 
-Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.26:
+Stöds i version 10.0.26:
 
 - Kina
 - Tjeckien
 - Spanien
+
+I alla länder eller regioner som inte är lokaliserade av Microsoft kan momsberäkning också aktiveras och köras med andra globala funktioner.
 
 ## <a name="related-resources"></a>Relaterade resurser
 

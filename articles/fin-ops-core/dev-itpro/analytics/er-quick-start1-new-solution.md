@@ -1,28 +1,26 @@
 ---
 title: Skapa en ny ER-lösning för att skriva ut en egen rapport
 description: I den här artikeln beskrivs hur du utformar en elektronisk rapporteringslösning (ER) för att skriva ut en egen rapport.
-author: NickSelin
+author: kfend
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7194fa9243362d4eb61d6ce706e30a66c9cf3217
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 114de2e7a3e40f45e5e46ddcb29e9fc626f89ad6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847500"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281795"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Skapa en ny ER-lösning för att skriva ut en egen rapport
 
@@ -289,7 +287,7 @@ Status för version 1 av denna konfiguration ändras från **utkast** till **slu
 
 ![Versioner av den redigerbara konfigurationen på sidan Konfigurationer.](./media/er-quick-start1-model-configuration.png)
 
-Mer information om versionshantering för ER-konfigurationer finns i [Översikt över elektroniska rapporter (ER)](general-electronic-reporting.md#component-versioning).
+Mer information om versionshantering för ER-konfigurationer finns i [Översikt över elektroniska rapporter (ER)](general-electronic-reporting.md).
 
 > [!NOTE]
 > Den konfigurerade datamodellen är din abstrakta representation av affärsdomänen **enkät** och innehåller inga relationer till artefakter som är specifika för Microsoft Dynamics 365 Finance.

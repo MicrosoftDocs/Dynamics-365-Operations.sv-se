@@ -1,26 +1,26 @@
 ---
 title: Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 description: Den här artikeln innehåller information om hur du granskar de konfigurerade komponenterna för elektroniska rapporter (ER) för att förhindra problem som kan uppstå vid körning.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864848"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277863"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 
@@ -30,8 +30,8 @@ Alla konfigurerade [elektronisk rapporterings- (ER)](general-electronic-reportin
 
 Som standard används valideringen automatiskt i följande fall för en återställningskonfiguration som innehåller de tidigare nämnda återställningskomponenterna:
 
-- Du [importerar](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) en ny [version](general-electronic-reporting.md#component-versioning) av en ER-konfiguration till din instans av Microsoft Dynamics 365 Finance.
-- Du ändrar [status](general-electronic-reporting.md#component-versioning) för den redigerbara ER-konfigurationen från **Utkast** till **Slutförd**.
+- Du [importerar](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) en ny version av en ER-konfiguration till din instans av Microsoft Dynamics 365 Finance.
+- Du ändrar status för den redigerbara ER-konfigurationen från **Utkast** till **Slutförd**.
 - Du [baserar om](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) en redigerbar ER-konfiguration genom att använda en ny basversion.
 
 Du kan uttryckligen köra den här valideringen. Välj ett av följande tre alternativ och följ de steg som tillhandahålls:
@@ -770,7 +770,7 @@ Det finns inget alternativ för automatisk korrigering av det här problemet.
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Mall som inte är länkad
 
-När du konfigurerar en ER-formatkomponent [manuellt](er-fillable-excel.md#manual-entry) för att använda en mall för att generera ett utgående dokument, måste du manuellt lägga till elementet **Excel\\Fil**, lägga till mallen som krävs som bilaga till den redigerbara komponenten och välja bilagan i det tillagda elementet **Excel\\Fil**. På så sätt anger du att det tillagda elementet kommer att fylla i den markerade mallen under körning. När du konfigurerar en formatkomponentversion i **Utkast**-[status](general-electronic-reporting.md#component-versioning) kan du lägga till flera mallar i den redigerbara komponenten, och sedan välja varje mall i elementet **Excel\\Fil** för att köra ER-formatet. På så sätt kan du se hur olika mallar fylls i vid körning. Om du har mallar som inte är markerade i något **Excel\\Fil**-element, varnas du för att mallarna kommer att tas bort från versionen av den redigerbara ER-formatkomponenten när dess status ändras från **Utkast** till **Slutförd**.
+När du konfigurerar en ER-formatkomponent [manuellt](er-fillable-excel.md#manual-entry) för att använda en mall för att generera ett utgående dokument, måste du manuellt lägga till elementet **Excel\\Fil**, lägga till mallen som krävs som bilaga till den redigerbara komponenten och välja bilagan i det tillagda elementet **Excel\\Fil**. På så sätt anger du att det tillagda elementet kommer att fylla i den markerade mallen under körning. När du konfigurerar en formatkomponentversion i **Utkast**-status kan du lägga till flera mallar i den redigerbara komponenten, och sedan välja varje mall i elementet **Excel\\Fil** för att köra ER-formatet. På så sätt kan du se hur olika mallar fylls i vid körning. Om du har mallar som inte är markerade i något **Excel\\Fil**-element, varnas du för att mallarna kommer att tas bort från versionen av den redigerbara ER-formatkomponenten när dess status ändras från **Utkast** till **Slutförd**.
 
 Följande steg visar hur det här problemet kan uppstå.
 

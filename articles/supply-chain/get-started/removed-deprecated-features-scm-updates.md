@@ -2,7 +2,7 @@
 title: Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management
 description: I denna artikel beskrivs funktioner som har tagits bort eller har planerats för borttagning i Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171528"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218819"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management
 
@@ -33,6 +33,17 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 > [!NOTE]
 > Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i respektive version av appar för ekonomi och drift.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Borttagna eller föråldrade funktioner i Supply Chain Management version 10.0.29
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Lageröverföringsorder som har moms på överföringspriset
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Orsak till inaktuell/borttagning** | Funktionen [Lageröverföringsorder som har moms på överföringspriset](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) ersätts av funktionen [Lageröverföringsorder för Indien](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Ersatt av en annan funktion?**   | Ja, funktionen [Lageröverföringsorder som har moms på överföringspriset](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) ersätts av funktionen [Lageröverföringsorder för Indien](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Produktområden som påverkas** | Supply Chain Management – lager |
+| **Distribueringsalternativ** | Moln och lokal |
+| **Status** | <p>Vara inaktuell Funktionen *Lageröverföringsorder som har moms på överföringspriset* kommer inte att få support med felkorrigeringar och säkerhetskorrigeringar.</p><p>Efter april 2023 kommer kunder uppmanas att använda den förbättrade funktionen *Lageröverföringsorder för Indien* som standard. Efter oktober 2023 kommer funktionen *Lageröverföringsorder som har moms på överföringspriset* inte längre att vara tillgängliga och kunder uppmanas att flytta till den förbättrade funktionen. *Lageröverföringsorder för Indien*.</p><p>Mer information finns i [Lageröverföringsorder för Indien](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Borttagna eller föråldrade funktioner i Supply Chain Management version 10.0.19
 

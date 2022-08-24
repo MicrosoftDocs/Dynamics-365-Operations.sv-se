@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 741377a43e2bfe702b213647cc6460a3d6ad93fb
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068647"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218695"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Frisläppning i batch av delvis reserverade överföringsorder
 
@@ -42,25 +42,22 @@ Innan en order kan delvis frisläppas till ett lager som en batch, måste uppfyl
 
 Uppfyllandepolicyer för överförings- och försäljningsorder anges på företagsnivå. Beroende på inställningarna för uppfyllandepolicyn kommer orderfrisläppandet i batch att godtas eller avvisas. Alla order kommer sedan att behandlas därefter.
 
--   Om du vill skapa uppfyllandepolicyer för överförings- och försäljningsorder klickar du på **Lagerstyrning** \> **Inställningar** \> **Frisläpp till lagerställe** \> **Uppfyllelsepolicy**, och skapar sedan en uppfyllandepolicy genom att ange ett namn och en beskrivning.
-
--   Om du vill ange en uppfyllandekvot, en värdetyp samt det meddelande som ska visas om uppfyllandepolicyn överträds klickar du på **Lagerstyrning** \> **Inställningar** \> **Frisläpp till lagerställe** \> **Uppfyllandepolicy**, och fyller sedan i fälten **Uppfyllandekvot**, **Värdetyp** och **Meddelande om brott mot uppfyllande**.
+- Om du vill skapa uppfyllandepolicyer för överförings- och försäljningsorder klickar du på **Lagerstyrning \> Inställningar \> Frisläpp till lagerställe \> Uppfyllelsepolicy** och skapar sedan en uppfyllandepolicy genom att ange ett namn och en beskrivning.
+- Om du vill ange en uppfyllandekvot, en värdetyp samt det meddelande som ska visas om uppfyllandepolicyn överträds klickar du på **Lagerstyrning \> Inställningar \> Frisläpp till lagerställe \> Uppfyllandepolicy** och ange fälten **Uppfyllandekvot**, **Värdetyp** och **Meddelande om brott mot uppfyllande**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Ange uppfyllandevillkoren för överförings- och försäljningsorder
 
--   Om du vill ange villkoren för överföringsorder klickar du på **Lagerstyrning** \> **Inställningar** \> **Parametrar för lager och lagerstyrning** \> **Överföringsorder** \> **Lagerstyrning**, och väljer sedan uppfyllelsevillkor för överföringsorder.
+- Om du vill ange villkoren för överföringsorder klickar du på **Lagerstyrning \> Inställningar \> Parametrar för lager och lagerstyrning** och sedan på fliken **Överföringsorder** i avsnittet **Lagerstyrning** väljer du uppfyllelsevillkor för överföringsorder.
+- Om du vill ange uppfyllelsevillkor för försäljningsorder går du till **Kundreskontra \> Inställningar \> Parametrar för kundreskontra** och sedan på fliken **Lagerstyrning** väljer du villkor för uppfyllandet av försäljningsorder.
 
--   Om du vill ange uppfyllelsevillkor för försäljningsorder klickar du på **Kundreskontra** \> **Inställningar** \> **Parametrar för kundreskontra** \> **Lagerstyrning** och väljer sedan villkor för uppfyllandet av försäljningsorder.
-
-## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-release-in-a-batch"></a>Tillåt frisläpp i batch, och ange den kvantitet som ska frisläppas i batch
+## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-released-in-a-batch"></a>Tillåt frisläpp i batch, och ange den kvantitet som ska frisläppas i batch
 
 Ett batch-jobb används för att frisläppa order till ett lager i batch. De parametrar som särskiljer de order som ska köras i ett batchjobb anges i själva batchjobbet.
 
 Parametern **Kvantitet** anger om hela kvantiteten eller den fysiskt reserverade kvantiteten ska frisläppas i batchen. Parametern **Tillåt frisläppning av delvis frisläppta order** avgör om order i batchen godkänns eller avvisas om de tidigare delvis har frisläppts.
 
--   För att ange parametrarna **Kvantitet** och **Tillåt frisläpp av delvis frisläppta order** för överföringsorder klickar du på **Lagerstyrning** \> **Frisläpp till lagerställe** \> **Automatisk frisläppning av överföringsorder**.
-
--   För att ange parametrarna **Kvantitet** och **Tillåt frisläppning av delvis frisläppta order** för försäljningsorder klickar du på **Lagerstyrning** \> **Frisläpp till lagerställe** \> **Automatisk frisläppning av försäljningsorder**.
+- För att ange parametrarna **Kvantitet** och **Tillåt frisläpp av delvis frisläppta order** för överföringsorder klickar du på **Lagerstyrning \> Frisläpp till lagerställe \> Automatisk frisläppning av överföringsorder**.
+- För att ange parametrarna **Kvantitet** och **Tillåt frisläppning av delvis frisläppta order** för försäljningsorder klickar du på **Lagerstyrning \> Frisläpp till lagerställe \> Automatisk frisläppning av försäljningsorder**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

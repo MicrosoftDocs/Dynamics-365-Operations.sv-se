@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910560"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279579"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Skapa e-postmallar för transaktionshändelser
 
@@ -117,7 +117,29 @@ Meddelandetypen *orderannullering* utlöses när en order avbryts i Commerce hea
 
 ### <a name="customer-created"></a>Kunden har skapats
 
-Meddelandetypen *kund som skapas* utlöses när en ny kundentitet i Commerce headquarters.
+Meddelandetypen *kund som skapas* utlöses när en ny kundentitet i Commerce headquarters. 
+
+För att aktivera meddelanden som skapats av kunden i Commerce headquarters på **Butik och handel \> Administrationsinställning \> Parametrar \> Commerce-parametrar \> Allmänt**. I listrutan **E-postmeddelandeprofil** väljer du den e-postmeddelandeprofil som innehåller meddelandetypen som skapats av en kund. 
+
+Som standard överförs händelser som skapats av kunder till administration med batchjobbet **Synkronisera kunder och kanalbegäranden**. Om du vill använda ett servicesamtal i realtid för att skicka dessa händelser ställer du in e-post-ID:t för den skapade mallen på **newCust**. Detta rekommenderas dock inte eftersom servicesamtal i realtid är "skicka och glömma"-samtal och därför inte har den reserv- eller omprövningslogik som finns i batchjobb.
+
+> [!NOTE] 
+> När du aktiverar meddelanden som skapats av kunder får kunder som skapas i alla kanaler inom den juridiska personen ett e-postmeddelande som skapas av kunden. För närvarande kan meddelanden skapade av kund inte begränsas till en enda kanal.  
+
+När det startas via batchjobbet har meddelandetyper som skapats av kund stöd för följande platshållare.
+
+| Namn på platshållare | Beskrivning                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | För- och efternamn för den kund som skapade ett konto. |
+
+När det startas via servicesamtal i realtid har meddelandetyper som skapats av kund stöd för följande platshållare.
+
+| Namn på platshållare | Beskrivning                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Namn             | För- och efternamn för den kund som skapade ett konto. |
+| E-postadress            | E-postadressen till kunden som skapade kontot.    |
+| Telefon            | Telefonnummer till kunden som skapade kontot.      |
+| URL              | URL-adressen som kunden angav när kontot skapades. |
 
 ### <a name="b2b-prospect-approved"></a>Potentiell B2B-kund godkänd
 

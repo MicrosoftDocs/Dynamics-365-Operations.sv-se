@@ -1,26 +1,26 @@
 ---
 title: Utforma ett ER-format för att sidnumrera skapade dokument i Excel
 description: Det här ämnet förklarar hur du utformar ett elektroniskt rapporteringsformat (ER) som paginerar ett genererat dokument i Microsoft Excel.
-author: NickSelin
+author: kfend
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner
+ms.openlocfilehash: e4a34dffda9e9b95f5d6c7ee382723663817ec6b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909290"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285014"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>Utforma ett ER-format för att sidnumrera skapade dokument i Excel
 
@@ -58,11 +58,11 @@ I det här scenariot är du representant för Litware, Inc. som för närvarande
 5. I fältet **namn** anger du **Intrastat-rapport Litware**.
 6. Välj **Skapa konfiguration** för att skapa det nya formatet.
 
-Version 1.9.1 av **Intrastat-rapport Litware** ER-formatkonfiguration har skapats. Den här versionen har [status](general-electronic-reporting.md#component-versioning) av **utkast** och kan redigeras. Det aktuella innehållet i det anpassade ER-formatet matchar innehållet i det format som tillhandahålls av Microsoft.
+Version 1.9.1 av **Intrastat-rapport Litware** ER-formatkonfiguration har skapats. Den här versionen har status av **utkast** och kan redigeras. Det aktuella innehållet i det anpassade ER-formatet matchar innehållet i det format som tillhandahålls av Microsoft.
 
 ### <a name="make-the-custom-format-runnable"></a>Gör det anpassade formatet som körbart
 
-Nu när den första versionen av det anpassade formatet har skapats och har statusen **utkast** kan du köra formatet i testsyfte. Om du vill köra rapporten måste du bearbeta en leverantörsbetalning genom att använda den betalningsmetod som refererar till det anpassade ER-formatet. Som standard, när du anropar ett ER-format från appen kan endast versioner som har status **slutförd** eller **delad** [beaktas](general-electronic-reporting.md#component-versioning). Det här beteendet gör det enklare att använda ER-format som inte innehåller färdiga designer. För att testet ska kunna köras kan du dock tvinga appen att använda den version av ditt ER-format som har statusen **utkast**. På det här sättet kan du justera den aktuella formatversionen om du behöver göra ändringar. Mer information finns i [Tillämplighet](electronic-reporting-destinations.md#applicability).
+Nu när den första versionen av det anpassade formatet har skapats och har statusen **utkast** kan du köra formatet i testsyfte. Om du vill köra rapporten måste du bearbeta en leverantörsbetalning genom att använda den betalningsmetod som refererar till det anpassade ER-formatet. Som standard, när du anropar ett ER-format från appen kan endast versioner som har status **slutförd** eller **delad** beaktas. Det här beteendet gör det enklare att använda ER-format som inte innehåller färdiga designer. För att testet ska kunna köras kan du dock tvinga appen att använda den version av ditt ER-format som har statusen **utkast**. På det här sättet kan du justera den aktuella formatversionen om du behöver göra ändringar. Mer information finns i [Tillämplighet](electronic-reporting-destinations.md#applicability).
 
 Om du vill använda utkastversionen av ett ER-format måste du markera ER-format på tydligt sätt.
 

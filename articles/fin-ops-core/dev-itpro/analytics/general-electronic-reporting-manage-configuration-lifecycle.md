@@ -1,32 +1,32 @@
 ---
 title: Hantera livscykeln för konfiguration av elektronisk rapportering (ER)
 description: Den här avsnittet beskriver hur du hanterar livscykeln för elektronisk rapportering (ER) konfigurationer för Dynamics 365 Finance.
-author: NickSelin
+author: kfend
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58801
-ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58801
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109095"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271596"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Hantera livscykeln för konfiguration av elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Den här avsnittet beskriver hur du hanterar livscykeln för elektronisk rapportering (ER) konfigurationer för Dynamics 365 Finance.
+Den här avsnittet beskriver hur du hanterar livscykeln för [elektronisk rapportering](general-electronic-reporting.md) (ER) [konfigurationer](general-electronic-reporting.md#Configuration) för Dynamics 365 Finance.
 
 ## <a name="overview"></a>Översikt
 
@@ -105,6 +105,41 @@ I vissa fall kanske du kräver att systemet ignorerar de konfigurerade förutsä
 
     > [!NOTE]
     > Den här parametern är specifik för användaren och företaget.
+
+## <a name="dependencies-on-other-components"></a>Beroenden på andra komponenter
+
+ER-konfigurationer kan konfigureras som [beroende](er-download-configurations-global-repo.md#import-filtered-configurations) på andra konfigurationer. Du kan till exempel [importera](er-download-configurations-global-repo.md) en ER [datamodell](er-overview-components.md#data-model-component) konfiguration från den globala databasen i din [Microsoft Regulatory Configuration Services (RCS)](../../../finance/localizations/rcs-overview.md) eller Dynamics 365 Finance instans och sedan skapa en ny ER [format](er-overview-components.md#format-component) konfiguration som [härledd](er-quick-start2-customize-report.md#DeriveProvidedFormat) från den importerade ER-datamodellkonfigurationen. Den härledda ER-formatkonfigurationen är beroende av grundläggande ER-datamodellkonfigurationen.
+
+![Härledd ER-formatkonfiguration på sidan Konfigurationer.](./media/ger-configuration-lifecycle-img1.png)
+
+När du har designat formatet kan du ändra statusen för din ursprungliga [version](general-electronic-reporting.md#component-versioning) av ER-formatkonfigurationen från **Utkast** till **Slutfört**. Du kan sedan dela den ifyllda versionen av ER-formatkonfigurationen genom att [publicera](../../../finance/localizations/rcs-global-repo-upload.md) den i den globala databasen. Nu ska du få åtkomst till den globala databasen från valfri RCS- eller ekonomi molnbaserad instans. Du kan sedan importera alla ER-konfigurationsversionen som gäller för programmet från den globala databasen till det programmet.
+
+![Publicerad ER-formatkonfiguration på sidan Konfigurationsdatabas.](./media/ger-configuration-lifecycle-img2.png)
+
+Baserat på konfigurationsberoendet, när du väljer ER-formatkonfigurationen i det globala arkivet för att importera det till en nyligen distribuerad RCS- eller ekonomiinstans, hittas baskonfigurationen för ER-datamodellen automatiskt i det globala arkivet och importeras tillsammans med det valda ER-formatet konfiguration som baskonfiguration.
+
+Du kan också exportera ER-formatkonfiguration versionen från den aktuella RCS- eller ekonomiinstansen och lagra den lokalt som en XML-fil.
+
+![Exportera en ER-formatkonfiguration version som XML på konfigurationssidan.](./media/ger-configuration-lifecycle-img3.png)
+
+I versioner av Ekonomi **före version 10.0.29**, när du försöker importera ER-formatets konfigurationsversion från den XML-filen eller från något annat arkiv än det globala arkivet till en nyligen distribuerad RCS- eller ekonomiinstans som ännu inte innehåller några ER-konfigurationer, kommer följande undantag att skapas för att informera dig att en baskonfiguration inte kan erhållas:
+
+> Olösta referenser finns kvar<br>
+Referens från objektet \<imported configuration name\> till objektet "bas" (\<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>) går inte att fastställa
+
+![Importera ER-format konfigurationsversion på sidan Konfigurationsdatabas.](./media/ger-configuration-lifecycle-img4.gif)
+
+I version **10.0.29** och senare, när du försöker importera samma konfiguration, om en grundkonfiguration inte kan hittas i den aktuella programinstansen eller i källdatabasen som du för närvarande använder (om tillämpligt) försöker ER-ramverket automatiskt att hitta namnet på den saknade baskonfigurationen i den globala databascachen. Därefter visas namnet på och globalt unik identifierare (GUID) för den saknade baskonfigurationen i texten för det undantag som är grunden till detta.
+
+> Olösta referenser finns kvar<br>
+Referens från objektet '\<imported configuration name\>' till objektet "bas" (\<name of the missed base configuration\> \<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>) går inte att fastställa
+
+![Undantag på sidan Konfigurationsdatabas när baskonfigurationen inte går att hitta.](./media/ger-configuration-lifecycle-img5.png)
+
+Du kan använda det angivna namnet för att hitta baskonfigurationen och sedan manuellt importera den.
+
+> [!NOTE]
+> Det här nya alternativet fungerar bara när minst en användare redan har loggat in i den globala databasen via sidan [Konfigurationsdatabaser](er-download-configurations-global-repo.md#open-configurations-repository) eller ett av fälten för globala databas [sökning](er-extended-format-lookup.md) i den aktuella ekonomiinstansen och när det globala databasinnehållet har cachelagrats.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

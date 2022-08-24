@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e66cda6e529a70d40e599718332152bac95b061e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889647"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220040"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Genomgång av funktioner för konstruktionsändringshantering
 
@@ -45,7 +45,7 @@ Innan du försöker göra något av övningarna i resten av denna artikel följe
 
 ### <a name="make-standard-demo-data-available"></a>Gör standarddemodata tillgängliga
 
-Arbeta med ett system där [standarddemodata har installerats](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). I standarddemodata läggs data till flera juridiska demoenheter (företag och organisationer). När du arbetar igenom övningarna använder du företagsväljaren till höger om navigeringsfältet för att växla mellan ett företag (*DEMF*) som anges som en *teknikorganisation* och ett annat företag (*USMF*) som anges som en *driftorganisation*.
+Arbeta med ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) har installerats. I standarddemodata läggs data till flera juridiska demoenheter (företag och organisationer). När du arbetar igenom övningarna använder du företagsväljaren till höger om navigeringsfältet för att växla mellan ett företag (*DEMF*) som anges som en *teknikorganisation* och ett annat företag (*USMF*) som anges som en *driftorganisation*.
 
 ### <a name="set-up-an-engineering-organization"></a>Skapa en teknikorganisation
 

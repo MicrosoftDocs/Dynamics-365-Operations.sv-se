@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887701"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220435"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Faktura för underhåll av kundägda tillgångar
 
@@ -49,7 +49,7 @@ Innan du kan använda den här funktionen den aktiveras i ditt system. Administr
 
 Om du vill veta hur funktionen fungerar arbetar du med följande exempelscenario.
 
-Om du vill arbeta genom detta scenario med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) har installerats. Du måste välja den **USMF** juridiska personen innan du börjar.
+Om du vill arbeta genom detta scenario med hjälp av de exempelposter och värden som anges här måste du använda ett system där standard [demodata](../../../fin-ops-core/fin-ops/get-started/demo-data.md) har installerats. Du måste välja den **USMF** juridiska personen innan du börjar.
 
 Du kan också använda detta scenario som vägledning för funktionen när du arbetar med ett produktionssystem. I så fall måste du emellertid ersätta dina egna värden och du kanske saknar vissa typer av obligatoriska poster som används i standard demodata.
 

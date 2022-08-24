@@ -1,27 +1,27 @@
 ---
 title: Inkommande lageråtgärder i kassan
 description: Denna artikel beskriver möjligheterna i den inkommande lageråtgärden för en kassa (POS).
-author: hhaines
+author: hhainesms
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858892"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288363"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
 
@@ -155,15 +155,13 @@ Som du behöver kan du välja **Inleverera alla** på appfältet för att snabbt
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Inleverans av oplanerade artiklar i inköpsorder
 
-I Commerce version 10.0.14 och senare kan användare ta emot en produkt som inte ursprungligen fanns på inköpsordern. Aktivera den här funktionen genom att aktivera **Lägg till rader i inköpsordern när POS inlevereras**.  
-
-Den här funktionen fungerar bara för inleverans av inköpsorder. Det går inte att ta emot artiklar mot överföringsorder när artiklarna inte tidigare har beställts och levererats från det utgående lagerstället.
+I Commerce version 10.0.14 och senare kan användare ta emot en produkt som inte ursprungligen fanns på inköpsordern. Den här funktionen fungerar bara för inleverans av inköpsorder. Det går inte att ta emot artiklar mot överföringsorder när artiklarna inte tidigare har beställts och levererats från det utgående lagerstället.
 
 Användare kan inte lägga till nya produkter i inköpsordern under kassamottagning om [arbetsflödet för ändringshantering av inköpsorder](../supply-chain/procurement/purchase-order-approval-confirmation.md) är aktiverat i Commerce headquarters (HQ). Om du vill aktivera ändringshantering måste alla ändringar av en inköpsorder först godkännas innan mottagning tillåts. Eftersom den här processen tillåter att en mottagare lägger till nya rader i inköpsordern misslyckas inleveransen om arbetsflödet för ändringshantering aktiveras. Om ändringshantering aktiveras för alla inköpsorder eller för den leverantör som är kopplad till inköpsordern aktivt som inlevereras i POS, kan användaren inte lägga till nya produkter i inköpsordern under inleverans i kassa.
 
 Funktionen som gör det möjligt att lägga till rader kan inte användas som en lösning för att ta emot ytterligare kvantiteter av produkter som redan finns på inköpsordern. Överleverans hanteras via standardinställningarna för [Överleverans](#over-receiving-validations) för produktraden på inköpsordern.
 
-Om **Lägg till rader i inköpsordern under den tidpunkt då inleveransen** är aktiverad och en användare tar emot den **inkommande åtgärden** i POS, om användaren läser in eller nycklar för en produktstreckkod eller ett produktnummer som inte är identifierat som en artikel på den aktuella inköpsordern, men som är identifierad som en giltig artikel, får användaren ett meddelande om att artikeln läggs till Om användaren lägger till artikeln på inköpsordern beaktas den kvantitet som angetts i **inleverans nu** den beställda kvantiteten för inköpsorderraden.
+När en användare tar emot **inkommande åtgärd** i kassan, om användaren läser in eller nycklar för en produktstreckkod eller ett produktnummer som inte är identifierat som en artikel på den aktuella inköpsordern, men som är identifierad som en giltig artikel, får användaren ett meddelande om att artikeln läggs till Om användaren lägger till artikeln på inköpsordern beaktas den kvantitet som angetts i **inleverans nu** den beställda kvantiteten för inköpsorderraden.
 
 När inleveransen av inköpsordern slutförs och skickas till HQ för bearbetning, skapas de tillagda raderna i inköpsorderns huvuddokument. På inköpsorderraden i HQ kommer en flagga **tillagd av POS** på fliken **Allmänt** inköpsorderraden att läggas till. Flaggan **tillagd av POS** anger att inköpsorderraden lades till av kassa mottagande processen och inte var en rad som fanns på inköpsordern före inleveransen.
 

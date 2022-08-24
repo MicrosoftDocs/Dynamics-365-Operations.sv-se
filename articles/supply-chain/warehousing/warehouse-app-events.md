@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41b9538d3064bad24c4c5c60d401605e47e9c655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2dc24fed1ec71432d9e2a3e1cb5b366267c2938b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905466"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218755"
 ---
 # <a name="warehouse-app-event-processing"></a>Händelsebearbetning i distributionslagerappen
 
@@ -28,7 +28,7 @@ Batchjobb som körs i Supply Chain Management kan använda data från en kö fö
 
 ## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Aktivera eller inaktivera bearbeta händelser för lagerställeapp
 
-Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bearbeta lagerställeapphändelser* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk. Därför är den aktiverad som standard och kan inte stängas av igen. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen *Bearbeta lagerställeapphändelser* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Ställ in ett batchjobb för att bearbeta händelser för lagerställeapp
 

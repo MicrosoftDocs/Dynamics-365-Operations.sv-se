@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849138"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219701"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrd arbetssekvensering
 
@@ -44,7 +44,7 @@ Innan du kan använda funktionen systemstyrd arbetssekvensering måste den aktiv
 
 ### <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 
-För att arbeta igenom scenariot genom att använda värdena som presenteras i denna artikel måste du arbeta på ett system där standarddemodata finns installerat. Dessutom måste du välja den **USMF** juridiska personen. Scenariot använder lagerställe *51* från demodata.
+För att arbeta igenom scenariot genom att använda värdena som presenteras i denna artikel måste du arbeta på ett system där standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) finns installerat. Dessutom måste du välja den **USMF** juridiska personen. Scenariot använder lagerställe *51* från demodata.
 
 > [!IMPORTANT]
 > Innan du släpper order till distributionslagret måste du se till att plockplatserna har tillräckligt med lager för alla artiklar på order.

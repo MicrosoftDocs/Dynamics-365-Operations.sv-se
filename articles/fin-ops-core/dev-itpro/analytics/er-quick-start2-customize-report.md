@@ -1,28 +1,26 @@
 ---
 title: Justera ett ER-format för att skapa ett anpassat elektroniskt dokument
 description: Den här artikeln innehåller information om hur du justerar ett "ER"-format (elektronisk rapportering) från Microsoft så att ett anpassat elektroniskt dokument skapas.
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886803"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283571"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Justera ett ER-format för att skapa ett anpassat elektroniskt dokument
 
@@ -271,7 +269,7 @@ I det här fallet, som representant för Litware, Inc. måste du skapa (härledd
 
 6. Välj **Skapa konfiguration**.
 
-Version 1.1.1 av **BACS (kund från Storbritannien)** ER-formatkonfiguration har skapats. Den här versionen har [status](general-electronic-reporting.md#component-versioning) av **utkast** och kan redigeras. Det aktuella innehållet i det anpassade ER-formatet matchar innehållet i det format som tillhandahålls av Microsoft.
+Version 1.1.1 av **BACS (kund från Storbritannien)** ER-formatkonfiguration har skapats. Den här versionen har status av **utkast** och kan redigeras. Det aktuella innehållet i det anpassade ER-formatet matchar innehållet i det format som tillhandahålls av Microsoft.
 
 ![Konfigurationssida med version 1.1.1 av BACS (brittisk anpassad) ER-formatkonfiguration.](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Du måste konfigurera det anpassade formatet så att det uppfyller de bankspecif
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Markera ett anpassat format som körbart
 
-Nu när den första versionen av det anpassade formatet har skapats och har statusen **utkast** kan du köra den i testsyfte. Om du vill köra rapporten måste du bearbeta en leverantörsbetalning genom att använda betalningsmetoden som refererar till det anpassade ER-formatet. Som standard, när du anropar ett ER-format från appen kan endast versioner som har status **slutförd** eller **delad** [beaktas](general-electronic-reporting.md#component-versioning). Det här beteendet gör det enklare att använda ER-format som inte innehåller färdiga designer. För att testet ska kunna köras kan du dock tvinga appen att använda den version av ditt ER-format som har statusen **utkast**. På det här sättet kan du justera den aktuella formatversionen om du behöver göra ändringar. Mer information finns i [Tillämplighet](electronic-reporting-destinations.md#applicability).
+Nu när den första versionen av det anpassade formatet har skapats och har statusen **utkast** kan du köra den i testsyfte. Om du vill köra rapporten måste du bearbeta en leverantörsbetalning genom att använda betalningsmetoden som refererar till det anpassade ER-formatet. Som standard, när du anropar ett ER-format från appen kan endast versioner som har status **slutförd** eller **delad** beaktas. Det här beteendet gör det enklare att använda ER-format som inte innehåller färdiga designer. För att testet ska kunna köras kan du dock tvinga appen att använda den version av ditt ER-format som har statusen **utkast**. På det här sättet kan du justera den aktuella formatversionen om du behöver göra ändringar. Mer information finns i [Tillämplighet](electronic-reporting-destinations.md#applicability).
 
 Om du vill använda utkastversionen av ett ER-format måste du markera ER-format på tydligt sätt.
 

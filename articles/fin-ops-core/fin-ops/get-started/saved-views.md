@@ -2,7 +2,7 @@
 title: Sparade vyer
 description: I den här artikeln beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
-ms.date: 04/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9125163"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220345"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -46,7 +46,12 @@ När vyer har aktiverats för en miljö kommer alla sidor som har stöd för vye
 Det finns två storleksvariationer i vyväljaren: 
 
 - **Stora vyväljare**: sidor som är framträdande med en lista har en större vyväljare av några möjliga orsaker. Större delen av den största viktigaste vyväljaren visar sidorna där vyn kan innehålla användardefinierade filter och sorterar. Eftersom filter och sorterar inkluderas i vyerna är den större väljarstorleken också motiverad eftersom vynamnen ofta är den bästa beskrivningen av de data som visas på skärmen och det förväntas att användarna ska växla mellan vyer oftare på dessa sidtyper. Gruppering i ett rutnät kan också sparas i vyer på en sida med stora visningsväljare. 
+    
+    [![Stor vyväljare som stöder frågeändringar i vyn.](./media/views-largeViewSelector.png)](./media/views-largeViewSelector.png)
+
 - **Små vyväljare**: alla andra helsidor (med undantag för arbetsytor och instrumentpanelen) har en mindre vyväljare som visas bredvid sidrubriken. Vyer på dessa sidor innehåller bara anpassningar (och inte användardefinierade filter). På dessa sidor är rubriken eller postrubriken ofta den viktigaste informationen längst upp på sidan. Den mindre storleken av vyväljaren återspeglar också en lägre förväntad frekvens av vyväxling på dessa sidor. 
+    
+    [![LIten vyväljare som inte stöder frågeändringar i vyn.](./media/views-smallViewSelector.png)](./media/views-smallViewSelector.png)
  
 Om du väljer vyns namn öppnas vyväljaren och visar listan över tillgängliga vyer för den här sidan.
 
@@ -64,6 +69,8 @@ Om du vill växla till en annan vy öppnar du först vyväljaren och väljer sed
 Till skillnad från traditionell anpassning sparas inte vyer automatiskt när en användare anpassar sidan eller när en användare använder ett filter på en lista eller sorterar den. En uttrycklig åtgärd krävs för att spara ändringarna i en vy. Detta krav ger användarna flexibiliteten att skapa en vy före eller efter att de ändringar som är associerade med vyn har gjorts. Det ser också till att visningsdefinitioner inte oavsiktligt ändras genom engångsfilter eller anpassningar. Observera att artiklar som används på sidan (t.ex. kolumnbredder eller avsnittets utökade eller dolda status) automatiskt sparas till den aktuella vyn, även för låsta vyer.
 
 Om du vill se till att vyns aktuella läge är känt när du börjar att ändra en vy genom att anpassa eller filtrera den, visas en asterisk (\*) bredvid namnet på den aktuella vyn. Den här symbolen visar att du tittar på en osparad, modifierad version av vyn.
+
+[![Osparade ändringar i en vy.](./media/views-unsavedChanges.png)](./media/views-unsavedChanges.png)
 
 Om du vill spara ändringarna följer du stegen nedan.
 
@@ -225,7 +232,7 @@ När vyer aktiveras sparas alla befintliga anpassningar för en användare och e
 
 ### <a name="what-pages-support-views"></a>Vilka sidor stöder vyer? 
 
-Vyer är tillgängliga på de flesta men inte alla sidor. Vyer är för närvarande tillgängliga på alla helskärmssidor utom för instrumentpaneler och arbetsytor. Icke helskärmssidor, som omfattar dialogrutor, nedrullningsbara dialogrutor, uppslag, utökade förhandsgranskningar, stöder för närvarande inte vyer. Visa stöd för fler sidtyper, t.ex. arbetsytor och dialogrutor, kan komma att överväga för framtida uppdateringar.
+Vyer är tillgängliga på de flesta men inte alla sidor. Vyer är för närvarande tillgängliga på alla helskärmssidor utom för instrumentpaneler. Du kan visa stöd för arbetsytan med funktionen **Sparade vyer för arbetsytor**. Mest icke helskärmssidor, som omfattar nedrullningsbara dialogrutor, uppslag och utökade förhandsgranskningar, stöder för närvarande inte vyer. Du kan visa stöd för dialogrutor med funktionen **Sparade vyer för dialogrutor**.
 
 ### <a name="who-is-allowed-to-publish-views"></a>Vem har tillåtelse att publicera vyer?
 

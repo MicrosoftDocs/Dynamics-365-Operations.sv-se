@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15060d8bdd598476081c22d7280319da3db0cb31
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 2fd8176d16178ecc4ba667e5937f2cec2e0af2c3
+ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178425"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "9221607"
 ---
 # <a name="provision-human-resources-in-the-finance-and-operations-infrastructure"></a>Tillhandahålla Personal i infrastrukturen för Ekonomi och drift
 
@@ -52,8 +52,8 @@ Här följer några beaktanden vid ytterligare tillvalsmiljöer:
 - **Integrering** – Konfigurera och testa integreringar som kan komma att omfatta inbyggda integreringar eller anpassade integreringar som exempelvis för lönesystem, sökandespårningssystem eller förmånssystem och leverantörer.
 - **Utbildning** – Du kan komma att behöva en separat miljö som är konfigurerad med en uppsättning utbildningsdata, detta för att utbilda dina medarbetare i användningen av det nya systemet. 
 - **Flerfasprojekt** – Du kan komma att behöva ytterligare en miljö för att stödja konfiguration, datamigrering, testning eller andra aktiviteter i en projektfas som planeras efter projektets ursprungliga publicering.
-- **Utveckling** – I infrastrukturerna för ekonomi och drift kan du nu utöka lösningen och utveckla dina egna anpassningar. Alla utvecklare måste använda sin egen utvecklingsmiljö. För mer information, se [Distribuera och få tillgång till utvecklingsmiljöer](/fin-ops-core/dev-itpro/dev-tools/access-instances).
-- **GOLD** – För nya distributioner är en gemensam metod att använda en separat GOLD-miljö som hålls orörd för konfiguration och datamigrering. Den här miljön kan användas i hela implementeringen för att uppdatera andra miljöer. Den används för att skapa den nya produktionsmiljön som har baskonfigurationen och datamigreringen. Du kan inte distribuera en produktionsmiljö på ekonomi- och driftinfrastrukturen förrän du har slutfört beredskapsprocessen för publicering. Mer information finns i [Förbered publicering](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live).
+- **Utveckling** – I infrastrukturerna för ekonomi och drift kan du nu utöka lösningen och utveckla dina egna anpassningar. Alla utvecklare måste använda sin egen utvecklingsmiljö. För mer information, se [Distribuera och få tillgång till utvecklingsmiljöer](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
+- **GOLD** – För nya distributioner är en gemensam metod att använda en separat GOLD-miljö som hålls orörd för konfiguration och datamigrering. Den här miljön kan användas i hela implementeringen för att uppdatera andra miljöer. Den används för att skapa den nya produktionsmiljön som har baskonfigurationen och datamigreringen. Du kan inte distribuera en produktionsmiljö på ekonomi- och driftinfrastrukturen förrän du har slutfört beredskapsprocessen för publicering. Mer information finns i [Förbered publicering](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
 <!--NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this.-->
 
@@ -66,24 +66,24 @@ Här följer några beaktanden vid ytterligare tillvalsmiljöer:
 
 ## <a name="create-an-lcs-project"></a>Skapa ett LCS-projekt
 
-För att hantera dina Personal-miljöer med LCS måste först skapa ett LCS-projekt. Om du migrerar din Personalmiljö till infrastrukturen för ekonomi och drift måste du skapa ett nytt LCS-projekt för appar för ekonomi och drift. Mer information finns [Migrera din Personalmiljö](hr-admin-migrate-overview). Om du redan har ett LCS-projekt för andra appar för ekonomi och drift kan du aktivera personalfunktionerna i arbetsytan **Funktionshantering**. Mer information finns i [Översikt för funktionshantering](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+För att hantera dina Personal-miljöer med LCS måste först skapa ett LCS-projekt. Om du migrerar din Personalmiljö till infrastrukturen för ekonomi och drift måste du skapa ett nytt LCS-projekt för appar för ekonomi och drift. Om du redan har ett LCS-projekt för andra appar för ekonomi och drift kan du aktivera personalfunktionerna i arbetsytan **Funktionshantering**. Mer information finns i [Översikt för funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-När en ny kund registrerar sig för Personal omfattar abonnemanget en arbetsyta för Implementering av projekt. När kunden har aktiverat tjänsten måste klientorganisationens administratör logga in på <https://lcs.dynamics.com> med hjälp av klientorganisationskontot. Projektarbetsytan skapas automatiskt för organisationen. Mer information finns i [Lifecycle Services (LCS) för app-kunder för Ekonomi och drift](/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs).
+När en ny kund registrerar sig för Personal omfattar abonnemanget en arbetsyta för Implementering av projekt. När kunden har aktiverat tjänsten måste klientorganisationens administratör logga in på <https://lcs.dynamics.com> med hjälp av klientorganisationskontot. Projektarbetsytan skapas automatiskt för organisationen. Mer information finns i [Lifecycle Services (LCS) för app-kunder för Ekonomi och drift](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 > [!NOTE]
 > För att säkerställa ett lyckat tillhandahållande måste det konto som du använder för att tillhandahålla Personal-miljön tilldelas antingen rollen **Systemadministratör** eller rollen **Systemanpassare** i den Power Apps-miljö som är kopplad till Personal-miljön. Mer information om hur du tilldelar säkerhetsroller till användare i Microsoft Power Platform finns i [Konfigurera användarsäkerhet för resurser](/power-platform/admin/database-security).
 
-Du måste slutföra processen för registrering av LCS-projekt innan du kan börja distribuera miljöer. Mer information finns i [Projektregistrering](/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding). Mer information om hur du använder LCS finns i [användarhandboken för Lifecycle Services (LCS](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide)).
+Du måste slutföra processen för registrering av LCS-projekt innan du kan börja distribuera miljöer. Mer information finns i [Projektregistrering](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md). Mer information om hur du använder LCS finns i [användarhandboken för Lifecycle Services (LCS](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)).
 
 ## <a name="deploy-human-resources-environments"></a>Distribuera Personal-miljöer
 
 Distribution av appar för ekonomi och drift, inklusive Personal, i molnet kräver att du förstår vilken miljö och vilket abonnemang du distribuerar till, vem som kan utföra vilka uppgifter samt vilka data och anpassningar som du måste hantera. Vi rekommenderar att du använder ett tjänstekonto istället för en namngiven användare när du distribuerar nya miljöer. Mer information om hur du distribuerar miljöer i infrastrukturen för ekonomi och drift finns i [Översikt över molnbaserad distribution](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
 
-Om du vill distribuera en produktionsmiljö för Personal på infrastrukturen för ekonomi och drift måste du först slutföra beredskapsprocessen för publicering. Mer information finns i [Förbered publicering](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live). Denna process omfattar abonnemangsuppskattningen i LCS. Mer information finns i [Abonnemangsuppskattning](/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator).
+Om du vill distribuera en produktionsmiljö för Personal på infrastrukturen för ekonomi och drift måste du först slutföra beredskapsprocessen för publicering. Mer information finns i [Förbered publicering](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). Denna process omfattar abonnemangsuppskattningen i LCS. Mer information finns i [Abonnemangsuppskattning](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
 ## <a name="integrate-microsoft-power-platform-with-human-resources"></a>Integrera Microsoft Power Platform med Personal
 
-Microsoft Power Platform tillhandahåller en serie funktioner för Dynamics 365-program via administrationscentret för Power Platform. Du kan integrera och utöka användningen av Personaldata med hjälp av Microsoft Power Platform. Information om hur du integrerar Personal med Microsoft Power Platform finns i [Microsoft Power Platform-integrering med appar för ekonomi och drift](/fin-ops-core/dev-itpro/power-platform/overview).
+Microsoft Power Platform tillhandahåller en serie funktioner för Dynamics 365-program via administrationscentret för Power Platform. Du kan integrera och utöka användningen av Personaldata med hjälp av Microsoft Power Platform. Information om hur du integrerar Personal med Microsoft Power Platform finns i [Microsoft Power Platform-integrering med appar för ekonomi och drift](../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ## <a name="supported-geographies"></a>Områden som stöds
 
@@ -96,8 +96,8 @@ Som standard har den globala administratör som skapade miljön åtkomst till de
 ## <a name="additional-resources"></a>Ytterligare resurser
 Du kan lära dig mer om hur du använder och hanterar projekt i LCS i appinfrastrukturen för ekonomi och drift med hjälp av följande resurser:
 
-- [Resurser för Lifecycle Services](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-- [Användarhandbok för Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Resurser för Lifecycle Services](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Användarhandbok för Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Självbetjäning för distribution – översikt](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
 - [Startsida för åtgärder för databasflytt](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 

@@ -1,26 +1,26 @@
 ---
 title: Anslutna appar
 description: I den här artikeln beskrivs hur du konfigurerar anslutna program i e-fakturering.
-author: dkalyuzh
+author: gionoder
 ms.date: 02/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a0a9c19009c49b80ca8c182c31592c1a713a2aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ''
+ms.openlocfilehash: f908caa902e4747d324480e3a5108b443d385ea7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906299"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277344"
 ---
 # <a name="connected-applications"></a>Anslutna appar
 
