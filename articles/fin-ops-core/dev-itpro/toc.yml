@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för plattformsuppdateringar
                   href: get-started/whats-new-home-page.md
+                - name: Plattformsuppdateringar för version 10.0.29 (oktober 2022)
+                  href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Plattformsuppdateringar för version 10.0.28 (augusti 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Plattformsuppdateringar för version 10.0.27 (juli 2022)
@@ -1090,7 +1092,9 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Aktivera entitetsmappning för dubbelriktad skrivning
                           href: data-entities/dual-write/enable-entity-map.md
-                    - name: Paket för separat dubbelriktad skrivning för programorkestrering
+                    - name: Aktivera ett timeout-fönster på fem minuter för dubbelriktade skrivningssessioner
+                      href: data-entities/dual-write/5-minute-mode.md
+                    - name: Paket för separat dubbelriktad skrivning för apporkestrering
                       href: data-entities/dual-write/separated-solutions.md
                     - name: Migrering av valutadatatyp för dubbelriktad skrivning
                       href: data-entities/dual-write/currrency-decimal-places.md

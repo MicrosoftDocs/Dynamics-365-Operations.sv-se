@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nyheter och ändringar i Human Resources
               items:
+                - name: Human Resources 10.0.29 (sammanslagen infrastruktur)
+                  href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (sammanslagen infrastruktur)
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Human Resources 10.0.27 (sammanslagen infrastruktur)
@@ -604,6 +606,10 @@
                   href: hr-benefits-setup-parameters-per-company.md
                 - name: Konfigurera parametrar för förmånshantering och självbetjäning för medarbetare för alla företag
                   href: hr-benefits-setup-parameters.md
+                - name: Konfigurera administratörsbehörighet för livscykelhändelser
+                  href: admin-life-events.md
+                - name: Konfigurera e-postaviseringar för förmåner
+                  href: hr-email-notifications.md
                 - name: Konfigurera regler och alternativ för berättigande
                   href: hr-benefits-setup-eligibility-rules.md
                 - name: Konfigurera berättigandealternativ för personlig kontakt

@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Commerce
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.29 (oktober 2022)
+                  href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (juli 2022)
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (juli 2022)
@@ -60,6 +62,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
                 - name: Få aviseringar om tjänstuppdateringar
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+                - name: Proaktiva kvalitetsuppdateringar
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
                 - name: Automatisering av datauppgift
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
                 - name: Leverera ISV-lösningar med One Version
@@ -418,10 +422,12 @@
                       href: dev-itpro/gift-card-cash-out.md
                     - name: Leverera beställningar från en annan butik
                       href: charge-send.md
-                    - name: Dölj leveranslägen utan transportföretag från kassans dialogrutan för leverans
+                    - name: Dölj leveranslägen utan transportföretag i dialogrutan för kassaleverans
                       href: hide-non-carrier-modes.md
                     - name: Uppgiftsinspelare och hjälp för MPOS och Cloud POS
                       href: task-recorder-retail-pos.md
+                    - name: Konfigurera att CPOS använder en egen Azure AD-app
+                      href: cpos-custom-aad.md
                     - name: Maskinvarukringutrustning
                       items:
                         - name: Kringutrustning
@@ -698,8 +704,8 @@
                   href: prevent-discounts.md
                 - name: Anbudsrabatter
                   href: tender_based_discounts.md
-                - name: Översikt av transportrabatter
-                  href: retail-shipping-discount.md
+                - name: Leverantörsrabatt
+                  href: shipping-discount.md
                 - name: Konfigurera present med inköpserbjudanden
                   href: gift-with-purchase.md
                 - name: Ställa in kuponger
@@ -714,6 +720,10 @@
                   href: tasks/category-pricing-rules-trade-agreements.md
                 - name: Fördröja beräkning av exakt pris och rabatt
                   href: delayed-price-calculation.md
+                - name: Prissättningsfunktioner i kassa
+                  href: pos-pricing-functions.md
+                - name: 'API:er för Commerce-prissättning'
+                  href: pricing-apis.md
             - name: Rekommendationer
               items:
                 - name: Översikt av produktrekommendationer
@@ -872,11 +882,13 @@
               href: async-customer-mode.md
             - name: Konvertera asynkrona kunder till synkrona kunder
               href: convert-async-to-sync.md
+            - name: Vanliga frågor om asynkront läge för att skapa kunder
+              href: async-customer-mode-faq.md
             - name: Kundhantering
               items:
                 - name: Översikt över kundhantering
                   href: clienteling-overview.md
-            - name: Förmåner
+            - name: Bonus
               items:
                 - name: Bonusöversikt
                   href: set-up-customer-loyalty-program.md
@@ -1252,9 +1264,13 @@
                       href: product-collection-module-overview.md
                     - name: Snabbvymodul
                       href: quick-view-module.md
+                - name: Produktjämförelsemoduler
+                  items:
+                    - name: Produktjämförelsemoduler
+                      href: product-comparison-modules.md
                 - name: Navigeringsmoduler
                   items:
-                    - name: Navigeringsmodul
+                    - name: Modul för navigeringssökväg
                       href: add-breadcrumb.md
                     - name: Modul för navigeringsmeny
                       href: nav-menu-module.md
@@ -1272,9 +1288,13 @@
                   items:
                     - name: Modul för samtycke till cookies
                       href: cookie-consent-module.md
+                - name: Chattmoduler
+                  items:
+                    - name: Commerce-chattmodul
+                      href: commerce-chat-module.md
             - name: Sök
               items:
-                - name: Översikt över standardkategorilandningssida och sida för sökresultat
+                - name: Översikt över standardkategorisida och sida för sökresultat
                   href: category-search-page-overview.md
                 - name: Översikt över molnbaserade sökningar
                   href: cloud-powered-search-overview.md
@@ -1404,8 +1424,6 @@
               items:
                 - name: Exempel på skatteregistreringstjänst för Österrike
                   href: localizations/emea-aut-fi-sample.md
-                - name: Riktlinjer för distribution av kassaapparater för Österrike
-                  href: localizations/emea-aut-deployment.md
                 - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Österrike (äldre)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
@@ -1502,6 +1520,8 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Riktlinjer för distribution av kassaapparater
                   href: localizations/emea-nor-fi-deployment.md
+                - name: Migrera från äldre funktioner för Norge
+                  href: localizations/emea-nor-fi-migration.md
                 - name: Riktlinjer för distribution av kassaapparater (äldre)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Ryssland
@@ -1764,9 +1784,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
-                        - name: Dela
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/commerce
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/commerce
@@ -2482,7 +2504,7 @@
               items:
                 - name: SDK för Commerce – översikt
                   items:
-                    - name: Exempel och referenspaket
+                    - name: Ladda ned Commerce SDK-exempel och referenspaket
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: Migrering av äldre SDK för Retail
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md

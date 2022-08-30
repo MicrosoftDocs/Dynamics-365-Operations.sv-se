@@ -1,24 +1,24 @@
 ---
 title: Intäktsredovisning på försäljningsorder
 description: I den här artikeln beskrivs de grundläggande funktionerna för intäktsredovisning på försäljningsorder och fakturor. Intäktsredovisning kan användas för försäljningsorder och motsvarande faktura som skapas från försäljningsordern.
-author: kweekley
+author: bking
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: kweekley
+ms.author: bking
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 5df7341160940f5c5db0dd4c5d86e4d9698d22e2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb031b41c07aaff06b41830fb0c322503e9f27ec
+ms.sourcegitcommit: 1909d18a74cef85aad020a6a7473281e451f58c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899969"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9348251"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Intäktsredovisning på försäljningsorder
 

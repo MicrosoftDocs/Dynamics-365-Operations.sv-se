@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller ändringar på startsidan för Supply Chain Management
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.29 (oktober 2022)
+                  href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (augusti 2022)
                   href: get-started/whats-new-scm-10-0-28.md
                 - name: Supply Chain Management 10.0.27 (juli 2022)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/supply-chain
                 - name: Få aviseringar om tjänstuppdateringar
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/supply-chain
+                - name: Proaktiva kvalitetsuppdateringar
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
                 - name: Automatisering av datauppgift
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/supply-chain
                 - name: Leverera ISV-lösningar med One Version
@@ -330,6 +334,8 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Kom i gång med elektronisk fakturering för Egypten
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+                        - name: Kom i gång med elektronisk fakturering för Frankrike
+                          href: ../finance/localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Kom i gång med elektronisk fakturering för Mexiko
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Kom i gång med elektronisk fakturering för Saudiarabien
@@ -1053,9 +1059,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/supply-chain
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/supply-chain
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/supply-chain
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/supply-chain
-                        - name: Dela
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/supply-chain
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/supply-chain
@@ -1763,6 +1771,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanering
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Huvudplanering för produkter med begränsad hållbarhetstid
+                  href: master-planning/planning-optimization/shelf-life.md
                 - name: Tidsplanering med obegränsad kapacitet
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Tidsplanering med resursurval baserat på kapacitet
@@ -1809,6 +1819,8 @@
                   href: master-planning/planning-optimization/cancel-planning-job.md
                 - name: Åtgärdsmeddelanden
                   href: master-planning/action-messages.md
+                - name: Beräkna leveransdatum för försäljningsorder med hjälp av CTP
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: Felsöka planeringsoptimering
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: 'Planeringsoptimering, utökningsbarhet'
@@ -1879,6 +1891,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Nettobehov och pegging-information med inbyggd masterplanering
                   href: master-planning/net-requirements-built-in-master-planning.md
+                - name: Tillverka mot order-automation
+                  href: master-planning/make-to-order-supply-automation.md
             - name: Prognostisering
               items:
                 - name: Prognoser för efterfrågan och tillgång
@@ -2467,6 +2481,8 @@
               href: production-control/mixed-mode-plan.md
             - name: Hantera legotillverkningsarbetsuppgift i produktion
               href: production-control/manage-subcontract-work-production.md
+            - name: Göra färdiga varor fysiskt tillgängliga före bokföring i journaler
+              href: production-control/deferred-posting.md
             - name: 'Enhetlig nummerserie för jobb-ID:n'
               href: production-control/unified-job-ids.md
             - name: Anropa processautomatiseringsflöden för att skapa kvalitetsorder
@@ -2809,6 +2825,8 @@
               items:
                 - name: Orderlöfte
                   href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: Beräkna leveransdatum för försäljningsorder med hjälp av CTP
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: Deadlines för orderregistrering
                   href: sales-marketing/order-entry-deadlines.md
                 - name: Leveransalternativ
@@ -2945,6 +2963,8 @@
               href: sales-marketing/trade-allowance.md
             - name: Skapa ett nytt handelsavtal
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: Beräkna om radens nettobelopp vid import
+              href: sales-marketing/calc-line-net-amounts-import.md
             - name: Schemalägg datarensning i försäljningshistorik
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Tjänsthantering
@@ -3387,8 +3407,10 @@
                       href: warehousing/piece-picking-confirmation.md
                     - name: Förpackningsmaterial och avgifter
                       href: warehousing/pack-materials-packing-material-fees.md
-                    - name: Ställa in manuell förpackning (enbart februari och maj 2016)
-                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Packa behållare för leverans
+                      href: warehousing/packing-containers.md
+                    - name: Förpackningsarbete för att packa utgående behållare och bearbeta försändelser
+                      href: warehousing/packing-work.md
                     - name: Skapa omallokering av artiklar för kort plockning
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Avbryt distributionslagerarbete för undantagshantering
@@ -3545,6 +3567,8 @@
                       href: warehousing/warehouse-app-promoted-fields.md
                     - name: Konfigurera omvägar för steg i menyalternativ för mobila enheter
                       href: warehousing/warehouse-app-detours.md
+                    - name: Fråga data med hjälp av omvägar i Warehouse Management-mobilappen
+                      href: warehousing/warehouse-app-data-inquiry.md
                     - name: Inleverans av ID-nummer via Warehouse Management-mobilappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Ställa in ett menyalternativ för mobil enhet för att slutföra arbete i en inköpsorder
