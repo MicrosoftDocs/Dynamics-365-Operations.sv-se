@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874586"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324342"
 ---
 # <a name="accounts-receivable-posting"></a>Bokföring av kundreskontra
 
 [!include [banner](../includes/banner.md)]
 
 Den primära bokföringsprofilen för modulen **Kundreskontra** är kundens bokföringsprofil. Denna bokföringsprofil bestämmer vilket samlingskonto som används när kundsaldon bokförs i redovisningen. Ett samlingskonto är ett huvudkonto. Det kallas också för kundreskontra handelskontot.
+
+Rapporten **Avstämning kund mot huvudbok** kan användas efter bokföring för att stämma av saldona för kund- och redovisningskonton. Rapporten använder den information som finns i samlingskontot för kundbokföringsprofilen. Den använder inte samlingskontot från redovisningen som skapas för dokumentet. Om du ändrar kundbokföringsprofilen eller kundgruppen som tilldelas kunden efter att du har bokfört transaktioner, kan rapporten visa differenser mellan kunden och redovisningskontosaldot. Om du bara vill visa de rader som har differenser, och alla rader som kundkontona och redovisningskontot är båda noll för, väljer du parametern **Bara differenser** när du skriver ut rapporten.
 
 Mer information finns i [Bokföringsprofiler för kund](../accounts-receivable/customer-posting-profiles.md).
 

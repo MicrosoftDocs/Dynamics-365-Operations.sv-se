@@ -2,7 +2,7 @@
 title: Lagerspärr
 description: Det här avsnittet ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Supply Chain Management. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas.
 author: yufeihuang
-ms.date: 03/02/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83b5417dc24af85f09e6713f2b12fdc358f61d54
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857820"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334698"
 ---
 # <a name="inventory-blocking"></a>Lagerspärr
 
@@ -96,11 +96,11 @@ När **Reservera beställda artiklar** inaktiveras, kan de förväntade inlevera
 
 Observera skillnaden i transaktionsstatus och dimensioner mellan de två ärendena. Därför rekommenderar vi att du aktiverar alternativet **Reservera beställda artiklar**.
 
-### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Inaktivera förväntade inleveranser från kvalitetsorder som ger exempel på funktionen blockerat lager
+## <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory"></a>Inaktivera förväntade inleveranser från kvalitetsorder som ger exempel på blockerat lager
 
 För att förenkla lagertransaktionerna när det gäller kvalitetsorder som innehåller spärrat lager som en förfallen lagerstatus, innehåller systemet en funktion som inaktiverar förväntade inleveranser från sådana kvalitetsorder. Eftersom den förväntade inleveransen är omedelbart blockerad av lagerstatusspärr finns ingen reducering av lagerbehållningen på grund av den här ändringen.
 
-Den här funktionen är inaktiverad som standard. Administratörer kan aktivera eller inaktivera det genom att söka efter funktionen *Inaktivera förväntade kvitton från kvalitetsorder som provar blockerat lager* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera denna funktion genom att söka efter funktionen *Inaktivera förväntade kvitton från kvalitetsorder som provar blockerat lager* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

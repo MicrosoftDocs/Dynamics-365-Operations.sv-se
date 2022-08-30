@@ -2,7 +2,7 @@
 title: Artikelkonsolidering – platsutnyttjande
 description: I denna artikel finns information om funktioner som gör det enkelt för lageransvariga att visa och filtrera platsens användning över hela lagerstället. Chefer kan välja platser och skapa lagerförflyttningar direkt från sidan artikelkonsolidering för att konsolidera artiklar och därmed bättre utnyttja lagerställets utrymme.
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d0e52769de3f200e2bb3060b3d9cb19dc0847b69
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219455"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336436"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidering – platsutnyttjande
 
@@ -30,8 +30,8 @@ I denna artikel finns information om funktioner som gör det enkelt för lageran
 
 Innan du kan använda funktionerna som beskrivs i denna artikel måste du aktivera dem i systemet. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera status för dessa funktioner och aktivera dem om de behövs. Aktivera båda följande funktioner i angiven ordning. (Båda funktionerna gäller för modulen **Lagerstyrning** .)
 
-1. *Lagerställets platsstatus* version 10.0.29 är den här funktionen aktiverad som standard. Mer information finns i [Lagerställets platsstatus](warehouse-location-status.md).
-2. *Utnyttjande av artikelns konsolideringsplats*
+1. *Lagerställets platsstatus*<br>Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Mer information finns i [Lagerställets platsstatus](warehouse-location-status.md).
+2. *Utnyttjande av artikelns konsolideringsplats*<br>(Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard.)
 
 ## <a name="warehouse-location-status"></a>Lagerställets platsstatus
 

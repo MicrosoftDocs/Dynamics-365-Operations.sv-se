@@ -13,17 +13,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a12649cd0604fb6acd58420fdafb5b560fcc10cf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 36e7082a890ebec3031021a0871cddad91597447
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688244"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337071"
 ---
 # <a name="benefit-statement"></a>Förmånsutdrag
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 I rapporten **Förmånsutdrag** ger ett utdrag av de förmåner som en medarbetare har registrerats för. Det går att få åtkomst till rapporten direkt till en medarbetare eller av förmånsadministratören. **Förmånsutdraget** innehåller en lista över medarbetarens registrerade förmåner, disponeringsalternativ, kostnader och alla registrerade anhöriga eller förmånstagare Utdraget kan skrivas ut för en enskild arbetare eller flera arbetare.
 

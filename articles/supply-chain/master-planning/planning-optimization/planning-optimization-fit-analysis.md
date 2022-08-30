@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: af7f4b09fd624aeda2ff002292e11cf84fd02991
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
+ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262341"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9347300"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för Planeringsoptimering
 
@@ -77,10 +77,10 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Frystidsgräns | Poster för artikeldisponering med frystidsgräns angiven: *\#* | Denna funktion väntar. För närvarande ignoreras inställning av frystidsgräns när Planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2022 utgivningscykel 2 |
 | Frystidsgräns | Huvudplaner med frystidsgräns angiven: *\#* | Denna funktion väntar. För närvarande ignoreras inställning av frystidsgräns när Planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2022 utgivningscykel 2 |
 | Koncerninternt | Huvudplaner inklusive underordnad planerad efterfrågan: *\#* | Denna funktion stöds nu. Mer information finns i [Koncernintern planering](Intercompany-planning.md) | Stöds |
-| Kanban | Poster för artikeldisponering med planerad ordertyp för kanban: *\#* | Denna funktion väntar. För närvarande kommer artikeldisponering som anges till kanban att ignoreras när Planeringsoptimering aktiveras. Den planerade order typen för kanban kommer att skapa en varning under huvudplaneringen och planerade inköpsorder skapas för att täcka det relaterade behovet. | 2023 eller senare |
-| Kanban | Artiklar med standardordertyp för kanban: *\#* | För närvarande kommer en standardordertyp som anges till kanban att ignoreras när Planeringsoptimering aktiveras. Den planerade standardordertypen för kanban kommer att skapa en varning under huvudplaneringen och planerade inköpsorder skapas för att täcka det relaterade behovet. | 2023 eller senare |
+| Kanban | Poster för artikeldisponering med planerad ordertyp för kanban: *\#* | Denna funktion väntar. För närvarande kommer artikeldisponering som anges till kanban att ignoreras när Planeringsoptimering aktiveras. Den planerade order typen för kanban kommer att skapa en varning under huvudplaneringen och planerade inköpsorder skapas för att täcka det relaterade behovet. | Framtida påfyllnad |
+| Kanban | Artiklar med standardordertyp för kanban: *\#* | För närvarande kommer en standardordertyp som anges till kanban att ignoreras när Planeringsoptimering aktiveras. Den planerade standardordertypen för kanban kommer att skapa en varning under huvudplaneringen och planerade inköpsorder skapas för att täcka det relaterade behovet. | Framtida påfyllnad |
 | Produktens livscykeltillstånd | Produktens livscykeltillstånd är inte aktivt för planering: *\#* | Denna funktion stöds nu. Mer information finns i [Exkludera produkter som har specifika produktens livscykeltillstånd](product-lifecycle-state.md) | Stöds |
-| Produktion | Strukturlisterader med avrundning eller flera inställningar: *\#* | Denna funktion väntar. För närvarande ignoreras avrundning och flera inställningar på strukturlisterader när Planeringsoptimering är aktiverad, oavsett den här inställningen. | 2023 eller senare |
+| Produktion | Strukturlisterader med avrundning eller flera inställningar: *\#* | Denna funktion väntar. För närvarande ignoreras avrundning och flera inställningar på strukturlisterader när Planeringsoptimering är aktiverad, oavsett den här inställningen. | Framtida påfyllnad|
 | Produktion | Strukturliste-/formelrader med formelmätning: *\#* | Denna funktion väntar. För närvarande ignoreras formelmätning på strukturliste- och formelrader när Planeringsoptimering är aktiverad, oavsett den här inställningen. | 2022 utgivningscykel 2 |
 | Produktion | Strukturliste-/formelrader med artikelersättning (plangrupper): *\#* | Denna funktion väntar. För närvarande ignoreras artikelersättning (plangrupper) på strukturliste- och formelrader när Planeringsoptimering är aktiverad, oavsett den här inställningen. | 2022 utgivningscykel 2 |
 | Produktion | Strukturliste-/formelrader med negativ kvantitet: *\#* | Denna funktion väntar. Strukturliste- och formelrader som har negativ kvantitet kommer att inkluderas med kvantiteten 0 (noll) och en varning utfärdas när Planeringsoptimering aktiveras. Uppdatera huvuddata för att undvika varningar. | 2022 utgivningscykel 2 |
@@ -93,11 +93,11 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Produktion | Formelversioner med sam-/biprodukter: *\#* | Denna funktion väntar. För närvarande kommer samprodukter och biprodukter som är associerade med formelversionen att ignoreras när Planeringsoptimering är aktiverad. | 2022 utgivningscykel 2 |
 | Produktion | Formelversioner med avkastning: *\#* | Denna funktion väntar. För närvarande ignoreras avkastning som är associerad med formelversionen när Planeringsoptimering är aktiverad. | 2022 utgivningscykel 2 |
 | Produktion | Planer med ordningsföljd: *\#* | Denna funktion väntar. För närvarande ignoreras ordningsföljd när Planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2022 utgivningscykel 2 |
-| Produktion | Släppta eller startade produktionsorder som inte är startade, där planerad start är tidigare än: *\#* | Denna funktion väntar. För närvarande, om en produktionsorder är försenad, kommer huvudplaneringen att förutsätta att den slutförs i dag. Detta är relevant för släppta produktionsorder där ett leveransdatum har passerats men ännu inte slutförts. | 2023 eller senare |
+| Produktion | Släppta eller startade produktionsorder som inte är startade, där planerad start är tidigare än: *\#* | Denna funktion väntar. För närvarande, om en produktionsorder är försenad, kommer huvudplaneringen att förutsätta att den slutförs i dag. Detta är relevant för släppta produktionsorder där ett leveransdatum har passerats men ännu inte slutförts. | Framtida påfyllnad |
 | Produktion | Planerade resurser med begränsad kapacitet: *\#* | Denna funktion väntar. För närvarande kommer resurser som har planerats med begränsad kapacitet att ignoreras när Planeringsoptimering är aktiverad. Tidsplaneringen görs baserat på standardledtiden från produkten. | 2022 utgivningscykel 2 |
 | Produktion | Flöden använda i planering: *\#* | Denna funktion stöds. | Stöds |
-| Produktion | Reservation av försäljningsrad med nedbrytning: *\#* | Reservation av försäljningsrad med nedbrytning stöds inte när Planeringsoptimering aktiveras. | 2023 eller senare |
-| Produktion | Planering med nedbrytning av produktionsorder: *\#* | Tidsplanering som använder nedbrytning av produktionsorder stöds inte när Planeringsoptimering aktiveras. Produktionsorder kan tidsplaneras individuellt. | 2023 eller senare |
+| Produktion | Reservation av försäljningsrad med nedbrytning: *\#* | Reservation av försäljningsrad med nedbrytning stöds inte när Planeringsoptimering aktiveras. | Framtida påfyllnad |
+| Produktion | Planering med nedbrytning av produktionsorder: *\#* | Tidsplanering som använder nedbrytning av produktionsorder stöds inte när Planeringsoptimering aktiveras. Produktionsorder kan tidsplaneras individuellt. | Framtida påfyllnad |
 | Anbudsförfrågningar | Huvudplaner med anbudsförfrågningar aktiverat: *\#* | Denna funktion väntar. För närvarande anses inte anbudsförfrågningar vara efterfrågan när Planeringsoptimering är aktiverad. De kommer att ignoreras oavsett den här inställningen. | 2022 utgivningscykel 2 |
 | Rekvisitioner | Huvudplaner med rekvisitioner aktiverat: *\#* | Denna funktion stöds nu. Mer information finns i [inköpsrekvisition](purchase-requisitions.md) | Stöds |
 | Säkerhetsmarginaler | Disponeringsgrupper med säkerhetsmarginal: *\#* | Denna funktion stöds nu. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) | Stöds |

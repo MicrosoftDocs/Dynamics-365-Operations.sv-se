@@ -2,30 +2,28 @@
 title: Exempel på skatteregistreringstjänsten för Tjeckien
 description: I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Tjeckien i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-01
-ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: dc7ef27954de2bb10bbaf91fc5a3aa14d6ee6ffd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 3838792c0a420fb88ea9daab0a67c2e644c80681
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280344"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313759"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Exempel på skatteregistreringstjänsten för Tjeckien
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Tjeckien i Microsoft Dynamics 365 Commerce.
 
-För att uppfylla lokala räkenskapskrav för kassaapparater i Tjeckien Dynamics 365 Commerce funktionaliteten för Tjeckien inkluderar ett exempel på integrering av kassan (POS) med en extern skatteregistreringstjänst. Det här exemplet utökar [funktionen räkenskapsintegrering](fiscal-integration-for-retail-channel.md). Den är baserad på [EFR (elektroniskt skatteregister)](https://efsta.org/sicherheitsloesungen/) lösningar från [EFSTA](https://efsta.org/) och möjliggör kommunikation med EFR-tjänsten via HTTPS-protokollet. EFR-tjänsten säkerställer elektronisk registrering av försäljning (EET - Elektronická evidence tržeb), det vill säga onlineöverföringen av försäljningsdata till en skattemyndighets webbtjänst.
-
-EFR-tjänsten bör ha en värd för antingen Commerce Hardware Station eller en separat maskin som kan kopplas till från maskinvarutjänsten. Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
+För att uppfylla lokala räkenskapskrav för kassaapparater i Tjeckien Dynamics 365 Commerce funktionaliteten för Tjeckien inkluderar ett exempel på integrering av kassan (POS) med en extern skatteregistreringstjänst. Det här exemplet utökar [funktionen räkenskapsintegrering](fiscal-integration-for-retail-channel.md). Den är baserad på [EFR (elektroniskt skatteregister)](https://efsta.org/sicherheitsloesungen/) lösningar från [EFSTA](https://efsta.org/) och möjliggör kommunikation med EFR-tjänsten via HTTPS-protokollet. EFR-tjänsten säkerställer elektronisk registrering av försäljning (Elektronická evidence tržeb \[EET\]). Med andra ord ser det till att försäljningsdata överförs online till en skattetjänst från skattemyndigheterna. EFR-tjänsten bör ha en värd för antingen Commerce Hardware Station eller en separat maskin som kan kopplas till från maskinvarutjänsten. Exemplet tillhandahålls i form av källkod och är en del av Commerce Software Development Kit (SDK).
 
 Microsoft släpper inte någon maskinvara, programvara eller dokumentation från EFSTA. För information om hur du får EFR-lösning och använder den, kontakta [EFSTA](https://efsta.org/kontakt/).
 
@@ -114,7 +112,7 @@ Ställa in kassafunktionsprofiler.
 1. Gå till **Organisationsadministration \> Global adressbok \> Registrationstyper \> Registrationstyper**. Skapa en ny registreringstyp. Ange fältet **Land/region** till **CZE** (Tjeckien) och gör det begränsat till Organisation.
 2. Gå till **Organisationsadministration \> Global adressbok \> Registrationtyper \> Registreringskategorier**. Skapa en ny registreringskategori. Välj registreringstyp i det föregående steget och ställ in **registreringskategorin** på **Affärsförutsättning-ID**.
 3. Gå till **Organisationsadministration \> Organisationer \> Driftenheter**. För varje butik i Tjeckien väljer du den enhet som är relaterad till butiken. På snabbfliken **Adress**, expandera **Fler alternativ** och välj listruta **Avancerat**. 
-4. På sidan **Hantera adresser** måste du ange följande inställning.
+4. På sidan **Hantera adresser** måste du ange följande inställningar.
 
     - På snabbfliken **Adress** på fältet **land/region** till **CZE**.
     - På snabbfliken **Registrerings-ID** skapa en ny post. Välj den registreringstyp som skapats tidigare och ange registreringsnumret.
@@ -181,12 +179,10 @@ Mer information om hur du arbetar med kvittoformat finns i [Ställ in och design
 
 ## <a name="set-up-fiscal-integration-for-the-czech-republic"></a>Ställ in räkenskapsintegrering för Tjeckien
 
-Exemplet på integrering av räkenskapsregistreringstjänsten för Tjeckien baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Efr** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [konfigurera ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
+Exemplet på integrering av räkenskapsregistreringstjänsten för Tjeckien baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Commerce SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Efr** i databasen [Dynamics 365 Commerce-lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Exemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Commerce SDK finns i [Hämta Commerce SDK exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md) och [Konfigurera en bygg-pipeline för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Implementeringsriktlinjer för det skattemässiga integreringsexemplet för Tjeckien (äldre)](emea-cze-fi-sample-sdk.md).
->
-> Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
+> [!NOTE]
+> Exemplet på integrering av skatteregistreringstjänsten för Tjeckien finns i Commerce SDK från och med Commerce version 10.0.29. I Commerce version 10.0.28 måste du använda föregående version av Retail SDK på en virtuell utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Implementeringsriktlinjer för det skattemässiga integreringsexemplet för Tjeckien (äldre)](emea-cze-fi-sample-sdk.md).
 
 Slutför konfigurationsstegen för räkenskapsintegrering som beskrivs i [konfigurera räkenskapsintegrering för Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -202,18 +198,16 @@ Om du vill aktivera registreringsprocessen, följ dessa steg för att konfigurer
 1. Ladda ner konfigurationsfiler för providern av skattedokument och skatteanslutningen:
 
     1. Öppna [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen.
-    1. Välj en korrekt version av frisläppningen enligt din SDK/programversion (till exempel **[frisläppning/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Välj en korrekt version av frisläppningen enligt din SDK/programversion.
     1. Öppna **src \> FiscalIntegration \> Efr**.
-    1. Ladda ner konfigurationsfilen för finansiell dokumentleverantör på **Konfigurationer \> DocumentProviders \> DocumentProviderFiscalEFRSampleCzech.xml** (till exempel [filen för version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders/DocumentProviderFiscalEFRSampleCzech.xml)).
-    1. Ladda ner konfigurationsfilen för räkenskapskoppling på **Konfigurationer \> Anslutningar \> ConnectorEFRSample.xml** (till exempel [filen för versionen/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
+    1. Ladda ner konfigurationsfilen för finansiell dokumentleverantör på **Konfigurationer \> DocumentProviders \> DocumentProviderFiscalEFRSampleCzech.xml**.
+    1. Ladda ner konfigurationsfilen för räkenskapskoppling på **Konfigurationer \> Anslutningar \> ConnectorEFRSample.xml**.
 
-    > [!WARNING]
-    > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Konfigurationsfilerna för det här exemplet för skatteintegrering finns i följande mappar i Retail SDK på en utvecklar-VM i LCS:
+    > [!NOTE]
+    > I Commerce version 10.0.28 måste du använda föregående version av Retail SDK på en virtuell utvecklare (VM) i LCS. Konfigurationsfilerna för det här exemplet för skatteintegrering finns i följande mappar i Retail SDK på en utvecklar-VM i LCS:
     >
     > - **Konfigurationsfilen för räkenskapsdokumentprovidern:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml
     > - **Konfigurationsfil för räkenskapskoppling:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml
-    > 
-    > Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
 
 1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegrering** till **Ja**.
 1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Leverantörer av skattedokument** och läs in konfigurationsfilen för skattedokumentprovidern som du laddade ner tidigare.
@@ -223,7 +217,7 @@ Om du vill aktivera registreringsprocessen, följ dessa steg för att konfigurer
 1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Grupper för skattekoppling**. Skapa en ny grupp för räkenskapskoppling för den funktionsprofil för koppling som du skapade tidigare.
 1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Processer för räkenskapsregistrering**. Skapa en ny räkenskapsregistrering och räkenskapsregistrering och välj den grupp för räkenskapskoppling som du skapade tidigare.
 1. Gå till **Butik och handel \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**. Välj en funktionsprofil som är kopplad till butiken där registreringsprocessen ska aktiveras. På snabbfliken **Process för räkenskapsregistrering**, välj räkenskapsregistreringsprocessen som du skapade tidigare.
-1. Gåt ill **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. Välj en maskinvaruprofil som är länkad till den Hardware Station som kvittoskrivare ska anslutas till. På snabbfliken **Kringutrustning för räkenskaper**, välj teknisk profil för koppling som du skapade tidigare.
+1. Gåt ill **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. Välj en maskinvaruprofil som är länkad till den Hardware Station som skatteregistreringstjänsten ska anslutas till. På snabbfliken **Kringutrustning för räkenskaper**, välj teknisk profil för koppling som du skapade tidigare.
 1. Öppna distributionstidsplanen (**Retail och Commerce \> Retail och Commerce-IT \> Distributionsschema**) och välj jobb **1070** och **1090** för att överföra data till kanaldatabasen.
 
 #### <a name="default-data-mapping"></a>Standarddatamappning
@@ -259,16 +253,15 @@ Följande inställningar ingår i den skatteanslutningskonfiguration som tillhan
 
 ### <a name="configure-channel-components"></a>Konfigurera kanalkomponenter
 
-> [!WARNING]
-> På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga integreringsexemplet för Tjeckien (äldre)](emea-cze-fi-sample-sdk.md).
->
-> Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
+> [!NOTE]
+> - Exemplet på integrering av skatteregistreringstjänsten för Tjeckien finns i Commerce SDK från och med Commerce version 10.0.29. I Commerce version 10.0.28 måste du använda föregående version av Retail SDK på en virtuell utvecklare (VM) i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga integreringsexemplet för Tjeckien (äldre)](emea-cze-fi-sample-sdk.md).
+> - Commerce-exempel som distribueras i din miljö uppdateras inte automatiskt när du tillämpar service- eller kvalitetsuppdateringar på Commerce-komponenter. Du måste uppdatera de obligatoriska exemplen manuellt.
 
 #### <a name="set-up-the-development-environment"></a>Konfigurera en utvecklingsmiljö
 
 Följ dessa steg för att konfigurera en utvecklingsmiljö för att testa och utöka provet.
 
-1. Eller hämta [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions)-databasen. Välj en korrekt version av frisläppningen enligt din SDK/programversion. För mer information, se [Hämta Retail SDK-exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Eller hämta [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions)-databasen. Välj en korrekt version av frisläppningen enligt din SDK/programversion. För mer information, se [Hämta Commerce SDK-exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Öppna EFR-lösningen på **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln** och bygg den.
 1. Installera CRT-tillägg:
 
@@ -320,10 +313,10 @@ Följ stegen i [Konfigurera en byggpipeline för ett skatteintegreringsprov](fis
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 
-Exemplet på integrering av räkenskapsregistreringstjänsten för Tjeckien baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Efr** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [konfigurera ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
+Exemplet på integrering av räkenskapsregistreringstjänsten för Tjeckien baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Commerce SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Efr** i databasen [Dynamics 365 Commerce-lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Exemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Commerce SDK finns i [Hämta Commerce SDK exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [Konfigurera en bygg-pipeline för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga integreringsexemplet för Tjeckien (äldre)](emea-cze-fi-sample-sdk.md). Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
+> [!NOTE]
+> Exemplet på integrering av skatteregistreringstjänsten för Tjeckien finns i Commerce SDK från och med Commerce version 10.0.29. I Commerce version 10.0.28 måste du använda föregående version av Retail SDK på en virtuell utvecklare (VM) i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga integreringsexemplet för Tjeckien (äldre)](emea-cze-fi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Utbyggbarhetdesign för Commerce Runtime
 

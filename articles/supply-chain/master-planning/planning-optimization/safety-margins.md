@@ -2,7 +2,7 @@
 title: Säkerhetsmarginaler
 description: I denna artikel beskrivs hur säkerhetsmarginaler kan användas med tillägget Planeringsoptimering för Microsoft Dynamics 365 Supply Chain Management .
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854251"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335208"
 ---
 # <a name="safety-margins"></a>Säkerhetsmarginaler
 
@@ -79,12 +79,9 @@ Observera att när en utleveransmarginal används matchar inte relaterade levera
 
 ## <a name="set-up-safety-margins"></a>Ställ in säkerhetsmarginaler
 
-### <a name="turn-on-safety-margins-in-feature-management"></a>Aktivera säkerhetsmarginaler i funktionshantering
+### <a name="turn-safety-margins-on-or-off"></a>Aktivera eller inaktivera säkerhetsmarginaler
 
-Innan du kan använda den här funktionen med Planeringsoptimering måste den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
-
-- **Modul:** _huvudplanering_
-- **Funktionsnamn:** _marginaler för Planeringsoptimerin_
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Marginaler för planeringsoptimering* i arbetsytan [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="define-safety-margins"></a>Definiera säkerhetsmarginaler
 

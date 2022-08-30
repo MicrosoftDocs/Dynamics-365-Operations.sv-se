@@ -2,7 +2,7 @@
 title: Visualisering av utgående arbetsbelastning
 description: Denna artikel innehåller information om visualisering av utgående arbetsbelastning. Med hjälp av den här funktionen kan lagerchefer och administratörer skapa anpassade arbetsbelastningsdiagram som kan användas för att övervaka förloppet för det aktuella arbetet och det belopp som återstår. Lager chefer kan skapa flera vyer och konfigurera automatisk uppdatering när de behövs.
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 78d0d81095bb52a314936dd7590a5690d94ecb15
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851345"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334428"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering av utgående arbetsbelastning
 
@@ -29,7 +29,7 @@ Den här funktionen kan användas för att spåra förloppet för plocknings arb
 
 ## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Aktivera och inaktivera funktionen för Visualisering av utgående arbetsbelastning
 
-Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visualisering av utgående arbetsbelastning* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visualisering av utgående arbetsbelastning* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Ställ in visualisering av utgående arbetsbelastning
 

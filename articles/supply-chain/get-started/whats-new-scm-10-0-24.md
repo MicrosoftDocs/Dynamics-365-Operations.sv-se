@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 9b4b538e6d50013626739e19fee2a050b630bf7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166888"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334818"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.24 (februari 2022)
 
@@ -48,7 +48,7 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 | Produktionskontroll | Kontroll av materialtillgänglighet på begäran för tillverkningsorder | Denna funktion gör det snabbare att öppna sidan **Tillverkningsorder som ska frisläppas** som är tillgänglig från arbetsytan **Hantering av produktionsgolvskörning**. Om den här funktionen inte har den här funktionen kontrollerar systemet automatiskt om material är tillgängliga för alla listade tillverkningsorder så snart du öppnar sidan, vilket kan ta lång tid om du har ett stort antal order. När den här funktionen har aktiverats används i stället en verktygsfältsknapp som du kan använda för att initiera materialkontrollen enbart för valda order och vid behov. |
 | Produktionskontroll | Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (icke-WMS) | Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och löpnummer. Den här funktionen stöder bara artiklar som inte är aktiverade för att använda lagerstyrningsprocesser (WMS). Stöd för WMS-aktiverade artiklar planeras för en framtida version.<p>Vissa tillverkare, särskilt de som finns i processindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. En arbetare kan till exempel använda en våg för att väga hur mycket material som förbrukats medan de arbetar. För att garantera fullständig spårning av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras. |
 | Produktionskontroll | Rapportera som klar om arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet | Med den här funktionen kan personalen använda mobilappen Warehouse Management för att rapportera en tillverknings- eller batchorder som färdig när programmet körs mot en arbetsbörda för lagerstyrning i en enhet för molnbaserad eller kantskala. Mer information finns i [Rapportera som färdig och inlagrad på en skalningsenhet](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Warehouse management | Nya sidor för lastplaneringsworkbench | Aktiverar två nya workbench-sidorna för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
+| Warehouse management | Nya sidor för lastplaneringsworkbench | Lägger till två nya workbench-sidor för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 

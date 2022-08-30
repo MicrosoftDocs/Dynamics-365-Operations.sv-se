@@ -2,7 +2,7 @@
 title: Konfigurera konsolideringspolicyer för leverans
 description: I denna artikel beskrivs hur du konfigurerar standard- och anpassade konsolideringspolicyer för leveranser.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219545"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336505"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurera konsolideringspolicyer för leverans
 
@@ -33,10 +33,7 @@ Scenarierna som presenteras i denna artikel beskriver hur du konfigurerar standa
 > [!IMPORTANT]
 > I det [första scenariot](#scenario-1) som beskrivs i denna artikel måste du först konfigurera ett lagerställe så att detta använder den tidigare leveranskonsolideringen. Du kommer sedan att göra policyer för leveranskonsolidering tillgängliga. På så sätt kan du uppleva hur uppgraderingsscenariot fungerar. Om du tänker använda en demodatamiljö för att gå igenom det första scenariot ska du inte aktivera funktionen innan du kör scenariot.
 
-Innan du kan använda funktionen *Policyer för leveanskonsolidering* måste du aktivera den i systemet. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *Lagerstyrning*
-- **Funktionsnamn:** *Konsolidera leverans*
+För att använda funktionen *Policyer för leveranskonsolidering* måste du aktivera den i systemet. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Policyer för leveranskonsolidering* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 

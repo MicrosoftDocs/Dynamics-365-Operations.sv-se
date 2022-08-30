@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 20a2ffb44f9b99800146e3365e6f0d6df8e9a75e
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178546"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324273"
 ---
 # <a name="copy-an-instance"></a>Kopiera en instans
 
@@ -47,13 +47,14 @@ Om du vill kopiera en instans bör du tänka på följande:
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Effekter av att kopiera personaldatabasen
 
+> [!Note]
+> Från och med augusti 2022 inkluderas dokument i Microsoft Azure Blob Storage när en produktionsmiljö kopieras till en sådan sandbox-miljö. Alla dokument och mallar som bifogas kommer att kopieras över från källmiljön till målmiljön.
+
 Följande händelser inträffar när du kopierar en personaldatabas:
 
 - När du kopierar processen raderas den befintliga databasen i målmiljön. När kopieringsprocessen är klar kan du inte återställa den befintliga databasen.
 
 - Målmiljön kommer inte att vara tillgänglig förrän kopieringsprocessen har slutförts.
-
-- Dokument i Microsoft Azure Blob-lagring kopieras inte från en miljö till en annan. Därför kopieras inte de kopplade dokumenten och mallarna och de blir kvar i källmiljön.
 
 - Alla användare utom de som har säkerhetsrollen Systemadministratör och andra interna tjänsteanvändarkonton är inte tillgängliga. Administratörsanvändaren kan ta bort eller dölja data innan andra användare tillåts återvända till systemet.
 

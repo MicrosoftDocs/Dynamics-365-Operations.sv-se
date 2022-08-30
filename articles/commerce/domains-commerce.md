@@ -2,7 +2,7 @@
 title: Domäner i Dynamics 365 Commerce
 description: I denna artikel beskrivs hur domäner hanteras i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/10/2022
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
 ms.search.industry: retail
 ms.search.form: ''
-ms.openlocfilehash: 9bd925b7bf27748b3c17946de72a76bc0d0200d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288460"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336760"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domäner i Dynamics 365 Commerce
 
@@ -109,6 +109,10 @@ Slutpunkten `<e-commerce tenant name>.dynamics365commerce.ms` stöder inte anpas
 Om du vill konfigurera anpassade domäner med hjälp av en Front Door Service eller CDN har du två alternativ:
 
 - Konfigurera en Front Door Service som Azure Front Door för att hantera klienttrafik och ansluta till din Commerce-miljö. Detta ger bättre kontroll över hantering av domäner och certifikat samt mer detaljerade säkerhetsprinciper.
+
+> [!NOTE]
+> Om du använder en extern CDN- eller ytterdörrstjänst, se till att förfrågan landar på Commerce-plattformen med det värdnamn som tillhandahålls av Commerce, men med X-Forwarded-Host (XFH)-huvudet\<custom-domain\>. Om till exempel din Commerce-slutpunkt är `xyz.dynamics365commerce.ms` och den anpassade domänen är `www.fabrikam.com`, ska värdrubriken för den vidarebefordrade begäran vara `xyz.dynamics365commerce.ms` och XFH-rubiken ska vara `www.fabrikam.com`.
+
 - Använd den inlevererade Azure Front Door-instansen. Detta kräver samordning av åtgärden med Dynamics 365 Commerce-teamet för domänverifiering och för att hämta SSL-certifikat för din produktionsdomän.
 
 Information om hur du konfigurerar en CDN-tjänst direkt finns i [lägga till stöd för ett Content Delivery Network (CDN)](add-cdn-support.md) .
@@ -141,14 +145,18 @@ För befintliga/aktiva domäner:
 
 ## <a name="apex-domains"></a>Apex-domäner
 
-Den Commerce-tillhandahållna Azure Front Door-instansen stöder inte apex-domäner (rotdomäner som inte innehåller underdomäner). Apex-domäner kräver en IP-adress för att kunna matcha och Commerce Azure Front Door-instans finns endast med virtuella slutpunkter. Om du vill använda en apex-domän har du två alternativ:
+Den Commerce-tillhandahållna Azure Front Door-instansen stöder inte apex-domäner (rotdomäner som inte innehåller underdomäner). Apex-domäner kräver en IP-adress för att kunna matcha och Commerce Azure Front Door-instans finns endast med virtuella slutpunkter. Om du vill använda en apex-domän har du följande alternativ:
 
 - **Alternativ 1** – Använd din DNS-provider för att omdirigera apex-domänen till en "www"-domän. Fabrikam.com omdirigeras till exempel till den `www.fabrikam.com` där `www.fabrikam.com` är CNAME-posten som pekar mot den Commerce-värdbaserade Azure Front Door-instansen.
 
-- **Alternativ 2** – Ställ in en CDN/Front Door-instans som värd för apex-domänen.
+- **Alternativ 2** – Om din DNS-leverantör stöder ALIAS-poster kan du peka apex-domänen till ytterdörrens slutpunkt. Detta säkerställer att IP-ändringen vid den första slutpunkten återspeglas.
+  
+- **Alternativ 3** – Om din DNS-leverantör inte stöder ALIAS-poster måste du ställa in en CDN-instans eller frontförekomst på egen hand för att vara värd för a raddomänen.
 
 > [!NOTE]
 > Om du använder Azure Front Door måste du också konfigurera en Azure DNS i samma prenumeration. Apex-domänen som finns på Azure DNS kan peka mot din Azure Front Door som en aliaspost. Detta är det enda problemet, eftersom apex-domäner alltid måste peka mot en IP-adress.
+  
+Om du har frågor om A-domäner kan du kontakta [Microsoft Support](https://support.microsoft.com/).
 
   ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -2,7 +2,7 @@
 title: Materialhanteringsutrustningens gränssnitt (MHAX)
 description: I denna artikel beskrivs hur du konfigurerar materialhanteringsutrustningens gränssnitt (MHAX) så att du kan ansluta till externa system för fysisk materialhantering (MH).
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 1056c7aee3ea96ddcb012704be40bef6c363f323
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068372"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334368"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Materialhanteringsutrustningens gränssnitt (MHAX)
 
@@ -41,12 +41,13 @@ Här är en förklaring av de interaktioner som visas i föregående illustratio
 
 Innan du kan använda MHAX-funktionen måste du aktivera både dess funktion och dess konfigurationsnyckel.
 
-1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
-2. I arbetsytan **[Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** aktivera funktionen som heter *Materialhanteringsutrustningens gränssnitt*.
-3. Sätt ditt system i underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-4. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**.
-5. Expandera **Handel \> Hantering av lager och transport** och markera sedan kryssrutan **Materialhanteringsutrustningens gränssnitt**.
-6. Inaktivera underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Om du kör Supply Chain Management version 10.0.28 eller tidigare, gör följande:
+    1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
+    1. I arbetsytan **[Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** aktivera funktionen som heter *Materialhanteringsutrustningens gränssnitt*. (Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.)
+1. Sätt ditt system i underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**.
+1. Expandera **Handel \> Hantering av lager och transport** och markera sedan kryssrutan **Materialhanteringsutrustningens gränssnitt**.
+1. Inaktivera underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ## <a name="set-mhax-parameters"></a>Ställa in MHAX-parametrar
 

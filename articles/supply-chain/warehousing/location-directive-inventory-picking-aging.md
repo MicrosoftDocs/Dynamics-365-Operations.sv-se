@@ -2,7 +2,7 @@
 title: Platsdirektiv för plockning i åldersfördelat lager
 description: I denna artikel beskrivs hur du använder platsdirektivstrategier för först in, först ut (FIFO) och sist in, först ut (LIFO) vid plockning.
 author: Mirzaab
-ms.date: 07/15/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4ed1308ea36b731b156b518182846b60a59528d5
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219485"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335628"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Platsdirektiv för plockning i åldersfördelat lager
 
@@ -34,7 +34,7 @@ När lagret först tas emot eller skapas i lagerstället uppdaterar systemet det
 
 Om du vill göra den här funktionen tillgänglig aktiverar du följande funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i denna ordning:
 
-1. *Lagerställets platsstatus* version 10.0.29 är den här funktionen aktiverad som standard. Mer information finns i [Lagerställets platsstatus](warehouse-location-status.md).
+1. *Lagerställets platsstatus* version 10.0.29 är den här funktionen är obligatoriskt och kan inte inaktiveras. Mer information finns i [Lagerställets platsstatus](warehouse-location-status.md).
 1. *Platsdirektiv för plockning i åldersfördelat lager*
 
 ## <a name="feature-requirements"></a>Funktionskrav

@@ -2,7 +2,7 @@
 title: Fördröjningstolerans (negativa dagar)
 description: Denna artikel innehåller information om fördröjningstoleransberäkningen och hur denna påverkar skapandet av planerad order i Planeringsoptimering.
 author: t-benebo
-ms.date: 07/30/2021
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219980"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335388"
 ---
 # <a name="delay-tolerance-negative-days"></a>Fördröjningstolerans (negativa dagar)
 
@@ -23,11 +23,11 @@ ms.locfileid: "9219980"
 
 Med funktionen för fördröjningstolerans kan ett värde för Planeringsoptimering ta hänsyn till värdet för **Negativa dagar** som har angetts för disponeringsgrupper, artikeldisponering och/eller översiktsplaner. Den används för att utöka den fördröjningstoleransperiod som används vid huvudplanering. På det här sättet kan du undvika att skapa nya leveransorder om befintlig leverans kommer att täcka efterfrågan efter en kort fördröjning. Syftet med funktionen är att avgöra om det är logiskt att skapa en ny leveransorder för en given efterfrågan.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
+## <a name="turn-delay-tolerance-features-on-or-off"></a>Aktivera eller inaktivera funktioner för fördröjningstolerans
 
 Om du vill göra funktionen för fördröjningstolerans tillgänglig i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen:
 
-- *Negativa dagar för planeringsoptimering* – Med den här funktionen aktiveras inställningar för negativa dagar för disponeringsgrupper och artikel disponering.
+- *Negativa dagar för planeringsoptimering* – Med den här funktionen aktiveras inställningar för negativa dagar för disponeringsgrupper och artikel disponering. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.
 - *Leveransautomatisering på beställning* – Med den här funktionen aktiveras inställningar för huvudplaner i negativa dagar. (Mer information finns i [Leveransautomatisering på beställning](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Fördröjningstolerans vid Planeringsoptimering

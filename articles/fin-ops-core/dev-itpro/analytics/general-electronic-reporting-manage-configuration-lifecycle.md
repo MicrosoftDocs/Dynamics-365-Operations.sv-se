@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
-ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0209679c9882d87edab68d043fba9e7b3400a2a2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271596"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337204"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Hantera livscykeln för konfiguration av elektronisk rapportering (ER)
 
@@ -84,7 +84,7 @@ ER-konfigurationer som utformas i utvecklingsmiljön kan [laddas upp](#data-pers
 
 ## <a name="data-persistence-consideration"></a>Beaktande av databeständighet
 
-Du kan [importera](tasks/er-import-configuration-lifecycle-services.md) olika [versioner](general-electronic-reporting.md#component-versioning) av en ER-[konfiguration](general-electronic-reporting.md#Configuration) individuellt till din Finance-instans. När en ny version av en ER-konfiguration importeras, kontrollerar systemet innehållet i utkastversionen av denna konfiguration:
+Du kan [importera](tasks/er-import-configuration-lifecycle-services.md) olika versioner av en ER [konfiguration](general-electronic-reporting.md#Configuration) till din Ekonomi-instans. När en ny version av en ER-konfiguration importeras, kontrollerar systemet innehållet i utkastversionen av denna konfiguration:
 
 - När den importerade versionen är lägre än den högsta versionen av denna konfiguration i den aktuella Finance-instansen, förblir innehållet i utkastversionen för denna konfiguration oförändrat.
 - När den importerade versionen är högre än någon annan version av den här konfigurationen i den aktuella Finance-instansen kopieras innehållet i den importerade versionen till utkastversionen av den här konfigurationen så att du kan fortsätta redigera den senast ifyllda versionen.
@@ -112,7 +112,7 @@ ER-konfigurationer kan konfigureras som [beroende](er-download-configurations-gl
 
 ![Härledd ER-formatkonfiguration på sidan Konfigurationer.](./media/ger-configuration-lifecycle-img1.png)
 
-När du har designat formatet kan du ändra statusen för din ursprungliga [version](general-electronic-reporting.md#component-versioning) av ER-formatkonfigurationen från **Utkast** till **Slutfört**. Du kan sedan dela den ifyllda versionen av ER-formatkonfigurationen genom att [publicera](../../../finance/localizations/rcs-global-repo-upload.md) den i den globala databasen. Nu ska du få åtkomst till den globala databasen från valfri RCS- eller ekonomi molnbaserad instans. Du kan sedan importera alla ER-konfigurationsversionen som gäller för programmet från den globala databasen till det programmet.
+När du har designat formatet kan du ändra statusen för din ursprungliga version av ER-formatkonfigurationen från **Utkast** till **Slutfört**. Du kan sedan dela den ifyllda versionen av ER-formatkonfigurationen genom att [publicera](../../../finance/localizations/rcs-global-repo-upload.md) den i den globala databasen. Nu ska du få åtkomst till den globala databasen från valfri RCS- eller ekonomi molnbaserad instans. Du kan sedan importera alla ER-konfigurationsversionen som gäller för programmet från den globala databasen till det programmet.
 
 ![Publicerad ER-formatkonfiguration på sidan Konfigurationsdatabas.](./media/ger-configuration-lifecycle-img2.png)
 

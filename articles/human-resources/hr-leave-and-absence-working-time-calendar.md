@@ -14,18 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35fcb7c4068ff2f68970d9c0127491e4a63dab4c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dac3ad583be9e4cbd6eacbc6d228819bd298628b
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861085"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323586"
 ---
 # <a name="create-a-working-time-calendar"></a>Skapa en arbetstidskalender
 
-
-> [!Important]
-> Funktionen som anges i den här artikeln är för närvarande tillgänglig för kunder med fristående Dynamics 365 Human Resources. Vissa eller alla funktionerna kommer att vara tillgängliga i en kommande version av Finance-infrastrukturen efter Finance version 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -49,7 +46,7 @@ Skapa minst en arbetstidskalender som visar dina dagar och arbetstider. Om du ha
 
 3. Under **Genereringsalternativ** väljer du arbetsdagar för organisationen och anger arbetstider. 
    - Om du vill lägga till en helgdag eller avslutning väljer du knappen **Lägg till** bredvid **helgdagar och stängningar**.
-   - Om du vill lägga till ledig tid, som lunch eller raster, väljer du **Lägg till** under **EJ ARBETSTID** och anger namn och tidsintervall.
+   - Om du vill lägga till ledig tid, som lunch eller raster, väljer du **Lägg till** under **Arbetsfri tid** och anger namn och tidsintervall.
 
 4. Under **dagar**, välj **generera** för att generera dagar i kalendern. Ange datumintervallet för kalendern och välj sedan **generera dagar**.
 
@@ -67,7 +64,7 @@ Du kan lägga till eller ändra helgdagar och stängningar separat från en arbe
 
 Du kan lägga till eller ändra ej arbetstider separat från en arbetstidskalender.
 
-1. På sidan **Organisationsadministration** klickar du på **EJ ARBETSTID**.
+1. På sidan **Organisationsadministration** klickar du på **ej arbetstid**.
 
 2. Välj **Ny** och ange namnet och tidsintervallet för ej arbetstid.
 

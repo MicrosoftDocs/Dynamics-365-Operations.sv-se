@@ -2,7 +2,7 @@
 title: Inköpsavtal
 description: Det här avsnittet innehåller information om inköpsavtal. Ett inköpsavtal är ett kontrakt som ålägger en organisation att köpa en angiven kvantitet eller ett visst belopp via flera framtida inköpsorder. I utbyte mot detta åtagande får köparen särskilda priser och rabatter.
 author: GalynaFedorova
-ms.date: 06/20/2017
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8e2c4fdf640f1a9a64c60afc978a4d5812182a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 188a71ec660787b0b942a3d3bf4967b747c4469f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669584"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335898"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
@@ -41,7 +41,7 @@ Om du vill förhindra att ditt inköpsavtal används och bekräftas markerar du 
 Du kan identifiera en primär ansvarig arbetstagare och sekundär ansvarig arbetare på inköpsavtal klassificering. Dessa värden kommer att ärvas av det resulterande inköpsavtalet. Du behöver inte lägga till ansvariga arbetstagare till inköpsavtalet och de kan ändras direkt på basis av varje ärende på själva inköpsavtalet. Du kan inte ange en sekundär ansvarig arbetare utan en primär ansvarig arbetare, även om du inte behöver ha en sekundär ansvarig arbetare. Du kan inte ange samma arbetsprocesser som både den primära och sekundära ansvariga arbetaren.
 
 > [!IMPORTANT]
-> För att använda funktionen ansvariga part måste den aktiveras i ditt system. Från och med 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Ansvarig part för inköpsavtal* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> För att använda funktionen ansvariga part måste den aktiveras i ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Ansvarig part för inköpsavtal* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Utfästelsetyper
 Varje rad i ett inköpsavtal är en utfästelse att köpa något. Du kan använda rader från flera inköpsorder för att uppfylla utfästelsen. Det finns fyra typer av utfästelser:

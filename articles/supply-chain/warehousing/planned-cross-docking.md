@@ -2,7 +2,7 @@
 title: Planerad direktleverans
 description: I denna artikel beskrivs avancerad, planerad direktleverans, där lagerkvantiteten som krävs för en order dirigeras direkt från inleverans eller framställande till rätt utlastningsplats eller mellanlagringsområde. Allt återstående lager från den inkommande källan dirigeras till rätt lagringsplats genom den vanliga artikelinförselprocessen.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b530cc1403458775fd330e826a32417d3b03bf25
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070302"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334578"
 ---
 # <a name="planned-cross-docking"></a>Planerad direktleverans
 
@@ -37,10 +37,10 @@ Vid tiden för inleverans av inkommande order identifierar inställningen för d
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Aktivera funktionen planerad direktleverans
 
-Om systemet inte redan har de funktioner som beskrivs i denna artikel går du till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar följande funktioner i följande ordning:
+Om du kör version 10.0.28 eller tidigare i Supply Chain Management måste du eventuellt aktivera planerad direktutleverans innan du kan använda den. Gå till [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera följande funktioner i följande ordning:
 
-1. *Planerad direktleverans*
-1. *Mallar för direktleverans med platsdirektiv*
+1. *Planerad direktleverans*<br>(Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.)
+1. *Mallar för direktleverans med platsdirektiv*<br>(Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard.)
     > [!NOTE]
     > Med hjälp av denna funktion kan fältet **Direktivkod** anges i direktleveransmallen, på liknande sätt som du konfigurerar påfyllnadsmallar. Genom att aktivera den här funktionen förhindrar du att du lägger till en kod för direktiv på direktleveransens arbetsmallrader för den slutgiltiga *Placera*-raden. På så sätt ser du till att den slutliga placeringsplatsen kan fastställas under skapandet av arbetet innan arbetsmallar övervägs.
 
@@ -92,7 +92,7 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
 
     - **Direktivkod:** Lämna det här fältet tomt
 
-        Detta alternativ aktiveras med hjälp av funktionen *Mallar för direktutleverans med platsdirektiv*. Systemet använder platsdirektiv för att avgöra vilken som är den bästa platsen att flytta lager för direktleverans till. Du kan konfigurera den genom att tilldela en direktivkod till varje relevant direktutleveransmall. Om en direktivkod ställs in kommer systemet att söka efter platsdirektiv med direktivkod när arbete genereras. På detta sätt kan du begränsa platsdirektiv som används för en viss direktleveransmall.
+        Det här alternativet aktiveras av funktionen *Mallar för direktleverans med platsdirektiv* (från och med Supply Chain Management version 10.0.29 aktiveras funktionen som standard). Systemet använder platsdirektiv för att avgöra vilken som är den bästa platsen att flytta lager för direktleverans till. Du kan konfigurera den genom att tilldela en direktivkod till varje relevant direktutleveransmall. Om en direktivkod ställs in kommer systemet att söka efter platsdirektiv med direktivkod när arbete genereras. På detta sätt kan du begränsa platsdirektiv som används för en viss direktleveransmall.
 
     - **Validera tidsfönster:** *Ja*
 

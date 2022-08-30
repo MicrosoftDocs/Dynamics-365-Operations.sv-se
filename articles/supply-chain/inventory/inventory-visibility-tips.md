@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bdd161815a15d5c39b3c0afc176a288c8d9055a
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885969"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306098"
 ---
 # <a name="inventory-visibility-tips"></a>Tips för Lagersynlighet
 
@@ -35,5 +35,8 @@ Det här avsnittet innehåller några tips som du bör ta hänsyn till när du k
 - För närvarande består [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration) partitionskonfigurationen av två grunddimensioner (`SiteId` och `LocationId`) som anger hur data distribueras. Åtgärder under samma partition kan leverera högre prestanda till lägre kostnad. Lösningen innehåller som standard den här partitionskonfigurationen. Därför *måste du inte definiera själv*. Anpassa inte standardkonfigurationen för partitionen. Om du tar bort eller ändrar den kan det leda till oväntade fel.
 - Basdimensioner som definieras i partitionskonfigurationen ska inte definieras i [produktindex hierarkikonfigurationer](inventory-visibility-configuration.md#index-configuration).
 - Din [hierarkikonfiguration för produktindex](inventory-visibility-configuration.md#index-configuration) måste omfatta minst en indexhierarki (som exempelvis innehåller basdimensionen `Empty`), annars misslyckas frågorna med felet "Ingen indexhierarki har ställts in."
+- Datakälla `@iv` är en fördefinierad datakälla och de fysiska mått som definierats i `@iv` med prefixet `@` är fördefinierade mått. Måtten är en fördefinierad konfiguration för allokeringsfunktionen. Det gör att du inte ändrar eller tar bort dem eller du kanske stöter på oväntade fel när du använder allokeringsfunktionen.
+- Du kan lägga till nya fysiska mått till det fördefinierade beräknade `@iv.@available_to_allocate` måttet, men du får inte ändra dess namn.
+- Om du har återställt din Supply Chain Management-databas kan den återställda databasen innehålla data som inte längre är konsekventa med data som tidigare synkroniserats med Lagersynlighet till Dataverse. Den här data inkonsekvensen kan orsaka systemfel och andra problem. Därför är det viktigt att du alltid rensar alla lagersynlighetsdata från Dataverse innan du återställer en Supply Chain Management-databas. För mer information, se [Rensa lagersynlighetsdata från Dataverse innan du återställer Supply Chain Management-databasen](inventory-visibility-setup.md#restore-environment-database).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

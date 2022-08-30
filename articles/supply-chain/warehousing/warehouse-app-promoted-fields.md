@@ -2,7 +2,7 @@
 title: Konfigurera befordrade fält för steg i mobilappen Warehouse Management
 description: Denna artikel beskriver hur du främjar och lyfter fram specifik information för varje steg i uppgiftsflödena för mobilappen för Warehouse Management.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 3451b1aec525cd0738af558b183f8676d20294a0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218987"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336078"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurera befordrade fält för steg i mobilappen Warehouse Management
 
@@ -29,19 +29,12 @@ Denna artikel beskriver hur du främjar och lyfter fram specifik information fö
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivera som stöds av fält i systemet
 
-Innan du kan konfigurera befordrade fält måste du slutföra följande procedur för att aktivera de nödvändiga funktionerna och generera de obligatoriska fältnamnen i mobilappen Warehouse Management.
+Om du kör Supply Chain Management version 10.0.28 eller tidigare, innan du kan konfigurera befordrade fält måste du slutföra följande procedur för att aktivera de nödvändiga funktionerna och generera de obligatoriska fältnamnen i mobilappen Warehouse Management. Om du kör version 10.0.29 av Supply Chain Management eller senare är funktionerna obligatoriska och kan inte inaktiveras, så du kan hoppa över den här proceduren.
 
-1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
-1. Se till att funktionen *Steginstruktioner för lagerställeapp* är aktiverad för systemet. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Den här funktionen är en förutsättning för funktionen *Lagerställeapp som stöds fält*.
-1. Aktivera funktionen som visas på följande sätt:
-
-    - **Modul:** *Warehouse management*
-    - **Funktionsnamn:** *fält som stöds av lagerställeapp*
-
-    Den här funktionen är den funktion som beskrivs i denna artikel.
-
-1. Uppdatera fältnamnen i Warehouse Management-mobilappen genom att gå till **Warehouse Management \> Inställningar \> Mobil enhet \> Fältnamn i lagerställeapp** och väljer **Skapa standardinställningar**. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
-1. Upprepa föregående steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management.
+1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**. (Se [Översikt över funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för mer information om denna sida.)
+1. Se till att funktionen *Steginstruktioner för lagerställeapp* är aktiverad för systemet. Den här funktionen är en förutsättning för funktionen *Lagerställeapp som stöds fält*. Från och med version 10.0.29 av Supply Chain Management är obligatorisk och kan inte inaktiveras. Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md).
+1. Se till att funktionen *Erbjudna fält i lagerställeapp* är aktiverad för systemet. Det här är funktionen som beskrivs i den här artikeln. Från och med version 10.0.29 av Supply Chain Management är obligatorisk och kan inte inaktiveras.
+1. Uppdatera fältnamnen i Warehouse Management-mobilappen genom att gå till **Warehouse Management \> Inställningar \> Mobil enhet \> Fältnamn i lagerställeapp** och väljer **Skapa standardinställningar**. Upprepa detta steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>Konfigurera baserade fält från en menyspecifik åsidosättning
 

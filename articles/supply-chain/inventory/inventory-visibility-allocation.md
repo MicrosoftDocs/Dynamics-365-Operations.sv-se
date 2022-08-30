@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852517"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306127"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Lagerfördelning för Lagersynlighet
 
@@ -63,12 +63,11 @@ Lagerallokeringsfunktionen består av följande komponenter:
 - De fördefinierade, allokeringsrelaterade datakällan, fysiska mått och beräknade mått.
 - Anpassningsbara allokeringsgrupper som har maximalt åtta nivåer.
 - En uppsättning av API:er (Allocation Application Programming Interfaces):
-
-    - allokera
-    - omallokera
-    - ej allokerad
-    - förbruka
-    - fråga
+  - allokera
+  - omallokera
+  - ej allokerad
+  - förbruka
+  - fråga
 
 Konfigureringsprocessen för allokeringsfunktionen har två steg:
 
@@ -84,23 +83,26 @@ Datakällan med namnet `@iv`.
 Här är de första fysiska måtten:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Här är de första beräknade måtten:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Lägg till andra fysiska mått på det beräknade måttet som är tillgängligt att fördela
 
 Om du vill använda allokering måste du konfigurera det beräknade måttet som är tillgängligt att allokera (`@iv.@available_to_allocate`). Du har till exempel `fno` datakälla och `onordered` mått, kommer `pos` datakälla och `inbound` och du vill göra allokering till hands för summan av `fno.onordered` och `pos.inbound`. I detta fall ska `@iv.@available_to_allocate` innehålla `pos.inbound` och `fno.onordered` i formeln. Här följer ett exempel:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
+
+> [!NOTE]
+> Datakälla `@iv` är en fördefinierad datakälla och de fysiska mått som definierats i `@iv` med prefixet `@` är fördefinierade mått. Måtten är en fördefinierad konfiguration för allokeringsfunktionen. Det gör att du inte ändrar eller tar bort dem eller du kanske stöter på oväntade fel när du använder allokeringsfunktionen.
+>
+> Du kan lägga till nya fysiska mått till det fördefinierade beräknade `@iv.@available_to_allocate` måttet, men du får inte ändra dess namn.
 
 ### <a name="change-the-allocation-group-name"></a>Ändra namnet på allokeringsgruppen
 
@@ -136,7 +138,7 @@ Anropa `Allocate` API:t för att allokera en produkt som har särskilda dimensio
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Till exempel vill du tilldela en kvantitet på 10 för produkt *Cykel*, webbplat
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Använd `Reallocate` API om du vill flytta en allokerad kvantitet till en annan 
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Du kan till exempel flytta två cyklar som har måtten \[site=1, location=11, co
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Använd `Consume` API när du vill bokföra förbrukningskvantiteten mot alloker
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -280,7 +282,7 @@ Nu säljs tre cyklar, som tas från allokeringspoolen. För att registrera denna
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -326,7 +328,7 @@ När du vill förbruka en kvantitet på 3 och direkt reservera denna kvantitet, 
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

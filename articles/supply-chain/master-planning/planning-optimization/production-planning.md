@@ -2,7 +2,7 @@
 title: Produktionsplanering
 description: Denna artikel beskriver planering för produktion och förklarar hur du ändrar planerade tillverkningsorder genom att använda Planeringsoptimering.
 author: t-benebo
-ms.date: 06/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873794"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335268"
 ---
 # <a name="production-planning"></a>Produktionsplanering
 
@@ -26,9 +26,9 @@ Planeringsoptimering stöder flera produktionsscenarier. Om du migrerar från de
 
 Följande video ger en kort introduktion till några av de begrepp som diskuteras i denna artikel: [Dynamics 365 Supply Chain Management: Förbättringar av Planeringsoptimering](https://youtu.be/u1pcmZuZBTw).
 
-## <a name="turn-on-this-feature-for-your-system"></a>Aktivera funktionen i systemet
+## <a name="turn-this-feature-on-or-off-for-your-system"></a>Aktivera eller inaktivera funktionen i systemet
 
-Om ditt system inte redan innehåller de funktioner som beskrivs i denna artikel går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Planerade produktionsorder för Planeringsoptimering*.
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Planerade produktionsorder för planeringsoptimering* i arbetsytan [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="planned-production-orders"></a>Planerade produktionsorder
 

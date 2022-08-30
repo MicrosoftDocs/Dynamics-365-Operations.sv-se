@@ -2,7 +2,7 @@
 title: Tidsplanering med obegränsad kapacitet
 description: Denna artikel innehåller information om oändlig kapacitetsplanering för Planeringsoptimering. Det beskriver även aktuella funktionsbegränsningar.
 author: t-benebo
-ms.date: 09/21/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3646a7ca1f9a3a87a2f130783dc4961a61335f1d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873881"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335328"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Tidsplanering med obegränsad kapacitet
 
@@ -24,12 +24,9 @@ ms.locfileid: "8873881"
 
 Med funktionen *Oändlig kapacitetsplanering för Planeringsoptimering* introduceras tidsplanering som baseras på flödesinformation. Med den kan du tidsplanera jobb utifrån ett stort antal flödeskonfigurationer. Tidsplanering för Planeringsoptimering omfattar ofta använda flödesinställningar, inklusive flödesdriftsordning eller krav för flödesdriftsresurser.
 
-## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>Aktivera funktionen för tidsplanering av obegränsad kapacitet
+## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för tidsplanering av obegränsad kapacitet
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *huvudplanering*
-- **Funktionsnamn:** *Planering med obegränsad kapacitet för Planeringsoptimering*
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Planering av oändlig kapacitet för Planeringsoptimering* i arbetsytan [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Mer information om den här funktionen finns i [Tidsplanering med resursurval som baseras på kapaciteten](capability-based-scheduling.md).
 

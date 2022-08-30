@@ -2,7 +2,7 @@
 title: Fråga data med hjälp av omvägar Warehouse Management-mobilappen
 description: Den här artikeln beskriver hur du konfigurerar menyalternativ för mobila enheter för dataförfrågan och använder dem som en del av omvägar.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c3ea53379badb3cb2ed71b7f102956d71c3f047a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220575"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336618"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Fråga data med hjälp av omvägar Warehouse Management-mobilappen
 
@@ -35,19 +35,19 @@ I till exempel flödet för inleverans av inköpsorder måste ett inköpsordernu
 Innan du kan använda funktionerna som beskrivs i den här artikeln måste du gå vidare med följande procedur för att aktivera funktionerna som behövs.
 
 1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**. (Mer information om hur du använder arbetsytan **funktionshantering** finns i [Översikt över funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Aktivera funktionen som visas på följande sätt:
+1. Om du kör Supply Chain Management version 10.0.28 eller tidigare, aktiverar du funktionen som anges på följande sätt:
 
     - **Modul:** *Warehouse management*
     - **Funktionsnamn:** *Steginstruktioner för lagerapp*
 
-    Den här funktionen är en förutsättning för funktionen *Dataförfrågansflöde i Warehouse Management-appen*. Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md).
+    Den här funktionen är en förutsättning för funktionen *Dataförfrågansflöde i Warehouse Management-appen*. Från och med version 10.0.29 av Supply Chain Management är obligatorisk och kan inte inaktiveras. Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md).
 
 1. Aktivera funktionen som visas på följande sätt:
 
     - **Modul:** *Warehouse management*
     - **Funktionsnamn:** *Omvägar för lagerstyrningsapp*
 
-    Den här funktionen är en förutsättning för funktionen *Dataförfrågansflöde i Warehouse Management-appen*. Mer information om funktionen för *Omvägar för appen Warehouse Management* i [Konfigurera omvägar för steg i menyalternativ för mobila enheter](warehouse-app-detours.md).
+    Den här funktionen är en förutsättning för funktionen *Dataförfrågansflöde i Warehouse Management-appen*. Från och med version 10.0.29 av Supply Chain Management är denna aktiverad som standard. Mer information om funktionen för *Omvägar för appen Warehouse Management* i [Konfigurera omvägar för steg i menyalternativ för mobila enheter](warehouse-app-detours.md).
 
 1. Om funktionen *Omvägar för appen Warehouse Management* inte redan var aktiverad, uppdatera fältnamnen i mobilappen Warehouse Management genom att gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Namnordning för lagerställeapp** och välja **Skapa standardinställningar**. Upprepa detta steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
 1. Aktivera funktionen som visas på följande sätt:

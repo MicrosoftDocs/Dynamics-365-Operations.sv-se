@@ -2,7 +2,7 @@
 title: Konsolidera leveranser genom att använda workbench för leveranskonsolidering
 description: Denna artikel innehåller ett scenario där flera order frigörs till lagerstället och sedan konsolideras till leveranser senare genom att använda workbench för leveranskonsolidering.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: a33189cdcbb66304eef80558e931209ea236f576
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: db8dc5101b223a0033284d8e6c494721871809d8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218631"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335808"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidera leveranser genom att använda workbench för leveranskonsolidering
 
@@ -34,14 +34,11 @@ Scenariot i denna artikel innehåller referensvärden och -poster som ingår i d
 
 Det scenario som beskrivs här förutsätter att du redan har aktiverat funktionen, gjort övningarna i [Konfigurera policyer för leveranskonsolidering](configure-shipment-consolidation-policies.md) samt har skapat de policyer och andra poster som beskrivs där. Var noga med att göra övningarna innan du fortsätter med det här scenariot.
 
-## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>Aktivera funktionen för manuell leveranskonsolidering
+## <a name="turn-the-manual-shipment-consolidation-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för manuell leveranskonsolidering
 
-Innan du kan använda funktionen *Manuell leveranskonsolidering* måste du aktivera den i systemet. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Innan du kan använda funktionen för manuell leveranskonsolidering måste den aktiveras i ditt system. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *manuell leveranskonsolidering* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul:** *Warehouse management*
-- **Funktionsnamn:** *Manuell leveranskonsolidering*
-
-Du måste också aktivera funktionen *Konsolidera leverans* innan du kan skapa policyer. Mer information finns i [Konfigurera policyer för leveranskonsolidering](configure-shipment-consolidation-policies.md).
+Du måste också aktivera funktionen *Konsolidera leverans* innan du kan skapa principer (från och med version 10.0.29 av Supply Chain Management är funktionen obligatorisk och kan inte inaktiveras). Mer information finns i [Konfigurera policyer för leveranskonsolidering](configure-shipment-consolidation-policies.md).
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Skapa försäljningsorder för det här scenariot
 

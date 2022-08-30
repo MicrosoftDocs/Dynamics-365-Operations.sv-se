@@ -2,27 +2,28 @@
 title: Exempel på integrering av kvittoskrivare för Polen
 description: I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Polen i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
-ms.search.validFrom: 2019-02-01
-ms.openlocfilehash: 1466532099820abcdf4496db80f9a34682e2ed5a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2019-02-01.
+ms.openlocfilehash: 52710252d78d34c444de2d40e16423868b12b5c1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274243"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336749"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Exempel på integrering av kvittoskrivare för Polen
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Polen i Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce-funktionen för Polen omfattar en exempelintegrering av kassan (POS) med en kvittoskrivare. Exemplet utökar funktionen för [skatteintegrering](fiscal-integration-for-retail-channel.md) och stöder POSNET THERMAL HD 2.02 protokollet för kvittoskrivare från [Posnet Polska S.A.](https://www.posnet.com.pl) Exemplet möjliggör kommunikation med en kvittoskrivare som är ansluten via en COM-port med hjälp av en inbyggd programvarudrivrutin. Den implementerades och testades med hjälp av en mjukvaruemulator som Posnet tillhandahållit för Posnet Thermal HD FV EJ kvittoskrivare. Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
+Dynamics 365 Commerce-funktionen för Polen omfattar en exempelintegrering av kassan (POS) med en kvittoskrivare. Exemplet utökar funktionen för [skatteintegrering](fiscal-integration-for-retail-channel.md) och stöder POSNET THERMAL HD 2.02 protokollet för kvittoskrivare från [Posnet Polska S.A.](https://www.posnet.com.pl) Exemplet möjliggör kommunikation med en kvittoskrivare som är ansluten via en COM-port med hjälp av en inbyggd programvarudrivrutin. Den implementerades och testades med hjälp av en mjukvaruemulator som Posnet tillhandahållit för Posnet Thermal HD FV EJ kvittoskrivare. Exemplet tillhandahålls i form av källkod och är en del av Commerce Software Development Kit (SDK).
 
 Microsoft släpper inte någon maskinvara, programvara eller dokumentation från Posnet. Om du vill ha information om hur du får kvittoskrivaren och använder den kan du kontakta [Posnet Polska S.A.](https://www.posnet.com.pl)
 
@@ -97,12 +98,10 @@ Exemplet för integrering av kvittoskrivare implementerar följande regler som r
 
 ## <a name="set-up-fiscal-integration-for-poland"></a>Ställ in räkenskapsintegrering för Polen
 
-Exemplet på integrering av kvittoskrivaren för Polen baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Posnet** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [konfigurera ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
+Exemplet på integrering av kvittoskrivaren för Polen baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Commerce SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Posnet** i databasen [Dynamics 365 Commerce-lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Exemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Commerce SDK finns i [Hämta Commerce SDK exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md) och [Konfigurera en bygg-pipeline för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Polen (äldre)](emea-pol-fpi-sample-sdk.md).
->
-> Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
+> [!NOTE]
+> Exemplet på integrering av skatteskrivaren för Polen är tillgängligt i Commerce SDK från och med Commerce version 10.0.29. I Commerce version 10.0.28 måste du använda föregående version av Retail SDK på en virtuell utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Polen (äldre)](emea-pol-fpi-sample-sdk.md).
 
 Slutför konfigurationsstegen för räkenskapsintegrering som beskrivs i [konfigurera räkenskapsintegrering för Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -119,18 +118,16 @@ Om du vill aktivera registreringsprocessen, följ dessa steg för att konfigurer
 1. Ladda ner konfigurationsfiler för providern av skattedokument och skatteanslutningen:
 
     1. Öppna [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen.
-    1. Välj en korrekt version av frisläppningen enligt din SDK/programversion (till exempel **[frisläppning/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Välj en korrekt version av frisläppningen enligt din SDK/programversion.
     1. Öppna **src \> FiscalIntegration \> Posnet**.
-    1. Hämta konfigurationsfilen för räkenskapsdokumentprovidern på **CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml** (t.ex. [filen för version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml)).
-    1. Ladda ner konfigurationsfilen för räkenskapskoppling på **HardwareStation \> ThermalDeviceSample \> Configuration \> ConnectorPosnetThermalFVEJ.xml** (t.ex. [filen för version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
+    1. Hämta konfigurationsfilen för räkenskapsdokumentprovidern på **CommerceRuntime \> DocumentProvider.PosnetSample \> Konfiguration \> DocumentProviderPosnetSample.xml**.
+    1. Ladda ner konfigurationsfilen för räkenskapskoppling på **HardwareStation \> ThermalDeviceSample \> Konfiguration \> ConnectorPosnetThermalFVEJ.xml**.
 
-    > [!WARNING]
-    > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Konfigurationsfilerna för det här exemplet för skatteintegrering finns i följande mappar i Retail SDK på en utvecklar-VM i LCS:
+    > [!NOTE]
+    > I Commerce version 10.0.28 måste du använda föregående version av Retail SDK på en virtuell utvecklare (VM) i LCS. Konfigurationsfilerna för det här exemplet för skatteintegrering finns i följande mappar i Retail SDK på en utvecklar-VM i LCS:
     >
     > - **Konfigurationsfilen för räkenskapsdokumentprovidern:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml
     > - **Konfigurationsfil för räkenskapskoppling:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml
-    > 
-    > Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
 
 1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegrering** till **Ja**.
 1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Leverantörer av skattedokument** och läs in konfigurationsfilen för skattedokumentprovidern som du laddade ner tidigare.
@@ -173,16 +170,15 @@ Följande inställningar ingår i den skatteanslutningskonfiguration som tillhan
 
 ### <a name="configure-channel-components"></a>Konfigurera kanalkomponenter
 
-> [!WARNING]
-> På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Polen (äldre)](emea-pol-fpi-sample-sdk.md).
->
-> Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
+> [!NOTE]
+> - Exemplet på integrering av skatteskrivaren för Polen är tillgängligt i Commerce SDK från och med Commerce version 10.0.29. I Commerce version 10.0.28 måste du använda föregående version av Retail SDK på en virtuell utvecklare (VM) i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Polen (äldre)](emea-pol-fpi-sample-sdk.md).
+> - Commerce-exempel som distribueras i din miljö uppdateras inte automatiskt när du tillämpar service- eller kvalitetsuppdateringar på Commerce-komponenter. Du måste uppdatera de obligatoriska exemplen manuellt.
 
 #### <a name="set-up-the-development-environment"></a>Konfigurera en utvecklingsmiljö
 
 Följ dessa steg för att konfigurera en utvecklingsmiljö för att testa och utöka provet.
 
-1. Eller hämta [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions)-databasen. Välj en korrekt version av frisläppningen enligt din SDK/programversion. För mer information, se [Hämta Retail SDK-exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Eller hämta [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions)-databasen. Välj en korrekt version av frisläppningen enligt din SDK/programversion. För mer information, se [Hämta Commerce SDK-exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Öppna integreringslösningen för kvittoskrivaren på **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln** och skapa den.
 1. Installera CRT-tillägg:
 
@@ -220,10 +216,10 @@ Följ stegen i [Konfigurera en byggpipeline för ett skatteintegreringsprov](fis
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 
-Exemplet på integrering av kvittoskrivaren för Polen baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Posnet** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [konfigurera ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
+Exemplet på integrering av kvittoskrivaren för Polen baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Commerce SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Posnet** i databasen [Dynamics 365 Commerce-lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Exemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Commerce SDK finns i [Hämta Commerce SDK exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md) och [Konfigurera en bygg-pipeline för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Polen (äldre)](emea-pol-fpi-sample-sdk.md). Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
+> [!NOTE]
+> Exemplet på integrering av skatteskrivaren för Polen är tillgängligt i Commerce SDK från och med Commerce version 10.0.29. I Commerce version 10.0.28 måste du använda föregående version av Retail SDK på en virtuell utvecklare (VM) i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Polen (äldre)](emea-pol-fpi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Utbyggbarhetdesign för Commerce Runtime
 

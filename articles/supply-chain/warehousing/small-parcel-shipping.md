@@ -2,7 +2,7 @@
 title: Leverans av små paket
 description: Denna artikel innehåller information om funktionen för leverans av små paket (SPS). Med denna funktion kan Microsoft Dynamics 365 Supply Chain Management skicka uppgifter om en förpackad behållare till transportföretaget och sedan ta emot en leveransetikett, basleveranstariff och spårningsnummer tillbaka från det transportföretaget.
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: b2adde2b81ed881a3c81193a2220fbe569069c7c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219731"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336168"
 ---
 # <a name="small-parcel-shipping"></a>Leverans av små paket
 
@@ -34,12 +34,9 @@ Leveranskostnaden som returneras läggs till på den associerade försäljningso
 
 Innan du kan börja använda SPS-funktionen måste du aktivera SPS-funktionen i Funktionshantering, lägga till din tariffmotor och konfigurera modulerna **Transporthantering** och **Lagerstyrning** för att stödja den.
 
-### <a name="turn-on-the-sps-feature"></a>Aktivera SPS-funktion
+### <a name="turn-the-sps-feature-on-or-off"></a>Aktivera eller inaktivera SPS-funktionen
 
-Innan du kan använda SPS-funktionen måste den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
-
-- **Modul:** *Transporthantering*
-- **Funktionsnamn:** *Leverans av små paket*
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Leverans av små paket* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="deploy-and-set-up-rate-engines"></a>Distribuera och konfigurera tariffmotor.
 

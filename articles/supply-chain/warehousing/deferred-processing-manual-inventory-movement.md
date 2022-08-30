@@ -2,7 +2,7 @@
 title: Uppskjuten bearbetning av manuell lagerrörelse
 description: I denna artikel bekrivs hur du använder uppskjuten bearbetning av manuell lagerrörelse i Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219821"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336408"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Uppskjuten bearbetning av manuell lagerrörelse
 
@@ -32,10 +32,10 @@ Bakgrundsbearbetning uppnås genom att du använder [funktionen för att bearbet
 
 Om du vill göra denna funktion tillgänglig aktiverar du följande funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md): Du måste aktivera dem i följande ordning:
 
-1. *Arbetsspärr för hela organisationen*<br>(Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
-1. *Bearbeta lagerställeapphändelser*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk. Därför är den aktiverad som standard och kan inte stängas av igen.
-1. *Uppskjutna put-åtgärder*
-1. *Uppskjuten bearbetning av manuell åtgärd för lagerrörelse*<br>(Från och med version 10.0.25 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
+1. *Arbetsspärr för hela organisationen*<br>(Från och med version 10.0.21 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.)
+1. *Bearbeta lagerställeapphändelser*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.
+1. *Uppskjutna put-åtgärder*<br>(Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.)
+1. *Uppskjuten bearbetning av manuell åtgärd för lagerrörelse*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurera arbetsbearbetningspolicyer
 

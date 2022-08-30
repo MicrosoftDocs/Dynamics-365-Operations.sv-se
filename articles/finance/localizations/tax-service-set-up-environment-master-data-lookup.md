@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181137"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306216"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktivera huvuddatauppslag för momsberäkningskonfiguration 
 
@@ -108,7 +108,7 @@ Dataverse använder det Azure AD-program du skapat för att anropa appar för ek
     - **Leverantör** – Ange det här fältet som **NonAAD**.
     - **E-post** – Ange **dataverseintegration** eller något annat värde. (Värdet behöver inte vara ett giltigt e-postkonto.)
 
-3. Tilldela användaren säkerhetsrollen **Virtuellt CDS-entitetsprogram**.
+3. Tilldela användaren säkerhetsrollen **Dataverse app för integrering av virtuell enhet**.
 4. Ta bort alla andra roller, inklusive **Systemanvändare**.
 5. Gå till **Systemadministrering** \> **Inställningar** \> **Azure Active Directory-program** för att registrera Dataverse. 
 6. Lägg till en rad och ange sedan, i fältet **Klient-ID**, det **Program-ID (klient)** som du tidigare gjorde en notering om.
@@ -199,17 +199,11 @@ Mer information finns i [Aktivera Microsoft Dataverse virtuella entiteter](../..
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a>Konfigurera det anslutna programmet för momsberäkning
 
-1. Öppna arbetsytan **Funktionshantering** i RCS och aktivera följande funktioner:
-
-    - Dataverse-datakällor för elektronisk rapportering
-    - Stöd för Dataverse-datakällor för skattetjänst
-    - Globaliseringsfunktioner
-
-2. Gå till **Elektronisk rapportering** och välj sedan, i avsnittet **Relaterade länkar**, **Anslutna program**.
+1. Gå till **Elektronisk rapportering** och välj sedan, i avsnittet **Relaterade länkar**, **Anslutna program**.
 
     [![Anslutna program.](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Om du vill lägga till en post, välj **Ny** och ange följande fältinformation.
+2. Om du vill lägga till en post, välj **Ny** och ange följande fältinformation.
 
     - **Namn** – Ange ett namn.
     - **Typ** – Välj **Dataverse**.
@@ -217,12 +211,18 @@ Mer information finns i [Aktivera Microsoft Dataverse virtuella entiteter](../..
     - **Klientorganisation** – Ange din klientorganisation.
     - **Anpassad URL** – Ange din Dataverse-URL och lägg till **/api/data/v9.1** i denna.
 
-4. Välj **Kontrollera anslutning** och välj sedan **Klicka här för att ansluta till valt fjärrprogram** i dialogrutan som visas.
+3. Välj **Kontrollera anslutning** och välj sedan **Klicka här för att ansluta till valt fjärrprogram** i dialogrutan.
 
     [![Kontrollera anslutningen.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Se till att du får ett "Slutfördes!" -meddelande som anger att anslutningen har upprättats.
+4. Se till att du får ett "Slutfördes!" -meddelande som anger att anslutningen har upprättats.
 
     [![Meddelande vid slutfört.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. Öppna arbetsytan **Funktionshantering** i RCS och aktivera följande funktioner:
+
+    - Globaliseringsfunktioner
+    - Dataverse-datakällor för elektronisk rapportering
+    - Stöd för Dataverse-datakällor för skattetjänst
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a>Importera och konfigurera konfigurationen för Dataverse-modellmappning
 

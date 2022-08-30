@@ -2,7 +2,7 @@
 title: Godkännandearbetsflöden för lagerjournal
 description: Denna artikel ger en beskrivning av hur du kan konfigurera och använda arbetsflöden för lagerjournaler för olika typer av fysiska lagertransaktioner. Arbetsflöden för lagerjournal hjälper till att säkerställa att endast godkända lagerjournaler kan bokföras på transaktioner.
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873997"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334668"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkännandearbetsflöden för lagerjournal
 
@@ -29,12 +29,9 @@ I denna artikel beskrivs hur man konfigurerar och använder arbetsflöden för g
 > [!NOTE]
 > Arbetsflöden för godkännande av lagerjournal gäller bara för transaktioner som registrerats med modulen lagerhantering. De fungerar inte med lagerjournaler som aktiverats från modulen för lagerstyrning.
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivera funktionen godkännandearbetsflöden för lagerjournal
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>Aktivera eller inaktivera funktionen godkännandearbetsflöden för lagerjournal
 
-Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
-
-- **Modul:** *Hantering av lager och lagerstyrning*
-- **Funktionsnamn:** *journal arbetsflödet för lagerjournal*
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Godkännandearbetsflöde för lagerjournal* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Skapa ditt godkännandearbetsflöde för lagerjournal
 

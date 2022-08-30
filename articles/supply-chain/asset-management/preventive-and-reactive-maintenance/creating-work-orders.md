@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1b8b3d8d83bdad2efe49bd4e878793cca6c49f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ba01a90f805300a27e4550e1371fb55d5e3a7536
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891217"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335058"
 ---
 # <a name="creating-work-orders"></a>Skapa arbetsorder
 
@@ -64,7 +64,7 @@ Med hjälp av den här funktionen kan du definiera regler för gruppering av arb
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Aktivera gruppering för automatiskt genererade arbetsorder
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Innan du kan använda funktionen måste den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *Tillgångshantering*
 - **Funktionens namn:** *Använd regler för att gruppera arbetsorder när du kör en underhållsplan*

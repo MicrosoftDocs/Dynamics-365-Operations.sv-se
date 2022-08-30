@@ -2,7 +2,7 @@
 title: Borttagna eller inaktuella funktioner i Dynamics 365 Commerce
 description: I denna artikel beskrivs funktioner som har tagits bort eller har planerats för borttagning från Dynamics 365 Commerce.
 author: josaw1
-ms.date: 07/11/2022
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287634"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337607"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Borttagna eller inaktuella funktioner i Dynamics 365 Commerce
 
@@ -33,6 +33,38 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 > [!NOTE]
 > Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i respektive version av appar för ekonomi och drift.
 
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.29
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Inställningar av Commerce-parametrar – Tillåt prisjusteringar som höjer produktpriset
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi hade inställningen att styra om prisjusteringsfunktionen tillåter ökning av produktpriset. När den här parametern är inaktiverad kan organisationer med hjälp av prisjusteringsfunktionen bara ställa in en produkts enhetspris som är lägre än dess baspris och handelsavtalsförsäljningspris. Vi avaktar den här inställningen eftersom prisjusteringsfunktionen har uppdaterats för tvåvägsjusteringar (ökning eller minskning) ur rutan. |
+| **Ersatt av en annan funktion?**   | Nej |
+| **Produktområden som påverkas**         | Prissättning och rabatter |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Äldre: Den här inställningen är aktiverad som standard eftersom Commerce version 10.0.29 och kommer att tas bort i oktober 2023. |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Inställning av Commerce-parametrar – Aktivera prisrapport för butik
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi hade den här inställningen för att kontrollera om prisrapportfunktionen är tillgänglig för användning i butikskonfigurationsformuläret. Vi avarar den här inställningen eftersom formuläret butikskonfiguration har uppdaterats till att alltid tillhandahålla prisrapportfunktionen som standardfunktion. |
+| **Ersatt av en annan funktion?**   | Nej |
+| **Produktområden som påverkas**         | Prissättning och rabatter |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Den här inställningen tas bort i oktober 2023. |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Inställning av Commerce-parametrar – Använd dagens datum för att beräkna priser
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Prissättningsmotorn för Supply Chain Management (SCM) stöder prisberäkning baserat på begärt leveransdatum eller begärt mottagningsdatum, tillsammans med dagens datum. Prissättningsmotorn för Commerce stöder endast prissättningsberäkningar baserade på dagens datum. För kunder som använder både SCM och Commerce-funktioner tillhandahåller vi den här inställningen och rekommenderade att kunderna alltid ställer in den på **Ja** så att de två prissättningsmotorerna kan arbeta tillsammans. Vi avaktar den här inställningen eftersom den inte ändrar beräkningsbeteendet och är redundant. |
+| **Ersatt av en annan funktion?**   | Nej |
+| **Produktområden som påverkas**         | Prissättning och rabatter |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Äldre: Den här inställningen är aktiverad som standard eftersom Commerce version 10.0.29 och kommer att tas bort i oktober 2023. |
+
 ## <a name="feature-deprecation-effective-july-2022"></a>Utfasning av funktioner från och med juli 2022
 
 ### <a name="commerce-analytics-preview"></a>Commerce-analyser (förhandsversion)
@@ -44,21 +76,6 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Produktområden som påverkas**         | Commerce-analyser (förhandsversion) |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Vi avser att inaktivera denna funktion senast den 30 augusti 2022.  Från och med detta datum sker ingen uppdatering i de aktuella Power BI-rapporter som tillhandahålls av Commerce-analys (förhandsversion).     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.25
-
-### <a name="modern-point-of-sale-mpos"></a>Modern Point of Sale (MPOS)
-
-Programmet Modern Point of Sale (MPOS) gamla i versionen av Commerce version 10.0.25 och ersätts med programmet Store Commerce.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Butiksappar är det som gör att det inte går att använda något Dynamics 365 Commerce flerkanalserbjudande. Vi arbetar kontinuerligt med att tillhandahålla moderna och förnyade butikserfarenheter, och för att ytterligare förnya vår lösning, rullar vi ut nya uppsättningar med ändringar som kommer att förbättra IT-åtgärderna och användarerfarenheterna med våra befintliga program för butik i Windows. Det nya programmet Store Commerce är en teknologiuppgradering av det befintliga MPOS. Den ger förbättrad prestanda, tillförlitlighet och långsiktig support för Windows-plattform, och eliminerar behovet av att packa om programmet vid varje uppdatering. |
-| **Ersatt av en annan funktion?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Produktområden som påverkas**         | Modern Point of Sale |
-| **Distribueringsalternativ**              | Allt |
-| **Status**                         | Förfallen: Från och med den version av Commerce 10.0.25 som levereras kommer MPOS-installationsprogrammet som levererats via LCS-virtuella maskiner att tas bort i oktober 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.21
 
@@ -198,7 +215,7 @@ Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPos.sln, POS.Extensio
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Nya optimerade API:er har skapats för att ersätta GetProductAvailabilities och GetAvailableInventoryNearby API:er. |
-| **Ersatt av en annan funktion?**   | Ja: Det ersätts med GetEstimatedAvailability och GetEstimatedProductWarehouseAvailability API:er. |
+| **Ersatt av en annan funktion?**   | Ja: Det ersätts med GetEstimatedAvailabilty och GetEstimatedProductWarehouseAvailability API:er. |
 | **Produktområden som påverkas**         | näthandelsprogram SDK |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: Från version 10.0.7 kommer du inte längre att kunna göra tekniska investeringar för GetProductAvailabilities och GetAvailableInventoryNearby. Organisationer som använder dessa API:er i sina näthandelsdistributioner bör konvertera till nya GetEstimatedAvailability och GetEstimatedProductWarehouseAvailability API:er och aktivera [optimerade beräkningsfunktionen för produkttillgänglighet](../calculated-inventory-retail-channels.md).  |

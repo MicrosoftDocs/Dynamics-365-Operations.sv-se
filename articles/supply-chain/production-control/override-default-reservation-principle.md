@@ -2,7 +2,7 @@
 title: Åsidosätt standardreservationsprincipen för material i produktionen.
 description: I denna artikel beskrivs hur du konfigurerar en standardreservationsprincip för varje artikelmodellgrupp så att olika reservationsprinciper automatiskt kan användas för varje artikel som ingår i en strukturlista eller en batchorderformel.
 author: johanhoffmann
-ms.date: 12/10/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87f10efd7eebdc034af3f7c9081d2674a6190b38
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907244"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334608"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Åsidosätt standardreservationsprincipen för material i produktionen.
 
@@ -32,7 +32,7 @@ Om du till exempel har råmaterial eller ingredienser som kräver plockarbete, s
 
 ## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Aktivera eller funktionen åsidosätt standardproduktionsreservation
 
-Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Åsidosätta standardproduktionsreservation* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Åsidosätta standardproduktionsreservation* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tilldela en policy för produktionsreservation till en artikelmodellgrupp
 

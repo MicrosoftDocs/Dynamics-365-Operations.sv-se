@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64e536bad996e9a1948dad18437ec6f98ad27033
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: df523dd4da11e24c7b601c8f34aef24ad6cb3b18
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691734"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337095"
 ---
 # <a name="configure-life-event-types"></a>Konfigurera livshändelsetyper
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources använder **livshändelsetyper** för att definiera händelser där det är tillåtet att uppdatera medarbetarnas förmånsanmälan, exempelvis giftermål eller barnafödsel. Varje livshändelsetyp-ID kan bara associeras med en livshändelsetyp. Om du till exempel skapar ett **livshändelse-ID** som kallas **Adressändring** som är associerat med livshändelsetyp **Ändring av anställdas adress**, kan du inte skapa ett annat ID märkt **Medarbetaradressändring** och associera det med livshändelsetyp **Ändring av anställdas adress**. Om en livshändelsetyp inte är associerad med en plantyp utlöser inte livshändelsetypen någon livshändelse. Mer information finns i [Skapa plantyper](hr-benefits-setup-plan-types.md).
 

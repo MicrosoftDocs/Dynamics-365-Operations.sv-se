@@ -2,7 +2,7 @@
 title: Skapa och bearbeta påfyllnad
 description: Denna artikel beskriver hur du skapar, bearbetar och frisläpper en påfyllnad för att skapa plockningsarbete för en last, försändelse, tillverkningsorder eller kanbanorder.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 0466019990773ee93e063a255c15a7d64eecdf78
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9014631"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336018"
 ---
 # <a name="wave-creation-and-processing"></a>Skapa och bearbeta påfyllnad
 
@@ -191,7 +191,7 @@ Använd sidan **Detaljer om batchjobb för påfyllnad** för att inspektera batc
 
 ### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Aktivera eller inaktivera sidan detaljer om batchjobb för påfyllnad
 
-Från och med version 10.0.25 av Supply Chain Management aktiveras sidan **Information om påfyllnadsbatchjobb** som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Information om påfyllnadsbatchjobb* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Information om påfyllnadsbatchjobb* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Använd sidan detaljer om batchjobb för påfyllnad
 

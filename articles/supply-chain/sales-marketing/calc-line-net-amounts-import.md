@@ -2,7 +2,7 @@
 title: Omberäkna radens nettobelopp när du importerar försäljningsorder, offerter och returer
 description: I den här artikeln beskrivs om och hur systemet räknar om radens nettobelopp när försäljningsorder, offerter och returer importeras. Det förklarar också hur du kan kontrollera beteendet i olika versioner av Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
-ms.date: 06/08/2022
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ce34a6be7bc3d14e23bdd8769aa71dc035b983b3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220621"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335568"
 ---
 # <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Omberäkna radens nettobelopp när du importerar försäljningsorder, offerter och returer
 
@@ -36,7 +36,7 @@ I dessa specifika scenarier innebär effekten av policy för handelsavtalsutvär
 
 ## <a name="control-calculations-of-line-net-amounts-in-versions-10029-and-later"></a>Kontrollera beräkningar av radens nettobelopp i versioner 10.0.29 och senare
 
-Supply Chain Management 10.0.29 innehåller en funktion med namnet *Beräkna radens nettobelopp vid import*. Den här funktionen lägger till ett alternativ som kallas **Beräkna radens nettobelopp** på sidan **Parametrar för kundreskontra**. Med det här alternativet kan du välja mellan nya och gamla beteenden för beräkning av nettobelopp på raden vid import.
+Supply Chain Management version 10.0.29 innehåller en funktion med namnet *Beräkna radens nettobelopp vid import*. Den här funktionen lägger till ett alternativ som kallas **Beräkna radens nettobelopp** på sidan **Parametrar för kundreskontra**. Med det här alternativet kan du välja mellan nya och gamla beteenden för beräkning av nettobelopp på raden vid import.
 
 ### <a name="turn-the-calculate-line-net-amount-on-import-feature-on-or-off"></a>Slå på eller av funktionen Beräkna radens nettobelopp vid import
 

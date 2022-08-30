@@ -2,7 +2,7 @@
 title: Förpackningsstrategier för behållare
 description: I denna artikel beskrivs skillnaderna mellan förpackningsstrategier för behållare, inklusive exempel.
 author: GalynaFedorova
-ms.date: 06/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a9a0066abaa76294faebcb15d5091ba36e8a60d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862378"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335778"
 ---
 # <a name="container-packing-strategies"></a>Förpackningsstrategier för behållare
 
@@ -77,7 +77,7 @@ I det här scenariot visas hur du kan minska antalet behållare som utvärderas 
 
 #### <a name="turn-on-the-consolidate-shipments-feature-in-your-system"></a>Aktivera funktionen Konsolidera försändelser i systemet
 
-I det här scenariot används funktionen *Konsolidera försändelser*. Om den funktionen inte redan är tillgänglig i systemet måste du aktivera den med hjälp av [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+I det här scenariot används funktionen *Konsolidera försändelser*. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Konsolidera leveranser* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 #### <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 

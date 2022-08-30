@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895711"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306067"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Installera och konfigurera Inventory Visibility
 
@@ -43,7 +43,7 @@ Om du har några frågeställningar om dessa förutsättningar kontaktar du prod
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Installera tillägget för Lagersynlighet
 
-Innan du installerar tillägget registrerar du ett program och lägger till en klienthemlighet i Azure Active Directory (Azure AD) under ditt Azure-abonnemang. Instruktioner finns i [Registrera ett program](/azure/active-directory/develop/quickstart-register-app) och [Lägg till en klienthemlighet](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Se till att du noterar **ID för program (klient)**, **Klienthemlighet** och **ID öfr klientorganisation**, detta eftersom du behöver dem senare.
+Innan du installerar tillägget registrerar du ett program och lägger till en klienthemlighet i Azure Active Directory (Azure AD) under ditt Azure-abonnemang. Instruktioner finns i [Registrera ett program](/azure/active-directory/develop/quickstart-register-app) och [Lägg till en klienthemlighet](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Se till att du noterar **ID för program (klient)**, **Klienthemlighet** och **ID för klientorganisation**, detta eftersom du behöver dem senare.
 
 > [!IMPORTANT]
 > Om du har mer än en LCS-miljö kan du skapa olika Azure AD-program för respektive miljö. Om du använder samma program-ID och klientorganisations-ID för att installera tillägget Lagersynligt för olika miljöer, uppstår ett tokenproblem för äldre miljöer. Som ett resultat av detta kommer endast den senaste installtionen att gälla.
@@ -88,20 +88,6 @@ När du har registrerat ett program och lagt till en klienthelighet i Azure AD f
 >
 > 1. När installationen är klar går du tillbaka till LCS-sidan och försöker åter att installera om tillägget **Lagersynlighet**.
 
-## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Avinstallera tillägget för lagersynlighet
-
-För att avinstallera tillägget Lagersynlighet väljer du **Avinstallera** på LCS-sidan. Avinstallationen avslutar tillägget Lagersynlighet, tillägget avregistreras från LCS och eventuella tillfälliga data som lagras i datacachen för Lagersynlighet tas bort. Primära lagerdata som lagras i din Dataverse-prenumeration tas emellertid inte bort.
-
-Om du vill avinstallera lagerdata som lagras i din Dataverse-prenumeration öppnar du [Power Apps](https://make.powerapps.com), väljer **Miljö** i navigeringsfältet och väljer sedan den Dataverse-miljö som är kopplad till din LCS-miljö. Gå sedan till **Lösningar** och ta bort följande fem lösningar i denna order:
-
-1. Ankarlösning för programmet Lagersynlighet i Dynamics 365-lösningar
-1. Lösningen Lagersynlighet för Dynamics 365 FNO SCM
-1. Konfiguration för lagertjänst
-1. Fristående Lagersynlighet
-1. Baslösningen Lagersynlighet för Dynamics 365 FNO SCM
-
-När du har raderat dessa lösningar kommer de data som lagras i tabeller också att raderas.
-
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Konfigurera Lagersynlighet i Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Distribuera integreringspaketet för Lagersynlighet
@@ -135,10 +121,45 @@ När du har installerat tillägget kan du förbereda ditt Supply Chain Managemen
 
 1. Om du har aktiverat den valfria funktionen *Integrering av Lagersynlighet med reservationsmotbokning* öppnar du fliken **Reservationsmotbokning** och gör följande inställningar:
     - **Aktivera reservationsmotbokning** – ställ in till *Ja* om du vill aktivera den här funktionen.
-    - **Modifierare för reservationsmotbokning** – välj det lagertransaktionsstatus som motbokar reservationer som gjorts i Lagersynlighet. Den här inställningen avgör vilken orderbearbetningsfas som utlöser motbokningar. Fasen spåras med hjälp av orderns lagertransaktionsstatus. Välj en av följande:
+    - **Modifierare för reservationsmotbokning** – välj det lagertransaktionsstatus som motbokar reservationer som gjorts i Lagersynlighet. Den här inställningen avgör vilken orderbearbetningsfas som utlöser motbokningar. Fasen spåras med hjälp av orderns lagertransaktionsstatus. Välj ett av följande alternativ:
         - *För order* – För statusen *vid transaktion* skickar en order en begäran om motbokning när den skapas. Motbokningskvantiteten är kvantiteten för den skapade ordern.
         - *Reservera* – För statusen *Reservera beställd transaktion* skickar en order en begäran om motbokning när den reserveras, plockas, följesedelsbokförs eller faktureras. Denna begäran utlöses bara en gång - för det första steget när den omstämda processen inträffar. Motbokningskvantiteten är den kvantitet där lagertransaktionens status ändras från *Har beställts* till *Reserverat beställt* (eller senare status) på motsvarande orderrad.
 
 1. Gå till **Lagerhantering \> Periodisk \> Integrering av lagerhantering** och aktivera jobbet. Alla lagerändringshändelser från Supply Chain Management bokförs nu i Lagersynlighet.
+
+## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Avinstallera tillägget för lagersynlighet
+
+För att avinstallera tillägget för lagersynlighet måste du göra följande:
+
+1. Logga in på Supply Chain Management.
+1. Gå till **Lagerhantering \> Periodisk \> Integrering av lagerhantering** och inaktivera jobbet.
+1. Gå till LCS och öppna sidan för miljön där du vill avinstallera tillägget (se även [Installera tillägget Lagersynlighet](#install-add-in)).
+1. Välj **Avinstallera**.
+1. Avinstallationen avslutar tillägget Lagersynlighet, tillägget avregistreras från LCS och eventuella tillfälliga data som lagras i datacachen för Lagersynlighet tas bort. Primära lagerdata som synkroniseras till din Dataverse-prenumeration lagras fortfarande där. För att radera dessa data, slutför resten av denna procedur.
+1. Öppna [Power Apps](https://make.powerapps.com).
+1. Välj **miljö** i navigeringsfältet
+1. Välj den Dataverse-miljö som är nedbruten med din LCS-miljö.
+1. Gå till **Lösningar** och ta bort följande fem lösningar i följande ordning:
+    1. Ankarlösning för Inventory Visibility-programmet i Dynamics 365-lösningar
+    1. Lösningen Lagersynlighet för Dynamics 365 FNO SCM
+    1. Konfiguration för lagertjänst
+    1. Fristående Lagersynlighet
+    1. Baslösningen Lagersynlighet för Dynamics 365 FNO SCM
+
+    När du har raderat dessa lösningar kommer de data som lagras i tabeller också att raderas.
+
+> [!NOTE]
+> Om du återställer en Supply Chain Management-databas efter att du avinstallerat tillägget Lagersynlighet och sedan vill installera om tillägget ska du se till att du har raderat de gamla lagersynlighetsdata som lagras i Dataverse-abonnemanget (enligt beskrivningen i föregående procedur) innan du installerar om tillägget. Detta kommer att förhindra datainkonsekvensproblem som annars skulle kunna uppstå.
+
+## <a name="clean-inventory-visibility-data-from-dataverse-before-restoring-the-supply-chain-management-database"></a><a name="restore-environment-database"></a>Rensa lagersynlighetsdata från Dataverse innan du återställer Supply Chain Management-databasen
+
+Om du har använt Lagersynlighet och sedan återställt din Supply Chain Management-databas kan den återställda databasen innehålla data som inte längre är konsekventa med data som tidigare synkroniserats med Lagersynlighet till Dataverse. Den här data inkonsekvensen kan orsaka systemfel och andra problem. Därför är det viktigt att du alltid rensar alla lagersynlighetsdata från Dataverse innan du återställer en Supply Chain Management-databas.
+
+Om du behöver återställa en Supply Chain Management-databas använder du följande procedur:
+
+1. Avinstallera tillägg för lagersynlighet och ta bort all relaterad data i Dataverse, som beskrivs i [Avinstallera tillägg för lagersynlighet](#uninstall-add-in)
+1. Återställ din Supply Chain Management-databas, t.ex. enligt beskrivningen i [Återställning av databas till tidpunkt (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) eller [Återställning till tidpunkt av produktionsdatabasen till en sandbox-miljö](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
+1. Om du fortfarande vill använda det, ska du installera om och ställa in tillägget Lagersynlighet [Installera tillägget för Lagersynlighet](#install-add-in) och [Konfigurera integrering av lagersynlighet](#setup-inventory-visibility-integration)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

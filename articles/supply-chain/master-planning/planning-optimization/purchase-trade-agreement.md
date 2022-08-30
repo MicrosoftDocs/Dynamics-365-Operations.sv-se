@@ -2,7 +2,7 @@
 title: Huvudplanering med inköpshandelsavtal
 description: Denna artikel beskriver hur Planeringsoptimering kan hitta leverantörs- och/eller produktionstid för en planerad order, baserat på det bästa priset eller den produktionstid som finns i inköpshandelsavtal.
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873765"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335238"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Huvudplanering med inköpshandelsavtal
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873765"
 
 Denna artikel beskriver hur Planeringsoptimering kan hitta leverantören och/eller ledtiden för en planerad order, baserat på det bästa priset eller ledtiden som finns bland alla köphandelsavtal som har specificerats för en viss produkt.
 
-## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Aktivera inköpshandelsavtal för Planeringsoptimerinsfunktion
+## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>Aktivera och inaktivera inköpshandelsavtal för Planeringsoptimerinsfunktion
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
-
-- **Modul:** *huvudplanering*
-- **Funktionsnamn:** *inköpshandelsavtal för Planeringsoptimerinsfunktion*
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Inköpshandelsavtal för planeringsoptimering* i arbetsytan [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>Förbered systemet för utvärdering av inköpshandelsavtal under huvudplanering
 

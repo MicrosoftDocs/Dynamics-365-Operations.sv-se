@@ -14,17 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b752b722bf63958fc35b10a4612f7f02e2e8e717
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886114"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337110"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurera rollen för frånvarochefen
 
->[!Important]
->Funktionen som anges i den här artikeln är för närvarande tillgänglig för kunder med fristående Dynamics 365 Human Resources. Vissa eller alla funktionerna kommer att vara tillgängliga i en kommande version av Finance-infrastrukturen efter Finance version 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +35,6 @@ I vissa organisationer kanske chefer inte hanterar tjänstledigheten för teamet
 ## <a name="turn-on-the-feature"></a>Aktivera en funktion
 
 1. I arbetsytan **Systemadministration** välj **Funktionshantering**.
-
 2. På fliken **Funktionshantering** aktiverar du funktionen **Frånvarohanteraren för att hantera tjänstledighet**.
 
 ## <a name="define-a-custom-hierarchy"></a>Definiera en anpassad hierarki
@@ -45,37 +42,26 @@ I vissa organisationer kanske chefer inte hanterar tjänstledigheten för teamet
 Funktionen för frånvaroansvarig använder en anpassad hierarki som måste konfigureras.
 
 1. I arbetsytan **Organisationsadministration**, välj **Befattningshierarkityper**.
-
 2. Skapa en befattningshierarkityp med namnet **Tjänstledighet**.
-
 3. I arbetsytan **Tjänstledighet och frånvaro**, under **Länkar**, välj **Parametrar för tjänstledighet och frånvaro**.
-
 4. På fliken **Allmänt** i listrutan **Tjänstledighetshierarki**, välj hierarkitypen **Tjänstledighet** som du skapade tidigare. Den här tjänstledighetshierarki association måste fyllas i för alla juridiska personer där funktionen för frånvaroansvarig ska användas.
 
 När hierarkitypen har definierats måste rapporten för befattningshierarkin tilldelas befattningen.
 
 1. I arbetsytan **Organisationsadministration**, välj **Alla befattningar**.
-
 2. Välj vilken befattning du vill lägga till tjänstledighetshierarki till.
-
 3. Välj **Relationer** på fliken **Lägg till**.
-
 4. I **Hierarkinamn**, välj **Tjänstledighet**.
-
 5. I fältet **Rapporter till befattning**, ange eller välj en befattning. Arbetsnamnet fylls automatiskt i efter att du har valt en befattning.
 
 ## <a name="assign-the-absence-manager-role-to-a-user"></a>Tilldela en användare rollen frånvaroansvarig
 
 Medarbetarna måste ha rollen Frånvaroansvarig om de ska kunna godkänna eller neka tjänstledighetsansökningar.
 
-1. I arbetsytan **Systemadministrator** välj **Länkar**.
-
+1. I arbetsytan **Systemadministration** välj **Länkar**.
 2. I avsnittet **Användare**, välj länken **Användare**.
-
 3. Välj den användare i användarlistan som ska tilldelas rollen Frånvaroansvarig.
-
 4. På fliken **Användarens roll** klicka på **Tilldela roller**.
-
 5. I listan, välj rollen **Frånvaroansvarig**. Välj sedan **OK**.
 
     > [!IMPORTANT]
@@ -84,7 +70,6 @@ Medarbetarna måste ha rollen Frånvaroansvarig om de ska kunna godkänna eller 
 6. När du har skapat hierarkin tjänstledighetshierarki kan du visa den så här:
 
     1. I arbetsytan **Organisationsadministration**, välj **Befattningshierarki**.
-    
     2. I **Hierarkityp**, välj **Tjänstledighet**.
 
 ## <a name="absence-manager-workspace"></a>Arbetsyta för frånvaroansvarig
@@ -115,9 +100,7 @@ Frånvarochefer kan godkänna eller neka ledighetsansökningar för medarbetare.
 > Mer information om hur du skapar arbetsflödet för ledighetsförfrågan finns i [skapa ett arbetsflöde för tjänstledighetsbegäran](hr-leave-and-absence-workflow.md).
 
 1. I arbetsytan **Självbetjäning för medarbetare** välj fliken **tjänstledighetshantering**.
-
 2. På fliken **Ansökningar om ledighet**, välj begäran om ledighet som du vill vidta åtgärder. Du kan markera flera poster i listvyn.
-
 3. Använd åtgärdsknapparna högst upp i rutnätet om du vill godkänna, neka eller delegera förfrågningen. 
 
 Alternativt kan användaren också använda panelen **Ansökningar om ledighet** till vänster för att navigera till listan över alla lediga arbetsobjekt. 
@@ -130,9 +113,7 @@ Användare med rollen Frånvaroansvarig kan visa ledighetsansökningar i sin kal
 > En systemadministratör måste konfigurera visningsalternativen för frånvaroansvarigkalendern. På sidan **Parametrar för tjänstledighet och frånvaro** på fliken **Kalender** finns det alternativ för att dölja eller visa födelsedagar, frånvaro utan detaljer, frånvaro och väntande ledighetsförfrågningar. Det finns också ett alternativ för att filtrera kalendervyalternativet efter arbetstyp.
 
 1. I arbetsytan **Självbetjäning för medarbetare**, välj **Tjänstledighetshantering** och sedan **Frånvaroansvarigkalendern**.
-
 2. I fältet **Datum** anger du önskade datum.
-
 3. Uppdatera visningsalternativen efter behov.
 
 I frånvaroansvarigkalendern visas alla poster för medarbetarna som rapporterar till frånvarochefen i tjänstledighetshierarki.

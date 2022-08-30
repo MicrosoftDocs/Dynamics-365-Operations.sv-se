@@ -2,7 +2,7 @@
 title: Konfigurera körningsgränssnittet för produktionsgolvet
 description: I denna artikel beskrivs hur du skapar en eller flera konfigurationer för körningsgränssnittet för produktionsgolvet. När du öppnar körningsgränssnittet för produktionsgolvet läser det automatiskt in ett valt konfigurations- och jobbfilter som är specifikt för webbläsaren och enheten. I konfigurationen ställer du in de principer som måste tillämpas för en viss användning.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220375"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336198"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -63,29 +63,32 @@ Från och med version 10.0.21 av Supply Chain Management är denna funktion akti
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funktionen för Tillgångshantering för körningsgränssnittet för produktionsgolvet
 
-Den här funktionen lägger till en flik för Tillgångshantering i produktionsstyrningsgränssnittet. Arbetare kan använda den här fliken för att välja en tillgång som är ansluten till en maskinresurs inom det valda filtret för jobblistan. För den valda maskintillgången kan arbetaren visa status och tillstånd för tillgången från räknarvärden i upp till fyra valda räknare. Om du vill använda denna funktion aktiverar du följande funktion i för att aktivera den [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Den här funktionen lägger till en flik för Tillgångshantering i produktionsstyrningsgränssnittet. Arbetare kan använda den här fliken för att välja en tillgång som är ansluten till en maskinresurs inom det valda filtret för jobblistan. För den valda maskintillgången kan arbetaren visa status och tillstånd för tillgången från räknarvärden i upp till fyra valda räknare.
 
-- *Funktionen för Tillgångshantering för körningsgränssnittet för produktionsgolvet*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard.)
+Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Funktionen för Tillgångshantering för körningsgränssnittet för produktionsgolvet* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-job-search"></a>Aktivera jobbsökning
+### <a name="job-search"></a>Jobbsökning
 
-Med denna funktion går det att lägga till ett sökfält i jobblistan. En arbetare kan hitta ett visst jobb genom att ange jobb-ID eller söka efter alla jobb för en viss order genom att ange order-ID:t. Arbetare kan ange ID:t med hjälp av ett tangentbord eller genom att skanna en streckkod. Om du vill använda den aktiverar du följande funktion i för att aktivera den [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Med denna funktion går det att lägga till ett sökfält i jobblistan. En arbetare kan hitta ett visst jobb genom att ange jobb-ID eller söka efter alla jobb för en viss order genom att ange order-ID:t. Arbetare kan ange ID:t med hjälp av ett tangentbord eller genom att skanna en streckkod.
 
-- *Jobbsökning för produktionsgolvets körningsgränssnitt*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard.)
+Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Jobbsökning för produktionsgolvets körningsgränssnitt* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivera rapportering av samprodukter och biprodukter
+### <a name="report-on-co-products-and-by-products"></a>Rapportera samprodukter och biprodukter
 
-Den här funktionen låter arbetare använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg på batchorder. Denna rapportering inkluderar rapportering om biprodukter och biprodukter. För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Den här funktionen låter arbetare använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg på batchorder. Denna rapportering inkluderar rapportering om biprodukter och biprodukter.
 
-- *Rapport om sam- och biprodukter från produktionsgolvets körningsgränssnitt*
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Administratrörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Rapport om sam- och biprodukter från produktionsgolvets körningsgränssnitt* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) .
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Aktivera visning av fullständiga serie-, batch- och ID-nummer
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>Visa fullständiga serie-, batch- och ID-nummer
 
 Funktionen ger en förbättrad upplevelse av att visa listor med serie-, batch- och ID-nummer i gränssnittet för körning på produktionsgolv. Visningen ändras från en kortvy som anger ett begränsat antal tecken till en listvy som har tillräckligt utrymme för att visa de fullständiga värdena. Du kan också söka efter särskilda nummer i listan.
 
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visa fullständigt serie-, batch- och ID-nummer i körningsgränssnittet för produktionsgolv* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) .
+
+
 Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratrörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visa fullständigt serie-, batch- och ID-nummer i körningsgränssnittet för produktionsgolv* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) .
 
-### <a name="enable-registering-of-material-consumption"></a>Aktivera registrering av materialförbrukning
+### <a name="register-material-consumption"></a>Registrera materialförbrukning
 
 Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och löpnummer. Vissa tillverkare, särskilt de som finns i bearbetningsindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. Medarbetare kan till exempel använda en våg för att väga hur mycket material som förbrukas medan de arbetar. För att garantera fullständig spårbarhet av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras.
 
@@ -97,7 +100,7 @@ Det finns två versioner av denna funktion. Den ena stöder artiklar som *inte* 
 > [!IMPORTANT]
 > Du kan använda enbart versionen utan WMS. Om du använder WMS måste du emellertid aktivera båda funktioner.
 
-### <a name="enable-reporting-on-catch-weight-items"></a>Aktivera rapportering av artiklar med nominell vikt
+### <a name="report-on-catch-weight-items"></a>Rapportera artiklar med nominell vikt
 
 Medarbetare kan använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg rörande batchorder för artiklar med nominell vikt. Batchorder skapas från formler, vilkar kan definieras så att de har artiklar med nominell vikt som formelartiklar, samprodukter och biprodukter. En formel kan också definieras till att ha formelrader för ingredienser som är definierade för nominell vikt. Artiklar med nominell vikt använder två måttenheter för att spåra lager: nominell viktkvantitet och lagerkvantitet. Inom till exempel livsmedelsindustrin kan förpackat kött definieras som en nominell viktartikel, där den nominella viktkvantiteten används för att spåra antalet kartonger och lagerkvantiteten används för att spåra kartongerna.
 
@@ -105,15 +108,13 @@ För att använda den här funktionen, aktivera följande funktion i [funktionsh
 
 - *Rapportera artiklar med faktisk/nominell vikt från körningsgränssnittet för produktionsgolvet*
 
-### <a name="enable-the-my-day-dialog"></a>Aktivera dialogrutan "Min dag"
+### <a name="the-my-day-dialog"></a>Dialogrutan "Min dag"
 
 I dialogrutan **Min dag** får medarbetare en översikt över sina dagliga registreringar och aktuella saldon för betald tid, betald övertid, frånvaro och betald frånvaro.
 
-För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Administratrörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Vyn Min dag i körningsgränssnittet för produktionsgolvet* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) .
 
-- *Vyn Min dag i körningsgränssnittet för produktionsgolvet*
-
-### <a name="enable-teams"></a>Aktivera team
+### <a name="teams"></a>Team
 
 När flera arbetare tilldelas samma produktionsjobb kan de ingå i ett team. Teamet kan utnämna en arbetare till ledare. De återstående arbetarna blir automatiskt medhjälpare till ledare. För det resulterande teamet måste bara ledaren registrera jobbstatus. Tidsposter gäller för alla gruppmedlemmar.
 
@@ -121,7 +122,7 @@ För att använda den här funktionen, aktivera följande funktion i [funktionsh
 
 - *Produktionsteam i körningsgränssnittet för produktionsgolvet*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Aktivera ytterligare konfiguration i körningsgränssnittet för produktionsgolvet
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>Ytterligare konfiguration i körningsgränssnittet för produktionsgolvet
 
 Den här funktionen lägger till inställningar för följande funktioner på sidan **Konfigurera körning på produktionsgolv**:
 
@@ -136,7 +137,6 @@ Information om hur du använder inställningarna finns senare i denna artikel.
 För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Ytterligare konfiguration i körningsgränssnittet för produktionsgolvet*
-
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeta med konfigurationer av körningsgränssnittet för produktionsgolvet
 

@@ -2,7 +2,7 @@
 title: Flexibel reservationspolicy för dimension på distributionslagernivå
 description: I denna artikel beskrivs den reservationspolicy för lager som gör det möjligt för företag att sälja batchspårade produkter och köra sin logistik som WMS-aktiverade åtgärder att reservera specifika batchar för kundförsäljningsorder, även om den reservationssekvens som är kopplad till produkterna inte tillåter reservation av specifika batchar.
 author: perlynne
-ms.date: 07/31/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 64855460ddf015f936fe695fc68938067f31b0cc
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065911"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335718"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på distributionslagernivå
 
@@ -196,12 +196,12 @@ I det här scenariot använder ett företag lagerstyrnings- och arbetsbearbetnin
 - Ett ID-nummer kan registreras och reserveras när ordern görs av försäljningsbehandlaren och kan inte tas av andra behov. Det här beteendet garanterar att det ID-nummer som planerats levereras till kunden.
 - Om ID-numret inte redan har tilldelats en försäljningsorderrad kan lagerpersonalen välja ett ID-nummer under plockningsarbete när registrering och reservation av försäljningsorder har slutförts.
 
-### <a name="turn-on-flexible-license-plate-reservation"></a>Aktivera flexibel reservation av ID-nummer
+### <a name="turn-flexible-license-plate-reservation-on-or-off"></a>Aktivera eller inaktivera flexibel reservation av ID-nummer
 
 Innan du kan använda flexibel reservation av ID-nummer måste två funktioner aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera status för dessa funktioner och aktivera dem om de behövs. Du måste aktivera funktionerna i följande ordning:
 
-1. **Funktionsnamn:** *Flexibel reservation för dimension på distributionslagernivå*
-1. **Funktionsnamn:** *flexibel orderallokerade reservation av ID-nummer*
+1. *Flexibel dimensionsreservation på lagerställenivå*<br>(Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.)
+1. *Flexibelt orderutfäst registreringsskyltsreservation*<br>(Från och med version 10.0.29 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.)
 
 ### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Reservera ett specifikt ID-nummer på försäljningsordern
 

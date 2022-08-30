@@ -2,7 +2,7 @@
 title: Konfigurera omvägar för steg i menyalternativ för mobila enheter
 description: Denna artikel beskriver hur du konfigurerar omvägar för menyalternativ så att arbetare kan parkera den aktuella uppgiften, utföra en annan uppgift och sedan återgå till den ursprungliga uppgiften utan att förlora någon information.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219017"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336138"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurera omvägar för steg i menyalternativ för mobila enheter
 
@@ -35,9 +35,8 @@ Innan du kan konfigurera omvägar för steg i menyalternativ för mobila enheter
 
 1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
 1. Se till att funktionen *Steginstruktioner för lagerställeapp* är aktiverad för systemet. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Den här funktionen är en förutsättning för funktionen *Omvägar för lagerstyrningsapp*.
-1. Aktivera funktionen *Omvägar för lagerstyrningsappen Warehouse Management*. Den här funktionen är en som beskrivs i denna artikel.
-1. Uppdatera fältnamnen i Warehouse Management-mobilappen genom att gå till **Warehouse Management \> Inställningar \> Mobil enhet \> Fältnamn i lagerställeapp** och väljer **Skapa standardinställningar**. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
-1. Upprepa föregående steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management.
+1. Aktivera funktionen *Omvägar för lagerstyrningsappen Warehouse Management*. Den här funktionen är en som beskrivs i denna artikel. Från och med version 10.0.29 av Supply Chain Management är denna aktiverad som standard.
+1. Om funktionen *Omvägar för appen Warehouse Management* inte redan var aktiverad, uppdatera fältnamnen i mobilappen Warehouse Management genom att gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Namnordning för lagerställeapp** och välja **Skapa standardinställningar**. Upprepa detta steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurera en omväg från en menyspecifik åsidosättning
 

@@ -13,18 +13,18 @@ ms.author: filatovm
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: EROperationDesigner
-ms.openlocfilehash: fa66edef7e39c72d4859a21a1474096f7bc1c1dd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a2ea132b51f2f451fbe81a9c7869bea84bf4017a
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9278809"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324033"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Designa ER-konfigurationer för att ignorera strukturlistetecken i genererade filer
 
 [!include [banner](../includes/banner.md)]
 
-Du kan utforma [elektronisk rapportering (ER)](general-electronic-reporting.md) [lösning](er-quick-start1-new-solution.md) för att skapa utgående dokument. Om du vill generera dokumenten som text- eller XML-filer måste lösningen innehålla en ER [konfiguration](general-electronic-reporting.md#Configuration) som innehåller en komponent för ER format. Om du vill ange den [teckenkodning](/windows/win32/intl/character-sets) som representerar uppsättningen tecken i genererade filer måste ER-formatet innehålla formatelementet **Vanlig\\Fil**. Om du vill konfigurera ER-formatkomponenten måste du öppna versionen [utkast](general-electronic-reporting.md#component-versioning) för ER-konfigurationen i ER-formatdesignern och lägga till elementet **Vanlig\\Fil**. I fältet **kodning** ange kodning av utgående filer som genereras när programmet körs med hjälp av komponenten.
+Du kan utforma [elektronisk rapportering (ER)](general-electronic-reporting.md) [lösning](er-quick-start1-new-solution.md) för att skapa utgående dokument. Om du vill generera dokumenten som text- eller XML-filer måste lösningen innehålla en ER [konfiguration](general-electronic-reporting.md#Configuration) som innehåller en komponent för ER format. Om du vill ange den [teckenkodning](/windows/win32/intl/character-sets) som representerar uppsättningen tecken i genererade filer måste ER-formatet innehålla formatelementet **Vanlig\\Fil**. Om du vill konfigurera ER-formatkomponenten måste du öppna versionen utkast för ER-konfigurationen i ER-formatdesignern och lägga till elementet **Vanlig\\Fil**. I fältet **kodning** ange kodning av utgående filer som genereras när programmet körs med hjälp av komponenten.
 
 > [!NOTE]
 > Om formatet innehåller fel kodningsnamn uppstår ett fel när du sparar ändringarna av formatets inställningar.

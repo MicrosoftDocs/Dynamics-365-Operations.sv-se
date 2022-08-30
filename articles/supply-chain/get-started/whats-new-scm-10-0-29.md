@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7f5691c5784b7b381ff805b0431d8adb1a25f1cb
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266411"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334758"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.29 (oktober 2022)
 
@@ -74,10 +74,7 @@ Tabellen visar även funktioner som tidigare var offentliga, men som har ändrat
 
 | Modul | Funktionsnamn | Nytt funktionstillstånd |
 | --- | --- | --- |
-| Tillgångshantering | [Tillämpa regler för gruppering av arbetsorder medan en underhållsplan körs](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Obligatoriskt |
 | Tillgångshantering | [Funktionen för Tillgångshantering för körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-configure.md) | Obligatoriskt |
-| Tillgångshantering | [Räknarbaserade underhållsförbättringar](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | På som standard |
-| Tillgångshantering | [Fakturering av arbetsorder](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | Obligatoriskt |
 | Kostnadshantering | [Ändra etiketten för annullering i stängning och justering till Återförd](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | Obligatoriskt |
 | Kostnadshantering | Rensa information om strukturlisteberäkning mellan korsvis kostnadsredovisningsversioner | Obligatoriskt |
 | Kostnadshantering | [Jämför artikelprislager](../cost-management/compare-item-price.md) | Obligatoriskt |
@@ -102,7 +99,7 @@ Tabellen visar även funktioner som tidigare var offentliga, men som har ändrat
 | Hantering av lager och lagerstyrning | Med måttenhet och enhetskvantitet i lagerjournaler | Obligatoriskt |
 | Hantering av lager och lagerstyrning | Lås upp lagerjournal | Obligatoriskt |
 | Tillverkning | [Automatisk plockning av lagerställeaktiverade material för automatiskt bokförda plocklistor](whats-new-scm-10-0-23.md) | Allmänt tillgängligt |
-| Tillverkning | Aktivera visning av lagerdimensioner i materiallistan för produktionsflödesoperationer | På som standard |
+| Tillverkning | Aktivera visning av lagerdimensioner i materiallistan för produktionsflödesoperationer | Obligatoriskt |
 | Tillverkning | [Aktivera för att ange batch- och löpnummer vid rapportering som färdigt från jobbkortenheten](../production-control/report-finished-job-device.md) | På som standard |
 | Tillverkning | Förbättrad produktionsplockning av kvantitet för faktisk/nominell vikt | På som standard |
 | Tillverkning | [Jobbsökning för produktionsgolvets körningsgränssnitt](../production-control/production-floor-execution-configure.md) | Obligatoriskt |
@@ -127,20 +124,19 @@ Tabellen visar även funktioner som tidigare var offentliga, men som har ändrat
 | Huvudplanering | [Bekräfta planerad order med filtrering](../master-planning/planning-optimization/planned-order-firming.md) | Obligatoriskt |
 | Huvudplanering | [Planerade produktionsorder för planeringsoptimering](../master-planning/planning-optimization/production-planning.md) | Obligatoriskt |
 | Huvudplanering | [Inköpshandelsavtal för planeringsoptimering](../master-planning/planning-optimization/purchase-trade-agreement.md) | Obligatoriskt |
-| Huvudplanering | Resursplanering med underhåll | Obligatoriskt |
 | Huvudplanering | [Sparade vyer för planerade order](saved-views-scm.md) | Obligatoriskt |
 | Anskaffning och källa | Till- och från-avgifter på inköpsorder | Obligatoriskt |
 | Anskaffning och källa | Inaktivera återställningsknappen för inköpsrekvisitionsdistribution | På som standard |
 | Anskaffning och källa | [Aktivera återställning av anskaffningsrelaterade arbetsflöden](whats-new-scm-10-0-20.md) | På som standard |
 | Anskaffning och källa | [Begränsa antalet inköpsorderrader per batchuppgift](whats-new-scm-10-0-27.md) | På som standard |
 | Anskaffning och källa | [Sammanfoga ekonomiska dimensioner från providern med aktiv dimensionslänk för ekonomisk dimension på inköpsordern](whats-new-scm-10-0-25.md) | Obligatoriskt |
+| Anskaffning och källa | [Bokför registrerade kvantiteter av produkter i lager och rester av produkter som inte finns i lager för inleveranser och leverantörsfakturor](whats-new-scm-10-0-26.md) | Allmänt tillgängligt |
 | Anskaffning och källa | [Förhindra överkonsumering av huvudbudgetreservationer när flera inköpsrekvisitioner finns i arbetsflöde](whats-new-scm-10-0-21.md) | På som standard |
 | Anskaffning och källa | [Ansvarig part för inköpsavtal](../procurement/purchase-agreements.md) | Obligatoriskt |
 | Anskaffning och källa | [Sparade vyer för inköpsorder](saved-views-scm.md) | Obligatoriskt |
 | Produktinformationshantering | Förbearbetning av strukturlisterapport för att undvika tidsgräns | Obligatoriskt |
 | Produktinformationshantering | Använd ekonomiska dimensioner separat som standard vid användning av artikelmallar | Obligatoriskt |
 | Produktinformationshantering | Aktivera produktdimensionsgrupper för artikelmallar | Obligatoriskt |
-| Produktinformationshantering | [Förbättrat attributarv för konstruktionsändringshantering](../engineering-change-management/engineering-attributes-and-search.md) | Obligatoriskt |
 | Produktinformationshantering | Förbättringar av entiteten artikel-streckkod | Obligatoriskt |
 | Produktinformationshantering | Generera om produktvarianter baserat på nomenklatur | Obligatoriskt |
 | Produktinformationshantering | [Sparade vyer för frisläppta produkter](saved-views-scm.md) | Obligatoriskt |
@@ -161,27 +157,30 @@ Tabellen visar även funktioner som tidigare var offentliga, men som har ändrat
 | Försäljning och marknadsföring | [Bekräftelse av försäljningsorder med ett klick](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Obligatoriskt |
 | Transporthantering | Tillåt avmatchning av fraktsedlar från fraktfakturarader utan en bokförd leverantörsfakturajournal | På som standard |
 | Transporthantering | [Gör det möjligt att skapa en leverantörsfakturajournal när en fraktsedel kastas](whats-new-scm-10-0-20.md) | På som standard |
-| Transporthantering | [Leverans av små paket](../warehousing/small-parcel-shipping.md) | På som standard |
+| Transporthantering | [Leverans av små paket](../warehousing/small-parcel-shipping.md) | Obligatoriskt |
 | Transporthantering | [Dokument för USMCA-ursprungsintyg](../transportation/usmca-certification-of-origin.md) | På som standard |
 | Warehouse management | [Ytterligare platszoner](../warehousing/additional-location-zones.md) | Obligatoriskt |
 | Warehouse management | [Avbryt arbete](../warehousing/cancel-warehouse-work.md) | Obligatoriskt |
-| Warehouse management | [Konsolidera leverans](../warehousing/configure-shipment-consolidation-policies.md) | På som standard |
+| Warehouse management | [Konsolidera leverans](../warehousing/configure-shipment-consolidation-policies.md) | Obligatoriskt |
 | Warehouse management | [Skapa och bearbeta överföringsorder från lagerställeappen](../warehousing/create-transfer-order-from-warehouse-app.md) | Obligatoriskt |
 | Warehouse management | Mallar för direktleverans med platsdirektiv | På som standard |
-| Warehouse management | [Avkoda platsarbete från ASN:er](whats-new-scm-10-0-21.md) | På som standard |
-| Warehouse management | [Uppskjutna put-åtgärder](../warehousing/deferred-processing-manual-inventory-movement.md) | På som standard |
+| Warehouse management | [Avkoda platsarbete från ASN:er](whats-new-scm-10-0-21.md) | Obligatoriskt |
+| Warehouse management | [Uppskjutna put-åtgärder](../warehousing/deferred-processing-manual-inventory-movement.md) | Obligatoriskt |
 | Warehouse management | Uppskjuten – behållare | På som standard |
 | Warehouse management | Uppskjuten placeringsbearbetning – aktivera för granskningsmallfunktionen där utlösarhändelsen anges till Tidigare | Obligatoriskt |
 | Warehouse management | [Inaktivera förväntade inleveranser från kvalitetsorder som ger exempel på blockerat lager](../inventory/inventory-blocking.md) | På som standard |
 | Warehouse management | Aktivera snabbvalidering för lagerställets mobila enheter | Obligatoriskt |
-| Warehouse management | [Flexibel dimensionsreservation på lagerställenivå](../warehousing/flexible-warehouse-level-dimension-reservation.md) | På som standard |
-| Warehouse management | [Flexibelt orderutfäst registreringsskyltsreservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | På som standard |
-| Warehouse management | [Visualisering av utgående arbetsbelastning](../warehousing/outbound-workload-visualization.md) | Obligatoriskt |
+| Warehouse management | [Utökad parser för GS1-streckkoder](../warehousing/gs1-barcodes.md) | Allmänt tillgängligt |
+| Warehouse management | [Flexibelt orderutfäst registreringsskyltsreservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Obligatoriskt |
+| Warehouse management | [Flexibel dimensionsreservation på lagerställenivå](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Obligatoriskt |
 | Warehouse management | [Utnyttjande av artikelns konsolideringsplats](../warehousing/item-consolidation-location-utilization.md) | På som standard |
 | Warehouse management | Inleveranshistorik för ID-nummer | På som standard |
 | Warehouse management | [Manuell leveranskonsolidering](../warehousing/consolidate-shipments-manual-workbench.md) | På som standard |
+| Warehouse management | [Manuell plockningstjänst för överföringsrad för admin eller liknande betrodda användare](whats-new-scm-10-0-28.md) | Allmänt tillgängligt |
 | Warehouse management | [Materialhanteringsutrustningens gränssnitt](../warehousing/mhax.md) | Obligatoriskt |
-| Warehouse management | [Planerad direktleverans](../warehousing/planned-cross-docking.md) | På som standard |
+| Warehouse management | [Nya sidor för lastplaneringsworkbench](whats-new-scm-10-0-24.md) | Allmänt tillgängligt |
+| Warehouse management | [Visualisering av utgående arbetsbelastning](../warehousing/outbound-workload-visualization.md) | Obligatoriskt |
+| Warehouse management | [Planerad direktleverans](../warehousing/planned-cross-docking.md) | Obligatoriskt |
 | Warehouse management | [Bearbeta lagerställeapphändelser](../warehousing/warehouse-app-events.md) | Obligatoriskt |
 | Warehouse management | Frågeförbättring för arbetsmallen Plats för samprodukt och biprodukt | Obligatoriskt |
 | Warehouse management | [Avrunda kvantiteter neråt till närmaste försäljningsenhet vid frisläpp till lagerställe](whats-new-scm-10-0-19.md) | Obligatoriskt |
@@ -190,13 +189,14 @@ Tabellen visar även funktioner som tidigare var offentliga, men som har ändrat
 | Warehouse management | [Sparad vy för påfyllnadsbearbetning](saved-views-scm.md) | Obligatoriskt |
 | Warehouse management | [Sparade vyer för lastbearbetning](saved-views-scm.md) | Obligatoriskt |
 | Warehouse management | [Sparade vyer för leveransbearbetning](saved-views-scm.md) | Obligatoriskt |
-| Warehouse management | Information om etikett för leveranspåfyllnad | På som standard |
+| Warehouse management | [Skanna GS1-streckkoder](../warehousing/gs1-barcodes.md) | Allmänt tillgängligt |
+| Warehouse management | Information om etikett för leveranspåfyllnad | Obligatoriskt |
 | Warehouse management | [Blandade enheter i fack](whats-new-scm-10-0-21.md) | Obligatoriskt |
 | Warehouse management | [Använd snabbare API för behållare som stängs/öppnas igen på förpackningsstationen](whats-new-scm-10-0-21.md) | På som standard |
 | Warehouse management | [Validera mallar valda för lagerpåfyllnadsjobb](whats-new-scm-10-0-20.md) | På som standard |
-| Warehouse management | [Erbjudna fält i lagerställeapp](../warehousing/warehouse-app-promoted-fields.md) | På som standard |
-| Warehouse management | [Steginstruktioner för lagerställeapp](../warehousing/mobile-app-titles-instructions.md) | På som standard |
-| Warehouse management | [Lagerställets platsstatus](../warehousing/warehouse-location-status.md) | På som standard |
+| Warehouse management | [Erbjudna fält i lagerställeapp](../warehousing/warehouse-app-promoted-fields.md) | Obligatoriskt |
+| Warehouse management | [Steginstruktioner för lagerställeapp](../warehousing/mobile-app-titles-instructions.md) | Obligatoriskt |
+| Warehouse management | [Lagerställets platsstatus](../warehousing/warehouse-location-status.md) | Obligatoriskt |
 | Warehouse management | [Omvägar för lagerstyrningsappen Warehouse Management](../warehousing/warehouse-app-detours.md) | På som standard |
 | Warehouse management | [Information om påfyllnadsbatchjobb](../warehousing/wave-processing.md) | Obligatoriskt |
 | Warehouse management | [Meddelanden för påfyllnadskörning](../warehousing/wave-execution-notifications.md) | Obligatoriskt |

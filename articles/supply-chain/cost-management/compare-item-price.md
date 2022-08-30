@@ -2,7 +2,7 @@
 title: Rapporten jämföra lager för artikelpriser
 description: Läs mer om hur du genererar en rapport över jämför artikelpriser och sedan bläddrar och/eller exporterar resultatet.
 author: JennySong-SH
-ms.date: 01/30/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6373679299b68413d75236ca8cc18ceba03e091
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846225"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334998"
 ---
 # <a name="compare-item-prices-storage-report"></a>Rapporten jämföra lager för artikelpriser
 
@@ -35,12 +35,9 @@ Rapportresultaten lagras i dataentiteten **jämför artikelpriser**, vilket gör
 
 Rapporten **jämföra lager för artikelpriser** är användbar när utdata innehåller många rader. Till exempel kommer utdata att innehålla många rader om du har mer än 40 000 artiklar som innehåller ett väntande artikelpris i kostnadsversionen.
 
-## <a name="enable-compare-item-prices-storage"></a>Aktivera jämföra lager för artikelpriser
+## <a name="turn-the-compare-item-prices-storage-feature-on-or-off"></a>Aktivera eller inaktivera funktionen Jämför artikelpriser
 
-Innan du kan använda den här funktionen måste du aktivera den i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Här visas funktionen i listan:
-
-- **Modul** - Kostnadshantering
-- **Funktionsnamn** - jämför lager för artikelpriser
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Jämför lager för artikelpriser* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="generate-a-compare-item-prices-storage-report"></a>Generera en rapport för jämföra lager för artikelpriser
 

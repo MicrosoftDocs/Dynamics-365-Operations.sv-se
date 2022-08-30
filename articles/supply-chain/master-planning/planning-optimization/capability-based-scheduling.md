@@ -2,7 +2,7 @@
 title: Tidsplanering med resursurval baserat på kapacitet
 description: Denna artikel beskriver resursurval vid tidsplanering av obegränsad kapacitet när du anger kapacitet som resursbehov för en åtgärd.
 author: t-benebo
-ms.date: 9/3/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847974"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335418"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Tidsplanering med resursurval baserat på kapacitet
 
@@ -24,12 +24,9 @@ ms.locfileid: "8847974"
 
 Genom att ange resursbehov för en åtgärd i ett produktionsflöde definierar du vad som krävs för att utföra åtgärden. En åtgärd kanske till exempel kräver en viss resurs eller resursgrupp, eller en kombination av färdigheter eller kapacitet. Denna artikel beskriver resursurval vid tidsplanering av obegränsad kapacitet när du anger kapacitet som resursbehov för en åtgärd.
 
-## <a name="turn-on-the-capability-based-scheduling-feature"></a>Aktivera funktionen för tidsplanering av kapacitetsbaserad
+## <a name="turn-the-capability-based-scheduling-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för tidsplanering av kapacitetsbaserad
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *huvudplanering*
-- **Funktionsnamn:** *Planering med obegränsad kapacitet för Planeringsoptimering*
+Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Planering av oändlig kapacitet för Planeringsoptimering* i arbetsytan [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Mer information om denna funktion finns i [Tidsplanering med obegränsad kapacitet](infinite-capacity-planning.md).
 

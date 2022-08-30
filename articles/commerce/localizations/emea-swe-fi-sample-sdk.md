@@ -1,188 +1,115 @@
 ---
-ms.openlocfilehash: a20971ac9a44c409363bbce6cd8b8343f16d800f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+title: Distribueringsriktlinjer för kontrollenhetens integreringsexempel för Sverige (äldre)
+description: Denna artikel innehåller riktlinjer för distribution av exempel på kontrollenhetsintegrering för Sverige från Retail SDK
+author: EvgenyPopovMBS
+ms.date: 12/20/2021
+ms.topic: article
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2019-3-1
+ms.openlocfilehash: fcc35a2203641b24fe4edd2ab34f2e4d5db9bb53
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274216"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324308"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Distribueringsriktlinjer för kontrollenhetens integreringsexempel för Sverige (äldre)
----
 
-titel: Distribueringsriktlinjer för kontrollenhetens integreringsexempel för Sverige (äldre) [!include [banner](../includes/banner.md)]
-beskrivning: Denna artikel innehåller riktlinjer för distribution av exempel på kontrollenhetsintegrering för Sverige från Retail SDK
+[!include [banner](../includes/banner.md)]
 
-författare: EvgenyPopovMBS Denna artikel ger riktlinjer för distribution av integreringsexempel för kontrollenhet för Sverige från utvecklingspaketet för detaljhandelsprogramvara (SDK) på en virtuell dator för utvecklare i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på integrering av kontrollenhet för Sverige](emea-swe-fi-sample.md). ms.date: 2021/12/20
+Denna artikel ger riktlinjer för distribution av integreringsexempel för kontrollenhet för Sverige från utvecklingspaketet för detaljhandelsprogramvara (SDK) på en virtuell dator för utvecklare i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på integrering av kontrollenhet för Sverige](emea-swe-fi-sample.md). 
 
-ms.topic: artikel Exemplet på skatteintegrering för Sverige ingår i Retail SDK. Information om hur du installerar och använder SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Det här exemplet består av tillägg för Commerce Runtime (CRT), Hardware Station och kassa. Om du vill köra det här exemplet måste du ändra och bygga CRT, Hardware Station- och kassaprojekt. Vi rekommenderar att du använder en icke-modifierad detaljhandels-SDK för att utföra de ändringar som beskrivs i denna artikel. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Azure DevOps, där inga filer har ändrats ännu.
-målgrupp: Programanvändare, utvecklare, IT-proffs
+Exemplet på skatteintegrering för Sverige ingår i Retail SDK. Information om hur du installerar och använder SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Det här exemplet består av tillägg för Commerce Runtime (CRT), Hardware Station och kassa. Om du vill köra det här exemplet måste du ändra och bygga CRT, Hardware Station- och kassaprojekt. Vi rekommenderar att du använder en icke-modifierad detaljhandels-SDK för att utföra de ändringar som beskrivs i denna artikel. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Azure DevOps, där inga filer har ändrats ännu.
 
-ms.reviewer: v-chgriffin
 ## <a name="development-environment"></a>Utvecklingsmiljö
-ms.search.region: Global
 
-ms.author: josaw: Följ dessa steg för att konfigurera en utvecklingsmiljö så att du kan testa och utöka exemplet.
-ms.search.validFrom: 2019-03-01
+Följ dessa steg för att konfigurera en utvecklingsmiljö så att du kan testa och utöka exemplet.
 
 ### <a name="enable-crt-extensions"></a>Aktivera CRT-tillägg
----
-
 
 CRT tilläggskomponenter inkluderas i CRT-exemplen. För att slutföra följande procedurer, öppna **CommerceRuntimeSamples.sln** lösningen under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
-2. Aktivera det aktuella exemplet på Hardware Station-tillägget genom att lägga till följande rad i avsnittet **komposition** i konfigurationsfil **HardwareStation.Extension.config**.
-
 
 #### <a name="documentprovidercleancashsample-component"></a>DocumentProvider. CleanCashSample-komponent
-    ``` xml
 
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
 1. Leta upp projektet **Runtime.Extensions.DocumentProvider.CleanCashSample** och skapa det.
-    ```
-2. In the **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** assembly file.
+2. I mappen **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** hitta sammansättningsfilen **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll**.
+3. Kopiera sammansättningsfilen till CRT-tilläggsmappen:
 
-3. Copy the assembly file to the CRT extensions folder:
-3. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
+    - **Commerce Scale Unit:** kopiera filen till mappen **\\bin\\ext** under Internet Information Services (IIS) Commerce Scale Unit-webbplatsen.
+    - **Lokal CRT på Modern POS:** kopiera filen till mappen **\\ext** under den lokala platsen för CRT Client Broker.
 
-
-    - **Commerce Scale Unit:** Copy the file to the **\\bin\\ext** folder under the Internet Information Services (IIS) Commerce Scale Unit site location.
-    - Remove the following line to exclude the earlier Hardware station extension from deployable packages.
-    - **Local CRT on Modern POS:** Copy the file to the **\\ext** folder under the local CRT client broker location.
-
-
-        ``` xml
-4. Find the extension configuration file for CRT:
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
-
-        ```
-    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
-
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-    - Add the following lines to include the current sample Hardware station extension in deployable packages.
-
-
-5. Register the CRT change in the extension configuration file.
-        ``` xml
-
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
-    ``` xml
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
-        ```
-    ```
-
-
-#### <a name="update-modern-pos"></a>Uppdatera Modern POS
-#### <a name="extension-configuration-file"></a>Tilläggskonfigurationsfil
-
-
-1. Öppna lösningen **CloudPOS.sln** på **RetailSdk\\POS**.
-1. Hitta konfigurationsfilen för tillägget för CRT:
-2. Inaktivera det tidigare kassatillägget:
-
+4. Hitta konfigurationsfilen för tillägget för CRT:
 
     - **Commerce Scale Unit:** Filen kallas **commerceruntime.ext.config** och finns i mappen **bin\\ext** under IIS Commerce Scale Unit-webbplatsen.
-    - I filen **tsconfig.json**, lägg till mappen **FiscalRegisterSample** i undantagslistan.
     - **Lokal CRT på Modern POS:** filen heter **CommerceRuntime.MPOSOffline.Ext.config** och det är under den lokala platsen för CRT-klienten Broker.
-    - Ta bort de tidigare raderna från filen **extensions.json** under mappen **RetailSDK\\POS\\Extensions**.
 
+5. Registrera CRT-ändringen i konfigurationsfilen för tillägget.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
+    ```
+
+#### <a name="extension-configuration-file"></a>Tilläggskonfigurationsfil
+
+1. Hitta konfigurationsfilen för tillägget för CRT:
+
+    - **Commerce Scale Unit:** Filen kallas **commerceruntime.ext.config** och finns i mappen **bin\\ext** under IIS Commerce Scale Unit-webbplatsen.
+    - **Lokal CRT på Modern POS:** filen heter **CommerceRuntime.MPOSOffline.Ext.config** och det är under den lokala platsen för CRT-klienten Broker.
 
 2. Registrera CRT-ändringen i konfigurationsfilen för tillägget.
-        ``` json
 
-        {
     ``` xml
-            "baseUrl": "FiscalRegisterSample"
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
-        }
     ```
-        ```
-
 
 ### <a name="enable-hardware-station-extensions"></a>Aktivera tilläggen för Hardware Station
-3. Aktivera det aktuella exemplet för kassatillägget genom att lägga till följande rader i filen **extensions.json** under mappen **RetailSDK\\POS\\Extensions**.
-
 
 Tilläggskomponenterna för Hardware Station ingår i Hardware Station exemplen. För att slutföra följande procedurer, öppna lösningen **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
-    ``` json
 
-    {
 #### <a name="cleancash-component"></a>CleanCash-komponent
-        "extensionPackages": [
 
-            {
 1. Leta upp projektet **HardwareStation.Extension.CleanCashSample** och skapa det.
-                "baseUrl": "Microsoft/AuditEvent.SE"
 2. I mappen **Extension.CleanCashSample\\bin\\Debug** hitta **Contoso.Commerce.HardwareStation.CleanCashSample.dll** och sammansättningsfilen **Interop.CleanCash\_1\_1.dll**.
-            }
-3. Kopiera sammansättningsfilerna till Hardware Station-tilläggsmappen:     ]
+3. Kopiera sammansättningsfilerna till Hardware Station-tilläggsmappen:
 
-    }
     - **Delad Hardware Station** : kopiera filerna till **binge**-mappen under IIS Hardware Station webbplatsen.
-    ```
-    - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
+    - **Dedikerad Hardware Station på Modern POS** : kopiera filerna till platsen för Modern POS Client Broker.
 
+4. Leta reda på tilläggskonfigurationsfilen för Hardware Station-tillägg. Filen heter **HardwareStation.Extension.config**.
 
-#### Update Cloud POS
-4. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
+    - **Delad Hardware Station** : filen är under IIS Hardware Station webbplatsen.
+    - **Dedikerad Hardware Station på Modern POS** : filen är under platsen för Modern POS Client Broker.
 
-
-1. Open the **ModernPOS.sln** solution under **RetailSdk\\POS**.
-    - **Shared hardware station:** The file is under the IIS Hardware station site location.
-2. Disable the earlier POS extension:
-    - **Dedicated hardware station on Modern POS:** The file is under the Modern POS client broker location.
-
-
-    - In the **tsconfig.json** file, add the **FiscalRegisterSample** folder to the exclude list.
-5. Add the following line to the **composition** section of the configuration file.
-    - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
-
+5. Lägg till följande rad i avsnittet **sammansättning** i konfigurationsfilen.
 
     ``` xml
-        ``` json
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
-        {
     ```
-            "baseUrl": "FiscalRegisterSample"
 
-        }
 ### <a name="enable-modern-pos-extension-components"></a>Aktivera tilläggskomponenter för Modern POS
-        ```
-
 
 1. Öppna lösningen **ModernPOS.sln** under **RetailSdk\\POS** och se till att den kan kompileras utan fel. Kontrollera dessutom att du kan köra Modern POS från Visual Studio med hjälp av kommandot **kör**.
-3. Aktivera det aktuella exemplet för kassatillägget genom att lägga till följande rader i filen **extensions.json** under mappen **RetailSDK\\POS\\Extensions**.
-
 
     > [!NOTE]
+    > Modern POS får inte anpassas. Du måste aktivera User Account Control (UAC) och du måste avinstallera tidigare installerade instanser av Modern POS efter behov.
+
+2. Aktivera tilläggen som måste läsas in genom att lägga till följande rader i filen **extensions.json**.
+
     ``` json
-    > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
     {
-
         "extensionPackages": [
-2. Enable the extensions that must be loaded by adding the following lines in the **extensions.json** file.
             {
-
                 "baseUrl": "Microsoft/AuditEvent.SE"
-    ``` json
             }
-    {
         ]
-        "extensionPackages": [
     }
-            {
-    ```
-                "baseUrl": "Microsoft/AuditEvent.SE"
-
-            }
-#### <a name="create-deployable-packages"></a>Skapa driftfärdiga paket
-        ]
-
-    }
-Kör **msbuild** för hela Retail SDK för att skapa distribuerbara paket. Tillämpa paketen via LCS eller manuellt. Mer information finns i [Retail SDK-paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
     ```
 
     > [!NOTE]
-    > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
+    > Mer information och exempel som visar hur du inkluderar källkodsmappar och aktiverar tillägg som ska läsas in finns i instruktionerna i readme.md filen i projektet **Pos.Extensions**.
 
 3. Återskapa lösningen.
 4. Kör Modern POS i felsökaren och testa funktionen.
@@ -511,3 +438,80 @@ Migreringsprocessen bör bestå av följande steg.
     <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
     ```
     ---
+
+2. Aktivera det aktuella exemplet på Hardware Station-tillägget genom att lägga till följande rad i avsnittet **komposition** i konfigurationsfil **HardwareStation.Extension.config**.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+    ```
+
+3. Gör följande ändringar i konfigurationsfilerna för paketanpassning **Customization.settings** under **BuildTools**:
+
+    - Ta bort följande rader för att utesluta den tidigare Hardware Station-tillägget från distribuerbara paket.
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
+        ```
+
+    - Lägg till följande rad om du vill inkludera det aktuella exemplet Hardware Station-tillägget i de distribuerbara paketen.
+
+        ``` xml
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
+        ```
+
+#### <a name="update-modern-pos"></a>Uppdatera Modern POS
+
+1. Öppna lösningen **CloudPOS.sln** på **RetailSdk\\POS**.
+2. Inaktivera det tidigare kassatillägget:
+
+    - I filen **tsconfig.json**, lägg till mappen **FiscalRegisterSample** i undantagslistan.
+    - Ta bort de tidigare raderna från filen **extensions.json** under mappen **RetailSDK\\POS\\Extensions**.
+
+        ``` json
+        {
+            "baseUrl": "FiscalRegisterSample"
+        }
+        ```
+
+3. Aktivera det aktuella exemplet för kassatillägget genom att lägga till följande rader i filen **extensions.json** under mappen **RetailSDK\\POS\\Extensions**.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.SE"
+            }
+        ]
+    }
+    ```
+
+#### <a name="update-cloud-pos"></a>Uppdatera Cloud POS
+
+1. Öppna lösningen **ModernPOS.sln** under **RetailSdk\\POS**.
+2. Inaktivera det tidigare kassatillägget:
+
+    - I filen **tsconfig.json**, lägg till mappen **FiscalRegisterSample** i undantagslistan.
+    - Ta bort de tidigare raderna från filen **extensions.json** under mappen **RetailSDK\\POS\\Extensions**.
+
+        ``` json
+        {
+            "baseUrl": "FiscalRegisterSample"
+        }
+        ```
+
+3. Aktivera det aktuella exemplet för kassatillägget genom att lägga till följande rader i filen **extensions.json** under mappen **RetailSDK\\POS\\Extensions**.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.SE"
+            }
+        ]
+    }
+    ```
+
+#### <a name="create-deployable-packages"></a>Skapa driftfärdiga paket
+
+Kör **msbuild** för hela Retail SDK för att skapa distribuerbara paket. Tillämpa paketen via LCS eller manuellt. Mer information finns i [Retail SDK-paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
