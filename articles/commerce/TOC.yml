@@ -466,9 +466,11 @@
                           items:
                             - name: Stöd för externa presentkort
                               href: dev-itpro/gift-card.md
+                            - name: Datadelning för presentkort mellan företag
+                              href: dev-itpro/data-sharing-gift-cards.md
                     - name: RSAT
                       items:
-                        - name: Testinspelare och Regression suite automation tool för Cloud POS
+                        - name: Testinspelare och Regression Suite Automation Tool för Cloud POS
                           href: dev-itpro/pos-rsat.md
                     - name: Försäljare
                       items:
