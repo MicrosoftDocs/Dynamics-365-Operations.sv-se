@@ -2,7 +2,7 @@
 title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: peakerbl
-ms.date: 04/25/2022
+ms.date: 08/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109475"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357615"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -76,6 +76,19 @@ När du väljer en enhet markerar du format för de data som ska exporteras elle
 
 > [!NOTE]
 > Se till att endast använda juridiska tecken för XML-baserade filformat. Mer information om giltiga tecken finns i [Giltiga tecken i XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 tillåter inte några kontrolltecken förutom flikar, kundvagnsreturer och radmatningar. Exempel på otillåtna tecken är hakparenteser, klammerparenteser och snedstreck. 
+
+Använd Unicode istället för en specifik teckentabell för att importera eller exportera data. Detta kommer att ge de mest konsekventa resultaten och eliminera datahanteringsjobb om de innehåller Unicode-tecken. De systemdefinierade källdataformaten som använder Unicode har alla **Unicode** i källnamnet. Unicode-formatet tillämpas genom att välja en Unicode-kodande ANSI-kodtabell som **Kodsida** på fliken **Nationella inställningar**. Välj en av följande teckensidor för Unicode:
+
+| Kodsida | Visningsnamn                |
+|-----------|-----------------------------|
+| 1200      | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001     | Unicode (UTF-32 Big-Endian) |
+| 1201      | Unicode (Big-Endian)        |
+| 65000     | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+Mer information om kodsidor finns i [Kodsida-identifierare](/windows/win32/intl/code-page-identifiers/).
 
 ### <a name="sequence-the-entities"></a>Ordna enheterna
 Enheter kan ordnas i en datamall eller i import- och exportjobb. När du kör ett jobb som innehåller mer än en datatabell måste du kontrollera att datatabellerna har ordnats korrekt. Du ordnar entiteter i första hand så att du kan lösa eventuella funktionella samband mellan olika enheter. Om enheterna inte har några funktionella samband kan de schemaläggas parallell import eller export. 

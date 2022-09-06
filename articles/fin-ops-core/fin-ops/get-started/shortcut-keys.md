@@ -2,7 +2,7 @@
 title: Kortkommandon
 description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med appar för ekonomi och drift.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140452"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357603"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
@@ -135,10 +135,10 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 | Vågrät rullning                                                                                                   | Skift + Mushjul             |
 | Flytta till nästa/föregående kolumn                                                                                       | Tab/Skift+Tab                 |
 | Flytta till nästa/föregående rad                                                                                          | Uppåtil/nedåtpil           |
-| Flytta till nästa/föregående rad utan att markera<blockquote>[!NOTE] Den här genvägen gäller endast flervalsscenarier.</blockquote> | Ctrl+uppåtpil / Ctrl+nedåtpil |
-| Markera/rensa aktuell rad<blockquote>[!NOTE] Den här genvägen gäller endast flervalsscenarier.</blockquote>                    | Ctrl+Blanksteg/Ctrl+Klick         |
-| Lägg till nästa/föregående rad i den valda uppsättningen<blockquote>[!NOTE] Den här genvägen gäller endast flervalsscenarier.</blockquote>   | Shift+Space                     |
-| Lägg till ett antal rader i den valda uppsättningen<blockquote>[!NOTE] Den här genvägen gäller endast flervalsscenarier.</blockquote>         | Skift+Klick                     |
+| Flytta till nästa/föregående rad utan att markera<br><br>**Obs!** Den här genvägen gäller endast flervalsscenarier. | Ctrl+uppåtpil / Ctrl+nedåtpil |
+| Markera/rensa aktuell rad<br><br>**Obs!** Den här genvägen gäller endast flervalsscenarier.                   | Ctrl+Blanksteg/Ctrl+Klick         |
+| Lägg till nästa/föregående rad i den valda uppsättningen<br><br>**Obs!** Den här genvägen gäller endast flervalsscenarier.  | Shift+Space                     |
+| Lägg till ett antal rader i den valda uppsättningen<br><br>**Obs!** Den här genvägen gäller endast flervalsscenarier.         | Skift+Klick                     |
 | Gå till nästa/föregående sida med data.                                                                                   | Page Up / Page Down             |
 | Skapa en ny rad längst ned i rutnätet                                                                             | Nedåtpil (från sista raden)  |
 | Flytta till första posten                                                                                               | Ctrl+start                       |
@@ -148,7 +148,7 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 | Flytta till nästa markerade rad                                                                                            | Alt+Shift+M, L                  |
 | Flytta till föregående markerad rad                                                                                        | Alt+Shift+M, P                  |
 | Flytta till den sista markerade raden                                                                                           | Alt+Shift+M, N                  |
-| Utför standardåtgärd i ett rutnät<blockquote>[!NOTE] Denna genväg aktiveras när fokus ligger på en cell som innehåller en hyperlänk och samtliga celler i den kolumnen har hyperlänkar.</blockquote> | Ange                           |
+| Utför standardåtgärd i ett rutnät<br><br>**Obs!** Denna genväg aktiveras när fokus ligger på en cell som innehåller en hyperlänk och samtliga celler i den kolumnen har hyperlänkar. | Ange                           |
 | Växla fokus mellan den markerade raden och rubrikraden                                                               | Alt+Skift+H                     |
 | Gör den aktuella kolumnen större/mindre (med fokus i rubrikraden)                                                  | Högerpil/vänsterpil        |
 | Ändra storlek på den aktuella kolumnen till nästa/föregående läge (med fokus i rubrikraden)                                   | Ctrl+Shift+högerpil / Ctrl+Shift+vänsterpil |

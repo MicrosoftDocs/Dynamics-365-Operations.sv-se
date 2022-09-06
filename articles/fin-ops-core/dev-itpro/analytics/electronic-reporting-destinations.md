@@ -2,7 +2,7 @@
 title: Destinationer för elektronisk rapportering (ER)
 description: I den här artikeln finns information om hantering av mål för elektroniska rapportering, vilka typer av destinationer som stöds samt säkerhetsaspekter.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281980"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360990"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -247,6 +247,52 @@ På snabbfliken **Allmänt** i fältet **Skicka en mapp som** , välj ett av fö
 ### <a name="limitations"></a>Begränsningar
 
 Om du ställer in fältet **Skicka mappen som** till **Separata filer** för en komponent för **Mapp** som innehåller andra kapslade komponenter för **Mapp** tillämpas inställningen inte på de kapslade komponenterna för **Mapp**.
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a>Ändra egenskaper för sidlayout för en mall
+
+Du kan konfigurera en ER-destination för en ER-formatkomponent som har utformats för att använda en mall i Microsoft Office (Excel eller Word) format för rapportgenerering. Om du inte är ägare till formatet och du måste ändra egenskaper för sidlayouten för mallen måste du i versioner av Ekonomi före version 10.0.29 skapa ett härlett format och ändra mallegenskaperna. Därefter måste du underhålla konfigurationen för härlett format. I version 10.0.29 och senare kan du dock ändra egenskaperna för sidlayouten för mallen vid körning, om du vill undvika att skapa och underhålla den härledda formatkonfigurationen. Det gör du genom att ställa in önskade egenskaper som en del av inställningarna för den konfigurerade ER-destinationen. När du kör ett ER-format och kör en ER-destination som är konfigurerad att använda vissa egenskaper för sidlayouter, tillämpas värdena i sidlayoutegenskaperna för det körda målet på den mall du använder och ersätter den ursprungliga mallens egenskaper. Du kan konfigurera olika destinationer för samma formatkomponent konfigurerar olika egenskaper för sidlayout för mallen som används.
+
+Följande egenskaper kan konfigureras i en ER-destination för en formatkomponent som är utformad för att använda en mall i Excel- eller Word-format:
+
+- Sidorientering
+    - Stående
+    - Liggande
+- Pappersstorlek
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Juridisk information
+    - Letter
+    - Statement
+    - Tabloid
+- Sidomarginaler
+    - Upptill
+        - Huvud
+    - Nederkant
+        - Sidfot
+    - Vänster
+    - Höger
+
+> [!NOTE]
+> Sidorienteringen för mallen som är konfigurerad på detta sätt måste vara i linje med [sidorienteringen för PDF-konvertering](#select-a-page-orientation-for-pdf-conversion) om PDF-konvertering är konfigurerad.
+
+Du måste välja längdenhet för att ställa in sidmarginaler:
+
+- Tum
+- Centimeter
+- Millimeter
+
+![Ställ in egenskaper för sidlayout på sidan Elektronisk rapportering.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> När ett marginalvärde används i centimeter och anges med flera decimaler, avrundas det vid körning till närmaste värde med 1 decimaler.
+>
+> När ett marginalvärde används i millimeter och anges med flera decimaler, avrundas det vid körning för Excel till närmaste heltalsvärdet utan decimaler.
+>
+> När ett marginalvärde används i millimeter och anges med flera decimaler, avrundas det vid körning för Word till närmaste heltalsvärdet med en decimal.
 
 ## <a name="security-considerations"></a>Säkerhetsaspekter
 

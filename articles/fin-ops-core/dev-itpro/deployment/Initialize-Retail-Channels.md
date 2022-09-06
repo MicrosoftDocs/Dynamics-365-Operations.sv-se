@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 6b42252a37f01a2b387c2393760998a6b2e4761d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271528"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357669"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Initiera Commerce Scale Unit (moln)
 
@@ -69,8 +69,8 @@ Commerce Scale Unit är tillgängligt för distribution i följande regioner.
 | APAC            | Östasien           | Begränsad kapacitet    |   Inga kommentarer.                           |
 | APAC            | Indien, syd         | Begränsad kapacitet | Inga distributioner tillåtna.    |
 | APAC            | Indien, centrala       | Begränsad kapacitet    | Kräver godkännandeprocess. |
-| EMEA            | Västeuropa         | Begränsad kapacitet    | Inte tillgänglig(t) i LCS just nu. |
-| EMEA            | Nordeuropa        | Begränsad kapacitet    | Inte tillgänglig(t) i LCS just nu. |
+| EMEA            | Västeuropa         | Allmänt tillgängligt    |  Inga kommentarer. |
+| EMEA            | Nordeuropa        | Allmänt tillgängligt    |  Inga kommentarer. |
 | EMEA            | Storbritannien, södra            | Allmänt tillgängligt |    Inga kommentarer.                          |
 | EMEA            | Storbritannien, västra             | Allmänt tillgängligt |    Inga kommentarer.                          |
 | Schweiz     | Schweiz, norra   | Begränsad kapacitet    | Kräver godkännandeprocess. |
