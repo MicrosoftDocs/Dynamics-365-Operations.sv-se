@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.30 (november)
+                  href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (oktober)
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (augusti)
@@ -1138,6 +1140,8 @@
                       href: general-ledger/subledger-transfer.md
                     - name: Utforskare för redovisningskälla
                       href: accounts-payable/accounting-source-explorer.md
+                    - name: Dokument som väntar på redovisning
+                      href: general-ledger/documents-pending-accounting.md
             - name: Rapporter och förfrågningar
               items:
                 - name: Visa poster i redovisningsjournal och transaktioner

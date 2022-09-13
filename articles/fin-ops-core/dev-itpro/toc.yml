@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för plattformsuppdateringar
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för version 10.0.30 (november 2022)
+                  href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Plattformsuppdateringar för version 10.0.29 (oktober 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Plattformsuppdateringar för version 10.0.28 (augusti 2022)

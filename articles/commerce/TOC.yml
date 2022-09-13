@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Commerce
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.30 (november 2022)
+                  href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (oktober 2022)
                   href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (juli 2022)
@@ -702,18 +704,16 @@
                   href: optimal-combination-overlapping-discounts.md
                 - name: Definiera kanalspecifika rabatter
                   href: define-channel-specific-discounts.md
-                - name: Alternativ för att förhindra rabatter för butiksprodukter
-                  href: prevent-discounts.md
                 - name: Anbudsrabatter
                   href: tender_based_discounts.md
                 - name: Leverantörsrabatt
                   href: shipping-discount.md
                 - name: Konfigurera present med inköpserbjudanden
                   href: gift-with-purchase.md
-                - name: Ställa in kuponger
-                  href: retail-coupons.md
-                - name: Visa rabatter i kassan
-                  href: discounts-pos.md
+                - name: Kuponger
+                  href: coupons.md
+                - name: Prissättningsinställningar
+                  href: price-settings.md
                 - name: Prisrapporter
                   href: price-report.md
                 - name: Skapa kanalspecifika handelsavtal
@@ -800,6 +800,8 @@
                       href: calculated-inventory-retail-channels.md
                     - name: Lagersökningsåtgärd i kassan
                       href: pos-inventory-lookup-operation.md
+                    - name: Lagermedveten produktlista
+                      href: inventory-aware-product-listing.md
                 - name: Inköpsorder
                   items:
                     - name: Översikt av inköpsorder

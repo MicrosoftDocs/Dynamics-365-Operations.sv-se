@@ -3413,8 +3413,6 @@
                       href: warehousing/packing-work.md
                     - name: Skapa omallokering av artiklar för kort plockning
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                    - name: Avbryt distributionslagerarbete för undantagshantering
-                      href: warehousing/cancel-warehouse-work.md
                     - name: Systemstyrd arbetsordningsföljd
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Plockradsgruppering
@@ -3431,6 +3429,10 @@
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: Visualisering av utgående arbetsbelastning
                       href: warehousing/outbound-workload-visualization.md
+                    - name: Hantera plockundantag för försäljnings- och överföringsrad manuellt
+                      href: warehousing/manual-order-line-picking-exception-handling.md
+                    - name: Avbryt lagerarbete för undantagshantering
+                      href: warehousing/cancel-warehouse-work.md
                 - name: Lagerpåfyllnad
                   items:
                     - name: Lagerpåfyllnad – översikt
