@@ -2,7 +2,7 @@
 title: Kortkommandon
 description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med appar för ekonomi och drift.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357603"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405449"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,6 +88,8 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 | Öppna filterfönstret (eller växla fokus mellan filterrutan och huvudformuläret om filterfönstret redan är öppet) | Alt+M,F eller Ctrl+F3       |
 | Stäng filterfönstret (med fokus i filterfönstret)                                                               | Esc                      |
 | Öppna avancerad filtrering/sortering                                                                                        | Ctrl+Skift+F3            |
+| Använd snabbfilter (när fokus är i snabbfilter)                                                              | Ange                    |
+| Använd rutnätsfiltret (när fokus ligger i filterfältet i kolumnrubriken)                                             | Ange                    |
 
 ## <a name="form-shortcuts"></a>Bilda kortkommandon
 
@@ -157,12 +160,13 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 
 ## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
 
-| Om du vill göra detta                                                                   | Tryck på                         |
+| Om du vill göra detta                                                                   | Tryck                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Öppna hyperlänk                                                           | Ctrl+Return                    |
+| Öppna hyperlänken (när fokus ligger på en skrivskyddd kontroll)<br><br>**Obs!** Denna genväg gäller endast när funktionen **Standardiserad tangentbordsinteraktion för kombinationsruta och sökkontroller**                   | Ange    |
 | Ange aktuellt sessionsdatum i ett datumfält                                       | D                             |
 | Ange aktuellt datum i ett datumfält                                       | V                             |
-| Öppna sökning, kombinationsruta, datumväljare, dialogruta                         | Alt+nedåtpil                |
+| Öppna sökning, kombinationsruta, datumväljare, dialogruta                         | Alt + nedåtpil<br><br>Ange (när funktionen **Standardiserad tangentbordsinteraktion för kombinationsruta och sökkontroller** är aktiverad)                |
 | Stäng sökning, kombinationsruta, datumväljare, dialogruta                        | Esc                           |
 | Flytta fokus till en uppslagning (när uppslagningen redan är öppen,)                   | Alt + nedåtpil                |
 | Öppna kontrollens utökade förhandsgranskning                                          | Alt + uppåtpil                  |

@@ -1,23 +1,23 @@
 ---
 title: Utbildningskatalog för användare av Dynamics 365 Finance
 description: Hitta alla utbildningsalternativ för användare av Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c883a425610d9b04812ba77c666b0b220184d5af
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 99a672e4fd0bfe270f0cd1bfa421b7bd6feca9e1
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069297"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424571"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Utbildningskatalog för användare av Dynamics 365 Finance
 
@@ -27,9 +27,8 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
-| Innehåll | beskrivning | Format | Längd |
+| Innehåll | Beskrivning | Format | Längd |
 |---------|-------------|--------|--------|
-| [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 8 timmar |
 | [Dynamics 365 och Power Platform grunder](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar   |
 | [Kom igång med appar för ekonomi och drift](/learn/paths/get-started-finance-operations/) | Lär dig hur appar för ekonomi och drift ger stöd till företag för att hantera deras globala finanssystem, operativa affärsprocesser och effektiviserade leveranskedjor i syfte att ge användarna möjlighet att fatta snabba, välgrundade beslut.   Det första steget i arbetet med appar för ekonomi och drift är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill inneha. | Gratis, självstudier online utbildningsväg | 2 timmar |
 | [Kom igång med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunderna hantera orkestreringen av order ända fram till uppfyllelsen. Med dessa funktioner kan organisationer orkestrera orderflöden över olika plattformar och program. | Gratis, självstudier online utbildningsmodul | 30 minuter |

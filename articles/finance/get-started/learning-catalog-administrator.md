@@ -1,23 +1,23 @@
 ---
 title: Utbildningskatalog för administratörer av Dynamics 365 Finance
 description: Hitta alla utbildningsalternativ för administratörer av Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 811ff0eb9d13c34a5fa21014415981574833d256
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7772de29030475c45a86f305e74a7048508887ba
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065277"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424594"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Utbildningskatalog för administratörer av Dynamics 365 Finance
 
@@ -62,29 +62,25 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | Innehåll | Beskrivning  | Format | Längd    |
 |---------|--------------|--------|-----------|
 | [Uppgradera Dynamics AX 2012 till appar för ekonomi och drift](/learn/paths/upgrade-ax-2012-finance-operations/) | Läs om de viktigaste elementen och bästa metoderna för att uppgradera din Dynamics AX 2012-lösning till appar för ekonomi och drift. Från de första stegen för att upptäcka viktiga arkitekturskillnader, komma igång med uppgraderingsprocessen och kod- och datauppgraderingsverktygen, till de bästa sätten att göra om integrering, analys och rapportering baserat på de senaste funktionerna. | Gratis, självstudier online utbildningsväg | 7 timmar |
-| [Ekonomi och drift: Uppgradera från 7.x till 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Delta i vårt nästa tekniksnack, då vi ska gå igenom uppgraderingsprocessen från 7.X till 8.X. Vi kommer att diskutera olika scenarier och steg för att utföra kod- och datauppgradering. Vi kommer också att avhandla scenarier för utökningsförfrågningar och hur du tar upp dem när så är lämpligt. | Fri registrering av en webbkonferens | 61 minuter |
-| [Så här uppgraderar du till 7.2 (juli 2017) från 7.0 (RTW)/7.1 (Frisläpp 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | I den här sessionen får du veta hur du uppgraderar från appen Dynamics 365 Ekonomi och drift v7.0 (RTW) och v7.1 (1611) till v7.2 (juli 2017). Vi gör en tydlig skillnad mellan publicerade kunder och pågående projekt (inte bor ännu). | Fri registrering av en webbkonferens | 58 minuter |
-| [AX2012 till Dynamics 365 for Operations uppgradera (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Den här tekniksnack innehåller en översikt över hur du uppgraderar kod och data från Dynamics AX 2012 till Dynamics 365 for Operations. | Fri registrering av en webbkonferens | 45 minuter |
-| [AX2009 migreringsverktyg](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Den här sessionen kommer att omfatta verktyg som är tillgängliga för att hjälpa dig att migrera från AX2009 till D365 för operationer. | Fri registrering av en webbkonferens | 55 minuter |
+| [AX2012 till appar för ekonomi och drift, uppgradera – 3 september 2020](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | Detta tekniksnack innehåller en översikt över hur du uppgraderar kod och data från Dynamics AX 2012 till appar för ekonomi och drift. | Tekniksnack (registrerat webbseminarie) | 66 minuter |
+| [AX2009 migreringsverktyg](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Den här sessionen kommer att omfatta verktyg som är tillgängliga för att hjälpa dig att migrera från AX2009 till D365 för åtgärder. | Fri registrering av en webbkonferens | 55 minuter |
 
 ## <a name="servicing"></a>Underhåll<a name="servicing"></a>
 
 | Innehåll  | Beskrivning   | Format  | Längd    |
 |----------|---------------|---------|-----------|
 | [Ekonomi och drift: funktionshantering (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Tekniksnack om funktionshanteringsupplevelsen. Här finns en arbetsyta där du kan visa, aktivera, inaktivera och schemalägga funktioner som har levererats i varje utgåva. Nya funktionen är avstängda som standard. Du kan använda arbetsytan för att aktivera dem och visa dokumentationen för dem. Delta i det här mötet för att se vad som levereras i 10.0.3 och våra planer för framtida versioner. | Fri registrering av en webbkonferens | 47 minuter |
-| [Ekonomi och drift: Service, stöd och underhåll av produktion (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tekniksnack om hur du effektivt kan stödja, underhålla och serva din Dynamics 365 Finance-produktionsmiljö. | Fri registrering av en webbkonferens | 53 minuter |
+| [Ekonomi och drift: service, stöd och underhåll av produktion (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tekniksnack om hur du effektivt kan stödja, underhålla och serva din Dynamics 365 Finance-produktionsmiljö. | Fri registrering av en webbkonferens | 53 minuter |
 | [Ekonomi och drift: Microsoft-hanterade kontinuerliga uppdateringar (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Den kontinuerliga uppdateringstakten för Ekonomi och drift har startat! Var med oss under denna timme för att diskutera Microsoft-hanterade kontinuerliga uppdateringar, användarupplevelsen som redan finns i Lifecycle Services och kommande uppdateringar. | Fri registrering av en webbkonferens | 61 minuter |
-| [Microsoft-hanterade kontinuerliga uppdateringar: Nyheter (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | Under denna timme ska vi förklara vad som är nytt sedan våra ursprungliga meddelanden om Microsoft-hanterade kontinuerliga uppdateringar. Vi kommer att diskutera uppdateringstakten, hur vi har svarat på din värdefulla feedback om processen och ta en titt på den kommande Lifecycle Services-användarupplevelsen som du kan använda för att hantera dina uppdateringar. | Fri registrering av en webbkonferens | 56 minuter |
-| [Microsoft-hanterade kontinuerliga uppdateringar (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Vi kommer att diskutera Microsofts planer för att hålla ditt system aktuellt med den senaste versionen. Vi kommer att avhandla tidslinjer, takten för större och mindre uppdateringar, planerade procedurer, följder och vad du bör göra för att få optimala resultat. | Fri registrering av en webbkonferens | 62 minuter |
+| [Ekonomi och drift: Microsoft-hanterade kontinuerliga uppdateringar – 2 april 2019](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Den kontinuerliga uppdateringstakten för Ekonomi och drift har startat! Var med oss under denna timme för att diskutera Microsoft-hanterade kontinuerliga uppdateringar, användarupplevelsen som redan finns i Lifecycle Services och kommande uppdateringar. | Teknicksnack (registrerat webbseminarie) | 61 minuter |
 | [Övervakning, optimeringsrådgivare och kritiska KB:s (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | Vi kommer att diskutera övervakningsfunktioner och vad Microsoft övervakar åt dig i din produktionsmiljö, optimeringsrådgivaren och hur den kan expanderas, "Kritiska X++ -uppdateringar" i LCS samt metodtips för alternativet "Rapportera produktionsavbrott" i LCS. | Fri registrering av en webbkonferens | 40 minuter |
 
 ## <a name="testing"></a>Testar<a name="testing"></a>
 
 | Innehåll  | Beskrivning  | Format  | Längd    |
 |----------|--------------|---------|-----------|
-| [ekonomi och drift: Regression Suite Automation Tool -- Bakgrund och inställningar (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Det här är den första av en serie med två delar i RSAT (Regression Suite Automation Tool). I den här sessionen får vi veta hur vi håller jämna steg med regelbundna uppdateringar som använder automatiska tester med hjälp av RSAT. Du får lära känna och rekommendationer om hur du skapar uppgiftsregistreringar och kör tester med RSAT, tillsammans med en steg-för-steg-beskrivning av installationen och konfigurationen. | Fri registrering av en webbkonferens | 70 minuter |
-| [Ekonomi och drift: Regression Suite Automation Tool -- Testa Lifecycle Demo (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Det här är den andra av en serie med två delar i RSAT (Regression Suite Automation Tool). Den här sessionen omfattar en demo av hela cykeln där du skapar och sparar uppgiftsinspelningar från Ekonomi och drift till BPM-biblioteket i LCS, vilket synkroniserar BPM-biblioteket för att skapa testfall i Azure DevOps, grupperar testfallen i testpaket och läser in och kör testpaket i RSAT. | Fri registrering av en webbkonferens | 70 minuter |
+| [Ekonomi och drift: Regression Suite Automation Tool -- Bakgrund och inställningar (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Det här är den första av en serie med två delar i RSAT (Regression Suite Automation Tool). I den här sessionen får vi veta hur vi håller jämna steg med regelbundna uppdateringar som använder automatiska tester med hjälp av RSAT. Du får lära känna och rekommendationer om hur du skapar uppgiftsregistreringar och kör tester med RSAT, tillsammans med en steg-för-steg-beskrivning av installationen och konfigurationen. | Fri registrering av en webbkonferens | 70 minuter |
+| [Ekonomi och drift: Regression Suite Automation Tool -- Testa Lifecycle-demo (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Det här är den andra av en serie med två delar i RSAT (Regression Suite Automation Tool). Den här sessionen omfattar en demo av hela cykeln där du skapar och sparar uppgiftsinspelningar från Ekonomi och drift till BPM-biblioteket i LCS, vilket synkroniserar BPM-biblioteket för att skapa testfall i Azure DevOps, grupperar testfallen i testpaket och läser in och kör testpaket i RSAT. | Fri registrering av en webbkonferens | 70 minuter |
 | [Ekonomi och drift: Verktyg för felsökning av prestandaproblem för Dynamics 365 (DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | I detta tekniksnack presenteras de olika verktyg som kan användas för att felsöka prestandaproblem med Microsoft Dynamics 365 Finance. Den här sessionen innehåller vissa scenariobaserade demonstrationer och inledande vägledning om hur du närmar sig vanliga prestandaproblem. | Fri registrering av en webbkonferens | 64 minuter |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

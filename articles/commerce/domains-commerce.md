@@ -4,22 +4,17 @@ description: I denna artikel beskrivs hur domäner hanteras i Microsoft Dynamics
 author: BrianShook
 ms.date: 08/19/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
-ms.search.validFrom: ''
-ms.dyn365.ops.version: Release 10.0.12
-ms.search.industry: retail
-ms.search.form: ''
-ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336760"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405507"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domäner i Dynamics 365 Commerce
 
@@ -110,10 +105,10 @@ Om du vill konfigurera anpassade domäner med hjälp av en Front Door Service el
 
 - Konfigurera en Front Door Service som Azure Front Door för att hantera klienttrafik och ansluta till din Commerce-miljö. Detta ger bättre kontroll över hantering av domäner och certifikat samt mer detaljerade säkerhetsprinciper.
 
+- Använd den inlevererade Azure Front Door-instansen. Detta kräver samordning av åtgärden med Dynamics 365 Commerce-teamet för domänverifiering och för att hämta SSL-certifikat för din produktionsdomän.
+
 > [!NOTE]
 > Om du använder en extern CDN- eller ytterdörrstjänst, se till att förfrågan landar på Commerce-plattformen med det värdnamn som tillhandahålls av Commerce, men med X-Forwarded-Host (XFH)-huvudet\<custom-domain\>. Om till exempel din Commerce-slutpunkt är `xyz.dynamics365commerce.ms` och den anpassade domänen är `www.fabrikam.com`, ska värdrubriken för den vidarebefordrade begäran vara `xyz.dynamics365commerce.ms` och XFH-rubiken ska vara `www.fabrikam.com`.
-
-- Använd den inlevererade Azure Front Door-instansen. Detta kräver samordning av åtgärden med Dynamics 365 Commerce-teamet för domänverifiering och för att hämta SSL-certifikat för din produktionsdomän.
 
 Information om hur du konfigurerar en CDN-tjänst direkt finns i [lägga till stöd för ett Content Delivery Network (CDN)](add-cdn-support.md) .
 

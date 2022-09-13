@@ -2,7 +2,7 @@
 title: Rutnätsfunktioner
 description: I den här artikeln beskrivs flera kraftfulla funktioner i rutnätskontrollen. Du måste aktivera den nya rutnätsfunktionen för att du ska kunna använda dessa funktioner.
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a8968a1263dfafd67b07b4beb78c51493e95756e
-ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
+ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9258960"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405476"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -178,20 +178,22 @@ Funktionen **Ny rutnätskontroll** är tillgänglig direkt i funktionshantering 
 
 Den här funktionen har som standard aktiverats i version 10.0.21. Målet är att den ska bli obligatorisk i oktober 2022.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvecklare] Avanmäl individuella sidor från att använda det nya rutnätet 
+## <a name="developer-topics"></a>Utvecklingsämnen 
+
+### <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvecklare] Avanmäl individuella sidor från att använda det nya rutnätet 
 Om din organisation hittar en sida med vissa problem med att använda det nya rutnätet, finns det en API som gör det möjligt för ett enskilt formulär att använda den gamla rutnätskontrollen samtidigt som resten av systemet tillåter att den nya rutnätskontrollen används. Om du vill välja en enskild sida från det nya rutnätet lägger du till följande samtalspost `super()` i formulärets `run()`-metod.
 
 ```this.forceLegacyGrid();```
 
 Denna API avakteras så småningom så att det går att ta bort den äldre rutnätskontrollen. Den kommer dock att vara tillgänglig i minst 12 månader efter det att avvisningen har avsekats. Om något problem kräver att denna API används rapporterar du dem till Microsoft.
 
-### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinga en sida att använda det nya rutnätet efter att tidigare valt ut rutnätet
+#### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinga en sida att använda det nya rutnätet efter att tidigare valt ut rutnätet
 Om du har valt att inte använda det nya rutnätet för en enskild sida kanske du senare vill aktivera det nya rutnätet igen efter att de underliggande frågorna inte har lösts. Om du vill göra detta måste du bara ta bort samtalet `forceLegacyGrid()`. Ändringen börjar inte gälla förrän något av följande inträffar:
 
 - **Omdistribuering av miljö**: När en miljö uppdateras och omplaceras rensas tabellen som lagrar sidorna som har valt bort det nya rutnätet (FormControlReactGridState) automatiskt.
 - **Manuell clearing av registret**: För utvecklingsscenarier måste du använda SQL för att rensa tabellen FormControlReactGridState och sedan starta om AOS. Den här kombinationen av åtgärder återställer cachningen av sidor som har valt att inte använda det nya rutnätet.
 
-## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Utvecklare] Välja enskilda rutnät utanför skriva före systemkapaciteten
+### <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Utvecklare] Välja enskilda rutnät utanför skriva före systemkapaciteten
 Vissa scenarier har uppstått som inte lämpar sig för att fungera bra med funktionen *Skriva före systemet* för rutnätet. (Till exempel, en del kod som utlöses när en rad valideras gör att en datakällforskning utlöses, och forskningen kan sedan korrumpera oengagerade redigeringar på befintliga rader.) Om din organisation upptäcker ett sådant scenario finns ett API tillgängligt som låter en utvecklaren väljer bort ett individuellt rutnät från asynkron radvalidering och återgår till det äldre beteendet.
 
 När asynkron radvalidering inaktiveras i ett rutnät kan användarna inte skapa någon ny rad eller flytta till en annan befintlig rad i rutnätet när det finns valideringsproblem på den aktuella raden. En sidoeffekt av denna åtgärd är att tabeller inte kan klistras in från Excel till rutnät i Ekonomi och drift.
@@ -204,13 +206,18 @@ För att välja bort asynkron radvalidering för ett enskilt rutnät, lägg till
 > - Detta anrop ska endast anropas i sällsynta fall och ska inte vara norm för alla rutnät.
 > - Du bör inte växla detta API vid körning efter formulärets in läses in.
 
-## <a name="developer-size-to-available-width-columns"></a>[Utvecklare] kolumner med storlek till tillgänglig bredd
+### <a name="developer-size-to-available-width-columns"></a>[Utvecklare] kolumner med storlek till tillgänglig bredd
 Om en utvecklare ställer in egenskapen **WidthMode** på **SizeToAvailable** för kolumner inuti det nya rutnätet, har de kolumnerna samma bredd som de skulle ha om egenskapen hade värdet **SizeToContent**. De sträcker sig däremot åt att använda valfri tillgänglig bredd i rutnätet. Om egenskapen har ställts in på **SizeToAvailable** för flera kolumner, delar alla dessa kolumner all tillgänglig bredd i rutnätet. Om en användare manuellt ändrar storleken på en av dessa kolumner blir kolumnen statisk. Den kommer att finnas kvar till den bredden och kan inte längre sträckas ut för att ta upp extra tillgängligt rutnäts bredd.
 
-## <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Utvecklare] Ange kolumnen som får det initiala fokuset när nya rader skapas med hjälp av nedåtpilen
+### <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Utvecklare] Ange kolumnen som får det initiala fokuset när nya rader skapas med hjälp av nedåtpilen
 Som diskuterades i avsnittet [Skillnader vid inmatning av data före systemet](#differences-when-entering-data-ahead-of-the-system) för "Skriv före systemet" är aktiverad och en användare skapar en ny rad med hjälp av tangenten **nedåtpil** är standardbeteendet att lägga fokus i den första kolumnen i den nya raden. Den här erfarenheten kan skilja sig från erfarenheten i det äldre rutnätet eller när en **ny** knapp väljs.
 
 Användare och organisationer kan skapa sparade vyer som har optimerats för datainmatning. (Du kan till exempel ändra ordning på kolumner så att den första kolumnen är den som du vill börja ange data i.) Dessutom, från och med version 10.0.29, kan organisationer justera detta beteende genom att använda metoden **selectedControlOnCreate()**. Den här metoden låter en utvecklare specificera kolumnen som ska få det initiala fokuset när en ny rad skapas med hjälp av **nedåtpilen**. Som indata tar denna API kontroll-ID som motsvarar kolumnen som ska få det inledande fokuset.
+
+### <a name="developer-handling-grids-with-non-react-extensible-controls"></a>[Utvecklare] Hantera rutnät med kontroller som inte är utdragbara kontroller
+När ett rutnät läses in innebär det att en utökningsbar kontroll som inte är stödbaserad av ett rutnät påträffas, och i stället tvingar systemet det äldre rutnätet att återges. När en användare stöter på denna situation för första gången visas ett meddelande som anger att sidan måste uppdateras. Därefter läser den här sidan in det äldre rutnätet automatiskt utan ytterligare meddelanden till användarna till nästa systemuppdatering. 
+
+För att lösa den här situationen permanent kan författare av extensible control skapa en version av den här kontrollen som ska användas i rutnätet.  När den väl utvecklats kan X++-klassen för kontrollen dekoreras med attributet **FormReactControlAttribute** för att ange platsen för React-paketet som ska laddas för den kontrollen. Se `SegmentedEntryControl` klassen som ett exempel.  
 
 ## <a name="known-issues"></a>Kända problem
 I det här avsnittet finns en lista över kända problem för den nya rutnätskontrollen.
@@ -218,9 +225,12 @@ I det här avsnittet finns en lista över kända problem för den nya rutnätsko
 ### <a name="open-issues"></a>Öppna ärenden
 - När funktionen för **ny rutnätskontroll** aktiveras fortsätter vissa sidor att använda den befintliga rutnätskontrollen. Detta sker i följande situationer:
  
-    - Det finns en kortlista på sidan som renderas i flera kolumner.
-    - Det finns en grupperad kortlista på sidan.
-    - En rutnätskolumn med en icke-reagerande utökningsbar kontroll.
+    - [Löst] Det finns en kortlista på sidan som renderas i flera kolumner.
+        - Den här typen av kortlista stöds av den **nya rutnätskontrollen** som startar i version 10.0.30. All användning av forceLegacyGrid() detta syfte kan tas bort. 
+    - [Löst] Det finns en grupperad kortlista på sidan.
+        - Grupperade kortlistor stöds av **nya rutnätskontrollen** som startar i version 10.0.30. All användning av forceLegacyGrid() detta syfte kan tas bort. 
+    - [Löst] En rutnätskolumn med en icke-reagerande utökningsbar kontroll.
+        - Utökningsbara kontroller kan tillhandahålla en React-version av deras kontroll som kommer att laddas när de placeras i rutnätet och justera deras kontrolldefinition för att ladda denna kontroll när den används i rutnätet. Mer information finns i motsvarande utvecklaravsnitt. 
 
     När en användare först stöter på en av dessa situationer, visas ett meddelande om att sidan ska uppdateras. När det här meddelandet visas fortsätter sidan att använda det befintliga rutnätet för alla användare tills nästa versionsuppdatering av produkten sker. En bättre hantering av dessa scenarier, så att det nya rutnätet kan användas, övervägs för framtida uppdateringar.
 

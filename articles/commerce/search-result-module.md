@@ -2,7 +2,7 @@
 title: Sökresultatmodul
 description: Denna artikel handlar om moduler för sökresultat och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: d10e9ed78dfc90833ff3c09021f863f6ef0b80d9
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: eeb7cd0769fcb866a3d7dcc03e8e87daf24b2c5d
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286821"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405304"
 ---
 # <a name="search-results-module"></a>Sökresultatmodul
 
@@ -86,48 +86,16 @@ Följ dessa steg för att lägga till en sökresultatmodul på en kategorisida i
 1. Under **Granska och slutför**, granska sidkonfiguration. Om du behöver redigera sidinformationen väljer du **Bakåt**. Om sidinformationen är korrekt väljer du **Skapa sida**.
 1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
-## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Aktivera kunskap om lager för modulen sökresultat
+## <a name="inventory-aware-search-results-module"></a>Inventeringsmedveten sökresultatmodul
 
-Kunder förväntar sig vanligtvis att en näthandelsplats är lagermedveten via webbupplevelsen, så att de kan bestämma vad de ska göra om det inte finns något lager för en produkt. Sökresultatmodulen kan konfigureras för att inkludera lagerdata och ger följande erfarenheter:
+Sökresultatmodulen kan konfigureras för att inkludera lagerdata och ger följande erfarenheter:
 
-- Visa en lagertillgänglighetsetikett tillsammans med produkten.
+- Visa lagernivåetiketter som använder produkter.
 - Dölj produkter som inte finns i lager från produktlistan.
 - Visa produkter som inte finns i lager i slutet av produktlistan.
-- Filtrera produkter i sökresultat efter lagernivå.
+- Stödja lagerbaserad produktfiltrering.
 
-Om du vill aktivera dessa erfarenheter måste du först aktivera funktionen **Utökad identifiering av näthandelsprodukt att bli lagermedveten** i arbetsytan **Funktionshantering**.
-
-> [!NOTE]
-> Funktionen **utökad identifiering av näthandelsprodukt att bli lagermedveten** är tillgänglig i Commerce version 10.0.20 och senare.
-
-Lagermedveten produktsökning använder produktattribut för att få information om lagertillgänglighet. En förutsättning för funktionen är att dedikerade produktattribut ska skapas, lagerdata måste anges för dem och de måste läggas till i online-kanalen. 
-
-Följ dessa steg för att skapa dedikerade produktattribut för att stödja den lagermedvetna sökresultatmodulen.
-
-1. I administration, gå till **Butik och handel \> Butik och handel IT \> Produkter och lager**.
-1. Välj och öppna **Fyll i produktattribut med lagernivå**.
-1. Ange följande information i dialogrutan:
-
-    1. I fältet **Produktattribut och typnamn** anger du ett namn för det dedikerade produktattribut som kommer att skapas för att fånga in lagertillgänglighet.
-    1. I fältet **Lagertillgänglighet grundad på** den kvantitetstyp som lagernivåberäkningen ska baseras på (t.ex. **Fysiskt disponibelt**). 
-
-1. Kör jobbet i bakgrunden. Eftersom produktlager ständigt förändras i en miljö i flera kanaler, rekommenderar vi starkt att du schemalägger det här jobbet som en batchprocess.
-
-> [!NOTE]
-> För konsekvent beräkning av lagernivå över sidor och moduler på din näthandelswebbplats, se till att välja samma kvantitetstyp för både inställningen **Lagertillgänglighet grundad på** i Commerce headquarters och inställningen **Lagernivå grundad på** i Commerce webbplatsskaparen. För information om hur du använder lagerinställningar i webbplatsskaparen, se [tillämpa lagerinställningar](inventory-settings.md).
-
-Konfigurera produktattributen för en onlinekanal genom att följa dessa steg. 
-
-1. I headquarters, gå till **Butik och handel \> Kanalinställningar \> Kanalkategorier och produktattribut**.
-1. Välj en onlinekanal för att aktivera den lagermedvetna sökresultatmodulen för.
-1. Markera och öppna en associerad attributgrupp, lägg till det nya produktattributet.
-1. För Commerce versioner före 10.0.27, välj **Ange attributmetadata**, välj det nya produktattributet och aktivera sedan alternativet **Visa attribut på kanal**, **Hämtningsbar**, **Kan förfinas** och K **an frågas**.
-1. Gå till **Butik och handel \> Butik och handel IT \> Distributionsschema** och kör jobbet **1150 (katalog)**. Om du schemalägger jobbet **Fyll i produktattribut med lagernivå** är en batchprocess rekommenderar vi att du också schemalägger 1150-jobbet som en batchprocess som körs med samma frekvens.
-
-> [!NOTE]
-> För produkter som visas i sökresultatmodulen visas lagernivån på huvudproduktnivå i stället för den enskilda variantnivån. Det har bara två möjliga värden: "tillgänglig" och "lagerförd". Den faktiska etiketten för värdet hämtas från definitionen [lagernivåprofil](inventory-buffers-levels.md). En huvudprodukt anses endast vara i lager när alla varianter av den inte finns i lager.
-
-När alla föregående konfigurationssteg har utförts kommer anvisningarna på sökresultatsidorna att visa ett lagerbaserat filter och sökresultatmodulen hämtar lagerdata bakom den föregående konfigurationen. Du kan sedan konfigurera **lagerinställningarna för produktlistesidor** i Commerce webbplatsskaparen för att styra hur sökresultatsmodulen visar produkter som inte finns i lager. Mer information om [Använd lagerinställningar](inventory-settings.md).
+Om du vill aktivera dessa erfarenheter måste du först aktivera funktionen **Utökad identifiering av näthandelsprodukt att bli lagermedveten** och konfigurera sedan några förutsättningsinställningar i Commerce headquarters. Mer information finns i [Lagermedveten produktlistning](inventory-aware-product-listing.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

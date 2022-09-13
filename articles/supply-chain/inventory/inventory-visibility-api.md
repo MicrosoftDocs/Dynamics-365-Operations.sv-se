@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357652"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423607"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Inventory Visibility
 
@@ -41,6 +41,8 @@ I följande tabell finns de API:er som är tillgängliga i nuläget:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Bokför | [Ställ in/åsidosätta lagerbehållning](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Bokför | [Skapa en reservationshändelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Bokför | [Skapa flera reservationshändelser](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Bokför | [Återför en reservationshändelse](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Bokför | [Återför flera reservationshändelser](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Bokför | [Skapa en schemalagd engångs-ändring](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Bokför | [Skapa flera schemalagda engångs-ändringar](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Bokför | [Fråga genom att använda inläggsmetoden](#query-with-post-method) |
@@ -56,7 +58,7 @@ I följande tabell finns de API:er som är tillgängliga i nuläget:
 > 
 > Bulk-API:t kan returnera maximalt 512 poster för varje begäran.
 
-Microsoft har tillhandahållit en färdig *brevbärar*-begärandesamling. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
+Microsoft har tillhandahållit en färdig *brevbärar*-begärandesamling. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Hitta slutpunkten enligt Lifecycle Services-miljön
 
@@ -146,7 +148,7 @@ Gör så här om du vill hämta en säkerhetstjänsttoken:
    - **HTTP-sidhuvud:** Inkludera API-versionen. (Nyckeln är `Api-Version`, och värdet är `1.0`.)
    - **Brödtext:** - Inkludera den JSON-begäran som du skapade i det föregående steget.
 
-   Du bör få en åtkomsttoken (`access_token`) som svar. Du måste använda denna token som en ägartoken för att anropa API för lagersynlighet. Här är ett exempel:
+   Du bör få en åtkomsttoken (`access_token`) som svar. Du måste använda denna token som en ägartoken för att anropa API för lagersynlighet. Här följer ett exempel.
 
    ```json
    {
@@ -168,9 +170,9 @@ Det finns två API:er för att skapa ändringshändelser för behållning:
 
 I tabellen nedan sammanfattas vilket betydelse de olika fälten har i JSON-brödtexten.
 
-| Fält-ID | beskrivning |
+| Fält-ID | Beskrivning |
 |---|---|
-| `id` | Ett unikt ID för den specifika ändringshändelsen. Detta ID används för att säkerställa att om en kommunikation med tjänsten misslyckas under bokföringen, kommer händelsen inte att räknas två gånger i systemet om den skickas på nytt. |
+| `id` | Ett unikt ID för den specifika ändringshändelsen. Om en ny inlämning inträffar på grund av ett tjänstefel, används detta ID för att säkerställa att samma händelse inte räknas två gånger i systemet. |
 | `organizationId` | Identifierare för den organisation som är kopplad till händelsen. Detta värde mappas till en organisation eller dataområdes-ID i Supply Chain Management. |
 | `productId` | Identifieraren för produkten. |
 | `quantities` | Kvantiteten som lagerbehållningen måste ändras med. Om till exempel 10 nya böcker läggs till på en hylla blir detta värde `quantities:{ shelf:{ received: 10 }}`. Om tre böcker tas bort från hyllan eller säljs kommer detta värde att bli `quantities:{ shelf:{ sold: 3 }}`. |
@@ -178,7 +180,7 @@ I tabellen nedan sammanfattas vilket betydelse de olika fälten har i JSON-bröd
 | `dimensions` | Ett dynamiskt nyckel/värde-par. Värdena mappas till några av dimensionerna i Supply Chain Management. Du kan emellertid även lägga till anpassade dimensioner (till exempel _Källa_) för att ange om händelsen kommer från Supply Chain Management eller ett externt system. |
 
 > [!NOTE]
-> Parametrarna `SiteId` och `LocationId` skapar [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration). Därför måste du ange dem i dimensioner när du skapar händelser för lagerbehållningsändring, konfigurerar eller åsidosätter lagerbehållningskvantiteter eller skapar reservationshändelser.
+> Parametrarna `siteId` och `locationId` skapar [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration). Därför måste du ange dem i dimensioner när du skapar händelser för lagerbehållningsändring, konfigurerar eller åsidosätter lagerbehållningskvantiteter eller skapar reservationshändelser.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Skapa en ändringshändelse för behållning
 
@@ -216,14 +218,14 @@ Följande exempel visar brödtext. I det här exemplet bokför du en ändringsh�
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
+    "organizationId": "SCM_IV",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "PosMachineId": "0001",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "posMachineId": "0001",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -238,12 +240,12 @@ Följande exempel visar brödtext utan `dimensionDataSource`. I detta fall är `
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -293,13 +295,13 @@ Följande exempel visar brödtext.
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_1",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId&quot;: &quot;0001"
+            "posSiteId": "posSite1",
+            "posLocationId": "posLocation1",
+            "posMachineId&quot;: &quot;0001"
         },
         "quantities": {
             "pos": { "inbound": 1 }
@@ -307,12 +309,12 @@ Följande exempel visar brödtext.
     },
     {
         "id": "654321",
-        "organizationId": "usmf",
-        "productId": "Pants",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_2",
         "dimensions": {
-            "SiteId": "1",
-            "LocationId": "11",
-            "ColorId&quot;: &quot;black"
+            "siteId": "iv_postman_site",
+            "locationId": "iv_postman_location",
+            "colorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -362,13 +364,13 @@ Följande exempel visar brödtext. Beteendet för detta API skiljer sig från be
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
+        "organizationId": "SCM_IV",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-             "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId": "0001"
+            "posSiteId": "iv_postman_site",
+            "posLocationId": "iv_postman_location",
+            "posMachineId": "0001"
         },
         "quantities": {
             "pos": {
@@ -389,7 +391,7 @@ Det går att göra en reservation mot olika datakällsinställningar. Om du vill
 
 När du anropar reservations-API:t kan du kontrollera reservationsvalideringen genom att ange den booleska parametern `ifCheckAvailForReserv` i begärandetexten. Ett värde `True` betyder att valideringen krävs, medan ett värde av `False` betyder att valideringen inte krävs. Standardvärdet är `True`.
 
-Om du vill annullera en reservation eller ta bort reservationen av angivna lagerkvantiteter ställer du in kvantiteten på ett negativt värde och konfigurerar parametern `ifCheckAvailForReserv` på `False` för att hoppa över valideringen.
+Om du vill annullerar en reservation eller ta bort reservationen av angivna lagerkvantiteter ställer du in kvantiteten på ett negativt värde och konfigurerar parametern `ifCheckAvailForReserv` på `False` för att hoppa över valideringen. Det finns också en dedikerad API för att göra samma sak. Skillnaden skiljer sig bara mellan de två API:erna. Det är enklare att återföra en viss reservationshändelse genom att använda `reservationId` med *utan reservation* API. Mer information finns i avsnittet [_Avboka en reservationshändelse_](#reverse-reservation-events).
 
 ```txt
 Path:
@@ -427,24 +429,36 @@ Följande exempel visar brödtext.
 ```json
 {
     "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "quantity": 1,
     "quantityDataSource": "iv",
-    "modifier": "softreservordered",
+    "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId&quot;: &quot;Small"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red",
+        "sizeId&quot;: &quot;small"
     }
 }
 ```
 
+Följande exempel visar ett lyckat svar.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a><a name="create-multiple-reservation-events"></a>Skapa flera reservationshändelser
 
-Detta API är en bulkversion av [API:t för en enskild händelse](#create-one-reservation-event).
+Detta API är en bulkversion av [API:t för en enskild händelse](#create-reservation-events).
 
 ```txt
 Path:
@@ -480,9 +494,107 @@ Body:
     ]
 ```
 
+## <a name="reverse-reservation-events"></a>Återför en reservationshändelser
+
+*Avboka* API fungerar som den omvända åtgärden för händelser [*Reservation*](#create-reservation-events). Det är ett sätt att återföra en reservationshändelse som anges av `reservationId` eller minska reservationskvantiteten.
+
+### <a name="reverse-one-reservation-event"></a><a name="reverse-one-reservation-event"></a>Återför en reservationshändelse
+
+När en reservation skapas inkluderas `reservationId` kommer att ingå i svarsinstansen. Du måste ange samma för `reservationId` att annullera reservationen, och inkludera samma `organizationId` och `dimensions` använda för reservations-API-anropet. Slutligen anger du ett `OffsetQty` värde som representerar antalet artiklar som ska frigöras från den tidigare reservationen. En reservation kan antingen återföras helt eller delvis beroende på vilken information som angetts `OffsetQty`. Om till exempel *100* enheter av artiklar reserverats kan du ange `OffsetQty: 10` avreservera *10* av det ursprungliga reserverade beloppet.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+Följande kod visar ett exempel på brödtext.
+
+```json
+{
+    "id": "unreserve-0",
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId&quot;: &quot;small"
+    },
+    "OffsetQty": 1
+}
+```
+
+Följande kod visar ett exempel på en framgångsrik svarsinstans.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> Svarstexten, när den `OffsetQty`är mindre än eller lika med reservationskvantiteten, `processingStatus` blir "*lyckad*" och `totalInvalidOffsetQtyByReservId` blir *0*.
+>
+> Om `OffsetQty` är större än reserverat belopp `processingStatus` blir "*partialSuccess*" och `totalInvalidOffsetQtyByReservId` kommer skillnaden mellan `OffsetQty` och det reserverade beloppet.
+>
+>Om reservationen till exempel har kvantiteten *10* och `OffsetQty` värdet *12* är den `totalInvalidOffsetQtyByReservId` bli *2*.
+
+### <a name="reverse-multiple-reservation-events"></a><a name="reverse-multiple-reservation-events"></a>Återför flera reservationshändelser
+
+Detta API är en bulkversion av [API:t för en enskild händelse](#reverse-one-reservation-event).
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
+        ...
+    ]
+```
+
 ## <a name="query-on-hand"></a>Behållningsfråga
 
-Använd _Behållningsfråga_ för att hämta aktuella lagerbehållningsdata för dina produkter. API stöder för närvarande frågor upp till 100 enskilda artiklar efter `ProductID` värde. Flera `SiteID` och `LocationID` värden kan också anges i varje fråga. Maxgränsen definieras som `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+Använd *Behållningsfråga* för att hämta aktuella lagerbehållningsdata för dina produkter. API stöder för närvarande frågor upp till 5000 enskilda artiklar efter `productID` värde. Flera `siteID` och `locationID` värden kan också anges i varje fråga. Maxgränsen definieras i följande formel:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Fråga genom att använda inläggsmetoden
 
@@ -517,7 +629,7 @@ I brödtexten i denna begäran är `dimensionDataSource` fortfarande en valfri p
 - `productId` kan innehålla ett eller flera värden. Om det är en tom matris kommer alla produkter att returneras.
 - `siteId` och `locationId` används för partitionering i Lagersynlighet. Du kan ange mer än ett `siteId` och `locationId` värde i en förfrågan *Behållningsfråga*. I den aktuella versionen måste du ange både `siteId` och `locationId` värden.
 
-Parametern `groupByValues` bör följa din konfiguration för indexering. Mer information finns i [Hierarkikonfiguration för produktindex](./inventory-visibility-configuration.md#index-configuration).
+Vi föreslår att du använder parametern `groupByValues` bör följa din konfiguration för indexering. Mer information finns i [Hierarkikonfiguration för produktindex](./inventory-visibility-configuration.md#index-configuration).
 
 Parametern `returnNegative` styr om resultatet innehåller negativa poster.
 
@@ -530,13 +642,13 @@ Följande exempel visar brödtext.
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "siteId": ["1"],
-        "LocationId": ["11"],
-        "ColorId": ["Red"]
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
+        "colorId": ["red"]
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -546,12 +658,12 @@ Följande exempel visar hur du frågar efter alla produkter på en viss webbplat
 ```json
 {
     "filters": {
-        "organizationId": ["usmf"],
+        "organizationId": ["SCM_IV"],
         "productId": [],
-        "siteId": ["1"],
-        "LocationId": ["11"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -577,7 +689,7 @@ Query(Url Parameters):
 Här är ett exempel på URL-adressen. Denna hämtbegäran är exakt densamma som bokföringsexemplet som angavs tidigare.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="available-to-promise"></a>Disponibelt att lova

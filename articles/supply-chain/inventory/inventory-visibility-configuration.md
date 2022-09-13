@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306331"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423580"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera Inventory Visibility
 
@@ -303,13 +303,13 @@ Lösningen innehåller som standard den här partitionskonfigurationen. Därför
 
 För det mesta kommer lagerbehållningsfrågan inte bara att vara på den högsta "total"-nivån. Istället kanske du också vill visa resultat som sammanställts baserat på lagerdimensionerna.
 
-Lagersynlighet ger större flexibilitet eftersom du då kan konfigurerar _index_. Dessa index baseras på en dimension eller en kombination av dimensioner. Ett index består av ett *uppsättningsnummer*, en *dimension* och en *hierarki* enligt definionen i följande tabell.
+Lagersynlighet ger större flexibilitet eftersom du då kan konfigurerar _index_ för att förbättra prestandan för dina frågor. Dessa index baseras på en dimension eller en kombination av dimensioner. Ett index består av ett *uppsättningsnummer*, en *dimension* och en *hierarki* enligt definionen i följande tabell.
 
 | Namn | beskrivning |
 |---|---|
 | Ange nummer | Dimensioner som tillhör samma uppsättning (index) grupperas tillsammans, och samma uppsättningsnummer tilldelas dem. |
 | Dimension | De basdimensioner som frågeresultatet sammanställs på. |
-| Hierarki | Hierarkin används för att definiera de dimensionskombinationer som kan efterfrågas. Du kan till exempel konfigurera en dimensionsuppsättning som har en hierarkisekvens bestående av `(ColorId, SizeId, StyleId)`. I detta fall stöder systemet frågor i fyra dimensionskombinationer. Den första kombinationen är tom, den andra är `(ColorId)`, den tredje är `(ColorId, SizeId)`, och den fjärde är `(ColorId, SizeId, StyleId)`. Övriga kombinationer stöds inte. Mer information finns i följande exempel. |
+| Hierarki | Med hierarkin kan du öka prestandan för specifika dimensionskombinationer när du används i filter och frågeparametrar grupp för. Om du till exempel ställer in en dimensionsuppsättning med hierarkisekvensen `(ColorId, SizeId, StyleId)`, kan frågor som är relaterade till fyra dimensionskombinationer bearbetas snabbare i systemet. Den första kombinationen är tom, den andra är `(ColorId)`, den tredje är `(ColorId, SizeId)`, och den fjärde är `(ColorId, SizeId, StyleId)`. Andra kombinationer spedlar inte upp. Filter begränsas inte per order, utan måste finnas inuti dessa dimensioner om du vill förbättra deras prestanda. Mer information finns i följande exempel. |
 
 Följ dessa steg för att konfigurera ditt index för produkthierarki.
 
@@ -319,14 +319,13 @@ Följ dessa steg för att konfigurera ditt index för produkthierarki.
 1. En lista över index finns som standard. Om du vill ändra ett befintligt index väljer du **Redigera** eller **Lägg till** i avsnittet för relevant index. Välj **Ny indexuppsättning** om du vill skapa en ny indexuppsättning. I fältet **Dimension** väljer du i listan över basdimensioner för respektive rad i respektive indexuppsättning. Värden för följande fält genereras automatiskt:
 
     - **Ange nummer** – Dimensioner som tillhör samma grupp (index) grupperas tillsammans och samma uppsättningsnummer tilldelas dem.
-    - **Hierarki** – Hierarkin används för att definiera de dimensionskombinationer som stöds och som kan efterfrågas i en dimensionsgrupp (index). Om du till exempel konfigurerar en dimensionsgrupp med hierarkisekvsekvensen *Format*, *Färg* och *Storlek* stöder systemet resultatet av tre frågegrupper. Den första gruppen gäller endast formatet. Den andra gruppen är en kombination av format och färg. Den tredje gruppen är en kombination av format, färg och storlek. Övriga kombinationer stöds inte.
+    - **Hierarki** – Med hierarkin kan du öka prestandan för specifika dimensionskombinationer när du används i filter och frågeparametrar grupp för.
 
 > [!TIP]
 > Nedan finns några tips att tänka på när du konfigurerar din indexhierarki:
 >
 > - Basdimensioner som definieras i partitionskonfigurationen ska inte definieras i indexkonfigurationer. Om en basdimension definieras igen i indexkonfigurationen kommer du inte att kunna fråga efter detta index.
 > - Om du bara behöver fråga lager som aggregeras av alla dimensionskombinationer bör du konfigurera ett enda index som innehåller basdimensionen `Empty`.
-> - Du måste ha minst en indexhierarki (som exempelvis innehåller basdimensionen `Empty`), annars misslyckas frågorna med felet "Ingen indexhierarki har ställts in."
 
 ### <a name="example"></a>Exempel
 

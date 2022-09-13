@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334788"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403721"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.28 augusti 2022
 
@@ -50,7 +50,7 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 | Hantering av lager och lagerstyrning | (Indien) Ignorera plats för överföringsprisregler när ”Från lagerställekod” är inställt på ”Alla” | <p>Den här funktionen gäller endast för platser i Indien. Det underlättar inställningen av överföringspriser för artiklar i lageröverföringar.</p><p>Du konfigurerar överföringspriser genom att konfigurera varje artikel med överföringsprisersregler. Ett sätt att göra den här konfigurationen är att inkludera en regelrad där fältet **Från lagerställekod** är inställt på *Alla*. Inställningen visar att överföringspriset som definieras av raden ska gälla oavsett vilket lagerställe artikeln plockas från. När den här funktionen är aktiverad ignoreras inställningen fält **Från lagerställekod** anges till *Alla* ignorerar inställning **Plats**. Därför gäller regeln oavsett vilken plats som angetts på överföringsordern. Det här beteendet förväntades troligen eftersom platsen ligger under lagerstället i lagerställedimensionshierarkin.</p><p>Om den här funktionen inte används används bara regler av den här typen när platsen för överföringsordern exakt matchar platsen som ställts in för regeln. (Om en tom plats har angetts för regeln använder systemet regeln endast för överföringsorder som även har ett tomt värde för platsen.)</p> |
 | Hantering av lager och lagerstyrning | Rensning av data i lagerbehållningsrapport | Den här funktionen ger ett sätt att rensa upp data som används för att skapa rapporter *Lagring av lagerbehållningsrapport*. |
 | Produktionskontroll | Tilldela projektaktiviteter för serviceavtal och serviceorderrader | Med den här funktionen läggs ett fält med namnet **Projektaktivitet** till serviceavtal och serviceorderrader, så att du kan konfigurera en projektaktivitet för dem. Funktionen hjälper till att förhindra spärrfel när du bokför projektjournaler för tjänstehantering som kräver att en projektaktivitet ställs in.  |
-| Warehouse management | Manuell plockningstjänst för överföringsrad för admin eller liknande betrodda användare | Med den här funktionen kan administratörer plocka lagertransaktioner manuellt som hör till överföringsrader. Dessa rader inkluderar rader som redan har släppts till lagret. Administratörer bör endast välja detta i sällsynta fall, till exempel när systemet är i ett skadade tillstånd. |
+| Warehouse management | Manuell plockningstjänst för överföringsrad för admin eller liknande betrodda användare | Med den här funktionen kan administratörer plocka lagertransaktioner manuellt som hör till överföringsrader. Dessa rader inkluderar rader som redan har släppts till lagret. Administratörer bör endast välja detta i sällsynta fall, till exempel när systemet är i ett skadade tillstånd. För mer information, se [Hantera undantag för försäljning och överföring av radplock manuellt](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 

@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a4a36d773e0790747c017dca35492af5caf410ab
+ms.sourcegitcommit: 61be5f43c9678e9f12b4a90410876b4a179ac585
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357669"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427087"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Initiera Commerce Scale Unit (moln)
 
@@ -73,8 +73,6 @@ Commerce Scale Unit är tillgängligt för distribution i följande regioner.
 | EMEA            | Nordeuropa        | Allmänt tillgängligt    |  Inga kommentarer. |
 | EMEA            | Storbritannien, södra            | Allmänt tillgängligt |    Inga kommentarer.                          |
 | EMEA            | Storbritannien, västra             | Allmänt tillgängligt |    Inga kommentarer.                          |
-| Schweiz     | Schweiz, norra   | Begränsad kapacitet    | Kräver godkännandeprocess. |
-| UAE             | Förenade Arabemiraten, norra           | Begränsad kapacitet    | Kräver godkännandeprocess. |
 
 Distributionskapaciteten i regioner med begränsad kapacitet är ytterst begränsad. Begäran om distribution utvärderas från fall till fall. Om du har ett tvingande affärsbehov av distribution i regioner med begränsad kapacitet kan du göra en supportbegäran och lägga till den i väntelistan. Kapacitetsbegränsade områden för närvarande tillåter för närvarande inte distribution av Commerce Scale Unit. 
 

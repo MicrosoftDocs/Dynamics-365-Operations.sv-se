@@ -2,7 +2,7 @@
 title: Använd lagerinställningar
 description: Denna artikel behandlar lagerinställningar och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: ''
-ms.openlocfilehash: bc55715b7c74f3b572459dd1aa7d409b7175535b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49310a44f8b9c636734e04d4eed9445384b55791
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287603"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405331"
 ---
 # <a name="apply-inventory-settings"></a>Använd lagerinställningar
 
@@ -51,12 +51,12 @@ I Commerce, lagerinställningar definieras på **Platsinställningar \> Tillägg
     > [!IMPORTANT] 
     > Inställningen **Lagernivån för flera lagerställen** är tillgänglig i version 10.0.19 av Commerce. Om du uppdaterar från en äldre version av Commerce måste du uppdatera filen appsettings.json manuellt. För instruktioner, se [SDK- och modulbiblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Lagerinställningar för produktlistesidor** – Den här inställningen definierar hur produkter som inte finns i lager visas i produktlistor som visas genom produktsamling och moduler för sökresultat. De tillgängliga värdena är **Visa i ordning med andra produkter**, **Dölj produkter som är slut på lager från listan** och **Visa produkter som är slut på lager i slutet av listan**. Om du vill använda den här inställningen måste du först konfigurera vissa nödvändiga inställningar i Commerce headquarters. Mer information finns i [Aktivera kunskap om lager för modulen sökresultat](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+- **Lagerinställningar för produktlistesidor** – Den här inställningen definierar hur produkter som inte finns i lager visas i produktlistor som visas genom produktsamling och moduler för sökresultat. De tillgängliga värdena är **Visa i ordning med andra produkter**, **Dölj produkter som är slut på lager från listan** och **Visa produkter som är slut på lager i slutet av listan**. Om du vill använda den här inställningen måste du först konfigurera vissa nödvändiga inställningar i Commerce headquarters. Mer information finns i [Lagermedveten produktlistning](inventory-aware-product-listing.md).
 
     > [!IMPORTANT] 
     > Inställningen **Lagerinställningar för produktlistesidor** är tillgänglig i version 10.0.20 av Commerce. Om du uppdaterar från en äldre version av Commerce måste du uppdatera filen appsettings.json manuellt. För instruktioner, se [SDK- och modulbiblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Lagerområden** – med den här inställningen definieras de lagerintervall som meddelandet visas för i moduler. Den gäller bara om antingen värdet **totala tillgängliga** eller det **fysiska tillgängliga värdet** har valts för inställning **lagernivån baserat på**. De tillgängliga värdena är **alla**, **låg och ur lagret** och inte **på lagret**.
+- **Lagerområden** – Den här inställningen definierar inventering intervallsmeddelandena som visas på platsmoduler. Den gäller bara om antingen värdet **totala tillgängliga** eller det **fysiska tillgängliga värdet** har valts för inställning **lagernivån baserat på**. De tillgängliga värdena är **alla**, **låg och ur lagret** och inte **på lagret**.
 
     - När **alla** är markerat visas meddelanden för alla lagerområden, från lagret ("tillgängligt") i brist på lager ("tillgängligt").
     - När **låg och inte i lager** är markerat visas meddelanden för alla lagerområden förutom från lagret ("tillgängligt").

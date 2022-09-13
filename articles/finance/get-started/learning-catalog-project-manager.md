@@ -1,23 +1,23 @@
 ---
 title: Utbildningskatalog för projektledare för implementering som arbetar med Dynamics 365 Finance
 description: Hitta alla utbildningsalternativ för personer som arbetar som projektledare för implementering med Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b4c0a108c581eafee45fa3ab31d532d3acc7ed2
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9f75a7f6fad3fb8a204c579083b9ffaca46e7592
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067663"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424554"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Utbildningskatalog för projektledare för implementering som arbetar med Dynamics 365 Finance
 
@@ -27,9 +27,8 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
-| Innehåll | beskrivning  | Format  | Längd    |
+| Innehåll | Beskrivning  | Format  | Längd    |
 |-------------|-----------------|-------------|------------|
-| [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 7 timmar |
 | [Dynamics 365 och Power Platform grunder](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar |
 | [Kom igång med appar för ekonomi och drift](/learn/paths/get-started-finance-operations/) | Lär dig hur appar för ekonomi och drift ger stöd till företag för att hantera deras globala finanssystem, operativa affärsprocesser och effektiviserade leveranskedjor i syfte att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med appar för ekonomi och drift är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill inneha. | Gratis, självstudier online utbildningsväg | 2 timmar |
 | [Innan du köper](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Se steg-för-steg-guiden kring om du fortfarande utvärderar Ekonomi och drift eller är redo att göra ett inköp. | Dokumentation | |
@@ -58,13 +57,8 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [ekonomi och drift: Regression Suite Automation Tool -- Bakgrund och inställningar (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Det här är den första av en serie med två delar i RSAT (Regression Suite Automation Tool). I den här sessionen får vi veta hur vi håller jämna steg med regelbundna uppdateringar som använder automatiska tester med hjälp av RSAT. Du får lära känna och rekommendationer om hur du skapar uppgiftsregistreringar och kör tester med RSAT, tillsammans med en steg-för-steg-beskrivning av installationen och konfigurationen. | Tekniksnack (registrerat webbseminarie) | 70 minuter |
 | [Ekonomi och drift: Regression Suite Automation Tool -- Testa Lifecycle Demo (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Det här är den andra av en serie med två delar i RSAT (Regression Suite Automation Tool). Den här sessionen omfattar en demo av hela cykeln där du skapar och sparar uppgiftsinspelningar från Ekonomi och drift till BPM-biblioteket i LCS, vilket synkroniserar BPM-biblioteket för att skapa testfall i Azure DevOps, grupperar testfallen i testpaket och läser in och kör testpaket i RSAT. | Tekniksnack (registrerat webbseminarie) | 70 minuter |
 | [Prestandatestmetod (DYN449PAL2)](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) | Var med när du pratar om hur du ska testaprestandatestningen. Lär dig mer om grunderna, metodtips för testning, tillgängliga verktyg och tekniker för att köra tester och mäta prestanda samt hur du använder resultaten för optimering. | Tekniksnack (registrerat webbseminarie) | 45 minuter |
-| [Så här uppgraderar du till 7.2 (juli 2017) från 7.0 (RTW)/7.1 (Frisläpp 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | I den här sessionen får du veta hur du uppgraderar från appen Dynamics 365 Ekonomi och drift v7.0 (RTW) och v7.1 (1611) till v7.2 (juli 2017). Vi gör en tydlig skillnad mellan publicerade kunder och pågående projekt (inte bor ännu). | Tekniksnack (registrerat webbseminarie) | 58 minuter |
-| [Appar för ekonomi och drift: Uppgradera från 7.x till 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Delta i vårt nästa tekniksnack, då vi ska gå igenom uppgraderingsprocessen från 7.X till 8.X. Vi kommer att diskutera olika scenarier och steg för att utföra kod- och datauppgradering. Vi kommer också att avhandla scenarier för utökningsförfrågningar och hur du tar upp dem när så är lämpligt. Del 1 av 2. | Tekniksnack (registrerat webbseminarie) | 61 minuter |
-| [Uppgradering AX2012 till appar för ekonomi och drift (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Den här tekniksnack innehåller en översikt över hur du uppgraderar kod och data från Dynamics AX 2012 till Dynamics 365 for Operations. | Tekniksnack (registrerat webbseminarie) | 45 minuter |
+| [AX2012 till appar för ekonomi och drift, uppgradera – 3 september 2020](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | Detta tekniksnack innehåller en översikt över hur du uppgraderar kod och data från Dynamics AX 2012 till appar för ekonomi och drift. | Tekniksnack (registrerat webbseminarie) | 66 minuter |
 | [Alternativ för analys och rapporter, utskrift och Dokumentflödesagenten](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Var med om den här tekniksnack om två relaterade ämnen. Vi ska börja med att diskutera lösningsmönster och verktyg för analys och rapportering för Dynamics 365 Finance, Enterprise Edition. För det andra kommer vi att diskutera utskriftsscenarier och Document Routing Agent. | Tekniksnack (registrerat webbseminarie) | 45 minuter |
-| [Kurs MB-300T01-A: Grundläggande funktioner i Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Den här kursen handlar om de viktigaste gemensamma funktionerna i Microsoft Dynamics 365 Finance. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
-| [Kurs MB-300T02-A: Grundläggande konfiguration i Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | I den här kursen diskuteras viktiga konfigurationsuppgifter för Microsoft Dynamics 365 Finance. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
-| [Kurs MB-300T03-A: Datamigrering och förberedelser inför publicering med Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | I den här kursen diskuterar vi datamigrering och förberedelser inför publicering för Microsoft Dynamics 365 Finance. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
 | [Lifecycle-startsida för implementering](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | I dessa ämnen beskrivs tillgängliga program, verktyg och processer som är relaterade till implementeringens livscykel för dina Microsoft Dynamics 365 Finance-projekt. | Dokumentation | |
 
 ## <a name="financial-management"></a>Ekonomistyrning<a name="financial-management"></a>
@@ -81,13 +75,10 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Konfigurera Dynamics 365 Finance för offentlig sektor](/learn/modules/configure-public-sector-dyn365-finance/) | Med Dynamics 365 Finance går det att använda affärsprocesser som är gemensamma för offentligt och privat sektor, som budgetering, inköp, leverantörsreskontra och kundreskontra. Med funktionen Offentlig sektor blir det enklare att följa reglerna, förordningarna och rapporteringskraven för organisationer som arbetar för offentlig sektor. | Kostnads fri online-modul i egen takt | 1 timma |
 | [Ekonomisk rapportering (DYN305PAL)](https://community.dynamics.com/365/b/techtalks/posts/financial-reporting-april-25-2017) | I det här tekniksnacket behandlas inställning av ekonomisk rapportering och rapportlistor i Dynamics 365 for Operations. Sessionen kommer också att omfatta återställning till datamart i UAT-miljön och felsökning och sökning efter snabbkorrigering, med hjälp av LCS. | Fri registrering av en webbkonferens | 57 minuter |
 | [ekonomi och drift: Brittisk digital moms – momsdeklaration i Dynamics 365 for Finance and Operations (DYN599PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) | Under den här sessionen pratar vi om den nya insändningsprocessen som infördes av HMRC i Storbritannien för momsdeklarationer. Vi förklarar hur du konfigurerar momsdeklaration och ställer in elektroniska meddelanden i Dynamics 365 Finance. Vi kommer att demonstrera insändningsprocessen för HMRC-programmet i en sandbox-miljö. Denna session är särskilt relevant för konsulter som implementerar funktionen och som tillhandahåller utbildning för användarna. | Fri registrering av en webbkonferens | 63 minuter |
-| [Kurs MB-310T01-A: Konfigurera och använd grundläggande komponenter för ekonomisk hantering i Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-310T01) | Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera dem genom att skriva av dem och ställa in en kapitaliseringströskel. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 2 dagar |
-| [Kurs MB-310T02-A: Konfigurera och använda leverantörsreskontra, kundreskontra och inkassering i Ekonomi och drift](https://www.microsoft.com/learning/course.aspx?cid=MB-310T02) | Kostnadsredovisning låter dig samla in data från olika källor, till exempel huvudbok, delredovisningar, budgetar och statistisk information. Du kan sedan analysera, summera och utvärdera kostnadsdata, så att ledningen kan ta bästa möjliga beslut när det gäller prisuppdateringar, budgetar, kostnadskontroll, osv. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
-| [Kurs MB-310T03-A: Konfigurera och använda budgetering, anläggningstillgångar och ytterligare funktioner i Ekonomi och drift](https://www.microsoft.com/learning/course.aspx?cid=MB-310T03) | Du kan slutföra stängningsprocedurerna för en period eller ett år. Stängningsprocesser förbereder systemet för en ny period. Lär dig hur du förbereder, konfigurerar och utför periodiska processer i Dynamics 365 Finance. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
 
 ## <a name="exams"></a>Prov<a name="exams"></a>
 
-| Innehåll | beskrivning | Format |
+| Innehåll | Beskrivning | Format |
 |---|---|---|
 | [Examen MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denna examen mäter din förmåga att utföra följande tekniska uppgifter: Använd vanliga funktioner och implementeringsverktyg. Konfigurera säkerhet, processer och alternativ; utföra datamigrering och validera och stödja lösningen. | Prov; kostnaden varierar beroende på region |
 | [Examen MB-310: Microsoft Dynamics 365 Finance, Financials](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denna examen mäter förmågan att genomföra följande tekniska uppgifter: ställa in och konfigurera ekonomihantering; hantera och tillämpa gemensamma processer, implementera och hantera leverantörsreskontra och kundfordringar och hantera budgetering och anläggningstillgångar. | Prov; kostnaden varierar beroende på region |

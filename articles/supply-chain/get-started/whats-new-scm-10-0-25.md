@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219107"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403714"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.25 april 2022)
 
@@ -161,7 +161,7 @@ Tabellen visar även funktioner som tidigare var offentliga, men som har ändrat
 | Lagerstyrning | [Placering för plats-ID-nummer](../warehousing/location-license-plate-positioning.md) | Obligatoriskt |
 | Lagerstyrning | [Blandning av produktstorlekar på plats](../warehousing/location-product-dimension-mixing.md) | Obligatoriskt |
 | Lagerstyrning | Gör fältet med lagerstatus för mobilenhetslagerrörelse redigerbart | Obligatoriskt |
-| Lagerstyrning | Manuell plockningstjänst för försäljningsrad för admin eller liknande betrodda användare | Obligatoriskt |
+| Lagerstyrning | [Manuell plockningstjänst för försäljningsrad för admin eller liknande betrodda användare](../warehousing/manual-order-line-picking-exception-handling.md) | Obligatoriskt |
 | Lagerstyrning | [Förhindra att levererade ID-nummer för överföringsorder används på i andra distributionslager än måldistributionslagret](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Obligatoriskt |
 | Lagerstyrning | Prompt för att lösa tvetydiga plats/ID-nummernamn | Obligatoriskt |
 | Lagerstyrning | [Kvalitetskontroll](../warehousing/quality-check.md) | Obligatoriskt |

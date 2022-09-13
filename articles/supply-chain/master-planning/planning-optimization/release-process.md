@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 45a35eb32cb9e51d9f63f6687808fb511f894887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873736"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403728"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frisläppningsprocess och frisläppningshistorik för Planeringsoptimering
 
@@ -33,6 +33,7 @@ Eftersom meddelanden inte visas när Planeringsoptimering uppdateras i din milj�
 
 | Ändringar | Information om funktionshantering | Frisläppningsdatum |
 |---|---|---|
+| <p>Allmän prestanda, kvalitet och förbättringar i effektivitet. | Ingen funktionshantering krävs. | 29 augusti – 3 september 2022 |
 | <p>Allmän prestanda, kvalitet och förbättringar i effektivitet.<p>[Centralunderhåll för Planeringsoptimering](../supply-chain-calendars-master-planning.md)<p>[Förslag till Planeringsoptimering för att optimera befintligt leverans](../action-messages.md)<p>[Planering Optimeringsstöd för underleverantörer](../../production-control/manage-subcontract-work-production.md) | Ingen funktionshantering krävs. | 7-11 mars 2022 |
 | <p>Tillagt stöd för planeringsprioritet för tillverkningsorder. | Tillgänglig med version 10.0.25 som en del av funktionen med namnet *Prioriterad MRP-stöd för Planeringsoptimering*. | November 12-18, 2021 |
 | <p>Allmän prestanda, kvalitet och förbättringar i effektivitet. | Ingen funktionshantering krävs. | November 12-18, 2021 |

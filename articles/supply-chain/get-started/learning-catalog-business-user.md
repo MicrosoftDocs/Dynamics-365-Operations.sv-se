@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d43b9b331a8a88ac1282acc33dabe7b71bca57b7
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 82420ad8dae12e4a47290599a5bbd0d15a7f3c29
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124309"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423865"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Utbildningskatalog för användare av Dynamics 365 Supply Chain Management
 
@@ -27,9 +27,8 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
-| Innehåll | beskrivning | Format | Längd |
+| Innehåll | Beskrivning | Format | Längd |
 |---------|-------------|--------|--------|
-| [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 8 timmar |
 | [Dynamics 365 och Power Platform grunder](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar |
 | [Kom igång med appar för ekonomi och drift](/learn/paths/get-started-finance-operations/) | Lär dig hur appar för ekonomi och drift ger stöd till företag för att hantera deras globala finanssystem, operativa affärsprocesser och effektiviserade leveranskedjor i syfte att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med appar för ekonomi och drift är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill inneha. | Gratis, självstudier online utbildningsväg | 2 timmar |
 | [Kom igång med Tillgångshantering för Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Tillgångshantering är en modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management. Tillgångshantering gör det möjligt för dig att effektivt hantera och utföra uppgifter som rör hantering och service av många typer av utrustning i ditt företag, till exempel maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer lösningar inom många branscher. | Gratis, självstudier online utbildningsmodul | 1 timma |
