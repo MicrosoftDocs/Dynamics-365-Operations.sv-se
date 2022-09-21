@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: f9095db85e38598ac03b4c77c3fa3be9f450ec02
-ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
+ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305238"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462368"
 ---
 # <a name="help-system"></a>Hjälpsystem
 
@@ -40,18 +40,18 @@ I samtliga dessa appar kommer du åt produktspecifik hjälp via panelen **Hjälp
 
 ![Hjälpfönster.](./media/help-pane-ops-help.png)
 
-## <a name="help-on-docsmicrosoftcom"></a>Hjälp om docs.microsoft.com
+## <a name="help-on-microsoft-docs"></a>Hjälp om Microsoft Docs
 
-Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365](/dynamics365/)) utgör standardkälla för produktdokumentation för tidigare angivna appar. Denna webbplatsen erbjuder följande funktioner:
+([Microsoft Dynamics 365 dokumentation](/dynamics365/)) på Microsoft Docs är standardkällan för produktdokumentation för de tidigare listade apparna. Denna webbplatsen erbjuder följande funktioner:
 
 - **Åtkomst till det senaste innehållet**– Webbplatsen ger Microsoft ett snabbare och mer flexibelt sätt att skapa, leverera och uppdatera produktdokumentation. Du får därmed enkel tillgång till den senaste konstruktionsinformationen.
 - **Innehåll som har skrivits av experter** – Innehållet på webbplatsen är öppet för bidrag från community-medlemmar både inom och utanför Microsoft.
 
-Du kan söka efter innehåll på docs.microsoft.com med hjälp av valfri sökmotor. För bästa resultat rekommenderar vi att du använder en webbplatssökning, exempelvis **site:docs.microsoft.com dynamics 365 "sökterm"**.
+Du kan söka efter innehåll på Microsoft Docs med hjälp av valfri sökmotor. För bästa resultat rekommenderar vi att du använder en webbplatssökning, exempelvis **site:docs.microsoft.com dynamics 365 "sökterm"**.
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få reda på ändringar via en RSS-feed
 
-För att prenumerera på ett RSS-flöde med alla uppdateringar som gjorts av innehållet på docs.microsoft.com i samtliga appar för ekonomi och drift använder du följande länk:
+För att prenumerera på ett RSS-flöde med alla uppdateringar som gjorts av innehållet på Microsoft teknisk dokumentation i samtliga appar för ekonomi och drift använder du följande länk:
 
 [RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -87,7 +87,7 @@ Du kan delta i och redigera den dokumentation. För att komma igång väljer du 
 
 Videon [Hur du bidrar till dokumentationen för Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) video (som visas ovan) ingår i kanalen Microsoft Dynamics 365 på YouTube.
 
-Mer information finns i [Dokumentguiden för medarbetare](/contribute), som publiceras av teamet som skapade docs.microsoft.com-webbplatsen.
+Mer information finns i [Microsoft dokumentguiden för medarbetare](/contribute), som publiceras av teamet som skapade Microsoft dokument-webbplatsen.
 
 > [!NOTE]
 > Vi godkänner endast bidrag till vår engelska hjälpdel just nu.
@@ -166,13 +166,13 @@ Du kan skapa hjälp för användarna genom att skapa en anpassad uppgiftsguide e
 
 I följande register visas våra webbplatser. Webbplatser som har en asterisk (\*) bredvid namnet kräver att du loggar in med ett konto som är kopplat till ett tjänsteavtal.
 
-| Site | beskrivning |
+| Webbplats | Beskrivning |
 |------|-------------|
-| [Docs.microsoft.com](/dynamics365/) | Denna webbplats är värd för eller länkar till all produktdokumentation för Dynamics 365. |
+| [Microsoft Dynamics 365 dokumentation](/dynamics365/) | Denna webbplats är värd för eller länkar till all produktdokumentation för Dynamics 365. |
 | [Microsoft Learn](/learn/) | Den här webbplatsen är den kostnadsfria Microsoft eLearning-webbplatsen. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Denna webbplats ger en molnbaserad samarbetsarbetsyta som kunder och deras partner kan använda för att hantera projekt från förförsäljning till genomförande och drift. Den är användbar för alla implementeringsfaser. |
 | [Supportblogg](https://aka.ms/AXSupportBlog) | Denna webbplats ger tips som har lagts in av supportteamet. |
-| [Docs.microsoft.com/tidigare versioner](/previous-versions/dynamics/) | Denna webbplats är värd för innehåll från tidigare versioner. |
+| [Tidigare versioner](/previous-versions/dynamics/) | Denna webbplats är värd för innehåll från tidigare versioner. |
 | [Dynamics Community](https://community.dynamics.com/) | Denna webbplats är värd för bloggar, forum och videor. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Denna webbplats ger information om utvärdering och försäljning. |
 
@@ -180,4 +180,3 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

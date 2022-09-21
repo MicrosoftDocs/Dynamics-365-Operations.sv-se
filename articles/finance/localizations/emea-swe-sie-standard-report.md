@@ -12,18 +12,18 @@ ms.search.region: Sweden
 ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 24f17208a6e5d0c3f1119222857a544c73e052db
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: e48fc81f2f62a4e852ffb948a8b5cb484e73f354
+ms.sourcegitcommit: 6b013a423ed91973d60a895330046db2a07d92c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9273786"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "9472670"
 ---
 # <a name="export-financial-information-for-auditors-in-sweden"></a>Exportera ekonomisk information för revisorer i Sverige
 
 [!include[banner](../includes/banner.md)]
 
-Du kan exportera ekonomiska data i de format som specificerats av SIE-gruppen, den organisation i Sverige som tar fram standardformat. Innan du exporterar data måste du ställa in en tresiffrig SRU-kod (Standardiserat räkenskapsutdrag) för varje redovisningskonto. 
+Du kan exportera ekonomiska data i de format som specificerats av SIE-gruppen, den organisation i Sverige som tar fram standardformat. Innan du exporterar data måste du ställa in en SRU-kod (Standardiserat räkenskapsutdrag) för varje redovisningskonto. 
 
 1. Gå till **Redovisning** > **Periodiska uppgifter** > **SIE-export**. 
 2. På sidan **Export till SIE-filen** kan du ange rapportdatum, budgetmodell och formatmappning (SIE-exportformatet (SE). 

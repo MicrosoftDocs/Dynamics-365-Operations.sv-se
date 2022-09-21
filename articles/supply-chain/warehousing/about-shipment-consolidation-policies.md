@@ -1,5 +1,5 @@
 ---
-title: Policyer för leveranskonsolidering
+title: Översikt över policyer för leveranskonsolidering
 description: Denna artikel ger en översikt över de funktioner som ger en flexibel konfiguration av policyer för leveranskonsolidering.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7113fc635a7c01e4b9cc44898daa3d2617058b6b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903910"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427939"
 ---
-# <a name="shipment-consolidation-policies"></a>Policyer för leveranskonsolidering
+# <a name="shipment-consolidation-policies-overview"></a>Översikt över policyer för leveranskonsolidering
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Innan policyer för leveranskonsolidering introducerades fanns konsolideringsfun
 
 Frågor används för att identifiera gällande policyer för leveranskonsolidering, varefter en redigerbar uppsättning fält avgör hur beläggningsraderna grupperas på leveransnivå. (Detta mönster påminner om vågmallarnas mönster.) Dessutom har alternativet **Konsolidera med befintliga leveranser** lagts till i varje enskild policy. När detta alternativ är aktiverat hittar proceduren *Frisläpp till lagerställe* utleveranser för konsolidering genom att söka bland befintliga leveranser som har skapats baserat på samma konsolideringspolicy. I det här fallet väljer systemet en befintlig leverans eller beläggning istället för att skapa en ny. Systemet kommer dock endast att konsolideras med befintliga leveranser som har statusen *Öppen*. Leveranser som tillhör en påfyllnadsversion med statusen *Frisläppt* eller högre betraktas inte som mål för konsolideringen.
 
-När en konsolideringspolicy för leverans görs tillgänglig döljs inställningen **Konsolidera leverans vid släpp till lagerställe** som tidigare var tillgänglig på inställningssidan **Lagerställen**. För att underlätta övergången till den nya funktionen för leveranskonsolidering kommer en funktion på sidan **Konsolideringspolicyer för leverans** att skapa en standardpolicy som automatiskt omfattar den gamla inställningen för befintliga lagerställen. När standardpolicyn har skapats kommer inställningen **Konsolidera leverans vid släpp till lagerställe** på konfigurationssidan för **Lagerställen** inte längre att beaktas.
+När funktionen *Policyer för leveranskonsolidering* aktiveras i ditt system, inställningen **Konsolidera leverans vid frisläppning till lagerställe** som tidigare fanns på inställningssidan **Lagerställen** är dold. För att underlätta övergången till den nya funktionen för leveranskonsolidering kommer en funktion på sidan **Konsolideringspolicyer för leverans** att skapa en standardpolicy som automatiskt omfattar den gamla inställningen för befintliga lagerställen. När standardpolicyn har skapats kommer inställningen **Konsolidera leverans vid släpp till lagerställe** på konfigurationssidan för **Lagerställen** inte längre att beaktas. Mer information finns i [Konfigurera policyer för leveranskonsolidering](configure-shipment-consolidation-policies.md).
 
 Du kan använda sidan **Släpp till lagerställe** om du vill åsidosätta den tillämpliga konsolideringspolicyn manuellt på samma sätt som du kan åsidosätta efterlevnadspolicyer.
 

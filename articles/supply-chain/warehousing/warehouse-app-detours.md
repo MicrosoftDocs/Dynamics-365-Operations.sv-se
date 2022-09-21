@@ -2,7 +2,7 @@
 title: Konfigurera omvägar för steg i menyalternativ för mobila enheter
 description: Denna artikel beskriver hur du konfigurerar omvägar för menyalternativ så att arbetare kan parkera den aktuella uppgiften, utföra en annan uppgift och sedan återgå till den ursprungliga uppgiften utan att förlora någon information.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.dyn365.ops.version: 10.0.30
+ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336138"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428074"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurera omvägar för steg i menyalternativ för mobila enheter
 
@@ -35,8 +35,11 @@ Innan du kan konfigurera omvägar för steg i menyalternativ för mobila enheter
 
 1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
 1. Se till att funktionen *Steginstruktioner för lagerställeapp* är aktiverad för systemet. Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard. Mer information om funktionen *Steginstruktioner för lagerställeapp* finns i [Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Den här funktionen är en förutsättning för funktionen *Omvägar för lagerstyrningsapp*.
-1. Aktivera funktionen *Omvägar för lagerstyrningsappen Warehouse Management*. Den här funktionen är en som beskrivs i denna artikel. Från och med version 10.0.29 av Supply Chain Management är denna aktiverad som standard.
-1. Om funktionen *Omvägar för appen Warehouse Management* inte redan var aktiverad, uppdatera fältnamnen i mobilappen Warehouse Management genom att gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Namnordning för lagerställeapp** och välja **Skapa standardinställningar**. Upprepa detta steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
+1. Aktivera följande funktioner, som innehåller de funktioner som beskrivs i den här artikeln:
+    - *Omvägar för lagerstyrningsappen Warehouse Management*<br>(Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard.)
+    - *Omvägar på flera nivåer för mobilappen Warehouse Management*
+1. Om funktionen *Omvägar för appen Warehouse Management* och/eller *Omvägar på flera nivåer för mobilappen Warehouse Management* inte redan var aktiverad, uppdatera fältnamnen i mobilappen Warehouse Management genom att gå till **Warehouse management \> Inställningar \> Mobil enhet \> Namnordning för lagerställeapp** och välj **Skapa standardinställningar**. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
+1. Upprepa föregående steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management.
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurera en omväg från en menyspecifik åsidosättning
 
@@ -147,3 +150,6 @@ I den här proceduren vill du göra en platsförfrågan genom att använda Wareh
 1. Observera att ID-numret har kopierats från kortet som du har valt. Bekräfta värdet.
 1. Du kan nu följa standarduppgiftsflödet för att utföra rörelsen. När arbetet är klart öppnar du åtgärdsmenyn och väljer **Avbryt**.
 1. Du går tillbaka till sidan **Platsförfrågan**. Observera att värdena inte uppdateras automatiskt. Därför måste du uppdatera sidan manuellt för att se ändringarna från förflyttningsvägen.
+
+> [!NOTE]
+> Med hjälp av funktionen *omvägar på flera nivåer i mobilapp Warehouse Management* kan du definiera omvägar på flera nivåer (omvägar inom omvägar), vilket innebär att medarbetare kan hoppa från en befintlig omleverans två en och sedan tillbaka igen. Funktionen har stöd för två nivåer av omvägar ut ur rutan och om det behövs kan du anpassa systemet till att stödja tre eller fler nivåer av omvägar genom att skapa kodtillägg i `WHSWorkUserSessionState` tabellen.

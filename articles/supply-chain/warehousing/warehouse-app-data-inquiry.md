@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 39677ebfb9babeb7246ece4d27ab1813435ca12e
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336618"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427859"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Fråga data med hjälp av omvägar Warehouse Management-mobilappen
 
@@ -268,6 +268,6 @@ Följ de här stegen när du vill testa de nya inställningarna för mobilapp.
     ![Inköpsmottagning med inköpsordersökning efter leverantör, exempel 2.](media/wma-purchase-receive-lookup-po-vendor-detours.png "Inköpsmottagning med inköpsordersökning efter leverantör, exempel 2")
 
 > [!TIP]
-> Istället för att köra mottagningsflödet genom att göra en uppslagning från menyalternativet **Ta emot inköp** du kan utgå från ett förfrågningsflöde (**Huvud \> Fråga \> Slå upp inköpsorder efter leverantör**) och anropa en omväg för att köra önskat flöde genom att välja ett av korten i listan. Om du vill använda det här sättet kan du definiera en omväg på sidan **Steg på mobil enhet** för de steg som har ett värde **Steg-ID** för *GenericDataInquiryList*. Eftersom detta flöde är ett omvägsflöde, kan du inte anropa fler omvägar från det. Därför, när du kommer till inmatningsskärmen för artikelnummer, till exempel, kommer uppslagningen inte att vara tillgänglig på den, eftersom systemet för närvarande bara stöder en nivå av omvägar.
+> Istället för att köra mottagningsflödet genom att göra en uppslagning från menyalternativet **Ta emot inköp** du kan utgå från ett förfrågningsflöde (**Huvud \> Fråga \> Slå upp inköpsorder efter leverantör**) och anropa en omväg för att köra önskat flöde genom att välja ett av korten i listan. Om du vill använda det här sättet kan du definiera en omväg på sidan **Steg på mobil enhet** för de steg som har ett värde **Steg-ID** för *GenericDataInquiryList*. Om funktionen [*Omvägar på flera nivåer för mobilappen Warehouse Management*](warehouse-app-detours.md) är aktiverad för ditt system, kan du även lägga till en extra omväg vid behov (denna funktion ger stöd för upp till två nivåer av omvägar och kan anpassas för att stödja ytterligare nivåer).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

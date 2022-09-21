@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-01-31
-ms.openlocfilehash: f19566ce64becea4a53a8479cb5a08579567cda1
-ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
+ms.openlocfilehash: 74cfe5246ad72cbdedd0ed4e3b3394bf7277919e
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9346409"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473861"
 ---
 # <a name="shipping-discount"></a>Transportrabatt
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 I den här artikeln beskrivs leveransrabattfunktionerna i Microsoft Dynamics 365 Commerce och de inställningar som krävs för att använda dem.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5cb2c1234de03e9777921c18e4cbb81eec7feef9
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903519"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462285"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Generera fakturarader när du importerar leverantörsfakturor
 
@@ -45,7 +45,7 @@ Följ dessa steg om du vill att fakturarader ska kunna skapas automatiskt.
 För att stödja den funktionalitet som beskrivs i den här artikeln, dataenheten **Leverantörsfakturahuvud** har förbättras. Tre fält har lagts till:
 
 - **HeaderOnlyImport** – Detta fält måste ställas in på **Ja** för att generera rader för fakturarubriker.
-- **PurchIdRange** – Listan med inköpsordernummer. Fakturanumren kan vara ett intervall, t.ex. **INV0001..INV0009** (där två punkter separerar början och slutet av intervallet), eller diskreta värden, som t.ex. **INV0001, INV0003, INV0006**. Alla inköpsorder måste tillhöra samma leverantörskonto i fakturahuvudet. Annars visas följande felmeddelande: "Det gick inte att generera fakturarader. Inköpsorder har olika leverantörskonton."
+- **PurchIdRange** – Listan med inköpsordernummer. Fakturanumren kan vara ett intervall, t.ex. **PO0001..PO0009** (där två punkter separerar början och slutet av intervallet), eller diskreta värden, som t.ex. **PO0001, PO0003, PO0006**. Alla inköpsorder måste tillhöra samma leverantörskonto i fakturahuvudet. Annars visas följande felmeddelande: "Det gick inte att generera fakturarader. Inköpsorder har olika leverantörskonton."
 - **PackingslipRange** – Listan över produktinleveransnummer. Leverantörsfakturarader kan skapas utifrån produktinleveranser. Produktinleveransnummer inkluderas normalt inte på leverantörsfakturor. Ange bara produktinleveransnumren i det här fältet om du klart kan identifiera vilka produktinleveranser som specifika fakturor är för. Fakturarader kan genereras baserat på produktinleveranser. Om detta fält används ignoreras inställningen av fältet **Välj standardkvantitet för att skapa automatiska fakturarader** på sidan **Parametrar för leverantörsreskontra**. 
 
 **Begränsning**: Om du anger flera produktinleveransnummer skapas flera pågående leverantörsfakturor med samma fakturanummer. Du måste konsolidera dem manuellt innan du bearbetar fakturan ytterligare. I framtida versioner planerar vi att konsolidera fakturorna automatiskt, varför begränsningen tas bort.

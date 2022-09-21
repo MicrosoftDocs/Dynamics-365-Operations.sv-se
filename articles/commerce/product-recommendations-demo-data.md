@@ -2,7 +2,7 @@
 title: Skapa rekommendationer med demodata
 description: Denna artikel ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en miljö av typen "Nivå-1, enskild miljö" med hjälp av i förväg ifyllda, anpassningsbara demodata.
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a0e6666cc163f97567cf5c6f820d436ef6ef4cca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e3df414b3c16c28b6f5ca04f765d91c1312ada4
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874905"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9459979"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Skapa rekommendationer med demodata
 
@@ -45,7 +45,7 @@ Dessa data struktureras längs följande kolumner.
 
 | Kolumnnamn         | Obligatoriskt          | beskrivning                                                                                                                                 | Möjliga värden                                                              |
 |---------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Recolist            | :heavy_check_mark: | Den specifika listtypen för produktrekommendationer som demodatapunkten ska generera.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li></ul> |
+| Recolist            | :heavy_check_mark: | Den specifika listtypen för produktrekommendationer som demodatapunkten ska generera.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li><li>RecoPicks</li><li>RecoSimilarVisual</li><li>RecoSimilarTextual</li></ul> |
 | OperatingUnitNumber | :heavy_check_mark: | Det specifika driftenhetsnummer som produktrekommendationer förväntas bli indelade.                                        |                                                                              |
 | Kategori            |                    |    Den kategori som den specifika listan ska returneras för. Om ingen kategori har angetts är listan endast till för navigeringshierarkin.    |                                                                              |
 | SeedItemId          |                    |    För listor som kräver startvärde (RecoPeopleAlsoBuy och RecoCart) av produkten bör dessa listor innehålla ytterligare produkter.            |                                                                              |

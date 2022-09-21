@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-ms.openlocfilehash: 3620fa886fd4b609a0f1f08b2338ab725065efe7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 283c882300ece460c18ffebe572238e7629f8dee
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287941"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476823"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -137,7 +137,29 @@ Bilden visar uttryck av den här typen. (Version 11.12.11 av **ISO20022 kreditö
 > 
 > Baserat på denna inställning, meddelandet som genereras för varje gäldenärsbetalning, **Ustrd** XML-element, som antingen innehåller texten på betalningsanteckningar eller om den texten är tom, en kommaseparerad lista av de fakturanummer som används för att kvitta betalningen.
 
-## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validering av konfigurerade formler
+## <a name="assistance-in-formulas-writing"></a>Hjälp med att skriva formel
+
+### <a name="data-sources-navigator"></a>Datakällor navigator
+
+Du kan redigera en formel som representerar ett element i en strukturerad datakälla. När du konfigurerat ER-parametrarna så att sökvägen till ett element i en strukturerad datakälla som [relativ sökvägar](relative-path-data-bindings-er-models-format.md), "at" (@) tecken [visa](er-formula-language.md#relative-path) i formeln istället för den återstående delen av den absoluta sökvägen för den hierarkiska trädstrukturen som används. Denna återstående del av den absoluta sökvägen pekar på ett överordnat element till den redigerbara. I Ekonomi version **10.0.30 och senare**, på sidan **Formeldesigner** i rutan **Datakällor** kan du välja alternativet **Go to @** för att placera markören för datakällträdet till ett element som är föräldern till det redigerbara. Strukturen för alla komprimerade stigande element expanderas automatiskt och rekursivt vid behov. Den här expansionen kan hjälpa dig att snabbt visualisera baselementet i det redigerbara elementet, iaktta underordnade moduler av det redigerbara elementet i datakällträdet och använda var och en av dem i den redigerbara formeln om det behövs.
+
+![Använd alternativet "Gå till @" om du vill placera markören för datakällorna i ett element som är överordnat det redigerbara elementet på sidan Formeldesigner.](./media/er_formula-designer-data-sources-navigator.gif)
+
+### <a name="data-sources-picker"></a>Datakälla väljare
+
+På sidan **Formeldesigner** i rutan **Datakällor** till vänster, välj ett element i en datakälla som du vill ta med till den redigerbara formeln. Välj **Lägg till datakälla**. Lägg märke till att det valda elementet läggs till i texten i den redigerbara formeln.
+
+> [!TIP]
+> När du använder alternativet **Lägg till datakälla** i standardformelredigeraren läggs det valda elementet alltid till i slutet av formeltexten. När du gör samma sak i [redigeraren för avancerad formel](er-advanced-formula-editor.md) infogas det valda elementet i formeltexten vid den aktuella markörpositionen.
+
+### <a name="built-in-functions-picker"></a>Inbyggda funktionsväljare
+
+På sidan **Formeldesigner** i rutan **Funktioner** till höger, välj ett element i en ER inbyggda funktioner som du vill ta med till den redigerbara formeln. Välj **Lägg till funktion**. Lägg märke till att det valda funktion läggs till i texten i den redigerbara formeln.
+
+> [!TIP]
+> När du använder alternativet **Lägg till funktion** i standardformelredigeraren läggs den valda funktionen alltid till i slutet av formeltexten. När du gör samma sak i [redigeraren för avancerad formel](er-advanced-formula-editor.md) infogas den valda funktion i formeltexten vid den aktuella markörpositionen.
+
+### <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validering av konfigurerade formler
 
 På sidan **formeldesignern** väljer du **test** för att validera hur den konfigurerade formeln fungerar.
 

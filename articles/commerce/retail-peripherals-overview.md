@@ -2,7 +2,7 @@
 title: Kringutrustning
 description: Denna artikel förklarar koncepten som är relaterade till kringutrustning i Commerce.
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -12,12 +12,12 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3113626b18ad7f074c808d7631d13b09071bef2
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880091"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460005"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -142,9 +142,12 @@ Modern POS stöder UWP MSR:er och skannrar. Därför kan enheten användas när 
 
 Fler klasser av kringutrustning för kassa läggs till i Windows, till exempel klasser för kassalåda och kvittoskrivare. Stöd för dessa nya klasser i Modern POS väntar.
 
+> [!NOTE] 
+> Vissa USB-enheter kan sluta svara eller bli opålitliga när de hanteras av en strömhanteringsfunktion i Windows 10 som kallas [USB-selektiv avstängning](/windows-hardware/drivers/usbcon/usb-selective-suspend). Om en USB-tilläggsutrustning inte svarar kan det bli nödvändigt att inaktivera den selektiva avstängningsfunktionen för den enheten. Mer information finns i [Aktivera selektiv avstängning](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
+
 ### <a name="keyboard-wedge"></a>Tangentbords-wedge
 
-Tangentbords-wedgeenheter skickar data till datorn som om informationen har skrivits på ett tangentbord. Därför kommer som standard fältet som är aktiverat i POS att ta emot data som skannas eller dras. I vissa fall kan detta orsaka att fel typ av data skannas till fel fält. Exempelvis kan en streckkod läsas in i ett fält som är avsett för inmatning av data för kreditkort. I de flesta fall finns en logik i POS som avgör om data som skannas eller dras är en streckkod eller ett gortdragning. Därför hanteras data på rätt sätt. Men när enheterna ställs in som OPOS i stället för tangentbord-wedge-enheter finns det mer kontroll över hur data från dessa enheter kan förbrukas, eftersom man "känner till" mer om enheten som informationen kommer från. Exempelvis data från en streckkodsskanner identifieras automatiskt som en streckkod och den associerade posten i databasen hittas enklare och snabbare än om en generisk söksträng användes, vilket gäller för tangentbord-wedge-enheter.
+Tangentbords-wedgeenheter skickar data till datorn som om informationen har skrivits på ett tangentbord. Därför kommer som standard fältet som är aktiverat i POS att ta emot data som skannas eller dras. I vissa fall kan detta orsaka att fel typ av data skannas till fel fält. Exempelvis kan en streckkod läsas in i ett fält som är avsett för inmatning av data för kreditkort. I de flesta fall finns en logik i POS som avgör om data som skannas eller dras är en streckkod eller ett kortdragning. Därför hanteras data på rätt sätt. Men när enheterna ställs in som OPOS i stället för tangentbord-wedge-enheter finns det mer kontroll över hur data från dessa enheter kan förbrukas, eftersom man "känner till" mer om enheten som informationen kommer från. Exempelvis data från en streckkodsskanner identifieras automatiskt som en streckkod och den associerade posten i databasen hittas enklare och snabbare än om en generisk söksträng användes, vilket gäller för tangentbord-wedge-enheter.
 
 > [!NOTE]
 > När wedge-skannrar med tangentbord används i kassan måste de vara programmerade att skicka en transportretur – eller en **Ange**-händelse – efter det senast skannade tecknet. Om denna konfiguration inte slutförs kan inte wedge-skannrar för tangentbord fungera som de ska. Läs igenom dokumentationen från din enhetstillverkare om du vill ha mer information om hur du bifogar returhändelsen.  

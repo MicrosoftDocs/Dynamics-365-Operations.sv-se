@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afe438767efa3082c49cc56f58c8bab9206e46e0
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: ad5f843e3bafa54a961908d9ebe5ab64e619e1bc
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228581"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475560"
 ---
 # <a name="human-resources-home-page"></a>Startsida för Personalresurser
 
@@ -40,7 +40,7 @@ Välj ett funktionsområde för att läsa mer om det.
 - [Kompensationshantering](hr-compensation-overview.md)
 - [Medarbetarutveckling](hr-develop-performance-management-overview.md)
 - [Utbildning](hr-learning-courses.md)
-- [Arbetsflödessystem]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- [Arbetsflödessystem](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
 Personal ansluter människor och driftdata som hjälper dig att optimera personalkostnaderna och ta hand om dina anställda.
 
@@ -51,7 +51,8 @@ Mer information om Dynamics 365 Finance finns på [startsidan för Finance](../f
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 ### <a name="elearning-courses"></a>E-utbildningskurser
-Information om onlinekurser och utbildning finns [Dynamics 365 Human Resources i Microsoft Learn](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
+
+Information om onlinekurser och utbildning finns i [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
 ### <a name="videos"></a>Videor
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186700"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428155"
 ---
 # <a name="buffer-profile-and-levels"></a>Buffertprofil och nivåer
 
@@ -77,6 +77,14 @@ I illustrationen ovan är – om "idag" är morgonen den 11 juni – ADU för de
 
 - **ADU (tidigare)** = (29 + 11 + 23) ÷ 3 = 21
 
+Följande transaktioner beaktas för den genomsnittliga dagliga användningen (tidigare) beräkning:
+
+- Transaktioner som minskar artikelkvantiteten (i `inventtrans` tabellen där kvantiteten är mindre än noll)
+- Transaktioner med status *Har beställts*, *Reserverat beställt*, *Reserverat fysiskt*, *Plockat*, *Avdragen* eller *Såld*
+- Transaktioner daterade inom den valda bakåtperioden (genomsnittlig daglig användning efter period)
+- Transaktioner som inte är lagerställearbete, karantän, försäljningsofferter eller utdrag (`WHSWork`, `WHSQuarantine`, `SalesQuotation` eller `Statement`)
+- Andra transaktioner än överföringsjournaler som finns inom samma disponeringsdimension
+
 ### <a name="average-daily-usage-forward"></a>Genomsnittlig daglig användning (kommande)
 
 För en ny produkt kanske du inte har några tidigare användardata. Därför kan du istället använda projekterat ADU hädanefter (till exempel baserat på prognostiserad efterfrågan). I följande illustration visas hur det här arbetssättet fungerar när en beräkning görs sett över tre dagar in i framtiden (inklusive "idag").
@@ -86,6 +94,11 @@ För en ny produkt kanske du inte har några tidigare användardata. Därför ka
 I föregående illustration är – om "idag" är lika med morgonen den 11 juni – ADU för de nästkommande tre dagarna (11, 12 och 13 juni) lika med 21,66.
 
 - **ADU (kommande)** = (18 + 18 + 29) ÷ 3 = 21,66
+
+Följande transaktioner beaktas för den genomsnittliga dagliga användningen (framåt) beräkning:
+
+- Prognostransaktioner för artikeln där prognosen väljs i huvudplanen
+- Transaktioner daterade inom den valda framåtperioden (genomsnittlig daglig användning framåtperiod)
 
 ### <a name="average-daily-usage-blended"></a>Beräkna genomsnittlig daglig användning (blandad)
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f111ccf8b41ad420d38945b44c323d66f8f778fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: f752e93331be8efa40b0daf4bfb95f9ce5f39cb9
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219258"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462235"
 ---
 # <a name="commerce-home-page"></a>Startsidan för Commerce
 
@@ -58,4 +58,4 @@ Välj ett funktionsområde för att läsa mer om det.
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
 
-Information om onlinekurser och utbildning finns [Dynamics 365 Commerce i Microsoft Learn](/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).
+Information om onlinekurser och utbildning finns i [Dynamics 365 Commerce](/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

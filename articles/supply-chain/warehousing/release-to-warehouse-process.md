@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893190"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428047"
 ---
 # <a name="release-to-warehouse"></a>Släpp till distributionslager
 
@@ -34,7 +34,7 @@ En *last* är en grupp av försäljningsorder- eller överföringsorderrader som
 
 Lagerställe *arbete* är alla lagerställeåtgärder som utförs av en lagerarbetare. Vanligtvis består lagerställearbeten av minst två på varandra följande åtgärder: en lagerarbetare plockar upp lagerbehållningen på en plats och för sedan in den på en annan plats.
 
-När order frisläpps till lagerstället skapar systemet *lastrader* och grupperar dem till leveranser. Leveranskonsolideringsprocessen gör det möjligt att konsolidera leveranser automatiskt under frisläppningen till lagerställe. Mer information finns i [Policyer för leveranskonsolidering](about-shipment-consolidation-policies.md).
+När order frisläpps till lagerstället skapar systemet *lastrader* och grupperar dem till leveranser. Leveranskonsolideringsprocessen gör det möjligt att konsolidera leveranser automatiskt under frisläppningen till lagerställe. Mer information finns i [Översikt över policyer för leveranskonsolidering](about-shipment-consolidation-policies.md).
 
 Systemet använder *påfyllnader* för att skapa plockarbete och laster för leverans. En *påfyllnadsmall* måste vara tillgänglig för den typ av påfyllnad som du vill skapa och för orderradens lagerställe. Påfyllnadsmallar för typen *Leverans* används för att leverera artiklar för försäljningsorder och överföringsorder.
 

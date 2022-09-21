@@ -1,5 +1,5 @@
 ---
-title: Förhandsversion av Dynamics 365 Commerce 10.0.29 (oktober 2022)
+title: Nyheter och ändringar i Dynamics 365 Commerce 10.0.29 (oktober 2022)
 description: Denna artikel innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics 365 Commerce 10.0.29.
 author: josaw1
 ms.date: 08/17/2022
@@ -10,19 +10,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 1e05f53f9ecb0a1994828172f6999a0bd5c208bc
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
+ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306243"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9475914"
 ---
-# <a name="preview-of-dynamics-365-commerce-10029-october-2022"></a>Förhandsversion av Dynamics 365 Commerce 10.0.29 (oktober 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Nyheter och ändringar i Dynamics 365 Commerce 10.0.29 (oktober 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Commerce förhandsversion version 10.0.29. Den här versionen har ett versionsnummer för 10.0.1326 på följande schema:
+
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Commerce version 10.0.29. Den här versionen har ett versionsnummer för 10.0.1326 på följande schema:
 
 - **Förhandsversion av versionen:** Augusti 2022
 - **Allmän tillgänglighet för versionen (självuppdatering):** September 2022

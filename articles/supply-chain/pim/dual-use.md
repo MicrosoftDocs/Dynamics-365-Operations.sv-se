@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5147a837be91aab519c373e624acc036f9293641
+ms.sourcegitcommit: 555de844b8ba02fe095c28a2d447fc7c441ae549
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878915"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460559"
 ---
 # <a name="dual-use-goods"></a>Varor med dubbla användningsområden
 
@@ -85,7 +85,14 @@ Om du vill identifiera en produkt som vara med dubbla användningsområden och t
 1. Snabbfliken **Utrikeshandel** anger du alternativet **Produkter med dubbla användningsområden** till **Ja** för att identifiera den aktuella produkten som ett dubbla användningsområden.
 1. Ställ in fältet **Kod för dubbel användning** till den kod som gäller för den aktuella produkten. (Du definierade den här koden på sidan **Kategorier med dubbla användningsområden** .)
 
-Den här inställningen kontrolleras när du skapar en försäljningsorder.
+> [!NOTE]
+>
+> Följande kontroller utförs av systemet när en försäljningsbekräftelse genereras:
+>
+> 1. Omfattar ordern varor med dubbla användningsområden?
+> 1. Kräver mållandet att använda certifikat med dubbla användningsområden?
+> 1. Om så är fallet, finns det certifikat för varje produkt med dubbla användningsområden för destinationslandet, och är dessa certifikat giltiga för de bekräftade leveransdatumen?
+> 1. Om svaren på frågorna 1 och 2 är "Ja" och svaret på fråga 3 är "Nej", visar systemet en varning om att certifikat för användare saknas för en eller flera av försäljningsordern. Användaren bör därför få de certifikat som krävs och försöka igen, men kan istället gå över varningen och gå vidare med försäljningsbekräftelsen om han eller hon vill.
 
 ## <a name="set-up-dual-use-certificates"></a>Ställa in certifikat med dubbla användningsområden
 

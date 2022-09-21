@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2022-08-11
-ms.openlocfilehash: 4bc8cb16e7960d26adbb9590b4ad83cf46b02838
-ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
+ms.openlocfilehash: 79130e0ef285d6bd5e544f2d6a6368c0393fa7fa
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9410785"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9474053"
 ---
 # <a name="pricing-settings"></a>Prissättningsinställningar
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 I den här artikeln beskrivs olika inställningar för prissättning och rabatthantering i Microsoft Dynamics 365 Commerce headquarters. Med dessa inställningar kan organisationer definiera prissättningsbeteendet i sin Handelslösning för att uppfylla specifika affärsbehov.
 

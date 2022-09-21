@@ -2,7 +2,7 @@
 title: Lägg till produktrekommendationer i POS
 description: I denna artikel beskrivs användning av produktrekommendationer för en kassaenhet (POS).
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 442ae540b04588afd9aeb37a92c6ceb92c05a9ba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 170e2bf18aefc79a796620818c7100ff8e6e689a
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872809"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460067"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Lägg till produktrekommendationer i POS
 
@@ -37,7 +37,7 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
 
 1. På sidan **Produktdetaljer**:
 
-    - Om en butiksmedarbetare besöker en sida **Produktdetaljer** när han eller hon tittar på föregående transaktioner via olika kanaler, föreslår rekommendationstjänsten ytterligare artiklar som kan köpas tillsammans.
+    - Om en butiksmedarbetare besöker en sida **Produktdetaljer** när han eller hon tittar på föregående transaktioner via olika kanaler, föreslår rekommendationstjänsten ytterligare artiklar som kan köpas tillsammans. Beroende på tilläggen för tjänsten kan återförsäljare visa rekommendationer för **Köp liknande produkter** och **Köp liknande-beskrivning** för produkter, förutom personliga rekommendationer för användare som har en tidigare köphistorik.
 
     [![Rekommendationer på sidan produktinformation.](./media/proddetails.png)](./media/proddetails.png)
 
@@ -50,21 +50,17 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
 
     [![Rekommendationer på sidan Transaktion.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurera Commerce för att aktivera rekommendationer i kassa
+## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurera Commerce för att aktivera rekommendationer i kassa 
 
-Så här ställs produktrekommendationer in:
+Om du vill ställa in produktrekommendationer bekräftar du att du har slutfört reserveringsprocessen för Commerce produktrekommendationer genom att följa stegen i [Aktivera produktrekommendationer](../commerce/enable-product-recommendations.md). Som standard visas rekommendationer på sidan **Produktinformation** och **Kundinformation** efter att du har slutfört provisioneringsstegen och informationen har avse någon kontroll. 
 
-1. Se till att tjänsten har uppdaterats till **10.0.6 version.**
-2. Följ instruktionerna om hur du [aktiverar produktrekommendationer](../commerce/enable-product-recommendations.md) för ditt företag.
-3. Tillval; Om du vill visa rekommendationer på transaktionsskärmen, gå då till **Skärmlayout**, välj din skärmlayout, starta **Designer för skrämlayout**, och släpp sedan kontrollen **Rekommendationer** där så behövs.
-4. Gå till **Handelsparametrar**, välj **Maskininlärning** och välj **Ja** under **Aktivera kassarekommendationer**.
-5. Kör jobbet **1110** för global konfiguration om du vill se rekommendationer på POS. Kör kanalkonfigurationsjobbet **1070** för att avspeglar ändringar i kassaskärmens layoutdesigner.
+## <a name="add-recommendations-to-the-transaction-screen"></a>Lägg till rekommendationer på transaktionsskärmen
 
-## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Felsök problem där du redan produktrekommendationer aktiverade
+1. Om du vill lägga till rekommendationer på transaktionsskärmen följer du stegen i [Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md).
+1. Kör kanalkonfigurationsjobb för att återspegla ändringar som gjordes i kassaskärmlayout designern **1070** i Commerce headquarters.
 
-- Gå till **Handelsparametrar** \> **Rekommendationslistor** \> **Inaktivera produktrekommendationer** och kör **Globalt konfigurationsjobb \[9999\]**. 
-- Om du har lagt till **rekommendationskontroll** till din transaktionsskärm med **Layoutdesigner för skärm**, ta även bort den.
-- Om du har fler frågor läser du [Vanliga frågor om produktrekommendationer](../commerce/faq-recommendations.md) för mer information.
+> [!NOTE] 
+> Om du vill aktivera kassarekommendationer genom att använda filen RecoMock kommaseparerade värden (CSV), måste du distribuera CSV-filen till Microsoft Dynamics Lifecycle Services (LCS) tillgångsbibliotek innan du konfigurerar layouthanteraren. Om du använder RecoMock CSV-filen behöver du inte aktivera rekommendationer. CSV-filen är bara tillgänglig för demonstration. Det rekommenderas för kunder eller lösningen som vill se ut som rekommendationslistor för demonstration utan att behöva köpa en enhet för lagerhållning (SKU).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

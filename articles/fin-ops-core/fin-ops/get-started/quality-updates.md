@@ -2,7 +2,7 @@
 title: Förebyggande kvalitetsuppdateringar
 description: I den här artikeln finns information om förebyggande leverans av kvalitetsuppdateringar.
 author: rashmansur
-ms.date: 08/23/2022
+ms.date: 09/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9d81cb15e9a127e7bea7ad9b5e0f50a1ee543f71
-ms.sourcegitcommit: 78e85ad49634cd31459fdb7325cb273352bf1501
+ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
+ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9338149"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473616"
 ---
 # <a name="proactive-quality-updates"></a>Förebyggande kvalitetsuppdateringar
 
@@ -58,12 +58,67 @@ En uppsättning processändringar implementeras innan förebyggande kvalitetsupp
 - **Större förändring som påverkar arbetet** – För närvarande finns det redan ett extra processsteg för att godkänna ändringar för inkludering i en kvalitetsuppdatering. Den som inte är noggrann i det extra steget ökar för att minska potentialen för något. Dela upp ändringar är inte tillåtet i kvalitetsuppdateringar och den större ändringen som påverkar säkerheten hjälper dig att se till att vi uppfyller detta mål.
 - **Synlighet** – Vi skickar meddelanden via e-post och Lifecycle Services (LCS) för kommande förebyggande kvalitetsuppdateringar. Supportteams och incident leads kommer dessutom att ha god insyn i var kvalitetsuppdateringar har distribuerats i förebyggande syfte.
 - **Version reserv** – Förhandsversion kommer att användas för att gruppera alla ändringar i en proaktiv kvalitetsuppdatering. Om reserv krävs efter en förebyggande distribution kan den göras med hjälp av det system för förhandsversionen.
-- **Synkroniserad sandbox beteckning** – Mindre än 20 procent av kunderna har idag flera problem och har en distribution där versionen matchar produktionen som hjälp vid felsökning. Inom en snar framtid kommer vi att introducera möjligheten för kunder att specificera en sandbox-miljö som inte ska ta emot den proaktiva kvalitetsuppdateringsdistributionen tillsammans med andra sandbox men som istället ska få den senare, tillsammans med produktionsmiljön. Observera att om en kund använder en sandbox för att testa en nyare version än produktionen kommer den sandbox att få kvalitetsuppdateringar av den nyare versionen.
-- 
-## <a name="when-will-proactive-quality-updates-start"></a>När startas förebyggande kvalitetsuppdateringar?
+- **Synkroniserad sandbox beteckning** – Mindre än 20 procent av kunderna har idag flera problem och har en distribution där versionen matchar produktionen som hjälp vid felsökning. Om en kund använder en sandbox för att testa en nyare version än produktionen kommer den sandbox att få kvalitetsuppdateringar av den nyare versionen.
+
+## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Vad är det för fel på sammanslagningen som gäller för kvalitetsuppdateringar?
 
 Distributionen av förebyggande kvalitetsuppdateringar för kvalitetsmiljöer förväntas börja i slutet av september eller oktober 2022 för kunder i Azure offentligt moln. Utvärderingsmiljöer börjar också att motta förebyggande uppdatering vid den tidpunkten. I september skickas ett meddelande till varje kund om det förväntade schemat för deras miljöer. Undantag till den förebyggande uppdaterade distributionsprocessen tillåts bara för FDA-reglerade kunder. Vi arbetar fortfarande med hur reglerade miljöer och myndighets molnbaserade kunder ska hanteras.
 
 Under den kommande sexmånadersperioden kommer vi gradvis att öka andelen sandbox-miljöer som får proaktiva uppdateringar, tills alla utsedda miljöer är inkluderade och går vidare till uppdatering av produktionsmiljöer. Under hela perioden kommer vi att övervaka att distributionsprocessen är sömlös och att vi får tillbaka målet att inte avbryta nyttolast.
 
 Eftersom kunderna regelbundet får mindre nyttolaster, förväntar vi oss att processen med nuvarande situation blir enklare. Vi justerar frekvensen för uppdatering av distributionen när vi demonstrerar möjligheten att köra processen utan störningar. Denna process fungerar redan effektivt för vår Dataverse plattform och våra program och levererar de förväntade förbättringarna av servicekvalitet. Vi ser fram emot att ta samma steg framåt för appar för ekonomi och drift.
+
+## <a name="when-will-quality-updates-start-for-production-environments"></a>När startas kvalitetsuppdateringar för produktionsmiljöer?
+I den här tiden är kvalitetsuppdateringar bara mål för kvalitetsnormer. Uppdateringar av produktionsmiljöerna kommer att påbörjas efter november 2022.
+
+## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Vad är schemat för kvalitetsuppdateringar av sandbox?
+Mer information om mörka timmar för varje region finns i [Vad är schemat för förebyggande kvalitetsuppdateringar?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).
+
+## <a name="how-are-the-dark-hours-handled-for-customers-that-have-one-finance-and-operations-apps-instance-but-are-active-in-multiple-time-zones"></a>Hur hanteras de mörka timmarna för kunder som har en instans för appar för ekonomi och drift men är aktiva i flera tidszoner? 
+Det finns inga speciella tidsplaner utanför de mörka timmarna där det finns instanser av appar för ekonomi och drift eftersom vi planerar att distribuera kvalitetsuppdateringar med minimal avbrott med [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
+
+## <a name="how-will-microsoft-ensure-the-quality-of-these-updates"></a>Hur kan Microsoft säkerställa kvaliteten på dessa uppdateringar?
+Microsoft arbetar med att hålla frisläppningspipeline effektiv nog att leverera små nyttolaster för att hålla valideringskostnaden låg. Varje åtgärd i en kvalitetsuppdatering får en fullständig och säker distributionsprocess som förbättrar kvaliteten och tillförlitligheten och minskar därmed kundens inverkan. Distributionen sker i faser i sandbox-miljöer först, följt av produktion. Mellanlagrade distributioner gör det möjligt att övervaka om ytterligare distribution är säker. Vi stoppar distributionen om problem upptäcks med varje grupp av kunder som distribueras och ser till att varje steg i distributionen har tillräckligt med tid för att problem ska uppstå. Vid varje kommande kvalitetsuppdatering gör vi oss synliga i schemat via uppdateringar av offentlig dokumentation och e-post, så att kunderna kan planera i förväg.
+
+## <a name="can-customers-delay-reschedule-or-pause-a-quality-update"></a>Kan kunder försena, omplanera eller göra en kvalitetsuppdatering?
+Nr. Målet med kvalitetsuppdateringar är att säkerställa grundläggande rättigheter som säkerhet, integritet, tillförlitlighet, tillgänglighet och prestanda kontinuerligt förbättras för våra kunder. Det är en risk att en uppdatering, säkerhet, tillgänglighet och tillförlitlighet försenas eller pausas.
+
+## <a name="how-can-one-know-the-set-of-changes-that-went-into-a-quality-update-payload"></a>Hur kan du känna till uppsättningen med ändringar som har gått in i en uppdatering av nyttolast av kvalitet?
+Du kommer att kunna titta på alla KB-artiklar i en kvalitetsuppdatering på sidan **Miljödetaljer** i LCS genom att navigera till avsnittet **Kvalitetsuppdatering**. 
+
+## <a name="what-is-the-process-if-a-critical-issue-is-found-after-a-quality-update"></a>Vad är processen om ett viktigt problem hittas efter en kvalitetsuppdatering?
+Ett kritiskt problem eller en eller flera händelser som vanligtvis gör att flera kunder har en försämrad erfarenhet av en eller flera av våra tjänster. Dessa problem kan orsaka oplanerade driftstider inklusive otillgänglighet, prestanda, effektivitet och påverkan på servicehanteringen. Om det finns en stor kundpåverkan på grund av sådana problem kommer vi att stoppa sammanslagningen av en kvalitetsuppdatering tills vi kan kommunicera och åtgärda problemet. Nästa kvalitetsuppdatering har vanligtvis den rätta tiden så att sammanslagningen kan återupptas.
+
+Om en enskild kundmiljö påverkas kontaktar du Microsofts support för att öppna en lott. Med utgångspunkt i berättigandet stoppar vi kvalitetsuppdateringsutrullningen i alla andra miljöer i det projektet tills problemet har åtgärdats.
+
+## <a name="can-customers-still-manually-apply-hotfix-updates-from-lcs"></a>Kan kunder fortfarande använda snabbkorrigeringsuppdateringar från LCS manuellt?
+Ja. För att säkerställa löpande paritet med hur snabbkorrigeringar fungerar kan snabbkorrigeringsuppdateringar fortfarande tillämpas på kundmiljöer i LCS. Det är dock viktigt att observera att snabbkorrigeringar som distribueras som en del av en kvalitetsuppdatering går igenom standard-SDP innan uppdateringen distribueras. Detta minskar risken för fel på grund av högre kvalitet. Vi rekommenderar att du väljer en kvalitetsuppdatering manuellt med hjälp av snabbkorrigeringar för ökad tillförlitlighet.
+
+## <a name="can-customers-self-install-a-quality-update-build-by-themselves-ahead-of-the-schedule"></a>Kan kunder själv installera en kvalitetsuppdateringsversion själva före tidsplanen?
+Ja. Du kan installera en kvalitetsuppdatering i förebyggande syfte. Microsoft hoppar över uppdateringen om miljöns aktuella version är lika med eller högre än kvalitetsuppdateringen i fråga.
+
+## <a name="if-an-environment-has-an-upcoming-scheduled-monthly-service-update-within-a-week-will-it-still-receive-quality-updates"></a>Om en miljö har en kommande tidsplanerad månatlig serviceuppdatering inom en vecka, kommer den fortfarande att få kvalitetsuppdateringar?
+- Kvalitetsuppdateringar tillämpas inte om det finns en nära förestående serviceuppdatering planerad inom en vecka från det att kvalitetsuppdateringen planeras.
+- Om en miljö har samma eller högre version än den nära förestående kvalitetsuppdateringen hoppas den över.
+- Om en produktionsmiljö har samma eller högre version än den nära förestående kvalitetsuppdateringen hoppas den över.
+- Om en sandbox har samma eller högre version på grund av en kvalitetsuppdatering eller en manuell uppdatering av produktionen får produktionen fortfarande den planerade versionen av den månatliga serviceuppdateringen. Om du inte vill att den tidsplanerade produktionsmiljön ska uppdateras till serviceuppdateringsversionen kan du göra en paus i serviceuppdateringen från LCS. 
+- Vi rekommenderar att du använder den senaste kvalitetsuppdateringsbyggen för att testa dina ändringar för en kommande serviceuppdatering för bättre prestanda och resultat.
+
+## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Kan en miljö föras tillbaka till sitt tidigare tillstånd om det finns problem efter att en kvalitetsuppdatering har tillämpats?
+När en kvalitetsuppdatering har tillämpats finns ingen återställning under några omständigheter. Det finns bara tillgängliga alternativ för uppdatering framåt för att minska problemen.
+
+## <a name="what-about-fda-regulation-and-gpx"></a>Vad säger du om FDA-regler och GPX?
+Planen för kunder som omfattas av FDA-validering och -bestämmelse är fortfarande arbetsföring. Förvänta dig fler uppdateringar på detta område inom kort. För tillfället är alla sådana kunder undantagna från kvalitetsuppdateringar.
+
+## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Vilka versioner av serviceuppdateringar som stöds av dessa kvalitetsuppdateringar?
+Kunder i versioner lägre än N-2 får inga kvalitetsuppdateringar. 
+
+## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retailsdk"></a>I appar för ekonomi och drift som distribueras med butikskomponenter krävs vanligtvis mer arbete förutom att du måste omdistribuera MPOS. Hur påverkar dessa kvalitetsuppdateringar RetailSDK? 
+Eftersom själva snabbkorrigeringarna inte ändras i kvalitetsuppdateringarna av nyttolast, förväntar vi oss inte någon ytterligare inverkan just nu för butikskomponenter.
+
+## <a name="is-there-any-impact-to-cloud-hosted-environments-che-"></a>Påverkas de molnbaserade miljöerna (CHE)? ? 
+Nr.
+
+## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Finns det några integrationsproblem med Microsoft Dataverse? 
+Nr.
+

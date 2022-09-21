@@ -2,7 +2,7 @@
 title: Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 description: Den här artikeln innehåller information om hur du granskar de konfigurerade komponenterna för elektroniska rapporter (ER) för att förhindra problem som kan uppstå vid körning.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277863"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476865"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 
@@ -243,6 +243,15 @@ Följande tabell ger en översikt över granskningar som ER tillhandahåller. Om
 <td>
 <p>Listuttrycket för funktionen ORDERBY är inte frågningsbart.</p>
 <p><b>Körningsfel:</b> Sortering stöds inte. Validera konfigurationen om du vill ha mer information.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Föråldrade program artefakter</a></td>
+<td>Dataintegritet</td>
+<td>Varning</td>
+<td>
+<p>Elementet &lt;sökväg&gt;har markerats som föråldrat.<br>eller<br>Elementet &lt;sökväg&gt; är markerad som föråldrad med meddelande &lt;meddelandetext&gt;.</p>
+<p><b>Exempel på körtidsfel:</b> klass &lt;sökväg&gt; hittas inte.</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ I stället för att lägga till ett kapslat fält av typen **Beräknat fält** i
 #### <a name="option-2"></a>Alternativ 2
 
 Ändra uttrycket för datakällan **FilteredVendors** från `ORDERBY("Query", Vendor, Vendor.AccountNum)` till `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Vi rekommenderar inte att du ändrar uttrycket för en tabell som har en stor mängd data (transaktionstabell) eftersom alla poster hämtas och beställning av de nödvändiga poster som krävs görs i minnet. Därför kan den här metoden orsaka dålig prestanda.
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a>Föråldrade program artefakter
+
+När du designar en ER-modellmappningskomponent eller en ER-formatkomponent kan du konfigurera ett ER-uttryck för att anropa en program artefakt i ER, till exempel ett databasregister, en klassmetod osv. I ekonomiversion 10.0.30 och senare kan du tvinga ER att varna dig om att den refererade program artefakten har markerats i källkoden som föråldrad. Varningen kan vara praktisk eftersom gamla artefakter vanligtvis tas bort automatiskt från källkoden. Om du får information om en artefakts status kan du sluta använda den föråldrade artefakten i den redigerbara ER-komponenten innan den tas bort från källkoden, vilket förhindrar fel vid anrop av icke-existerande program artefakter från en ER-komponent när den körs.
+
+Aktivera funktionen **Validera föråldrade element i elektroniska rapporteringsdatakällor** i arbetsytan för **funktionshantering** så att du kan börja utvärdera det föråldrade attributet för program artefakter under inspektionen av en redigerbar ER-komponent. Det föråldrade attributet utvärderas för närvarande för följande typer av program artefakter:
+
+- Databastabell
+    - Fält för tabell
+    - Metod för tabell
+- Appklass
+    - Metod för klass
+
+> [!NOTE]
+> En varning inträffar under inspektionen av den redigerbara ER-komponenten för en datakälla som endast refererar till en föråldrad artefakt om denna datakälla används i minst en bindande av den här ER-komponenten.
+
+> [!TIP]
+> När klassen [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute) används för att meddela kompilatorn att utfärda varningsmeddelanden istället för fel, inspektionsvarningen presenterar den specificerade varningen i källkoden vid designtidpunkten i **Detaljer** på sidan **Modellmappningsdesigner** eller **Formatdesigner**.
+
+I följande bild visas en valideringsvarning som inträffar när det föråldrade fältet `DEL_Email` i programregistret `CompanyInfo` är bundet till ett datamodellfält med hjälp av den konfigurerade `company` datakällan.
+
+![Granska valideringsvarningarna i snabbfliken Detaljer på sidan Modellmappningsdesigner.](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>Automatisk lösning
+
+Det finns inget alternativ för automatisk korrigering av det här problemet.
+
+### <a name="manual-resolution"></a>Manuell lösning
+
+Ändra den konfigurerade modellmappningen eller -formatet genom att ta bort alla bindande uppgifter till en datakälla som refererar till en föråldrad program artefakt.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

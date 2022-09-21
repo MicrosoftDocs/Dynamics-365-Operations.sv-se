@@ -2,7 +2,7 @@
 title: Uppgiftshantering
 description: I den här artikeln beskrivs de funktioner för uppgiftshantering som finns i Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b547ff4f55b572ab774e7e70949ec8cb53ef42
+ms.sourcegitcommit: 167f73a834629752c6b79c312d744e52df7f0927
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897876"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9445905"
 ---
 # <a name="task-management"></a>Uppgiftshantering
 
@@ -69,7 +69,13 @@ På alla tre flikar kan personalmedhjälpare och chefer utföra följande aktivi
 
 Du kan skapa uppgifter individuellt och sedan återanvända dem i flera checklistor. Du skapar en uppgift på sidan **Inställning av registrering** på fliken **Uppgifter** välj **Ny**.
 
+Du kan tilldela en skapad uppgift till flera checklistor genom att välja uppgiften och sedan **använda som checklistor** på menyn.
+
 Du kan också lägga till uppgifter direkt i en checklista. Om du vill lägga till en uppgift i en checklista, på sidan **Inställning av registrering** på fliken **Checklista**, antingen skapa en ny checklista för att lägga till uppgiften eller lägg till uppgiften i en befintlig checklista.
+
+Om du vill redigera en uppgift i biblioteket väljer du **Redigera** på uppgiftsbiblioteksmenyn. Om uppgiften är kopplad till någon checklista, visas dessa checklistor på sidan **Redigera uppgift**. Om du vill att uppgifterna i checklistorna ska uppdateras med redigeringarna markerar du de uppgifterna i avsnittet **Använd checklistor**.
+
+Om du vill ta bort uppgifter från biblioteket väljer du alternativet **Ta bort**. Om en uppgift är kopplad till en checklista tas uppgiften inte bort från checklistan. Uppgiften måste tas bort från checklistan i en separat åtgärd.
 
 > [!NOTE]
 > Om du lägger till en uppgift direkt i en checklista kan du inte återanvända den i andra checklistor.
@@ -133,7 +139,15 @@ Komplicerade uppgifter kanske kräver flera steg eller kräver att personen som 
 
 ## <a name="setting-up-checklists"></a>Ställa in checklistor
 
-En checklista är en grupp med uppgifter. Du kan skapa så många checklistor som du behöver och du kan tilldela samma uppgifter till flera checklistor. När du skapar en checklista anger du en ägare och en kalender.
+En checklista är en grupp med uppgifter. Du kan skapa så många checklistor som du behöver och du kan tilldela samma uppgifter till flera checklistor.
+
+Om du vill skapa en ny uppgift i en checklista väljer du **Ny** i menyraden **Uppgifter**. När du skapar en ny uppgift kan du välja att lägga till den i uppgiftsbiblioteket så att den kan delas mellan flera checklistor. Du kan bara lägga till uppgiften i biblioteket om alternativet **Använd uppgift till bibliotek** är inställt på **Ja**. Om du lägger till uppgiften i uppgiftsbiblioteket kan du också lägga till den i andra checklistor samtidigt genom att välja checklistorna i avsnittet **Tillämpa på checklistor**. Om du inte lägger till uppgiften i biblioteket finns den bara i checklistan som du skapade den i.
+
+Om du vill redigera en uppgift i checklistan väljer du **Redigera**. Om uppgiften är kopplad till någon checklista, visas dessa checklistor på sidan **Redigera uppgift**. Om du vill att uppgifterna i checklistorna ska uppdateras med redigeringarna markerar du de uppgifterna i avsnittet **Använd checklistor**.
+
+Om du vill ta bort uppgifter från checklistan väljer du **Ta bort**. Denna åtgärd tar bara bort uppgifter från checklistan. De tas inte bort från uppgiftsbiblioteket. Om du vill ta bort en uppgift från biblioteket går du till uppgiftsbibliotekssidan och väljer **Ta bort**.
+
+När du skapar en checklista anger du en ägare och en kalender.
 
 Om fältet **Tilldelningstyp** för en uppgift har ställts in som **Befattning**, **Chef** eller **Grupp**, men ingen specifik individ kan härledas från uppdragstypen, uppgiften kommer att tilldelas checklistans ägare. Här följer några exempel på situationer där uppgifter tilldelas till ägaren av checklistan:
 
