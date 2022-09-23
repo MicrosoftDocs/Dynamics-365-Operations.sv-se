@@ -206,8 +206,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
         - name: Vanliga frågor och svar och felsökning
           href: supply-chain-management-troubleshooting.md
-        - name: Globalisering
+        - name: Globalization Studio
           items:
+            - name: Globalization Studio – översikt
+              href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/supply-chai
             - name: Globaliseringsresurser
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/supply-chain
             - name: Globaliseringstjänster
@@ -1637,7 +1639,9 @@
                   href: inventory/inventory-locations.md
                 - name: Lagerstatus
                   href: inventory/inventory-statuses.md
-                - name: Skapa en ny layout för lagerstyrning
+                - name: Använd batchdispositionskoder när du vill markera batchar som tillgängliga eller inte tillgängliga
+                  href: inventory/batch-disposition-codes.md
+                - name: Skapa en ny layout för lagerställe
                   href: inventory/tasks/create-new-warehouse-layout.md
                 - name: Underhåll streckkodstyper
                   href: inventory/tasks/maintain-barcode-types.md

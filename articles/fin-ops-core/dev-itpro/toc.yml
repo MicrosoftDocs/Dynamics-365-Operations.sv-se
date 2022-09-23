@@ -14,14 +14,12 @@
               items:
                 - name: Nyheter och ändringar på startsidan för plattformsuppdateringar
                   href: get-started/whats-new-home-page.md
-                - name: Platform updates för version 10.0.30 (november 2022)
+                - name: Plattformsuppdateringar för version 10.0.30 (november 2022)
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Plattformsuppdateringar för version 10.0.29 (oktober 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Plattformsuppdateringar för version 10.0.28 (augusti 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Plattformsuppdateringar för version 10.0.27 (juli 2022)
-                  href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -510,6 +508,8 @@
                   href: dev-tools/access-instances.md
                 - name: Konfigurera enskilda utvecklingsmiljöer
                   href: dev-tools/configure-developer-vm.md
+                - name: Säkra enskilda utvecklingsmiljöer
+                  href: dev-tools/secure-developer-vm.md
                 - name: Vanliga frågor och svar om hur du utvecklar och skapar virtuella datorer som inte tillåter administratörsåtkomst
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Ställa in nedladdningsbara VHD för första användning
