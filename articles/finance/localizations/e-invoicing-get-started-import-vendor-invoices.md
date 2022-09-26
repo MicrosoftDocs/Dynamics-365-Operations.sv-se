@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: c98f33345b37a72c4099f01e37c82e27002ac687
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0195dc528f2fe6bf62efbf03f8706ea90f4a4fc4
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9283158"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524756"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Använd e-faktureringstjänsten för att importera leverantörsfakturor
 
@@ -107,7 +107,8 @@ Gör stegen i följande två avsnitt om du vill ställa in olika typer av import
 2. Välj **Kontextmodell för kundfaktura** och välj **Skapa konfiguration** > **Härled från namn: kontextmodell för kundfaktura, Microsoft** för att skapa en härledd konfiguration.
 3. I versionen **Utkast** väljer du **Designer** och i trädet **Datamodell** välj **Mappa modell till datakälla**.
 4. I trädet **Definitioner**, välj **DataChannel** och välj **Designer**.
-5. I trädet **Datakällor**, visa containern **$Context\_kanal**. I fältet **Värde**, välj **Redigera** och ange namnet på datakanalen. Detta är namnet kanalen, ange namnet på kanalen som anges i konfigurationen av datakanalen för funktionen e-fakturering i RCS. 
+5. I trädet **Datakällor**, visa containern **$Context\_kanal**. 
+6. I fältet **Värde** välj **Redigera** > **Redigera formel** och ange namnet på datakanalen. Detta är namnet kanalen, ange namnet på kanalen som anges i konfigurationen av datakanalen för funktionen e-fakturering i RCS. 
 7. Markera **Spara** och stäng sedan sidan.
 8. Stäng sidan.
 9. Välj den härledda konfigurationen som du just skapat från **kontextmodellen för kundfaktura**, och på snabbfliken **Versioner**, välj **Ändra status** > **Slutförd**.

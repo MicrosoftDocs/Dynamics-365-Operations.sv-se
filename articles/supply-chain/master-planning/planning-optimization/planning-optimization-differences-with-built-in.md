@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897586"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520853"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Skillnader mellan inbyggd huvudplanering och Planeringsoptimering
 
@@ -26,7 +26,7 @@ Resultatet från Planeringsoptimering kan skilja sig från resultaten från den 
 | Funktion | Aktuellt beteende i Planeringsoptimering |
 |---|---|
 | Produkter med faktisk/nominell vikt | Produkter med faktisk/nominell vikt betraktas som vanliga produkter.|
-| Utökningsbara dimensioner | Utökningsbara dimensioner är tomma på planerade order även om kryssrutan **Disponeringsplan efter dimension** har valts på sidan **Lagringsdimensionsgrupper** eller **Spårningsdimensionsgrupper**. |
+| Utökningsbara dimensioner | Utökningsbara dimensioner stöds inte av Planeringsoptimering. När du använder Planeringsoptimering är utökningsbara dimensioner är tomma på planerade order även om kryssrutan **Disponeringsplan efter dimension** har valts på sidan **Lagringsdimensionsgrupper** eller **Spårningsdimensionsgrupper**. |
 | Filtrerade produktionskörningar | Mer information finns i [Produktionsplanering - Filter](production-planning.md#filters). |
 | Prognosplanering | Prognosplanering stöds inte. Vi rekommenderar att du använder huvudplanering där en prognosmodell tilldelas huvudplanen. |
 | Nummerserier för planerade order | Nummerserier för planerade order stöds inte. Planerade ordernummer genereras på tjänstesidan. Det planerade ordernumret visas normalt med 10 siffror, men serien bygger faktiskt på 20 tecken: 10 siffror fördelade för planeringskörningsräkningen och de övriga 10 siffrorna för den planerade orderräkningen. |
@@ -38,6 +38,7 @@ Resultatet från Planeringsoptimering kan skilja sig från resultaten från den 
 | Transportkalendrar | Värdet i kolumnen **Transportkalender** på sidan **Leveranssätt** ignoreras. |
 | Minsta/högsta disponeringskod utan värden| Med den inbyggda planeringsmotorn behandlas disponeringskoden som ett behov när du använder en minsta/högsta disponeringskod där inga minimi- eller maximivärden anges, och en order skapas för respektive behov. Med Planeringsoptimering skapar systemet en order per dag för att täcka hela beloppet för den dagen.  |
 | Nettobehov och manuellt skapade planerade order | Med den inbyggda planeringsmotorn visas manuellt skapade leveransorder för en artikel automatiskt bland nettobehoven för artikeln. När du till exempel skapar en inköpsorder från en försäljningsorder visas inköpsordern på sidan **Nettobehov** utan att föregående åtgärder krävs. Det beror på att den inbyggda planeringsmotorn loggar lagertransaktioner i `inventLogTTS` registret och visar ändringar på sidan **nettobehov** för dynamiska planer. Med Planeringsoptimering kommer emellertid manuellt skapade order inte att visas bland nettobehoven för en artikel förrän Planeringsoptimering körs (med hjälp av en plan som inkluderar artikeln), eller innan du väljer **Uppdatera \> Huvudplanering** i åtgärdsfönstret på sidan **Nettobehov**, som kommer att köra huvudplanering för objektet. Mer information om hur du arbetar med sidan finns på sidan **Nettobehov**, se [Nettobehov och pegging-information med Planeringsoptimering](net-requirements.md). |
+| Resurstilldelning | När du arbetar med obegränsad kapacitet tilldelar den inbyggda huvudplaneringsmotorn alla planerade order till samma resurs för en given resursgrupp. Detta förbättrar planeringsoptimering genom att välja resurser vid slumpmässiga tidpunkter så att olika tillverkningsorder kan använda olika resurser. Om du vill använda samma resurs för alla planerade order måste du ange den resursen i flödet. |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

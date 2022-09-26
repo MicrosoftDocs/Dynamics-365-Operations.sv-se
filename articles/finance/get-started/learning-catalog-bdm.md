@@ -1,23 +1,23 @@
 ---
 title: Utbildningskatalog för beslutsfattare inom företag om Dynamics 365 Finance
 description: Hitta alla utbildningsalternativ för BDM och TDM om Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.date: 07/27/2020
 ms.topic: article
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: eba7c10d08ade65f7ddf93cae06446b7e3452e37
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: cc089548cdbfe05a14fc59a5de05f9ceff12984b
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065312"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9539643"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-finance"></a>Utbildningskatalog för beslutsfattare inom företag om Dynamics 365 Finance
 
@@ -27,20 +27,19 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
-| Innehåll | beskrivning | Format | Längd |
+| Innehåll | Beskrivning | Format | Längd |
 |---------|-------------|--------|--------|
-| [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 7 timmar |
-| [Dynamics 365 och Power Platform grunder](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar |
-| [Kom igång med appar för ekonomi och drift](/learn/paths/get-started-finance-operations/) | Lär dig hur appar för ekonomi och drift ger stöd till företag för att hantera deras globala finanssystem, operativa affärsprocesser och effektiviserade leveranskedjor i syfte att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med appar för ekonomi och drift är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill inneha. | Gratis, självstudier online utbildningsväg | 2 timmar |
-| [Kom igång med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gör det möjligt för företagsanvändare att anpassa sig till att snabbt byta affärsmiljöer. Det förser företagen med allt de behöver för att kontrollera ekonomin och hantera fonder med exakt information för ekonomisk planering och prognosticering och hjälper dem att hålla sig uppdaterade med analysverktyg. Eftersom ekonomi är kärnan i alla verksamheter är det viktigt att du är bekant med funktionerna i Dynamics 365 Finance. | Gratis, självstudier online utbildningsmodul | 1 timma |
-| [Kom igång med utgiftshantering i Dynamics 365 Project Operations](/learn/modules/get-started-expense-management/) | Utgiftshanteringsmodulen i Dynamics 365 Project Operations gör det möjligt för organisationer att spåra och hantera medarbetarutgifter. Med utgiftshantering kan du lagra betalningsinformation, importera kreditkortstransaktioner och spåra pengar som medarbetarna lägger ut när de gör utlägg för din organisation. Du kan även ställa in utgiftspolicyer, automatisera godkännanden och effektivisera affärsprocesser med hjälp av Project Operations. | Gratis, självstudier online utbildningsväg | 1 timma |
-| [Kom igång med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunderna hantera orkestreringen av order ända fram till uppfyllelsen. Med dessa funktioner kan organisationer orkestrera orderflöden över olika plattformar och program. | Gratis, självstudier online utbildningsmodul | 30 minuter |
+| [Dynamics 365 och Power Platform grunder](/training/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar |
+| [Kom igång med appar för ekonomi och drift](/training/paths/get-started-finance-operations/) | Lär dig hur appar för ekonomi och drift ger stöd till företag för att hantera deras globala finanssystem, operativa affärsprocesser och effektiviserade leveranskedjor i syfte att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med appar för ekonomi och drift är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill inneha. | Gratis, självstudier online utbildningsväg | 2 timmar |
+| [Kom igång med Dynamics 365 Finance](/training/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gör det möjligt för företagsanvändare att anpassa sig till att snabbt byta affärsmiljöer. Det förser företagen med allt de behöver för att kontrollera ekonomin och hantera fonder med exakt information för ekonomisk planering och prognosticering och hjälper dem att hålla sig uppdaterade med analysverktyg. Eftersom ekonomi är kärnan i alla verksamheter är det viktigt att du är bekant med funktionerna i Dynamics 365 Finance. | Gratis, självstudier online utbildningsmodul | 1 timma |
+| [Kom igång med utgiftshantering i Dynamics 365 Project Operations](/training/modules/get-started-expense-management/) | Utgiftshanteringsmodulen i Dynamics 365 Project Operations gör det möjligt för organisationer att spåra och hantera medarbetarutgifter. Med utgiftshantering kan du lagra betalningsinformation, importera kreditkortstransaktioner och spåra pengar som medarbetarna lägger ut när de gör utlägg för din organisation. Du kan även ställa in utgiftspolicyer, automatisera godkännanden och effektivisera affärsprocesser med hjälp av Project Operations. | Gratis, självstudier online utbildningsväg | 1 timma |
+| [Kom igång med Dynamics 365 Intelligent Order Management](/training/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunderna hantera orkestreringen av order ända fram till uppfyllelsen. Med dessa funktioner kan organisationer orkestrera orderflöden över olika plattformar och program. | Gratis, självstudier online utbildningsmodul | 30 minuter |
 | [Kurs MB-900T01-A: Dynamics 365 – grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
 
 ## <a name="exam"></a>Prov<a name="exam"></a>
 
 | Innehåll | beskrivning | Format |
 |---------|-------------|--------|
-| [Dynamics 365 grunder](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bevisa att du förstår Microsoft Dynamics 365: Power Platform; molnkoncept; licensieringsalternativ; och distribution- och publiceringsalternativ. | Prov; kostnaden varierar beroende på region |
+| [Dynamics 365 grunder](/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bevisa att du förstår Microsoft Dynamics 365: Power Platform; molnkoncept; licensieringsalternativ; och distribution- och publiceringsalternativ. | Prov; kostnaden varierar beroende på region |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

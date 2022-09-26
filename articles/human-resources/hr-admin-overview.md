@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
-ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
+ms.openlocfilehash: d2484b601a645694b988ac038a460a376ec912b0
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9475649"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538716"
 ---
 # <a name="administration-overview"></a>Administreringsöversikt
 
@@ -100,7 +100,8 @@ Denna artikel innehåller en lista med hjälpavsnitt och andra resurser med syft
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 ### <a name="elearning-courses"></a>E-utbildningskurser
-Information om onlinekurser och utbildning finns i [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+För onlinekurser och utbildning, se [Dynamics 365 Human Resources utbildningsvägar](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### <a name="videos"></a>Videor
 

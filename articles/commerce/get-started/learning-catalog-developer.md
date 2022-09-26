@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 0d1b018557cb576f8cc50000b86c5baabc738e44
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 4334c147dc2ae1f55e9af13bec7eaf6143f26c9c
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423923"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538954"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-developers"></a>Utbildningskatalog för Dynamics 365 Commerce utvecklare
 
@@ -31,13 +31,13 @@ Om du vill öva på funktioner som delas med andra appar för ekonomi och drift,
 
 | Innehåll | Beskrivning | Format | Längd |
 |---------|-------------|--------|--------|
-| [Kom igång med Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)                                                              | Dynamics 365 Commerce som bygger på de beprövade funktionerna i Dynamics 365 Retail är en omfattande lösning i flera kanaler där backoffice, butik, kundtjänst och digitala upplevelser samordnas. Dynamics 365 Commerce gör det möjligt för dig att skapa varumärkeslojalitet via anpassade kundåtaganden, öka intäkterna med förbättrad produktivitet hos anställda, optimera åtgärder för att minska kostnaderna och öka effektiviteten i leveranskedjan och slutligen leverera bättre affärsresultat. | Gratis, självstudier online utbildningsväg | 2 timmar   |
-| [Kom igång med Dynamics 365 Fraud Protection](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection är en molnbaserad lösning som är utformad för näthandel, fysiska butiker och handlare i flera kanaler att skydda sina intäkter och rykte genom att tillhandahålla verktyg och funktioner för att minska bedrägerier och missbruk, minska driftskostnaderna och öka acceptansnivåerna, samtidigt som användarkonton skyddas från bedrägeriexponering. | Gratis, självstudier online utbildningsväg | 35 minuter |
+| [Kom igång med Dynamics 365 Commerce](/training/paths/get-started-dynamics-365-commerce/)                                                              | Dynamics 365 Commerce som bygger på de beprövade funktionerna i Dynamics 365 Retail är en omfattande lösning i flera kanaler där backoffice, butik, kundtjänst och digitala upplevelser samordnas. Dynamics 365 Commerce gör det möjligt för dig att skapa varumärkeslojalitet via anpassade kundåtaganden, öka intäkterna med förbättrad produktivitet hos anställda, optimera åtgärder för att minska kostnaderna och öka effektiviteten i leveranskedjan och slutligen leverera bättre affärsresultat. | Gratis, självstudier online utbildningsväg | 2 timmar   |
+| [Kom igång med Dynamics 365 Fraud Protection](/training/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection är en molnbaserad lösning som är utformad för näthandel, fysiska butiker och handlare i flera kanaler att skydda sina intäkter och rykte genom att tillhandahålla verktyg och funktioner för att minska bedrägerier och missbruk, minska driftskostnaderna och öka acceptansnivåerna, samtidigt som användarkonton skyddas från bedrägeriexponering. | Gratis, självstudier online utbildningsväg | 35 minuter |
 
 ## <a name="commerce"></a>Commerce<a name="commerce"></a>
 
 | Innehåll | beskrivning | Format | Längd |
 |---------|-------------|--------|--------|
-| [Driftsätta och utöka Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | I den här utbildningsvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar |
+| [Driftsätta och utöka Dynamics 365 Commerce](/training/paths/deploy-dynamics-365-commerce/) | I den här utbildningsvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

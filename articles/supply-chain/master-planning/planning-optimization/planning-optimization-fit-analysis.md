@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
-ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
+ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9347300"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542363"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för Planeringsoptimering
 
@@ -62,7 +62,7 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | --- | --- | --- | --- |
 | Åtgärder | Disponeringsgrupper med åtgärdsberäkning aktiverat: *\#* | Denna funktion stöds nu. | Stöds |
 | Baskalendrar | Kalendrar som använder baskalendern: *\#* | Denna funktion stöds nu. | Stöds | 
-| Batchdispositionskoder | Ej nettoberäkningsbara batchdispositionshuvuden: *\#* | Denna funktion väntar. För närvarande ignoreras batchdispositionskod när Planeringsoptimering aktiveras. | 2022 utgivningscykel 2 |
+| Batchdispositionskoder | Ej nettoberäkningsbara batchdispositionshuvuden: *\#* | Denna funktion väntar. För närvarande ignoreras batchdispositionskod när Planeringsoptimering aktiveras. | 2022 utgivningscykel 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
 | CTP (capable to promise) | Standardorderinställningar med leveransdatumkontrollen inställd på CTP: *\#* | I Supply Chain Management 10.0.28 och nyare gör en process kallad *CTP för planeringsoptimering* bekräftade transport- och inleveransdatum tillgängliga när den dynamiska planen har körts. För äldre versioner av Supply Chain Management ignoreras den äldre CTP-inställningen när Planeringsoptimering aktiveras. | Stöds |
 | Kopiera statisk till dynamisk plan | Kopiering av statisk till dynamisk plan har aktiverats i huvudplaneringsparametrarna. | Planeringsoptimering kopierar inte den statiska planen till den dynamiska planen, oavsett den här inställningen. I allmänhet är detta ett mindre relevant begrepp på grund av snabbheten och den fullständiga genereringen av Planeringsoptimeringen. Om två eller flera planer används ska huvudplaneringen utlösas för varje plan. | Inte tillämpligt |
 | Bekräftelse | Disponeringsgrupper med automatisk bekräftelse av tidsgräns angiven: *\#* | I version 10.0.7 och senare stöds bekräftelser som ett separat bekräftat batchjobb när huvudplaneringen är slutförd (förutsatt att funktionen *Automatisk bekräftelse för Planeringsoptimerin* har aktiverats i [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Observera att automatisk bekräftelse för Planeringsoptimering baseras på orderdatum (startdatum), inte behovsdatum (slutdatum). Det här beteendet säkerställer att bekräftelse av planerade order sker i tid, utan att ledtiden behöver inkluderas i den bekräftade tidsgränsen. | Stöds |

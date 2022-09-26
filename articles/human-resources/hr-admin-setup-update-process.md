@@ -2,7 +2,7 @@
 title: Uppdatera process
 description: Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (SaaS) som tillhandahåller kontinuerliga, beröringsfria tjänstuppdateringar för app- och plattformsändringar.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178457"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520821"
 ---
 # <a name="update-process"></a>Uppdatera process
 
 _**Gäller för:** Personal i den fristående infrastrukturen_ 
 
 > [!NOTE]
-> Från och med 2022 juli kan nya Personal-miljöer inte tilldelas för den fristående Personal-infrastrukturen, och nya Microsoft Dynamics Lifecycle Services-projekt (LCS) kan inte skapas i den. Kunder kan distribuera Personalmiljöer på infrastruktur för ekonomi och drift. Mer information finns i [tillhandahålla Personal i infrastruktur för ekonomi och drift](/hr-admin-setup-provision-fo.md).
+> Från och med 2022 juli kan nya Personal-miljöer inte tilldelas för den fristående Personal-infrastrukturen, och nya Microsoft Dynamics Lifecycle Services-projekt (LCS) kan inte skapas i den. Kunder kan distribuera Personalmiljöer på infrastruktur för ekonomi och drift. Mer information finns i [tillhandahålla Personal i infrastruktur för ekonomi och drift](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > Uppdaterings- och snabbkorrigeringsprocessen för infrastrukturen med avseende på appar för ekonomi och drift skiljer sig från den fristående uppdaterings- och snabbkorrigeringsprocessen för Personal. Om du vill ha mer information om uppdateringsprocessen går du till [Process för att flytta till den senaste uppdateringen av Ekonomi och drift](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Mer information om snabbkorrigeringar finns i [Hämta uppdateringar från Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 65467fd9525ae8fb5a65a9316b7307f611fa6e42
-ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
+ms.openlocfilehash: 6ef551e1c2c4d90510f967855a5aa61646dc8eab
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9475623"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538576"
 ---
 # <a name="intercompany-planning"></a>Koncernintern planering
 
@@ -45,8 +45,8 @@ Om du kör huvudplaneringen från en huvudplan som inkluderar planerad efterföl
 
 Om du vill använda koncernintern planering måste du förbereda systemet på följande sätt:
 
-1. De relevanta produkterna måste frisläppas på alla berörda företag. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
-1. Efterföljande efterfrågan måste täckas av inköp från en leverantör som har en koncernintern relation till det överordnade företaget och relevanta standard lagerdimensioner (webbplats och lagerställe) för kunden. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. De relevanta produkterna måste frisläppas på alla berörda företag. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management](/training/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. Efterföljande efterfrågan måste täckas av inköp från en leverantör som har en koncernintern relation till det överordnade företaget och relevanta standard lagerdimensioner (webbplats och lagerställe) för kunden. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management](/training/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
 1. Huvudplanen i det överordnade företaget måste inkludera planerad efterföljande efterfrågan och det relevanta företaget och huvudplanen måste anges i de efterföljande planerna.
 
 ## <a name="include-planned-downstream-demand"></a>Inkludera underordnad planerad efterfrågan

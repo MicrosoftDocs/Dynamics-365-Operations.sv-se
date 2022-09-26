@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9427885"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520761"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.29 (oktober 2022)
 
@@ -35,7 +35,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 | Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
 | Lager och logistik | [Allokera och reservera WMS-artiklar i Lagersynlighet](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Kommer snart | Aktiverad som standard |
-| Lager och logistik | [Förinläsning av strömlinjeformade lagerlistor](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Kommer snart | Aktiverad som standard |
+| Lager och logistik | [Förinläsning av strömlinjeformade lagerlistor](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Använda appen Inventory Visibility](../inventory/inventory-visibility-power-platform.md) | Aktiveras via tjänstekonfiguration |
 | Tillverka mot order-automation | [Tillverka mot order-automation](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Tillverka mot order-automation](../master-planning/make-to-order-supply-automation.md) | Funktionshantering:<br>*Tillverka mot order-automation* |
 | Planering | [Visa och använd detaljerad inblick för DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Planeringsöversikt för efterfrågebaserade materialbehov](../master-planning/planning-optimization/ddmrp-overview.md) | Funktionshantering:<br>*(Förhandsversion) DDMRP för Planeringsoptimering* |
 | Produktionskontroll | [Göra färdiga varor fysiskt tillgängliga före bokföring i journaler](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Göra färdiga varor fysiskt tillgängliga före bokföring i journaler](../production-control/deferred-posting.md) | Funktionshantering:<br>*(Förhandsversion) Göra färdiga varor fysiskt tillgängliga före bokföring i journaler* |

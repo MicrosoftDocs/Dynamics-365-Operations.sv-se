@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: fa1a120fac66997658908a61469d45e96bcc4912
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462368"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538848"
 ---
 # <a name="help-system"></a>Hjälpsystem
 
@@ -40,14 +40,14 @@ I samtliga dessa appar kommer du åt produktspecifik hjälp via panelen **Hjälp
 
 ![Hjälpfönster.](./media/help-pane-ops-help.png)
 
-## <a name="help-on-microsoft-docs"></a>Hjälp om Microsoft Docs
+## <a name="help-on-microsoft-learn"></a>Hjälp om Microsoft Learn
 
-([Microsoft Dynamics 365 dokumentation](/dynamics365/)) på Microsoft Docs är standardkällan för produktdokumentation för de tidigare listade apparna. Denna webbplatsen erbjuder följande funktioner:
+([Microsoft Dynamics 365 dokumentation](/dynamics365/)) på Microsoft Learn är standardkällan för produktdokumentation för de tidigare listade apparna. Denna webbplatsen erbjuder följande funktioner:
 
 - **Åtkomst till det senaste innehållet**– Webbplatsen ger Microsoft ett snabbare och mer flexibelt sätt att skapa, leverera och uppdatera produktdokumentation. Du får därmed enkel tillgång till den senaste konstruktionsinformationen.
 - **Innehåll som har skrivits av experter** – Innehållet på webbplatsen är öppet för bidrag från community-medlemmar både inom och utanför Microsoft.
 
-Du kan söka efter innehåll på Microsoft Docs med hjälp av valfri sökmotor. För bästa resultat rekommenderar vi att du använder en webbplatssökning, exempelvis **site:docs.microsoft.com dynamics 365 "sökterm"**.
+Du kan söka efter innehåll på Microsoft Learn med hjälp av valfri sökmotor. För bästa resultat rekommenderar vi att du använder en webbplatssökning, exempelvis **site:learn.microsoft.com dynamics 365 "sökterm"**.
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få reda på ändringar via en RSS-feed
 
@@ -87,7 +87,7 @@ Du kan delta i och redigera den dokumentation. För att komma igång väljer du 
 
 Videon [Hur du bidrar till dokumentationen för Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) video (som visas ovan) ingår i kanalen Microsoft Dynamics 365 på YouTube.
 
-Mer information finns i [Microsoft dokumentguiden för medarbetare](/contribute), som publiceras av teamet som skapade Microsoft dokument-webbplatsen.
+Mer information finns i [Microsofts Docs-deltagarguide](/contribute), som publiceras av teamet som skapade Microsoft Learn webbplatsen.
 
 > [!NOTE]
 > Vi godkänner endast bidrag till vår engelska hjälpdel just nu.
@@ -169,14 +169,11 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 | Webbplats | Beskrivning |
 |------|-------------|
 | [Microsoft Dynamics 365 dokumentation](/dynamics365/) | Denna webbplats är värd för eller länkar till all produktdokumentation för Dynamics 365. |
-| [Microsoft Learn](/learn/) | Den här webbplatsen är den kostnadsfria Microsoft eLearning-webbplatsen. |
+| [Microsoft Learn träning](/training/) | Den här webbplatsen är den kostnadsfria Microsoft eLearning-webbplatsen. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Denna webbplats ger en molnbaserad samarbetsarbetsyta som kunder och deras partner kan använda för att hantera projekt från förförsäljning till genomförande och drift. Den är användbar för alla implementeringsfaser. |
 | [Supportblogg](https://aka.ms/AXSupportBlog) | Denna webbplats ger tips som har lagts in av supportteamet. |
 | [Tidigare versioner](/previous-versions/dynamics/) | Denna webbplats är värd för innehåll från tidigare versioner. |
 | [Dynamics Community](https://community.dynamics.com/) | Denna webbplats är värd för bloggar, forum och videor. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Denna webbplats ger information om utvärdering och försäljning. |
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: f908caa902e4747d324480e3a5108b443d385ea7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: aa6c80914301cc0403974a6acc5e95ff61c9c1a7
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277344"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524700"
 ---
 # <a name="connected-applications"></a>Anslutna appar
 
@@ -35,7 +35,7 @@ Tillgängligheten på Ekonomi- eller Supply Chain Management-parametrar i RCS ä
 ## <a name="create-a-connected-application"></a>Skapa ett anslutet program.
 
 1. Logga in på RCS-kontot.
-2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **e-fakturor**.
+2. I arbetsytan **Globaliseringsfunktioner** i avsnittet **Relaterade länkar** väljer du panelen **Miljöinställningar**.
 3. På sidan **Miljökonfiguration** väljer du **Anslutna program** i åtgärdsfönstret.
 4. Skapa ett anslutet program genom att välja **Ny**.
 5. I fältet **Namn** anger du namnet på det program du vill ansluta.
