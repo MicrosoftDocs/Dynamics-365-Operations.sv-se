@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 0f005352970ec3dadb178dfafeaf4f7e36f8c18d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279823"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573316"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gång med momsberäkning
 
@@ -186,9 +186,9 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
 
     | Skattegrupp    | Momskoder           |
     | ------------ | ------------------- |
-    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_Dom | DEU_VAT19; DEU_VAT7 |
     | DEU_EU       | DEU_Exempt          |
-    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
 20. På fliken **Artikelmomsgrupp** väljer du kolumnen **Artikelmomsgrupp**, lägger till den i matrisen som indatavillkor och lägger sedan till rader i syfte att bibehålla huvuddata för artikelmomsgrupp.
@@ -204,11 +204,11 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
 
     Här är ett exempel:
 
-    | Affärsprocess | Leverera från | Skeppa till | Skattegrupp    |
+    | Affärsprocess | Leverera från | Leverera till | Skattegrupp    |
     | ---------------- | --------- | ------- | ------------ |
-    | Försäljning            | DEU       | DEU     | DEU_Domestic |
+    | Försäljning            | DEU       | DEU     | DEU_Dom |
     | Försäljning            | DEU       | FRA     | DEU_EU       |
-    | Försäljning            | BEL       | BEL     | BEL_Domestic |
+    | Försäljning            | BEL       | BEL     | BEL_Dom |
     | Försäljning            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]

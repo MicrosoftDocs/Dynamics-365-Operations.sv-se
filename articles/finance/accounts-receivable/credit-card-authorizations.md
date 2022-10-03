@@ -1,7 +1,7 @@
 ---
 title: Kreditkortinställning, auktorisering och registrering
 description: Den här artikeln ger en översikt över kreditkortskontroll i Microsoft Dynamics 365 Finance. Här finns information om hur du ställer in en betalningstjänst, lägger till ett kreditkort till en försäljningsorder och annullerar en auktorisering.
-author: ShivamPandey-msft
+author: ShivamPandeymsft
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d363b8a909855d3495d78b8721e467d3f78ebbd6
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: b84fe90e6c01d06ecbb3a1e13a9f018d385c22c0
+ms.sourcegitcommit: 346a9ca833237836d5e4ca496aeb2b5b24bdb27b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714017"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9583789"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Kreditkortinställning, auktorisering och registrering
 

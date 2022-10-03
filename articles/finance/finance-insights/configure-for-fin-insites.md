@@ -2,7 +2,7 @@
 title: Konfiguration för Finance Insights
 description: I den här artikeln beskrivs de konfigurationssteg som gör att systemet kan använda de funktioner som finns i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 05bf5fe5a5ff86bbf52ed58ee6b1e84c15bf2c1e
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861428"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573205"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguration för Finance Insights
 
@@ -39,7 +39,7 @@ Följ dessa steg för att distribuera miljöerna.
 1. I LCS, skapa eller uppdatera en Dynamics 365 Finance-miljö. Miljön kräver appversion 10.0.21 eller senare.
 
     > [!NOTE]
-    > Miljön måste vara en miljö med hög tillgänglighet (HA). (Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+    > Miljön måste vara en miljö med hög tillgänglighet (HA). (Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 2. Om du konfigurerar Finance Insights i en sandbox-miljö måste du kanske kopiera produktionsdata till den miljön för att förutsägelser ska fungera. I modellen för förutsägelse används flera års data för att skapa förutsägelser. Contoso-demodatan innehåller inte tillräckligt med historiska data för på ett adekvat sätt mata förutsägelsemodellen. 
 
@@ -51,13 +51,16 @@ Kontrollera att följande inställningar är slutförda:
 
 - Du har åtkomst **systemadministratörer** och **Systemanpassare** i administrationscentret för Power Portal.
 - En Dynamics 365 Finance eller motsvarande licens tillämpas på den användare som installerar tillägget Finance Insights.
+- Följande Azure AD program är registrerade i Azure AD.
 
-Följande Azure AD program är registrerade i Azure AD.
+    |  Ansökning                             | App-ID                               |
+    |------------------------------------------|--------------------------------------|
+    | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-|  Ansökning                             | App-ID                               |
-|------------------------------------------|--------------------------------------|
-| Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    
+    Kontrollera att programmet är registrerat Azure AD i listan **Alla program**. Mer information finns i [Visa företagsprogram](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    Om programmet inte är registrerat i Azure AD kontaktar du support.
+  
 ## <a name="configure-dataverse"></a>Konfigurera Dataverse
 
 Följ dessa steg för att konfigurera Dataverse för Finance Insights.

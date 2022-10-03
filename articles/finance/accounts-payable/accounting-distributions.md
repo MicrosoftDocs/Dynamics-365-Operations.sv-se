@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
+ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894212"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9588964"
 ---
 # <a name="accounting-distributions"></a>Redovisningsfördelningar
 
@@ -51,7 +51,7 @@ De allmänna redovisningsfördelningsfunktionerna innehåller följande alternat
     -   Du kan visa aktuell redovisningsstatus för dokumentet under **Referens**. Statusen är för hela dokumentet och anger om dokumentet är pågående eller slutfört.
 -   **Visa fördelningar** – Visa redovisningsfördelningarna för alla rader och penningbelopp i dokumentet. Du kan inte ändra redovisningsfördelningarna från den här vyn.
 
-I version 10.0.13 har en funktion lagts till som validerar registret för redovisningsfördelning för att se till att nya fält ställs in korrekt. Den här funktionen kallas för **Aktivera ytterligare validering av data för dokument med hjälp av källdokumentets redovisningsramverk**. Om du vill använda funktionen måste du aktivera den med hjälp av arbetsytan **funktionshantering**. Aktivera funktionen genom att söka efter funktionsnamnet i fältet **Sök** på sidan **Funktionshantering** och välj sedan **Aktivera nu**.
+I version 10.0.13 har en funktion lagts till som validerar registret för redovisningsfördelning för att se till att nya fält ställs in korrekt. Den här funktionen kallas för **Aktivera ytterligare validering av data för dokument med hjälp av källdokumentets redovisningsramverk**. Den här funktionen kommer att aktiveras som standard i version 10.0.29. 
 
 Mer information finns i [Redovisningsfördelningar och redovisningsjournalposter för leverantörsfakturor](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
 

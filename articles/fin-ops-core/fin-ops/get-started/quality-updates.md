@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
-ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
+ms.openlocfilehash: c2d26b7c5e110d05806c064e15a3ad2af34d0fbd
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473616"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592057"
 ---
 # <a name="proactive-quality-updates"></a>Förebyggande kvalitetsuppdateringar
 
@@ -57,7 +57,7 @@ En uppsättning processändringar implementeras innan förebyggande kvalitetsupp
 - **Schema** – Verktyget säkerställer att versioner med kvalitetsuppdatering endast inkluderar schemaändringar som kan användas när tjänsten är online. Denna metod gör det möjligt att tillämpa uppdateringen med nära noll driftstoppstid.
 - **Större förändring som påverkar arbetet** – För närvarande finns det redan ett extra processsteg för att godkänna ändringar för inkludering i en kvalitetsuppdatering. Den som inte är noggrann i det extra steget ökar för att minska potentialen för något. Dela upp ändringar är inte tillåtet i kvalitetsuppdateringar och den större ändringen som påverkar säkerheten hjälper dig att se till att vi uppfyller detta mål.
 - **Synlighet** – Vi skickar meddelanden via e-post och Lifecycle Services (LCS) för kommande förebyggande kvalitetsuppdateringar. Supportteams och incident leads kommer dessutom att ha god insyn i var kvalitetsuppdateringar har distribuerats i förebyggande syfte.
-- **Version reserv** – Förhandsversion kommer att användas för att gruppera alla ändringar i en proaktiv kvalitetsuppdatering. Om reserv krävs efter en förebyggande distribution kan den göras med hjälp av det system för förhandsversionen.
+- **Felsäker via förhandsversion** – Förhandsversionen kommer att användas för ändring av kod, där det är tillämpligt i en kvalitetsuppdatering eller för att använda den befintliga funktion som är relevant för korrigeringen. Om en reserv eller en ändring måste stängas av efter en förebyggande distribution, kan den göras via systemet för förhandsversionen för att undvika ytterligare fel.
 - **Synkroniserad sandbox beteckning** – Mindre än 20 procent av kunderna har idag flera problem och har en distribution där versionen matchar produktionen som hjälp vid felsökning. Om en kund använder en sandbox för att testa en nyare version än produktionen kommer den sandbox att få kvalitetsuppdateringar av den nyare versionen.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Vad är det för fel på sammanslagningen som gäller för kvalitetsuppdateringar?
@@ -69,7 +69,7 @@ Under den kommande sexmånadersperioden kommer vi gradvis att öka andelen sandb
 Eftersom kunderna regelbundet får mindre nyttolaster, förväntar vi oss att processen med nuvarande situation blir enklare. Vi justerar frekvensen för uppdatering av distributionen när vi demonstrerar möjligheten att köra processen utan störningar. Denna process fungerar redan effektivt för vår Dataverse plattform och våra program och levererar de förväntade förbättringarna av servicekvalitet. Vi ser fram emot att ta samma steg framåt för appar för ekonomi och drift.
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>När startas kvalitetsuppdateringar för produktionsmiljöer?
-I den här tiden är kvalitetsuppdateringar bara mål för kvalitetsnormer. Uppdateringar av produktionsmiljöerna kommer att påbörjas efter november 2022.
+I den här tiden är kvalitetsuppdateringar bara mål för kvalitetsnormer. Vi uppdaterar det här utrymmet med ett startdatum för produktionsmiljöer när vi har fler data och värden från förebyggande uppdateringar för åtgärder för att bedöma beredskapen för prod.
 
 ## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Vad är schemat för kvalitetsuppdateringar av sandbox?
 Mer information om mörka timmar för varje region finns i [Vad är schemat för förebyggande kvalitetsuppdateringar?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).

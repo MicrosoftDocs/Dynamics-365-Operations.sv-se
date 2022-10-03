@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
+ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542363"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9591861"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för Planeringsoptimering
 
@@ -94,7 +94,7 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Produktion | Formelversioner med avkastning: *\#* | Denna funktion väntar. För närvarande ignoreras avkastning som är associerad med formelversionen när Planeringsoptimering är aktiverad. | 2022 utgivningscykel 2 |
 | Produktion | Planer med ordningsföljd: *\#* | Denna funktion väntar. För närvarande ignoreras ordningsföljd när Planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2022 utgivningscykel 2 |
 | Produktion | Släppta eller startade produktionsorder som inte är startade, där planerad start är tidigare än: *\#* | Denna funktion väntar. För närvarande, om en produktionsorder är försenad, kommer huvudplaneringen att förutsätta att den slutförs i dag. Detta är relevant för släppta produktionsorder där ett leveransdatum har passerats men ännu inte slutförts. | Framtida påfyllnad |
-| Produktion | Planerade resurser med begränsad kapacitet: *\#* | Denna funktion väntar. För närvarande kommer resurser som har planerats med begränsad kapacitet att ignoreras när Planeringsoptimering är aktiverad. Tidsplaneringen görs baserat på standardledtiden från produkten. | 2022 utgivningscykel 2 |
+| Produktion | Planerade resurser med begränsad kapacitet: *\#* | Denna funktion stöds nu.| Stöds |
 | Produktion | Flöden använda i planering: *\#* | Denna funktion stöds. | Stöds |
 | Produktion | Reservation av försäljningsrad med nedbrytning: *\#* | Reservation av försäljningsrad med nedbrytning stöds inte när Planeringsoptimering aktiveras. | Framtida påfyllnad |
 | Produktion | Planering med nedbrytning av produktionsorder: *\#* | Tidsplanering som använder nedbrytning av produktionsorder stöds inte när Planeringsoptimering aktiveras. Produktionsorder kan tidsplaneras individuellt. | Framtida påfyllnad |
