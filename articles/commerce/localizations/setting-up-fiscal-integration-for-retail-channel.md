@@ -2,19 +2,19 @@
 title: Ställ in räkenskapsintegrering för handelskanaler
 description: Denna artikel ger riktlinjer för att skapa funktionen för räkenskapsintegrering för Commerce-kanaler.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28097341c7b39660b834eb81786c3f56045e1496
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276143"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631434"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Ställ in räkenskapsintegrering för handelskanaler
 
@@ -30,9 +30,10 @@ Aktivera funktioner som är relaterade till funktionen räkenskapsintegrering f�
 1. Hitta och aktivera följande funktioner:
 
     - **Direkt räkenskapsintegrering från kassaregister** – Den här funktionen utökar ramverket för skatteintegrering genom att lägga till möjligheten att skapa skatteanslutningar som körs i kassan (POS). Denna typ av anslutningsprogram kommunicerar med en räkenskapsenhet eller tjänst som tillhandahåller ett API (HTTP-approgrammeringsgränssnitt) och behöver inte en dedicerad fysisk maskin i butiken. Den här funktionen aktiverar till exempel skatteintegrering för mobila enheter utan att det krävs delad maskinvara.
-    - **Åsidosättningar av räkenskapsintegrering för teknisk profil** av den här funktionen kan konfigurationen av skatteintegrering expanderas och kapaciteten att kontrollera kopplingsparametrarna på inställningssidan för ett kassaregister läggs till. När den här funktionen är aktiverad kan du åsidosätta parametrarna för en teknisk profil.
+    - **Åsidosättningar av teknisk profil för skatteregistrering** – Denna funktion gör att konfigurationen för skatteintegrering kan expanderas samt till för möjligheten att åsidosättar parametrarna i en teknisk profil. Det går till exempel att ange anslutningssträngar för skatteenheten på den enskilda POS-kassanivån. Funktionen lägger också till möjligheten att kontrollera anslutningsparametrar på sidan **Inställningar** i ett kassaregister. 
     - **Räkenskapsregistreringstillstånd för kassaregister** – När den här funktionen är aktiverad kan du inaktivera räkenskapsregistreringsprocessen för specifika kassaregister. Om skatteregistreringen inaktiveras för ett kassaregister kan försäljningstransaktioner inte slutföras på den kassan.
-    - **Säkerhetskopiering av lokal datalagring för bokföringsintegrering** – Den här funktionen utökar felhanteringsmöjligheterna i ramverket för finansiell integrering. Det gör det också möjligt att automatiskt säkerhetskopiera räkenskapsregistreringsdata vid dataförlust, så att data i lokal lagring återställs när en enhet aktiveras.
+    - **Säkerhetskopiering av lokal datalagring för skatteintegrering** – Denna funktion utökar felhanteringsfunktionerna i ramverket för skatteintegrering genom att aktivera automatisk säkerhetskopiering av skatteregistreringsdata, detta så att informationen i den lokala lagringen kan återställas när en enhet aktiveras.
+    - **Senarelagd registrering av dokument** - Den här funktionen utökar felhanteringsfunktionerna i ramverket för skatteintegrering genom att aktivera alternativet att senarelägga skatteregistreringen om en skatteregistrering misslyckas och använda ett alternativ för säkerhetskopiering av skatteregistrering, eller slutföra skatteregistreringen senare på andra sätt än genom ramverket för skatteintegrering.
 
 ## <a name="set-up-commerce-parameters"></a>Ställ in Commerce-parametrar
 
@@ -152,7 +153,7 @@ Gör så här om du vill skapa grupp för räkenskapskoppling.
 1. Gå till sidan **Grupp för räkenskapskoppling** (**Butik och handel \> kanalinställning \> räkenskapsintegrering \> grupper för räkenskapskoppling**).
 1. Skapa en ny grupp för grupp för räkenskapskoppling.
 1. Lägg till funktionella profiler till kopplingsgruppen. På sidan **Lägg till** på sidan **funktionella profiler** och välj ett profilnummer. Varje anslutningsprogram för räkenskaper i en grupp för anslutningsprogram kan endast ha en (1) funktionell profil.
-1. Om du vill skjuta upp användning av funktionella profilen, ange **inaktivera** till **Ja**. Denna ändring påverkar endast aktuella kopplingsgruppen. Du kan fortsätta att använda samma funktionella profil i andra kopplingsgrupper.
+1. Om du vill senarelägga användning av funktionella profilen, ange **inaktivera** till **Ja**. Denna ändring påverkar endast aktuella kopplingsgruppen. Du kan fortsätta att använda samma funktionella profil i andra kopplingsgrupper.
 
 ### <a name="create-a-fiscal-registration-process"></a>Skapa process för räkenskapsregistrering
 
@@ -252,20 +253,20 @@ Gör på följande sätt om du vill göra inställningar för felhantering.
 
     - **Tillåt hoppa över** – den här parametern aktiverar alternativet **hoppa över** i dialogrutan för felhantering.
     - **Tillåt att markera som registrerad** – den här parametern aktiverar alternativet **Markera som registrerad** i dialogrutan för felhantering.
-    - **Tillåt skjuta upp** – den här parametern aktiverar alternativet **skjuta upp** i dialogrutan för felhantering.
+    - **Tillåt senareläggning** – den här parametern aktiverar alternativet **senarelägg** i dialogrutan för felhantering.
     - **Fortsätt vid fel** – om den här parametern är aktiverad kan räkenskapsregistreringen fortsätta på kassaapparater om räkenskapsregistreringen av en transaktioner eller händelser misslyckas. Annars om du vill köra räkenskapsregistreringen av nästa transaktion eller händelse måste operatorn göra om den misslyckade räkenskapsregistreringen, hoppa över den eller markera transaktioner eller händelser som registrerats. Mer information finns i [Valfri räkenskapsregistrering](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
     > [!NOTE]
     > Om parametern **Fortsätt vid fel** är aktiverad kan parametrarna **Tillåt hoppa över** och **Tillåt markera som registrerad** inaktiveras automatiskt.
 
 1. Alternativen **Hoppa över** och **Markera som registrerad** kräver behörigheten **Tillåt hoppa över registrering eller markera som registrerade** aktiveras. För att aktivera denna behörighet, gå till sidan **Behörighetsgrupper** (**Retail och Commerce \> Medarbetare \> Behörighetsgrupper**) och ange alternativet **Tillåt hoppa över registrering eller markera som registrerade** till **Ja**.
-1. Alternativet **Skjuta upp** i dialogrutan för felhantering kräver att behörigheten **Tillåt skjuta upp** aktiveras. För att aktivera denna behörighet, gå till sidan **Behörighetsgrupper** (**Retail och Commerce \> Medarbetare \> Behörighetsgrupper**) och ange alternativet **Tillåt skjuta upp** till **Ja**.
-1. Alternativen **hoppa över**, **markera som registrerad** och **skjuta upp** låter operatörer ange ytterligare information när räkenskapsregistreringen misslyckas. Om du vill göra funktionen tillgänglig bör du ange infokoderna **Hoppa över**, **Markera som registrerad** och **Skjuta upp** på en grupp för räkenskapskoppling. Informationen som operatörer anger sparas som en infokodtransaktion som kopplas till räkenskapstransaktionen. Mer information om infokoder finns i [Infokoder och infokodgrupper](../info-codes-retail.md).
+1. Alternativet **Senarelägg** i dialogrutan för felhantering kräver att behörigheten **Tillåt senareläggning** aktiveras. För att aktivera denna behörighet, gå till sidan **Behörighetsgrupper** (**Retail och Commerce \> Medarbetare \> Behörighetsgrupper**) och ange alternativet **Tillåt senareläggning** till **Ja**.
+1. Alternativen **hoppa över**, **markera som registrerad** och **senarelägg** låter operatörer ange ytterligare information när räkenskapsregistreringen misslyckas. Om du vill göra funktionen tillgänglig bör du ange infokoderna **Hoppa över**, **Markera som registrerad** och **Senarelägg** på en grupp för räkenskapskoppling. Informationen som operatörer anger sparas som en infokodtransaktion som kopplas till räkenskapstransaktionen. Mer information om infokoder finns i [Infokoder och infokodgrupper](../info-codes-retail.md).
 
     > [!NOTE]
     > Utlösarfunktionen **produkt** stöds inte för infokoder som används för **hoppa över** och **markera som registrerad** i grupper för räkenskapskoppling.
 
-    - På sidan **Grupp för räkenskapskoppling** på fliken **Infokoder** väljer du infokoder eller infokodgrupper i fälten **hoppa över**, **markera som registrerad** och **skjuta upp**.
+    - På sidan **Grupp för räkenskapskoppling** på fliken **Infokoder** väljer du infokoder eller infokodgrupper i fälten **hoppa över**, **markera som registrerad** och **senarelägg**.
 
     > [!NOTE]
     > Ett skattedokument och ett icke skatte-dokument kan genereras på något steg i ett räkenskapsregistreringsprocessen. Tillägget för leverantör av skattedokument identifierar alla typer av transaktioner eller händelser som rör skatte- eller icke skattedokument. Funktionen för felhantering gäller endast skattedokument.
@@ -286,16 +287,15 @@ För att aktivera räkenskapsrapporter X/Z att köras från POS, bör du lägga 
     1. Lägg till en ny knapp och ange knappegenskapen **Skriv ut skatt Z**.
     1. På sidan **Distributionsschemaläggare** kör jobb **1090** för att överföra ändringar till kanaldatabasen.
 
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktivera manuell körning av uppskjutna räkenskapsregistreringar
+## <a name="enable-manual-execution-of-deferred-fiscal-registration"></a>Aktivera manuell körning av periodiserade skatteregistreringar
 
-Om du vill aktivera manuell körning av en senarelagd räkenskapsregistrering bör du lägga till en ny knapp till en kassalayout.
+Om du vill aktivera manuell körning av en periodiserad skatteregistrering bör du lägga till en ny knapp till en kassalayout.
 
 - På sidan **knapprutnät**, följer du instruktionerna i [lägga till kassaåtgärder till kassalayouter med knappsatsdesigner](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) för att installera designern och uppdatera en kassalayout.
 
     1. Välj layout som ska uppdateras.
     1. Lägg till en ny knapp och ange knappegenskapen **Slutför räkenskapsregistreringsprocess**.
     1. På sidan **Distributionsschemaläggare** kör jobb **1090** för att överföra ändringar till kanaldatabasen.
-
 
 ## <a name="view-connection-parameters-and-other-information-in-pos"></a>Visa anslutningsparametrar och annan information i kassan
 

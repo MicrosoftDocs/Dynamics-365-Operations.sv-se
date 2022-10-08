@@ -2,19 +2,19 @@
 title: Exempel på skatteregistreringstjänst för Österrike
 description: I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Österrike i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: f3429df2732d7d1ed6d2f0783a600c2b994c022b
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 603316ea07e5951b3bc5f96af28f549bdafd3b0e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473888"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631355"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Exempel på skatteregistreringstjänst för Österrike
 
@@ -65,7 +65,7 @@ Följande scenarier täcks av integreringsexempel för skatteregistreringstjäns
 - Felhantering, t.ex. följande alternativ:
 
     - Försöka skapa en skatteregistrering igen om ett nytt försök är möjligt, t.ex. om räkenskapsårets registreringsservice inte är tillgänglig, om räkenskapsregistreringen är redo eller om den inte svarar.
-    - Senarelägg räkenskapsregistrering.
+    - Senarelägg skatteregistrering.
     - Hoppa över räkenskapsregistrering eller markera transaktionen som registrerad och inkludera informationskoder för att fånga orsaken till felet och ytterligare information.
     - Kontrollera tillgängligheten för räkenskapsregistreringstjänsten innan en ny försäljningstransaktion öppnas eller en försäljningstransaktion slutförs.
 
@@ -220,7 +220,7 @@ Slutför konfigurationsstegen för räkenskapsintegrering som beskrivs i [konfig
 
 1. [Ställa in process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Var noga med att notera inställningarna för den process för räkenskapsregistrering som är [specifika för det här exemplet på skatteregistreringstjänsten](#set-up-the-registration-process).
 1. [Ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Aktivera manuell körning av uppskjutna räkenskapsregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktivera manuell körning av periodiserade skatteregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurera kanalkomponenter](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Ställa in registrationsprocessen

@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
 ms.custom: ''
 ms.search.industry: Retail
-ms.openlocfilehash: b93852bfb7c6f5a9f2f83f30a1f76da3f9559c7e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d01ad490301dd2f4103b8bd3f702db12b93a45a8
+ms.sourcegitcommit: bd7b1ffe90b25eb4c68d6aaebd063bf33e09d9cd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286848"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "9627507"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Skapa och uppdatera en retur- och återbetalningspolicy för en kanal
 
@@ -36,12 +36,8 @@ Omfattningen av policyn är för närvarande begränsad till att konfigurera bet
 
 ## <a name="enable-return-policy"></a>Aktivera returpolicy
 
-För att aktivera funktionen returpolicy för kanal i Commerce headquarters, följ dessa steg.
+Den här funktionen är aktiverad som standard. Du hittar den i arbetsytan **Funktionshantering** genom att söka efter **Aktivera policyer för kanalretur** i listan med funktionsnamn.
 
-1. Gå till arbetsytan **Funktionshantering** i Dynamics 365 Commerce.
-1. Sök efter funktionen **aktivera kanal returprinciper** i listan med funktionsnamn.
-1. Välj **Aktivera nu**.
-1. På sidan **Distributionsschema** kör du jobbet **1110** (global konfiguration) för att distribuera funktionsändringen.
 
 ## <a name="configure-return-policy"></a>Konfigurera returpolicy
 

@@ -2,19 +2,19 @@
 title: Produktjämförelsemoduler
 description: I den här artikeln beskrivs moduler för produktjämförelse och hur du implementerar dem så att kunder kan göra produktjämförelser på Microsoft Dynamics 365 Commerce e-handelswebbplatser.
 author: ashishmsft
-ms.date: 08/09/2022
+ms.date: 10/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 6fd851ce6b32d0772c3fe23c4d7bd4dae2616fdc
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 9ff45f3fbcc86b21f336d580582adef586417de4
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474137"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618396"
 ---
 # <a name="product-comparison-modules"></a>Produktjämförelsemoduler
 
@@ -91,6 +91,19 @@ Lägg till en knapp för produktjämförelse för produkt som du använder på s
 1. I fönstret för egenskaper till höger , konfigurera modulegenskaperna **produktjämförelseknapp**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan.
 1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
+
+## <a name="add-a-product-comparison-preview-panel-module-to-pages-on-your-website"></a>Lägga till en modul för förhandsgranskning av produktjämförelse på sidor på webbplatsen
+
+I en modul för förhandsgranskning av produktjämförelse kan dina kunder granska produkter som de lägger till i eller tar bort från jämförelsen. I förhandsgranskningsfönstret finns också alternativ om du vill navigera direkt till jämförelsesidan eller avmarkera hela listan med produkter. 
+
+Vi rekommenderar att du aktiverar förhandsgranskningspaneln på alla sidor där knappen **Produktjämförelse** har aktiverats. Modulen kan läggas till i knappen **Produktjämförelse** som en plats, eller också kan den användas som en fristående modul som du kan konfigurera på valfri sida, även om det inte finns några funktioner för att lägga till eller ta bort produkter att jämföra. 
+
+Du måste lägga till modulen för förhandsgranskning av produktjämförelse på en sida. Du bör endast lägga till en förhandsgranskningsmodul på en sida. Om du lägger till flera instanser av modulen på en sida visas den första modulen och resten ignoreras.
+
+![Förhandsgranskningsfönster för produktjämförelse](./media/product-comparison-preview-panel-2.png)
+
+Om du anger en gräns för produktjämförelse kan du aktivera gråfärgade platshållare i förhandsgranskningsfönstret som anger hur många fler produkter som kan läggas till i jämförelsen. Gråa platshållare ersätts med produkter när de läggs till i jämförelsen. Om du vill konfigurera en gräns för produktjämförelse och aktivera gråa platshållare går du till **Webbplatsinställningar > Tillägg** och gör dina ändringar i avsnittet **Produktjämförelser**. Konfigurationen tillämpas på alla förhandsgranskningsfönster på alla sidor. 
+
 
 ## <a name="specify-the-maximum-number-of-products-to-show-in-the-comparison-tray"></a>Ange det maximala antalet produkter som ska visas under jämförelsen
 

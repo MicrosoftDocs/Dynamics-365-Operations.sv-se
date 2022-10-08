@@ -2,19 +2,19 @@
 title: Exempel på skatteregistreringstjänsten för Tyskland
 description: I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Tyskland i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-05-29
-ms.openlocfilehash: c3fdc0c378ad57300213357eccd50d817e06789a
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: a725badbce498e4e7b35aecb2500e273586c7b77
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313952"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631464"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Exempel på skatteregistreringstjänsten för Tyskland
 
@@ -93,10 +93,10 @@ Kvittoutskrift är obligatoriskt i Tyskland. Alla inleveranser måste minst inne
 >
 > Fältet **Infomeddelande** på kvitton visar ett meddelande från skatteregistreringstjänsten. Om till exempel en signaturenhet bryts, kan specialtext skrivas ut på ett kvitto.
 
-#### <a name="voided-suspended-and-recalled-transactions"></a>Annullerade, uppskjutna och återkallade transaktioner
+#### <a name="voided-suspended-and-recalled-transactions"></a>Annullerade, senarelagda och återkallade transaktioner
 
 - En annullerad transaktion registreras som en begäran om att avsluta en transaktion i skatteregistreringstjänsten.
-- En uppskjuten transaktion registreras som en begäran om att avsluta en transaktion i skatteregistreringstjänsten.
+- En senarelagd transaktion registreras som en begäran om att avsluta en transaktion i skatteregistreringstjänsten.
 - En återkallad transaktion registreras som en början på en ny transaktion i skatteregistreringstjänsten.
 
 ### <a name="non-sales-transactions-and-shift-closing"></a>Icke-försäljningstransaktioner och skiftstängning
@@ -265,7 +265,7 @@ Slutför konfigurationsstegen för räkenskapsintegrering som beskrivs i [konfig
     > - Vi rekommenderar att du lämnar alternativet **Fortsätt vid fel** på sidan **Skatteregistreringsprocess** avaktiverat eftersom alla transaktioner måste registreras korrekt, även om det första försöket med skatteregistrering inte lyckades.
     > - Innan du aktiverar alternativet **Hoppa över** eller **Markera som registrerad** på sidan **Skatteregistreringsprocess** bör du diskutera ändringarna i skatteregistreringsprocessen med din skattekonsult eller det lokala skattekontoret.
 
-1. [Aktivera manuell körning av uppskjutna räkenskapsregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktivera manuell körning av periodiserade skatteregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurera kanalkomponenter](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Ställa in registrationsprocessen

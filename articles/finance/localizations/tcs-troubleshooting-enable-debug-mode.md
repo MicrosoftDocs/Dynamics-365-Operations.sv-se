@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38ef8c51d52de6b8f748330d0697e860d75233bf
+ms.sourcegitcommit: 43cf54d057eccd07a71bb48e2fcf858d043a9669
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887802"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "9620909"
 ---
 # <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Aktivera felsökningsläge i momsberäkningstjänst
 
@@ -27,7 +27,7 @@ ms.locfileid: "8887802"
 I den här artikeln beskrivs hur du aktiverar felsökningsläget i tjänsten Momsberäkning för att undersöka problem.
 
 1. Lägg till **&debug=vs%2CconfirmExit&** till URL:en för Application Object Server (AOS) och uppdatera sedan sidan.
-2. När du väljer **Moms** för att beräkna momsen öppnas en textfil med namnet **TaxServiceTroubleshootingLog.txt**. Filen **TaxServiceTroubleshootingLog.txt** innehåller **TaxableDocument** och beräkningsparametern. De här resultaten returneras från momstjänsten och undantagsinformation för felsökning.
+2. När du väljer **Moms** för att beräkna momsen registreras en textfil kallad **TaxServiceTroubleingLog.txt** på servern under **C:\AXWeb_SMBShare\temporary-file\\{%session%}\\**. Filen **TaxServiceTroubleshootingLog.txt** innehåller **TaxableDocument** och beräkningsparametern. De här resultaten returneras från momstjänsten och undantagsinformation för felsökning.
 
 ## <a name="sample"></a>Exempel
 

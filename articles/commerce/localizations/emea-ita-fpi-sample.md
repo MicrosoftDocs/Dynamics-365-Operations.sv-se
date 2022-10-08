@@ -2,19 +2,19 @@
 title: Exempel på integrering av kvittoskrivare för Italien
 description: I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Italien i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6ad97e87e4114a8f2250d0ba4880b7a466b3689e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336774"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631407"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Exempel på integrering av kvittoskrivare för Italien
 
@@ -67,7 +67,7 @@ Följande scenarier täcks av integreringsexempel för kvittoskrivare för Itali
 - Felhantering, t.ex. följande alternativ:
 
     - Försök att registrera skatteregistrering igen om ett nytt försök är möjligt, t.ex. om kvittoskrivaren inte är ansluten, om redo eller inte svarar, om skrivaren har slut på papper eller om det har fastnat i papper.
-    - Senarelägg räkenskapsregistrering.
+    - Senarelägg skatteregistrering.
     - Hoppa över räkenskapsregistrering eller markera transaktionen som registrerad och inkludera informationskoder för att fånga orsaken till felet och ytterligare information.
     - Kontrollera tillgängligheten för kvittoskrivare innan en ny försäljningstransaktion öppnas eller en försäljningstransaktion slutförs.
 
@@ -111,7 +111,7 @@ Slutför konfigurationsstegen för räkenskapsintegrering som beskrivs i [konfig
 1. [Ställ in räkenskapstexter för rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 1. [Ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Ställ in räkenskapsrapporter X/Y från POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Aktivera manuell körning av uppskjutna räkenskapsregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktivera manuell körning av periodiserade skatteregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Ställ in funktionerna för hantering av kundinformation i kassa](emea-ita-customer-information.md#setup).
 1. [Konfigurera kanalkomponenter](#configure-channel-components).
 

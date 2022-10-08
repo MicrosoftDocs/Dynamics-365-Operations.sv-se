@@ -2,19 +2,19 @@
 title: Översikt över räkenskapsintegrering för Commerce-kanaler
 description: Denna artikel innehåller en översikt över funktioner för räkenskapsintegrering som är tillgängliga i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 0a56df2a463153c6c3986ce84907e25ea7d965b8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286510"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631251"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Översikt över räkenskapsintegrering för Commerce-kanaler
 
@@ -95,16 +95,20 @@ Denna konfiguration används när en fysisk skatteanordning eller skattetjänst 
 
 Ramverket för räkenskapsintegrering ger följande alternativ för att hantera misslyckanden under räkenskapsregistreringen:
 
-- **Försök igen** – Operatörer kan använda det här alternativet när felet kan lösas snabbt och räkenskapsregistreringen kan köras igen. Det här alternativet kan till exempel användas när räkenskapsenheten inte är ansluten, kvittoskrivaren har slut på papper eller så finns det ett papper har fastnat i kvittoskrivaren.
-- **Avbryt** – inställningen låter operatörer senarelägga räkenskapsregistreringen av den aktuella transaktionen eller händelsen om det uppstår ett fel. När registreringen senareläggs kan operatören fortsätta att arbeta med POS kan utföra alla åtgärder som räkenskapsregistrering inte är obligatoriskt för När en händelse som kräver räkenskapsregistrering sker i POS (till exempel en ny transaktion öppnas), kommer dialogrutan för felhantering automatisk att visas för att meddela operatören att föregående transaktion inte registrerades korrekt och att ge alternativ för felhantering.
-- **Hoppa över** – operatörer kan använda det här alternativet när räkenskapsregistreringen kan utelämnas, under vissa förhållanden och vanliga åtgärder kan fortsätta i POS. Det här alternativet kan exempelvis användas när en försäljningstransaktion som räkenskapsregistreringen misslyckades för kan registreras i en speciell pappersjournal.
-- **Markera som registrerad** – operatörer kan använda detta alternativ när transaktionen faktiskt registrerades i räkenskapsenhet (exempelvis ett skattekvitto skrevs ut), men ett fel uppstod vid räkenskapssvaret sparades i kanaldatabasen.
-- **Senarelägg** – Operatörer kan använda det här alternativet när transaktionen inte registreras eftersom registreringstjänsten inte var tillgänglig. 
+- **Försök igen** – Operatören kan använda det här alternativet när felet kan lösas snabbt, och räkenskapsregistreringen kan köras igen. Det här alternativet kan till exempel användas när räkenskapsenheten inte är ansluten, kvittoskrivaren har slut på papper eller så finns det ett papper har fastnat i kvittoskrivaren.
+- **Avbryt** – Denna inställning låter operatören senarelägga skatteregistreringen för den aktuella transaktionen eller händelsen om det uppstår ett fel. När registreringen senareläggs kan operatören fortsätta att arbeta med kassan och kan utföra alla åtgärder som skatteregistreringen inte är obligatorisk för. När en händelse som kräver räkenskapsregistrering sker i POS (till exempel en ny transaktion öppnas), kommer dialogrutan för felhantering automatisk att visas för att meddela operatören att föregående transaktion inte registrerades korrekt och att ge alternativ för felhantering.
+- **Hoppa över** – Operatören kan använda det här alternativet när det inte går att slutföra skatteregistreringen för den aktuella transaktionen eller händelsen, till exempel om skatteskrivaren inte fungerar korrekt **och** skatteregistreringen kan utelämnas under vissa förhållanden. Det här alternativet kan exempelvis användas när en försäljningstransaktion som räkenskapsregistreringen misslyckades för kan registreras i en speciell pappersjournal. När skatteregistreringen har hoppats över kan regelbundna åtgärder fortsätta i kassan. 
+- **Markera som registrerad** – Operatören kan använda detta alternativ när aktuell transaktion eller händelse faktiskt har registrerats i skatteenheten (exempelvis om ett skattekvitto skrivits ut), men ett fel uppstår när sakttesvaret sparas i kanaldatabasen. När den aktuella transaktionen eller händelsen har markerades som registrerad kan vanliga åtgärder fortsätta i kassan.
+- **Senarelägg** – Operatören kan använda det här alternativet när transaktionen inte har registrerats eftersom registreringsenheten eller registreringstjänsten inte är tillgänglig **och** ett av följande gäller:
+    - Det finns ett alternativ för säkerhetskopiering för skatteregistrering, och det går att fortsätta med skatteregistreringsprocessen för den aktuella transaktionen. En lokal [skatteenhet](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) kan till exempel vara ett säkerhetskopieringsalternativ för en skatteregistreringstjänst online när tjänsten inte är tillgänglig.
+    - Skatteregistreringen kan slutföras senare på andra sätt än ramverket för skatteintegrering. Senarelagda transaktioner kan till exempel skatteregistreras senare i en batch via en [separat funktion](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode).
+    
+    När den aktuella transaktionen eller händelsen har senarelagts kan vanliga åtgärder fortsätta i kassan.
 
-> [!NOTE]
-> Alternativen **Hoppa över**, **Markera som registrerad** och **Senarelägg** som registrerad måste vara aktiverade på processen för räkenskapsregistrering innan de används. Dessutom måste motsvarande behörigheter tilldelas operatörer.
+> [!WARNING]
+> Alternativen **Hoppa över**, **Markera som registrerad** och **Senarelägg** ska betraktas som nödalternativ och endast användas i sällsynta fall. Diskutera dessa alternativ för felhantering med din juridiska konsult eller skattekonsult, och använd gott omdöme innan du aktiverar dem. Alternativen måste vara aktiverade på processen för skatteregistrering innan de används. För att kontrollera att operatörerna inte använder dem regelbundet måste motsvarande behörigheter beviljas till operatörer.
 
-Alternativen **Hoppa över**, **Markera som registrerad** och **Senarelägg** tillåter informationskoder att samla in viss information om felet, till exempel orsaken till felet eller en justering för att hoppa över räkenskapsregistreringen eller märka transaktionen som registrerad. Mer information om hur du konfigurerar parametrar för felhantering finns i [ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+En [skattetransaktion](#storing-fiscal-response-in-fiscal-transaction) skapas när alternativen **Hoppa över** , **Markera som registrerad** eller **Senarelägg** markeras, men skattetransaktionen innehåller inget skattesvar. På så sätt kan du registrera en förekomst av skatteregistreringsfel. Dessa alternativ tillåter också informationskoder att samla in viss information om ett fel, till exempel orsaken till felet eller en motivering för att hoppa över skatteregistreringen eller märka transaktionen som registrerad. Mer information om hur du konfigurerar parametrar för felhantering finns i [ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Valfri skatteregistrering
 
@@ -112,11 +116,7 @@ Räkenskapsregistrering kan vara obligatorisk för vissa åtgärder och valfri f
 
 ### <a name="manually-rerun-fiscal-registration"></a>Manuellt köra räkenskapsregistrering igen
 
-Om räkenskapsregistrering av transaktioner eller händelser har skjutits upp efter ett fel (till exempel om operatören valde **Avbryt** i dialogrutan för felhantering), kan du manuellt köra räkenskapsregistreringen genom att åberopa en motsvarande åtgärd. För mer information, se [Aktivera manuell körning av uppskjutna räkenskapsregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Senarelägg alternativ
-
-Med alternativet **Senarelägg** kan du fortsätta räkenskapsregistreringsprocessen om det aktuella steget misslyckas. Det kan användas när det finns ett alternativ för säkerhetskopiering av skatteregistrering.
+Om skatteregistreringen av en transaktion eller händelse har senarelagts efter ett fel (till exempel om operatören valt **Avbryt** i dialogrutan för felhantering) kan du manuellt köra skatteregistreringen på nytt genom att åberopa en motsvarande åtgärd. För mer information, se [Aktivera manuell körning av senarelagd skatteregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### <a name="fiscal-registration-health-check"></a>Hälsokontroll av räkenskapsregistrering
 
@@ -125,7 +125,7 @@ Hälsokontrollproceduren för räkenskapsregistreringar kontrollerar tillgängli
 POS kör hälsokontrollen när följande händelser inträffar:
 
 - En ny transaktion öppnas.
-- En uppskjuten transaktion återkallas.
+- En senarelagd transaktion återkallas.
 - En försäljnings- eller returtransaktion slutförs.
 
 Om hälsokontrollen misslyckas visar POS dialogrutan för hälsokontroll. Den här dialogrutan innehåller följande knappar:
@@ -138,7 +138,7 @@ Om hälsokontrollen misslyckas visar POS dialogrutan för hälsokontroll. Den h�
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagra räkenskapssvar i räkenskapstransaktion
 
-Vid räkenskapsregistrering av transaktioner eller händelser lyckas, skapas en räkenskapstransaktion i kanaldatabasen och kopplas till den ursprungliga transaktionen eller händelsen. På samma sätt om alternativet **Hoppa över** eller **Markera som registrerad** väljs för en misslyckad räkenskapsregistrering, lagras informationen i en räkenskapstransaktion. En räkenskapstransaktion innehåller räkenskapssvar för räkenskapsenheten eller tjänsten. Om processen för räkenskapsregistrering består av flera steg, skapas en räkenskapstransaktion för varje steg i processen som resulterade i en lyckad eller misslyckad registrering.
+Vid räkenskapsregistrering av transaktioner eller händelser lyckas, skapas en räkenskapstransaktion i kanaldatabasen och kopplas till den ursprungliga transaktionen eller händelsen. Om alternativen **Hoppa över**, **Markera som registrerad** eller **Senarelägg** har markerats för en skattregistrering som misslyckats, kommer denna information att lagras i en skattetransaktion. En räkenskapstransaktion innehåller räkenskapssvar för räkenskapsenheten eller tjänsten. Om processen för räkenskapsregistrering består av flera steg, skapas en räkenskapstransaktion för varje steg i processen som resulterade i en lyckad eller misslyckad registrering.
 
 Räkenskapstransaktioner överförs till Administration av *P-jobb* tillsammans med transaktioner. På snabbfliken **räkenskapstransaktioner** på sidan **transaktioner** kan du visa de räkenskapstransaktioner som är kopplade till transaktioner.
 

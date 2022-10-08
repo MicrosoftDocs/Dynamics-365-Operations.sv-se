@@ -2,19 +2,19 @@
 title: Exempel på integrering av styrenhet för Sverige
 description: I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Sverige i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: 3376e6a901b692371a44b5c74c1e6b4afd0cd573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 966ba3fab780991736f0c84d7eb68356c28a4022
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9275077"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631273"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Exempel på integrering av styrenhet för Sverige
 
@@ -42,7 +42,7 @@ Kontrollenhetens integrering av prov för Sverige omfattar följande funktioner:
 - Det finns flera alternativ för felhantering. Nedan följer några exempel:
 
     - Försök med räkenskapsregistrering om ett nytt försök är möjligt. Du kan försöka registrera räkenskapsregistrering om till exempel styrenheten inte är ansluten, inte är redo eller inte svarar.
-    - Senarelägg räkenskapsregistrering.
+    - Senarelägg skatteregistrering.
     - Hoppa över räkenskapsregistrering eller markera transaktionen som registrerad och inkludera informationskoder för att fånga orsaken till felet och ytterligare information.
     - Kontrollera tillgängligheten för kontrollenheten innan en ny försäljningstransaktion öppnas eller en försäljningstransaktion slutförs.
 
@@ -103,7 +103,7 @@ Slutför konfigurationsstegen för räkenskapsintegrering som beskrivs i [konfig
 
 1. [Ställa in process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Var noga med att notera inställningarna för den process för räkenskapsregistrering som är [specifika för det här kontrollenhetens integrering av prov](#set-up-the-registration-process).
 1. [Ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Aktivera manuell körning av uppskjutna räkenskapsregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktivera manuell körning av periodiserade skatteregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurera kanalkomponenter](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Ställa in registrationsprocessen

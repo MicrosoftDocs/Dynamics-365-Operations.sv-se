@@ -2,7 +2,7 @@
 title: Nyheter och ändringar i Dynamics 365 Commerce 10.0.29 (oktober 2022)
 description: Denna artikel innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics 365 Commerce 10.0.29.
 author: josaw1
-ms.date: 08/17/2022
+ms.date: 09/29/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
-ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
+ms.openlocfilehash: 0629228516d688abf4dcd4280d1ad676f8f35331
+ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "9475914"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9601582"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Nyheter och ändringar i Dynamics 365 Commerce 10.0.29 (oktober 2022)
 
@@ -39,6 +39,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 | Näthandel | Stöd för produktjämförelse i e-handel | Gör det möjligt för kunder att jämföra produkter inom många olika kategorier så att de kan fatta rätt inköp beslut själva. Den här funktionen är tillgänglig för både B2C- och B2B-webbplatser. | Webbplatsskaparen | 
 | Presentkort | Stöd för butikspresentkortregister för datadelning mellan företag | Dynamics headquarters stöder möjligheten att aktivera datadelning mellan företag för specifika register i Dynamics-arkitekturen. I denna funktion lägger Dynamics 365 Commerce till stöd för datadelning mellan företag för butikspresentkortregister. Därför kan ett presentkort i ett företag nu kopiera data till ett annat företag i miljön. Ändringar som görs i det ursprungliga företagets presentkortsregister delas i det dubblerade registret för företagspresentkort. | Utvecklare |
 | Globalisering | [Aktivera Commerce-lokaliseringsfunktioner för nya Commerce SDK](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Den nya funktionen ger möjlighet att aktivera Commerce-lokaliseringsfunktioner från Commerce headquarters genom att använda ramverket för funktionshantering eller parametrar. Skatteintegrationsexempel inkluderas nu i det nya Commerce SDK och stöder oberoende förpackning. Den här funktionen aktiverar även funktionen för Store Commerce-appen för globala Commerce-kunder.<p><p>Den här versionen innehåller Commerce lokaliseringsfunktioner och exempel på skatteintegration för [Österrike](../localizations/emea-aut-fi-sample.md), [Tjeckien](../localizations/emea-cze-fi-sample.md), [Frankrike](../localizations/emea-fra-cash-registers.md), [Tyskland](../localizations/emea-deu-fi-sample.md), [Italien](../localizations/emea-ita-fpi-sample.md), [Norge](../localizations/emea-nor-cash-registers.md) och [Polen](../localizations/emea-pol-fpi-sample.md). | Aktiveras av admin/tillverkare |
+| Offline | [Komprimering av kassans offlinedatabas](../dev-itpro/implementation-considerations-offline.md#important-offline-features) | Den här nya funktionen minskar offlinedatabasens storlek genom att aktivera automatisk indexkomprimering utanför kanalens [butiksöppettider](../dev-itpro/store-hours.md). | Funktionshantering<p>*Komprimering av kassans offlinedatabas* |
 | Prestanda | Ta bort RTS-beroende för "redigera kund"-scenarier | Hög tillgänglighet och hög prestanda är standardförväntningar för kassa och e-handelskanaler. För att uppfylla dessa önskemål behöver Dynamics 365 Commerce kanaler inte längre vara beroende av realtidskommunikation med Commerce headquarters när kundinformation redigeras. Möjligheten att redigera kundinformation asynkront för asynkrona och icke-asynkrona kunder kan hjälpa till att reducera realtidssamtal till Commerce headquarters. | Aktiveras av admin/tillverkare |
 
 ## <a name="feature-state-changes-in-this-release"></a>Funktionstillstånd ändras i den här versionen
