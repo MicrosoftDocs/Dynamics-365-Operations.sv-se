@@ -394,6 +394,8 @@
                   items:
                     - name: Appen Store Commerce
                       href: dev-itpro/store-commerce.md
+                    - name: Store Commerce-app för mobila plattformar
+                      href: dev-itpro/store-commerce-mobile.md
                     - name: Migrera Modern POS till Store Commerce
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Riktlinjer för implementering av enhetshantering
