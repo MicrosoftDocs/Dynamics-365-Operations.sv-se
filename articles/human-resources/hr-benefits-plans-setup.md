@@ -2,7 +2,7 @@
 title: Skapa en förmånsplan
 description: I den här artikeln beskrivs hur du ställer in förmånsplaner i Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c8d4488f1782d80484a8b91f4ae7303fea0e464
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 001318be00efcda1e7ee07513e240059d3c5e135
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337103"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643948"
 ---
 # <a name="create-a-benefit-plan"></a>Skapa en förmånsplan
 
@@ -42,8 +42,9 @@ I den här artikeln beskrivs hur du ställer in förmånsplaner i Dynamics 365 H
    | **Program** | Anger ett program som du vill tilldela planen till. |
    | **Bunt** | Anger en bunt som du vill tilldela planen till. |
    | **Rubrik** | Anger om planen är huvudplan i den bunt den är tilldelad till. |
+   | **Obligatoriskt** | Anger att planen måste väljas för att du ska kunna checka ut någon annan plan i bunten. Fler än en plan kan markeras som **Obligatorisk**. I sådana fall måste alla planer som är markerade med **Obligatorisk** väljas för att checka ut någon av planerna i bunten.|
    | **Giltig från datum och tid** | Datum och tid som planen startar. Standardvärdet är det aktuella systemdatumet. |
-   | **Giltig till datum och tid** | Datum och tid som planen slutar. Standardvärdet är 12/31/2154, vilket betyder aldrig. |
+   | **Giltig till datum och tid** | Datum och tid som planen slutar. Standardvärdet är 12/31/2154, vilket betyder aldrig.  |
 
 4. På fliken **Konfiguration**, ange värden för följande fält, beroende på vilken typ av plan du skapar:
 

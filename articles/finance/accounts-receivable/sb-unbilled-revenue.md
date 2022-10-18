@@ -2,7 +2,7 @@
 title: Ej fakturerad intäkt
 description: Detta ämne beskriver hur du ställer in poster och konton för att använda funktionen ej fakturerad intäkt i prenumerationsfakturering.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adf6f06ee454f368fa194315a87cfdec9e5e13da
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879694"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644179"
 ---
 # <a name="unbilled-revenue"></a>Ej fakturerad intäkt
 
@@ -123,15 +123,15 @@ Fördelningarna beräknas om baserat på den allokeringstyp som valts (**Procent
 
 Ett faktureringsschema anges för tre år och fakturorna faktureras årligen under en treårsperiod. Hela kontraktsbeloppet registreras på det ej fakturerat intäktskonto som årliga fakturor skapas från. Motkontot är intäktskontot eller konto för periodiserad intäkt
 
-Observera att de högsta fakturerings- och ej fakturerade intäkterna inte fungerar tillsammans, eftersom avstämningsproblem kan inträffa i redovisningen. Till exempel sidan **Konfiguration av artikelgrupp**, artikelgrupp A ställs in så att fältet **Antal övre rader** anges till **2**. På sidan **Faktureringsscheman** läggs tre artiklar till. Alla tre artiklarna hör till artikelgrupp A. När den ursprungliga journalposten skapas för funktionen för ej fakturerad intäkt bearbetas beloppet för alla tre artiklarna på det ej fakturerade kontot. När fakturan för faktureringsplanen skapas inkluderas bara beloppen för de två bästa artiklarna. Därför matchar fakturabeloppet inte det belopp som bearbetades på kontot för ej fakturerade intäkter och avstämningsproblem sker i redovisningen.
+De högsta fakturerings- och ej fakturerade intäkterna inte fungerar tillsammans, eftersom avstämningsproblem kan inträffa i redovisningen. Till exempel sidan **Konfiguration av artikelgrupp**, artikelgrupp A ställs in så att fältet **Antal övre rader** anges till **2**. På sidan **Faktureringsscheman** läggs tre artiklar till. Alla tre artiklarna hör till artikelgrupp A. När den ursprungliga journalposten skapas för funktionen för ej fakturerad intäkt bearbetas beloppet för alla tre artiklarna på det ej fakturerade kontot. När fakturan för faktureringsplanen skapas inkluderas bara beloppen för de två bästa artiklarna. Därför matchar fakturabeloppet inte det belopp som bearbetades på kontot för ej fakturerade intäkter och avstämningsproblem sker i redovisningen.
 
 Om du vill använda ej fakturerade intäkter, lämna sidan **Konfiguration av artikelgrupp** tom eller ställ in alla artikelgrupper som tomt, eller ställ in alla artikelgrupper så att fältet **Antal övre rader** anges till **0** (noll). Om du vill använda den översta faktureringen finns inga ej fakturerade intäktsåtgärder tillgängliga.
 
 ### <a name="examples"></a>Exempel
 
-Från och med version 10.0.27 finns ett nytt konto när ej fakturerade intäkter används. När den ursprungliga processen **Skapa journalpost** bokförs görs krediten på ett nytt motkonto för ej fakturerad intäkt. Detta konto används i stället för intäktskontot, eftersom samma värde måste återföras när faktureringsschemat faktureras. Om växelkurser eller avrundningsdifferenser uppstår kan beloppen som beräknas under processen **Generera faktura** vara olika. Detta beteende säkerställer att nettobeloppet för kontona är 0 (noll).
+Från och med version 10.0.29 läggs en ny parameter till i Faktureringsparametrar för återkommande kontrakt. När den ställs in på ja kan du använda parametern **Använd ej fakturerade motkonton** två nya konton i **Inställningar för ej fakturerad intäkt**. Kontona Ofakturerad intäktskompensation och Ofakturerad rabattkompensation blir tillgängliga och används bäst när faktureringsscheman skapas i en annan valuta än redovisningsvalutan. Med hjälp av motkontona återförs ofördelade intäkter och ofördelade rabattkonton med samma valutakurser som de ursprungliga posterna. Den inledande processen **Skapa journalpost** är densamma som gäller för debitering till ofördelade intäkter och kreditera till intäkt. Om det är samma som vid användning av en rabatt är den ursprungliga journalposten densamma som debet till Rabatt och kredit till ofördelade rabatter. 
 
-I det här exemplet visas hur du använder ej fakturerade intäkter för att redovisa hela beloppet för ett kontrakt i balansräkningen som ej fakturerade intäkter. Den andra sidan av posten är motbokningen av ej fakturerade intäkter. När du fakturerar kunden återförs den ej fakturerade intäkten och motbokningen av ej fakturerade intäkter. Intäktsredovisningen sker antingen vid faktureringen eller i enlighet med periodiseringsschemat som har ställts in.
+I det här exemplet visas hur du använder ej fakturerade intäkter för att redovisa hela beloppet för ett kontrakt i balansräkningen som ej fakturerade intäkter. Den andra sidan av posten är intäkter eller uppskjuten intäkt. När du fakturerar kunden återförs den ej fakturerade intäkten. Intäktsredovisningen sker antingen vid faktureringen eller i enlighet med periodiseringsschemat som har ställts in.
 
 #### <a name="assumptions"></a>Antaganden
 
@@ -151,47 +151,38 @@ I det här exemplet visas hur du använder ej fakturerade intäkter för att red
 
     | Objekt | Startdatum | Slutdatum | Belopp | Faktureringsfrekvens | Periodiseringsartikel | Ej fakturerad intäkt | Beskrivning |
     |---|---|---|---|---|---|---|---|
-    | Licens | 01 januari, CY | 31 december CY+2 | 100,00 $ | Årligen | Nej | Ja | Kunden kommer att faktureras 100,00 $ varje år. Summan 300,00 $ kommer i förväg att registreras som ej fakturerade intäkter i balansräkningen och som intäkt för resultaträkningen. Varje faktura minskar det ej fakturerade beloppet. |
-    | Bibehåll | 01 januari, CY | 31 december CY+2 | 30,00 $ | Årligen | Ja | Ja | Kunden kommer att faktureras 30,00 $ varje år. Summan 90,00 $ kommer i förväg att registreras som ej fakturerade intäkter och periodiserad intäkt i balansräkningen. Varje faktura minskar det ej fakturerade beloppet. Den periodiserade intäkten redovisas månadsvis under 36 månader. |
+    | Licens | 01 januari 2022 | 31 december 2024 | 100,00 $ | Årligen | Nej | Ja | Kunden kommer att faktureras 100,00 $ varje år. Summan 300,00 $ kommer i förväg att registreras som ej fakturerade intäkter i balansräkningen och som intäkt för resultaträkningen. Varje faktura minskar det ej fakturerade beloppet. |
+    | Bibehåll | 01 januari 2022 | 31 december 2024 | 30,00 $ | Årligen | Ja | Ja | Kunden kommer att faktureras 30,00 $ varje år. Summan 90,00 $ kommer i förväg att registreras som ej fakturerade intäkter och periodiserad intäkt i balansräkningen. Varje faktura minskar det ej fakturerade beloppet. Den periodiserade intäkten redovisas månadsvis under 36 månader. |
 
 6. På sidan **Alla faktureringsscheman** använder du processen **Skapa journalpost** om du vill bokföra kontraktsvärdet i balansräkningen som ej fakturerade intäkter.
 
 Två journalposter skapas, en för varje rad i faktureringsschemat.
 
-| Konto för ej fakturerad intäkt | Motkonto för ej fakturerad intäkt | Debetbelopp | Kreditbelopp |
-|---|---|---|---|
-| Konto för ej fakturerad intäkt | | 300,00 $ | |
-| | Motkonto för ej fakturerad intäkt | | 300,00 $ |
+| Konto | Debetbelopp | Kreditbelopp |
+|---|---|---|
+| Konto för ej fakturerad intäkt | 300,00 $ | |
+| Intäktskonto | | 300,00 $ |
 
-| Konto för ej fakturerad intäkt | Uppskjuten intäkt | Debetbelopp | Kreditbelopp |
-|---|---|---|---|
-| Konto för ej fakturerad intäkt | | 90,00 $ | |
-| |Uppskjuten underhållsintäkt | | 90,00 $ |
+| Konto | Debetbelopp | Kreditbelopp |
+|---|---|---|
+| Konto för ej fakturerad intäkt | 90,00 $ | |
+| Uppskjuten intäkt | | 90,00 $ |
 
-Den första journalposten bokförs på ett motkonto för ej fakturerad intäkt och den andra bokförs på ett konto för periodiserad intäkt. Om faktureringsraden har både ej fakturerad intäkt och periodiserad intäkt används kontot för periodiserad intäkt, inte motbokningen av ej fakturerade intäkter. Kontraktet kräver att fakturan för kunden skapas i början av varje år. Använd processen **Generera faktura** om du vill skapa fakturan. När fakturan skapas skapas följande journalposter.
+Kontraktet kräver att fakturan för kunden skapas i början av varje år. Använd processen **Generera faktura** om du vill skapa fakturan. När fakturan skapas bokförs följande verifikation av faktura.
 
-| Huvudkonto | Konto för ej fakturerad intäkt | Debetbelopp | Kreditbelopp |
-|---|---|---|---|
-| Motbokning av ej fakturerade intäkter | | 100,00 $ | |
-| | Konto för ej fakturerad intäkt | | 100,00 $ |
-| Kundreskontra | | 100,00 $ | |
-| | Intäktskonto | | 100,00 $ |
+| Konto| Debetbelopp | Kreditbelopp |
+|---|---|---|
+| Konto för ej fakturerad intäkt | | 130,00 $ |
+| Kundreskontra | 130,00 $ | |
 
-| Huvudkonto | Konto för ej fakturerad intäkt | Debetbelopp | Kreditbelopp |
-|---|---|---|---|
-| Konto för uppskjuten underhållsintäkt | | 30,00 $ | |
-| | Konto för ej fakturerad intäkt | | 30,00 $ |
-| Kundreskontra | | 30,00 $ | |
-| | Konto för uppskjuten underhållsintäkt | | 30,00 $ |
+Samma journalpost skapas av fakturor som bokförs i början av de kommande två åren. Kontot för ej fakturerade intäkter minskas varje år under processen **Generera faktura**. Motkontot för ej fakturerade intäkter används för att balansera kontot för ej fakturerade intäkter när olika valutakurser används. 
 
-Samma journalpost skapas av fakturor som bokförs i början av de kommande två åren. Nettobeloppet för kontot för uppskjuten intäkt är 0 (noll), eftersom det inte finns några avrundnings- eller valutakursdifferenser. Den uppskjutna intäkten måste återföras exakt på samma sätt som den krediterades under processen **Skapa journalpost**. Eftersom intäkten fortfarande periodiseras och kommer att redovisas senare, sker krediten till konto för periodiserad intäkt igen.
+I det sista steget skapas ursprungliga redovisningsjournalposten varje månad för att redovisa uppskjutna intäkter från underhållsavgiften. Journalposten kan skapas på sidan **Bearbetning av redovisning**. Du kan också skapa den genom att välja **Känna igen** för raderna på sidorna **Periodiseringsschema**.
 
-I det sista steget skapas ursprungliga redovisningsjournalposten varje månad för att redovisa intäkten för den uppskjutna underhållsavgiften. Journalposten kan skapas på sidan **Bearbetning av redovisning**. Du kan också skapa den genom att välja **Känna igen** för raderna på sidorna **Periodiseringsschema**.
-
-| Konto för periodiserad intäkt | Intäktskonto | Debetbelopp | Kreditbelopp |
-|---|---|---|---|
-| Uppskjuten underhållsintäkt | | 2,50 $ | |
-| | Underhållsintäkt | | 2,50 $ |
+| Huvudkonto | Debetbelopp | Kreditbelopp |
+|---|---|---|
+| Uppskjuten intäkt | 2,50 $ | |
+| Intäkter | | 2,50 $ |
 
 Den här journalposten skapas varje gång igenkänningsprocessen körs för den här periodiserade artikeln (totalt 36 gånger).
 
@@ -269,18 +260,18 @@ Eftersom både artiklarna använder ej fakturerade intäkter och intäktsalloker
 
 I följande tabell visas den ursprungliga journalposten för artiklarna och fakturan.
 
-| Konto för ej fakturerad intäkt | Konto för periodiserad intäkt | Debetbelopp | Kreditbelopp |
-|---|---|---|---|
-| **Artikel 1000 redovisningsjournal** | | | |
-| Debitera konto för ej fakturerad intäkt (401250) | | 1 465,26 $ | |
-| | Kreditera konto för periodiserad intäkt (250600) | | 1 465,26 $ |
-| **Artikel 0021 redovisningsjournal** | | | |
-| Debitera konto för ej fakturerad intäkt (401250) | | 274,74 $ | |
-| | Kreditera konto för periodiserad intäkt (250600) | | 274,74 $ |
-| **Faktura** | | | |
-| | Kreditera konto för ej fakturerad intäkt | | 1 465,26 $ |
-| | Kreditera konto för ej fakturerad intäkt | | 274,74 $ |
-| Debitera AR-konto (130100) | | 1 488,16 $ | |
+| Huvudkonto | Debetbelopp | Kreditbelopp |
+|---|---|---|
+| **Artikel 1000 redovisningsjournal** | | | 
+| Konto för ej fakturerad intäkt (401250) | 1 465,26 $ | |
+| Konto för periodiserad intäkt (250600) | | 1 465,26 $ |
+| **Artikel 0021 redovisningsjournal** | | | 
+| Konto för ej fakturerad intäkt (401250) | 274,74 $ | |
+| Konto för periodiserad intäkt (250600) | | 274,74 $ |
+| **Faktura** | | |
+| Konto för ej fakturerad intäkt | | 1 465,26 $ |
+| Konto för ej fakturerad intäkt | | 274,74 $ |
+| AR-konto (130100) | 1 488,16 $ | |
 
 #### <a name="changes-to-the-billing-schedule-line-billing-detail-line-or-revenue-allocation"></a>Ändringar av raden i faktureringsplanen, en faktureringsdetaljrad eller intäktsallokering
 

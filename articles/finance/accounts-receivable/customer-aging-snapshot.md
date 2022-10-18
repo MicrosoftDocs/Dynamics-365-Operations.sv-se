@@ -2,7 +2,7 @@
 title: Ögonblicksbild av åldersfördelningen för kunder
 description: Den här artikeln innehåller information om ögonblicksbilder av kunders åldersfördelning. En ögonblicksbild av åldersfördelning beräknar åldersfördelningssaldon för en grupp av kunder vid en viss tidpunkt.
 author: JodiChristiansen
-ms.date: 05/05/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: mrolecki
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
 ms.search.form: ''
-ms.openlocfilehash: 248a71ff3c9f6c30448ff486f3ee42ac534b1825
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 88145cdccfe3f1d0d3de4e31dfa519b27df6550a
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269575"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643696"
 ---
 # <a name="customer-aging-snapshots"></a>Ögonblicksbild av åldersfördelningen för kunder
 
@@ -31,15 +31,15 @@ Information från ögonblicksbilder av åldersfördelning visas på listsidan **
 I arbetsytan **Kundkredit och inkasso** visas också kunders åldersfördelning. Mer information finns i innehållet [i Kredit- och inkassohantering Power BI](credit-collections-power-bi.md).
 
 > [!NOTE]
-> Du minskar den tid som krävs för att skapa en ögonblicksbild av åldersfördelningen genom att aktivera funktionen **Förbättrad prestanda för kunders åldersfördelning** i arbetsytan **Funktionshantering**. Du ska däremot inte använda kundpooler när den här funktionen är aktiverad. Om en kundpool väljs kommer funktionen inte att fungera, men du kan fortfarande skapa en ögonblicksbild av åldersfördelning.
+> För att minska tiden som krävs för att skapa en åldrande ögonblicksbild, aktivera följande funktioner i arbetsytan **Funktionshantering**: **Prestandaförbättring av åldersfördelning för kunder** 
+> **Prestandaförbättringar i åldersfördelning för kunder med kundpooler**  
+> När båda funktionerna är aktiverade kan **kundpooler** användas när ögonblicksbild av åldersfördelning skapas. 
 
 När du skapar en ögonblicksbild av kunders åldersfördelning kan du ange information om detta i följande fält:
 
 - **Definition av åldersfördelningsperiod** – Välj definitionen av åldersfördelningsperiod för ögonblicksbilden av åldersfördelning. Du kan ha en ögonblicksbild av åldersfördelning för varje definition av åldersfördelningsperiod. Ögonblicksbilden av åldersfördelningen och definitionen av av åldersfördelningsperioden måste skapas separat.
 - **Pool-ID** – Det här fältet är valfritt. Du kan använda en pool för att definiera den uppsättning med kunder som ska behandlas i ögonblicksbilden av åldersfördelningen. Om du väljer en kundpool i det här fältet skapas en ögonblicksbild av åldersfördelning bara för kundkonton som ingår i kundpoolen. Den valda kundpoolen måste vara av typen **Ögonblicksbild av åldersfördelning**. Om du låter fältet vara tomt skapas en ögonblicksbild av åldersfördelningen för alla kundkonton.
 
-    > [!NOTE]
-    > Om funktionen **Förbättrad prestanda för kunders åldersfördelning** är aktiverad ska du inte välja en kundpool.
 
 - **Kriterier** – Ögonblicksbilden av åldersfördelning åldras baserat på det datum som du väljer:
 
@@ -52,14 +52,15 @@ När du skapar en ögonblicksbild av kunders åldersfördelning kan du ange info
     - **Dagens datum** – använd systemdatumet. Välj det här alternativet om bearbetning har ställts in för att köra i en återkommande batch. Därefter används systemdatumet för körningen varje gång batchen körs.
     - **Valt datum** – använd ett datum som du anger. Om du väljer det här alternativet måste du ange ett åldersfördelningsdatum.
 
-    Den aktuella åldersfördelningsperioden är till exempel 30 dagar. Om du väljer **Dagens datum** i det här fältet, startar den aktuella åldersfördelningsperioden dagens datum och inbegriper sedan de föregående 29 dagarna. Om du väljer **Valt datum** och anger ett datum, startar den aktuella åldersfördelningsperioden det angivna datumet och inbegriper sedan de föregående 29 dagarna.
+   Den aktuella åldersfördelningsperioden är till exempel 30 dagar. Om du väljer **Dagens datum** i det här fältet, startar den aktuella åldersfördelningsperioden dagens datum och inbegriper sedan de föregående 29 dagarna. Om du väljer **Valt datum** och anger ett datum, startar den aktuella åldersfördelningsperioden det angivna datumet och inbegriper sedan de föregående 29 dagarna.
 
 - **Uppdatera inkassostatus** – Ställ in det här alternativet på **Ja** för att uppdatera inkassostatus för transaktiner på sidan **Inkasso** från **Löfte om betalning** till **Löfte om betalning brutet** om åldersfördelningsdatumet har passerat datumet i fältet **Löfte om betalning**. Ställ in det här alternativet på **Nej** för att låta inkassostatus vara oförändrad på sidan **Inkasso**.
-- **Inkludera kunder med nollsaldo** – Ställ in det alternativet på **Ja** för att inkludera alla kunder, oavsett saldo. Om du inkluderar alla kunder rekommenderar vi att du aktiverar funktionen **Förbättrad prestanda för kunders ålderfördelning** och att du inte använder kundpooler. Ställ in det här alternativet på **Nej** för att endast inkludera kunder som har ett saldo. Den här inställningen gör prestanda snabbare eftersom kunder som inte har något saldo hoppas över.
+- **Inkludera kunder med nollsaldo** – Ställ in det alternativet på **Ja** för att inkludera alla kunder, oavsett saldo. Om du inkluderar alla kunder rekommenderar vi att du aktiverar både funktionen **Förbättrad prestanda för kunders ålderfördelning** och **Prestandaförbättringar i åldersfördelning för kunder med kundpooler**. Ställ in det här alternativet på **Nej** för att endast inkludera kunder som har ett saldo. Den här inställningen gör prestanda snabbare eftersom kunder som inte har något saldo hoppas över.
+- **Hoppa över kreditgränsberäkningar under åldersfördelning** – Om det här alternativet är inställt på **Ja** åldringsprocessen kommer inte att räkna om beloppet **Delsumma för följesedel**, **Delsumma för öppen order** och **Disponibel kredit** för varje kund. Dessa saldon visas på sidan **Åldersfördelade saldon** i faktaruta under **Kreditgräns**. Du kan få snabbare prestanda under åldersfördelningsprocessen om du ställer in alternativet **Ja**. Ställ in det till **Nej** om du vill omberäkna saldona när åldersprocessen körs. 
 - **Företagsintervall** – Under fliken **Företagsintervall** väljer du de juridiska personer (företag) som ska inkluderas i ögonblicksbilden av åldersfördelning. Det är bara juridiska personer som har ställts in för centraliserade betalningar som kan väljas. Transaktioner från de valda juridiska personerna tas sedan med i åldersfördelningsperioderna för kunder som har samma part-ID i alla dessa juridiska personer. Valutabelopp konverteras till valutan för den juridiska person du är inloggad på när du skapar ögonblicksbilden av åldersfördelning.
 
 Vi rekommenderar att du planerar den här processen så att den körs i en batch.
 
 > [!NOTE]
-> För att bidra till förbättrad batchprestanda när ögonblicksbilder av åldersfördelning skapas anger du ett nummer i fältet **Maximalt antal batchuppgifter** under snabbfliken **Inkassostandard** under fliken **Inkasso** på sidan **kundreskontraparametrar**. I fältet **Åldersfördelat kundsaldo** rekommenderar vi att du börjar med standardvärdet på **100** och sedan justerar värdet för att optimera bearbetningen för din situation.
+> För att bidra till förbättrad batchprestanda när ögonblicksbilder av åldersfördelning skapas anger du ett nummer i fältet **Maximalt antal batchuppgifter** under snabbfliken **Inkassostandard** under fliken **Inkasso** på sidan **kundreskontraparametrar**. I fältet **Åldersfördelat kundsaldo** rekommenderar vi att du börjar med standardvärdet på **12** och **20** och sedan justerar värdet för att optimera bearbetningen för din situation. Vi rekommenderar inte att du anger det här värdet som är större än **30** eftersom det kommer att påverka prestandan. 
 

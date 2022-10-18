@@ -2,7 +2,7 @@
 title: Borttagna eller inaktuella funktioner i Dynamics 365 Finance
 description: I den här artikeln beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
 author: kfend
-ms.date: 06/29/2022
+ms.date: 10/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462312"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643805"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna eller inaktuella funktioner i Dynamics 365 Finance
 
@@ -32,6 +32,18 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 > [!NOTE]
 > Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i respektive version av appar för ekonomi och drift.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10031-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.31 utgåva
+
+### <a name="edifact-paymul-at-configuration-under-payment-model"></a>EDIFACT PAYMUL (AT) konfiguration under Betalningsmodell
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Orsak till inaktuell/borttagning** | Ersätts med ett nytt format som baseras på ISO 20022 pain.001.001.09. | 
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Banker i Österrike kommer att avskriva EDICFACT-PAYMUL för gränsöverskridande betalningar senast i november 2022 och ersätter den med XML version pain.001.001.09N. En ny konfiguration har lagts till under den globala konfigurationsdatabasen, som gör det möjligt för användarna att slutföra den gränsöverskridande betalningsförfrågan. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.30 utgåva
 

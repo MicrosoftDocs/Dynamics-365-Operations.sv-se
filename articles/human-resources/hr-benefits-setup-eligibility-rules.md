@@ -2,7 +2,7 @@
 title: Konfigurera regler och alternativ för berättigande
 description: I den här artikeln beskrivs hur du ställer in berättiganderegler och -alternativ i Förmånshantering i Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 916a9955327aef67ac768d4505bdb343862058a1
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337102"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644095"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurera regler och alternativ för berättigande 
 
@@ -175,6 +175,7 @@ Buntar är en uppsättning relaterade förmånsplaner. Du kan använda förmåns
    | **Bunt** | En unik identifierare för bunten. |
    | **Beskrivning** | En beskrivning av bunten. |
    | **Rubrik** | Anger om ett av planerna i bunten måste markeras som huvudplan. Huvudplanen måste väljas under öppen registrering som en del av bunten innan förmånsadministratören kan bekräfta val av medarbetarens förmåner. |
+   | **Obligatoriskt**| Anger att planen måste väljas för att du ska kunna checka ut någon annan plan i bunten. Fler än en plan kan markeras som **Obligatorisk**. I sådana fall måste alla planer som är markerade med **Obligatorisk** väljas för att checka ut någon av planerna i bunten.|
    | **Giltig från datum och tid** | Det datum och tid då bunten blir aktiv. |
    | **Giltig till** | Det datum då bunten går ut. Standard är 12/31/2154, vilket betyder aldrig. |
 

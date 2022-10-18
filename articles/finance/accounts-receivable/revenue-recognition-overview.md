@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: bking
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: be3e6438e86911d9703a5ac7413515389308b340
-ms.sourcegitcommit: 1909d18a74cef85aad020a6a7473281e451f58c7
+ms.openlocfilehash: 5bf07356b5613f438034f8dabac7db197e69a6c8
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9348365"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644041"
 ---
 # <a name="revenue-recognition-overview"></a>Översikt över intäktsredovisning
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Den här funktionen kommer att avaktiveras i oktober 2023, nya användare bör använda prenumerationsfakturering.
 
 Företag i branscher som säljer flera element, som produkter, tjänster, prenumerationer och liknande, måste kunna bryta ut order med flera element så att intäkten kan identifieras utifrån en uppsättning företagsspecifika och branschspecifika riktlinjer.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d06c1d40416d2644499723317c0adfd805126b5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eea8cdfc0cd2cfe8ca4cc94cefbf5772ab24d9a4
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882907"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643917"
 ---
 # <a name="request-time-off"></a>Begära ledighet
 
@@ -63,6 +63,10 @@ När du uppdaterar en befintlig ledighetsansökan kan du lägga till en bilaga. 
 2. Om du vill visa godkända ledighetsansökningar väljer du **Godkänd ledighet**. Om du vill visa väntande ledighetsansökningar väljer du **Ledighetsansökningar**.
 
 ## <a name="cancel-time-off-requests"></a>Annullera ansökningar om ledighet
+
+>[!NOTE] 
+> **Annullera ledighet** är tillgänglig när funktionen **Förbättringar i arbetsflödesfunktionen för ledighetsbegäran** är aktiverad i arbetsytan **funktionshantering**.  
+
 
 1. I arbetsytan **Självbetjäning för medarbetare** väljer du **Visa ledig tid** i panelen **Ledighetssaldon**.
 

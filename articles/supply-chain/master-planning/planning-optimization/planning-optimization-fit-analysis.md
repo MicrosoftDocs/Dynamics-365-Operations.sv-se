@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
-ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
+ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "9591861"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643751"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för Planeringsoptimering
 
@@ -104,7 +104,7 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Säkerhetsmarginaler | Huvudplaner med säkerhetsmarginal: *\#* | Denna funktion stöds nu. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) |  Stöds |
 | Uppfyllelse av säkerhetslager | Poster för artikeldisponering med "uppfyllda minimum" som skiljer sig från "dagens datum + anskaffningstid": *\#* | Planeringsoptimering använder alltid *dagens datum + anskaffningstid*. Den här ändringen görs för att förbereda för en förenklad planeringsinställning i framtiden och för att ge ett åtgärdbart resultat. Om anskaffningstiden inte finns med i säkerhetslagret försenas planerade order som skapas för aktuell lagerbehållning alltid på grund av ledtiden. Det här beteendet kan orsaka betydande brus och oönskade planerade order. Det bästa tillvägagångssättet är att ändra inställningen så att *dagens datum + anskaffningstid* används. Uppdatera huvuddata för att undvika varningar. | Inte tillämpligt |
 | Försäljningsofferter | Huvudplaner med försäljningsofferter aktiverade: *\#* | Denna funktion väntar. För närvarande betraktas inte offerter när Planeringsoptimering aktiveras. De kommer att ignoreras oavsett den här inställningen. | 2022 utgivningscykel 2 eller senare |
-| Hållbarhetstid | Huvudplaner med hållbarhetstid aktiverat: *\#* | Denna funktion väntar. För närvarande beaktas inte hållbarhetstid när Planeringsoptimeringen är aktiverad, oavsett den här inställningen. | Stöds |
+| Hållbarhetstid | Huvudplaner med hållbarhetstid aktiverat: *\#* | Denna funktion stöds nu. | Stöds |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

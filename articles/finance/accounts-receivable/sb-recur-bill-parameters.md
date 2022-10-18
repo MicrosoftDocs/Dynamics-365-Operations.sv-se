@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 64d6e21c2d8c588a64f0f4cf8b7a0bafc853bcab
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903346"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644014"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Faktureringsparametrar för återkommande kontrakt
 
@@ -46,7 +46,8 @@ Använd sidan **Faktureringsparametrar för återkommande kontrakt** för att st
 8. I fältet **Typ av fakturatransaktion**, välj standardfaktura transaktionstyp för nya faktureringsscheman.
 9. Ställ in alternativet **Anpassa periodisering till fakturering** till **Ja** för att anpassa motsvarande uppskjutningsschema så att det använder samma datum som faktureringsschemat. Ange **Inget** om du vill ha olika datum.
 10. Om du använder intäktsdelningsfunktionen, ställ in alternativet **Skapa intäktsdelning automatiskt** till **Ja** när objekt läggs till i ett faktureringsschema. Kryssrutan **Intäktsdelning** markeras automatiskt på faktureringsschemaraden om artikeln anges som en intäktsdelningsartikel. Ange alternativet **Nej** om du vill markera kryssrutan **Intäktsdelning**.
-11. Ställ in fälten för att skapa försäljningsorder:
+11. Ange alternativet **Kunddelning** till **Ja** för att tillåta att ett faktureringsschema faktureras till olika kunder. När den är inställd på **Ja** är alternativet **Kunddelning** tillgängligt i sidhuvudet och raden i faktureringsplanen. 
+12. Ställ in fälten för att skapa försäljningsorder:
 
     - Fakturor kan konsolideras per period, kund eller artikel. Alla kombinationer av värden **Ja** och **Nej** kan ställas in. Fakturor kan också delas upp efter artikelgrupp.
     - Följande bokföringsalternativ är tillgängliga för fakturor:
@@ -92,6 +93,9 @@ Använd sidan **Faktureringsparametrar för återkommande kontrakt** för att st
     - **Utfärda kredit** – Skapa en kreditnota när ett faktureringsschema eller en faktureringsschemarad avslutas.
     - **Kreditjustering** – Skapa en kreditjustering för ett faktureringsschema när en rad har avslutats. Kreditjusteringen visas i en framtida faktureringsperiod för faktureringsschemat. Kreditjusteringen kommer att uppdatera fakturabeloppet automatiskt för nästa faktureringsperiod tills kredit har slutförts för faktureringsschemat.
     - **Ingen kredit** – Skapa inte en kreditjustering eller en kreditnota när ett faktureringsschema eller en faktureringsschemarad avslutas. Det här alternativet är endast tillgängligt när du använder alternativet **Ingen justering** för att avsluta ett faktureringsschema.
+18. När alternativet **En gång kan avslutas med återbetalning** anges till **Nej** och ett faktureringsschema med en faktureringsfrekvens på **En gång** ändras statusen för faktureringsschemaraden till **Avslutad** när faktureringsschemat har fakturerats. Faktureringsschemat kan inte avslutas och ingen kredit kan ges. När alternativet **En gång kan avslutas med återbetalning** anges till **Ja** kommer faktureringsschemaraden med en faktureringsfrekvens på **En gång** ha en **Aktiv** status efter att faktureringsschemat har fakturerats. Faktureringsschemaraden kan avslutas och en återbetalning bearbetas. 
+19. Alternativet **Fördela dagligen** som ställts in i parametrarna standardvärdet för massavslutningssidan och dialogerna för faktureringsschemarubrik och radavslut. Det kan ändras under uppsägningsprocessen. När det är inställt på **Ja**, beräknas ett återbetalningsbelopp med ett dagligt satsbelopp. När det här ställs in på **Nej** krediteras det utifrån uppsägningsdatum och faktureringsfrekvens. Om du till exempel använder Månadsvis frekvens och faktureringsbeloppet per 100 $ per månad, är kreditbeloppet i steg om 100 $. Om faktureringsfrekvensen är En gång blir kreditbeloppet 0,00 $. Du måste ha Fördela dagligen inställt på Ja för att få en återbetalning för faktureringsfrekvens vid ett tillfälle. 
+20. Ange alternativet **Skapa periodisering för kredit** till **Ja** för att skapa ett nytt uppskovsschema om man krediterar ett befintligt periodiseringsschema. Lämna alternativet inställt på **Nej** om du vill skapa kredit på det befintliga periodiseringsschemat.
 
 ## <a name="sequence-number-tab"></a>Fliken Sekvensnummer
 

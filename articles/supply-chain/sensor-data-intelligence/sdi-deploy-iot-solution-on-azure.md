@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 284aba91aa436ed1dfc02b5a93b4358ffc518017
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 5026f234f1b2f38e7041098421d0261fd468db96
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428475"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643736"
 ---
 # <a name="deploy-an-iot-solution-on-azure"></a>Distribuera IoT-exempellösning på Azure
 
@@ -26,6 +26,14 @@ ms.locfileid: "9428475"
 Sensor Data Intelligence använder data från sensors som är kopplade till Microsoft Azure. Om du vill att Azure ska kunna hämta data från ditt konto och dela dem med Dynamics 365 Supply Chain Management, måste du distribuera en IoT-lösning i ditt Azure-abonnemang. Följande arkitekturdiagram ger en översikt över lösningen och dess komponenter.
 
 ![Sensor Data Intelligence arkitekturdiagram.](media/sdi-architecture.png "Sensor Data Intelligence arkitekturdiagram")
+
+## <a name="video-instructions"></a>Videoanvisningar
+
+Följande video visar hur du [aktiverar Sensor Data Intelligence-funktionen](sdi-enable-feature.md) och distribuerar de nödvändiga Azure-resurserna. Det andra avsnittet i den här artikeln innehåller samma instruktioner i ett textbaserat format.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+
+## <a name="procedure"></a>Procedur
 
 Följ dessa steg för att distribuera de nödvändiga resurserna på Azure.
 

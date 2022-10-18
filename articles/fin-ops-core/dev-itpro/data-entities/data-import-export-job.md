@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: dfd06c30ae09a175862810a0c85399358a65fdb0
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357615"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671469"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -64,6 +64,9 @@ Du kan lägga till specifika enheter i import- eller exportjobb eller välja den
 
 ### <a name="set-the-data-format-for-the-job"></a>Ange dataformat för jobbet
 När du väljer en enhet markerar du format för de data som ska exporteras eller importeras. Du definierar format via panelen **Inställningar för datakälla**. Ett dataformat för källan är en kombination av **typ**, **filformat**, **radavgränsare** och **kolumnavgränsare**. Det finns även andra attribut, men dessa är viktiga att förstå. I tabellen här nedanför listas giltiga kombinationer.
+
+> [!NOTE]
+> Excel-filformatet är för närvarande inte tillgängligt i datahanteringsarbetsytan för GCC (Government Community Cloud).
 
 | Filformat            | Rad/kolumnavgränsare                       | XML-format                 |
 |------------------------|--------------------------------------------|---------------------------|
