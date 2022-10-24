@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.31 (januari)
+                  href: get-started/whats-new-changed-10-0-31.md
                 - name: Finance 10.0.30 (november)
                   href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (oktober)
@@ -232,7 +234,27 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Ställa in validering av fakturamatchning för leverantörsreskontra
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: Automation av leverantörsfaktura
+            - name: Lösning med fakturainsamling
+              items:
+                - name: Fakturainsamling – översikt
+                  href: accounts-payable/invoice-capture-overview.md
+                - name: Installera fakturainsamling
+                  href: accounts-payable/install-invoice-capture.md
+                - name: Konfigurera fakturainsamling
+                  href: accounts-payable/config-invoice-capture.md
+                - name: Konfigurationsgrupper för fakturainsamling
+                  href: accounts-payable/invoice-capture-config-group.md
+                - name: Mappningsregler för fakturainsamling
+                  href: accounts-payable/invoice-capture-mapping-rules.md
+                - name: Arbetsyta för fakturainsamling
+                  href: accounts-payable/invoice-capture-workspace.md
+                - name: Avancerade inställningar för fakturainsamling
+                  href: accounts-payable/invoice-capture-advanced-settings.md
+                - name: Instrumentpanel för fakturainsamling
+                  href: accounts-payable/invoice-capture-dashboard.md
+                - name: Mottagna fakturainsamlade filer
+                  href: accounts-payable/invoice-capture-rec-files.md
+            - name: Automatisering av leverantörsfaktura
               items:
                 - name: Automatiserade processer för leverantörsfakturering – översikt
                   href: accounts-payable/auto-vendr-invc-process.md

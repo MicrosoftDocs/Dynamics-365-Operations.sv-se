@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för plattformsuppdateringar
                   href: get-started/whats-new-home-page.md
+                - name: Plattformsuppdateringar för version 10.0.31 (februari 2023)
+                  href: get-started/whats-new-platform-updates-10-0-31.md
                 - name: Plattformsuppdateringar för version 10.0.30 (november 2022)
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Plattformsuppdateringar för version 10.0.29 (oktober 2022)
@@ -182,6 +184,8 @@
                   href: data-entities/configuration-data-templates.md
                 - name: Spåra ändringar av en entitet
                   href: data-entities/entity-change-track.md
+                - name: Tillåt ändringsspårning av radversion för en entitet
+                  href: data-entities/rowversion-change-track.md
                 - name: Söka efter information om standarddataentiteter
                   href: data-entities/data-entities-report.md
                 - name: Datamallar med flera kalkylblad
@@ -1228,6 +1232,8 @@
                   href: power-platform/admin-reference.md
                 - name: Aktivera virtuella Dataverse-entiteter
                   href: power-platform/enable-virtual-entities.md
+                - name: Spåra ändringar för virtuella tabeller i Dataverse
+                  href: power-platform/track-changes-fin-ops-virtual-table.md
                 - name: Power Apps-portaler med ekonomi och drift
                   href: power-platform/power-portal-reference.md
                 - name: Vanliga frågor om virtuella entiteter i ekonomi och drift
