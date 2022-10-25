@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 073762581d84646ba12b570e57327b7cab8efd3b
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 25ccbda1628544f14dc32d9bea3f2162ad47d79e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428419"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690032"
 ---
 # <a name="the-production-delays-scenario"></a>Scenariot för produktionsförseningar
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 I scenariot *Tillverkningsfördröjningar* genereras ett meddelande om tillverkningsgenomflödet sjunker under ett visst tröskelvärde. I det här scenariot *part-out* signal skickas till Microsoft Azure IoT Hub för varje vara som produceras. I Dynamics 365 Supply Chain Management, orderfördröjningen beräknas baserat på hur lång tid som produktionsordern är schemalagd att köras, antalet artiklar som ska produceras, hur lång tid jobbet har körts och antalet *del ut* signaler som tas emot. Ett fördröjningsmeddelande genereras om antalet *del ut*-signaler för jobbet sjunker under tröskelvärdet för det förväntade värdet.
 

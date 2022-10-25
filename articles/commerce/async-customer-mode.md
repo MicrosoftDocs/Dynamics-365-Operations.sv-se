@@ -2,19 +2,19 @@
 title: Skapningsläge asynkron kund
 description: Denna artikel beskriver det asynkrona läget för att skapa kunder i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 95102936871e15f8e525abca736fa75927569b34
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: b2926339021991f87dd3eadef94da3b500c954cf
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473717"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690300"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Skapningsläge asynkron kund
 
@@ -46,6 +46,7 @@ Om du vill hjälpa organisationer att använda läget för att skapa asynkrona k
 | Aktivera paritet mellan synkron och asynkron kundgenerering. | 10.0.24 och senare | <p>Funktionsändring: **Aktivera utökat skapa asynkron kund**</p><p>Funktionsdetaljer: Möjlighet att samla in ytterligare information, till exempel titel, anknytningar från standardkunden och sekundär kontaktinformation (telefonnummer och e-postadress), medan du skapar kunder asynkront</p> |
 | Användarvänliga felmeddelanden | 10.0.28 och senare | Dessa förbättringar förbättra användarvänliga felmeddelanden om en användare inte kan redigera information direkt när synkroniseringen pågår. Du aktiverar dessa förbättringar genom att använda inställningen **Tillåt att vissa UI-element inte kan ändras av en asynkron kund** på **Webbplatsinställningar \> Tilläggen** i Commerce-webbplatsbyggaren. |
 | Möjlighet att redigera kundinformation asynkront | 10.0.29 och senare | <p>Funktionsändring: **Aktivera redigering av kunder i asynkront läge**</p><p>Funktionsdetaljer: förmåga att redigera kunddata asynkront</p><p>Vanliga frågor om problem som är relaterade till redigering av kundinformation asynkront finns i [Asynkront läget för att skapa kunder](async-customer-mode-faq.md).</p> |
+| Förmåga att granska synkronisering av kundhanteringsåtgärder | 10.0.31 och senare | Den här förbättringen gör att användarna kan granska synkroniseringen av kundhanteringsåtgärder i Commerce headquarters. Det gör också att användarna kan göra ändringar om de behövs och synkronisera data. |
 
 ### <a name="feature-switch-hierarchy"></a>Hierarki för funktionsändring
 

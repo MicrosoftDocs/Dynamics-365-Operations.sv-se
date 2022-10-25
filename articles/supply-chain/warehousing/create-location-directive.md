@@ -2,7 +2,7 @@
 title: Arbeta med platsdirektiv
 description: I denna artikel beskrivs hur du arbetar med platsdirektiv. Platsdirektiv är användardefinierade regler som hjälper till att identifiera plockning och inlagringsplatser för lagerrörelse.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ef8ec0732cd3bd50bca8d334c43d0354e9e3316
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903707"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689677"
 ---
 # <a name="work-with-location-directives"></a>Arbeta med platsdirektiv
 
@@ -47,6 +47,20 @@ Innan du kan skapa ett platsdirektiv måste du följa dessa steg för att se til
 1. Skapa platser, platstyper, platsprofiler och platsformat. Mer information finns i [Konfigurera platser i ett WMS-aktiverat lagerställe](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Skapa platser, zoner och zongrupper. Mer information finns i [Konfigurera lagerställe](../../commerce/channels-setup-warehouse.md) och [Konfigurera platser i ett WMS-aktiverat lagerställe](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="turn-the-location-directive-scopes-feature-on-or-off"></a><a name="scopes-feature"></a>Aktivera eller inaktivera funktionen Platsdirektiv omfattningar
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Funktionen *Platsdirektivomfattning* ger dig mer frihet när du utformar platsdirektiv och hjälper till att minska redundanta konfigurationer. Det lägger till **Omfattningar** som ersätter det tidigare alternativ **Flera SKU**. Medan alternativet **Flera SKU** bara kan ställas in som *Ja* eller *Nej*, alternativet **Omfattningar** ger inte bara dessa två inställningar (via värdena *Enstaka artikel* och *Flera artikel*) utan även två ytterligare (via värdena *Enstaka artikel eller order* och *Alla*). Mer information om dessa inställningar finns på [snabbfliken Plats direktiv](#location-directives-tab).
+
+När det har aktiverats ersätts alternativet **Omfattning** ersätter **Fler SKU** och är 100 procent kompatibel med befintliga konfigurationer.
+
+Innan du kan använda du måste slå på den i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera eller inaktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+
+- **Modul:** *Warehouse management*
+- **Funktionsnamn:** *Område för platsdirektiv*
+
 ## <a name="work-order-types-for-location-directives"></a>Arbetsordertyper för platsdirektiv
 
 Många av fälten som kan ställas in för platsdirektiv är gemensamma för alla arbetsordertyper. Andra fält är dock specifika för särskilda arbetsordertyper.
@@ -68,7 +82,7 @@ I följande tabell visas de fält som är gemensamma för alla arbetsordertyper.
 | Platsdirektiv | Site |
 | Platsdirektiv | Lagerställe |
 | Platsdirektiv | Direktivkod |
-| Platsdirektiv | Flera SKU-enheter |
+| Platsdirektiv | Omfattning *eller* Flera SKU |
 | Rader | Löpnummer |
 | Rader | Från-kvantitet |
 | Rader | Till-kvantitet |
@@ -117,7 +131,9 @@ Därifrån kan du visa, skapa och redigera dina platsdirektiv med hjälp av komm
 
 - **Flytta upp** – flytta det valda platsdirektivet uppåt i sekvensen. Du kan t.ex. flytta den från serienummer 4 till serienummer 3.
 - **Flytta ned** – flytta det valda platsdirektivet nedåt i sekvensen. Du kan t.ex. flytta den från serienummer 4 till serienummer 5.
+- **Kopiera** – Öppna en dialogruta där du kan skapa en exakt kopia av det aktuella platsdirektivet.
 - **Redigera fråga** – öppna en dialogruta där du kan definiera de villkor som det valda platsdirektivet ska bearbetas under. Du kanske till exempel vill att det bara ska gälla ett specifikt lagerställe.
+- **Godkännandetester** – Öppna en sida där du kan ställa in automatiska tester för att fastställa hur platsdirektiv ska fungera under olika startförhållanden. På det här sättet kan du snabbt validera direktiv när du skapar och underhåller dem. Mer information finns i [Testplatsdirektiv med acceptanstest](location-directive-acceptance-tests.md).
 
 ## <a name="location-directives-header"></a>Rubrik för platsdirektiv
 
@@ -126,7 +142,7 @@ Rubrik för platsdirektiv innehåller följande fält för sekvensnumret och det
 - **Sekvensnummer** – i det här fältet visas den sekvens som används i systemet vid försök att tillämpa varje platsdirektiv i för den valda arbetsordertypen. Låga nummer används först. Du kan ändra ordningsföljden genom att använda knapparna **Flytta upp** och **Flytta ned** i åtgärdsfönstret.
 - **Namn** – Ange ett beskrivande namn för platsdirektivet. Det här namnet bör hjälpa till att identifiera det allmänna syftet med direktivet. Ange till exempel *plockning av försäljningsorder i distributionslager 24*.
 
-## <a name="location-directives-fasttab"></a>Snabbfliken platsdirektiv
+## <a name="location-directives-fasttab"></a><a name="location-directives-tab"></a>Snabbfliken platsdirektiv
 
 Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen som har valts i fältet **arbetsordertyp** i listrutan.
 
@@ -145,7 +161,29 @@ Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen so
     > [!TIP]
     > Om en direktivkod ställs in kommer systemet inte att söka efter platsdirektiv med sekvensnummer när arbete måste genereras. I stället sker sökningen efter en direktivkod. På detta sätt kan du vara mer specifik om det platsdirektiv som används för ett visst steg i en arbetsmall, till exempel steget för att iscensätta materialen.
 
-- **Flera SKU-enheter** – Ange det här alternativet till *Ja* för att möjliggöra att flera lagerhållningsenheter (SKU) kan användas på en plats. Till exempel måste flera SKU-enheter vara aktiverade för vikdörrens plats. Om du aktiverar flera SKU-enheter anges din plats i arbete, som förväntat. Platsen kan dock bara hantera en placering av flera artiklar (om arbete inkluderar olika SKU-enheter som måste plockas och placeras). Det går inte att hantera en placering med en SKU. Om du konfigurerar detta alternativ till *Nej*, anges din plats bara om din placering har en enda typ av SKU.
+- **Omfattning** – Använd det här alternativet om du vill ange de scenarier som platsdirektivet ska tillämpas på. Det här alternativet ersätter alternativet **Flera SKU** och är bara tillgängligt om funktionen *Platsdirektivomfattning* är aktiverad i systemet. (Mer information finns i [Aktivera eller inaktivera funktionen Platsdirektivomfattningar](#scopes-feature).)
+
+    | Inställning av omfattning | En order med en artikel | Flera order med samma artikel | En order med flera artiklar | Flera order med flera artiklar |
+    |---|---|---|---|---|
+    | Enstaka artikel | Ja | Ja | Nej | Nej |
+    | Flera artiklar | Nej | Nej | Ja | Ja |
+    | Enstaka artikel eller order | Ja | Ja | Ja | Nej |
+    | Allt | Ja | Ja | Ja | Ja |
+
+    I tabellen nedan beskrivs när område är tillgängliga och om de tillåter funktionen **Redigera fråga**.
+
+    | Omfattning | Arbetstyp som stöds | Arbetsordertyper som stöds | Tillåt redigering av fråga |
+    |---|---|---|---|
+    | Enstaka artikel | Allt | Allt | Ja |
+    | Flera artiklar | Allt | Allt | Nej |
+    | Enstaka artikel eller order | Placeringar | Samprodukt och färdig produkt för inleverans, färdiga varor som förts in, kanban-plats, inköpsorder, kvalitetsorder, påfyllnad, returorder, försäljningsorder, överföringsleverans och överföringsinleverans | Ja |
+    | Allt | Placeringar | Allt | Nej |
+
+    > [!NOTE]
+    > - Om du vill göra placeringar för både flera artiklar och enskilda artiklar måste du se till att det finns plats direktiv som täcker båda scenarierna. Du kan till exempel skapa en eller flera *Enstaka artikel eller order* för att täcka scenarier som kräver finjustering (till exempel genom redigeringar i frågan) och sedan en eller flera *Alla* platsdirektiv som täcker återstående scenarier.
+    > - Även omfattningar *Enstaka artikel* och *Flera artiklar* kan användas för placeringar, detta tillvägagångssätt leder vanligtvis till redundanta konfigurationer. Överväg att använda *Enstaka artikel eller order* och *Alla* omfattningar istället, eftersom detta tillvägagångssätt kommer att ge en renare installation.
+
+- **Flera SKU** – Använd det här alternativet om du vill ange det scenario som platsdirektivet ska tillämpas på. Den här inställningen ersätts av inställningen **Omfattning** om funktionen *Platsdirektivomfattning* är aktiverad i systemet. (Mer information finns i [Aktivera eller inaktivera funktionen Platsdirektivomfattningar](#scopes-feature).) Ställ in det här alternativet till *Ja* om du vill aktivera att flera lagerhållningsenheter används på en plats. Till exempel måste flera SKU-enheter vara aktiverade för vikdörrens plats. Om du aktiverar flera SKU-enheter anges din plats i arbete, som förväntat. Platsen kan dock bara hantera en placering av flera artiklar (om arbete inkluderar olika SKU-enheter som måste plockas och placeras). Det går inte att hantera en placering med en SKU. Om du konfigurerar detta alternativ till *Nej*, anges din plats bara om din placering har en enda typ av SKU.
 
     > [!IMPORTANT]
     > Om du vill kunna utföra placeringar av flera artiklar och placeringar av en SKU måste du ange två rader som har samma struktur och inställning, men du måste konfigurera alternativet **Flera SKU-enheter** till *Ja* för en rad och *Nej* för den andra. För placeringsåtgärder måste du därför ha två identiska platsdirektiv, även om du inte behöver skilja enskilda SKU:er och flera SKU:er på ett arbets-ID. Om du inte konfigurerar båda dessa platsdirektiv kommer oväntade platser för affärsprocesser från det tillämpliga platsdirektivet. Du måste använda en liknande inställning för plats direktiv som har **arbetstypen** *plocka* om du behöver bearbeta order som innehåller flera SKU:er.
@@ -255,6 +293,5 @@ När du har skapat platsdirektiv kan du associera varje direktivkod med en arbet
 
 - Video: [konfiguration för lagerstyrning djupdykning](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjälpartikel: [Kontrollera lagerarbete genom arbetsmallar och platsdirektiv](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

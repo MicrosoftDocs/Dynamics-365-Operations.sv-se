@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-08-02
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7a8327552d9e6c38721fdac9ee1795e61f90f329
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: ee767a5d7c3dca2681861802ae42d7a07217c54d
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266494"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689351"
 ---
 # <a name="make-finished-goods-physically-available-before-posting-to-journals"></a>Göra färdiga varor fysiskt tillgängliga före bokföring i journaler
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 När en arbetare rapporterar en tillverkad artikel som färdig registrerar systemet den som tillgänglig för ytterligare fysisk bearbetning (t.ex. försändelse eller artikelinförsel). Under den här processen bokförs också en eller flera journaler (till exempel rapporten som färdig journal, plocklistejournal och flödeskortjournal). Om du vill göra dina artiklar fysiskt tillgängliga innan alla bokföringar har bearbetats kan du ställa in systemet för att inaktivera journalbokföringarna. Uppskjuten bokföringar hanteras sedan av ett batchjobb som bearbetar bokföringarna så som systemresurser tillåter.
 

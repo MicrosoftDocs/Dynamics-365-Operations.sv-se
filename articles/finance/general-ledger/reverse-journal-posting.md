@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
-ms.openlocfilehash: 7e3a22f43bcc312fe60b77db2fc3bc94d15950c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8912409ec0d2016ea4af12843319febda98663c5
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284864"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680395"
 ---
 # <a name="reverse-journal-posting"></a>Återför journalbokföring
 
@@ -37,7 +37,7 @@ Innan du kan använda någon av funktionerna som beskrivs i det här ämnet mås
 Du kan återföra journalrader individuellt. Med en omvänd journalbokföring kan du även återföra en hel redovisningsjournal. För att återföra en journal: 
 
 - Filtrera efter bokförda journaler och öppna vyn **Rader** i journalen.
-- Klicka på menyn **Återför** högst upp på sidan.
+- Klicka på menyn **Återför hel journal** högst upp på sidan.
 - Det totala antalet verifikationer och verifikationsrader samt det totala beloppet för raderna som återförts visas.
 - Välj **Ja** om du vill använda de befintliga transaktionsdatumen eller **Nej** om du vill ange ett nytt. I vissa fall kan perioden för den ursprungliga transaktionen stängas och du måste ange ett nytt transaktionsdatum för återföringen.
 - Om du har valt **nej** anger du ett transaktionsdatum för återföringen. 

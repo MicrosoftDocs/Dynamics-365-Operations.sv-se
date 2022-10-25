@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: a23256f3e092b32e1f1d09b708a8d0ca5f403785
+ms.sourcegitcommit: 5d33a3398e7e1d3494bfc3cad342fffa7cfa5b76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520853"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680019"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Skillnader mellan inbyggd huvudplanering och Planeringsoptimering
 
@@ -34,11 +34,12 @@ Resultatet från Planeringsoptimering kan skilja sig från resultaten från den 
 | Returorder | Returorder beaktas inte. |
 | Tidsplaneringsrelaterade funktioner | Mer information finns i [Tidsplanering med obegränsad kapacitet](infinite-capacity-planning.md#limitations). |
 | Uppfyllelse av säkerhetslager | Vid Planeringsoptimering används alltid alternativet *Dagens datum + anskaffningstid* för fältet **Uppfyll minimum** på sidan **Artikeldisponering**. Detta hjälper till att förhindra oönskade planerade beställningar och andra problem, eftersom om upphandlingstiden inte ingår för säkerhetslager, planerade beställningar som skapas för lågt lagerbehållare alltid försenas på grund av ledtiden. |
-| Pegging av säkerhetslager och nettobehov | Kravtypen *säkerhetslager* ingår inte och visas inte på sidan **Nettobehov**. Säkerhetslager representerar inte efterfrågan och har inget behovsdatum kopplat. I stället begränsar det hur mycket lager som alltid måste finnas i lager. Fältvärdet **Minimum** beaktas fortfarande vid beräkning av planerade order under masterplanering. Vi rekommenderar att du inspekterar kolumnen **Ackumulerad kvantitet** på sidan **Nettobehov** för att se att detta värde beaktades. |
+| Pegging av säkerhetslager och nettobehov | Kravtypen *säkerhetslager* ingår inte och visas inte på sidan **Nettobehov**. Säkerhetslager representerar inte efterfrågan och har inget behovsdatum kopplat. I stället begränsar det hur mycket lager som alltid måste finnas i lager. Fältvärdet **Minimum** beaktas fortfarande vid beräkning av planerade order under masterplanering. Vi rekommenderar att du inspekterar kolumnen **Ackumulerad kvantitet** på sidan **Nettobehov** för att se att detta värde beaktades. Eftersom peggingen skiljer sig åt kan olika åtgärder föreslås. |
 | Transportkalendrar | Värdet i kolumnen **Transportkalender** på sidan **Leveranssätt** ignoreras. |
 | Minsta/högsta disponeringskod utan värden| Med den inbyggda planeringsmotorn behandlas disponeringskoden som ett behov när du använder en minsta/högsta disponeringskod där inga minimi- eller maximivärden anges, och en order skapas för respektive behov. Med Planeringsoptimering skapar systemet en order per dag för att täcka hela beloppet för den dagen.  |
 | Nettobehov och manuellt skapade planerade order | Med den inbyggda planeringsmotorn visas manuellt skapade leveransorder för en artikel automatiskt bland nettobehoven för artikeln. När du till exempel skapar en inköpsorder från en försäljningsorder visas inköpsordern på sidan **Nettobehov** utan att föregående åtgärder krävs. Det beror på att den inbyggda planeringsmotorn loggar lagertransaktioner i `inventLogTTS` registret och visar ändringar på sidan **nettobehov** för dynamiska planer. Med Planeringsoptimering kommer emellertid manuellt skapade order inte att visas bland nettobehoven för en artikel förrän Planeringsoptimering körs (med hjälp av en plan som inkluderar artikeln), eller innan du väljer **Uppdatera \> Huvudplanering** i åtgärdsfönstret på sidan **Nettobehov**, som kommer att köra huvudplanering för objektet. Mer information om hur du arbetar med sidan finns på sidan **Nettobehov**, se [Nettobehov och pegging-information med Planeringsoptimering](net-requirements.md). |
 | Resurstilldelning | När du arbetar med obegränsad kapacitet tilldelar den inbyggda huvudplaneringsmotorn alla planerade order till samma resurs för en given resursgrupp. Detta förbättrar planeringsoptimering genom att välja resurser vid slumpmässiga tidpunkter så att olika tillverkningsorder kan använda olika resurser. Om du vill använda samma resurs för alla planerade order måste du ange den resursen i flödet. |
+| Utökade datatyper (EDT) | Planeringsoptimering stöder inte ändringar av EDT. Om du till exempel utökar produktkvantitetens precision från två decimaler (standard) till fyra, kommer Planeringsoptimering ändå att använda två decimaler. |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

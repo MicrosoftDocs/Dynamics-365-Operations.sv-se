@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 477b27bf77d2a3ef91a5c2d39f2dfb06d8ad4e59
-ms.sourcegitcommit: 562ea02e1f7409f18ee1cc4750a838bff4381e91
+ms.openlocfilehash: 18fec49f2388159cae0809c63685102a04e90c57
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9429134"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689203"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10030-november-2022"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.30 (november 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management (10.0.30 november 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management, förhandsversion 10.0.30. Den här versionen har ett versionsnummer för 10.0.1362 på följande schema:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.30. Den här versionen har ett versionsnummer för 10.0.1362 på följande schema:
 
 - **Förhandsversion:** september 2022
 - **Allmän tillgänglighet för versionen (självuppdatering):** oktober 2022
@@ -35,7 +34,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 | Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
 | Tillverkning | [Övervaka utrustning med Sensor Data Intelligence](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligence-startsida](../sensor-data-intelligence/sdi-home-page.md) | Funktionshantering:<br>*(Förhandsversion) Sensor Data Intelligence* |
-| Warehouse management | Omvägar på flera nivåer för mobilappen Warehouse Management <!-- KFM: Add link when RP updates --> | [Konfigurera omvägar för steg i menyalternativ för mobila enheter](../warehousing/warehouse-app-detours.md) | Funktionshantering:<br>*Omvägar på flera nivåer för mobilappen Warehouse Management* |
+| Warehouse management | [Omvägar på flera nivåer för mobilappen Warehouse Management](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Konfigurera omvägar för steg i menyalternativ för mobila enheter](../warehousing/warehouse-app-detours.md) | Funktionshantering:<br>*Omvägar på flera nivåer för mobilappen Warehouse Management* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsförbättringar som ingår i den här versionen
 
@@ -52,7 +51,7 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.30 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.30 av Finance and Operations-appar (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.30 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.30 av Finance and Operations-appar (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850001"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680369"
 ---
 # <a name="financial-dimensions"></a>Ekonomiska dimensioner
 
@@ -84,7 +84,7 @@ För att upprätthålla datans referensintegritet kan ekonomiska dimensioner sä
 Du kan inte radera den ekonomiska dimensionen om något av villkoren är uppfyllda.
 
 > [!NOTE]
-> Med start i ekonomiversion 10.0.27 kommer ekonomiska dimensioner inte längre att väljas automatiskt för ekonomiska rapporteringsinställningar när de skapas. 
+> Med start i ekonomiversion 10.0.27 kommer ekonomiska dimensioner inte längre att väljas automatiskt för ekonomiska rapporteringsinställningar när de skapas.
 
 ## <a name="default-dimension-values"></a>Standarddimensionsvärden
 

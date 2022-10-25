@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5ded4b08d562fff9ec5fd9a3de591f944e3ee0
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853508"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682909"
 ---
 # <a name="cost-control-workspace"></a>Arbetsyta för kostnadskontroll 
 
@@ -53,7 +53,7 @@ På snabbfliken **Datafiltrering** definierar du grunden för data för rapporte
 |-------------------------------------------------------------------|-------------|
 | Huvudbok för kostnadsredovisning                                            | **Huvudboken för kostnadsredovisning** som rapporten baseras på. Värdet hämtas från fältet **kostnadskontrollenhet**. |
 | Kostnadsstyrenhet                                                 | Värdet som du väljer bestämmer kostnadsredovisningen och kostnadobjekten som rapporten ska baseras på. |
-| Statistisk dimensionshierarki, dimensionshierarki för kostnadselement | En konfigurationspost för arbetsytan **kostnadskontroll** kan rapportera icke-monetära eller monetära värden, men inte i samma layout. Välj ett värde i fältet **Dimensionshierarki för kostnadselement** för att rapportera monetära värden. Välj ett värde i fältet **Statistisk dimensionshierarki** för att rapportera icke-monetära. Dimensionshierarkiposten som du väljer avgör strukturen för rapporterings- och aggregeringsnivåer.<blockquote>[!NOTE]<br>Om du vill visa monetära och icke-monetära värden sida vid sida kan du exportera data till Microsoft Excel för Microsoft Power BI-innehållet.</blockquote> |
+| Statistisk dimensionshierarki, dimensionshierarki för kostnadselement | En konfigurationspost för arbetsytan **kostnadskontroll** kan rapportera icke-monetära eller monetära värden, men inte i samma layout. Välj ett värde i fältet **Dimensionshierarki för kostnadselement** för att rapportera monetära värden. Välj ett värde i fältet **Statistisk dimensionshierarki** för att rapportera icke-monetära. Dimensionshierarkiposten som du väljer avgör strukturen för rapporterings- och aggregeringsnivåer.<blockquote>**OBS!**<br>Om du vill visa monetära och icke-monetära värden sida vid sida kan du exportera data till Microsoft Excel för Microsoft Power BI-innehållet.</blockquote> |
 | Dimensionshierarki för kostnadsobjekt      | Välj dimensionshierarkin av kostnadsobjektdimensionen som passar syftet med rapporteringen du definierar. |
 | Ursprunglig budgetversion                                           | Välj det budgetversion-ID som utgör den ursprungliga budgeten i samband med den här rapporten. |
 | Reviderad budgetversion                                            | Välj det budgetversion-ID som utgör den reviserade budgeten i samband med den här rapporten. |
@@ -64,7 +64,7 @@ Omkostnadsberäkningen utför stegen i beräkningen av källdata, t.ex. klassifi
 
 | Fält                  | beskrivning |
 |------------------------|-------------|
-| Räkenskapskalenderperiod | Välj räkenskapskalenderperiod för att tilldela ett omkostnadsberäknings-ID.<blockquote>[!NOTE]<br>Räkenskapsperioderna som anges i fältet kommer från räkenskapskalendern som är kopplad till huvudboken för kostnadsredovisning.</blockquote> |
+| Räkenskapskalenderperiod | Välj räkenskapskalenderperiod för att tilldela ett omkostnadsberäknings-ID.<blockquote>**OBS!**<br>Räkenskapsperioderna som anges i fältet kommer från räkenskapskalendern som är kopplad till huvudboken för kostnadsredovisning.</blockquote> |
 | Faktisk version         | Välj lämplig omkostnadsberäknings-ID. |
 | Budgetversion         | Välj lämplig omkostnadsberäknings-ID. |
 | Reviderad budgetversion | Välj lämplig omkostnadsberäknings-ID. |
@@ -77,10 +77,10 @@ Värdena i de markerade kolumnerna kommer att multipliceras med de valda värden
 
 | Fält                | beskrivning |
 |----------------------|-------------|
-| Aktuell period       | Saldot för den aktuella räkenskapsperioden visas.<blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan innevarande perioden.</blockquote> |
-| Föregående period      | Saldot för den föregående räkenskapsperioden visas. Följande formel används:<br>Innevarande räkenskapsperiod – 1<blockquote>[!NOTE]<br>Som standard härleds föregående period från sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod som innevarande period. **Föregående period** räknas sedan i enlighet med detta.</blockquote> |
-| Början på året till dagens datum         | Den för hittills i år visas. Följande formel används:<br>YearToDate (innevarande räkenskapsperiod)<blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** uppdateras.</blockquote> |
-| Hittills i år, genomsnitt | Genomsnittet för hittills i år visas. Följande formel används:<br>(YearToDate [innevarande räkenskapsperiod]) ÷ (antal [innevarande räkenskapsperiod])<p><strong>Exempel</strong></p><ul><li>**Statistisk dimensionsmedlem:** Heltidsmedarbetare</li><li>**Aktuellt datum:** 2017-03-21</li><li>**Period:** räkenskapsperiod 1, räkenskapsperiod 2, räkenskapsperiod 3</li><li>**Storlek:** 10, 10, 12</li></ul>I det här fallet **Hittills i år, genomsnitt** = (10 + 10 + 12) ÷ 3 = 10,67<p>Värdet **Hittills i år, genomsnitt** kan beräknas för dimensionsmedlemmar för kostnadselement och statistiska dimensionsmedlemmar.</p><blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** och **Hittills i år, genomsnitt** uppdateras.</blockquote> |
+| Aktuell period       | Saldot för den aktuella räkenskapsperioden visas.<blockquote>**OBS!**<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan innevarande perioden.</blockquote> |
+| Föregående period      | Saldot för den föregående räkenskapsperioden visas. Följande formel används:<br>Innevarande räkenskapsperiod – 1<blockquote>**OBS!**<br>Som standard härleds föregående period från sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod som innevarande period. **Föregående period** räknas sedan i enlighet med detta.</blockquote> |
+| Början på året till dagens datum         | Den för hittills i år visas. Följande formel används:<br>YearToDate (innevarande räkenskapsperiod)<blockquote>**OBS!**<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** uppdateras.</blockquote> |
+| Hittills i år, genomsnitt | Genomsnittet för hittills i år visas. Följande formel används:<br>(YearToDate [innevarande räkenskapsperiod]) ÷ (antal [innevarande räkenskapsperiod])<p><strong>Exempel</strong></p><ul><li>**Statistisk dimensionsmedlem:** Heltidsmedarbetare</li><li>**Aktuellt datum:** 2017-03-21</li><li>**Period:** räkenskapsperiod 1, räkenskapsperiod 2, räkenskapsperiod 3</li><li>**Storlek:** 10, 10, 12</li></ul>I det här fallet **Hittills i år, genomsnitt** = (10 + 10 + 12) ÷ 3 = 10,67<p>Värdet **Hittills i år, genomsnitt** kan beräknas för dimensionsmedlemmar för kostnadselement och statistiska dimensionsmedlemmar.</p><blockquote>**OBS!**<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** och **Hittills i år, genomsnitt** uppdateras.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Kolumner att visa för kostnader
 
@@ -88,11 +88,11 @@ På snabbfliken **Kolumner att visa för kostnader** avgör kostnadsrevisorn vil
 
 | Fält                 | beskrivning |
 |-----------------------|-------------|
-| Fast kostnad            | Denna kolumntyp visar den fasta kostnaden baserat på det valda omkostnadsberäknings-ID:t.<blockquote>[!NOTE]<br>Den här kolumntypen visar endast ett saldo när en omkostnadsberäknings-ID har markerats för räkenskapsperioden.</blockquote> |
-| Variabel kostnad         | Denna kolumntyp visar den variabla kostnaden baserat på det valda omkostnadsberäknings-ID:t.<blockquote>[!NOTE]<br>Den här kolumntypen visar endast ett saldo när en omkostnadsberäknings-ID har markerats för räkenskapsperioden.</blockquote> |
-| Fast + rörlig kostnad | Denna kolumntyp visar den fasta kostnaden och variabla kostnaden baserat på det valda omkostnadsberäknings-ID:t.<blockquote>[!NOTE]<br>Den här kolumntypen visar endast ett saldo när en omkostnadsberäknings-ID har markerats för räkenskapsperioden.</blockquote> |
-| Totalkostnad            | Den här kolumntypen visar den totala kostnaden (oklassificerad kostnad, fast kostnad och variabel kostnad).<blockquote>[!NOTE]<br>Kolumntypen visar saldot när som helst.</blockquote> |
-| Oklassificerad kostnad     | Denna kolumntyp visar den oklassificerade kostnaden.<blockquote>[!NOTE]<br>Denna kolumnen kan användas för att verifiera om alla kostnader har klassificerats korrekt av omkostnadsberäkningen eller om kostnadsbeteendereglerna måste justeras.</blockquote> |
+| Fast kostnad            | Denna kolumntyp visar den fasta kostnaden baserat på det valda omkostnadsberäknings-ID:t.<blockquote>**OBS!**<br>Den här kolumntypen visar endast ett saldo när en omkostnadsberäknings-ID har markerats för räkenskapsperioden.</blockquote> |
+| Variabel kostnad         | Denna kolumntyp visar den variabla kostnaden baserat på det valda omkostnadsberäknings-ID:t.<blockquote>**OBS!**<br>Den här kolumntypen visar endast ett saldo när en omkostnadsberäknings-ID har markerats för räkenskapsperioden.</blockquote> |
+| Fast + rörlig kostnad | Denna kolumntyp visar den fasta kostnaden och variabla kostnaden baserat på det valda omkostnadsberäknings-ID:t.<blockquote>**OBS!**<br>Den här kolumntypen visar endast ett saldo när en omkostnadsberäknings-ID har markerats för räkenskapsperioden.</blockquote> |
+| Totalkostnad            | Den här kolumntypen visar den totala kostnaden (oklassificerad kostnad, fast kostnad och variabel kostnad).<blockquote>**OBS!**<br>Kolumntypen visar saldot när som helst.</blockquote> |
+| Oklassificerad kostnad     | Denna kolumntyp visar den oklassificerade kostnaden.<blockquote>**OBS!**<br>Denna kolumnen kan användas för att verifiera om alla kostnader har klassificerats korrekt av omkostnadsberäkningen eller om kostnadsbeteendereglerna måste justeras.</blockquote> |
 
 ### <a name="columns-to-display-for-budgeted-costs"></a>Kolumner att visa för budgeterade kostnader
 
@@ -103,12 +103,12 @@ På snabbfliken **Kolumner att visa för budgeterade kostnader** avgör kostnads
 
 | Fält                     | beskrivning |
 |---------------------------|-------------|
-| Budget                    | Budgetsaldon visas per de markerade kolumner.<blockquote>[!NOTE]<br>Saldon ska baseras på de budgetversioner som har markerats på snabbfliken **Datafiltrering**.</blockquote> |
+| Budget                    | Budgetsaldon visas per de markerade kolumner.<blockquote>**OBS!**<br>Saldon ska baseras på de budgetversioner som har markerats på snabbfliken **Datafiltrering**.</blockquote> |
 | Budgetavvikelse           | Beräkna och visa skillnaderna mellan budget och faktisk. Följande formel används:<br>Budgetsaldo – faktiskt saldo |
 | Budgetavvikelse i %      | Beräkna och visa skillnaderna i procent mellan budget och faktisk. Följande formel används:<br>(Budgetsaldo – faktiskt saldo) / budgetsaldo |
-| Tröskel för avvikelseperiod | Ange ett tröskelvärde för avvikelsen i det monetära beloppet för aktuell period. Om tröskelvärdet överskrids kommer raden att markeras med rött i arbetsytan **kostnadskontroll**.<blockquote>[!NOTE]<br>Det här fältet gäller bara för kostnadselement som representerar omkostnader.</blockquote> |
+| Tröskel för avvikelseperiod | Ange ett tröskelvärde för avvikelsen i det monetära beloppet för aktuell period. Om tröskelvärdet överskrids kommer raden att markeras med rött i arbetsytan **kostnadskontroll**.<blockquote>**OBS!**<br>Det här fältet gäller bara för kostnadselement som representerar omkostnader.</blockquote> |
 | Tröskel för avvikelseår   | Ange ett tröskelvärde för avvikelsen i det monetära beloppet för aktuellt år. Om tröskelvärdet överskrids kommer raden att markeras med rött i arbetsytan **kostnadskontroll**. |
-| Avvikelsetröskel i %      | Ange ett tröskelvärde för avvikelsen i procent. Om tröskelvärdet överskrids kommer raden att markeras med rött i arbetsytan **kostnadskontroll**.<blockquote>[!NOTE]<br>Samma tröskelprocent gäller för den aktuella perioden och året.</blockquote> |
+| Avvikelsetröskel i %      | Ange ett tröskelvärde för avvikelsen i procent. Om tröskelvärdet överskrids kommer raden att markeras med rött i arbetsytan **kostnadskontroll**.<blockquote>**OBS!**<br>Samma tröskelprocent gäller för den aktuella perioden och året.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Arbetsyta för kostnadskontroll
 

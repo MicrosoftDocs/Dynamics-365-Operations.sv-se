@@ -2,7 +2,7 @@
 title: Kom i gång med momsberäkning
 description: Detta ämne förklarar hur du ställer in skatteberäkningen.
 author: EricWangChen
-ms.date: 03/25/2022
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 42898823ffc366351c6f58f1fe9b924678ab4b49
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573316"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690394"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gång med momsberäkning
 
@@ -124,6 +124,10 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
 7. Gå till **Skattedatamodell**, expandera filträdet och välj sedan **Skattekonfiguration**.
 8. Välj korrekt [momskonfigurationsversion](global-tax-calcuation-service-overview.md#versions), baserat på din Finance-version, och välj sedan **Importera**.
 9. I arbetsytan **Globaliseringsfunktioner** väljer du **Funktioner** > panelen **Skatteberäkning** och sedan **Lägg till**.
+
+    > [!NOTE]
+    > I version 10.0.26 och senare kan du importera en demofunktion för den juridiska personen för **DEMF**-demo. Mer information finns i [Importera funktion från demodata](tax-calculation-import-export-feature.md).
+
 10. Välj en av följande funktionstyper:
 
     - **Ny funktion** – Skapa en funktionsinställning som har tomt innehåll.
@@ -154,8 +158,8 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
     - **Tillämpbarhet för leverantörens momsregistreringsnummer** – Om du har flera momsregistreringsnummer för en viss leverantör kan momsberäkningen automatiskt bestämma korrekt momsregistreringsnummer. I matrisen på den här fliken definierar du de regler som ska användas för beslutet. Annars fortsätter Finance och Supply Chain Management att använda standardregistreringsnumret på skatteunderlag för inköpstransaktioner.
     - **Tillämpbarhet för listkod** – Bestäm värdet för fältet **Listkod** automatiskt genom mer flexibla och konfigurerbara regler. I matrisen på den här fliken definierar du de regler som ska användas för beslutet. Annars fortsätter Finance och Supply Chain Management att använda standardkod på skatteunderlag.
 
-14. På fliken **Skattekoder**, välj **Lägg till** och ange skattekoden och en beskrivning.
-15. Välj **Skattekomponent**. Skattekomponenten är en grupp med beräkningsmetoder för skatt som har definierats i den tidigare versionen av den valda skattekonfigurationen. Följande skattekomponenter är tillgängliga:
+15. På fliken **Skattekoder**, välj **Lägg till** och ange skattekoden och en beskrivning.
+16. Välj **Skattekomponent**. Skattekomponenten är en grupp med beräkningsmetoder för skatt som har definierats i den tidigare versionen av den valda skattekonfigurationen. Följande skattekomponenter är tillgängliga:
 
     - Efter nettobelopp
     - Efter bruttobelopp
@@ -163,8 +167,8 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
     - Efter marginal
     - Skatt på skatt
 
-16. Välj **Spara**. Fler fält blir tillgängliga baserat på den skattekomponent som du väljer.
-17. Använd följande alternativ för att identifiera skattekodens karaktär:
+17. Välj **Spara**. Fler fält blir tillgängliga baserat på den skattekomponent som du väljer.
+18. Använd följande alternativ för att identifiera skattekodens karaktär:
 
     - Är undantagen
     - Är importavgift
@@ -179,8 +183,8 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
 
     Behåll skattesatser och skattebeloppsgränser för den här skattekoden.
 
-18. Upprepa steg 14 till och med 17 för att lägga till alla andra skattekoder som krävs.
-19. På fliken **Momsgrupp** väljer du kolumnen **Momsgrupp**, lägger till den i matrisen som indatavillkor och lägger sedan till rader i syfte att bibehålla huvuddata för momsgrupp.
+19. Upprepa steg 15 till och med 18 för att lägga till alla andra skattekoder som krävs.
+20. På fliken **Momsgrupp** väljer du kolumnen **Momsgrupp**, lägger till den i matrisen som indatavillkor och lägger sedan till rader i syfte att bibehålla huvuddata för momsgrupp.
 
     Här är ett exempel:
 
@@ -191,7 +195,7 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-20. På fliken **Artikelmomsgrupp** väljer du kolumnen **Artikelmomsgrupp**, lägger till den i matrisen som indatavillkor och lägger sedan till rader i syfte att bibehålla huvuddata för artikelmomsgrupp.
+21. På fliken **Artikelmomsgrupp** väljer du kolumnen **Artikelmomsgrupp**, lägger till den i matrisen som indatavillkor och lägger sedan till rader i syfte att bibehålla huvuddata för artikelmomsgrupp.
 
     Här är ett exempel:
 
@@ -200,7 +204,7 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
     | Full           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
     | Reducerad        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-21. På fliken **Tillämplighet för momsgrupp** markerar du de kolumner som krävs för att fastställa rätt momsgrupp, och väljer sedan **Lägg till**. Ange eller välj värden för varje kolumn. Fältet **Momsgrupp** blir utdataresultatet för den här matrisen. Om denna flik inte är konfigurerad kommer momsgruppen på transaktionsraden att användas.
+22. På fliken **Tillämplighet för momsgrupp** markerar du de kolumner som krävs för att fastställa rätt momsgrupp, och väljer sedan **Lägg till**. Ange eller välj värden för varje kolumn. Fältet **Momsgrupp** blir utdataresultatet för den här matrisen. Om denna flik inte är konfigurerad kommer momsgruppen på transaktionsraden att användas.
 
     Här är ett exempel:
 
@@ -214,7 +218,7 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
     > [!NOTE]
     > Om standardmomsgruppen på de beskattningsbara dokumentraderna är korrekt, lämnar du denna matris tom. Mer information finns i avsnittet [Körningsdesign](#runtime) senare i detta avsnitt.
 
-22. På fliken **Tillämplighet för artikelmomsgrupp** markerar du de kolumner som krävs för att fastställa rätt momskod, och väljer sedan **Lägg till**. Ange eller välj värden för varje kolumn. Fältet **Artikelmomsgrupp** blir utdataresultatet för den här matrisen. Om denna flik inte är konfigurerad kommer artikelmomsgruppen på transaktionsraden att användas.
+23. På fliken **Tillämplighet för artikelmomsgrupp** markerar du de kolumner som krävs för att fastställa rätt momskod, och väljer sedan **Lägg till**. Ange eller välj värden för varje kolumn. Fältet **Artikelmomsgrupp** blir utdataresultatet för den här matrisen. Om denna flik inte är konfigurerad kommer artikelmomsgruppen på transaktionsraden att användas.
 
     Här är ett exempel:
 
@@ -228,10 +232,10 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
 
     Mer information om hur momskoder bestäms i Momsberäkning finns i [Bestämningslogik för momsgrupp och artikelmomsgrupp](global-sales-tax-group-determination.md).
 
-23. Konfigurera tillämplighet för momsregistreringsnummer för kund, momsregistreringsnummer för leverantörer, samt listkoder baserat på verksamhetsbehoven.
-24. Markera **Spara** och stäng sedan sidan.
-25. Välj **Ändra status** \> **Slutför**. När statusen har ändrats till **Slutför** kan versionen inte längre redigeras.
-26. Välj **Ändra status** \> **Publicera**. Den här versionen av skattefunktionens inställningar förs över till den globala databasen och visas för varje juridisk person i Finance.
+24. Konfigurera tillämplighet för momsregistreringsnummer för kund, momsregistreringsnummer för leverantörer, samt listkoder baserat på verksamhetsbehoven.
+25. Markera **Spara** och stäng sedan sidan.
+26. Välj **Ändra status** \> **Slutför**. När statusen har ändrats till **Slutför** kan versionen inte längre redigeras.
+27. Välj **Ändra status** \> **Publicera**. Den här versionen av skattefunktionens inställningar förs över till den globala databasen och visas för varje juridisk person i Finance.
 
 ## <a name="set-up-tax-calculation-in-dynamics-365"></a>Konfigurera momsberäkning i Dynamics 365
 

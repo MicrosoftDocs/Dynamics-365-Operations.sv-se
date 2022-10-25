@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a0fa081b0110682af1fcda50b0c912dc5d03fa73
-ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
+ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "9388459"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682625"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheter eller ändringar i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Denna artikel listar nya funktioner, korrigeringar, förbättringar och kända problem för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20340"></a>Version 2.0.34.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+- Förbättrad stabilitet.
+- Förbättrad prestanda.
+- Förbättrad skärmlayout så att det får mer plats för detaljkortet.
+- Lade till en sökfunktion på sidan **Arbetslistan**. Arbetarna kan nu skanna eller skriva för att söka i alla fält och titlar på sidan.
+- Listan över tillgängliga anslutningar är nu sorterad i alfabetisk ordning.
+- Åtgärdat ett problem där dubblettkort visades för artiklar med flera lagerstatus på samma plats.
+- Åtgärdat ett problem där sidan **Stor urvalslista** inte rullade för att visa det förvalde objektet.
+- Har fastslagna sökfältfärger på sidan **Stor urvalslista**.
+- Har åtgärdat ett problem där standardknappen som definieras i XML inte används som skicka-knapp.
+- Korrigerade ett problem där knapparna i multigenomsöknings- och snabbvalideringsflödena inte uppdaterades när nya nummer skannades.
+- Stöd för fler språk har lagts till.
 
 ## <a name="version-20320"></a>Version 2.0.32.0
 

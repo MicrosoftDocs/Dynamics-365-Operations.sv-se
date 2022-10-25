@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: d894b83afe822e013c0c4375e5cfe5e7e8ac8d1d
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186746"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689499"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Översikt över efterfrågebaserad materialbehovsplanering (DDMRP)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 I flera år har företag använt materialbehovsplanering (MRP) som ett system för att beräkna de material och komponenter som krävs för att tillverka en produkt. Leveranskedjor har nu emellertid förändrats. Delar har längre ledtider eftersom de i allt större utsträckning har sitt ursprung utomlands. Därför har många företag rapporterat att de upplever tomma lager eller överlager, detta eftersom de inte vet hur mycket de ska ha i lager. Det finns också mer marknadsvariationer (ibland felaktigt prognostiserade) och kunderna kräver produkter med kort ledtid. Därför finns det underskott i leveranskedjan över hela världen. Dessutom ger MRP-verktyg ofta planerare tusentals åtgärder att utföra. Därför är det svårt att veta vad man ska fokusera på. Lösningen på många av dessa problem är ofta att växla till efterfrågebaserad materialbehovsplanering (Demand Driven Material Requirements Planning, DDMRP).
 

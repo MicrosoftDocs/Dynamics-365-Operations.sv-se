@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d4874642743ed8188e84052d94003051f2af7af
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: d0270ad1e66193832fb1139fca4439b36b5ffb84
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722700"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682918"
 ---
 # <a name="post-with-derived-books"></a>Bokför med härledda böcker
 
@@ -34,7 +34,7 @@ När transaktioner bokförs för en bok som innehåller härledda böcker, bokf�
 -   Även andra värden kan gälla för transaktionstypen. Om till exempel den primära boken och de härledda böckerna har samma intervaller vad gäller försäljning eller avyttring, blir alla transaktionstyper tillgängliga för inställningen av en härledd bok.
 
 > [!WARNING]
-> Den avskrivning som är bokförd i härledd bok kommer att vara densamma som det belopp som bokfördes för den primära boken. Om avskrivningsmetoderna skiljer sig åt mellan böckerna bör du inte generera avskrivningstransaktioner med den härledda processen. |
+> Den avskrivning som är bokförd i härledd bok kommer att vara densamma som det belopp som bokfördes för den primära boken. Om avskrivningsmetoderna skiljer sig åt mellan böckerna bör du inte generera avskrivningstransaktioner med den härledda processen. 
 
 ## <a name="example"></a>Exempel 
 Följande information beskriver hur du skapar anskaffningstransaktioner med funktionerna för den härledda boken.

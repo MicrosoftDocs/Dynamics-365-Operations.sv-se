@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643751"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690005"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för Planeringsoptimering
 
@@ -62,7 +62,7 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | --- | --- | --- | --- |
 | Åtgärder | Disponeringsgrupper med åtgärdsberäkning aktiverat: *\#* | Denna funktion stöds nu. | Stöds |
 | Baskalendrar | Kalendrar som använder baskalendern: *\#* | Denna funktion stöds nu. | Stöds | 
-| Batchdispositionskoder | Ej nettoberäkningsbara batchdispositionshuvuden: *\#* | Denna funktion väntar. För närvarande ignoreras batchdispositionskod när Planeringsoptimering aktiveras. | 2022 utgivningscykel 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
+| Batchdispositionskoder | Ej nettoberäkningsbara batchdispositionshuvuden: *\#* | Denna funktion stöds nu. För ytterligare information, se [Använd batchdispositionskoder när du vill markera batchar som tillgängliga eller inte tillgängliga](../../inventory/batch-disposition-codes.md) | Stöds |
 | CTP (capable to promise) | Standardorderinställningar med leveransdatumkontrollen inställd på CTP: *\#* | I Supply Chain Management 10.0.28 och nyare gör en process kallad *CTP för planeringsoptimering* bekräftade transport- och inleveransdatum tillgängliga när den dynamiska planen har körts. För äldre versioner av Supply Chain Management ignoreras den äldre CTP-inställningen när Planeringsoptimering aktiveras. | Stöds |
 | Kopiera statisk till dynamisk plan | Kopiering av statisk till dynamisk plan har aktiverats i huvudplaneringsparametrarna. | Planeringsoptimering kopierar inte den statiska planen till den dynamiska planen, oavsett den här inställningen. I allmänhet är detta ett mindre relevant begrepp på grund av snabbheten och den fullständiga genereringen av Planeringsoptimeringen. Om två eller flera planer används ska huvudplaneringen utlösas för varje plan. | Inte tillämpligt |
 | Bekräftelse | Disponeringsgrupper med automatisk bekräftelse av tidsgräns angiven: *\#* | I version 10.0.7 och senare stöds bekräftelser som ett separat bekräftat batchjobb när huvudplaneringen är slutförd (förutsatt att funktionen *Automatisk bekräftelse för Planeringsoptimerin* har aktiverats i [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Observera att automatisk bekräftelse för Planeringsoptimering baseras på orderdatum (startdatum), inte behovsdatum (slutdatum). Det här beteendet säkerställer att bekräftelse av planerade order sker i tid, utan att ledtiden behöver inkluderas i den bekräftade tidsgränsen. | Stöds |
@@ -104,7 +104,7 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Säkerhetsmarginaler | Huvudplaner med säkerhetsmarginal: *\#* | Denna funktion stöds nu. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) |  Stöds |
 | Uppfyllelse av säkerhetslager | Poster för artikeldisponering med "uppfyllda minimum" som skiljer sig från "dagens datum + anskaffningstid": *\#* | Planeringsoptimering använder alltid *dagens datum + anskaffningstid*. Den här ändringen görs för att förbereda för en förenklad planeringsinställning i framtiden och för att ge ett åtgärdbart resultat. Om anskaffningstiden inte finns med i säkerhetslagret försenas planerade order som skapas för aktuell lagerbehållning alltid på grund av ledtiden. Det här beteendet kan orsaka betydande brus och oönskade planerade order. Det bästa tillvägagångssättet är att ändra inställningen så att *dagens datum + anskaffningstid* används. Uppdatera huvuddata för att undvika varningar. | Inte tillämpligt |
 | Försäljningsofferter | Huvudplaner med försäljningsofferter aktiverade: *\#* | Denna funktion väntar. För närvarande betraktas inte offerter när Planeringsoptimering aktiveras. De kommer att ignoreras oavsett den här inställningen. | 2022 utgivningscykel 2 eller senare |
-| Hållbarhetstid | Huvudplaner med hållbarhetstid aktiverat: *\#* | Denna funktion stöds nu. | Stöds |
+| Hållbarhetstid | Huvudplaner med hållbarhetstid aktiverat: *\#* | Denna funktion väntar. | 2022 utgivningscykel 2 |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

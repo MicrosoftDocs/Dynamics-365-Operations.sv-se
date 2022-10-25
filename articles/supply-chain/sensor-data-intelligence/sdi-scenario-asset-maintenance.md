@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 2d103406118be4385177b678de424df12af69c2e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9644068"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689411"
 ---
 # <a name="the-asset-maintenance-scenario"></a>Underhållsscenario för tillgång
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Med *scenariot för underhåll* av tillgångar kan du använda sensordata för att skapa räknareposter. Motposter spårar användningen av en maskintillgång och används som indata för att generera underhållsplanen för maskintillgångar.
 
@@ -115,6 +116,9 @@ När data har förberetts och scenariot för *tillgångsunderhåll* har konfigur
 1. Gå till **Tillgångshantering \> Tillgångar \> Alla tillgångar**.
 1. Sök reda på och välj den tillgång som du vill granska. (Om du använder de demodata som du skapade tidigare i den här artikeln väljer du *AK-101*.)
 1. I åtgärdsfönstret, på fliken **Tillgång** i gruppen **Förebyggande**, välj **Räknare** för att öppna sidan för motposter för tillgång *AK-101*.
+
+> [!NOTE]
+> Räknarposterna konfigureras som standard till att infogas var tredje timme, vilket innebär att sensordata aggregeras med det intervallet. Du kan ändra intervallet genom att redigera frågan i komponenten Azure Stream Analytics.
 
 ### <a name="generate-maintenance-work-orders"></a>Generera underhållsarbetsorder
 

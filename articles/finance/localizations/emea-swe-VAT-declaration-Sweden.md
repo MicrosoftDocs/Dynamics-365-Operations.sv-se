@@ -12,12 +12,12 @@ ms.search.region: Sweden
 ms.author: atrukawk
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a98ad38c9fd675c37b067d0bb2b1e127088b97f4
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 899fd3d2cf47b28474d42840f33766ff02461886
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276485"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689625"
 ---
 # <a name="vat-declaration-sweden"></a>Momsdeklaration (Sverige)
 
@@ -171,7 +171,8 @@ Om du vill generera en momsdeklaration automatiskt, associerar du momskoder i pr
 
    Formatet skrivs ut när du kör rapporten **Rapportera moms för kvittningsperiod**, samt även när du väljer **Skriv ut** på sidan **Momsbetalningar**.
 
-4. På sidan **Skattemyndigheter** väljer du skattemyndighet innan du i fältet **Rapportlayout** väljer **Standard**.
+4. Om du måste rapportera korrigeringarna, på **Särskild rapport** ange **Inkludera korrigeringar** till **Ja**.
+5. På sidan **Skattemyndigheter** väljer du skattemyndighet innan du i fältet **Rapportlayout** väljer **Standard**.
 
 Om du konfigurerar momsdeklarationen i en juridisk person där det finns [flera momsregistreringar](emea-reporting-for-multiple-vat-registrations.md) följer du dessa steg.
 

@@ -4,23 +4,25 @@ description: Denna artikel beskriver hur du konfigurerar omvägar för menyalter
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 2e387dd4e6499912f2d53dddc17ccc053f1ca699
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428074"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689321"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurera omvägar för steg i menyalternativ för mobila enheter
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > Funktionerna som beskrivs i denna artikel gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.
@@ -38,6 +40,7 @@ Innan du kan konfigurera omvägar för steg i menyalternativ för mobila enheter
 1. Aktivera följande funktioner, som innehåller de funktioner som beskrivs i den här artikeln:
     - *Omvägar för lagerstyrningsappen Warehouse Management*<br>(Från och med version 10.0.29 av Supply Chain Management är denna funktion aktiverad som standard.)
     - *Omvägar på flera nivåer för mobilappen Warehouse Management*
+    - *Skicka omvägssteg automatiskt för Warehouse Management-mobilappen*
 1. Om funktionen *Omvägar för appen Warehouse Management* och/eller *Omvägar på flera nivåer för mobilappen Warehouse Management* inte redan var aktiverad, uppdatera fältnamnen i mobilappen Warehouse Management genom att gå till **Warehouse management \> Inställningar \> Mobil enhet \> Namnordning för lagerställeapp** och välj **Skapa standardinställningar**. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
 1. Upprepa föregående steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management.
 
@@ -49,7 +52,7 @@ Gör på följande sätt när du vill konfigurera en omväg från en menyspecifi
 1. Hitta kombinationen av värden för **Steg-ID** och **Namn på menyalternativ** som du vill redigera, och välj sedan värdet i kolumnen **Steg-ID**.
 1. På sidan som visas på snabbfliken **Tillgängliga omvägar (menyalternativ)** kan du ange det menyalternativ som ska fungera som en omväg. Du väljer också vilka fältvärden från huvuduppgiften som automatiskt ska kopieras till och från omvägen. Ett exempel på hur du använder dessa inställningar finns i scenariot senare i denna artikel.
 
-## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Exempelscenario 1: Försäljningsplockning där en platsförfrågan fungerar som en omväg
+## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a><a name="scenario-1"></a>Exempelscenario 1: Försäljningsplockning där en platsförfrågan fungerar som en omväg
 
 I det här scenariot visas hur du konfigurerar en platsförfrågan som en omväg i ett arbetarstyrd försäljningsplockningsuppgiftsflöde. Den här omvägen kommer att göra det möjligt för medarbetare att slå upp all licens utan att upptäcka den plats de plockar från och plocka det ID-nummer de vill använda för att slutföra plockningen. Den här typen av omväg kan vara användbar om streckkoden skadas och därför inte kan läsas av skannerenheten. Alternativt kan det vara användbart om en arbetare måste lära sig vad som faktiskt finns i behållning i systemet. Observera att scenariot bara fungerar om du plockar från platser kontrollerade av ID-nummer.
 
@@ -74,11 +77,13 @@ I den här proceduren konfigurerar du en omväg för menyalternativet **Försäl
 
     - **Kopiera från försäljningsplockning:** *Plats*
     - **Klistra in platsförfrågan:** *plats*
+    - **Skicka automatiskt:** *Vald* (sidan uppdateras med det tidigare värdet *Plats*)
 
 1. Eftersom omvägen i det här scenariot är konfigurerad på ID-nummer-steget, kommer det att vara användbart om arbetare kan ta tillbaka ID-numret från förfrågan till huvudflödet. I avsnittet **Ta tillbaka från platsförfrågan**, välj **Lägga till** i verktygsfältet för att lägga till en rad i rutnätet. Ange sedan följande värden för den nya raden:
 
     - **Kopiera från platsförfrågan:** *ID-nummer*
     - **Klistra in i Försäljningsplockning:** *ID-nummmer*
+    - **Skicka automatiskt:** *Rensat* (ingen automatisk uppdatering sker när du returnerar från omvägen med värdet *ID-nummer*)
 
 1. Välj **OK**.
 
@@ -131,6 +136,7 @@ I den här proceduren konfigurerar du en omväg för menyalternativet **Försäl
 
     - **Kopiera från platsförfrågan:** *plats*
     - **Klistra in rörelse:** *Loc / LP*
+    - **Skicka automatiskt:** *Avmarkerat* (ingen automatisk uppdatering sker)
 
     I den här omvägen förväntar du dig inte att någon information ska kopieras tillbaka eftersom huvudflödet var en förfrågan där inga ytterligare steg krävs.
 
@@ -153,3 +159,5 @@ I den här proceduren vill du göra en platsförfrågan genom att använda Wareh
 
 > [!NOTE]
 > Med hjälp av funktionen *omvägar på flera nivåer i mobilapp Warehouse Management* kan du definiera omvägar på flera nivåer (omvägar inom omvägar), vilket innebär att medarbetare kan hoppa från en befintlig omleverans två en och sedan tillbaka igen. Funktionen har stöd för två nivåer av omvägar ut ur rutan och om det behövs kan du anpassa systemet till att stödja tre eller fler nivåer av omvägar genom att skapa kodtillägg i `WHSWorkUserSessionState` tabellen.
+>
+> Funktionen *Skicka omvägssteg automatiskt för Warehouse Management-mobilappen* kan göra det snabbare och enklare för arbetare att slutföra omvägsflöden i mobilappen Warehouse Management. Det gör det möjligt att hoppa över vissa flödessteg genom att låta appen fylla i omvägsdata på baksidan och sedan gå automatiskt till nästa steg genom att automatiskt skicka sidan, som visas i [*Exempelscenario 1: Försäljningsplockning där en platsförfrågan fungerar som en omväg*](#scenario-1).

@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 62e06f2348ca3524beaaef5d8879c199db56696f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520761"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689294"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.29 (oktober 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10029-october-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.29 (oktober 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management, förhandsversion 10.0.29. Den här versionen har ett versionsnummer för 10.0.1326 på följande schema:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.29. Den här versionen har ett versionsnummer för 10.0.1326 på följande schema:
 
 - **Förhandsversion av versionen:** Augusti 2022
 - **Allmän tillgänglighet för versionen (självuppdatering):** September 2022

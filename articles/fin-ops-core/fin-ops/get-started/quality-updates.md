@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
-ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
+ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9671436"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689238"
 ---
 # <a name="proactive-quality-updates"></a>Förebyggande kvalitetsuppdateringar
 
@@ -56,7 +56,9 @@ En uppsättning processändringar implementeras innan förebyggande kvalitetsupp
 
 - **Schema** – Verktyget säkerställer att versioner med kvalitetsuppdatering endast inkluderar schemaändringar som kan användas när tjänsten är online. Denna metod gör det möjligt att tillämpa uppdateringen med nära noll driftstoppstid.
 - **Större förändring som påverkar arbetet** – För närvarande finns det redan ett extra processsteg för att godkänna ändringar för inkludering i en kvalitetsuppdatering. Den som inte är noggrann i det extra steget ökar för att minska potentialen för något. Dela upp ändringar är inte tillåtet i kvalitetsuppdateringar och den större ändringen som påverkar säkerheten hjälper dig att se till att vi uppfyller detta mål.
-- **Synlighet** – Vi skickar meddelanden via e-post och Lifecycle Services (LCS) för kommande förebyggande kvalitetsuppdateringar. Supportteams och incident leads kommer dessutom att ha god insyn i var kvalitetsuppdateringar har distribuerats i förebyggande syfte.
+- **Synlighet** – Vi skickar meddelanden via administrationscenter, Lifecycle Services (LCS) och andra tillgängliga kanaler för kommande förebyggande kvalitetsuppdateringar. Supportteams och incident leads kommer dessutom att ha god insyn i var kvalitetsuppdateringar har distribuerats i förebyggande syfte.
+ > [!NOTE]
+ > Microsoft Communications-teamet undersöker en pågående pågående oavvishet vad gäller e-postverktyget som förhindrar att e-postmeddelanden skickas. Fortsätt att övervaka Microsoft 365 meddelandecenter för inkommande och meddelanden som är relaterade till meddelanden.
 - **Felsäker via förhandsversion** – Förhandsversionen kommer att användas för ändring av kod, där det är tillämpligt i en kvalitetsuppdatering eller för att använda den befintliga funktion som är relevant för korrigeringen. Om en reserv eller en ändring måste stängas av efter en förebyggande distribution, kan den göras via systemet för förhandsversionen för att undvika ytterligare fel.
 - **Synkroniserad sandbox beteckning** – Mindre än 20 procent av kunderna har idag flera problem och har en distribution där versionen matchar produktionen som hjälp vid felsökning. Om en kund använder en sandbox för att testa en nyare version än produktionen kommer den sandbox att få kvalitetsuppdateringar av den nyare versionen.
 
@@ -80,10 +82,10 @@ Mer information om mörka timmar för varje region finns i [Vilka är de planera
 
 | Station | Regioner | Slutfört schema| Kommande schema för sandbox
 |---|---|---|---|
-| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 15 september till 18 september 2022 och 19 september till 22 september 2022 | 7 oktober till 10 oktober 2022 |
-| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 25 september till 28 september 2022 | 7 oktober till 10 oktober 2022 |
-| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 26 september till 29 september 2022 | 7 oktober till 10 oktober 2022 |
-| Station 4 | Europa, norra, USA, centrala, USA, västra | 28 september till 1 oktober 2022 | 7 oktober till 10 oktober 2022 |
+| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 15 september till 18 september 2022, 19 september till 22 september 2022 och 7 oktober till 10 oktober 2022 | 25 oktober till 28 oktober 2022 |
+| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 25 september till 28 september 2022 och 7 oktober till 10 oktober 2022 | 25 oktober till 28 oktober 2022 |
+| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 26 september till 29 september 2022 och 7 oktober till 10 oktober 2022 | 25 oktober till 28 oktober 2022 |
+| Station 4 | Europa, norra, USA, centrala, USA, västra | 28 september till 1 oktober 2022 och 7 oktober till 10 oktober 2022 | 25 oktober till 28 oktober 2022 |
 | Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt | Inte schemalagt |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Förebyggande kvalitetsuppdateringar: 10.0.29

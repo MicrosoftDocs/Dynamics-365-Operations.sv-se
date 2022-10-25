@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334878"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682517"
 ---
 # <a name="engineering-change-management-overview"></a>Konstruktionsändringshantering – översikt
 
@@ -73,6 +73,9 @@ Sätt sedan på konfigurationstangenterna genom att följa dessa steg. Dessa är
 1. Databasen måste synkroniseras för att säkerställa att konfigurationsnycklarna är uppdaterad för att återspegla dina ändringar. Gör något av följande steg beroende på vilken typ av miljö du arbetar i:
     - **För nivå 1 (utveckling) miljöer**: Öppna ditt projekt i Microsoft Visual Studio och välj sedan **Dynamics 365 \> Synkronisera databasen \> Synkronisera**.
     - **För nivå 2 (och högre) miljöer**: Databasen synkroniseras automatiskt när du sätter miljön in och ut ur underhållsläge, så du kan hoppa över det här steget.
+
+> [!NOTE]
+> För att använda teknisk ändringshantering måste både stycklistnummersekvensen och formelnummersekvensen (om du använder formler) ställas in på *Automatisk* på sidan **Nummerserier**.
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Aktivera de ytterligare funktionerna för konstruktionsändringshantering
 

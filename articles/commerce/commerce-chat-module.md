@@ -2,19 +2,19 @@
 title: Chatta i Commerce med modulen Flerkanal för Customer Service
 description: Den här artikeln beskriver Chatta i Commerce med modulen Flerkanal för Customer Service i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/23/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-07-20
-ms.openlocfilehash: b8eaed3eb015e96b1db6fa2297c341ea9d3ff8ad
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 99e8b9d66a04390ab70fd1deff9f95fe28bdfae3
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473820"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690327"
 ---
 # <a name="commerce-chat-with-omnichannel-for-customer-service-module"></a>Chatta i Commerce med modulen Flerkanal för Customer Service
 
@@ -82,6 +82,9 @@ Om du vill lägga till chattmodulen på din webbplats rubrikfragment i Commerce-
 1. I dialogrutan **Välj moduler** väljer du det chattfragment som du skapade tidigare och väljer sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 
+> [!NOTE]
+> För en komplett lista över parametrar för konfiguration, se [Commerce chattmodulens proaktiva chattparametrar](chat-proactive-chat-parameters.md).
+
 ## <a name="add-commerce-headquarters-as-an-application-tab-for-omnichannel-for-customer-service"></a>Lägg till Commerce headquarters som en programflik för Flerkanal för Customer Service
 
 Du kan lägga till en programflikför Commerce headquarters i Flerkanal för Customer Service. Livehandläggare kan sedan använda användargränssnittet för handläggarupplevelsen i Flerkanal för Customer Service för att enkelt komma åt Dynamics 365 Commerce kundtjänstmodul som innehåller kontextuell information för kunden tillsammans med deras försäljningsorderinformation. Dessutom kan kundtjänstpersonalen göra nya beställningar, initiera returer och verifiera orderstatusinformation.
@@ -115,6 +118,9 @@ För att aktivera en ny programflik för kundhandläggare i Dynamics 365 Flerkan
 1. Öppna det arbetsflöde du har skapat för dina handläggare och välj sedan **Avancerade inställningar**, välj **Sessioner som standard**.
 1. Under **Programflikar**, välj **Lägg till befintlig programflik** och lägg sedan till den nya programfliken som du skapade tidigare. Det här steget säkerställer att en programflik där Commerce headquarters i en iFrame-modul läses in när en agent får ett inkommande chattsamtal från din e-handelswebbplats.
 
+> [!NOTE]
+> Du kan inte ändra standardmallen för chattsessioner i arbetsflödet. Därför kan du behöva skapa en ny mall eller duplicera den befintliga mallen för att uppdatera den. Mer information finns i [Associera mallar till arbetsflödet](/dynamics365/app-profile-manager/associate-templates).
+
 ## <a name="add-context-variables-in-dynamics-365-omnichannel-for-customer-service"></a>Lägga till sammanhangsvariabler i Dynamics 365 Flerkanal för Customer Service
 
 För att lägga till sammanhangsvariabler i Dynamics 365 Flerkanal för Customer Service, följ dessa steg.
@@ -128,3 +134,11 @@ För att lägga till sammanhangsvariabler i Dynamics 365 Flerkanal för Customer
 
 > [!NOTE]
 > Om du vill läsa e-postadresserna och namnen på inloggade användare från en e-handelskanal kan du lägga till **E-post** och **Namn** som sammanhangsvariabler av typen **text** utöver sammanhangsvariabeln **AccountNumber**.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Funktioner för Commerce-chatt](commerce-chat-overview.md)
+
+[Commerce-chatt med Power Virtual Agents modul](chat-module-pva.md)
+
+[Förebyggande chattparametrar för Commerce-chattmodulen](chat-proactive-chat-parameters.md)
