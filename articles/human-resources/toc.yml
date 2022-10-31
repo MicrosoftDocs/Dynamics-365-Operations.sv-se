@@ -10,18 +10,14 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nyheter och ändringar i Human Resources
               items:
+                - name: Human Resources 10.0.31 (sammanslagen infrastruktur)
+                  href: ./get-started/whats-new-changed-10-0-31.md
                 - name: Human Resources 10.0.30 (sammanslagen infrastruktur)
                   href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (sammanslagen infrastruktur)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (sammanslagen infrastruktur)
                   href: ./get-started/whats-new-changed-10.0.28.md
-                - name: Human Resources 10.0.27 (sammanslagen infrastruktur)
-                  href: ./get-started/hr-whats-new-changed-10-0-27.md
-                - name: Human Resources 10.0.26 (sammanslagen infrastruktur)
-                  href: ./get-started/hr-whats-new-changed-10-0-26.md
-                - name: Human Resources 10.0.25 (sammanslagen infrastruktur)
-                  href: ./get-started/hr-whats-new-changed-10-0-25.md
                 - name: Nyheter i Dynamics 365 Human Resources (fristående)
                   items:
                     - name: Nyheter i Dynamics 365 Human Resources (fristående) arkiv 2021
@@ -718,6 +714,8 @@
               href: hr-develop-create-performance-review.md
         - name: Utbildning
           items:
+            - name: Kursöversikt
+              href: hr-course-overview.md
             - name: Skapa utbildningar
               href: hr-learning-courses.md
             - name: Enkätöversikt

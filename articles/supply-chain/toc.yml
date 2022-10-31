@@ -12,7 +12,7 @@
               items:
                 - name: Nyheter eller ändringar på startsidan för Supply Chain Management
                   href: get-started/whats-new-home-page.md
-                - name: Supply Chain Management 10.0.31 (februari 2022)
+                - name: Supply Chain Management 10.0.31 (februari 2023)
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (november 2022)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -849,7 +849,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?context=/dynamics365/context/supply-chain
                 - name: Kostnadshantering
                   href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?context=/dynamics365/context/supply-chain
-                - name: Inlärning
+                - name: Utbildning
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?context=/dynamics365/context/supply-chain
                 - name: Organisationsutbildning
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?context=/dynamics365/context/supply-chain
@@ -3243,6 +3243,8 @@
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
             - name: USMCA-certifiering av ursprung
               href: transportation/usmca-certification-of-origin.md
+            - name: Kommersiella fakturor
+              href: transportation/commercial-invoice.md
             - name: Skapa en fraktsedel
               href: transportation/create-bill-of-lading.md
             - name: Planera frakttransportrutter
@@ -3433,8 +3435,14 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Packa behållare för leverans
                       href: warehousing/packing-containers.md
+                    - name: Skriv ut behållaretiketter
+                      href: warehousing/print-container-labels.md
                     - name: Förpackningsarbete för att packa utgående behållare och bearbeta försändelser
                       href: warehousing/packing-work.md
+                    - name: Packa behållare med hjälp av Warehouse Management-mobilappen
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: Exempelscenario – Packa behållare med hjälp av Warehouse Management-mobilappen
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
                     - name: Skapa omallokering av artiklar för kort plockning
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Systemstyrd arbetsordningsföljd
@@ -3691,7 +3699,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: Systemgruppering i en öppen arbetsuppgiftslista
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: Layout för dokumentflöde för ID-nummeretiketter
+                    - name: Dokumentflödets etikettlayouter
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: GS1-streckkoder och QR-koder
                       href: warehousing/gs1-barcodes.md
@@ -3701,6 +3709,12 @@
                   items:
                     - name: Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till ekonomi och drift
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Lagerhållningstelemetri
+              items:
+                - name: Aktivera lagerhållningstelemetri med Application Insights
+                  href: warehousing/application-insights-warehousing.md
+                - name: Övervaka användning av och prestanda hos en mobil enhet
+                  href: warehousing/application-insights-wma.md
         - name: Utveckling av Supply Chain Management
           items:
             - name: Guide för utveckling av Gantt-kontroll

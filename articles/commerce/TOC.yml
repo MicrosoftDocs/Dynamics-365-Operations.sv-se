@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Commerce
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.31 (februari 2023)
+                  href: get-started/whats-new-commerce-10-0-31.md
                 - name: Commerce 10.0.30 (november 2022)
                   href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (oktober 2022)
@@ -568,6 +570,8 @@
                       href: call-center-refund-payments.md
                     - name: 'Inställning, auktorisering och registrering av kreditkort'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+                    - name: Begränsa användningen av betalningstoken
+                      href: dev-itpro/limit-token-usage.md
                     - name: Konfigurera kontantvalörer för kassan
                       href: cash-denominations.md
                     - name: Konfigurera kreditkortsbearbetning
@@ -1236,6 +1240,8 @@
                       href: cart-icon-module.md
                     - name: Kassamodul
                       href: add-checkout-module.md
+                    - name: Felreferenskoder för utcheckningsmodul
+                      href: checkout-module-error-codes.md
                     - name: Betalningsmodul
                       href: payment-module.md
                     - name: Modul för leveransadress
@@ -1456,7 +1462,7 @@
                   href: localizations/latam-bra-nfce-cancel-return.md
                 - name: Senarelagd registrering av NFC-e-dokument som utfärdats i offlineläge för eventualitet
                   href: localizations/latam-bra-nfce-contingency-mode.md
-                - name: Bokföra brasilianska skattedokument via butiksutdrag i Commerce-administration
+                - name: Bokföra brasilianska skattedokument via butiksutdrag i Commerce headquarters
                   href: localizations/latam-bra-retail-statements.md
                 - name: Funktioner för CF-e-skattedokument och integration med SAT i Commerce POS för Brasilien
                   href: localizations/latam-bra-cf-e-sat.md
@@ -1586,7 +1592,7 @@
               items:
                 - name: Power BI-innehåll – startsida
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?context=/dynamics365/context/commerce
-                - name: Inlärning
+                - name: Utbildning
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?context=/dynamics365/context/commerce
                 - name: Organisationsutbildning
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?context=/dynamics365/context/commerce
@@ -3006,7 +3012,7 @@
                   href: troubleshoot/restrict-access-storefront.md
                 - name: Inloggningslänken omdirigerar tillbaka till näthandelsplatsen
                   href: troubleshoot/sign-in-redirects-back.md
-                - name: Kundposter visas inte i Commerce-administration
+                - name: Kundposter visas inte i Commerce headquarters
                   href: troubleshoot/customer-record-not-appearing.md
                 - name: Alternativet Hämta det här visas inte
                   href: troubleshoot/pickup-store-link-missing.md

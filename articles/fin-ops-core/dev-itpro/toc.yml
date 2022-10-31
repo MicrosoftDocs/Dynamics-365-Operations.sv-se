@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Plattformsuppdateringar för version 10.0.29 (oktober 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: Plattformsuppdateringar för version 10.0.28 (augusti 2022)
-                  href: get-started/whats-new-platform-updates-10-0-28.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -1605,7 +1603,11 @@
             - name: Rapport med licenskoder och konfigurationsnycklar
               href: sysadmin/license-codes-configuration-keys-report.md
             - name: Datadelning mellan företag
-              href: sysadmin/cross-company-data-sharing.md
+              href: sysadmin/srs-overview.md
+            - name: Tabeller som stöds för datadelning
+              href: sysadmin/drs-srs-tables.md
+            - name: Datadelning för utvecklare
+              href: sysadmin/drs-srs-dev.md
             - name: Underhållsläge
               href: sysadmin/maintenance-mode.md
             - name: Förkonfigurerade systemkonton
