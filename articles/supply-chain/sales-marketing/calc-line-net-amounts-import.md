@@ -1,6 +1,6 @@
 ---
-title: Omberäkna radens nettobelopp när du importerar försäljningsorder, offerter och returer
-description: I den här artikeln beskrivs om och hur systemet räknar om radens nettobelopp när försäljningsorder, offerter och returer importeras. Det förklarar också hur du kan kontrollera beteendet i olika versioner av Microsoft Dynamics 365 Supply Chain Management.
+title: Omberäkna radens nettobelopp när du importerar försäljningsorder och offerter
+description: I den här artikeln beskrivs om och hur systemet räknar om radens nettobelopp när försäljningsorder och offerter importeras. Det förklarar också hur du kan kontrollera beteendet i olika versioner av Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: edda0c016130e2a273adf8f3d3e00e2d3ae9d5c6
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335568"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719345"
 ---
-# <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Omberäkna radens nettobelopp när du importerar försäljningsorder, offerter och returer
+# <a name="recalculate-line-net-amounts-when-importing-sales-orders-and-quotations"></a>Omberäkna radens nettobelopp när du importerar försäljningsorder och offerter
 
 [!include [banner](../includes/banner.md)]
 
-I den här artikeln beskrivs om och hur systemet räknar om radens nettobelopp när försäljningsorder, offerter och returer importeras. Det förklarar också hur du kan kontrollera beteendet i olika versioner av Microsoft Dynamics 365 Supply Chain Management.
+I den här artikeln beskrivs om och hur systemet räknar om radens nettobelopp när försäljningsorder och offerter importeras. Det förklarar också hur du kan kontrollera beteendet i olika versioner av Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="how-updates-to-net-line-amounts-are-calculated-on-import"></a>Så här uppdateras nettoradbeloppen vid import
 
-Supply Chain Management version 10.0.23 introducera [felkorrigering 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Detta, ändrade villkoren för att fältet **Nettobelopp** på en rad ska kunna uppdateras eller räknas om när uppdateringar av befintliga försäljningsorder, returer och offerter importeras. I version 10.0.29 kan du ersätta denna felkorrigering genom att aktivera funktionen *Beräkna nettobelopp för rad på import*. Funktionen har liknande effekt, men innehåller en global inställning som gör att du kan återgå till det gamla beteendet om du måste. Det nya beteendet gör att systemet fungerar på ett mer oväntat sätt, men det kan leda till oväntade resultat i specifika scenarier där alla följande villkor uppfylls:
+Supply Chain Management version 10.0.23 introducera [felkorrigering 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Detta, ändrade villkoren för att fältet **Nettobelopp** på en rad ska kunna uppdateras eller räknas om när uppdateringar av befintliga försäljningsorder och offerter importeras. I version 10.0.29 kan du ersätta denna felkorrigering genom att aktivera funktionen *Beräkna nettobelopp för rad på import*. Funktionen har liknande effekt, men innehåller en global inställning som gör att du kan återgå till det gamla beteendet om du måste. Det nya beteendet gör att systemet fungerar på ett mer oväntat sätt, men det kan leda till oväntade resultat i specifika scenarier där alla följande villkor uppfylls:
 
 - Data som uppdaterar befintliga poster importeras via entiteten *Försäljningsorderrader V2*, *Försäljningsoffertrader V2* eller *Returorderrader* entity genom att använda Open Data Protocol (OData), inklusive situationer där du använder dubbelriktad skrivning, import/export genom Excel och vissa tredjepartsintegrationer.
-- [Policyer för utvärdering av handelsavtal](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) som är på plats upprättar en policy som begränsar uppdateringar till fältet **Nettobelopp** på försäljningsorderrader, försäljningsoffertrader och/eller returorderrader.
+- [Policyer för utvärdering av handelsavtal](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) som är på plats upprättar en policy som begränsar uppdateringar till fältet **Nettobelopp** på försäljningsorderrader, försäljningsoffertrader och/eller returorderrader. Observera att fältet **Nettobelopp** alltid beräknas för returorderrader och att det inte kan ställas in manuellt.
 - Importerade data innehåller ändringar i fältet **Nettobelopp** på rader eller ändringar (till exempel enhetspris, kvantitet eller rabatt) som gör att värdet i fältet **nettobelopp** på raderna räknas om för en eller flera befintliga radposter.
 
 I dessa specifika scenarier innebär effekten av policy för handelsavtalsutvärdering att sätta en begränsning vid uppdateringar av fältet **Nettobelopp** på raden. Den här begränsningen kallas för *ändringspolicy*. Därför uppmanas du att bekräfta om du vill göra ändringen när du använder användargränssnittet för att redigera eller räkna om fältet. När du importerar en post, måste systemet dock välja bland dig. Före version 10.0.23 lämnade systemet alltid radens nettobelopp oförändrat, om inte inkommande rads nettobelopp är 0 (noll). I nyare versioner uppdaterar eller räknar systemet alltid om nettobeloppet efter behov, såvida det inte explicit uppmanas att inte göra det. Det nya beteendet är mer logiskt men det kan skapa problem för dig om du redan kör processer eller integrationer som förutsätter att beteendet var äldre. I den här artikeln beskrivs hur du återställer till det gamla beteendet om du måste.

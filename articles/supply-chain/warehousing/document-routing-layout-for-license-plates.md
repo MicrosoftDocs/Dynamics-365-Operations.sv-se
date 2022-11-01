@@ -1,5 +1,5 @@
 ---
-title: Layout för dokumentflöde för ID-nummeretiketter
+title: Etikettlayouter för dokumentflödet
 description: I denna artikel beskrivs hur du använder formateringsfunktioner för att skriva ut värden på etiketter.
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847887"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708656"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>Layout för dokumentflöde för ID-nummeretiketter
+# <a name="document-routing-label-layout"></a>Etikettlayout för dokumentflödet
 
 [!include [banner](../includes/banner.md)]
 
+I den här artikeln beskrivs hur du skapar layouter för licens, behållare och cykeletiketter. Den innehåller även riktlinjer för hur du använder ZPL (Programming Language) som används för att skapa layouter.
 
-Layouten för dokumentflöde definierar layouten för etiketter för ID-nummer och de data som skrivs ut på dem. Du konfigurerar utlösningspunkterna för utskrivning när du konfigurerar menyalternativ för mobilenheter och arbetsmallar.
+Etikettlayouter för dokumentflöde definierar hur etiketter läggs ut och vilken data som skrivs ut på dem. Du konfigurerar utlösningspunkterna för utskrivning när du konfigurerar menyalternativ för mobilenheter och arbetsmallar.
 
-I ett typiskt scenario skriver inleveransansvarige på lagerstället ut ID-nummeretiketter direkt efter att de har noterat innehållet i lastpallar som anländer till mottagningsområdet. De fysiska etiketterna används för lastpallarna. De kan sedan användas för validering som en del av en artikelinförselprocess som följer och framtida utgående plockningsåtgärder.
+Informationen i den här artikeln gäller för alla layouter för dokumentflödesetiketter, inklusive layouter för [registreringsskyltar](tasks/license-plate-label-printing.md), [behållaretiketter](print-container-labels.md) och [cykeletiketter](configure-wave-label-printing.md).
 
-Du kan skriva ut mycket komplexa etiketter, förutsatt att utskriftsenheten kan tolka texten som skickas till den. En ZPL-layout (Zebra Programming Language) som innehåller en streckkod kan till exempel likna följande exempel.
+Du kan skriva ut mycket komplexa etiketter, förutsatt att utskriftsenheten kan tolka texten som skickas till den. En ZPL-layout som innehåller en streckkod kan till exempel likna följande exempel.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ Du kan skriva ut mycket komplexa etiketter, förutsatt att utskriftsenheten kan 
 ^PQ1,,,Y^XZ
 ```
 
-Som en del av etikettens utskriftsprocess kommer texten `$LicensePlateId$` i det här exemplet att ersättas med ett datavärde.
+Som en del av etikettens utskriftsprocess kommer texten `$LicensePlateId$` i det här exemplet att ersättas med ett datavärde. Många av de vanligaste verktygen för att skapa etiketter kan användas för att formatera texten i etikettexten. Många av dessa verktyg stöder `$FieldName$`-formatet. Dessutom använder Microsoft Dynamics 365 Supply Chain Management särskild formatlogik som en del av fältmappningen för layouten för dokumentflödet.
 
 Om du vill se vilka värden som kommer att skrivas ut **Lagerstyrning \> Förfrågningar och rapporter \> ID-nummeretiketter**.
-
-Många av de vanligaste verktygen för att skapa etiketter kan användas för att formatera texten i etikettexten. Många av dessa verktyg stöder `$FieldName$`-formatet. Dessutom använder Microsoft Dynamics 365 Supply Chain Management särskild formatlogik som en del av fältmappningen för layouten för dokumentflödet.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivera funktionen i systemet
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>Mer information om hur du skriver ut etiketter
 
-Mer information om hur du konfigurerar och skriver ut etiketter finns i [Aktivera utskrift av ID-nummeretikett](tasks/license-plate-label-printing.md).
+Mer information om hur du konfigurerar och skriver ut etiketter finns i följande artiklar:
 
+- [Utskrift av ID-nummeretiketten](tasks/license-plate-label-printing.md)
+- [Skriv ut behållaretiketter](print-container-labels.md)
+- [Utskrift av påfyllnadsetikett](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 82a43954db8b10554c449f3e8d32ba7e5d7c7f27
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423607"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719364"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Inventory Visibility
 
@@ -47,6 +47,7 @@ I följande tabell finns de API:er som är tillgängliga i nuläget:
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Bokför | [Skapa flera schemalagda engångs-ändringar](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Bokför | [Fråga genom att använda inläggsmetoden](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hämta | [Fråga genom att använda hämtningsmetoden](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/exactquery | Bokför | [Exakt fråga genom att använda inläggsmetoden](#exact-query-with-post-method) |
 | /api/environment/{environmentId}/allocation/allocate | Bokför | [Skapa en allokerad händelse](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/unallocate | Bokför | [Skapa en ej allokerad händelse](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/reallocate | Bokför | [Skapa en ej omallokerad händelse](inventory-visibility-allocation.md#using-allocation-api) |
@@ -690,6 +691,80 @@ Här är ett exempel på URL-adressen. Denna hämtbegäran är exakt densamma so
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+```
+
+### <a name="exact-query-by-using-the-post-method"></a><a name="exact-query-with-post-method"></a>Exakt fråga genom att använda inläggsmetoden
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+I brödtexten i denna begäran är `dimensionDataSource` en valfri parameter. Om den inte är inställd `dimensions` i `filters` behandlas *basdimensioner*. Det finns fyra obligatoriska fält för `filters`: `organizationId`, `productId``dimensions` och `values`.
+
+- `organizationId` bör bara innehålla ett värde, men det är fortfarande en matris.
+- `productId` kan innehålla ett eller flera värden. Om det är en tom matris kommer alla produkter att returneras.
+- I `dimensions` matris, `siteId` och `locationId` krävs men kan visas med andra element i valfri ordning.
+- `values` kan innehålla en eller flera olika tupplar av värden som motsvarar `dimensions`.
+
+`dimensions` i `filters` kommer automatiskt att läggas till `groupByValues`.
+
+Parametern `returnNegative` styr om resultatet innehåller negativa poster.
+
+Följande exempel visar brödtext.
+
+```json
+{
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
+Följande exempel visar hur du frågar efter alla produkter på flera webbplatser och platser.
+
+```json
+{
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": [],
+        "dimensions": ["siteId", "locationId"],
+        "values" : [
+            ["iv_postman_site_1", "iv_postman_location_1"],
+            ["iv_postman_site_2", "iv_postman_location_2"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ```
 
 ## <a name="available-to-promise"></a>Disponibelt att lova

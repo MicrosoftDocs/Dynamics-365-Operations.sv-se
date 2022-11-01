@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 11378991a24e1a5f5e213d64f0f414db2e5c2573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9d4a408f2169b220fefd9ab7e9f3b37217fb3cfe
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279913"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710846"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Slutföra, publicera och distribuera en globaliseringsfunktion
 
@@ -59,8 +59,8 @@ I RCS använder du kommandot **Disitribuera** för att publicera en e-fakturerin
 2. På fliken **Versioner** till höger på sidan väljer du den version av e-faktureringsfunktionen som du vill distribuera till tjänstemiljön eller det anslutna programmet. Den valda versionen måste ha statusen **Slutförd** eller **Publicerad**.
 3. Välj **Distribuera** och sedan ett eller båda av följande alternativ för att definiera distributionens mål:
 
-    - **Anslutet program** – Den konfiguration som tillhandahålls av programinställningarna skrivs i den instans av Microsoft Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management som tidigare associerats med den.
-    - **Servicemiljö** – E-faktureringsfunktionen distribueras till tjänstemiljön. E-fakturering är sedan redo att ta emot och bearbeta elektroniska dokument som Ekonomi och Supply Chain Management skickar.
+    - **Anslutet program** – Detta är valfritt, men måste användas om du vill ha konfigurationen som tillhandahålls av programinställningarna skrivs i den instans av Microsoft Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management som tidigare associerats med den. För att hoppa över den här typen av distribution måste manuell konfiguration av parametrarna som definierats i programinställningarna för Ekonomi eller Supply Chain Management konfigureras.
+    - **Servicemiljö** – Detta distribuerar e-faktureringsfunktionen till tjänstemiljön. E-fakturering är sedan redo att ta emot och bearbeta elektroniska dokument som Ekonomi och Supply Chain Management skickar.
 
 > [!NOTE]
 > Vanligtvis ändrar du parametrarna för den elektroniska rapporteringsfunktionen (ER) som måste distribueras till tjänstemiljön. Ändringar i det anslutna programmet kommer att vara sällsynta. Du bör bara distribuera nya versioner till det anslutna programmet när du ändrar motsvarande parametrar för programmet.

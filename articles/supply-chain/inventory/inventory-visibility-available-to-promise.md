@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f831c5d5719bbbd72c7cff37b8b35826f48ce6e4
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856205"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719319"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova
 
@@ -205,6 +205,7 @@ Med följande URL-adresser för program programming interface (API) kan du skick
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Skapa flera ändringshändelser. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Fråga genom att använda `POST` metoden. |
 | `/api/environment/{environmentId}/onhand` | `GET` | Fråga genom att använda `GET` metoden. |
+| `/api/environment/{environmentId}/onhand/exactquery` | `POST` | Exakt fråga genom att använda `POST` metoden. |
 
 Mer information finns i [Offentliga API:er för Lagersynlighet](inventory-visibility-api.md).
 
@@ -394,6 +395,8 @@ I din begäran, ange `QueryATP` till *true* om du vill fråga efter schemalagda 
 > [!NOTE]
 > Oavsett om `returnNegative` parametern är inställd på *true* eller *false* i begärandetext, kommer resultatet att innehålla negativa värden när du ställer frågor för tidsplanerade ändringar av behållning och resultat av valörerna. Dessa negativa värden inkluderas eftersom, om endast efterfrågeorder planeras, eller om leveranskvantiteterna är mindre än efterfrågekvantiteterna, kommer de planerade lagerändringskvantiteterna att vara negativa. Om negativa värden inte ingår i det här programmet blir resultaten det verkliga. Mer information om det här alternativet och hur det fungerar för andra typer av frågor finns i [Offentliga API:er för Lagersynlighet](inventory-visibility-api.md#query-with-post-method).
 
+### <a name="query-by-using-the-post-method"></a>Fråga genom att använda POST-metoden
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/indexquery
@@ -419,14 +422,14 @@ Body:
     }
 ```
 
-Följande exempel visar hur du skapar ett förfrågnings brödtext som kan skickas till Lagerfinlighet med hjälp av `POST`-metoden.
+Följande exempel visar hur du skapar ett indexfråga brödtext som kan skickas till Lagersynlighet med hjälp av `POST`-metoden.
 
 ```json
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
-        "siteId": ["1"],
+        "SiteId": ["1"],
         "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
@@ -435,7 +438,7 @@ Följande exempel visar hur du skapar ett förfrågnings brödtext som kan skick
 }
 ```
 
-### <a name="get-method-example"></a>Exempel på GET-metod
+### <a name="query-by-using-the-get-method"></a>Fråga genom att använda GET-metoden
 
 ```txt
 Path:
@@ -453,7 +456,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Följande exempel visar hur du skapar en URL för en begäran som en `GET` begäran.
+Följande exempel visar hur du skapar indexfråga för en begäran-URL som en `GET` begäran.
 
 ```txt
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
@@ -461,9 +464,53 @@ https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.c
 
 Resultatet av denna `GET` begäran är exakt detsamma som resultatet av `POST` begäran i det föregående exemplet.
 
+### <a name="exact-query-by-using-the-post-method"></a>Exakt fråga genom att använda POST-metoden
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+Följande exempel visar hur du skapar ett exakt fråga brödtext som kan skickas till Lagerfinlighet med hjälp av `POST`-metoden.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["Bike"],
+        "dimensions": ["SiteId", "LocationId"],
+        "values": [
+            ["1", "11"]
+        ]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true,
+    "QueryATP":true
+}
+```
+
 ### <a name="query-result-example"></a>Exempel på frågeresultat
 
-Båda tidigare frågeexempel kan ge följande svar. I det här exemplet konfigureras systemet med följande inställningar:
+Någon tidigare frågeexempel kan ge följande svar. I det här exemplet konfigureras systemet med följande inställningar:
 
 - **ATP beräknat mått:** *iv.onhand = pos.inbound – pos.outbound*
 - **Tidsplanera datum för period:** *7*

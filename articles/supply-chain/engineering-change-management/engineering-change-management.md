@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c578609a64c21a33f10b64a1d77f006b45bac41
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849602"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714747"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Hantera ändringar av konstruktionsprodukter
 
@@ -141,6 +141,8 @@ När du granskar tillverkningsordermeddelanden på sidan **Tekniska meddelanden*
 ### <a name="create-a-change-order-from-a-change-request"></a>Skapa en ändringsorder från en ändringsbegäran
 
 En tekniker som granskar en konstruktionsändringsbegäran kan skapa en konstruktionsändringsorder direkt från sidan **Begäran om konstruktionsändring**. I åtgärdsfönstret på fliken **Ändringsbegäran** i gruppen **Konstruktionsändringsorder** väljer du **Kopiera länk och produkter**.
+
+Se till att välja korrekt företag för den nya ändringsordern. Om ändringsordern leder till att själva den tekniska produkten ändras (ny version, ny produkt eller ny variant) måste ändringsordningen tilldelas det tekniska företaget. Om enbart en lokal ändring behövs (**Påverkan** är inställd på *Ingen*) kan ändringsordern tilldelas ett lokalt företag och ändringarna gäller för den aktuella produkten.
 
 ## <a name="engineering-change-orders"></a>Konstruktionsändringsorder
 

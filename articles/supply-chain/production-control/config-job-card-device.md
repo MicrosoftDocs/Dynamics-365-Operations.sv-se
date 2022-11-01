@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c3024ca2e3b7eb24ac9a171def4a72cde7493a7a
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860737"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708628"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurera jobbkort för enheter
 
@@ -73,7 +73,7 @@ På snabbfliken **Allmänt** kan du konfigurera var och en av de olika alternati
 - **Resursgrupp** – Välj en resursgrupp som ska användas som standardfilterkriterium för listan över jobb som visas för varje medarbetare. Endast jobb som har planerats på resurser grupperade under den valda resursgruppen kommer från början att visas av enheten. Om alternativet **Tillåt medarbetare att konfigurera personliga filter** är aktiverat kan arbetarna redigera det här värdet, annars gäller detta filter alltid när enhetskonfigurationen är aktiv.
 - **Resurs** – Välj en resurs som ska användas som standardfilterkriterium för listan över jobb som visas för varje medarbetare. Endast jobb som har planerats på valda resurser kommer från början att visas av enheten. Om alternativet **Tillåt medarbetare att konfigurera personliga filter** är aktiverat kan arbetarna redigera det här värdet, annars gäller detta filter alltid när enhetskonfigurationen är aktiv.
 - **Generera ID-nummer** – Ange det här alternativet **Ja** om du vill generera ett nytt ID-nummer varje gång en medarbetare använder jobbkortsenheten för att rapportera som färdig. ID-numret genereras från en nummerserie som ställs in på sidan **parametrar för lagerstyrning**. Om **Nej** måste medarbetare ange ett befintligt ID-nummer när den rapporteras som färdig.
-- **Skriv ut etikett** – Ställ in det här alternativet på **Ja** om du vill skriva ut ett ID-nummer när en medarbetare använder en jobbkortsenhet för att rapportera som färdig. Konfigurationen av etiketten ställs in i dokumentflödet som beskrivs i [Layout på dokumentflödet för ID-nummeretiketter](../warehousing/document-routing-layout-for-license-plates.md).
+- **Skriv ut etikett** – Ställ in det här alternativet på **Ja** om du vill skriva ut ett ID-nummer när en medarbetare använder en jobbkortsenhet för att rapportera som färdig. Konfigurationen av etiketten ställs in i dokumentflödet som beskrivs i [etikettlayouter för dokumentflödet](../warehousing/document-routing-layout-for-license-plates.md).
 
 <a name="assigned-users"></a>
 

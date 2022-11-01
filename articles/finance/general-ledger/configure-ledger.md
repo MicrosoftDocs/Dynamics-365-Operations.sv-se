@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14d6ba013a93756f86e959756dd3073851881095
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864351"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713900"
 ---
 # <a name="configure-ledgers"></a>Konfigurera redovisningar
 
@@ -42,7 +42,7 @@ Varje juridisk person i Dynamics 365 Finance kan konfigureras att använda en el
 
 Observera att om du har flera kontostrukturer kan du bara välja kontostrukturer som inte har överlappande kombinationer av huvudkonton och ekonomiska dimensioner. Till exempel konfigureras en av dina kontostrukturer för att lägga till en affärsenhet för huvudkonton mellan 1000 och 1999. I en annan kontostruktur har du lagt till en ekonomisk avdelningsdimension för huvudkonton som börjar med 1. I det här fallet kan endast en av kontostrukturerna läggas till i samma juridiska person.
 
-Om du vill konfigurera kontostrukturer för din redovisning väljer du snabbfliken **Kontostrukturer** på sidan **Redovisning**, väljer **Lägg till**, väljer en kontostruktur i listan och väljer till sist **Välj**. Det kan ta några minuter innan kontostrukturerna har lagts till och sparats. Observera att den kontostruktur du väljer måste vara aktiv. Annars kommer inte informationen för kontostrukturerna att vara effektiv i de juridiska personer där de är kopplade.
+Om du vill konfigurera kontostrukturer för din redovisning väljer du snabbfliken **Kontostrukturer** på sidan **Redovisning**, väljer **Lägg till**, väljer en kontostruktur i listan och väljer till sist **Välj**. Det kan ta några minuter innan kontostrukturerna har lagts till och sparats. När den ändrade kontostrukturen sparas i redovisningen inleds processen för att synkronisera alla icke-bokförda transaktioner. Du måste vänta tills ändringen är slutförd för den aktuella redovisningen hos den juridiska personen där ändringen görs, innan du kan göra en kontostrukturändring för en redovisning i en annan juridisk person. Observera att den kontostruktur du väljer måste vara aktiv. Annars kommer inte informationen för kontostrukturerna att vara effektiv i de juridiska personer där de är kopplade.
 
 Om du vill ta bort en kontostruktur väljer du **Ta bort** på snabbfliken **Kontostrukturer** på sidan **Redovisning**. Observera att om du tar bort en kontostruktur från redovisningen tar du inte bort några transaktioner som har bokförts med hjälp av den kontostrukturens konfiguration.
 
