@@ -182,9 +182,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?context=/dynamics365/context/finance
                 - name: Miljöplanering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/finance
-                - name: Förbereda Go live
+                - name: Förbereda publicering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?context=/dynamics365/context/finance
-                - name: Vanliga frågor och svar om Go live
+                - name: Vanliga frågor och svar om publicering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?context=/dynamics365/context/finance
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/finance
@@ -692,20 +692,14 @@
               items:
                 - name: Inställningsprocess för avancerad bankavstämning
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Ställa in import av avancerad bankavstämning
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
                 - name: Ställa in import av avancerad bankavstämning med hjälp av elektronisk rapportering
                   href: accounts-payable/import-bai2-er.md
                 - name: Ställa in matchningsregler för bankavstämning
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Stämma av bankutdrag med hjälp av avancerad bankavstämning
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Avancerad MT940-import för bankavstämning – uppgradering av sammansatt dataentitet
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: Översikt över avancerad bankavstämning
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Felsökning vid import av bankutdragsfil
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: Uppdatera bankjournalens sammansatta entitet
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Kostnadsredovisning

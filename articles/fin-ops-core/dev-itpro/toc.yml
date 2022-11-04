@@ -334,12 +334,16 @@
                       href: deployment/deployenvironment-newinfrastructure.md
                     - name: Vanliga frågor och svar om distribution
                       href: deployment/deploymentFAQ.md
+                    - name: Migrera en miljö
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Kända problem med självbetjäningsdistribution
                       href: deployment/known-issues-new-deployment-experience.md
                     - name: Underhållsåtgärder för distributioner
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: Uppdatera en miljö
                       href: deployment/updateenvironment-newinfrastructure.md
+                    - name: Migrera en miljö
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Felsöka miljöer distribuerade med självbetjäningsdistribution
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Vanliga frågor och svar om planerat underhåll i självbetjäningsmiljöer
@@ -972,6 +976,8 @@
               href: lifecycle-services/lcs-user-guide.md
             - name: Projektregistrering
               href: lifecycle-services/project-onboarding.md
+            - name: Projektmigreringshantering
+              href: lifecycle-services/project-migration-manager.md
             - name: Prenumerationsberäkning
               href: lifecycle-services/subscription-estimator.md
             - name: Konfigurera säkerhet

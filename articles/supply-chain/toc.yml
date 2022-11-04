@@ -184,9 +184,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?context=/dynamics365/context/supply-chain
                 - name: Miljöplanering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/supply-chain
-                - name: Förbereda Go live
+                - name: Förbereda publicering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?context=/dynamics365/context/supply-chain
-                - name: Vanliga frågor och svar om Go live
+                - name: Vanliga frågor och svar om publicering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?context=/dynamics365/context/supply-chain
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/supply-chain
@@ -2239,6 +2239,16 @@
                   href: procurement/tasks/create-purchasing-policies.md
                 - name: Ställ in policyer för anskaffningskategorihierarkier
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Leveransriskbedömning
+              items:
+                - name: Översikt över leveransriskbedömning
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: Konfigurera leveransriskbedömning
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: Arbetsyta som kan åtgärdas för att upptäcka och hantera leverantörsrisker
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: Power BI-rapporter för riskanalys och rangordning av prestanda
+                  href: procurement/supply-risk-assessment-reports.md
             - name: Produktinleveranser och fakturering
               items:
                 - name: Produktinleverans mot inköpsorder

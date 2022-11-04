@@ -4,6 +4,18 @@
       items:
         - name: Dynamics 365 Human Resources startsida
           href: index.md
+        - name: Sammanslagning av Human Resources-infrastruktur
+          items:
+            - name: Översikt över sammanslagning av Human Resources-infrastruktur
+              href: hr-infrastructure-merge.md
+            - name: Kundmigrering för Human Resources-infrastruktur
+              href: hr-cust-migration.md
+            - name: Vanliga frågor och svar gällande sammanslagning av Human Resources-infrastruktur
+              href: hr-infrastructure-merge-faq.md
+            - name: Vanliga frågor och svar om kundmigrering i Human Resources
+              href: customer-migration.md
+            - name: Kända problem vid sammanslagning av Human Resources-infrastruktur
+              href: hr-migration-issues.md
         - name: Nyheter och ändringar
           items:
             - name: Nyheter och ändringar i appar för ekonomi och drift
@@ -238,14 +250,10 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
                 - name: Förstå Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
-                - name: Förbereda go live
+                - name: Förbereda publicering
                   href: hr-admin-go-live-prepare.md
-                - name: Vanliga frågor och svar om Go live
+                - name: Vanliga frågor och svar om publicering
                   href: hr-admin-go-live-faq.md
-                - name: Vanliga frågor och svar gällande sammanslagning av Human Resources-infrastruktur
-                  href: hr-infrastructure-merge-faq.md
-                - name: Vanliga frågor och svar om kundmigrering i Human Resources
-                  href: customer-migration.md
                 - name: Dokumentationsresurser
                   items:
                     - name: Hjälpsystem

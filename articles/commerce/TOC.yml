@@ -204,9 +204,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?context=/dynamics365/context/commerce
                 - name: Miljöplanering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/commerce
-                - name: Förbereda Go live
+                - name: Förbereda publicering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?context=/dynamics365/context/commerce
-                - name: Vanliga frågor och svar om Go live
+                - name: Vanliga frågor och svar om publicering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?context=/dynamics365/context/commerce
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/commerce
@@ -256,8 +256,6 @@
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Modernisera butiksteknikstacken för Commerce (white paper)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Commerce offlineimplementering och felsökning
-                  href: dev-itpro/implementation-considerations-offline.md
                 - name: Publicera en katalog för onlinebutik
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Innehåll för Retail Channel Performance Power BI
@@ -396,13 +394,17 @@
                   items:
                     - name: Appen Store Commerce
                       href: dev-itpro/store-commerce.md
+                    - name: Funktioner i appen Store Commerce
+                      href: store-commerce-capabilities.md
                     - name: Store Commerce-app för mobila plattformar
                       href: dev-itpro/store-commerce-mobile.md
                     - name: Migrera Modern POS till Store Commerce
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Riktlinjer för implementering av enhetshantering
                       href: implementation-considerations-devices.md
-                    - name: Välja mellan Store Commerce och molnbaserad kassa
+                    - name: Commerce offlineimplementering och felsökning
+                      href: dev-itpro/implementation-considerations-offline.md
+                    - name: Välja mellan Store Commerce och Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Kassaåtgärder online och offline
                       href: pos-operations.md
@@ -484,7 +486,7 @@
                       items:
                         - name: 'Konfigurera, installera och aktivera MPOS'
                           href: retail-modern-pos-device-activation.md
-                        - name: Ställa in utökad inloggningsfunktion för MPOS och molnbaserad kassa
+                        - name: Ställa in utökad inloggningsfunktion för MPOS och Cloud POS
                           href: extended-logon.md
                         - name: Hantera aktiveringskonton och validera enheter
                           href: set-up-activation-accounts-validate-devices-hq.md
