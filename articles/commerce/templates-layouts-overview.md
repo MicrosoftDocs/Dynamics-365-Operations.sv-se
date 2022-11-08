@@ -2,7 +2,7 @@
 title: Översikt över mallar och layouter
 description: I denna artikel beskrivs mallar och layouter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: e0bf7e942339775b2e9ee15060d555be07c1cdc5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0664dd1ae06d09557cf8b8ec58baf6d27c1198bd
+ms.sourcegitcommit: 023ae5557e1351a8329a59a41a551e8901db99a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277944"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9733395"
 ---
 # <a name="templates-and-layouts-overview"></a>Översikt över mallar och layouter
 
@@ -65,6 +65,12 @@ Följande exempel visar hur en grundläggande mall (mall X) kan konfigureras:
 Mallen i det här exemplet definierar en enkel struktur och en uppsättning alternativ för författare av underordnade innehåll. Lägg märke till att vissa delar av en sida (i det här fallet rubriken) är fullständigt definierade och låsta i mallen, och att de inte kan ändras av efterföljande författare. Andra delar (i det här fallet brödtext) kan definieras av en underordnad författare inom särskilda riktlinjer (i det här fallet ett minsta antal och högsta antal moduler av specifika typer). Och andra delar (i det här fallet sidfoten) definieras i mallen men kan åsidosättas av författare som är underordnade.
 
 Ett viktigt första steg för webbplats- och varumärkesadministratörer är att fastställa rätt balans mellan begränsning och flexibilitet för underordnade layouter och sidförfattare. När mallar används är saldot helt konfigurerbart. Det påverkar om sidelementen har uppdaterats centralt (låsts i mallen) eller till enskilda underordnade nivåer som är lägre i sidhierarkin.
+
+### <a name="relationship-between-template-defaults-and-page-content"></a>Relation mellan standardmall och sidinnehåll
+
+Den primära funktionen för en mall är att förenkla användarupplevelsen för moduler när en sida skapas. Även om modulerna är inställda, eller till och med låsta finns det i en mall ingen ytterligare dataanslutning från modulkonfigurationerna för en sida till mallens standardvärden, förutom när sidan redigeras. Mallar styr utskriftsupplevelsen för sidstrukturen och när en sida har skapats, länkas standardvärdena för mallarna inte längre till det lokaliserbara innehåll som finns på sidan. Med andra ord styr modulstandarderna som ställs in i en mall författarens erfarenhet av underordnade sidor. De kontrollerar inte innehållet på sidorna efter att sidorna har skapats och redigerats.
+
+Det enda undantaget till den tidigare beskrivna beteendet inträffar när ett [fragment](work-with-fragments.md) läggs till i en mall. Fragment kan användas för att dynamiskt lägga till eller redigera lokaliserbart innehåll över alla underordnade sidor i en mall eller en layout när som helst, även efter att många sidor har skapats från en viss mall. Det är lämpligt att använda fragment i mallar och layouter när lokaliserbart innehåll ska läggas till, tas bort eller redigeras över alla underordnade sidor. Till exempel skafragment användas för sidhuvuden, sidfötter, vanliga metadata/skript eller annat innehåll som måste vara centralt redigerbart och detsamma för alla underordnade sidor. Med hjälp av fragment kan du använda mallar och layouter för att styra innehållet på alla underordnade sidor.
 
 Om du vill börja använda mallar [arbeta med mallar](work-with-templates.md).
 

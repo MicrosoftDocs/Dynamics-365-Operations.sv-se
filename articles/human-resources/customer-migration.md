@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a6f883da07bd1d3a6b0379f1582dc8556e166ff
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 0e11d26ebe084762a8616c8aa0aa041a87306473
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151091"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734369"
 ---
 # <a name="human-resources-customer-migration"></a>Kundmigrering för Personal
 
@@ -40,7 +40,7 @@ Kunder som använder andra program för infrastrukturen för ekonomi och drift h
 Övergången för respektive företag beror på företagets aktuella konfiguration och beredskap att flytta över till infrastrukturen för ekonomi och drift. Vi rekommenderar att kunderna samarbetar med sin respektive Microsoft-partner för att avgöra en optimal väg framåt.
 
 - Organisationer som använder modulen **Personal** i Dynamics 365 Finance kommer att kunna aktivera nya funktioner i Dynamics 365 Human Resources som ett led i den sedvanliga uppdateringsprocessen för One Version. Nya funktioner planeras bli allmänt tillgängliga från och med januari 2022.
-- Organisationer som använder Dynamics 365 Human Resources kommer att ha åtkomst till verktyg som de kan använda när de slutför infrastruktursammanslagningen. Microsoft kommer att arbeta tillsammans med kunderna gällande övergång för att förhindra störningar i tjänsten. Kunderna har 12 till 18 månader på sig att genomföra övergången från det att migreringsverktyget blir tillgängligt.
+- Organisationer som använder Dynamics 365 Human Resources kommer att ha åtkomst till verktyg som de kan använda när de slutför infrastruktursammanslagningen. Microsoft kommer att arbeta tillsammans med kunderna gällande övergång för att förhindra störningar i tjänsten. Kunderna har 12 månader på sig att genomföra övergången från det att migreringsverktyget blir tillgängligt.
 - Organisationer som använder både Dynamics 365 Human Resources och modulen **Personalresurser** kan flytta sin fristående Personal-infrastruktur till infrastrukturen för ekonomi och drift. Ett annat alternativ är att använda verktygen för sammanslagning för att föra in miljöerna i en enda miljö. Det finns inga krav eller tidsramar för att sammanfoga de två miljöerna.
 
 För senaste information, kontrollera regelbundet [utgivningsplanen](/dynamics365/release-plans/).
@@ -166,4 +166,4 @@ Microsoft definierar fortfarande vilka verktyg och resurser som ska vara tillgä
 
 ## <a name="licensing-impact"></a>Licenseringsinverkan
 
-Mer information om hur licensieringen påverkas finns i [Vanliga frågor och svar om infrastruktursammanslagningen för Dynamics 365 Human Resources](hr-infrastructure-merge-faq.md#licensing-impact).
+Mer information om hur licensieringen påverkas finns i [Infrastruktursammanslagningen för Dynamics 365 Human Resources](hr-infrastructure-merge.md#licensing).

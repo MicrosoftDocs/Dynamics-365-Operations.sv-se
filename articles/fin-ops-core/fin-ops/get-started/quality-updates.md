@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
+ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689238"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "9731621"
 ---
 # <a name="proactive-quality-updates"></a>Förebyggande kvalitetsuppdateringar
 
@@ -40,13 +40,13 @@ Flera framsteg har redan distribuerats som aktiverar förebyggande leverans av k
 
 - **Uppdatera nära noll driftstoppstid** – För att driva på mer frekventa miljöer är det viktigt att påverkan på miljötillgängligheten minskas för att bevara Dynamics 365 servicenivåavtal (SLA). Uppdatering av nära noll driftstoppstid finns ursprungligen för att förbättra den månatliga operativsystemets uppdatering genom att använda ett kluster-underkluster för att aktivera den uppdaterade bilden med minimal påverkan. Mekanismen för att tillämpa uppdateringar förbättras så att den är ännu mindre störande och den kommer att täcka både korrigering av operativsystem och distribution av kvalitetsuppdateringar.
 
-    För interaktiva användare kan en aktiv session avbrytas, och det nya försöket går till den nu uppdaterade miljön. Med introduktionen av [prioriterad batchplanering](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), som nu är tillgänglig på väljbasis, återställs och återupptas batchschemaläggning och bearbetning omedelbart efter uppdateringen. Prioriterad batchplanering gäller för kunder innan de börjar delta i förebyggande distribution av kvalitetsuppdateringar för sina produktionsmiljöer.
+För interaktiva användare kan en aktiv session avbrytas, och det nya försöket går till den nu uppdaterade miljön. Med introduktionen av [prioriterad batchplanering](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), batchschemaläggning och bearbetning omedelbart efter uppdateringen. Prioriterad batchplanering gäller för kunder innan de börjar delta i förebyggande distribution av kvalitetsuppdateringar för sina produktionsmiljöer.
 
 - **Mörka timmar** – Mörka timmar definieras för varje Azure-region, och uppdateringar av tiden nära noll inträffar under den mörktimmarsperioden.
 
 ## <a name="the-proactive-update-process"></a>Den förebyggande uppdateringsprocessen
 
-När förebyggande kvalitetsuppdateringar distribueras följer en SDP (Safe Deployment Process). SDP specifika uppgifter kommer att förändras, men kvalitetsuppdateringar distribueras inledningsvis till sandbox-miljöer. Processen startar med miljöer där du kan välja att använda den tidigare distributionen. Allt eftersom procentandelen av de distribuerade koderna ökar, börjar distributionen till produktionsmiljöerna. Återigen startar processen med miljöer där du kan välja att använda den tidigare distributionen. Ett system för övervakning av telemetri- och aktiv webbplats-incidenter och därför stoppas sammanslagningen av en specifik version om någon av dem hittas. Kunderna kan fortfarande hämta kvalitetsuppdateringarna före förebyggande användning om de vill.
+När förebyggande kvalitetsuppdateringar distribueras följer en SDP (Safe Deployment Process). SDP specifika uppgifter kommer att förändras, men kvalitetsuppdateringar distribueras inledningsvis till sandbox-miljöer. Allt eftersom procentandelen av de distribuerade koderna ökar, börjar distributionen till produktionsmiljöerna. Ett system för övervakning av telemetri- och aktiv webbplats-incidenter och därför stoppas sammanslagningen av en specifik version om någon av dem hittas. Kunderna kan fortfarande hämta kvalitetsuppdateringarna före förebyggande användning om de vill.
 
 Aktuella data för hantering av frisläppning visar att mindre än 3 procent av dessa finns med i kvalitetsuppdateringar. Med ökat fokus på att eliminera regression och en förbättrad SDP, kommer den potentiella effekten av regressioner att bli dramatiskt lägre än de kvalitetsvinster som uppnås genom att snabbare få en bred distribuering av korrigeringar till kunder.
 
@@ -92,13 +92,13 @@ Mer information om mörka timmar för varje region finns i [Vilka är de planera
 **Appversion: 10.0.1326.70**
 **Motsvarande senaste KB artikel: 748926**
 
-| Station | Regioner | Kommande schema för sandbox
-|---|---|---|
-| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 14 oktober till 17 oktober 2022 |
-| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 15 oktober till 18 oktober 2022 |
-| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 16 oktober till 19 oktober 2022 |
-| Station 4 | Europa, norra, USA, centrala, USA, västra | 17 oktober till 20 oktober 2022 |
-| Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt |
+| Station | Regioner | Slutfört schema | Kommande schema för sandbox|
+|---|---|---|---|
+| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 14 oktober till 17 oktober 2022 | 2 november till 5 november 2022 |
+| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 15 oktober till 18 oktober 2022 | 2 november till 5 november 2022 |
+| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 16 oktober till 19 oktober 2022 | 2 november till 5 november 2022 |
+| Station 4 | Europa, norra, USA, centrala, USA, västra | 17 oktober till 20 oktober 2022 | 2 november till 5 november 2022 |
+| Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt | Inte schemalagt |
 
 > [!IMPORTANT] 
 > Fem dagar i förväg uppdaterar Microsoft föregående schema och skickar e-postmeddelanden till de miljöer som har tidsplanerats att få dessa kvalitetsuppdateringar. Föregående schema kan endast tillämpas på de miljöer som har meddelats om en kommande uppdatering. Mer information om mörka timmar för varje region finns i [Vilka är de planerade underhållsfönstren per region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

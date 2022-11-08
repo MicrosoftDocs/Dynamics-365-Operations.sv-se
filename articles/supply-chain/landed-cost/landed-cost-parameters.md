@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871990"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725532"
 ---
 # <a name="landed-cost-parameters-setup"></a>Inställningar av parametrar för hemtagningskostnad
 
@@ -125,14 +125,11 @@ Inställningarna på den här fliken skapar standarddimensionerna för varje sä
 
 Fliken **Nummerserier** på sidan **Parametrar för hemtagningskostnad** anger varje typ av referensnummerföljd som hemtagningskostnad kräver, men som inte delas mellan juridiska personer. För varje referens i listan väljer du en nummersekvenskod.
 
-> [!NOTE]
-> I en konfiguration med flera företag måste olika nummerserier skapas för varje företag (juridisk person).
 
 ## <a name="shared-number-sequences-tab"></a>Fliken Delade nummerserie
 
 Fliken **Delade nummerserier** på sidan **Parametrar för hemtagningskostnad** anger varje typ av referensnummerföljd som delas mellan juridiska personer för hemtagningskostnad. För närvarande finns det bara en nummerserie i listan. Den här nummerserien används för legitimations-ID:t.
 
-På sidan **Alla myndigheter** kan användare visa alla färder i alla juridiska personer. Om användarna ska kunna redigera och bearbeta dem måste de finnas med i den juridiska personen för den valda posten.
 
 ## <a name="feature-visibility-tab"></a>Fliken Funktionssynlighet
 

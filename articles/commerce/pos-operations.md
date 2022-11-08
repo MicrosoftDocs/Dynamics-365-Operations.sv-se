@@ -2,7 +2,7 @@
 title: Verksamhet för online- och offlinekassor (POS)
 description: Denna artikel innehåller information om kassaåtgärder i Dynamics 365 Commerce. Det anger var i programmet somåtgärderna kan anropas och om de är tillgängliga i offlineläge.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272860"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728287"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -101,7 +101,7 @@ Följande kolumner anger var åtgärderna kan startas:
 | 212  | Info om vagnparkkort                                   | Den här åtgärden stöds inte.                                                                                                                                                                                | Inte tillämpligt | Inte tillämpligt     | Inte tillämpligt | Inte tillämpligt    | Inte tillämpligt  |
 | 213  | Tillgodokvittobetalning                                   | Acceptera en kreditnota (verifikation) som har utfärdats av butiken.                                                                                                                                                          | Ja            | Ja                | Nej             | Nej                | Nej              |
 | 214  | Presentkortsbetalning                                     | Acceptera ett presentkort som har utfärdats av butiken.                                                                                                                                                                      | Ja            | Ja                | Nej             | Nej                | Nej              |
-| 215  | Lös in presentkort                                | Den här åtgärden stöds inte.                                                                                                                                                                                | Ja            | Ja                | Nej             | Nej                | Nej              |
+| 215  | Lös in presentkort                                | Kredittransaktion med ett fullt presentkortssaldo om det inte finns inom den konfigurerade kontantgränsen.                                                                                                                                                                              | Ja            | Ja                | Nej             | Nej                | Nej              |
 | 216  | Betala exakt belopp med kort                                    | Den här åtgärden stöds inte.                                                                                                                                                                                | Inte tillämpligt | Inte tillämpligt     | Inte tillämpligt | Inte tillämpligt    | Inte tillämpligt  |
 | 217  | Betala exakt belopp med check                                   | Den här åtgärden stöds inte.                                                                                                                                                                                | Inte tillämpligt | Inte tillämpligt     | Inte tillämpligt | Inte tillämpligt    | Inte tillämpligt  |
 | 218  | Betala exakt belopp med kundkonto                        | Den här åtgärden stöds inte.                                                                                                                                                                                | Inte tillämpligt | Inte tillämpligt     | Inte tillämpligt | Inte tillämpligt    | Inte tillämpligt  |

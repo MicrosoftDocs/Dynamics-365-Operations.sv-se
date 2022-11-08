@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab5729cd441246a6c04ac060d5a69f949bfe47c5
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905904"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725505"
 ---
 # <a name="manage-folios"></a>Hantera folio
 
@@ -48,9 +48,9 @@ I följande tabell beskrivs de knappar som finns tillgängliga på fliken **Hant
 
 | Knapp | beskrivning |
 |---|---|
-| Bokför inleveranslista | Bokför en inleveranslista för alla inköpsorderrader i folio. Om multiföretagsleverans används öppnas en ny inleveranslista för bokföring av faktura för varje företag. |
-| Bokför produktinleverans | Bokför en produktinleverans för alla inköpsorderrader i folio. Om multiföretagsfärd används öppnas en ny dialogruta för bokföring av produktinleverans för varje företag. |
-| Bokför faktura | Bokför en faktura för alla inköpsorderrader i folio. Om multiföretagsfärder används öppnas en ny dialogruta för bokföring av faktura för varje företag. |
+| Bokför inleveranslista | Bokför en inleveranslista för alla inköpsorderrader i folio.  |
+| Bokför produktinleverans | Bokför en produktinleverans för alla inköpsorderrader i folio. |
+| Bokför faktura | Bokför en faktura för alla inköpsorderrader i folio.  |
 | Leverera överföringsorder | Bokför en överföringsorder för alla överföringsorderrader som är relaterade till aktuell leverans. |
 | Inleverera överföringsorder | Bokför en inleverans av överföringsorder för alla överföringsorderrader som är relaterade till aktuell leverans. |
 | Inleverera varor på väg | Ta emot alla orderrader som är på väg i folio. |
@@ -65,7 +65,7 @@ I följande tabell beskrivs de knappar som finns tillgängliga på fliken **Allm
 
 | Knapp | beskrivning |
 |---|---|
-| Inleveranslista | Bokför en inleveranslista för alla inköpsorderrader i folio. Om multiföretagsfärd används öppnas en ny dialogruta för bokföring av inleveranslista för varje företag. |
+| Inleveranslista | Bokför en inleveranslista för alla inköpsorderrader i folio.  |
 | Produktinleverans | Visa produktinleveransposten, om den används. |
 | Artikelinförsel | Visa artikelinförseljournalen om den används. |
 | Kostnadsförfrågan | Öppna sidan kostnadsförfrågan om du vill visa alla kostnader för en sådan, inklusive leveransbehållare, vy eller inköpsorder. Du kan justera den exakta vyn av sidan med åtgärden visa. På sidan kostnadsförfrågan kan du visa alla områden, samt artikel- och kostnadstypkoden. Genom att ta bort dessa artiklar kan du justera sidan genom att gruppera kostnader tillsammans. Den här kapaciteten kan vara användbar om du använder storlekar och färger. Du kan ändra dimensionerna som visas på sidan. Sidan **Kostnader** visar bara kostnadstypskoder där fältet **Dr** på fliken **Bokföring** är inställt på *Artikel*. |

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b409017407ce1c027184bdc2292197840c61e04a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906165"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725454"
 ---
 # <a name="manage-shipping-containers"></a>Hantera leveransbehållare
 
@@ -40,9 +40,9 @@ I följande tabell beskrivs de knappar som finns tillgängliga på fliken **Hant
 
 | Knapp | Beskrivningar |
 |---|---|
-| Bokför inleveranslista | Bokför en inleveranslista eller visa produktinleveranslistorna för alla inköpsorderrader i leveransbehållaren. Om multiföretagsleverans används öppnas en ny inleveranslista för bokföring av faktura för varje företag. |
+| Bokför inleveranslista | Bokför en inleveranslista eller visa produktinleveranslistorna för alla inköpsorderrader i leveransbehållaren.  |
 | Bokför produktinleverans | Bokför en produktinleverans för alla inköpsorderrader i leveransbehållare. |
-| Bokför faktura | Bokför en faktura för alla inköpsorderrader i leveransbehållare. Om multiföretagsleverans används öppnas en ny dialogruta för bokföring av faktura för varje företag. |
+| Bokför faktura | Bokför en faktura för alla inköpsorderrader i leveransbehållare.  |
 | Leverera överföringsorder | Bokför en leverans av överföringsorder för alla överföringsorderrader i leveransbehållaren. Endast de rader i leveransbehållaren som är av typen överföringsorder visas i dialogrutan. |
 | Inleverera överföringsorder | Bokför en inleverans av överföringsorder för alla överföringsorderrader i leveransbehållaren. Dialogrutan inleverans är det enkla sättet att ta emot gods i en leveransbehållare eller färd och är ett av de tre tillgängliga alternativen. Du kan också ta emot detta via införseljournaler eller bearbetning av den mobila enheten. |
 | Skapa införseljournal | Du kan generera en införseljournal för organisationer med hjälp av avancerade lagerställefunktioner. Alternativen är _Initiera kvantitet_ (rekommenderas) och antingen _Skapa från varor under transport_ och/eller _Skapa från inköpsorder_. De sista två alternativet beror på om bearbetning av varor på väg används. |
@@ -56,7 +56,7 @@ I följande tabell beskrivs de knappar som finns tillgängliga på fliken **Allm
 
 | Knapp | Beskrivningar |
 |---|---|
-| Inleveranslista | Bokför en inleveranslista för alla inköpsorderrader i leveransbehållare. Om multiföretagsfärd används öppnas en ny dialogruta för bokföring av inleveranslista för varje företag. |
+| Inleveranslista | Bokför en inleveranslista för alla inköpsorderrader i leveransbehållare.  |
 | Produktinleverans | Visa produktinleveransposten, om den används. Inleveransprocessen för produkter används endast om varorna inte använder funktionen för varor på väg. |
 | Artikelinförsel | Visa artikel för införseljournalen för leveransbehållare, om journalen används. |
 | Etapper | Sträckor används för att identifiera separata delar av en resa. Ledtider kan kopplas till varje del som hjälp vid spårning av försändelser. Mer information finns i [Inställning av resa med flera sträckor](multi-leg-journey-setup.md). |

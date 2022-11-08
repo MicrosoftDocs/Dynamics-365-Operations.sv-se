@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 4f381f1ec0ea08f18db3cac474e8990906364504
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 757e83887e318dd6aa54106fb78305f1d94e0f90
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286902"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734278"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Aktivera ordersökning för gästkassor
 
@@ -73,6 +73,11 @@ Innan gästanvändare kan visa sina orderuppgifter måste orderinformationssidan
 I orderrelaterade e-postmeddelanden kan du ange en länk eller knapp som tar kunderna till orderinformationssidan för beställningen. Om du vill lägga till den här länken eller knappen skapar du en HTML-hyperlänk som pekar på orderinformationssidan på din näthandelsplats och skickar orderbekräftelse-ID:t och kundens e-postadress som URL-parametrar, enligt följande exempel.
 
 `<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
+
+> [!NOTE]
+> Om du vill aktivera order sökfunktionen måste nyckeln **Offerter** vara aktiverad under **Licenskonfiguration** > **Konfigurationsnycklar**.
+>
+>![Licensnyckeln för offerter måste ha aktiverats](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

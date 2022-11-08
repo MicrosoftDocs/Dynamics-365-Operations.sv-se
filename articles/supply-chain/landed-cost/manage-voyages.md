@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905875"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725492"
 ---
 # <a name="manage-voyages"></a>Hantera färder
 
@@ -29,7 +29,8 @@ En resa representerar vanligtvis ett fartyg. Beroende på vad du använder och v
 Sidan **Alla färder** innehåller information, leverans- och kostnadsinformation samt information om artiklar, inköpsorder och överföringsorder. Om du vill öppna sidan **Alla färder** går du till **Hemtagningskostnad \> Färder \> Alla färder**. På den här sidan visas en lista över alla aktuella färder. Med knapparna i åtgärdsfönstret kan du skapa, ta bort och arbeta med färder. Välj en valfri färd för att visa detaljerad information om den.
 
 > [!NOTE]
-> Leveransbehållare och folio är kopplade till en färd. Inköpsrader är länkade till en leveransbehållare. Om leveransbehållare och folio är inaktiverade kan de även länkas direkt till en färd. Dessutom fördelas kostnader som anges här till alla kopplade inköpsrader.
+> Leveransbehållare och folio är kopplade till en färd. Inköpsrader är länkade till en leveransbehållare. Dessutom fördelas kostnader som anges här till alla kopplade inköpsrader.
+> Projektinköpsordern stöds inte i Hemtagningskostnad.
 
 ## <a name="action-pane"></a>Åtgärdsfönster
 

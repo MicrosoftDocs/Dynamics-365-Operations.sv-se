@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 8c60ed0c334bf09916dd633302c6d813ea6f16b6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a891de4a1da6641a02b8316d16ac2e9a8180fac1
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281465"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734262"
 ---
 # <a name="order-lookup-module"></a>Modul för ordersökning
 
@@ -44,6 +44,12 @@ I bilden nedan visas ett exempel på det formulär som återges av modulen för 
 ## <a name="add-an-order-lookup-module-to-a-page"></a>Lägg till modulen för ordersökning på en sida
 
 Modulen för ordersökning kan läggas till på valfri sida på näthandelsplatsen. Om du vill använda modulen för ordersökning för att aktivera ordersökning för gästkassor, se till att lägga till den på en sida som inte kräver att användaren är inloggad. Om du vill söka efter en sidas inställning **Kräver inloggning?** i Commerce-webbplatsbyggarens trädvy väljer du platsen **Standardsida (obligatorisk)** och tittar längst ned i den högra rutan.
+
+
+> [!NOTE]
+> Om du vill aktivera order sökfunktionen måste nyckeln **Offerter** vara aktiverad under **Licenskonfiguration** > **Konfigurationsnycklar**.
+>
+> ![Licensnyckeln för offerter måste ha aktiverats](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
