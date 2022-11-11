@@ -450,6 +450,8 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopiera ett faktureringsschema
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Kunddelning med ett faktureringsschema
+                      href: accounts-receivable/sb-customer-split.md
                     - name: Funktioner för faktureringsschema
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Milstolpesfakturering
@@ -1172,6 +1174,8 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Arbetsyta för räkenskapsperiodens stängning
                   href: general-ledger/financial-period-close-workspace.md
+                - name: Optimering av årsbokslut
+                  href: general-ledger/optimize-year-end-close.md
                 - name: Årsbokslut
                   href: general-ledger/year-end-close.md
                 - name: Stänga räkenskapsåret

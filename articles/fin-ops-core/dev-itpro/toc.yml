@@ -488,7 +488,7 @@
                       href: help/migrate-dynamicsax2012.md
                 - name: Språk och nationella beskrivningar i olika produkter och hjälp
                   href: help/language-locale.md
-                - name: 'Utöka, anpassa och samarbeta om hjälpen'
+                - name: Utöka och samarbeta om hjälpen
                   href: help/contributor-guide.md
             - name: Regionala tjänster för appar för ekonomi och drift
               items:
@@ -1624,6 +1624,10 @@
               href: sysadmin/DataMaintenancePortal.md
             - name: Hantera åtkomst till nätverksskrivare mellan juridiska personer
               href: sysadmin/sys-admin-tools-network-printer.md
+            - name: Övervakning och telemetri med hjälp av Application Insights
+              items:
+                - name: Översikt
+                  href: sysadmin/monitoring-and-telemetry-appinsights.md
             - name: Säkerhet
               items:
                 - name: Rollbaserad säkerhet

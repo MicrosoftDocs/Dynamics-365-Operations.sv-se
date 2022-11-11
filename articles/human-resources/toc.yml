@@ -541,7 +541,11 @@
                     - name: Rekrytera jobbkandidater
                       href: hr-personnel-recruit.md
         - name: Uppgiftshantering
-          href: hr-task-mgmt.md
+          items:
+            - name: Översikt
+              href: hr-task-mgmt.md
+            - name: Uppgradering av uppgiftshantering
+              href: hr-task-update.md
         - name: Tjänstledighet och frånvaro
           items:
             - name: Översikt
@@ -822,7 +826,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
             - name: Hantera arbetarnas logi
               href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-    - name: Personalutveckling
+    - name: Human Resources-utveckling
       items:
         - name: Översikt
           href: hr-developer-overview.md
@@ -832,6 +836,10 @@
           href: hr-developer-entities.md
         - name: Anpassade fält
           href: hr-developer-custom-fields.md
+        - name: Utveckla och anpassa
+          items:
+            - name: Basuppräkning för kön
+              href: enum-exten.md
         - name: Ställa in dataintegrering
           items:
             - name: Välja en dataintegreringsteknik
