@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287522"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751952"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Ställa in och hantera bilder för Modern POS (MPOS)
 
@@ -160,7 +160,7 @@ För alla enheter utom produkter kan du skriva över bildURL för en viss enheta
     [![Gallerisida för katalogbilder.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> För närvarande visas galleriet inte förhandsgranskning av bilder för URL för medium mallbild. För katalog-, arbetare-, kund och kategorienheter om användaren innehåller tydligt en URL via den här sidan, rekommenderar vi att du anger vilken bild är standardinställningbilden, eftersom Skalningsenhet för handel serverklienter visar bara en bild per katalog, kund, anställd och kategori. Om användaren inte anger en standardinställningbild, bestämmer systemet standardinställningbilden och skicka den till Commerce-menyn uppringangen tjänst (MPOS eller ecommercen).
+> Bilder som är offentliga och anonymt tillgängliga återges i POS. POS stöder återgivning av bilder som har en extern värd, med kravet på att bilderna ska returneras som infogade oktett-strömmar för att HÄMTA förfrågningar utan rubriker. Med en anonym åtkomstpolicy, särskilt för SharePoint-bilder med anonym åtkomst som kräver att rubrikerna för begäran innehåller både värd- och användaragentens rubrik, returneras ett "Respons"-svar. Därför stöds inte bildhantering SharePoint som värd för närvarande från början. Gallerisidan **Katalogbilder** visar inte förhandsgranskning av bilder för URL för medium mallbild. Eftersom Commerce Scale Unit-klienter (CSU) endast visar en bild per katalog-, kund-, arbetare- och kategori-entitet, om du uttryckligen anger en URL via den här sidan för katalog-, kund-, arbetare- och kategori-entitet, rekommenderar vi att du anger vilken bild är standardbilden. Om du inte anger en standardinställningbild, bestämmer systemet standardinställningbilden och skickar den till Commerce-menyn uppringangen tjänst (MPOS eller näthandel).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Skriv över bildURL för katalogproduktbilder från förtittsidan
 

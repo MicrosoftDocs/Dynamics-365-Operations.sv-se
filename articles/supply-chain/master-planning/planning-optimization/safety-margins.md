@@ -1,6 +1,6 @@
 ---
 title: Säkerhetsmarginaler
-description: I denna artikel beskrivs hur säkerhetsmarginaler kan användas med tillägget Planeringsoptimering för Microsoft Dynamics 365 Supply Chain Management .
+description: I den här artikeln beskrivs hur säkerhetsmarginaler fungerar under huvudplanering.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335208"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740452"
 ---
 # <a name="safety-margins"></a>Säkerhetsmarginaler
 
 [!include [banner](../../includes/banner.md)]
 
-I denna artikel beskrivs hur säkerhetsmarginaler kan användas med tillägget Planeringsoptimering för Microsoft Dynamics 365 Supply Chain Management .
+I den här artikeln beskrivs hur säkerhetsmarginaler fungerar under huvudplanering.
 
 ## <a name="safety-margins-overview"></a>Säkerhetsmarginaler, översikt
 
@@ -165,12 +165,5 @@ Alla tre typerna av säkerhetsmarginal tas med när systemet fastställer om en 
 En artikel har t.ex. produktionstid på en dag och en kvittomarginal på tre dagar. En försäljningsorder för denna artikel ställs in efter behov i dag. I det här fallet beräknas förseningen som *produktionstiden* + *kvittomarginal* = fyra dagar. Om dagens datum är den 14 augusti skapas därför en leverans på 18 augusti för fyra dagars fördröjning. Illustrationen nedan visar ett exempel.
 
 ![Exempel på fördröjningsberäkning.](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>Ytterligare resurser
-
-[Kom i gång med Planeringsoptimering](get-started.md)
-
-[Bristanalys för Planeringsoptimering](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
