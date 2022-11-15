@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c2e4294cb54e9ba41467f505e361d5ee45f1f27d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335358"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740533"
 ---
 # <a name="firm-planned-orders"></a>Bekräfta planerade order
 
@@ -33,7 +33,7 @@ I denna artikel beskrivs de olika metoderna i detalj.
 
 ## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Aktivera funktionerna som beskrivs i denna artikel
 
-De flesta planerade orderfunktioner är tillgängliga i alla standardinstallationer av Microsoft Dynamics 365 Supply Chain Management som använder Planeringsoptimering. Några av funktionerna som beskrivs i denna artikel måste dock inaktiveras i Funktionshantering innan du kan använda dem.
+De flesta planerade orderfunktioner är tillgängliga i alla standardinstallationer av Microsoft Dynamics 365 Supply Chain Management. Några av funktionerna som beskrivs i denna artikel måste dock inaktiveras i Funktionshantering innan du kan använda dem.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivera eller inaktivera parallell bekräftelse av planerade order
 
@@ -91,7 +91,7 @@ Om du vill bekräfta planerade order manuellt hittar och väljer du de planerade
 
 ## <a name="auto-firm-planned-orders"></a>Bekräfta planerade order automatiskt
 
-Med auto-bekräftande kan du bekräfta planerade order som en del av huvudplaneringsprocessen. Du kan definiera en förvald bekräftad tidsgräns för disponeringsgrupper, enskilda artiklar och kombinationer av artiklar och huvudplaner. Under körningar av huvudplaneringen bekräftas sedan planerade order automatiskt om orderdatumet ligger inom den angivna tidsgränsen för bekräftelse. Planerade order som genereras av Planeringsoptimering och den inbyggda huvudplaneringsfunktionen hanterar orderdatumet (det vill säga startdatumet) på olika sätt.
+Med auto-bekräftande kan du bekräfta planerade order som en del av huvudplaneringsprocessen. Du kan definiera en förvald bekräftad tidsgräns för disponeringsgrupper, enskilda artiklar och kombinationer av artiklar och huvudplaner. Under körningar av huvudplaneringen bekräftas sedan planerade order automatiskt om orderdatumet ligger inom den angivna tidsgränsen för bekräftelse. Planerade order som genereras av Planeringsoptimering och den inaktuella huvudplaneringsmotorn hanterar orderdatumet (det vill säga startdatumet) på olika sätt.
 
 > [!NOTE]
 > Auto-bekräftande av planerade inköpsorder kan endast ske för artiklar som kopplats med en leverantör.
@@ -99,13 +99,13 @@ Med auto-bekräftande kan du bekräfta planerade order som en del av huvudplaner
 > Härledda order (det vil säga inköpsorder för underleverantörer) som bekräftas erhåller statusen *Undergår granskning* om ändringsspårning är påslagen.
 
 > [!IMPORTANT]
-> Innan funktionen som beskrivs i det här avsnittet kan användas med Planeringsoptimering måste funktionen [*Auto-bekräftande för Planeringsoptimering*](#enable-features) aktiveras i ditt system enligt beskrivet i början av denna artikel. Auto-bekräftande kan alltid användas med den inbyggda huvudplaneringsmotorn.
+> Innan funktionen som beskrivs i det här avsnittet kan användas med Planeringsoptimering måste funktionen [*Auto-bekräftande för Planeringsoptimering*](#enable-features) aktiveras i ditt system enligt beskrivet i början av denna artikel. Auto-bekräftande kan alltid användas med den inaktuella huvudplaneringsmotorn.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Auto-bekräftande med Planeringsoptimering kontra den inbyggda planeringsmotorn
+### <a name="auto-firming-with-planning-optimization-vs-the-deprecated-master-planning-engine"></a>Auto-bekräftande med Planeringsoptimering kontra den inaktuella planeringsmotorn
 
-Både Planeringsoptimeringen och den inbyggda planeringsmotorn kan användas för att bekräfta planerade order automatiskt. Det finns emellertid några viktiga skillnader. Planeringsoptimeringen använder till exempel orderdatum (dvs. startdatum) för att avgöra vilka planerade order som ska bekräftas, medan den inbyggda planeringsmotorn använder behovsdatumet (dvs. slutdatumet). I följande register sammanfattas skillnaderna.
+Både Planeringsoptimeringen och den inaktuella huvudplaneringsmotorn kan användas för att bekräfta planerade order automatiskt. Det finns emellertid några viktiga skillnader. Planeringsoptimeringen använder till exempel orderdatum (dvs. startdatum) för att avgöra vilka planerade order som ska bekräftas, medan den inaktuella huvudplaneringsmotorn använder behovsdatumet (dvs. slutdatumet). I följande register sammanfattas skillnaderna.
 
-| Funktion | Planeringsoptimering | Inbyggd planeringsmotor |
+| Funktion | Planeringsoptimering | Inaktuell huvudplaneringsmotor |
 |---|---|---|
 | **Utgångsdatum** | Automatisk bekräftelse baseras på orderdatumet (startdatum). | Automatisk bekräftelse baseras på behovsdatum (slutdatum). |
 | **Produktionstid** | Eftersom orderdatumet (startdatum) utlöser bekräftelsen behöver du inte tänka på produktionstiden som en del av den bekräftade tidsgränsen. | För att garantera att order bekräftas i tid måste den bekräftade tidsgränsen vara längre än produktionstiden. |

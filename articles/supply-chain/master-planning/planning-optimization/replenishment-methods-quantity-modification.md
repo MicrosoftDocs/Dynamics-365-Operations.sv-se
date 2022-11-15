@@ -1,6 +1,6 @@
 ---
 title: Påfyllnadsmetoder och kvantitetsändring
-description: Denna artikel innehåller information om påfyllnadsmetoder i Planeringsoptimering. Det förklarar också hur flera orderkvantitet för en produkt påverkar resultatet.
+description: Denna artikel innehåller information om påfyllnadsmetoder. Det förklarar också hur flera orderkvantitet för en produkt påverkar resultatet.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,26 +11,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e0fe6c1f49bc0f6887f1b29118c1fee7a6222f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873707"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739768"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Påfyllnadsmetoder och kvantitetsändring
 
 [!include [banner](../../includes/banner.md)]
 
-Denna artikel innehåller information om påfyllnadsmetoder i Planeringsoptimering. Det förklarar också hur flera orderkvantitet för en produkt påverkar resultatet.
+Denna artikel innehåller information om påfyllnadsmetoder. Det förklarar också hur flera orderkvantitet för en produkt påverkar resultatet.
 
 Påfyllnadsmetoder kallas också för disponeringsmetoder och partistorleksmetoder.
 
 ## <a name="coverage-codes"></a>Täckningskoder
 
-Planeringsoptimering kan konfigureras till att använda olika återanskaffningsmetoder. Påfyllnadsmetoderna är de tekniker som systemet använder för att beräkna behoven för en produkt. Påfyllnadsmetoder definieras per disponeringskoder som du kan konfigurera för disponeringsgruppen eller produkten.
+Huvudplanering kan konfigureras till att använda olika återanskaffningsmetoder. Påfyllnadsmetoderna är de tekniker som systemet använder för att beräkna behoven för en produkt. Påfyllnadsmetoder definieras per disponeringskoder som du kan konfigurera för disponeringsgruppen eller produkten.
 
-Följande disponeringskoder kan användas vid Planeringsoptimering:
+Följande disponeringskoder kan användas:
 
 - **Period** - den påfyllnadsmetod som kombinerar hela efter frågan för en period till en order för produkt. Ordern planeras under den första dagen i perioden och dess kvantitet uppfyller nettokraven under den fastställda perioden. Perioden inleds med det första efter frågan av produkten och täcker den definierade tiden i tid. Nästa period kommer att inledas med nästa behov av produkten. Disponeringskod *Period* används ofta för icke-förutsägbar inventering, säsongspåverkade produkter eller högkostnadsprodukter. Illustrationen nedan visar ett exempel.
 
@@ -64,13 +64,13 @@ På sidan **inställning för standardorder** för en frisläppt produkt kan du 
 
 ## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a>Exempel på påfyllnad där min./max används. disponeringskod
 
-Om du inte anger ett värde i fältet **Flera** för en produkt på sidan **inställning för standardorder**, och om du använder *Min./Max.* påfyllnadsmetod kommer Planeringsoptimering fylla på lagret till en specifik nivå när den prognostiserade lagerbehållningsnivån är under ett specifikt tröskelvärde.
+Om du inte anger ett värde i fältet **Flera** för en produkt på sidan **inställning för standardorder**, och om du använder *Min./Max.* påfyllnadsmetod kommer huvudplanering fylla på lagret till en specifik nivå när den prognostiserade lagerbehållningsnivån är under ett specifikt tröskelvärde.
 
 Om du definierar en multipelkvantitet för en produkt måste du ange *Min./Max.* påfyllnadsmetoden ändrar dess beteende och tar hänsyn till värdet **flera**.
 
-Med andra ord fyller Planeringsoptimering fortfarande på lagret upp till den definierade maximinivån när den förutsagda behållningsnivån är mindre än den definierade miniminivån. Påfyllnadskvantiteten måste dock vara en multipel av värdet **Flera**.
+Med andra ord fyller huvudplanering fortfarande på lagret upp till den definierade maximinivån när den förutsagda behållningsnivån är mindre än den definierade miniminivån. Påfyllnadskvantiteten måste dock vara en multipel av värdet **Flera**.
 
-Om påfyllnadskvantiteten (skillnaden mellan maximinivån och den sagda lagerhållningsnivån) inte är en multipel av den definierade multipelkvantiteten, använder Planeringsoptimering det första möjliga värdet som, tillsammans med förutsagd behållningsnivå, kommer att vara under maximinivån. Om summan är mindre än miniminivån använder Planeringsoptimering det första värdet som, tillsammans med förväntad behållning, ligger över maximinivån.
+Om påfyllnadskvantiteten (skillnaden mellan maximinivån och den sagda lagerhållningsnivån) inte är en multipel av den definierade multipelkvantiteten, använder huvudplanering det första möjliga värdet som, tillsammans med förutsagd behållningsnivå, kommer att vara under maximinivån. Om summan är mindre än miniminivån använder huvudplanering det första värdet som, tillsammans med förväntad behållning, ligger över maximinivån.
 
 Följande delgrupper innehåller några exempel som visar hur multipeln av orderkvantiteten för en produkt påverkar resultatet av *Min./Max.* lagerpåfyllnadsmetod.
 

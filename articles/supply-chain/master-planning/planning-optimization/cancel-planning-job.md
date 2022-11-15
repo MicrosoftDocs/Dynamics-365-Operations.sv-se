@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0474c50157295d9ecd2341b700c07f4fbf1ed51f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5f1f2c8e3e43e36d837ebf989422b0dca7819d6
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900953"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741187"
 ---
 # <a name="cancel-a-planning-job"></a>Avbryta ett planeringsjobb
 
@@ -29,8 +29,7 @@ ms.locfileid: "8900953"
 
 I Microsoft Dynamics 365 Supply Chain Management kan du avbryta ett aktivt planeringsjobb där funktionerna för Planeringsoptimering används. När du väljer **Avbryt** i dialogrutan när ett Planeringsoptimerinsjobb utlöses direkt från användargränssnittet (inte i bakgrunden) avbryts inte jobbet Planeringsoptimering. Även om du får en varning om att "åtgärden har avbrutits", måste du ändå använda följande steg för att avbryta ett planeringsjobb med Planeringsoptimering.
 
-
-Om du vill avbryta ett aktivt planeringsjobb följer du stegen nedan. 
+Om du vill avbryta ett aktivt planeringsjobb följer du stegen nedan.
 
 > [!NOTE]
 > Endast aktiva jobb kan annulleras.
@@ -45,18 +44,6 @@ Jobbstatus kommer att vara **annullerar** tills Planeringsoptimerinstjänsten be
 
 > [!NOTE]
 > Om du vill se statusändringar måste du uppdatera sidan genom att välja **uppdatera**.
-
-## <a name="additional-resources"></a>Ytterligare resurser
-
-[Planeringsoptimering – översikt](planning-optimization-overview.md)
-
-[Kom igång med Planeringsoptimering](get-started.md)
-
-[Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
-
-[Visa planhistorik och planeringsloggar](plan-history-logs.md)
-
-[Använda filter på en plan](plan-filters.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

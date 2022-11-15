@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 876ee36c75a31ca89a9351d0ee1484e66076b6aa
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069799"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748724"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -146,9 +146,6 @@ Om en batchorder skapas från en receptversion där alternativet **variation av 
 I det här fallet kan arbetaren ange samprodukten och kvantiteten som ska rapporters genom att välja **variationer av samprodukter** i dialogrutan för rapportförloppet. Arbetaren kan sedan välja bland alla frisläppta produkter som definieras som samprodukter.
 
 ### <a name="reporting-catch-weight-items"></a>Rapportera artiklar med nominell vikt
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
 
 Medarbetare kan använda gränssnittet för exekvering på produktionsgolvet för att rapportera framsteg rörande batchorder om skapats för artiklar med nominell vikt. Batchorder skapas från formler, vilkar kan definieras så att de har artiklar med nominell vikt som formelartiklar, samprodukter och biprodukter. En formel kan också definieras till att ha formelrader för ingredienser som är definierade för nominell vikt. Artiklar med nominell vikt använder två måttenheter för att spåra lager: nominell viktkvantitet och lagerkvantitet. Inom till exempel livsmedelsindustrin kan förpackat kött definieras som en nominell viktartikel, där den nominella viktkvantiteten används för att spåra antalet kartonger och lagerkvantiteten används för att spåra kartongerna.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 46a50f4b00125656fc185ad569b94eeef00dc3c3
-ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
+ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337580"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752731"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Skapa avancerad bankavstämningsimport med hjälp av elektronisk rapportering
 
@@ -34,7 +34,7 @@ Funktionen för avancerad bankavstämning låter dig importera elektroniska bank
 2. På panelen för **Microsoft**-konfigurationsprovidern väljer du **Databaser**.
 3. Markera **Global** och välj sedan **Öppna**.
 4. Om en anslutning till databasen måste upprättas väljer du den blå länken i dialogrutan.
-5. I konfigurationslistan söker du upp **Bankutdragsmodell \> BA12-bankutdragsmodell**.
+5. I konfigurationslistan söker du upp **Avancerad modell för bankavstämningsutdrag \> ABR BAI2-format**..
 6. Välj formatet **BAI2**.
 7. På snabbfliken **Versioner** väljer du den senaste versionen och sedan **Importera**.
 

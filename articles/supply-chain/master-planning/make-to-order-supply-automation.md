@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220599"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740205"
 ---
 # <a name="make-to-order-supply-automation"></a>Tillverka mot order-automation
 
@@ -32,12 +32,6 @@ Funktionen *Tillverka mot order-automation* lägger till flera förbättringar M
 - Förbättra informationsflödet mellan företag. Inköpsorder uppdateras så att de inkluderar fält för leveranssätt, leveransvillkor och externt artikelnummer. Denna ändring garanterar att detaljerad efterfrågeinformation flödar till leveransföretaget.
 
 I denna artikel beskrivs hur du konfigurerar och använder varje förbättring.
-
-> [!NOTE]
-> Alla förbättringar som beskrivs i den här artikeln gäller för system som använder inbyggd huvudplanering. Följande två förbättringar stöds även av tillägget Planeringsoptimering för Microsoft Dynamics 365 Supply Chain Management:
->
-> - Fördröjningstolerans för huvudplaner
-> - Kontrollera pegging-sekvensen som används under huvudplaneringen
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>Aktivera funktionen Tillverka mot order-automation
 
@@ -73,7 +67,7 @@ På sidan **kapacitetsbeläggning** kan du granska en resurs tillgängliga kapac
 
 De här alternativen är även tillgängliga i fältet **Uppdateringsmarkering** på fliken **Standarduppdatering** på sidan **Huvudplaneringsparametrar** page,där du definierar standardvalet för dialogrutan **Bekräftelse**.
 
-Mer information finns i [Lagermarkeringen med Planeringsoptimering](planning-optimization/marking.md).
+Mer information finns i [Lagermarkering](planning-optimization/marking.md).
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>Ange fördröjningstolerans (negativa dagar) på huvudplaneringsnivå
 

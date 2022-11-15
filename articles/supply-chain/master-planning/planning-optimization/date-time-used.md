@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885911"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740915"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Parametrar för datum och tid som används i Planeringsoptimering
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885911"
 
 Denna artikel innehåller information om de datum- och tidsparametrar som Planeringsoptimering använder under åtgärden.
 
-Medan den inbyggda huvudplaneringsmotorn använder transaktionsdatum i alla beräkningar fungerar Planeringsoptimering med datum- och tidsvärden som konverteras till datum. Den här skillnaden i beteende kan leda till situationer där prognostransaktioner som skapas vid midnatt den dagen när huvudplaneringen körs inte inkluderas eftersom Planeringsoptimering tar hänsyn till att de har skapats före aktuellt datum.
+Medan den inaktuella huvudplaneringsmotorn använder transaktionsdatum i alla beräkningar fungerar Planeringsoptimering med datum- och tidsvärden som konverteras till datum. Den här skillnaden i beteende kan leda till situationer där prognostransaktioner som skapas vid midnatt den dagen när huvudplaneringen körs inte inkluderas eftersom Planeringsoptimering tar hänsyn till att de har skapats före aktuellt datum.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Parametrar för ut- och efterfrågetransaktioner
 

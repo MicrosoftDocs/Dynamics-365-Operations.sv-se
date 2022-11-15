@@ -1,6 +1,6 @@
 ---
 title: Tidsplanering med obegränsad kapacitet
-description: Denna artikel innehåller information om oändlig kapacitetsplanering för Planeringsoptimering. Det beskriver även aktuella funktionsbegränsningar.
+description: Denna artikel innehåller information om planläggning av obegränsad kapacitet. Det beskriver även aktuella funktionsbegränsningar.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7249734e5d2644145a36276dbc818a40b5962805
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335328"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740016"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Tidsplanering med obegränsad kapacitet
 
 [!include [banner](../../includes/banner.md)]
 
-Med funktionen *Oändlig kapacitetsplanering för Planeringsoptimering* introduceras tidsplanering som baseras på flödesinformation. Med den kan du tidsplanera jobb utifrån ett stort antal flödeskonfigurationer. Tidsplanering för Planeringsoptimering omfattar ofta använda flödesinställningar, inklusive flödesdriftsordning eller krav för flödesdriftsresurser.
+Med funktionen *Oändlig kapacitetsplanering för Planeringsoptimering* introduceras tidsplanering som baseras på flödesinformation. Med den kan du tidsplanera jobb utifrån ett stort antal flödeskonfigurationer. Tidsplanering omfattar ofta använda flödesinställningar, inklusive flödesdriftsordning eller krav för flödesdriftsresurser.
 
 ## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för tidsplanering av obegränsad kapacitet
 
@@ -32,7 +32,7 @@ Mer information om den här funktionen finns i [Tidsplanering med resursurval so
 
 ## <a name="added-functionality"></a>Tillagda funktioner
 
-Med funktionen *Oändlig kapacitetsplanering för Planeringsoptimering* möjliggörs introduceras tidsplanering för jobb som baseras på flödesinformation. Därför kan en flödeskonfiguration användas för att tidsplanera produktionsprocesser. Även om denna funktion har vissa begränsningar som den inbyggda huvudplaneringen inte har, så har den stöd för de vanligaste funktionerna som krävs för tillverkningsscenarier.
+Med funktionen *Oändlig kapacitetsplanering för Planeringsoptimering* möjliggörs introduceras tidsplanering för jobb som baseras på flödesinformation. Därför kan en flödeskonfiguration användas för att tidsplanera produktionsprocesser. Även om denna funktion har vissa begränsningar som den inaktuella huvudplaneringsmotorn inte har, så har den stöd för de vanligaste funktionerna som krävs för tillverkningsscenarier.
 
 Funktionen tar hänsyn till både *enkla flöden* och *flödesnätverk*. Genom att använda fältet **Nästa** i en flödesåtgärd kan du konfigurera komplexa flöden som har flera startpunkter och flera åtgärder som körs parallellt. I systemet kommer komplexa flödesstrukturer av den här typen att beaktas under tidsplaneringen.
 
@@ -52,15 +52,13 @@ Under tidsplaneringsprocessen tar systemet även hänsyn till de *resursbehov* s
 
 Funktionen stöder även åtgärdsegenskaper för **Inställning av tid** och **Körningstid**. När du anger dessa egenskaper för en flödesåtgärd skapar tidsplaneringsprocessen lämpliga inställnings- och processjobb.
 
-Sammanfattningsvis stöder tidsplaneringen för Planeringsoptimering de vanligast använda scenarierna. Du kan skapa flödet, lägga till primära och sekundära åtgärder, definiera kommande åtgärder, lägga till resursbehov och lägga till konfigurationstid och körningstid. Systemet beaktar sedan denna information under tidsplaneringen.
+Sammanfattningsvis stöder tidsplaneringen de vanligast använda scenarierna. Du kan skapa flödet, lägga till primära och sekundära åtgärder, definiera kommande åtgärder, lägga till resursbehov och lägga till konfigurationstid och körningstid. Systemet beaktar sedan denna information under tidsplaneringen.
 
 ## <a name="limitations"></a>Begränsningar
 
-Följande begränsningar gäller när du använder tidsplanering för Planeringsoptimeringen:
+Följande begränsningar gäller när du använder funktionen *Planering av oändlig kapacitet för Planeringsoptimering*:
 
 - Funktionen har bara stöd för obegränsad kapacitet.
 - Funktionen stöder inte funktionen för resursbelastning.
 - Funktionen tar inte hänsyn till flödeskassation.
 - Funktionen stöder endast *Varaktighet* som primärt resursval.
-
-Observera att funktionen *Oändlig kapacitetsplanering för Planeringsoptimering* konstant förbättras. Microsoft förväntar sig att kunna införa stöd för ytterligare tidsplaneringsinställningar i framtida versioner.
