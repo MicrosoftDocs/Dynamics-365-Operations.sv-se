@@ -10,14 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 78ba4236705f1a200d9fe796eb80d0241b0fa537
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335388"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740479"
 ---
 # <a name="delay-tolerance-negative-days"></a>Fördröjningstolerans (negativa dagar)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +48,7 @@ Systemet kopplar förseningtoleransberäkningen till det *tidigaste påfyllnadsd
 Formeln garanterar att huvudplaneringen inte skapar nya leveransorder när det finns tillräckligt med tillförsel under produktens produktionstid.
 
 > [!NOTE]
-> I beräkningen av fördröjningstoleransen i Planeringsoptimering används alltid den dynamiska beräkningen av negativa dagar från den inbyggda huvudplaneringen. Inställningen **Använd dynamiska negativa dagar** på sidan **Parametrar för huvudplanering** påverkar inte det här beteendet.
+> I beräkningen av fördröjningstoleransen i Planeringsoptimering används alltid den dynamiska beräkningen av negativa dagar från den inaktuella huvudplaneringsmotorn. Inställningen **Använd dynamiska negativa dagar** på sidan **Parametrar för huvudplanering** påverkar inte det här beteendet.
 
 Om det befintliga tillgången innebär en efterfrågefördröjning som är mindre än eller lika med den beräknade fördröjningstoleransen, innebär Planeringsoptimering att det finns en befintlig tillgång till efterfrågan. I vissa fall är det bättre att försena efterfrågan än att sluta med överbehov.
 
