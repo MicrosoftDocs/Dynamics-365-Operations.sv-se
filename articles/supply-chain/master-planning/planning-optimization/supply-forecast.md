@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-21
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc83d10851958ec67166cb7e40cfd84dceae6651
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2bac9355bb1ac00f697ec459f494a64553e0eacc
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690099"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740152"
 ---
 # <a name="master-planning-with-supply-forecasts"></a>Huvudplanering med inflödesprognoser
 
@@ -168,13 +168,13 @@ När du kör en huvudplan som är inställd på att använda *Ingen* som reducer
 
 Du redigerar nu den planerade inköpsordern som skapades efter den senaste planeringskörningen och ändrar kvantiteten till *15 ea*. Du godkänner då beställningen. Nästa gång du kör huvudplanen kommer det att skapa en planerad inköpsorder för leverantören *US-101*, webbplats *1*, lagerställe *11*, en kvantitet på *10 ea* och datumet *10/10/22*. Denna tidpunkt reduceras kvantiteten så att den återspeglar kvantiteten för den befintliga godkända ordern från föregående planeringskörning.
 
-## <a name="differences-between-planning-optimization-and-the-built-in-planning-engine"></a>Skillnader mellan planeringsoptimering och den inbyggda planeringsmotorn
+## <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>Skillnader mellan planeringsoptimering och den inaktuella huvudplaneringsmotorn
 
-Inflödesprognoser fungerar lite olika, beroende på vilken planeringsmotor du använder (inbyggd huvudplanering eller planeringsoptimering). Det här avsnittet beskriver skillnaderna.
+Inflödesprognoser fungerar lite olika, beroende på vilken planeringsmotor du använder (planeringsoptimering eller inaktuell huvudplaneringsmotor). Det här avsnittet beskriver skillnaderna.
 
 ### <a name="vendor-groups"></a>Leverantörsgrupper
 
-När du lägger till en prognosrad kan du ange en leverantör och en leverantörsgrupp. I den inbyggda planeringsmotorn grupperas planerade order efter kombinationen av leverantörs- och leverantörsgruppvärden. I Planeringsoptimering grupperas planerade order per leverantör.
+När du lägger till en prognosrad kan du ange en leverantör och en leverantörsgrupp. I den inaktuella huvudplaneringsmotorn grupperas planerade order efter kombinationen av leverantörs- och leverantörsgruppvärden. I Planeringsoptimering grupperas planerade order per leverantör.
 
 Följande tabell innehåller några exempel på leveransprognosrader för en artikel.
 
@@ -186,7 +186,7 @@ Följande tabell innehåller några exempel på leveransprognosrader för en art
 
 Leverantör *VendorA* är standardleverantör för leverantörsgruppen *VendorGroupA*. Det är också standardleverantören för artikeln.
 
-Den inbyggda planeringsmotorn skapar följande order:
+Den inaktuella huvudplaneringsmotorn skapar följande order:
 
 - En planerad inköpsorder för leverantör *VendorA*, leverantörsgrupp *VendorGroupA* och kvantiteten *11*
 - En planerad inköpsorder för leverantör *VendorA* och kvantiteten *7*
@@ -197,7 +197,7 @@ Planeringsoptimering skapar bara en order:
 
 ### <a name="reduction-of-general-forecasts-by-more-specific-forecasts"></a>Reducering av allmänna prognoser med mer specifika prognoser
 
-I den inbyggda huvudplaneringsmotorn blir resultatet oförutsägbart om vissa prognoser har en leverantör men andra inte.
+I den inaktuella huvudplaneringsmotorn blir resultatet oförutsägbart om vissa prognoser har en leverantör men andra inte.
 
 Vid planeringsoptimering minskas allmänna prognoser alltid med mer specifika prognoser, vilket visas i följande exempel.
 
@@ -218,15 +218,15 @@ Den allmänna prognosen (för 15,00 enheter) minskas med de mer specifika progno
 
 ### <a name="respect-for-default-order-settings-when-planned-orders-are-generated"></a>Följa standardorderinställningar när planerade order genereras
 
-Varje artikel kan ha standardorderinställningar, till exempel en minsta inköpsorderkvantitet. Den inbyggda planeringsmotorn ignorerar inställningarna och översätter därför prognoser till planerade order som har samma kvantitet. Planeringsoptimering följer inställningarna när planerade order genereras från leveransprognoser. 
+Varje artikel kan ha standardorderinställningar, till exempel en minsta inköpsorderkvantitet. Den inaktuella huvudplaneringsmotorn ignorerar inställningarna och översätter därför prognoser till planerade order som har samma kvantitet. Planeringsoptimering följer inställningarna när planerade order genereras från leveransprognoser. 
 
 ### <a name="aggregation-of-planned-orders-as-a-result-of-reduction-by-approved-orders"></a>Aggregering av planerade order till följd av reducering av godkända order
 
-Den inbyggda huvudplaneringsmotorn förutsätter att endast en order minskar den befintliga leveransprognosen. Om flera order matchar en inflödesprognosrad är det därför endast den första ordern som minskar den. I Planeringsoptimering minskar alla order som matchar inflödesprognosraden den.
+Den inaktuella huvudplaneringsmotorn förutsätter att endast en order minskar den befintliga leveransprognosen. Om flera order matchar en inflödesprognosrad är det därför endast den första ordern som minskar den. I Planeringsoptimering minskar alla order som matchar inflödesprognosraden den.
 
 ### <a name="reduction-of-forecasts-by-matching-vendors-only"></a>Reducera prognoser genom att endast matcha leverantörer
 
-När den inbyggda huvudplaneringsmotorn minskar en prognos från befintliga frisläppta inköpsorder, ser den inte till att leverantören på inköpsordern matchar leverantören från prognosen. Vid planeringsoptimering minskas prognoserna bara genom inköpsorder som har ett matchande värde i leverantörsfältet.
+När den inaktuella huvudplaneringsmotorn minskar en prognos från befintliga frisläppta inköpsorder, ser den inte till att leverantören på inköpsordern matchar leverantören från prognosen. Vid planeringsoptimering minskas prognoserna bara genom inköpsorder som har ett matchande värde i leverantörsfältet.
 
 För överförings- och produktionsorder ignoreras alltid leverantörsfältet, eftersom det inte är relevant för dessa ordertyper.
 
@@ -234,4 +234,4 @@ För överförings- och produktionsorder ignoreras alltid leverantörsfältet, e
 
 Om standardordertypen för en artikel är *Överföring* kan prognoser endast reduceras med befintliga planerade överföringsorder. För tillverkningsorder och inköpsorder är det dock bara frisläppta order som minskar leveransprognosen.
 
-Den inbyggda planeringsmotorn minskar för alla överföringsorderläge, medan planeringsoptimering bara minskar prognoserna genom att överföringsorder som har statusen *Frisläppt* minskar.
+Den inaktuella huvudplaneringsmotorn minskar för alla överföringsorderläge, medan planeringsoptimering bara minskar prognoserna genom att överföringsorder som har statusen *Frisläppt* minskar.

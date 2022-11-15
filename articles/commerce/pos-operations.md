@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
-ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.openlocfilehash: eb21dc5ca474a87fcabe2dda2a06dda7aa42ebc2
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728287"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736892"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -42,8 +42,9 @@ Följande kolumner anger var åtgärderna kan startas:
 
 > [!NOTE]
 > Åtgärderna i listan nedan gäller den senaste versionen av Commerce. Vissa åtgärder kan ha ändrats eller kanske inte är tillgängliga i tidigare versioner.
+> För ytterligare information om offlinefunktioner och konfiguration, se artikeln [Commerce offlineimplementering och felsökning](dev-itpro/implementation-considerations-offline.md).
 
-| ID   | Åtgärd                                         | Beskrivning                                                                                                                                                                                                    | Användaråtgärder    | Transaktionsskärm | Välkomstskärm | Tillgänglig offline? | Språkspecifik |
+| ID   | Operation                                         | Beskrivning                                                                                                                                                                                                    | Användaråtgärder    | Transaktionsskärm | Välkomstskärm | Tillgänglig offline? | Språkspecifik |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Produktförsäljning                                      | Lägg till en specifierad produkt i transaktionen.                                                                                                                                                                    | Ja            | Ja                | Ja            | Ja               | Nej              |
 | 101  | Priskontroll                                       | Sök efter priset för en angiven produkt.                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Nej              |
