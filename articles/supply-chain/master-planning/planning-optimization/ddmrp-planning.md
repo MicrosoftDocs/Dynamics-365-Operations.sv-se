@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: f1e2cfca47d507c8de7f9323bb8e4262a0e90949
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 8ba9a6d24923b66259bc8b6cc688ec667cb000de
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689215"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740313"
 ---
 # <a name="demand-driven-planning"></a>Efterfrågedriven planering
 
@@ -55,4 +55,4 @@ Om du kör huvudplanering nu genererar detta en planerad order om nettoflödet b
 Det här exemplet genererar en planerad inköpsorder för kvantiteten 130, som är lika med maximinivån minus nettoflödet. Den planerade ordern tilldelas prioriteten 53,07, baserat på procentandelen av maximikvantiteten. Eftersom dessa värden hittades den 20 juni skapar systemet en planerad order som är daterad den 20 juni plus den avdelade ledtiden för artikeln (fem arbetsdagar i det här exemplet). Eftersom "fem arbetsdagar" är lika med en vecka från idag dateras de planerade ordern den 27 juni.
 
 > [!NOTE]
-> Vid planeringsoptimering beräknas enbart avdelade artiklar med hjälp av DDMRP. Alla andra artiklar beräknas med hjälp av behovsplanering för standardmaterial (MRP).
+> Huvudplanering beräknas enbart avdelade artiklar med hjälp av DDMRP. Alla andra artiklar beräknas med hjälp av behovsplanering för standardmaterial (MRP).
