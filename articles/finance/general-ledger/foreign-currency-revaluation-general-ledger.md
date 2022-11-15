@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904540"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752814"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Omvärdering i utländsk valuta för huvudbok
 
@@ -64,7 +64,9 @@ Ombedömningsprocessen kan köras för en eller flera juridiska personer. Sökni
 
 Omvärderingen kan köras för en eller flera utländska valutor. Sökningen omfattar alla valutor som har bokförts inom det angivna datumintervallet för typen av huvudkonto (balansräkning eller resultaträkning) för de juridiska personer som du har valt att omvärdera. Redovisningsvalutan tas med i listan, men inget omvärderas om redovisningsvalutan har valts. 
 
-Ange **Förhandsgranska före bokföring** till **Ja** om du vill granska resultatet av omvärderingen av redovisningen. Förhandsgranskningen av redovisningen skiljer sig från simuleringen av omräkningen i utländsk valuta för kund- och leverantörsreskontra. Kund- och leverantörsreskontrasimuleringen är en rapport, men redovisning har en förhandsgranskning som kan bokföras utan att ombedömningsprocessen behöver köras på nytt. Resultatet av förhandsgranskningen kan exporteras till Microsoft Excel om du vill behålla historiken för hur beloppen beräknades. Du kan inte använda batchbearbetning om du vill granska resultatet av omvärderingen. Från förhandsgranskningen har användaren möjlighet att bokföra resultaten för juridiska personerna via knappen **Post**. Om det finns ett problem med resultaten för en juridisk person, har användaren också möjlighet att bokföra en deluppsättning av de juridiska personerna med hjälp av knappen **Välj valda juridiska personer att bokföra**. 
+Ange **Förhandsgranska före bokföring** till **Ja** om du vill granska resultatet av omvärderingen av redovisningen. Förhandsgranskningen av redovisningen skiljer sig från simuleringen av omräkningen i utländsk valuta för kund- och leverantörsreskontra. Kund- och leverantörsreskontrasimuleringen är en rapport, men redovisning har en förhandsgranskning som kan bokföras utan att ombedömningsprocessen behöver köras på nytt. Resultatet av förhandsgranskningen kan exporteras till Microsoft Excel om du vill behålla historiken för hur beloppen beräknades. Du kan inte använda batchbearbetning om du vill granska resultatet av omvärderingen. Från förhandsgranskningen har användaren möjlighet att bokföra resultaten för juridiska personerna via knappen **Post**. Om det finns ett problem med resultaten för en juridisk person, har användaren också möjlighet att bokföra en deluppsättning av de juridiska personerna med hjälp av knappen **Välj valda juridiska personer att bokföra**.
+
+Om du vill utesluta justeringar som har lagts upp med hjälp av **Justeringsjournal för rapporteringsvaluta** från omvärderingsprocessen, ange **Exkludera justeringar av rapporteringsvaluta** till **Ja**. Som standard inkluderas valutajusteringar i omvärderingen. 
 
 När processen för omräkning i utländsk valuta är klar skapas en post där du kan spåra historiken för respektive körning.  En separat post skapas för varje juridisk person och bokföringsskikt.
 

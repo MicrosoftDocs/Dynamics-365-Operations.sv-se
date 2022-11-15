@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689704"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740097"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Begränsad kapacitetsplanering och tidsplanering
 
@@ -28,9 +28,8 @@ Begränsad kapacitet är en metod som hjälper dig att förstå hur mycket arbet
 
 Begränsad kapacitetsplanering och tidsplanering skapar en mer realistisk plan för produktionsprocesserna än den obegränsade inläsningsmetod som skapas. Om det inte finns tillräcklig kapacitet för resurserna leveransdatum kommer att skjutas ut och jobbet kommer att schemaläggas när det finns tillräckligt med kapacitet.
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>Planera optimeringssupport för begränsad kapacitetsplanering
-
-Begränsad kapacitetsplanering och planering fungerar nästan på samma sätt, oavsett om du använder Planeringsoptimering eller den inbyggda planeringsmotorn. Vid planeringsoptimering används dock inte parametern **Flaskhalstidsgräns**. När du använder Planeringsoptimering planeras alltid flaskhalsar med samma tidsgräns som resurser som inte anges vara flaskhalsresurser (vilket anges av tidsgränsen för begränsad kapacitet).
+> [!NOTE]
+> Begränsad kapacitetsplanering och planering fungerar nästan på samma sätt, oavsett om du använder Planeringsoptimering eller den inaktuella huvudplaneringsmotorn. Vid planeringsoptimering används dock inte parametern **Flaskhalstidsgräns**. När du använder Planeringsoptimering planeras alltid flaskhalsar med samma tidsgräns som resurser som inte anges vara flaskhalsresurser (vilket anges av tidsgränsen för begränsad kapacitet).
 
 ## <a name="set-up-finite-capacity-functionality"></a>Ställa in funktionen för begränsad kapacitet
 

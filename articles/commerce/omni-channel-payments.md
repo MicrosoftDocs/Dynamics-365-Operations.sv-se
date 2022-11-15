@@ -2,7 +2,7 @@
 title: Översikt över omnikanalsbetalningar
 description: Denna artikel innehåller en översikt över betalningar i flera kanaler i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5cc0725b383ca6657bd19b9dd25b0c60b364467
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881719"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746137"
 ---
 # <a name="omni-channel-payments-overview"></a>Översikt över omnikanalsbetalningar
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Denna artikel innehåller en översikt över betalningar i flera kanaler i Dynamics 365 Commerce. Den innehåller en omfattande lista över scenarier som stöds, information om funktioner, inställningar och fel sökning samt beskrivningar av några vanliga problem.
 
@@ -169,9 +170,9 @@ Följ dessa steg om du vill köra scenariet:
 6. Ange **Seattle** i sökfältet och välj sedan butiken i **Stockholm** för upphämtning. 
 7. Välj **OK** om du vill acceptera aktuellt datum som datum för upphämtningen.
 9. Välj **Betalningskort** för att initiera betalningen.
-10. Betalningsmedel kortbetalning för det belopp som förfaller till insättning. 
+10. Betalningsmedel kortbetalning för det belopp som förfaller till insättning.
 11. Slutför insättningsbetalningen på betalningsterminalen. 
-12. När insättningen har betalats väljer du alternativet att använda samma kort för uppfyllelse och väntar på att ordern ska slutföras. 
+12. När insättningen har betalats väljer du alternativet att använda samma kort för uppfyllelse och väntar på att ordern ska slutföras. Om 100 % av insättningen betalas (från steg 10 ovan) fångas medel in direkt mot kortet och en auktoriseringstoken blir inte tillgänglig vid fakturering eftersom medel redan har fångats in och spårats som betalade.
 13. Starta POS för Seattle-butiken.
 14. I POS på välkomstsidan väljer du åtgärden **order som ska hämtas** för att visa order för upphämtning i butik. 
 15. Välj en eller flera rader från ordern som skapades i referensbutiken och **hämta**.
@@ -198,7 +199,7 @@ Följ dessa steg om du vill köra scenariet:
 8. Välj **Betalningskort** för att initiera betalningen.
 9. Betalningsmedel kortbetalning för det belopp som förfaller till insättning. 
 10. Slutför insättningsbetalningen på betalningsterminalen. 
-11. När insättningen har betalats väljer du alternativet att använda samma kort för uppfyllelse och väntar på att ordern ska slutföras.
+11. När insättningen har betalats väljer du alternativet att använda samma kort för uppfyllelse och väntar på att ordern ska slutföras. Om 100 % av insättningen betalas (från steg 9 ovan) fångas medel in direkt mot kortet och en auktoriseringstoken blir inte tillgänglig vid fakturering eftersom medel redan har fångats in och spårats som betalade.
 
 När ordern plockas, förpackas och faktureras i backoffice kommer betalningsdetaljerna som finns i POS att användas för att samla in medel för de varor som levereras till kunden. 
 
