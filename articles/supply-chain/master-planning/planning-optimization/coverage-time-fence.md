@@ -1,6 +1,6 @@
 ---
 title: Tidsgräns för disponering
-description: I denna artikel beskrivs hur du konfigurerar avgränsningar för täckningstid när du använder Planeringsoptimering. En tidsgräns för disponering indikerar din planering horisont och gräns.
+description: I denna artikel beskrivs hur du konfigurerar tidsgräns för disponering. En tidsgräns för disponering indikerar din planering horisont och gräns.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 987dea4c1b693fc1bb687f97d51288d5e51e7d4c
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847945"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740124"
 ---
 # <a name="coverage-time-fences"></a>Tidsgräns för disponering
 
 [!include [banner](../../includes/banner.md)]
 
-I denna artikel beskrivs hur du konfigurerar *avgränsningar för täckningstid* när du använder Planeringsoptimering. Planerare kan definiera planeringshorisonten (täckningstidens stängsel i dagar) och utesluta tillgång och efterfrågan som faller bortom den horisonten. Därför hjälper tidsgräns för disponering till att förhindra "buller" som orsakas av leverans förslag som du inte behöver reagera på i månader. Exempel är nästa års prognos och kundorder som läggs långt utöver den normala ledtiden.
+I denna artikel beskrivs hur du konfigurerar *tidsgräns för disponering*. Planerare kan definiera planeringshorisonten (täckningstidens stängsel i dagar) och utesluta tillgång och efterfrågan som faller bortom den horisonten. Därför hjälper tidsgräns för disponering till att förhindra "buller" som orsakas av leverans förslag som du inte behöver reagera på i månader. Exempel är nästa års prognos och kundorder som läggs långt utöver den normala ledtiden.
 
 En tidsgräns för disponering är antalet dagar efter dagens datum (eller, mer exakt, det datum då du gör planeringskörningen) som tillgång och efterfrågan exkluderas. För att undvika förseningar måste du se till att tidsgräns för disponering är längre att den totala ledtiden. Systemets standardvärde är 100 dagar.
 
@@ -82,9 +82,9 @@ När du konfigurerar tidsgräns för disponering bör du överväga följande pu
 - Kravtransaktioner kommer inte att genereras för alla utbud och efterfrågan som faller utanför tidsgräns för disponering.
 - Om någon godkänd tillgång och efterfrågan faller utanför tidsgräns för disponering, kommer det inte att laddas i motorn. Därför utlöser det inte någon påfyllning och förseningar beräknas inte. Trots detta bör detta utbud och efterfrågan inte utplånas från systemet.
 - Variationer i säkerhetslagermängder (från miniminycklar) kommer att ignoreras om de faller utanför tidsgräns för disponering.
-- Den koncerninterna efterfrågan ignoreras om det begärda leveransdatumet som beräknas inte finns innanför tidsgräns för disponering. Observera att, för inbyggd huvudplanering, är koncernintern efterfrågan inte begränsas av tidsgräns för disponering.
-- Behovsprognoser ignoreras om budgetdatumet inte finns innanför tidsgräns för disponering. Observera att, för inbyggd huvudplanering, är efterfrågeprognoser inte begränsade av tidsgräns för disponering.
-- Planeringsoptimering är tidszon–medveten. Den betraktar tidszonen vid tillgångs- och efterfrågeplatserna, och tidpunkten för planeringskörningen. Till exempel, huvudplanering utlöses 11:00 den 15 oktober från en plats i Danmark (GMT +1 tidszon), och en tidsgräns för disponering på tio dagar används. I det här fallet ingår tillgång och efterfrågan från en plats i Seattle (GMT-8 tidszon) fram till 02:00 den 25 oktober (= tio 24-timmars dagar efter att huvudplanering utlöstes, minus tidszonsskillnaden på nio timmar). Observera att den inbyggda huvudplaneringsmotorn endast beaktar datumet för tidsgränsen. Därför kan resultatet skilja sig åt.
+- Den koncerninterna efterfrågan ignoreras om det begärda leveransdatumet som beräknas inte finns innanför tidsgräns för disponering. Observera att, för inaktuella huvudplaneringsmotorn, är koncernintern efterfrågan inte begränsas av tidsgräns för disponering.
+- Behovsprognoser ignoreras om budgetdatumet inte finns innanför tidsgräns för disponering. Observera att, för inaktuella huvudplaneringsmotorn, är efterfrågeprognoser inte begränsas av tidsgräns för disponering.
+- Planeringsoptimering är tidszon–medveten. Den betraktar tidszonen vid tillgångs- och efterfrågeplatserna, och tidpunkten för planeringskörningen. Till exempel, huvudplanering utlöses 11:00 den 15 oktober från en plats i Danmark (GMT +1 tidszon), och en tidsgräns för disponering på tio dagar används. I det här fallet ingår tillgång och efterfrågan från en plats i Seattle (GMT-8 tidszon) fram till 02:00 den 25 oktober (= tio 24-timmars dagar efter att huvudplanering utlöstes, minus tidszonsskillnaden på nio timmar). Observera att den inaktuella huvudplaneringsmotorn endast beaktar datumet för tidsgränsen. Därför kan resultatet skilja sig åt.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f36459e21d96325151aa7fe90f3824b07c2536c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 6f7289e7ecee49353ca8ee4554914a08074401df
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469993"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740507"
 ---
 # <a name="master-planning-home-page"></a>Startsida för Huvudplanering
 
@@ -83,7 +83,6 @@ Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen **Hjälp** p�
 ### <a name="tech-conference-recordings"></a>Inspelningar från tekniska konferenser
 
 - [Utöka funktionen prognos för efterfrågan](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-- [Huvudplanering – tips och trick för felsökning av prestandaproblem](https://youtu.be/7v8BPmEs9Dg)
 - [MRP-prestandajustering](https://youtu.be/RLXybx20B5o)
 
 

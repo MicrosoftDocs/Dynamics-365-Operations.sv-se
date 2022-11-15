@@ -1,6 +1,6 @@
 ---
 title: Huvudplanering med efterfrågeprognoser
-description: I denna artikel beskrivs hur du inkluderar efterfrågeprognoser vid huvudplanering med Planeringsoptimering.
+description: I denna artikel beskrivs hur du inkluderar efterfrågeprognoser vid huvudplanering.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879002"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739794"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Huvudplanering med efterfrågeprognoser
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan använda en efterfrågeprognos tillsammans med Planeringsoptimering för att redovisa förväntad efter frågan i huvudplaneringen. Du kan manuellt skapa en efterfrågeprognos, importera den eller generera den med hjälp av funktionen för efterfrågeprognos i Microsoft Dynamics 365 Supply Chain Management. Mer information om efterfrågeprognoser finns i [Översikt över efterfrågeprognoser](../introduction-demand-forecasting.md).
+Du kan använda en efterfrågeprognos för att redovisa förväntad efter frågan i huvudplaneringen. Du kan manuellt skapa en efterfrågeprognos, importera den eller generera den med hjälp av funktionen för efterfrågeprognos i Microsoft Dynamics 365 Supply Chain Management. Mer information om efterfrågeprognoser finns i [Översikt över efterfrågeprognoser](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > Planeringsoptimering stöder inte separat prognosplanering. Därför har inställningen för **aktuell prognosplan** på sidan **parametrar för huvudplanering** när du använder Planeringsoptimering.

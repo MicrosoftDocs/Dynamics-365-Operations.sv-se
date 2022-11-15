@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218819"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739881"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management
 
@@ -89,7 +89,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Ersatt av en annan funktion?**   | Ja, Planeringsoptimering kommer att ersätta befintliga inbyggda huvudplaneringsmotorn för Supply Chain Management. |
 | **Produktområden som påverkas**         | Supply Chain Management – Huvudplanering |
 | **Distribueringsalternativ**              | Endast i molnet. Planeringsoptimering stöds inte för lokala distributioner. |
-| **Status**                         | Inaktuell. Från och med den 1 april 2022 kommer tillverkningsscenarier inte längre att stödjas för den inbyggda huvudplaneringsmotorn för Supply Chain Management. Från och med detta datum stoppar Microsoft all aktiv utveckling av tillverkningsscenarier för den inbyggda planeringsmotorn, man kommer inte att frisläppa några nya funktioner samt kommer endast att frisläppa vitala programkorrigeringar. Efter detta datum måste alla företag som kräver stöd för tillverkningsscenarier använda Planeringsoptimering för beräkningarna av huvudplaneringen. Planeringsoptimering förväntas ge fullt stöd för tillverkningsscenarier från och med oktober 2022. Mer information finns i [dokumentationen för Planeringsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Företag med lokala distributioner av Supply Chain Management kan fortsätta använda den inbyggda huvudplaneringsmotorn för tillverkningsscenarier även efter april 2022. Det sker dock inga fler förbättringar av funktionen. |
+| **Status**                         | Inaktuell. Från och med den 1 april 2022 kommer tillverkningsscenarier inte längre att stödjas för den inbyggda huvudplaneringsmotorn för Supply Chain Management. Från och med detta datum stoppar Microsoft all aktiv utveckling av tillverkningsscenarier för den inbyggda planeringsmotorn, man kommer inte att frisläppa några nya funktioner samt kommer endast att frisläppa vitala programkorrigeringar. Efter detta datum måste alla företag som kräver stöd för tillverkningsscenarier använda Planeringsoptimering för beräkningarna av huvudplaneringen. Planeringsoptimering förväntas ge fullt stöd för tillverkningsscenarier från och med oktober 2022. Mer information finns i [inaktuell huvudplaneringsöversikt](../master-planning/deprecated-master-planning-overview.md).<br><br>Företag med lokala distributioner av Supply Chain Management kan fortsätta använda den inbyggda huvudplaneringsmotorn för tillverkningsscenarier även efter april 2022. Det sker dock inga fler förbättringar av funktionen. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Borttagna eller föråldrade funktioner i Supply Chain Management version 10.0.11
 
@@ -101,7 +101,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Ersatt av en annan funktion?**   | Ja, Planeringsoptimering kommer att ersätta befintliga inbyggda huvudplaneringsmotorn för Supply Chain Management. |
 | **Produktområden som påverkas**         | Supply Chain Management – Huvudplanering |
 | **Distribueringsalternativ**              | Endast i molnet. Planeringsoptimering stöds inte för lokala distributioner. |
-| **Status**                         | Inaktuell. 1 april 2021 kommer distributionsscenarier inte längre att stödjas med inbyggda Dynamics 365 Supply Chain Management huvudplaneringsmotor. För distributionsscenarier måste kunder använda Planeringsoptimering för huvudplanering. Mer information finns i [dokumentationen för Planeringsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md). Kunder med lokala distributioner av Dynamics 365 Supply Chain Management kan fortsätta använda Supply Chain Managements huvudplaneringsmotor för distributionsscenarier efter april 2021. Det sker dock inga fler förbättringar av funktionen. |
+| **Status**                         | Inaktuell. 1 april 2021 kommer distributionsscenarier inte längre att stödjas med inbyggda Dynamics 365 Supply Chain Management huvudplaneringsmotor. För distributionsscenarier måste kunder använda Planeringsoptimering för huvudplanering. Mer information finns i [inaktuell huvudplaneringsöversikt](../master-planning/deprecated-master-planning-overview.md). Kunder med lokala distributioner av Dynamics 365 Supply Chain Management kan fortsätta använda Supply Chain Managements huvudplaneringsmotor för distributionsscenarier efter april 2021. Det sker dock inga fler förbättringar av funktionen. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidigare meddelanden om borttagna eller inaktuella funktioner
 

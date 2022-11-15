@@ -1,6 +1,6 @@
 ---
 title: Inköpsrekvisitioner
-description: Denna artikel beskriver hur inköpsrekvisitioner stöds i Planeringsoptimering.
+description: Den här artikeln beskriver inköpsrekvisitioner.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b4dcae11e83748da3ec0368e1ddf47fedf5de23c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d9d55186307b18f4c3be78ae0828b08d3c987aad
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867910"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740695"
 ---
 # <a name="purchase-requisitions"></a>Inköpsrekvisitioner
 
@@ -59,7 +59,7 @@ När du anger en godkänd rekvisitionstidsgräns för en enskild huvudplan åsid
 1. Upprepa steg 2 och 3 för varje ytterligare huvudplan där du vill konfigurera en godkänd tidsgräns för rekvisitioner.
 
 > [!IMPORTANT]
-> **Kommer snart:** Godkända rekvisitioner tidsgränser stöds ännu inte för Planeringsoptimering. Till dess att de stöds ignoreras alla värden som du anger i fältet **tidsgränsen för godkända rekvisitioner (dagar)**.
+> Godkända rekvisitioner tidsgränser stöds inte för Planeringsoptimering. Till dess att de stöds ignoreras alla värden som du anger i fältet **tidsgränsen för godkända rekvisitioner (dagar)**.
 
 ## <a name="independent-supply-regardless-of-coverage-code"></a>Oberoende leverans, oavsett disponeringskod
 

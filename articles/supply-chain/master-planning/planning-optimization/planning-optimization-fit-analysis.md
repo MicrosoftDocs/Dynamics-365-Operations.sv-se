@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 4459a5d72fafe2596b7fc0cedf060b8f23bb43d2
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690005"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750718"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för Planeringsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
-Du bör analysera resultatet från bristanalysen för Planeringsoptimering som en del av migreringsprocessen. Observera att omfånget för Planeringsoptimering inte är lika med den aktuella inbyggda huvudplaneringsfunktionen. Vi rekommenderar att du samarbetar med din partner och läser dokumentationen för att förbereda migreringen. 
+Du bör analysera resultatet från bristanalysen för Planeringsoptimering som en del av migreringsprocessen. Observera att omfånget för Planeringsoptimering inte är lika med funktionen inaktuella huvudplaneringsmotorn. Vi rekommenderar att du samarbetar med din partner och läser dokumentationen för att förbereda migreringen.
 
-Med Planeringsoptimerinsanalys kan du identifiera var resultatet kan skilja sig mellan den inbyggda huvudplaneringsmotorn och Planeringsoptimeringen. Den här analysen utförs baserat på dina aktuella inställningar och data. 
+Med Planeringsoptimeringsanalys kan du identifiera var resultatet kan skilja sig mellan den inaktuella huvudplaneringsmotorn och Planeringsoptimeringen. Den här analysen utförs baserat på dina aktuella inställningar och data. 
 
 Om du vill se analysresultaten för Planeringsoptimering går du till **Huvudplanering** \> **Inställningar** \> **Bristanalys för Planeringsoptimering** och väljer **Kör analys**. Om analysen hittar eventuella inkonsekvenser visas de på samma sida. (Det kan ta några minuter att köra analysen.)
 
@@ -64,7 +64,6 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Baskalendrar | Kalendrar som använder baskalendern: *\#* | Denna funktion stöds nu. | Stöds | 
 | Batchdispositionskoder | Ej nettoberäkningsbara batchdispositionshuvuden: *\#* | Denna funktion stöds nu. För ytterligare information, se [Använd batchdispositionskoder när du vill markera batchar som tillgängliga eller inte tillgängliga](../../inventory/batch-disposition-codes.md) | Stöds |
 | CTP (capable to promise) | Standardorderinställningar med leveransdatumkontrollen inställd på CTP: *\#* | I Supply Chain Management 10.0.28 och nyare gör en process kallad *CTP för planeringsoptimering* bekräftade transport- och inleveransdatum tillgängliga när den dynamiska planen har körts. För äldre versioner av Supply Chain Management ignoreras den äldre CTP-inställningen när Planeringsoptimering aktiveras. | Stöds |
-| Kopiera statisk till dynamisk plan | Kopiering av statisk till dynamisk plan har aktiverats i huvudplaneringsparametrarna. | Planeringsoptimering kopierar inte den statiska planen till den dynamiska planen, oavsett den här inställningen. I allmänhet är detta ett mindre relevant begrepp på grund av snabbheten och den fullständiga genereringen av Planeringsoptimeringen. Om två eller flera planer används ska huvudplaneringen utlösas för varje plan. | Inte tillämpligt |
 | Bekräftelse | Disponeringsgrupper med automatisk bekräftelse av tidsgräns angiven: *\#* | I version 10.0.7 och senare stöds bekräftelser som ett separat bekräftat batchjobb när huvudplaneringen är slutförd (förutsatt att funktionen *Automatisk bekräftelse för Planeringsoptimerin* har aktiverats i [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Observera att automatisk bekräftelse för Planeringsoptimering baseras på orderdatum (startdatum), inte behovsdatum (slutdatum). Det här beteendet säkerställer att bekräftelse av planerade order sker i tid, utan att ledtiden behöver inkluderas i den bekräftade tidsgränsen. | Stöds |
 | Bekräftelse | Poster för artikeldisponering med automatisk bekräftelse angivet: *\#* | I version 10.0.7 och senare stöds automatiska bekräftelser som ett separat bekräftat batchjobb när huvudplaneringen är slutförd (förutsatt att funktionen *Automatisk bekräftelse för Planeringsoptimerin* har aktiverats i [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Observera att automatisk bekräftelse för Planeringsoptimering baseras på orderdatum (startdatum), inte behovsdatum (slutdatum). Det här beteendet säkerställer att bekräftelse av planerade order sker i tid, utan att ledtiden behöver inkluderas i den bekräftade tidsgränsen. | Stöds |
 | Bekräftelse | Huvudplaner med automatisk bekräftelse angivet: *\#* | I version 10.0.7 och senare stöds automatiska bekräftelser som ett separat bekräftat batchjobb när huvudplaneringen är slutförd (förutsatt att funktionen *Automatisk bekräftelse för Planeringsoptimerin* har aktiverats i [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Observera att automatisk bekräftelse för Planeringsoptimering baseras på orderdatum (startdatum), inte behovsdatum (slutdatum). Det här beteendet säkerställer att bekräftelse av planerade order sker i tid, utan att ledtiden behöver inkluderas i den bekräftade tidsgränsen. | Stöds |
@@ -93,34 +92,27 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Produktion | Formelversioner med sam-/biprodukter: *\#* | Denna funktion väntar. För närvarande kommer samprodukter och biprodukter som är associerade med formelversionen att ignoreras när Planeringsoptimering är aktiverad. | 2022 utgivningscykel 2 |
 | Produktion | Formelversioner med avkastning: *\#* | Denna funktion väntar. För närvarande ignoreras avkastning som är associerad med formelversionen när Planeringsoptimering är aktiverad. | 2022 utgivningscykel 2 |
 | Produktion | Planer med ordningsföljd: *\#* | Denna funktion väntar. För närvarande ignoreras ordningsföljd när Planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2022 utgivningscykel 2 |
-| Produktion | Släppta eller startade produktionsorder som inte är startade, där planerad start är tidigare än: *\#* | Denna funktion väntar. För närvarande, om en produktionsorder är försenad, kommer huvudplaneringen att förutsätta att den slutförs i dag. Detta är relevant för släppta produktionsorder där ett leveransdatum har passerats men ännu inte slutförts. | Framtida påfyllnad |
+| Produktion | Släppta eller startade produktionsorder som inte är startade, där planerad start är tidigare än: *\#* | Denna funktion väntar. För närvarande, om en produktionsorder är försenad, kommer huvudplaneringen att förutsätta att den slutförs i dag. Detta är relevant för släppta produktionsorder där ett leveransdatum har passerats men ännu inte slutförts. | 2022 utgivningscykel 2 |
 | Produktion | Planerade resurser med begränsad kapacitet: *\#* | Denna funktion stöds nu.| Stöds |
 | Produktion | Flöden använda i planering: *\#* | Denna funktion stöds. | Stöds |
-| Produktion | Reservation av försäljningsrad med nedbrytning: *\#* | Reservation av försäljningsrad med nedbrytning stöds inte när Planeringsoptimering aktiveras. | Framtida påfyllnad |
-| Produktion | Planering med nedbrytning av produktionsorder: *\#* | Tidsplanering som använder nedbrytning av produktionsorder stöds inte när Planeringsoptimering aktiveras. Produktionsorder kan tidsplaneras individuellt. | Framtida påfyllnad |
+| Produktion | Reservation av försäljningsrad med nedbrytning: *\#* | Reservation av försäljningsrad med nedbrytning stöds inte när Planeringsoptimering aktiveras. | 2022 utgivningscykel 2 |
+| Produktion | Planering med nedbrytning av produktionsorder: *\#* | Tidsplanering som använder nedbrytning av produktionsorder stöds inte när Planeringsoptimering aktiveras. Produktionsorder kan tidsplaneras individuellt. | 2022 utgivningscykel 2 |
 | Anbudsförfrågningar | Huvudplaner med anbudsförfrågningar aktiverat: *\#* | Denna funktion väntar. För närvarande anses inte anbudsförfrågningar vara efterfrågan när Planeringsoptimering är aktiverad. De kommer att ignoreras oavsett den här inställningen. | 2022 utgivningscykel 2 |
 | Rekvisitioner | Huvudplaner med rekvisitioner aktiverat: *\#* | Denna funktion stöds nu. Mer information finns i [inköpsrekvisition](purchase-requisitions.md) | Stöds |
 | Säkerhetsmarginaler | Disponeringsgrupper med säkerhetsmarginal: *\#* | Denna funktion stöds nu. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) | Stöds |
 | Säkerhetsmarginaler | Huvudplaner med säkerhetsmarginal: *\#* | Denna funktion stöds nu. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) |  Stöds |
-| Uppfyllelse av säkerhetslager | Poster för artikeldisponering med "uppfyllda minimum" som skiljer sig från "dagens datum + anskaffningstid": *\#* | Planeringsoptimering använder alltid *dagens datum + anskaffningstid*. Den här ändringen görs för att förbereda för en förenklad planeringsinställning i framtiden och för att ge ett åtgärdbart resultat. Om anskaffningstiden inte finns med i säkerhetslagret försenas planerade order som skapas för aktuell lagerbehållning alltid på grund av ledtiden. Det här beteendet kan orsaka betydande brus och oönskade planerade order. Det bästa tillvägagångssättet är att ändra inställningen så att *dagens datum + anskaffningstid* används. Uppdatera huvuddata för att undvika varningar. | Inte tillämpligt |
-| Försäljningsofferter | Huvudplaner med försäljningsofferter aktiverade: *\#* | Denna funktion väntar. För närvarande betraktas inte offerter när Planeringsoptimering aktiveras. De kommer att ignoreras oavsett den här inställningen. | 2022 utgivningscykel 2 eller senare |
-| Hållbarhetstid | Huvudplaner med hållbarhetstid aktiverat: *\#* | Denna funktion väntar. | 2022 utgivningscykel 2 |
+| Försäljningsofferter | Huvudplaner med försäljningsofferter aktiverade: *\#* | Denna funktion väntar. För närvarande betraktas inte offerter när Planeringsoptimering aktiveras. De kommer att ignoreras oavsett den här inställningen. | 2022 utgivningscykel 2 |
+| Hållbarhetstid | Huvudplaner med hållbarhetstid aktiverat: *\#* | Denna funktion stöds nu. | Stöds |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Planeringsoptimering – översikt](planning-optimization-overview.md)
-
-[Kom i gång med Planeringsoptimering](get-started.md)
-
-[Skillnader mellan klassisk huvudplanering och Planeringsoptimering](planning-optimization-differences-with-built-in.md)
-
-[Parametrar som inte används i Planeringsoptimering](not-used-parameters.md)
-
-[Visa planhistorik och planeringsloggar](plan-history-logs.md)
-
-[Använda filter på en plan](plan-filters.md)
-
-[Annullera ett planeringsjobb](cancel-planning-job.md)
+- [Systemarkitektur för huvudplanering](../master-planning-architecture.md)
+- [Kom i gång med huvudplanering](get-started.md)
+- [Skillnader mellan klassisk huvudplanering och Planeringsoptimering](planning-optimization-differences-with-built-in.md)
+- [Parametrar som inte används i Planeringsoptimering](not-used-parameters.md)
+- [Visa planhistorik och planeringsloggar](plan-history-logs.md)
+- [Köra planering för en delmängd av artiklar](plan-filters.md)
+- [Annullera ett planeringsjobb](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

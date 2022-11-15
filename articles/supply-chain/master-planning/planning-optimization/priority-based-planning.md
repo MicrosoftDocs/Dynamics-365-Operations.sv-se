@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 1a952fe5734f01325842a8a130b9322eadc67951
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335298"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740603"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbaserad planering
 
 [!include [banner](../../includes/banner.md)]
 
-I denna artikel beskrivs funktionen för prioritetsbaserad planering i Microsoft Dynamics 365 Supply Chain Management. Funktionen ger stöd för efterfrågestyrd planering, som är ett steg i DDMRP [(Demand Driven Material Requirements Planning)](ddmrp-overview.md). Med prioriterad planering kan Planeringsoptimering generera planerade order som baseras på planeringsprioritet istället för behovsdatum.
+I denna artikel beskrivs funktionen för prioritetsbaserad planering i Microsoft Dynamics 365 Supply Chain Management. Funktionen ger stöd för efterfrågestyrd planering, som är ett steg i DDMRP [(Demand Driven Material Requirements Planning)](ddmrp-overview.md). Med prioriterad planering kan systemet generera planerade order som baseras på planeringsprioritet istället för behovsdatum.
 
 Med prioriterad planering kan du prioritera lagerpåfyllnadsorder för att säkerställa att brådskande efterfrågan prioriteras över mindre viktig efterfrågan. En lagerpåfyllnadsorder prioriteras till exempel över en standardpåfyllnadsorder. Systemet kan automatiskt dela större order i separata mindre order där orderrader grupperas efter prioritet. Därefter kan alla order med hög prioritet bearbetas först.
 
@@ -37,11 +37,11 @@ Innan du kan använda funktionen måste den aktiveras i ditt system. Administrat
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>Var och hur planeringsprioriteringar tilldelas
 
-*Planeringsprioritetsinformation* om leverans och efterfrågan utgör den viktigaste delen i den prioritetsbaserade planeringen. Planeringsprioritet definierar hur viktig en efterfråge- eller leveransrad är. Planeringsoptimering används när fältet **Disponeringskod** anges som *Prioritet*.
+*Planeringsprioritetsinformation* om leverans och efterfrågan utgör den viktigaste delen i den prioritetsbaserade planeringen. Planeringsprioritet definierar hur viktig en efterfråge- eller leveransrad är. Huvudplanering används när fältet **Disponeringskod** anges som *Prioritet*.
 
 Planeringsprioritet är vanligtvis ett värde mellan 0 (noll) och 100, där 0 har högst betydelse. Detta värde visas och anges i fältet **Planeringsprioritet**. Fältet finns på följande sidor: **Rader för efterfrågeprognos**, **Information om försäljningsorder**, **Information om inköpsorder**, **Information om överförignsorder** samt **Information om planerad order**.
 
-När fältet **Disponeringskod** för relevant artikel eller disponeringsgrupp angetts som *Prioritet* kommer Planeringsoptimeringen att balansera tillgång och efterfrågan med hjälp av en behovsdriven metod när den beräknar planeringsprioriteten, samt – för respektive frisläppt produkt – beakta värdena som angetts för fälten **Minimum**, **Punkt för ombeställning** och **Maximum** på sidan **Artikeldisponering**.
+När fältet **Disponeringskod** för relevant artikel eller disponeringsgrupp angetts som *Prioritet* kommer huvudplanering att balansera tillgång och efterfrågan med hjälp av en behovsdriven metod när den beräknar planeringsprioriteten, samt – för respektive frisläppt produkt – beakta värdena som angetts för fälten **Minimum**, **Punkt för ombeställning** och **Maximum** på sidan **Artikeldisponering**.
 
 > [!NOTE]
 > Värdet *Prioritet* är endast tillgängligt för fältet **Disponeringskod** när Planeringsoptimering har aktiverats.

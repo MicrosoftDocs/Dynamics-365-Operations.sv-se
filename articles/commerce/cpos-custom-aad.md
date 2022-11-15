@@ -2,22 +2,19 @@
 title: Konfigurera CPOS för att använda ett eget Azure AD program
 description: I den här artikeln förklaras hur du konfigurerar Cloud POS (CPOS) för att använda ett anpassat Azure Active Directory (Azure AD) program.
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9222976"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746271"
 ---
 # <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>Konfigurera CPOS för att använda ett eget Azure AD program
 
@@ -52,6 +49,9 @@ Följ de här stegen om du vill skapa och konfigurera ett anpassat Retail Server
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Ställa in en anpassad CPOS-app i Azure AD
 
+> [!IMPORTANT]
+> Om du uppgraderar ett befintligt anpassat CPOS Azure AD app som skapades före Commerce version 10.0.21 följer du stegen i [Uppgradera en befintligt anpassad CPOS Azure AD app skapad före Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+
 Följ de här stegen om du vill skapa och konfigurera ett anpassat CPOS-program i Azure AD.
 
 1. Logga in på [Azure Active Directory administratörscentret](https://aad.portal.azure.com) med något Azure AD användarkonto. Användarkontot behöver inte ha administratörsbehörighet.
@@ -68,12 +68,25 @@ Följ de här stegen om du vill skapa och konfigurera ett anpassat CPOS-program 
 1. I avsnittet **Manifest** ange parametrarna **oauth2AllowIdTokenImplicitFlow** och **oauth2AllowImplicitFlow** till **true** och sedan **Spara**.
 1. I avsnittet **Tokenkonfiguration** om du vill lägga till två anspråk:
 
-    - Välj **Lägg till ytterligare anspråk**. Ange fältet **Tokentyp** till **ID** och välj sedan **sid** anspråk. Markera **Lägg till**.
-    - Välj **Lägg till ytterligare anspråk**. Ange fältet **Tokentyp** till **Åtkomst** och välj sedan **sid** anspråk. Markera **Lägg till**.
+    1. Välj **Lägg till ytterligare anspråk**. Ange fältet **Tokentyp** till **ID** och välj sedan **sid** anspråk. Markera **Lägg till**.
+    1. Välj **Lägg till ytterligare anspråk**. Ange fältet **Tokentyp** till **Åtkomst** och välj sedan **sid** anspråk. Markera **Lägg till**.
 
 1. I avsnittet **API-behörigheter** väljer du **Lägg till behörighet**.
 1. På fliken **API:er min organisation använder** sök efter den Retail Server-app du skapade i avsnittet [Ställa in ett anpassat Retail Server-program i Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad). Välj **Lägg till behörigheter**.
 1. I avsnittet **Översikt** notera värdet i **App (klient) ID**.
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>Uppgradera en befintlig anpassad CPOS Azure AD-app som skapats före Commerce version 10.0.21
+
+För att uppgradera en befintlig anpassad CPOS Azure AD-app som skapats före Commerce version 10.0.21, följ stegen nedan. 
+
+1. Öppna din anpassade CPOS Azure AD-app i Azure-portalen.
+1. Markera fliken **autentisering**.
+1. Kopiera och spara den ursprungliga omdirigerade URI-filen från typen **webb** så att du kan använda den senare och ta sedan bort den.
+1. Välj **Lägg till en plattform** och välj sedan **Ensidig app (SPA)**.
+1. Lägg till den ursprungliga webb- och omdirigerings-URI som kopieras ovan till SPA-plattform.
+1. I avsnittet **Tokenkonfiguration** om du vill lägga till två anspråk:
+    1. Välj **Lägg till ytterligare anspråk**. Ange fältet **Tokentyp** till **ID** och välj sedan **sid** anspråk. Markera **Lägg till**.
+    1. Välj **Lägg till ytterligare anspråk**. Ange fältet **Tokentyp** till **Åtkomst** och välj sedan **sid** anspråk. Markera **Lägg till**.
 
 ## <a name="update-the-cpos-configuration-file"></a>Uppdatera konfigurationsfilen för CPOS
 

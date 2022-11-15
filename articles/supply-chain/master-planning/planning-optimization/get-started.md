@@ -1,6 +1,6 @@
 ---
-title: Kom igång med Planeringsoptimering
-description: Denna artikel beskriver hur du använder funktionen Planeringsoptimering.
+title: Kom i gång med huvudplanering
+description: Denna artikel beskriver hur du använder funktionen huvudplanering i Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295942"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740340"
 ---
-# <a name="get-started-with-planning-optimization"></a>Kom igång med Planeringsoptimering
+# <a name="get-started-with-master-planning"></a>Kom i gång med huvudplanering
 
 [!include [banner](../../includes/banner.md)]
 
-Som [tidigare presenterade](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) Planeringsoptimeringen till att ersätta den befintliga inbyggda huvudplaneringsmotorn.
-
-Om du använder den inbyggda huvudplaneringsmotorn för närvarande bör du börja planera migreringen för Planeringsoptimering nu. Det är viktigt att du kommer igång direkt eftersom dina operationer annars skulle kunna påverkas när avgränsningen utförs (även om tvingande åtgärder inte har tidsplanerats). Vi uppmanar dig starkt att slutföra migreringen så snart Planeringsoptimering har stöd för de funktioner du behöver så att du kan börja dra nytta av de många prestandaförbättringar och andra nya funktioner som den nya tjänsten ger dig.
-
-Funktionen Planeringsoptimering stöder för närvarande inte alla funktioner som är tillgängliga i den planeringsmotor som är inbyggd i Supply Chain Management. Därför är det viktigt att du utvärderar om den tillgängliga funktionsuppsättningen i Planeringsoptimering ska uppfylla dina krav. Funktionen för Planeringsoptimering är för närvarande inte aktive rad som standard i Dynamics Lifecycle Services (LCS), så du har möjlighet att utföra utvärderingen innan funktionen är aktiverad.
-
-> [!NOTE]
-> Du måste begära ett undantag från migrering till Planeringsoptimering om huvudplaneringsprocessen inte innehåller någon produktion (huvudplanering genererade planerade produktionsorder) och du behöver den inbyggda huvudplaneringsmotorn utöver version 10.0.15. Från och med version 10.0.16 visas ett felmeddelande i miljöer vid körning av inbyggd huvudplanering utan att planerade tillverkningsorder genereras. Planeringsoptimering ska användas för alla nya distributioner som inte genererar planerade tillverkningsorder under huvudplaneringen. Ägare till befintliga miljöer som kör den inbyggda huvudplaneringsmotorn utan att generera planerade tillverkningsorder får ett e-postmeddelande med information om undantagsprocessen. Vi rekommenderar att du arbetar med en partner för att utvärdera och planera migreringen till Planeringsoptimering.
-
-Innan du aktiverar Planeringsoptimeringen rekommenderar vi att du utvärderar resultatet av anpassningsanalysen för Planeringsoptimering. Mer information finns i [anpassningsanalys för Planeringsoptimering](planning-optimization-fit-analysis.md).
+Huvudplaneringen i Supply Chain Management tillhandahålls av en extern tjänst som kallas tillägget Planeringsoptimering för Dynamics 365 Supply Chain Management. Detta ämne förklarar hur du hämtar och ställer in den tjänster.
 
 ## <a name="availability"></a>Tillgänglighet
 
@@ -108,31 +99,15 @@ Anslutningsstatus anger aktuell status för anslutningen mellan hantering av Sup
 Inställningen av alternativet **Använd Planeringsoptimering** avgör vilken planeringsmotor som används för huvudplanering:
 
 - **Ja** – Planeringsoptimering används för huvudplanering.
-- **Nej** – den inbyggda planeringsmotorn för Supply Chain Management används för huvudplanering.
+- **Nej** – den inaktuella huvudplaneringsmotorn används för huvudplanering.
 
-Den här inställningen gäller för alla juridiska personer (företag). Det är inte möjligt att använda Planeringsoptimering i vissa juridiska personer och den inbyggda huvudplaneringen i andra juridiska personer.
+Den här inställningen gäller för alla juridiska personer (företag). Det är inte möjligt att använda Planeringsoptimering i vissa juridiska personer och den inaktuella huvudplaneringsmotorn i andra juridiska personer.
 
 > [!NOTE]
-> Om befintliga planeringsbatchjobb som har skapats för den inbyggda planeringsmotorn för Supply Chain Management utlöses medan alternativet **Använd Planeringsoptimering** anges till **ja**, kommer dessa jobb att misslyckas.
+> Om befintliga planeringsbatchjobb som har skapats för den inaktuella huvudplaneringsmotorn utlöses medan alternativet **Använd Planeringsoptimering** anges till **ja**, kommer dessa jobb att misslyckas.
 
 ### <a name="integration-with-the-setup"></a>Integrering med inställningen
 
 Om Planeringsoptimeringen är aktiverad görs huvudplanering med tillägget Planeringsoptimering. I det här fallet påverkas huvudplaneringens resultat och funktioner.
 
-## <a name="additional-resources"></a>Ytterligare resurser
-
-[Villkor för förhandsgranskning](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Planeringsoptimering – översikt](planning-optimization-overview.md)
-
-[Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
-
-[Visa planhistorik och planeringsloggar](plan-history-logs.md)
-
-[Använda filter på en plan](plan-filters.md)
-
-[Annullera ett planeringsjobb](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

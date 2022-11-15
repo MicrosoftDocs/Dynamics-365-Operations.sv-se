@@ -1,6 +1,6 @@
 ---
-title: Nettobehov och pegging-information med inbyggd huvudplanering
-description: Denna artikel innehåller information om beräknade nettobehov och "pegging"-information i inbyggd huvudplanering.
+title: Information om nettobehov och pegging med den inaktuella huvudplaneringsmotorn
+description: Denna artikel innehåller information om beräknade nettobehov och "pegging"-information i inaktuella huvudplaneringsmotorn.
 author: t-benebo
 ms.date: 04/20/2022
 ms.topic: article
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 08a25af0d7ea15b4bc426dfc54b9b960762e11f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd11cf039704afc520cfa24185aa2e7842af9a00
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846081"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740286"
 ---
-# <a name="net-requirements-and-pegging-information-with-built-in-master-planning"></a>Nettobehov och pegging-information med inbyggd huvudplanering
+# <a name="net-requirements-and-pegging-information-with-the-deprecated-master-planning-engine"></a>Information om nettobehov och pegging med den inaktuella huvudplaneringsmotorn
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,8 +26,8 @@ När du kör huvudplanering är det viktigt att du förstår resultatet, hur bef
 
 På sidan **Nettobehov** visas det nettobehov som Planeringsoptimering har beräknat för produkten under huvudplanering. Här visas också de disponeringsinställningar som har tillämpats vid körning av huvudplanering, en uppdelning av behovsantal per transaktionstyp och pegging-information.
 
-Sidan **Nettobehov** beter sig lite annorlunda baserat på, oavsett om du använder Planeringsoptimering eller den inbyggda huvudplaneringsmotorn. För mer information om denna skillnad, se [Skillnader mellan huvudplanering och Planeringsoptimering](planning-optimization/planning-optimization-differences-with-built-in.md)
+Sidan **Nettobehov** beter sig lite annorlunda baserat på, oavsett om du använder Planeringsoptimering eller den inaktuella huvudplaneringsmotorn. För mer information om denna skillnad, se [Skillnader mellan planeringsoptimering och den inaktuella huvudplaneringsmotorn](planning-optimization/planning-optimization-differences-with-built-in.md)
 
-Mer information om hur du arbetar med sidan finns i [Nettobehov och pegging-information med Planeringsoptimering](planning-optimization/net-requirements.md).
+Mer information om hur du arbetar med sidan finns i [Nettobehov och pegging-information](planning-optimization/net-requirements.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

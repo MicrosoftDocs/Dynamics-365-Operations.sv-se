@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 176f40ad8cd1aa1831bbe50c0ebd91ec0cc3bc89
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335418"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739909"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Tidsplanering med resursurval baserat på kapacitet
 
@@ -43,7 +43,7 @@ Om du vill tilldela funktioner till en åtgärdsresurs använder du snabbflikarn
 - **Gäller från** – Ange det första datumet då resursen eller kapacitetstilldelningen används. Under tidsplaneringen används ingen resurs eller kapacitet som har en förfallen kapacitetstilldelning, även om resursen annars motsvarar behoven.
 - **Upphörande** – Ange det sista datumet då resursen eller kapacitetstilldelningen används. Under tidsplaneringen används ingen resurs eller kapacitet som har en förfallen kapacitetstilldelning, även om resursen annars motsvarar behoven.
 - **Nivå** – Ange nivån för effektivitet som resursen måste ha för kapaciteten. Om du sedan anger ett värde för **Minimum level needed** för resurs- eller kapacitetskravet, beaktar schemaläggningsmotorn kompetensnivån vid val av resurs Systemet väljer bara de resurser som har behov kapacitet på en nivå som är lika med eller överstiger den miniminivå som anges i resursbehov.
-- **Prioritet** – Det här fältet stöds ännu inte av Planeringsoptimering. Om du använder den inbyggda planeringsmotorn kan du emellertid använda fältet **Prioritet** i resursen eller kapacitetstilldelning för att definiera resursprioritet. Om *Prioritet* väljs i fältet **Primärt resursval** på sidan **Planeringsparametrar** välj den resurs som har den högsta prioriteten (det lägsta numeriska värdet i fältet **Prioritet**) först vid planeringen.
+- **Prioritet** – Det här fältet stöds ännu inte av Planeringsoptimering. Om du använder den inaktuella huvudplaneringsmotorn kan du emellertid använda fältet **Prioritet** i resursen eller kapacitetstilldelning för att definiera resursprioritet. Om *Prioritet* väljs i fältet **Primärt resursval** på sidan **Planeringsparametrar** välj den resurs som har den högsta prioriteten (det lägsta numeriska värdet i fältet **Prioritet**) först vid planeringen.
 
 ## <a name="example"></a>Exempel
 

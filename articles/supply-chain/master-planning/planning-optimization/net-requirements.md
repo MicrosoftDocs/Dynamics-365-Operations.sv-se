@@ -1,6 +1,6 @@
 ---
-title: Nettobehov och pegging-information med Planeringsoptimering
-description: Denna artikel innehåller information om beräknade nettobehov och "pegging"-information i Planeringsoptimering.
+title: Information om nettobehov och pegging
+description: Denna artikel innehåller information om beräknade nettobehov och "pegging"-information.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a31ff5490b08d92f0d966388b65de02bca25b050
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888540"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748449"
 ---
-# <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Nettobehov och pegging-information med Planeringsoptimering
+# <a name="net-requirements-and-pegging-information"></a>Information om nettobehov och pegging
 
 [!include [banner](../../includes/banner.md)]
 
-När du kör huvudplanering i Planeringsoptimering är det viktigt att du förstår resultatet, hur befintlig tillgång täcker efterfrågan och varför specifik tillgång genererades. På sidan **Nettobehov** kan du bättre se vilka beräknade behov huvudplanering leder till.
+När du kör huvudplanering är det viktigt att du förstår resultatet, hur befintlig tillgång täcker efterfrågan och varför specifik tillgång genererades. På sidan **Nettobehov** kan du bättre se vilka beräknade behov huvudplanering leder till.
 
-På sidan **Nettobehov** visas det nettobehov som Planeringsoptimering har beräknat för produkten. Här visas också de disponeringsinställningar som har tillämpats vid körning av huvudplanering, en uppdelning av behovsantal per transaktionstyp samt pegging-information.
+På sidan **Nettobehov** visas det nettobehov som huvudplanering har beräknat för produkten. Här visas också de disponeringsinställningar som har tillämpats vid körning av huvudplanering, en uppdelning av behovsantal per transaktionstyp samt pegging-information.
 
 ## <a name="open-the-net-requirements-page"></a>Öppna sidan Nettobehov
 
@@ -133,8 +133,6 @@ Nu ska du öppna sidan **Nettobehov** för produkt *1000* för att granska hur b
     ![Pegging-information för den planerade försäljningsordern](media/pegging-planned-purchase-order.png "Pegging-information för den planerade försäljningsordern")
 
 > [!NOTE]
-> Eftersom Planeringsoptimering ännu inte har stöd för vissa funktioner, inkluderas inte behovstyperna *Säkerhetslager* och *Utgången batch* på sidan **Nettobehov**. Mer information finns i [anpassningsanalys för Planeringsoptimering](planning-optimization-fit-analysis.md).
->
-> Om du använder den inbyggda huvudplaneringsmotorn stöds batchkontrollerade produkter. För batchkontrollerade produkter visas utgången lagerbehållning på sidan **Nettobehov** men den är inte peggad med efterfrågekrav. Utgångna behållningsrader av den här typen visas som behovsrader *Utgången batch* på sidan **Nettobehov**.
+> Kravet *säkerhetslager* ingår inte på sidan **Nettobehov**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Visa planhistorik och planeringsloggar
-description: I denna artikel beskrivs hur du visar historiken för planeringsjobb som utlöses av funktionen för Planeringsoptimering.
+description: I den här artikeln förklaras hur du visar historiken för planeringsjobb.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863952"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740942"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Visa planhistorik och planeringsloggar
 
 [!include [banner](../../includes/banner.md)]
 
-I denna artikel beskrivs hur du visar historiken för planeringsjobb som utlöses av funktionen för Planeringsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+I den här artikeln förklaras hur du visar historiken för planeringsjobb i Microsoft Dynamics 365 Supply Chain Management.
 
 Om du vill visa historiken för en plan öppnar du planen genom att gå till **huvudplanering** \> **inställningar** \> **planer** \> **huvudplaner** och väljer **historik**. I historiken visas alla jobb för den valda planen. Listan innehåller slutförda och aktiva jobb.
 
@@ -47,14 +47,6 @@ Gör på följande sätt om du vill visa automatiskt bekräftande fel och andra 
     - Om du använder det äldre formuläret i åtgärdsfönstret, på fliken **Batch-jobb**, välj **Logg**.
 
 1. Välj **Meddelandeinformation** om du vill öppna fönstret **Meddelandeinformation** där du kan visa alla varningar och fel som har samlats in under bearbetningen.
-
-## <a name="related-resources"></a>Relaterade resurser
-
-- [Planeringsoptimering – översikt](planning-optimization-overview.md)
-- [Kom i gång med Planeringsoptimering](get-started.md)
-- [Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
-- [Använda filter på en plan](plan-filters.md)
-- [Annullera ett planeringsjobb](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

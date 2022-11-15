@@ -1,6 +1,6 @@
 ---
 title: Planera med negativ behållningskvantitet
-description: Denna artikel förklarar hur negativ behållning hanteras när du använder Planeringsoptimering.
+description: I den här artikeln förklaras hur negativ behållning hanteras.
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04006bb12142be69c84bc8085dd82fc99280e90b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4fc8b37fd800e3b4652513f150f9806bf1d5d67
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856147"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741133"
 ---
-# <a name="planning-with-negative-on-hand-quantities"></a>Planera med negativ lagerbehållning
+# <a name="planning-with-negative-on-hand-quantities"></a>Planera med negativ behållningskvantitet
 
 [!include [banner](../../includes/banner.md)]
 
 Om systemet visar en negativ total lagerbehållning behandlas kvantiteten som 0 (noll) i planeringsmotorn för att undvika överleverans. Så här fungerar funktionen:
 
-1. Funktionen för Planeringsoptimering aggregerar lagerbehållningen till den lägsta nivån av disponeringsdimensioner. (Till exempel om *plats* är inte en disponeringsdimensionen, planerar optimeringsaggregat för närvarande kvantiteter vid nivå *lagerställe*.)
+1. Huvudplanering aggregerar lagerbehållningen till den lägsta nivån av disponeringsdimensioner. (Till exempel om *plats* är inte en disponeringsdimensionen, huvudplanering aggregerar för närvarande kvantiteter vid nivå *lagerställe*.)
 1. Om den sammanlagda lagerbehållningen på den lägsta nivån för disponering är negativ, förutsätter systemet att lagerbehållningen verkligen är 0 (noll).
 
 > [!IMPORTANT]
@@ -88,14 +88,6 @@ Systemet konfigureras så här:
 - Det finns en försäljningsorder med en kvantitet *10* st. av produkten *FG*.
 - Försäljningsorderkvantiteten reserveras fysiskt mot befintlig lagerbehållning.
 
-Du justerar sedan kvantiteten för produkt *FG* så lagerbehållningen blir 5. Eftersom beställningsproduktlagret är 5, reserveras försäljningsorder kvantiteten nu mot kvantitet som inte finns tillgänglig (det skulle vara liknande om beställningen var 0, i vilket fall försäljningsordern skulle reserveras mot negativt lager ). Om du kör huvudplanering nu, en planerad beställning av kvantitet 5 för *FG* kommer att skapas för att leverera försäljningsordern, eftersom Planeringsoptimering alltid kommer att använda befintligt utbud eller skapa en ny planerad order för att tillhandahålla den fysiska reservationen.
-
-## <a name="related-resources"></a>Relaterade resurser
-
-- [Planeringsoptimering – översikt](planning-optimization-overview.md)
-- [Kom i gång med Planeringsoptimering](get-started.md)
-- [Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
-- [Visa planhistorik och planeringsloggar](plan-history-logs.md)
-- [Annullera ett planeringsjobb](cancel-planning-job.md)
+Du justerar sedan kvantiteten för produkt *FG* så lagerbehållningen blir 5. Eftersom beställningsproduktlagret är 5, reserveras försäljningsorder kvantiteten nu mot kvantitet som inte finns tillgänglig (det skulle vara liknande om beställningen var 0, i vilket fall försäljningsordern skulle reserveras mot negativt lager ). Om du kör huvudplanering nu, en planerad beställning av kvantitet 5 för *FG* kommer att skapas för att leverera försäljningsordern, eftersom Planeringsoptimering alltid kommer att använda befintligt utbud eller skapa en ny huvudplanering för att tillhandahålla den fysiska reservationen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

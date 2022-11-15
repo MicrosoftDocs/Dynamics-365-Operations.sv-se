@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f078fda02a11eb2073738d59b45f81698b707653
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37c38ab9cec8ae3c9d4decf8043b43ea2251083e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889531"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739740"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Felsöka Planeringsoptimering 
 
@@ -37,13 +37,13 @@ Planeringsoptimering kräver en LCS-aktiverad miljö med hög tillgänglighet, l
 
 ## <a name="planning-of-batch-jobs-fails-when-planning-optimization-is-enabled"></a>Planering av batchjobb misslyckas när Planeringsoptimeringen aktiveras
 
-När du aktiverar Planeringsoptimering inaktiveras den inbyggda huvudplaneringsmotorn automatiskt. Huvudplaneringsjobb i batch som har skapats för den inbyggda Supply Chain Management-motorn kommer att misslyckas om de utlöses medan Planeringsoptimeringen är aktiverad. Ett felmeddelande, till exempel *Denna åtgärd utlöste en huvudplanering som inte stöds när Planeringsoptimering har aktiverats*, kan komma att visas.
+När du aktiverar Planeringsoptimering inaktiveras den inaktuella huvudplaneringsmotorn automatiskt. Huvudplaneringsjobb i batch som har skapats för den inaktuella huvudplaneringsmotorn kommer att misslyckas om de utlöses medan Planeringsoptimeringen är aktiverad. Ett felmeddelande, till exempel *Denna åtgärd utlöste en huvudplanering som inte stöds när Planeringsoptimering har aktiverats*, kan komma att visas.
 
-**Korrigera**: Avbryt alla batchjobb för huvudplanering som har skapats för den inbyggda planeringsmotorn för Supply Chain Management.
+**Korrigera**: Avbryt alla batchjobb för huvudplanering som har skapats för den inaktuella huvudplaneringsmotorn.
 
 ## <a name="planning-optimization-results-are-different-from-earlier-results"></a>Resultaten av Planeringsoptimeringen skiljer sig från tidigare resultat
 
-Planeringsoptimeringen skiljer sig från den inbyggda huvudplaneringsdesignen i vissa områden. Detta kan också orsakas av väntande funktioner.
+Planeringsoptimeringen skiljer sig från den inaktuella huvudplaneringsmotorn i vissa områden. Detta kan också orsakas av väntande funktioner.
 
 **Korrigera**: Kör anpassningsanalys av Planeringsoptimeringen och analysera resultatet när du refererar till den tillhörande dokumentationen i syfte att förstå konsekvenserna. Mer information finns i [anpassningsanalys för Planeringsoptimering](planning-optimization-fit-analysis.md).
 
@@ -63,9 +63,8 @@ Detta är relaterat till en väntande funktion som planeras som en del av suppor
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Kom igång med Planeringsoptimering](get-started.md)
-
-[Bristanalys för Planeringsoptimering](planning-optimization-fit-analysis.md)
+- [Kom i gång med huvudplanering](get-started.md)
+- [Bristanalys för Planeringsoptimering](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

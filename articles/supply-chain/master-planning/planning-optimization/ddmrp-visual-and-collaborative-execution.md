@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689787"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740834"
 ---
 # <a name="visual-and-collaborative-execution"></a>Visuell och samarbetsinriktad körning
 
@@ -34,7 +34,7 @@ I Microsoft Dynamics 365 Supply Chain Management kan du visuellt spåra hur buff
 1. Välj en frisläppt artikel som har konfigurerats som en avdelningspunkt. (Mer information finns i [Lagerplacering](ddmrp-inventory-positioning.md).)
 1. I åtgärdsfönstret, på fliken **Plan**, väljer du **Artikeldisponering**.
 1. På sidan **Artikeldisponering** väljer du en post för artikeldisponering som skapar en avdelningspunkt. (Den här posten visar namnet på en disponeringsgrupp som har konfigurerats för att skapa avdelningspunkter.)
-1. Välj fliken **Behållning**. På den här fliken visas ett diagram som visar hur lagerbehållningskvantiteter ändras över tiden, tillsammans med värdet på lagerbehållningsnivån som registreras för en viss period varje gång planeringsoptimeringen körs. Fliken innehåller även en tabell som visar vilken av följande kategorier som respektive registrerad behållningsnivå hamnar i:
+1. Välj fliken **Behållning**. På den här fliken visas ett diagram som visar hur lagerbehållningskvantiteter ändras över tiden, tillsammans med värdet på lagerbehållningsnivån som registreras för en viss period varje gång huvudplaneringen körs. Fliken innehåller även en tabell som visar vilken av följande kategorier som respektive registrerad behållningsnivå hamnar i:
 
     - **Kritiskt låg** – Mindre än hälften av minimum för perioden.
     - **Låg** – Mellan minimum och minimum.

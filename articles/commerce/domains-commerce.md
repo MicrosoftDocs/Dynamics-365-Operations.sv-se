@@ -2,19 +2,19 @@
 title: Domäner i Dynamics 365 Commerce
 description: I denna artikel beskrivs hur domäner hanteras i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: f1a2de7984aad7d291b8a4dc68f5690d57ebe6cc
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465204"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750691"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domäner i Dynamics 365 Commerce
 
@@ -95,6 +95,12 @@ Till exempel miljön "xyz" för att få åtkomst till det publicerade webbplats 
 
 Om ingen frågesträng för domän har angetts i en miljö med flera domäner, använder Commerce den första domän som du har angett. Om t.ex. sökvägen "Fabrikam" tillhandahölls först under webbplatskonfigurationen kan URL:en `https://xyz.dynamics365commerce.ms` användas för åtkomst till den publicerade webbplatsens innehållsplatsen för `www.fabrikam.com` .
 
+Du kan också lägga till anpassade domäner. För att göra det, på sidan för miljöhandelshantering för projektet, under **näthandel** och välj **+ Lägg till anpassad domän**. Skjutreglaget visar de befintliga anpassade domänerna och ger dig möjlighet att lägga till en ny anpassad domän.
+
+## <a name="update-which-commerce-scale-unit-is-used"></a>Uppdatera vilken Commerce Scale Unit som används
+
+Den CSU (Commerce Scale Unit) som används av Commerce väljs vanligtvis när en miljö skapas. Med Commerce kan du ändra vilken CSU-instans som din miljö använder, så att du kan underhålla din arkitektur bättre genom funktionen Självbetjäning och minska behovet av att kontakta support. Om du vill uppdatera CSU-instansen går du till din miljös handelshanteringssida för projektet och väljer sedan **Uppdateringsskalenhet**. Använd skjutreglaget **Ny Commerce Scale Unit** för att välja en ny CSU-instans i listan över CSU:er som är tillgängliga för din miljö.
+
 ## <a name="traffic-forwarding-in-production"></a>Vidarebefordran av trafik i produktion
 
 Du kan simulera flera domäner med hjälp av parametrar för domänfrågor i själva commerce.dynamics.com slutpunkt. När du behöver gå in i produktionen måste du vidarebefordra trafiken för din anpassade domän till slutpunkten `<e-commerce tenant name>.dynamics365commerce.ms`.
@@ -103,9 +109,9 @@ Slutpunkten `<e-commerce tenant name>.dynamics365commerce.ms` stöder inte anpas
 
 Om du vill konfigurera anpassade domäner med hjälp av en Front Door Service eller CDN har du två alternativ:
 
-- Konfigurera en Front Door Service som Azure Front Door för att hantera klienttrafik och ansluta till din Commerce-miljö. Detta ger bättre kontroll över hantering av domäner och certifikat samt mer detaljerade säkerhetsprinciper.
+- Skapa en frontservice som Azure Front Door du vill hantera front-slut-trafik och ansluta till din handelsmiljö, som ger större kontroll över domän- och certifikathantering och mer detaljerade säkerhetspolicyer.
 
-- Använd den inlevererade Azure Front Door-instansen. Detta kräver samordning av åtgärden med Dynamics 365 Commerce-teamet för domänverifiering och för att hämta SSL-certifikat för din produktionsdomän.
+- Använd den Commerce-levererade Azure Front Door-instansen, som kräver samordning av åtgärden med Dynamics 365 Commerce-teamet för domänverifiering och för att hämta SSL-certifikat för din produktionsdomän.
 
 > [!NOTE]
 > Om du använder en extern CDN- eller ytterdörrstjänst, se till att förfrågan landar på Commerce-plattformen med det värdnamn som tillhandahålls av Commerce, men med X-Forwarded-Host (XFH)-huvudet\<custom-domain\>. Om till exempel din Commerce-slutpunkt är `xyz.dynamics365commerce.ms` och den anpassade domänen är `www.fabrikam.com`, ska värdrubriken för den vidarebefordrade begäran vara `xyz.dynamics365commerce.ms` och XFH-rubiken ska vara `www.fabrikam.com`.

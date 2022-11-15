@@ -2,24 +2,24 @@
 title: Skapa uppgiftslistor och lägga till uppgifter
 description: I denna artikel beskrivs hur du skapar en uppgiftslista och lägger till uppgifter i dem i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: f754ee78547e785fa2386dee6c3d89371bc0de41
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b81f27f79362516f8a25766c1f663a7691ebb42a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268930"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746170"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Skapa uppgiftslistor och lägga till uppgifter
 
@@ -35,7 +35,7 @@ Både chefer och arbetare kan skapa uppgiftslistor i Commerce backoffice och sed
 
 ## <a name="create-a-task-list"></a>Skapa en uppgiftslista
 
-Gör så här om du vill skapa en uppgiftslista.
+Innan du börjar processen med att skapa en uppgiftslista måste du kontrollera att du har slutfört konfigurationerna i artikeln [Konfigurera uppgiftshantering](task-mgmt-configure.md). Gör så här om du vill skapa en uppgiftslista.
 
 1. Gå till **Retail och Commerce \> Uppgiftshantering \> Administration av uppgiftshantering**.
 1. Välj **Ny** och ange sedan värden i fälten **Namn**, **Beskrivning** och **Ägare**.

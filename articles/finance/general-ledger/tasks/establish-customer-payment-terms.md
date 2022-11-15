@@ -2,7 +2,7 @@
 title: Upprätta villkor för kundbetalning
 description: I den här proceduren definieras kassarabatt- och förfallodatuminställningar.
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9b2ae5e63a2efb4bc913efa4d88c65a70133a2d9
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065721"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752787"
 ---
 # <a name="establish-customer-payment-terms"></a>Upprätta villkor för kundbetalning
 
@@ -34,7 +34,11 @@ I den här proceduren definieras kassarabatt- och förfallodatuminställningar. 
 6. Ange ett datum i fältet **Datum**. Datumet då anges som ett tal, till exempel ”10”, och inte som ”10:e”. 
 7. Klicka på **Spara**.
 8. Stäng sidan.
-9. Gå till **navigeringsfönstret > Moduler > Kundreskontra > Betalningsinställning > Betalningsvillkor**.
+9. Gå till **navigeringsfönstret > Moduler > Kundreskontra > Betalningsinställning > Betalningsvillkor**. 
+
+>[!NOTE] 
+>Om **betalningsvillkoren** är **Kontant** måste fältet **Kontantbetalning** på sidan **Betalningsvillkor** måste vara **Nej**.
+
 10. Klicka på **Ny**. **Betalningsvillkor** används för att definiera hur förfallodatumen ska beräknas. Kassarabattdatuminställningar definieras i en separat sida. 
 11. Ange ett ID i fältet **Betalningsvillkor**.
 12. Ange en beskrivning i fältet **beskrivning**.

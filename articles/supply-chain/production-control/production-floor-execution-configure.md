@@ -2,7 +2,7 @@
 title: Konfigurera körningsgränssnittet för produktionsgolvet
 description: I denna artikel beskrivs hur du skapar en eller flera konfigurationer för körningsgränssnittet för produktionsgolvet. När du öppnar körningsgränssnittet för produktionsgolvet läser det automatiskt in ett valt konfigurations- och jobbfilter som är specifikt för webbläsaren och enheten. I konfigurationen ställer du in de principer som måste tillämpas för en viss användning.
 author: johanhoffmann
-ms.date: 08/05/2022
+ms.date: 11/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
-ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
+ms.openlocfilehash: 641b293617df608bc07b97c077dbcd05664f8e2a
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9708736"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748697"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -85,17 +85,19 @@ Funktionen ger en förbättrad upplevelse av att visa listor med serie-, batch- 
 
 Innan du kan använda funktionen måste den aktiveras i ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.29 version av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.29 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visa fullständigt serie-, batch- och ID-nummer i körningsgränssnittet för produktionsgolv* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) .
 
-
 Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratrörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visa fullständigt serie-, batch- och ID-nummer i körningsgränssnittet för produktionsgolv* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) .
 
 ### <a name="register-material-consumption"></a>Registrera materialförbrukning
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och löpnummer. Vissa tillverkare, särskilt de som finns i bearbetningsindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. Medarbetare kan till exempel använda en våg för att väga hur mycket material som förbrukas medan de arbetar. För att garantera fullständig spårbarhet av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras.
 
 Det finns två versioner av denna funktion. Den ena stöder artiklar som *inte* aktiverats för att använda lagerstyrningsprocesser (WMS). Den andra stöder artiklar som *är* aktiverade för att använda WMS. Om du vill använda den här funktionen ska du aktivera en av eller båda följande funktioner i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i den här ordningen), beroende på om du har artiklar som är aktiverade för WMS:
 
 - *Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (icke-WMS)*
-- *Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)*
+- *(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)*
 
 > [!IMPORTANT]
 > Du kan använda enbart versionen utan WMS. Om du använder WMS måste du emellertid aktivera båda funktioner.
@@ -138,6 +140,25 @@ För att använda den här funktionen, aktivera följande funktion i [funktionsh
 
 - *Ytterligare konfiguration i körningsgränssnittet för produktionsgolvet*
 
+### <a name="enable-the-my-jobs-tab"></a>Aktivera fliken Mina jobb
+
+Fliken **Mina jobb** gör det enkelt för medarbetarna att visa alla icke-startade och icke-definierade jobb som har tilldelats enkom för dem. Det är användbart i företag där jobb ibland eller alltid tilldelas specifika medarbetare (personal) istället för andra typer av resurser (till exempel maskiner).
+
+För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Fliken Mina jobb på körningsgränssnittet för produktionsgolvet*
+
+### <a name="enable-use-of-a-numpad-on-the-sign-in-page"></a>Aktivera numeriskt tangentbord på inloggningssidan
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Den här funktionen låter administratörer lägga till en numerisk kontroll på inloggningssidan för gränssnittet för produktionsgolvet. Arbetarna kan sedan logga in med hjälp av numeriska tangentbordet för att ange ID-bricka eller personliga nummer.
+
+För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Aktivera numeriskt tangentbord på inloggningssidan*
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeta med konfigurationer av körningsgränssnittet för produktionsgolvet
 
 Om du vill skapa och underhålla konfigurationer av körning på produktionsgolv går du till **Produktionskontroll \> Inställning \> Tillverkningskörning \> Konfigurera för produktionsgolvet**. På sidan **Konfigurera för produktionsgolvet** visas en lista över befintliga konfigurationer. På den här sidan kan du utföra följande åtgärder:
@@ -161,6 +182,7 @@ Följande inställningar finns på snabbfliken **Allmänt**.
 - **Lås medarbetare** – när det här alternativet är inställt på *Nej* kommer arbetstagarna att loggas ut omedelbart efter att de har gjort en registrering (t.ex. ett nytt jobb). Gränssnittet kommer sedan tillbaka till inloggningssidan. När det här alternativet är inställt på *Ja* kommer varje medarbetare att vara inloggad på körningsgränssnittet för produktionsgolvet. En arbetare kan dock manuellt logga ut så att en annan arbetare kan logga in medan ett körningsgränssnitt för produktionsgolvet fortsätter köras under samma systemanvändarkonto. Mer information om dessa typer av konton finns i [Tilldela användare](config-job-card-device.md#assigned-users).
 - **Använd den faktiska tiden för registrering** – Ställ in detta alternativ på *Ja* att konfigurera tiden för varje ny registrering för den exakta tidpunkt då arbetstagaren lämnade in registreringen. När alternativet är inställt på *Nej*, används inloggningstiden istället. Du vill vanligtvis ange alternativet till *Ja* om du anger **Lås medarbetare** och/eller **Enskild arbetare** till *Ja* i fall där arbetstagare ofta förblir inloggade under längre perioder.
 - **En arbetare** – Ställ in det här alternativet på *Ja* om bara en av dem använder varje körningsgränssnitt för produktionsgolvet där denna konfiguration är aktiv. När det här alternativet är inställt på *Ja* alternativet **Lås medarbetare** automatiskt till *Ja*. Dessutom tar den här inställningen bort kravet (och möjligheten) för arbetaren att logga in med hjälp av ID-bricka (eller liknande ID). Istället loggar medarbetaren in Microsoft Dynamics 365 Supply Chain Management genom att använda ett systemanvändarkonto som är länkat till en *tidsregistrerad arbetare* (från tabellen *arbetaren*) och loggas in på körningsgränssnittet för produktionsgolvet samtidigt som medarbetaren.
+- **Aktivera numeriskt tangentbord** – Ställ in det här alternativet till *Ja* för att lägga till en numerisk knappsats på inloggningsskärmen, vilket gör att arbetare kan ange sitt märkes-ID eller personliga nummer med hjälp av en numerisk pekskärm. Ange det här alternativet till *Nej* för att gömma numeriska tangentbordet.
 - **Tillåt låsning av pekskärm** – Ange detta alternativ till *Ja* medarbetare ska kunna låsa pekskärmen på körningsgränssnittet för produktionsgolvet så att de kan sanera den. När det här alternativet är inställt på *Ja* läggs knappen **Låsskärm för sanering** läggs till på inloggningssidan. När en medarbetare väljer den här knappen, låser sig pekskärmen tillfälligt för att förhindra indata. En nedräkningstimer visas också. Arbetaren kan nu rensa enheten och skärmen på ett säkert sätt. När nedräkningen är klar låses pekskärmen upp automatiskt.
 - **Tidslängd för skärmlåsning** – När alternativet **Tillåt låsning pekskärm** anges till *Ja*, använd det här alternativet för att ange antalet sekunder som pekskärmen ska vara låst för att desinficera. Längden måste vara mellan 5 och 120 sekunder.
 - **Generera ID-nummer** – Ange det här alternativet *Ja* om du vill generera ett nytt ID-nummer varje gång en medarbetare använder körningsgränssnittet för produktionsgolvet för att rapportera som färdig. ID-numret genereras från en nummerserie som ställs in på sidan **parametrar för Lagerstyrning**. Om alternativet *Nej* måste arbetare ange ett befintligt ID-nummer när den rapporteras som färdig.

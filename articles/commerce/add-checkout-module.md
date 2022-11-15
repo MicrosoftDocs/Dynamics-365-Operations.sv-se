@@ -2,7 +2,7 @@
 title: Kassamodul
 description: I denna artikel beskrivs hur du lägger till en kassamodul på en sida och konfigurerar de obligatoriska egenskaperna.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280485"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746236"
 ---
 # <a name="checkout-module"></a>Kassamodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I denna artikel beskrivs hur du lägger till en kassamodul på en sida och konfigurerar de obligatoriska egenskaperna.
 
@@ -105,9 +106,11 @@ Om du vill lägga till en kassamodul på en ny sida och konfigurera de obligator
 1. Skapa en mall som använder det nya kassafragmentet.
 1. Skapa en kassasida som använder den nya mallen.
 
+> [OBS] När du använder engångsauktorisering enligt beskrivningen i [Utökade betalningar i webbutikskassa](./dev-itpro/enhanced-sca.md) i avsnittet **Betalningsinformation** på kassasidan, bekräfta att kassans behållare är placerad sist. På så sätt ser du till att all nödvändig information samlas in via utcheckningssidan före utchecknings- och slutförandeåtgärderna för slutbetalningen. 
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Kundvagnsmodul](add-cart-module.md)
+[Vagnmodul](add-cart-module.md)
 
 [Ikon för kundvagnsmodul](cart-icon-module.md)
 
