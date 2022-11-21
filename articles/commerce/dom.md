@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878524"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764192"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8878524"
 
 Den här artikeln beskriver funktionen fördelad orderhantering (DOM) i Microsoft Dynamics 365 Commerce.
 
-DOM är en omnikanalslösning för optimering av orderuppfyllelse som bidrar till att maximera orderuppfyllelsen i försörjningskedjan. DOM ser till att produkter levereras till dina kunder i rätt kvantitet, från rätt källa, vid rätt tidpunkt. DOM kan också hjälpa dig maximera vinsterna, minimera kostnaderna och uppfylla kraven på servicenivå.
+DOM är en flerkanalslösning för optimering av orderuppfyllelse som bidrar till att maximera orderuppfyllelsen i försörjningskedjan. DOM ser till att produkter levereras till dina kunder i rätt kvantitet, från rätt källa, vid rätt tidpunkt. DOM kan också hjälpa dig maximera vinsterna, minimera kostnaderna och uppfylla kraven på servicenivå.
 
 DOM använder MIP (Mixed Integer Programming) och prediktiva analysmodeller för att utföra optimeringar för både batcher och enskilda order. Med den här funktionen kan handlare använda definierade regler för att balansera många motsägelsefulla orderuppfyllelsebehov. I ett modern leveransnätverk där produktuppfyllelsen kan komma från flera kanaler måste organisationerna snabbt anpassa sig efter orderändringar, problem med leverantörstillgänglighet och toppar i efterfrågan. DOM hjälper dig maximera orderuppfyllelsen och hitta rätt källor för produktleverans utifrån affärsbegränsningar och affärsmål, till exempel att minimera kostnaderna genom att uppfylla order från de närmaste källorna. DOM använder avståndet mellan källorna för produktuppfyllelse och leveransdestinationerna, kostnadsfaktorer som har definierats som optimeringsmål och regler som har definierats som begränsningar, till exempel lager vid uppfyllelsenoder för att optimera orderuppfyllelsen. Med DOM kan du definiera flera profiler som gör det möjligt för företag att köra olika optimeringsstrategier beroende på vilken typ av affärs- eller konsumentsegment som används. 
 
@@ -68,9 +68,9 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
         > [!NOTE]
         > Den förenklade problemlösaren medföljer så att återförsäljare ska kunna testa DOM-funktionen utan att behöva använda den särskilda licensen. Den förenklade problemlösaren bör inte användas i produktionsmiljö.
         >
-        > Produktionsproblemlösaren förbättrar prestandan (till exempel antalet order och orderrader som går att hantera under en körning) och konvergens av resultaten (eftersom en orderbatch kanske inte ger det bästa resultatet i vissa scenarier). För en del regler som regeln för **partiell order** och regeln för **maximalt antal platser** måste Produktionsproblemlösaren användas.
+        > Produktionsproblemlösaren förbättrar prestandan (till exempel antalet order och orderrader som går att hantera under en körning) och konvergens av resultaten (eftersom en orderbatch kanske inte ger det bästa resultatet i vissa scenarier). Regeln för **Partiell order** kräver Produktionsproblemlösaren.
 
-6. Gå tillbaka till **Retail och Commerce \> Fördelad orderhantering \> Inställningar \> DOM-parametrar**.
+6. Gå tillbaka till **Butik och handel \> Fördelad orderhantering \> Inställningar \> DOM-parametrar**.
 7. Tilldela de olika DOM-enheterna de nödvändiga nummerserierna på fliken **Nummerserier**.
 
     > [!NOTE]

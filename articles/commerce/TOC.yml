@@ -590,6 +590,8 @@
                           href: dev-itpro/adyen-connector-faq.md
                         - name: Konfigurera Google Pay med Adyen
                           href: dev-itpro/google-pay-adyen.md
+                        - name: Konfigurera Apple Pay med Adyen
+                          href: dev-itpro/apple-pay-adyen.md
                         - name: Felsök Dynamics 365 Payment Connector för Adyen
                           href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Spara betalningsmedel online med anslutningsprogrammet Adyen
@@ -602,13 +604,15 @@
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Ordna scenarier för fakturabetalning
                       href: payinvoice.md
+                    - name: Förskottsbetalningar i Dynamics 365 Commerce
+                      href: dev-itpro/prepayments-commerce.md
                     - name: Förebygga dubblettbetalningar
                       href: duplicate-payment-protection.md
-                    - name: Översikt över omnikanalsbetalningar
+                    - name: Översikt över flerkanalsbetalningar
                       href: omni-channel-payments.md
                     - name: Flera tillgängliga betalningsmetoder för upphämtning i butik
                       href: dev-itpro/multiple-payments-pickup.md
-                    - name: Omnikanalsorderbetalningar för Commerce
+                    - name: Flerkanalsorderbetalningar för Commerce
                       href: dev-itpro/commerce-payments.md
                     - name: Arkivera data för kreditkortstransaktion
                       href: dev-itpro/archive-cc-data.md

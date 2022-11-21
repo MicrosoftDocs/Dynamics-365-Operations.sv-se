@@ -3391,10 +3391,12 @@
                   href: landed-cost\landed-cost-entities-container-activities.md
                 - name: Entiteter för leverantörsfaktura
                   href: landed-cost\landed-cost-entities-vendor-invoices.md
-        - name: Hantering av distributionslager
+        - name: Lagerstyrning
           items:
-            - name: Hantering av distributionslager – översikt
+            - name: Översikt över lagerstyrning
               href: warehousing/warehouse-management-overview.md
+            - name: Kom i gång med att konfigurera lagerstyrningsmodulen
+              href: warehousing/get-started-with-setting-up-module.md
             - name: Åtgärder för mottagande distributionslager
               items:
                 - name: Lagerstyrning av inkommande laster för inköpsorder

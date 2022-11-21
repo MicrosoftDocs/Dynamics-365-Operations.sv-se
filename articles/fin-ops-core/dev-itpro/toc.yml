@@ -1652,6 +1652,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Tilldela användare säkerhetsroller
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Active Directory-säkerhetsgrupper
+                  href: sysadmin/active-directory-security-group.md
                 - name: Importera eller exportera anpassad säkerhetskonfiguration med hjälp av datahantering
                   href: sysadmin/import-export-customized-security.md
                 - name: Säkerhetsdiagnos för uppgiftsinspelningar

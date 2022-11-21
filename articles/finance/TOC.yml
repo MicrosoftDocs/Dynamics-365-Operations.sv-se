@@ -1188,9 +1188,11 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Medvetenhet mellan redovisningskvittning och årsbokslut
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Automatisera redovisningskvittningar
+                  href: general-ledger/auto-settle.md
                 - name: Omräkning i utländsk valuta för redovisning
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Balanser på huvudbokskonto
+                - name: Kontosaldon för redovisning
                   href: general-ledger/general-ledger-account-balances.md
                 - name: Bearbeta journal för redovisningsallokering
                   href: general-ledger/tasks/process-ledger-allocation-journal.md
