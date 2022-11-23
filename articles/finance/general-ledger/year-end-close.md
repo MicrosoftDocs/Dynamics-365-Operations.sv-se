@@ -2,25 +2,25 @@
 title: Årsbokslut
 description: I den här artikeln beskrivs den nödvändiga inställningen och stegen för att köra årsslutsprocessen i redovisningen.
 author: kweekley
-ms.date: 12/06/2021
+ms.date: 11/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e1c7722b560246fb597f0b7f91a70afecf69e22
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883225"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779754"
 ---
 # <a name="year-end-close"></a>Årsbokslut
 
@@ -62,7 +62,7 @@ På sidan **Mallinställning för årsbokslut**:
 
 ## <a name="define-year-end-close-templates"></a>Definiera årsbokslutsmallar
 
-Årsbokslutsprocessen kan köras när systemet är konfigurerat. På sidan **Mallinställning för årsbokslut** kan en mall kan definieras för gruppen med juridiska personer där årsbokslutsprocessen ska köras. Mallen kommer att återanvändas nära varje årsskifte, men kan ändras om din organisation ändras.
+När konfigurationen är klar kan årsbokslutsprocessen köras. På sidan **Mallinställning för årsbokslut** kan en mall kan definieras för gruppen med juridiska personer där årsbokslutsprocessen ska köras. Mallen kommer att återanvändas nära varje årsskifte, men kan ändras om din organisation ändras.
 
 Först definierar du fältet **gruppnamn** för mallen och väljer räkenskapskalendern. Gruppnamnet ska identifiera gruppen av juridiska personer. När du bestämmer grupperna för juridiska personer måste du komma ihåg att juridiska personer bara kan inkluderas i samma grupp om samma räkenskapskalender har valts för dem. Till exempel kan mallarna ställas in baserat på geografi och separata grupper kan skapas för juridiska personer i Nordamerika, Europa, Mellanöstern och Afrika (EMEA) juridiska enheter och Asien-Stillahavsområdet (APAC) juridiska enheter.
 

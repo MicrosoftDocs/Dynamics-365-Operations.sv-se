@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 674adb70cc4372a8c5ca8c75ed3ef840d8ec7b79
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520875"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762711"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Använda appen Inventory Visibility
 
@@ -30,44 +30,73 @@ Lagersynligheten innehåller en modellbaserad app för visualisering. Appen inne
 - De stöder lagerbehållningsfrågor i realtid för olika dimensionskombinationer.
 - Den tillhandahåller ett användargränssnitt för bokföring av reservationsförfrågningar.
 - Den tillhandahåller en vy av lagerbehållningen för produkter tillsammans med alla dimensioner.
-- Den tillhandahåller en lagerbehållningslista för produkter tillsammans med fördefinierade dimensioner.
-
+- Den tillhandahåller en lagerbehållningslista för produkter tillsammans med fördefinierade dimensioner. Vyn över behållning kan antingen vara en fullständig sammanfattning eller ett förinläst resultat från en behållningsfråga.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
 Innan du börjar installerar och konfigurerar du tillägget Lagersynlighet enligt beskrivningen i [Installera och konfigurera Lagersynlighet](inventory-visibility-setup.md).
 
-## <a name="open-the-inventory-visibility-app"></a>Öppna appen Lagersynlighet
+## <a name="open-and-authenticate-the-inventory-visibility-app"></a><a name="open-authenticate"></a>Öppna och autentisera programmet lagersynlighet
 
-Du öppnar appen Lagersynlighet genom att logga in i din Power Apps-miljö och öppna **Lagersynlighet**.
+Öppna och autentisera programmet lagersynlighet med följande steg.
 
-## <a name="configuration"></a><a name="configuration"></a>Inställningar
+1. Logga in på Power Apps-miljön.
+1. Öppna appen **Lagersynlighet**.
+1. Öppna sidan **Driftsynlighet** från det vänstra fönstret.
+1. Klicka på knappen **Inställningar** (kugghjulsikonen) längst upp på sidan.
+1. I dialogrutan **Inställningar** anger du värdet **Klient-ID**,**klientorganisation-ID** och **klienthemlighet** som du angett när du [installerade och konfigurera lagersynlighet](inventory-visibility-setup.md).
+1. Välj knappen **Uppdatera** bredvid fältet **Ägartoken**. Systemet genererar en ny ägartoken baserat på den information du har angett.
 
-På sidan **Konfiguration** i Lagersynlighet-appen kan du konfigurera behållningskonfigurationen och konfigurationen av preliminär reservation. När tillägget har installerats innehåller standardkonfigurationen en standardkonfiguration för Microsoft Dynamics 365 Supply Chain Management (datakällan `fno`). Du kan granska standardinställningen. Baserat på dina affärsbehov och lagerbokföringskraven i det externa systemet kan du modifiera konfigurationen för att standardisera det sätt på vilket lagerändringar kan bokföras, ordnas och efterfrågas i flera olika system.
+    ![Inställningar för behållningsfråga.](media/inventory-visibility-query-settings.png "Inställningar för behållningsfråga")
+
+1. När du får en giltig ägartoken stänger du dialogrutan. Ägartoken upphör att gälla efter en tid. Därför måste du ibland uppdatera den när du måste uppdatera konfigurations-, postdata- eller frågedata.
+
+## <a name="configure-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurera app för lagersynlighet
+
+På sidan **Konfiguration** i Lagersynlighet-appen kan du konfigurera den allmänna datahanteringskonfigurationen och funktionskonfigurationen. När tillägget har installerats innehåller standardkonfigurationen en standardkonfiguration för Microsoft Dynamics 365 Supply Chain Management (datakällan `fno`). Du kan granska standardinställningen. Baserat på dina affärsbehov och lagerbokföringskraven i det externa systemet kan du modifiera konfigurationen för att standardisera det sätt på vilket lagerändringar kan bokföras, ordnas och efterfrågas i flera olika system.
 
 Detaljerad information om hur du konfigurerar lösningen finns i [Konfigurera Lagersynlighet](inventory-visibility-configuration.md).
 
 ## <a name="operational-visibility"></a>Verksamhetens synlighet
 
-Sidan **Verksamhetens synlighet** innehåller resultaten av en realtidsfråga om lagerbehållning, baserat på olika dimensionskombinationer. När funktionen *OnHandReservation* är aktiverad kan du också bokföra reservationsbegäranden från sidan **Verksamhetssynlighet**.
+Sidan **Verksamhetens synlighet** innehåller resultaten av en realtidsfråga om lagerbehållning, bokningspostering och allokering baserat på olika dimensionskombinationer. När funktionen *OnHandReservation* är [aktiverad](inventory-visibility-configuration.md), kan du också bokföra reservationsbegäranden från sidan **Operational Visibility**.
 
 ### <a name="on-hand-query"></a>Behållningsfråga
 
-Fliken **Behållningsfråga** visar resultaten av en realtidsfråga om lagerbehållning.
+Fliken **Behållningsfråga** på sidan **Driftsynlighet** låter dig fråga i realtidsbeställningen. Följ dessa steg för att ställa in och köra en fråga.
 
-När du öppnar fliken **Behållningsfråga** på sidan **Driftsynlighet** kräver systemet dina autentiseringsuppgifter så att det får den ägartoken som krävs för att fråga efter tjänsten Lagersynlighet. Du kan klistra in ägartoken i fältet **BearerToken** och stänga dialogrutan. Du kan sedan bokföra en begäran om behållningsfråga.
+1. Öppna appen **Lagersynlighet**.
+1. Öppna sidan **Driftsynlighet** från det vänstra fönstret.
+1. På fliken **Behållningsfråga** ange **Organisations ID**, **Webbplats-ID** och **Plats-ID** som du vill fråga.
+1. I fältet **Produkt-ID**, ange ett eller flera produkt-ID för att få en exakt matchning för din fråga. Om **produkt-ID**-fältet lämnas tomt inkluderas alla produkter på den angivna webbplatsen och platsen.
+1. Om du vill få ett mer finresultat (till exempel en vy efter dimensionsvärden som färg och storlek) väljer du grupp efter dimensioner i fältet **Gruppresultat efter**.
+1. Om du vill hitta artiklar som har ett visst dimensionsvärde (till exempel färg = röd) väljer du dimensionen i fältet **Filterdimensioner** och anger sedan ett dimensionsvärde.
+1. Välj **fråga**. Du får antingen ett lyckat (grönt) meddelande eller ett misslyckat (rött) meddelande. Om frågan misslyckas kontrollerar du frågekriterierna och kontrollerar att din [ägartoken](#open-authenticate) inte har upphört att gälla.
 
-Om ägartoken inte är giltig eller har löpt ut måste du klistra in en ny i fältet **BearerToken**. Ange rätt värde för **Kund-ID**, **Klientorganisations-ID**, **Klienthemlighet** och sedan **Uppdatera**. Systemet får automatiskt en ny, giltig ägartoken.
-
-Om du vill bokföra en behållningsfråga anger du frågan i begärandetexten. Använd det mönster som beskrivs i [Fråga genom att använda inläggsmetoden.](inventory-visibility-api.md#query-with-post-method).
-
-![Inställningar för behållningsfråga](media/inventory-visibility-query-settings.png "Inställningar för behållningsfråga")
+Ett annat sätt att göra en behållningsfråga är att göra direkta API-förfrågningar. Du kan använda en av `/api/environment/{environmentId}/onhand/indexquery` eller `/api/environment/{environmentId}/onhand`. Mer information finns i [Offentliga API:er för Lagersynlighet](inventory-visibility-api.md).
 
 ### <a name="reservation-posting"></a>Reservationsbokföring
 
 Använd fliken **Reservationsbokföring** på sidan **Driftsynlighet** när du bokför en reservationsbegäran. Innan du kan bokföra en reservationsbegäran måste du aktivera funktionen *OnHandReservation*. Mer information om denna funktion och hur du aktiverar den finns i [Reservationer för lagersynlighet](inventory-visibility-reservations.md).
 
-Om du vill bokföra en reservationsbegäran måste du ange ett värde i begärandetexten. Använd det mönster som beskrivs i [Skapa en reservationshändelse](inventory-visibility-api.md#create-one-reservation-event). Välj sedan **Bokför**. Om du vill visa information om begärandesvar väljer du **Visa detaljer**. Du kan också få värdet `reservationId` från svarsdetaljerna.
+> [!NOTE]
+> Möjligheten att göra en mjuk reservation med hjälp av användargränssnittet är avsedd att du ska kunna testa funktionen. Varje begäran om mjuk reservation ska vara associerad med en ändring i en transaktionsorderrad (skapa, ändra, ta bort och så vidare). Därför rekommenderar vi att du endast gör mjuk reservationer som är kopplade till en serverorder. Mer information finns i [Reservationer för Lagersynlighet](inventory-visibility-reservations.md).
+
+Följ de här stegen när du vill bokföra en begäran om mjuk reservation med hjälp av användargränssnittet.
+
+1. Öppna appen **Lagersynlighet**.
+1. Öppna sidan **Driftsynlighet** från det vänstra fönstret.
+1. På fliken **Bokföring av reservation** i fältet **Kvantitet**, ange den kvantitet som du vill reservera.
+1. Avmarkera kryssrutan **Aktivera negativt lager för att stödja överförsäljning** för att förhindra att lagret översäljs eller överreserveras.
+1. Välj i fältet **Operatör** den datakälla och det fysiska mått som gäller för den mjuka reserverade kvantiteten.
+1. Ange värdena **Organisations-ID**, **Webbplats-ID**, **Plats-ID** och **Produkt-ID** som du vill fråga.
+1. Om du vill få ett mer finresultat väljer du en datakälla, dimensioner och dimensionsvärden.
+
+Ett annat sätt att bokföra en mjuk reservation är att göra direkta API-förfrågningar. Använd det mönster som beskrivs i [Skapa en reservationshändelse](inventory-visibility-api.md#create-one-reservation-event). Välj sedan **Bokför**. Om du vill visa information om begärandesvar väljer du **Visa detaljer**. Du kan också få värdet `reservationId` från svarsdetaljerna.
+
+### <a name="allocation"></a>Allokering
+
+Information om hur du hanterar allokeringar från användargränssnittet och API:er finns i [Lagerfördelning för Lagersynlighet](inventory-visibility-allocation.md).
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Lagersammanfattning
 
@@ -84,19 +113,15 @@ Följ dessa steg för att aktivera sidan **lagersammanfattning** ställa in synk
 
 1. Välj **Uppdatera konfiguration** för att spara alla ändringar.
 
-
 > [!NOTE]
 > Funktionen *OnHandMostSpecificBackgroundService* spårar bara ändringar i lagerbehållning som inträffat efter det att du aktiverat funktionen. Data för produkter som inte har ändrats sedan du aktiverade funktionen synkroniseras inte från lagertjänstcachen till Dataverse-miljön. Om din sida för **lagersamamnfattning** inte visar all behållningsinformation du förväntar dig öppnar du Supply Chain Management, och går till **Lagerhantering > Periodiska uppgifter > Integrering av lagersynlighet** inaktiverar du batchjobbet och återaktiverar det. Detta utför den första distributionen och all data synkroniseras med entiteten *Lagerbehållningssumma* under närmaste 15 minuter. Om du vill använda funktionen *OnHandMostSpecificBackgroundService* rekommenderar vi att du aktiverar den innan du skapar ändringar i lagerbehållningen och aktiverar batchjobbet **Integrering för lagersynlighet**.
 
-## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-the-inventory-visibility-onhand-query"></a>Förinläsning av strömlinjeformad behållningsfråga
+## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-streamlined-onhand-query"></a>Förinläsning av strömlinjeformad behållningsfråga
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 Supply Chain Management lagrar en stor mängd information om din nuvarande lagerbehållning och gör den tillgänglig för många olika syften. Många dagliga åtgärder och tredjepartsintegrationer behöver dock bara en liten delmängd av dessa detaljer och när systemet ställs in för alla kan det leda till stora datauppsättningar som tar tid att samla och överföra. Därför kan tjänsten Lagersynlighet med jämna mellanrum hämta och lagra en strömlinjeformad uppsättning lagerbehållningsdata för att göra den optimerade informationen kontinuerligt tillgänglig. Informationen om lagerbehållningen filtreras utifrån konfigurerbara affärskriterier för att säkerställa att endast den mest relevanta informationen inkluderas. Eftersom de filtrerade lagerbehållningslistorna lagras lokalt i tjänsten Lagersynlighet och uppdateras regelbundet, har de stöd för snabbåtkomst, dataexport vid behov och strömlinjeformad integration med externa system.
-
-> [!NOTE]
-> Den aktuella förhandsgranskningsversionen av den här funktionen kan bara ge förinlästa resultat som omfattar webbplats och plats. Den slutgiltiga versionen av funktionen förväntas låta du välja andra dimensioner för förinläsning med resultaten.
 
 Sidan **Förinläsa sammanfattning av lagersynlighet** ger en vy av entiteten *Behållningsindex av förinläsning av frågeresultat*. Till skillnad från entiteten *lagersammanfattning* ger entiteten *Behållningsindex av förinläsning av frågeresultat* en tillgänglig inventeringslista för produkter tillsammans med valda dimensioner. Lagersynlighet synkroniserar de förinlästa sammanfattningsdata var 15:e minut.
 

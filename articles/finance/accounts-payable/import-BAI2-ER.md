@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: bfc1c2021387ed35e6ccb513167e896eddef2eaf
+ms.sourcegitcommit: ea79bf014bbf495ac8e28db29502c8bd85a75f32
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752731"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9759611"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Skapa avancerad bankavstämningsimport med hjälp av elektronisk rapportering
 
@@ -34,9 +34,12 @@ Funktionen för avancerad bankavstämning låter dig importera elektroniska bank
 2. På panelen för **Microsoft**-konfigurationsprovidern väljer du **Databaser**.
 3. Markera **Global** och välj sedan **Öppna**.
 4. Om en anslutning till databasen måste upprättas väljer du den blå länken i dialogrutan.
-5. I konfigurationslistan söker du upp **Avancerad modell för bankavstämningsutdrag \> ABR BAI2-format**..
+5. I konfigurationslistan söker du upp **Avancerad modell för bankavstämningsutdrag \> ABR BAI2-format**.
 6. Välj formatet **BAI2**.
 7. På snabbfliken **Versioner** väljer du den senaste versionen och sedan **Importera**.
+
+>[!NOTE]
+>**BAI2-bankutdragsmodell** inaktiveras senare. 
 
 ## <a name="set-up-the-bank-statement-format"></a>Konfigurera formatet för bankutdrag
 

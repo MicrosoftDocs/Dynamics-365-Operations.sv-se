@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e2b6d75034c06704cad4cbc800ce3311ef5330e
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f5120c4e75e821776201d5add2d498feb94d0297
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712298"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778422"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Redovisningsfördelningar och poster i redovisningsjournal för fritextfakturor
 
@@ -30,9 +30,9 @@ Redovisningsfördelningar används för att definiera hur ett belopp ska redovis
 
 ## <a name="accounting-distributions"></a>Redovisningsfördelningar
 
-Du kan använda följande knappar på sidan Fritextfaktura om du vill visa, och möjligen ändra, redovisningsfördelningarna för varje belopp på fritextfakturan.
+Du kan använda följande knappar på sidan **Fritextfaktura** om du vill visa, och möjligen ändra, redovisningsfördelningarna för varje belopp på fritextfakturan.
 
--   **Fördela belopp**—Visa och ändra redovisningsfördelningarna för en enskild rad och eventuella underordnade rader, till exempel moms eller avgifter. Du kan också visa och ändra redovisningsfördelningarna för den underordnade raden direkt från sidan Momstransaktioner eller sidan Transaktioner för avgifter.
+-   **Fördela belopp**—Visa och ändra redovisningsfördelningarna för en enskild rad och eventuella underordnade rader, till exempel moms eller avgifter. Du kan också visa och ändra redovisningsfördelningarna för den underordnade raden direkt från sidan  **Momstransaktioner** eller sidan **Avgiftstransaktioner**.
     -   Ändra huvudbeloppen på fritextfakturan, till exempel avgifter eller valutaavrundningsbelopp.
     -   Ändra radbeloppen för en fritextfaktura
 -   **Visa fördelningar** – Visa redovisningsfördelningarna för alla rader i dokumentet. Du kan inte ändra redovisningsfördelningarna från den här vyn.
@@ -120,7 +120,7 @@ När du anger en fritextfaktura kommer varje belopp fördelas på följande sät
 </table>
 
 ## <a name="distributing-taxes"></a>Fördela moms
-Redovisningsfördelning för skatter går inte att skapa förrän skatter har beräknats. Om du vill beräkna moms måste du färdigställa en av följande uppgifter i formuläret Fritextfaktura:
+Redovisningsfördelning för skatter går inte att skapa förrän skatter har beräknats. Om du vill beräkna moms måste du färdigställa en av följande uppgifter på sidan **Fritextfaktura**:
 -   Visa momsen.
 -   Visa fakturasumman.
 -   Visa kassaflödet.

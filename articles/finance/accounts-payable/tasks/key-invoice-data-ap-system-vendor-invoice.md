@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ad75439bf3dfa1ed33e35fa9cfee153012e9f60
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4c441d197957674d68c4c92b454a9dca91d76ea0
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716815"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775200"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Huvudfakturadata i AP med hjälp av leverantörsfakturan
 
@@ -68,7 +68,10 @@ Med den här guiden blir det enklare att skapa en leverantörsfaktura från en i
 17. Ange ett tal i fältet **Enhetspris**. När nu priset per enhet matchar, uppdateras statusvärdet till Godkänt. Om din policy tillåter avvikelser, eller om matchningen bara är en varning, kan du fortfarande bokföra fakturan.  
 18. Stäng sidan.
 19. Klicka på **Bokför**.
-20. Stäng formuläret. Observera att inköpsordern inte längre registreras som mottagen men inte fakturerad.  
+20. Stäng sidan. 
+
+>[!Note] 
+>Inköpsordern inte längre registreras som mottagen men inte fakturerad.  
 
 
 

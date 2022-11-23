@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
-ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
+ms.openlocfilehash: a0d1221e07f6dc4a5a99aa205c4a7f6fb367f000
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129525"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780567"
 ---
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
@@ -31,11 +31,10 @@ En **kundfaktura för en försäljningsorder** är en faktura som är relaterad 
 En **fritextfaktura** har inget samband med en försäljningsorder. Den innehåller orderrader som inkluderar redovisningskonton, fritextbeskrivningar och en försäljningssumma som du anger. Du kan inte ange ett artikelnummer på den här sortens faktura. Du måste ange korrekt momsinformation. En huvudkonto för försäljningen anges på varje fakturarad, som du kan fördela till flera huvudbokskonton genom att klicka på **Fördela belopp** på sidan **Fritextfaktura** . Dessutom bokförs kundsaldot till det samlingskonto från bokföringsprofilen som används för fritextfakturan.
 
 Mer information finns i:
-
-[Skapa fritextfakturor](../accounts-receivable/create-free-text-invoice-new.md)
-[Skapa en fritextfakturamall](../accounts-receivable/create-free-text-invoice-template-new.md)
-[Tilldela fritextfakturamall till en kund](tasks/assign-free-text-invoice-template-customer.md)
-[Generera och bokför återkommande fritextfakturor](tasks/post-recurring-free-text-invoices.md)
+ - [Skapa fritextfakturor](../accounts-receivable/create-free-text-invoice-new.md)
+ - [Skapa en mall för fritextfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
+ - [Tilldela en fritextfakturamall till en kund](tasks/assign-free-text-invoice-template-customer.md)
+ - [Generera och bokför återkommande fritextfakturor](tasks/post-recurring-free-text-invoices.md)
 
 
 En **proformafaktura** är en faktura som förbereds som en uppskattning av de faktiska fakturabeloppen innan fakturan bokförs. Du kan skriva ut en **proformafaktura** för antingen en kundfaktura för en försäljningsfaktura eller för en fritextfaktura. 
@@ -89,7 +88,13 @@ Du kan konfigurera uppdelningen av försäljningsorderkundfakturor efter webbpla
  - Välj **Dela upp baserat på fakturaleveransinformation** för att skapa en faktura per försäljningsorderraders leveransadress vid bokföring. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Bokför på intäktskontot för försäljningsorderrader utan pris och kostnad
-Du kan uppdatera **intäktskontot** i **redovisningen** för försäljningsorderrader som saknar pris och kostnad. Om du vill ställa in eller visa denna information går du till parametern **Bokför på intäktskontot för försäljningsorderfakturarader med nollpris och nollkostnad** på fliken **Redovisning och moms** på sidan **Parametrar för kundreskontra**. (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). Välj **Ja** om du vill uppdatera **intäktskontot** för försäljningsorderfakturarader som saknar pris och kostnad. Om det här alternativet är valt kommer verifikationen att innehålla 0,00 poster för bokföringstyperna **Kundsaldo** och **Intäkt**. Ett intäktskonto definieras på parametersidan **lagerbokföring**, på fliken kontodefinitionsfliken **Försäljningsorder**. Om detta alternativ inte markeras kommer rader som inte har pris- eller kostnadsinformation inte att bokföras på **intäktskontot**. Istället kommer verifikationen att innehålla en 0,00-post för bokföringstypen **Kundsaldo**.
+Du kan uppdatera **intäktskontot** i **redovisningen** för försäljningsorderrader som saknar pris och kostnad. 
+
+Gör så här om du vill ställa in eller visa den här informationen:
+1. Gå till parametern **Bokför på intäktskontot för försäljningsorderfakturarader med nollpris och nollkostnad** på fliken **Redovisning och moms** på sidan **Parametrar för kundreskontra**. (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). 
+2. Välj **Ja** om du vill uppdatera **intäktskontot** för försäljningsorderfakturarader som saknar pris och kostnad. 
+ - Om det här alternativet är valt kommer verifikationen att innehålla 0,00 poster för bokföringstyperna **Kundsaldo** och **Intäkt**. Ett intäktskonto definieras på parametersidan **lagerbokföring** på fliken kontodefinition för **försäljningsorder**. 
+ - Om det här alternativet inte väljs bokförs inte rader som inte har någon pris- eller kostnadsinformation på kontot **intäkt**. Istället kommer verifikationen att innehålla en 0,00-post för bokföringstypen **Kundsaldo**.
 
 ## <a name="line-creation-sequence-number-information"></a>Nummerinformation för radskapande
 När du bokför rader på en kundfaktura kan du skapa löpnummer för radskapande. Löpnummer för radskapande tilldelas under bokföringsprocessen. Genom att tillåta icke-sekventiell numrering kan du förbättra prestandan när kundfakturan bokförs. Löpnummer för radskapande kan användas av tredjepartsintegrationer som förväntar sig sekventiella order. Kontakta din IT-avdelning om eventuella tillägg som kan integreras med löpnummer för radskapande.

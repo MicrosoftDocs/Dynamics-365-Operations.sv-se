@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 502a026f2070e92a017733ce2c37bf357eaa10ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9022051ce1c99da7ff62e30583a20656c77d89f9
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908166"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778691"
 ---
 # <a name="process-collection-letters-example"></a>Exempel på bearbeta kravbrev
 
@@ -32,11 +32,11 @@ När du avslutar följer du dessa steg.
 
 1. Gå till **Kredit och inkasso \> Kravbrev \> Ställ in sekvensen för kravbrev** och ställa in sekvensen för samlingsbrevet som visas i följande tabell som tilldelas kundbokföringsprofilen.
 
-|     Kravbrevskod      |     beskrivning                           |     Valuta      |     Huvudkonto        |     Avgift i valuta     |     Minimum över        |     Dagar block      |
-|---------------------------------  |---------------------------------------    |-----------------  |-----------------------    |-------------------------- |-----------------------    |---------------------  |
-|     Kravbrev 1         |     Andra notifieringen med avgift        |     USD           |                           |     0,00                  |     0,00                  |     2                 |
-|     Kravbrev 2         |     Andra notifieringen med avgift        |     USC           |     403150                |     20.00                 |     10,00                 |     3                 |
-|     Grupp                    |     Sista notifieringen med avgift         |     USD           |     403150                |     50.00                 |     100.00                |     15                |
+|   Kravbrevskod      |     beskrivning       |     Valuta      |     Huvudkonto        |     Avgift i valuta       |   Minimum över  |   Dagar block        |
+|-----------------------------  |--------------------   |-----------------  |-----------------------    |--------------------   |-----------------------    |------------------ |
+|  Kravbrev 1          |     Första meddelandet |     USD          |                   |     0,00              |     0,00                  |     2                 |
+|  Kravbrev 2          |     Andra notifieringen med avgift      |     USD      |     403150         |     20.00         |     10,00     |     3                 |
+|  Kollektion                   |     Sista notifieringen med avgift       |     USD           |     403150    |     50.00         |     100.00                |     15            |
 
 I följande illustration visas den information som finns i registret på det sätt som den skulle visas på sidan **Kravbrev**. 
 

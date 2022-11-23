@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
-ms.openlocfilehash: ee11647f6f700042e11133181de919e13f16c018
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: a8da366b1e770ea649603ae85d4acc5e377ed9fb
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715975"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780562"
 ---
 # <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Kvitta del- och slutbetalningar helt före rabattdatumet
 
@@ -35,19 +35,19 @@ Den 25 juni registrerar och bokför Arnie en faktura på 1 000,00 för kund 402
 
 | Verifikation   | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10010 | Faktura          | 2015/06/25 | 10010   | 1 000,00                             |                                       | 1 000,00 | USD      |
+| FTI-10010 | Faktura          | 6/25/2020 | 10010   | 1,000.00                             |                                       | 1,000.00 | USD      |
 
 Från sidan **Kund** eller **Kundtransaktioner** kan Arnie öppna sidan **Kvitta transaktioner** för att visa datum och belopp av kassarabatter som är tillgängliga för fakturan. Förfallodatumet är 25 juli och en kassarabatt på 10,00 är tillgänglig om fakturan betalas den 9 juli.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markerad | Normal            | FTI-10010 | 4028    | 2015/06/25 | 2015/07/25 | 10010   | 1 000,00                       | USD      | 990,00           |
+| Markerad | Normal            | FTI-10010 | 4028    | 6/25/2020 | 7/25/2020 | 10010   | 1,000.00                       | USD      | 990.00           |
 
 Informationen visas längst ned på sidan **Kvitta transaktioner** för den markerade fakturan.
 
 |    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/09 |
+| Kassarabattdatum           | 7/09/2020 |
 | Kassarabattbelopp         | 10,00     |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 0,00      |
@@ -55,10 +55,10 @@ Informationen visas längst ned på sidan **Kvitta transaktioner** för den mark
 
 Arnie klickar på fliken **Kassarabatt** för att visa rabattbelopp.
 
-| Kassarabattdatum | Kassarabattbelopp | Belopp i transaktionsvalutan |
+| Kassarabattdatum | Kassarabattbelopp | Belopp i transaktionsvaluta |
 |--------------------|----------------------|--------------------------------|
-| 2015/07/09           | 10,00                | 990,00                         |
-| 2015/07/25          | 0,00                 | 1 000,00                       |
+| 7/9/2020           | 10,00                | 990.00                         |
+| 7/25/2020          | 0,00                 | 1,000.00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Delbetalning genom att använda sidan Ange kundbetalningar
 Kund 4028 skickar en betalning på 500,00 den 1 juli. För att ange den här betalningen klickar inte Arnie på **Rader**. I stället registrerar Arnie betalningen genom att skapa en ny betalningsjournal och öppnar sedan sidan **Ange kundbetalningar**. Arnie anger betalningsinformationen och markerar fakturan som har angetts. När Arnie anger **500,00** som belopp anger han även **500,00** i fältet **Belopp att betala** i rutnätet. Eftersom Fabrikam tillåter en kassarabatt på delbetalningar ser Arnie att en delkassarabatt på 5,05 också ska utnyttjas. Beräkningen av den här rabatten är 500,00 ÷ 0,99 × 0,01 = 5,05. (I den här beräkningen delas 500,00 med 0,99 eftersom det är 1 procents rabatt. Därför betalar kunden 99 procent av fakturan. Resultatet multipliceras sedan med rabattprocenten som är 1 procent, eller 0,01. Om kunden utnyttjar hela rabatten på 10,00 kommer beloppet som ska kvittas att vara 990,00.) Rabattinformation visas i rutnätet längst ned på sidan **Ange kundbetalningar**.
@@ -72,13 +72,13 @@ Istället för att öppna sidan **Ange kundbetalningar** i betalningsjournalen, 
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markerad | Normal            | FTI-10010 | 4028    | 2015/06/25 | 2015/07/25 | 10010   | 1 000,00                       | USD      | 500.00           |
+| Markerad | Normal            | FTI-10010 | 4028    | 6/25/2020 | 7/25/2020 | 10010   | 1,000.00                       | USD      | 500.00           |
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
 |        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/09 |
+| Kassarabattdatum           | 7/09/2020 |
 | Kassarabattbelopp         | 10,00     |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 0,00      |
@@ -88,13 +88,13 @@ Om kunden vill kvitta exakt halva fakturan, skickar in kunden en betalning på 4
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markerad | Normal            | FTI-10010 | 4028    | 2015/06/25 | 2015/07/25 | 10010   | 1 000,00                       | USD      | 495,00           |
+| Markerad | Normal            | FTI-10010 | 4028    | 6/25/2020 | 7/25/2020 | 10010   | 1,000.00                       | USD      | 495.00           |
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
 |     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/09 |
+| Kassarabattdatum           | 7/09/2020 |
 | Kassarabattbelopp         | 10,00     |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 0,00      |
@@ -104,9 +104,9 @@ Arnie stänger sidan **Kvitta transaktioner**. En betalningsrad för 495,00 skap
 
 | Verifikation    | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10010  | Faktura          | 2015/06/25 | 10010   | 1 000,00                             |                                       | 500.00  | USD      |
-| ARP-10010  |  Betalning         | 2015/07/01  |         |                                      | 495,00                                | 0,00    | USD      |
-| RAB-10010 |  Kassarabatt   | 2015/07/01  |         |                                      | 5,00                                  | 0,00    | USD      |
+| FTI-10010  | Faktura          | 6/25/2020 | 10010   | 1,000.00                             |                                       | 500.00  | USD      |
+| ARP-10010  |  Betalning         | 7/1/2020  |         |                                      | 495.00                                | 0,00    | USD      |
+| RAB-10010 |  Kassarabatt   | 7/1/2020  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Betalning för återstående belopp
 Kund 4028 betalar det resterande beloppet på 495,00 den 8 juli vilket infaller under kassarabattperioden. Arnie skapar betalningsjournalen den 8 juli och markerar transaktionen för kvittning. Arnie ser att beloppet som måste kvittas är 495,00. Värdet i fältet **Beräknad kassarabatt** är **5,00**, eftersom rabatten på 5,00 utnyttjades tidigare.
@@ -120,13 +120,13 @@ Information om den valda transaktionen visas i rutnätet på sidan **Kvitta öpp
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markerad | Normal            | FTI-10010 | 4028    | 2015/06/25 | 2015/07/25 | 10010   | 1 000,00                       | USD      | 495,00           |
+| Markerad | Normal            | FTI-10010 | 4028    | 6/25/2020 | 7/25/2020 | 10010   | 1,000.00                       | USD      | 495.00           |
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
 |  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/09 |
+| Kassarabattdatum           | 7/09/2020 |
 | Kassarabattbelopp         | 10,00     |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 5,00      |
@@ -136,11 +136,11 @@ Arnie bokför journalen och granskar kundtransaktioner på sidan **Kundtransakti
 
 | Verifikation    | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10010  | Faktura          | 2015/06/25 | 10010   | 1 000,00                             |                                       | 0,00    | USD      |
-| ARP-10010  | Betalning          | 2015/07/01  |         |                                      | 495,00                                | 0,00    | USD      |
-| RAB-10010 | Kassarabatt    | 2015/07/01  |         |                                      | 5,00                                  | 0,00    | USD      |
-| ARP-10011  | Betalning          | 2015/07/08  |         |                                      | 495,00                                | 0,00    | USD      |
-| RAB-10011 | Kassarabatt    | 2015/07/08  |         |                                      | 5,00                                  | 0,00    | USD      |
+| FTI-10010  | Faktura          | 6/25/2020 | 10010   | 1,000.00                             |                                       | 0,00    | USD      |
+| ARP-10010  | Betalning          | 7/1/2020  |         |                                      | 495.00                                | 0,00    | USD      |
+| RAB-10010 | Kassarabatt    | 7/1/2020  |         |                                      | 5.00                                  | 0,00    | USD      |
+| ARP-10011  | Betalning          | 7/8/2020  |         |                                      | 495.00                                | 0,00    | USD      |
+| RAB-10011 | Kassarabatt    | 7/8/2020  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 
 

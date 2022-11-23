@@ -2,7 +2,7 @@
 title: Skapa kostnadselement
 description: Det finns flera sätt att skapa kostnadselement inom kostnadsredovisning.
 author: kfend
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CAMDimension, CAMAXMainAccountDimensionMemberProviderConfiguration, CAMDimensionMember
-ms.openlocfilehash: 9ca826e54171a3dc3582dc5ceb716ac009d45674
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0254f486816e852bcda52f90fe4da65c413c7032
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280733"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779700"
 ---
 # <a name="create-cost-elements"></a>Skapa kostnadselement 
 
@@ -28,31 +28,31 @@ Det finns flera sätt att skapa kostnadselement inom kostnadsredovisning. I den 
 
 
 ## <a name="create-new-cost-elements"></a>Skapa nya kostnadselement
-1. Gå till Cost accounting > Dimensions > Cost element dimensions.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Namn.
-4. Ange eller välj ett värde i fältet Data connector for dimension members.
-5. Ange ett värde i fältet Beskrivning.
-6. Klicka på Spara.
+1. Gå till **Kostnadsredovisning > Dimensioner > Dimensioner för kostnadselement**.
+2. Klicka på **Ny**.
+3. Skriv ett värde i fältet **Namn**.
+4. Ange eller välj ett värde i fältet **Datakoppling för dimensionsmedlemmar**.
+5. I fältet **Beskrivning** anger du ett värde.
+6. Klicka på **Spara**.
 
 ## <a name="configure-the-data-connector"></a>Konfigurera datakopplingen
-1. Klicka på Configure dimension member provider.
-2. Ange eller välj ett värde i fältet Chart of accounts.
-    * Välj Shared för att använda den delade kontoplanen.  
-3. Klicka på Ny.
+1. Klicka på **Konfigurera dimensionsmedlemsprovider**.
+2. Ange eller välj ett värde i fältet **kontoplan**.
+    * Välj **Delad** för att använda den delade kontoplanen.  
+3. Klicka på **Ny**.
 4. Markera vald rad i listan.
     * Du kan använda filter på konton som uppfyller dina kriterier.  
-5. Ange eller välj ett värde i fältet From main account.
-6. Ange eller välj ett värde i fältet To main account.
-7. Klicka på OK.
+5. Ange eller välj ett värde i fältet **Från huvudkonto**.
+6. Ange eller välj ett värde i fältet **Till huvudkonto**.
+7. Klicka på **OK**.
 
 ## <a name="import-main-accounts"></a>Importera huvudkonton
-1. Klicka på Import dimension members.
+1. Klicka på **Importera dimensionsmedlemmar**.
     * Huvudkonton importeras till kostnadsredovisningen och används som ett kostnadselement.  
-2. Klicka på OK.
+2. Klicka på **OK**.
 
 ## <a name="view-the-imported-accounts-as-cost-elements"></a>Visa de importerade kontona som kostnadselement
-1. Klicka på View dimension members.
+1. Klicka på **Visa dimensionsmedlemmar**.
     * Visa de importerade redovisningskontona som kostnadselement i ditt företag som kostnader kan flöda till.  
 
 

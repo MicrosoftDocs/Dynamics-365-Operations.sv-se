@@ -2,23 +2,23 @@
 title: Kvitta en efterdaterad check från en kund
 description: Du kan kvitta en postdaterad check när checken har clearats av banken.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 896d19eb9bc53cc4987d7a500f221cca06aa11db
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9e61ac6d6785dd0383d5e5dcaca4cc55bf6deb52
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725385"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780026"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Kvitta en efterdaterad check från en kund
 
@@ -40,17 +40,17 @@ Rollen för den här uppgiftsguiden är Kassaförvaltare.
 
 I den här proceduren används demonstrationsföretaget USMF.
 
-1. Gå till Kredit och inkasso > Förfrågningar och rapporter > Betalningar > Kunds efterdaterade checkar.
-2. Klicka på Kvitta.
-3. Klicka på Kvitta clearingposter.
+1. Gå till **Kredit och inkasso > Förfrågningar och rapporter > Betalningar > Kunds efterdaterade checkar**.
+2. Klicka på **Kvitta**.
+3. Klicka på **Kvitta clearingposter**.
     * Kvitta kundkontot för checktransaktionen.  
 4. Stäng sidan.
-5. Gå till Redovisning > Journalposter > Allmänna journaler.
-6. I fältet Visa, välj ett alternativ.
-7. Markera eller avmarkera kryssrutan Visa enbart användarskapade.
+5. Gå till **Redovisning > Journalposter > Allmänna journaler**.
+6. I fältet **Visa**, välj ett alternativ.
+7. Markera eller avmarkera kryssrutan **Visa enbart användarskapade**.
 8. Hitta och markera önskad post i listan.
-9. Klicka på Rader.
-10. Klicka på Verifikation.
+9. Klicka på **Rader**.
+10. Klicka på **Verifikation**.
 11. Stäng sidan.
 
 

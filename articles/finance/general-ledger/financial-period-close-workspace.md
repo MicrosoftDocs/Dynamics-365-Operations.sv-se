@@ -2,25 +2,25 @@
 title: Arbetsyta för räkenskapsperiodens stängning
 description: Det här avsnittet innehåller en översikt över arbetsytan Räkenskapsperiodens stängning och den associerade konfigurationen.
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657bdd04c8b6dd36341e0bf771a978f68f13362d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865724"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780053"
 ---
 # <a name="financial-period-close-workspace"></a>Arbetsyta för räkenskapsperiodens stängning
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865724"
 
 Den här artikeln innehåller en översikt över arbetsytan **Räkenskapsperiodens stängning** och den associerade konfigurationen.
 
-Arbetsyta för räkenskapsperiodens stängning
+## <a name="financial-period-close-workspace"></a>Arbetsyta för räkenskapsperiodens stängning
 
 Arbetsytan **Räkenskapsperiodslut** låter dig spåra dina ekonomiska processer som håller på att stängas, sett över företag, områden och personer. Beroende på din vy över arbetsytan **Räkenskapsperiodslut** visas antingen alla uppgifter och status för ett utgående schema eller enbart de aktiviteter som har tilldelats dig. 
 
@@ -101,7 +101,7 @@ Tilldela en lämplig kalender för stängningsschemat vi syfte att ange vilka ar
 
 Du måste också ange de företag som ska associeras med stängningsschemat. Om malluppgifter tilldelas till flera olika företag, skapas separata uppgifter för varje företag som finns i stängningsschemat och som tilldelats malluppgiften. 
 
-När ett stängningsschema är slutfört väljer du alternativet **Stängd** för den. Tidigare aktiviteter är fortsatt tillgängliga från listsidan **Alla stängningsuppgifter för ekonomisk period**, men stängningsschemat tas bort från arbetsytan. När ett stängningsschema har markerats som **Stängt** kan du inte lägga till aktiviteter i det, redigera aktiviteter eller ta bort uppgifter.
+När ett stängningsschema är slutfört väljer du alternativet **Stängd**. Tidigare aktiviteter är fortsatt tillgängliga från listsidan **Alla stängningsuppgifter för ekonomisk period**, men stängningsschemat tas bort från arbetsytan. När ett stängningsschema har markerats som **Stängt** kan du inte lägga till aktiviteter i det, redigera aktiviteter eller ta bort uppgifter.
 
 
 

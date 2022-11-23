@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ceda837cae563dab68969cb9f05de113079d4495
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ff76eac54da6621d999d9b629fac920ba8de294
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910270"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778395"
 ---
 # <a name="create-sales-order-invoices"></a>Skapa fakturor för försäljningsorder
 
@@ -32,12 +32,12 @@ Den tta ämne beskriver fakturering av en försäljningsorder, inklusive sammans
 2. Välj en försäljningsorder i listan. 
 3. I **åtgärdsrutan**, klicka på **Faktura > Generera > Faktura**. Observera att den här försäljningsordern har flera följesedlar som associeras med den. Här visas bara ordet *multipel* i stället för följesedelsnumret.  
 4. Expandera avsnittet **Parametrar**.
-    - Bokföring måste ställas in på Ja när du vill bokföra fakturan. Du kan även stänga av bokföring och bara skriva ut fakturan. Men du kan få samma resultat genom att skapa en proformafaktura i stället för en faktura.  
+    - Bokföring måste ställas in på **Ja** när du vill bokföra fakturan. Du kan även stänga av bokföring och bara skriva ut fakturan. Men du kan få samma resultat genom att skapa en proformafaktura i stället för en faktura.  
     - Detta alternativ används för batchjobb. Frågan körs när batchjobbet körs.
-5. Välj "Efter" i fältet **Skriv ut**.
+5. I fältet **Skriv ut**, välj **Efter**.
 6. Välj **Ja** för **Skriv ut faktura**. Med Utskriftshantering kan du skriva ut flera kopior av fakturan och också skicka fakturan med e-post som en PDF-fil.  
-7. I fältet **Skriv ut avgifter** väljer du "Summera".
-8. I fältet **checkkreditgräns** väljer du ”Saldo”.
+7. I fältet **Skriv ut avgifter** väljer du **Summera**.
+8. I fältet **checkkreditgräns** väljer du **Saldo**.
 9. Klicka på **Avbryt**.
 
 ## <a name="combine-orders-into-a-single-invoice"></a>Kombinera order till en enda faktura
@@ -46,8 +46,8 @@ Den tta ämne beskriver fakturering av en försäljningsorder, inklusive sammans
 3. Välj flera öppna försäljningsorder från samma kund.
 4. I **åtgärdsrutan**, klicka på **Faktura > Generera > Faktura**.
 5. Expandera avsnittet **Parametrar**.
-6. I fältet **Kvantitet**, välj 'Alla'. Observera att det finns två fakturor som anges i översiktsavsnittet. Låt oss nu sammanslå dem till en enda faktura.  
-7. Välj "Fakturakonto" i fältet **Samlingsuppdatering för**.
+6. I fältet **Kvantitet**, välj **Alla**. Observera att det finns två fakturor som anges i översiktsavsnittet. Låt oss nu sammanslå dem till en enda faktura.  
+7. I fältet **Samlingsuppdatering för**, välj **Fakturakonto**.
 8. Klicka på **ordna** så slår du ihop dessa försäljningsorder till en enda faktura. Dessa två försäljningsorder sammanslås nu till en enda faktura.   
 9. Klicka på **Avbryt**.
 10. Klicka på **Ja**.

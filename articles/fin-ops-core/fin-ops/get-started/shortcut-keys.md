@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 384ce8611a7dbf6adf7b8ae6ad9569e2a41c22d1
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405449"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757178"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
@@ -50,7 +50,7 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 | Stäng en flik i åtgärdsfönstret eller en meny        | Esc                              |
 | Simulera en högerklickning                          | Skift+F10                        |
 | Öppna snabbmenyn    | Ctrl+F10                         |
-| Kör standardknappen i ett formulär/en dialogruta | Alt+Retur                        |
+| Kör standardknappen på en sida/en dialogruta | Alt+Retur                        |
 | Klicka på en knapp eller en panel                          | Retur eller Blanksteg                   |
 | Visa uppdatering av information för en beräkningspanel       | Alt + uppåtpil                     |
 | Visa aktuella tillgängliga genvägar              | Alt+Shift+K                      |
@@ -85,22 +85,22 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Öppna rutnätsfiltreringen för den aktuella kolumnen                                                                          | Ctrl+G                   |
 | Stäng rutnätsfiltreringen för den aktuella kolumnen                                                                         | Esc                      |
-| Öppna filterfönstret (eller växla fokus mellan filterrutan och huvudformuläret om filterfönstret redan är öppet) | Alt+M,F eller Ctrl+F3       |
+| Öppna filterfönstret (eller växla fokus mellan filterrutan och huvudsidan om filterfönstret redan är öppet) | Alt+M,F eller Ctrl+F3       |
 | Stäng filterfönstret (med fokus i filterfönstret)                                                               | Esc                      |
 | Öppna avancerad filtrering/sortering                                                                                        | Ctrl+Skift+F3            |
 | Använd snabbfilter (när fokus är i snabbfilter)                                                              | Ange                    |
 | Använd rutnätsfiltret (när fokus ligger i filterfältet i kolumnrubriken)                                             | Ange                    |
 
-## <a name="form-shortcuts"></a>Bilda kortkommandon
+## <a name="page-shortcuts"></a>Kortkommandon sida
 
-| Om du vill göra detta                                    | Tryck             |
+| Om du vill göra detta                                    | Tryck på             |
 |-----------------------------------------------|-------------------|
 | Skapa en ny post                           | Alt+N             |
 | Ta bort en post                               | Alt+Del eller Alt+F9 |
 | Spara posten                                   | Alt+S eller Ctrl+S   |
 | Återställa                              | Ctrl+Skift+F5     |
 | Uppdatera data                                  | Skift+F5          |
-| Flytta till det första fältet som visas i formuläret   | Alt+Skift+F       |
+| Flytta till det första fältet som visas på sidan   | Alt+Skift+F       |
 | Växla redigeringsläge                              | F2                |
 | Bifoga ett dokument                             | Ctrl+Skift+A      |
 | Exportera till Excel                               | Ctrl+Skift+E      |
@@ -108,13 +108,13 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 | Flytta till nästa post (utanför ett rutnät)      | Ctrl+nedåtpil   |
 | Flytta till första posten (utanför ett rutnät)     | Ctrl+start         |
 | Flytta till sista posten (utanför ett rutnät)      | Ctrl+End          |
-| Stäng formuläret (klicka på Tillbaka)                   | Esc               |
-| Stäng formuläret genom att uttryckligen spara             | Skift+Esc         |
-| Stäng formuläret och tag bort alla osparade ändringar | Alt+Skift+Q       |
+| Stäng sidan (välj knappen Bakåt)<br><br>**Obs!** Om det finns ett popup-fönster (verktygstips, datumplockning, listruta osv.) öppet kommer den första användningen av Esc att öppna popup-fönstret.       | Esc               |
+| Stäng sidan genom att uttryckligen spara             | Skift+Esc         |
+| Stäng sidan och ignorera alla ändringar som inte har sparats | Alt+Skift+Q       |
 
-## <a name="form-navigation-shortcuts"></a>Bilda navigeringsgenvägar
+## <a name="page-navigation-shortcuts"></a>Navigeringsgenvägar för sida
 
-| Om du vill göra detta                                          | Tryck                                        |
+| Om du vill göra detta                                          | Tryck på                                        |
 |-----------------------------------------------------|----------------------------------------------|
 | Flytta till nästa/föregående fältgrupp.                     | Tab/Skift+Tab                              |
 | Flytta till nästa/föregående flik                       | Alt+Shift+högerpil / Alt+Shift+vänsterpil |
@@ -192,13 +192,13 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 | Öppna Hjälp-fönstret                                                            | Ctrl+?                     |
 | Öppna Trace Parser                                                         | Alt+Skift+T                |
 | Flytta till navigeringsfönstret                                                   | Alt + F1                     |
-| Lägg till/ta bort ett formulär som favorit (med fokus på ett formulär i navigeringsfönstret)   | Skift+F                    |
+| Lägg till/ta bort en sida som favorit (med fokus på en sida i navigeringsfönstret)   | Skift+F                    |
 | Flytta till standardåtgärdsfönstret                                              | Alt+M,A eller Ctrl+F6         |
 | Flytta till filterfönstret (kan inkludera att öppna det)                        | Alt+M,F eller Ctrl+F3         |
 | Flytta fokus till sidoinnehållet (med fokus på Filterfönstret)                | Alt+M,M eller Ctrl+F3         |
-| Flytta till navigeringslistan i detaljformuläret (som kan inbegripa att öppna det.)    | Alt+M,S eller Ctrl+F8         |
+| Flytta till navigeringslistan (som kan inkludera att öppna den)    | Alt+M,S eller Ctrl+F8         |
 | Flytta fokus till sidoinnehållet (med fokus på navigeringsbalken)            | Alt+M,M eller Ctrl+F8         |
-| Stäng navigeringlistan på formuläret Detaljer (med fokus i navigeringlistan) | Esc                        |
+| Stäng navigeringlistan (med fokus i navigeringlistan) | Esc                        |
 | Flytta till huvudsidans innehåll (med fokus i ett annat fönster)                    | Alt+M,M                    |
 | Flytta till faktaboxen (som kan inkludera att öppna den)                       | Alt+M,B eller Ctrl+F2         |
 | Flytta till nästa bildtext för funktioner                                              | Alt+M,C                    |

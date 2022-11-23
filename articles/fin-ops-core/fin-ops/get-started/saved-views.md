@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220345"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757232"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
@@ -107,7 +107,7 @@ När du skapar en ny vy (med hjälp av åtgärden **Spara som**), kan du också 
 
 I dialogrutan **Hantera mina vyer** får du grundläggande underhållsfunktioner för dina personliga vyer och ordningen på vyer i vyväljaren. Du öppnar den här sidan genom att klicka på vyns namn för att öppna vyväljarens listruta, välj **Mer** och välj sedan **hantera mina vyer**.
 
-**Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personsupport för sparade vyer** är aktivera visar avsnittet **Mina vyer** i dialogrutan **Hantera mina vyer** tillgängliga vyer för sidan i avsnitt. Alla vyer som är specifika för den aktuella juridiska personen visas i egna avsnitt. Avsnittet **Globala vyer** visas alltid, så att du kan hantera de vyer som är tillgängliga för sidan i alla juridiska personer. 
+Om funktionen **Förbättrat juridiskt personsupport för sparade vyer** är aktivera visar avsnittet **Mina vyer** i dialogrutan **Hantera mina vyer** tillgängliga vyer för sidan i avsnitt. Alla vyer som är specifika för den aktuella juridiska personen visas i egna avsnitt. Avsnittet **Globala vyer** visas alltid, så att du kan hantera de vyer som är tillgängliga för sidan i alla juridiska personer. 
 
 För en lista med tillgängliga vyer för sidan är följande åtgärder tillgängliga.
 
@@ -138,9 +138,9 @@ Gör så här om du vill publicera en vy:
 
 1. Skapa och spara en personlig kopia av vyn som du vill publicera. 
 2. Med den vyn som nu laddas, välj vynamnet för att öppna vyväljarens rullgardinsmeny. 
-3. Välj knappen **Mer** och välj sedan **Publicera**. Dialogrutan Publicera öppnas.
+3. Välj knappen **Mer** och välj sedan **Publicera**. Dialogrutan **Publicera** öppnas.
 4. Ange ett namn för vyn. Det namn du anger är det namn som de användare som får den här vyn visas i vyväljaren. Namnen på publicerade vyer för en sida måste vara unika. Inga dubblettnamn tillåts även om listan över roller eller juridiska personer som vyerna tillämpas på skiljer sig åt.
-5. **Uppdatera 10.0.17 eller senare:** Om funktionen **(Förhandsgranska) Översättning till organisationsvyer** aktiveras kan du lägga till översättningar för ditt vynamn på så många språk som din organisation kräver genom att välja knappen **Översättningar** bredvid fältet **Namn**. Visningsnamnet visas sedan för användarna på det aktuella språket. Du kan också ställa in standardspråket och ange vilken översättning som ska visas för de användare som kör de språk som ingen översättning har definierats för.
+5. Om funktionen **Översättningsstöd för organisationsvyer** är aktiverad kan du lägga till översättningar för ditt vynamn på så många språk som din organisation kräver genom att välja knappen **Översättningar** bredvid fältet **Namn**. Visningsnamnet visas sedan för användarna på det aktuella språket. Du kan också ställa in standardspråket och ange vilken översättning som ska visas för de användare som kör de språk som ingen översättning har definierats för.
 5. Valfritt: Ange en beskrivning av vyn så att användare som tar emot vyn bättre kan förstå syftet. 
 6. Bestämmer om vyn ska publiceras som standardvy för de valda användarna. När en vy görs till standardvy kommer användarna kommer att se nästa gång de öppnar målsidan. Den enkla, globala standardvyn för varje målanvändare kommer att ändras. Användare kan dock fortfarande ändra standardvyn när publicering har skett.
 
@@ -150,9 +150,10 @@ Gör så här om du vill publicera en vy:
     > - Om du publicerar en vy som standardvy för vissa eller alla juridiska personer sker följande beteende:
     >
     >    - Om endast funktionen **Sparade vyer** är aktiverad ändras den enskilda globala standardvyn för alla målanvändare. 
-    >    - **Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** har aktiverats och du publicerar vyn till en delmängd av juridiska personer, ändras standardvyn för dessa juridiska personer för alla målanvändare.
+    >    - **Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** har aktiverats och du publicerar vyn till en delmängd av juridiska personer, ändras standardvyn för dessa juridiska personer för alla målanvändare.
     >
     > - Om en användare har roller där flera vyer publiceras som standardvy, används den senast publicerade vyn som användarens standardvy. 
+    > - Publicera fungerar inte för rolltilldelningar som görs med hjälp av AAD-grupper. 
 
 8. Lägg till de säkerhetsroller som motsvarar de användare som inriktas mot denna vy. 
 9. Bestäm om du vill publicera vyn till de underordnade rollerna för varje vald säkerhetsroll. Om du gör det, markerar du kryssrutan **Inkludera underordnade roller** i raden för lämpliga säkerhetsroller. Observera att den här kryssrutan inte är tillgänglig för roller som saknar underordnade roller.
@@ -162,7 +163,7 @@ Gör så här om du vill publicera en vy:
     > Tänk på följande beteende om du publicerar en vy till en specifik juridisk person, men du publicerar inte den vyn som standardvy:
     >
     > - Om endast basfunktionen **Sparade vyer** har aktiverats visar användarens visningsväljare för sidan till en början vyn endast för angivna juridiska personer. När vyn har lästs in för första gången kommer visningsväljaren för sidan emellertid alltid att visa den, oavsett juridisk person.
-    > - **Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** aktiveras, visar visningsväljaren vyn enbart för angivna juridiska personer.
+    > - Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** aktiveras, visar visningsväljaren vyn enbart för angivna juridiska personer.
 
 11. Markera **Publicera**.
 
@@ -259,7 +260,7 @@ För sidor med stora visningsväljare (anpassningar och frågor kan sparas i vyn
 Om du publicerar en vy till en specifik juridisk person men inte publicerar den vyn som standardvy, sker följande:
 
 - Om endast basfunktionen **Sparade vyer** har aktiverats visar användarens visningsväljare för sidan till en början vyn endast för angivna juridiska personer. När vyn har lästs in för första gången kommer visningsväljaren för sidan emellertid alltid att visa den, oavsett juridisk person. Beteendet inträffar eftersom användarna får en egen kopia av den publicerade vyn när den läses in, och personliga vyer är globala.
-- **Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** aktiveras, visar visningsväljaren vyn enbart för angivna juridiska personer. Detta beteende inträffar eftersom funktionen gör det möjligt att länka vyer (inklusive personliga vyer) till specifika juridiska personer.
+- Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** aktiveras, visar visningsväljaren vyn enbart för angivna juridiska personer. Detta beteende inträffar eftersom funktionen gör det möjligt att länka vyer (inklusive personliga vyer) till specifika juridiska personer.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

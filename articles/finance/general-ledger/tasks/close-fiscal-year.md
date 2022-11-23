@@ -2,7 +2,7 @@
 title: Stänga räkenskapsåret
 description: Denna procedur vägleder dig genom stegen i årsbokslutsprocessen som överför saldon till ett nytt räkenskapsår.
 author: aprilolson
-ms.date: 07/11/2019
+ms.date: 11/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eb36cb856d191d64561060e7de4a1f9fd947882
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4d52e6789a96defaf1d0132fe97fc183a05af207
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717486"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779823"
 ---
 # <a name="close-the-fiscal-year"></a>Stänga räkenskapsåret
 
@@ -40,7 +40,7 @@ Om inställningen är **Ja** skapas två transaktioner. En verifikation skapas i
 
 5. Välj **Ja** eller **Nej** för **Ställ in räkenskapsårets status på permanent stängd**.
 
-Om inställt på **Ja** kommer räkenskapsårsstatusen att ställas in som Permanent stängd. Eftersom ett permanent stängt år inte kan öppnas på nytt, är det bäst att ange detta alternativ som **Nej**.  
+Om inställt på **Ja** kommer räkenskapsårsstatusen att ställas in som **Permanent stängd**. Eftersom ett permanent stängt år inte kan öppnas på nytt, är det bäst att ange detta alternativ som **Nej**.  
 
 6. Välj **Ja** eller **Nej** för **Verifikationsnummer måste fyllas i under årsbokslutet**.
 

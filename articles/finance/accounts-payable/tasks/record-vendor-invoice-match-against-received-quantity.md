@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a3f1463821a43af0d8d5f15225944b080414e4c
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: debf8ca47666252633e67e2592acd5a4e4122403
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109928"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778696"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>Registrera leverantörsfakturan och matcha mot mottagen kvantitet
 
@@ -32,7 +32,7 @@ I den här proceduren används demonstrationsföretaget USMF. Leverantörsreskon
 
 
 ## <a name="create-a-purchase-order"></a>Skapa en inköpsorder
-1. Gå till Alla inköpsorder.
+1. Gå till **Alla inköpsorder**.
 2. Klicka på **Ny**.
 3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Leverantörskonto**.
 4. I fältet **Leverantörskonto**, skriv ett värde.

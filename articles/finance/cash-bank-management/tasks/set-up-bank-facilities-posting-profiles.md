@@ -2,23 +2,23 @@
 title: Ställ in bankkreditlimiter och bokföringsprofiler för garanti
 description: Denna uppgift skapar en bankkreditlimit och en bokföringsprofil som behövs för att bearbeta en garanti.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e3568332a7755af9c8c341223fc7ef7e66a1da02
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1bfdef0cd535f47bb1df9fb7494043d3dd519c5b
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726334"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779891"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a>Ställ in bankkreditlimiter och bokföringsprofiler för garanti
 
@@ -34,45 +34,45 @@ I den här uppgiften används demonstrationsföretaget USMF.
 
 
 ## <a name="general-ledger-parameter"></a>Redovisningsparameter
-1. Gå till Kassa- och bankhantering > Inställningar > Parametrar för kassa- och bankhantering.
-2. Expandera bankdokumentavsnittet.
-3. Välj alternativet Aktivera garanti.
-4. I fältet Transaktionsjournal, öppna sökningen genom att klicka på den nedrullningsbara knappen.
+1. Gå till **Kassa- och bankhantering > Inställningar > Parametrar för kassa- och bankhantering**.
+2. Expandera **bankdokument** avsnittet.
+3. Välj alternativet **Aktivera garanti**.
+4. I fältet **Transaktionsjournal**, öppna sökningen genom att klicka på den nedrullningsbara knappen.
 5. Hitta och markera önskad post i listan.
 6. Klicka på länken på den valda raden i listan.
-7. Klicka på fliken Nummersekvenser.
+7. Klicka på fliken **Nummersekvenser**.
     * Definiera nummerseriekoden för referenserna Garantinummer och Transaktionsnummer för garanti  
-8. Klicka på Spara.
+8. Klicka på **Spara**.
 9. Stäng sidan.
 
 ## <a name="create-bank-facility"></a>Skapa bankkreditlimit
-1. Gå till Kassa- och bankhantering > Inställningar > Bankkreditlimiter.
-2. Klicka på Ny.
-3. I fältet Kreditlimitgrupp, ange bankkreditlimitgruppens namn för garantitransaktionen.
-4. Ange ett värde i fältet Beskrivning.
-5. Klicka på Spara.
-6. Klicka på fliken Kreditlimittyper.
-7. Klicka på Ny.
-8. I fältet Kreditlimittyp, ange namnet på bankkreditlimittypen som är relaterad till bankkreditlimitavtalet.
-9. Skriv ett värde i fältet Beskrivning.
-10. I fältet Kreditlimittyp, öppna sökningen genom att klicka på den nedrullningsbara knappen.
+1. Gå till **Kassa- och bankhantering > Inställningar > Bankkreditlimiter**.
+2. Klicka på **Ny**.
+3. I fältet **Kreditlimitgrupp**, ange bankkreditlimitgruppens namn för garantitransaktionen.
+4. I fältet **Beskrivning** anger du ett värde.
+5. Klicka på **Spara**.
+6. Klicka på fliken **Kreditlimittyper**.
+7. Klicka på **Ny**.
+8. I fältet **Kreditlimittyp**, ange namnet på bankkreditlimittypen som är relaterad till bankkreditlimitavtalet.
+9. I fältet **Beskrivning** anger du ett värde.
+10. I fältet **Kreditlimittyp**, öppna sökningen genom att klicka på den nedrullningsbara knappen.
 11. Hitta och markera önskad post i listan.
 12. Klicka på länken på den valda raden i listan.
-13. I fältet Kreditlimitens natur, välj ett alternativ.
-14. Klicka på Spara.
+13. I fältet **Kreditlimitens natur, välj ett alternativ.
+14. Klicka på **Spara**.
 15. Stäng sidan.
 
 ## <a name="bank-posting-profile"></a>Bokföringsprofil för bank
-1. Gå till Kassa- och bankhantering > Inställningar > Bokföringsprofil för bankdokument.
-2. Klicka på Ny.
-3. I fältet Konto-/gruppnummer, öppna sökningen genom att klicka på den nedrullningsbara knappen.
+1. Gå till **Kassa- och bankhantering > Inställningar > Bokföringsprofil för bankdokument**.
+2. Klicka på **Ny**.
+3. I fältet **Konto-/gruppnummer**, öppna sökningen genom att klicka på den nedrullningsbara knappen.
 4. Hitta och markera önskad post i listan.
 5. Klicka på länken på den valda raden i listan.
-6. I fältet Kvittningskonto, välj huvudkontot för kvittning.
-7. I fältet Avgiftskonto, välj kontot för utgiftstransaktioner.
-8. I fältet Marginalkonto, välj kontot för marginaltransaktionen.
-9. I fältet Likvideringskonto, välj likvideringkontot för garantitransaktionen. 
-10. Klicka på Spara.
+6. I fältet **Kvittningskonto**, välj huvudkontot för kvittning.
+7. I fältet **Avgiftskonto**, välj kontot för utgiftstransaktioner.
+8. I fältet **Marginalkonto**, välj kontot för marginaltransaktionen.
+9. I fältet **Likvideringskonto**, välj likvideringkontot för garantitransaktionen. 
+10. Klicka på **Spara**.
 11. Stäng sidan.
 
 

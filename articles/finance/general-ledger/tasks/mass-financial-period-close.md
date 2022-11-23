@@ -2,7 +2,7 @@
 title: Masstäng räkenskapsperiod
 description: I den här artikeln visas hur du spärrar eller permanent stänger ner en period eller mer än en juridisk person åt gången.
 author: aprilolson
-ms.date: 08/16/2019
+ms.date: 11/16/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8a85d512842b27f2d74507be16a8f2819f483e0d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872453"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779837"
 ---
 # <a name="mass-financial-period-close"></a>Masstäng räkenskapsperiod
 
@@ -26,7 +26,11 @@ ms.locfileid: "8872453"
 
 I den här artikeln visas hur du spärrar eller permanent stänger ner en period eller mer än en juridisk person åt gången. Dessutom kommer uppgiften att visa hur du begränsar bokföring från användargrupper till specifika moduler.
 
-1. i navigeringsfönstret, gå till **Redovisning > Periodstängning > Redovisningskalendrar**. Observera att listan med juridiska personer som visas är beroende av räkenskapskalendern som har valts på sidan. Endast juridiska personer som använder vald räkenskapskalender kommer att visas.
+1. i navigeringsfönstret, gå till **Redovisning > Periodstängning > Redovisningskalendrar**. 
+
+>[!NOTE]
+> Listan med juridiska personer som visas är beroende av räkenskapskalendern som har valts på sidan. Endast juridiska personer som använder vald räkenskapskalender kommer att visas.
+
 2. Välj **Redigera**.
 3. Välj den period som du vill ändra statusen för.
 4. Välj den juridiska person som du vill uppdatera statusen för. Du kan snabbt välja alla juridiska personer genom att välja bocken uppe på rutnätets vänstra sida.  

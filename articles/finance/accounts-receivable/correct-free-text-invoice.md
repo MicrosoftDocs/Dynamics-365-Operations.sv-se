@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c83ac47bc5e7f7ed223c772591cf8a7c1e63a40
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b3cc07a1f0ba444250eddcf892681e2ca63e9c1a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715508"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780579"
 ---
 # <a name="correct-a-free-text-invoice"></a>Korrigera en fritextfaktura
 
@@ -28,7 +28,11 @@ ms.locfileid: "9715508"
 
 Det här avsnittet innehåller information om hur du korrigerar en fritextfaktura som har bokförts och hur du återutfärdar den som en korrigerad faktura.
 
-Öppna bokförd fritextfaktura för att åtgärda en fritextfaktura som redan har bokförts. På sidan **Faktura**, välj **Avbryt** och sedan **Korrigera faktura**. Välj en orsakskod, lägg till kommentarer och välj datum för ny korrigerad faktura. Du kan ändra den korrigerade fakturan och bokföra den. 
+För att korrigera en fritextfaktura som har bokförts: 
+1. Öppna bokförda fritextfakturor. 
+2. På sidan **Faktura**, välj **Avbryt** och sedan **Korrigera faktura**. 
+3. Välj en orsakskod, lägg till kommentarer och välj datum för ny korrigerad faktura.
+4. Du kan ändra den korrigerade fakturan och bokföra den. 
 
 När du bokför den korrigerade fakturan skapas en annulleringsfaktura för ett kreditbelopp som är lika med det ursprungliga fakturabeloppet. Därför är det kombinerade saldot för den ursprungliga fakturan och annulleringsfakturan 0 (noll). Annulleringsfakturan kvittas mot den ursprungliga fakturan. 
 

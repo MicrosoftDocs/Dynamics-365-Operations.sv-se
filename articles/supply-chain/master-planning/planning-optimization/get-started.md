@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
-ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
+ms.openlocfilehash: 4b986461e90b356580da8a136c1da95e7dc64696
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2022
-ms.locfileid: "9740340"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780418"
 ---
 # <a name="get-started-with-master-planning"></a>Kom i gång med huvudplanering
 
@@ -31,7 +31,7 @@ Huvudplaneringen i Supply Chain Management tillhandahålls av en extern tjänst 
 
 ## <a name="availability"></a>Tillgänglighet
 
-Planeringsoptimering är för närvarande tillgänglig i följande Azure-områden: USA, Kanada, Brasilien, Europa, Frankrike, Storbritannien, Australien, Asien och Stillahavsområdet, Japan samt Indien. Om du försöker installera tillägget från ett annat geografiskt område visas ett meddelande om att detta geografiska område inte stöds. Mer information om Azure-områden och relaterade regioner finns i [Azure-områden](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planeringsoptimering är för närvarande tillgänglig i följande Azure-områden: USA, Kanada, Brasilien, Europa, Frankrike, Storbritannien, Norge, Schweiz, Australien, Asien och Stillahavsområdet, Japan samt Indien. Om du försöker installera tillägget från ett annat geografiskt område visas ett meddelande om att detta geografiska område inte stöds. Mer information om Azure-områden och relaterade regioner finns i [Azure-områden](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Observera att Planeringsoptimering inte har stöd för lokala distributioner av Dynamics 365 Supply Chain Management.
 

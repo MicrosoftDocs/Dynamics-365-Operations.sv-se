@@ -13,12 +13,12 @@ ms.author: mrolecki
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
 ms.search.form: ''
-ms.openlocfilehash: 88145cdccfe3f1d0d3de4e31dfa519b27df6550a
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: e4ccc8ac9b5374ca0713167a17b8704727c687fd
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643696"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775252"
 ---
 # <a name="customer-aging-snapshots"></a>Ögonblicksbild av åldersfördelningen för kunder
 
@@ -31,9 +31,10 @@ Information från ögonblicksbilder av åldersfördelning visas på listsidan **
 I arbetsytan **Kundkredit och inkasso** visas också kunders åldersfördelning. Mer information finns i innehållet [i Kredit- och inkassohantering Power BI](credit-collections-power-bi.md).
 
 > [!NOTE]
-> För att minska tiden som krävs för att skapa en åldrande ögonblicksbild, aktivera följande funktioner i arbetsytan **Funktionshantering**: **Prestandaförbättring av åldersfördelning för kunder** 
-> **Prestandaförbättringar i åldersfördelning för kunder med kundpooler**  
-> När båda funktionerna är aktiverade kan **kundpooler** användas när ögonblicksbild av åldersfördelning skapas. 
+> Du minskar den tid som krävs för att skapa en ögonblicksbild av åldersfördelningen genom att aktivera följande funktioner i arbetsytan **Funktionshantering**. 
+> - **Prestandaförbättring av åldersfördelning för kunder** 
+> - **Prestandaförbättringar i åldersfördelning för kunder med kundpooler**  
+>När båda funktionerna är aktiverade kan **kundpooler** användas när ögonblicksbild av åldersfördelning skapas. 
 
 När du skapar en ögonblicksbild av kunders åldersfördelning kan du ange information om detta i följande fält:
 

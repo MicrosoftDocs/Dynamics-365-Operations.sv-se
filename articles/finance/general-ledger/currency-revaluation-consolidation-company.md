@@ -2,7 +2,7 @@
 title: Valutaomvärdering i ett konsolideringsföretag
 description: Denna artikel beskriver hur du omvärderar valuta i ett konsolideringsföretag.
 author: aprilolson
-ms.date: 10/02/2018
+ms.date: 10/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fbbc1d0a7ae5b7e288710c99a6af362b3db3d36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c05ef0d4d05d5113d3b858dafe49ee9c1c7211d9
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889016"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779673"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Valutaomvärdering i ett konsolideringsföretag
 
@@ -39,20 +39,20 @@ När du konsolidera data från en redovisningsvaluta till en annan måste du for
 ## <a name="original-transactions"></a>Ursprungliga transaktioner
 ### <a name="cash-receipt-transactions-in-usmf"></a>Kontantkvitto transaktioner i USMF
 
-| Datum       | Redovisningskonto               | Valuta | Belopp |
+| Datum       | Redovisningskonto               | Valuta | Tid |
 |------------|------------------------------|----------|--------|
-| 10/11/2015 | 110110 – Kassa                | USD      | 500    |
-| 10/11/2015 | 130100 – Kundfordringar | USD      | -500   |
+| 10/11/2020 | 110110 – Kassa                | USD      | 500    |
+| 10/11/2020 | 130100 – Kundfordringar | USD      | -500   |
 
 ## <a name="exchange-rates"></a>Valutakurser
 
 | Från valuta | Till valuta | Startdatum | Valutakurs |
 |---------------|-------------|------------|---------------|
-| Euro           | USD         | 10/1/2015  | 200           |
-| Euro           | USD         | 11-01 2015  | 150           |
-| Euro           | USD         | 12/1/2012  | 100           |
+| EUR           | USD         | 10/1/2020  | 200           |
+| EUR           | USD         | 11/1/2020  | 150           |
+| EUR           | USD         | 12/1/2017  | 100           |
 
-## <a name="perform-the-consolidation-for-october-2015"></a>Utföra konsolideringen för oktober 2015
+## <a name="perform-the-consolidation-for-october-2020"></a>Utföra konsolideringen för oktober 2020
 ### <a name="balances-in-the-consolidation-company"></a>Saldon i fältet konsolideringsföretag
 
 | Redovisningskonto | Valuta | Belopp | Beräkning    |
@@ -60,7 +60,7 @@ När du konsolidera data från en redovisningsvaluta till en annan måste du for
 | 110110         | Euro      | 250    | 500 USD × 50 %  |
 | 130100         | Euro      | -250   | -500 USD × 50% |
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-november-30-2015"></a>Utföra valutaomvärdering för räkenskaper från den 1 oktober 2015, genom den 30 November, 2015
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-november-30-2020"></a>Utföra valutaomvärdering för räkenskaper från den 1 oktober 2020, genom den 30 November, 2020
 ### <a name="balances-in-the-consolidation-company"></a>Saldon i fältet konsolideringsföretag
 
 | Redovisningskonto | Valuta | Belopp  | Beräkning                        |
@@ -72,7 +72,7 @@ När du konsolidera data från en redovisningsvaluta till en annan måste du for
 
 Du kommer att se ytterligare transaktioner för rapportering valuta.
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-december-31-2015"></a>Utföra valutaomvärdering för räkenskaper från 1 oktober 2015 till 31 December 2015
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-december-31-2020"></a>Utföra valutaomvärdering för räkenskaper från 1 oktober 2020 till 31 December 2020
 ### <a name="balances-in-the-consolidation-company"></a>Saldon i fältet konsolideringsföretag
 
 | Redovisningskonto | Valuta | Belopp  | Beräkning                                          |
