@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e8330e26f1450dac27bb837bb56f8bbffefc9bc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 49074c11659ae30fd2decdb93b4721441edff2c5
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712214"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780586"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Tilldela en mall för fritextfaktura till en kund
 
@@ -36,15 +36,16 @@ Denna uppgift visar hur du tilldelar en fritextfakturamall till en kund. I denna
 8. Klicka på länken på den valda raden i listan.
 9. I fältet **Faktureringsstartdatum**, ange datumet när den första fakturan ska genereras.
 10. I avsnittet **Avsluta upprepning** anger du ett slutdatum för upprepning.  
-    * Välj något av följande: Inget slutdatum – Fakturor skapas utan tidsgräns tills mallen tas bort från kundkontot.
-    * Faktureringsslutdatum – Välj det här alternativet för att ange för att ange det senaste datum då fakturan kan genereras.  
+    Välj en av följande: 
+    - **Inget slutdatum** – Fakturor skapas utan tidsgräns tills mallen tas bort från kundkontot.
+    - **Faktureringsslutdatum** – Välj det här alternativet för att ange för att ange det senaste datum då fakturan kan genereras.  
 11. I fältet **Högsta ackumulerat belopp** anger du det högsta ackumulerade belopp efter vilket fakturangenereringen ska stoppas. Ange det maximala ackumulerade belopp som kan uppnås med den valda mallen. Om du till exempel anger 1 000,00 och genererar månatliga fakturor för 100,00 styck, kommer fakturor att upphöra att skapas efter att den tionde fakturan har genererats.  
 12. I avsnittet **Skapa återkommande fakturor genom att använda standardvärdena från** väljer du fritextfakturamallen eller kundkontot. Välj om du vill använda fritextfakturamallen eller kundkontot för att bestämma standardvärdena för språk, bokföringsprofil, momsgrupp, artikelmomsgrupp, listkod, land/region för leveransen, valuta, betalningsvillkor, betalningsmetod, betalningsspecifikationer, betalningsplan, kassarabatt, ekonomiska dimensioner och gireringsblankett när fakturor skapas.  
 13. I fältet **Upprepningsmönster**, välj upprepningsmönstret.
-    + Dagligen – Ange det här alternativet och ange antalet dagar i fältet Per. Om du till exempel anger 15, kommer en faktura skapas var 15:e dag för den här kunden.
-    + Varje vecka – Välj det här alternativet och ange antalet veckor i fältet Per. Om du till exempel anger 2, kommer en faktura skapas varannan vecka för den här kunden.
-    + Varje månad – Välj det här alternativet och ange antalet månader i fältet Per. Om du till exempel anger 6, kommer en faktura skapas var sjätte månad för den här kunden.
-    + Årligen – Välj det här alternativet och ange antalet år i fältet Per. Om du till exempel anger 2, kommer en faktura skapas vartannat år för den här kunden.  
+    - **Dagligen** – Ange det här alternativet och ange antalet dagar i fältet Per. Om du till exempel anger 15, kommer en faktura skapas var 15:e dag för den här kunden.
+    - **Varje vecka** – Välj det här alternativet och ange antalet veckor i fältet Per. Om du till exempel anger 2, kommer en faktura skapas varannan vecka för den här kunden.
+    - **Varje månad** – Välj det här alternativet och ange antalet månader i fältet Per. Om du till exempel anger 6, kommer en faktura skapas var sjätte månad för den här kunden.
+    - **Årligen** – Välj det här alternativet och ange antalet år i fältet Per. Om du till exempel anger 2, kommer en faktura skapas vartannat år för den här kunden.  
 14. I fältet **Per**, ange en siffra.
 
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb563008f156e1bfa6e4e9a705e9170342719ce7
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887989"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775179"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Ställ in och behandla interimsbetalningar
 
 [!include [banner](../includes/banner.md)]
 
-En interimsbetalning är en betalning som bokförs i redovisningen i två steg. Den här metoden används vanligtvis när betalningsmetoden är inställd på **Bank** och du bara måste bokföra transaktioner på bankkontot om transaktionen har raderat banken. Du kan dock även använda det för ett redovisningskonto. I det här fallet flyttar systemet beloppet från ett huvudkonto till ett annat när interimsbokning bearbetas.
+En interimsbetalning är en betalning som bokförs i redovisningen i två steg. Den här metoden används vanligtvis när betalningsmetoden är inställd på **Bank** och du bara måste bokföra transaktioner på bankkontot om transaktionen har raderat banken. Du kan dock även använda det för ett redovisningskonto. I det här fallet flyttar beloppet från ett huvudkonto till ett annat när interimsbokning bearbetas.
 
 Du kan skapa interimsbetalningar från leverantörsreskontra eller kundreskontra. Även om den här artikeln förklarar hur du konfigurerar interimsbokföring för kundreskontra, är stegen för leverantörsreskontratransaktioner liknande.
 

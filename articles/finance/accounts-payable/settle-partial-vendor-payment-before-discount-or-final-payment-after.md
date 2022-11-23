@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59ad9b9e7e75027fc46658c901da7a70520a1332
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 828c82d88bef1d942af1219505af591d27043fa5
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715780"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780600"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Kvitta en delbetalning före rabattdatum och slutbetalning efter rabattdatum
 
@@ -35,20 +35,20 @@ Den 25 juni registrerar och bokför April en faktura på 1 000,00 för leverant�
 
 | Verifikation   | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo   | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
-| Fakt 10020 | Faktura          | 6/25/2015 | 10020   |                                      | 1 000,00                              | -1 000,00 | USD      |
+| Fakt 10020 | Faktura          | 6/25/2020 | 10020   |                                      | 1,000.00                              | -1 000,00 | USD      |
 
 ## <a name="partial-payment-on-july-2"></a>Delbetalning den 2 juli
 Den 2 juli vill April kvitta 300,00 av den här fakturan. Betalningen är berättigad till en rabatt, eftersom Fabrikam får rabatt på delbetalningar. Därför betalar April 297,00 och får en rabatt på 3,00. Hon skapar en betalningsjournal och anger en rad för leverantören 3057. Hon öppnar sedan sidan **Kvitta transaktioner** så att hon kan välja den faktura som ska kvittas.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markerad | Normal            | Fakt 10020 | 3057    | 6/25/2015 | 7/25/2015 | 10020   | -1 000,00                      | USD      | -297,00          |
+| Markerad | Normal            | Fakt 10020 | 3057    | 6/25/2020 | 7/25/2020 | 10020   | -1 000,00                      | USD      | -297,00          |
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
 | Fält                        | Värde     |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/09 |
+| Kassarabattdatum           | 7/09/2020 |
 | Kassarabattbelopp         | -10.00    |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 0,00      |
@@ -58,22 +58,22 @@ April bokför sedan fakturan. Fakturan har nu ett saldo på 700,00. April kan vi
 
 | Verifikation    | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| Fakt 10020  | Faktura          | 6/25/2015 | 10020   |                                      | 1 000,00                              | -700,00 | USD      |
-| APP-10020  | Betalning          | 7/1/2015  |         | 297,00                               |                                       | 0,00    | USD      |
-| RAB-10020 | Kassarabatt    | 7/1/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
+| Fakt 10020  | Faktura          | 6/25/2020 | 10020   |                                      | 1,000.00                              | -700,00 | USD      |
+| APP-10020  | Betalning          | 7/1/2020  |         | 297,00                               |                                       | 0,00    | USD      |
+| RAB-10020 | Kassarabatt    | 7/1/2020  |         | 3.00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--normal"></a>Resterande betalning den 15 juli, Använd kassarabatt = Normal
 April betalar resten av fakturan den 15 juli, vilket är efter rabattperioden. På sidan **Kvitta öppna transaktioner** visas inget rabattbelopp i fältet **Beräknad kassarabatt** och värdet i fältet **Kassarabattbelopp** är **0,00**. När April betalar de återstående 700,00, ges ingen ytterligare rabatt.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markerad | Normal            | Fakt 10020 | 3057    | 6/25/2015 | 7/25/2015 | 10020   | -700,00                        | USD      | -700,00          |
+| Markerad | Normal            | Fakt 10020 | 3057    | 6/25/2020 | 7/25/2020 | 10020   | -700,00                        | USD      | -700,00          |
 
 Information om rabatten visas längst ned på sidan **Kvitta transaktioner**. April ser att hon redan har tagit emot 3,00 rabatt.
 
 | Fält                        | Värde     |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/09 |
+| Kassarabattdatum           | 7/09/2020 |
 | Kassarabattbelopp         | 0,00      |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | -3,00     |
@@ -83,23 +83,23 @@ April bokför sedan betalningen. När hon öppnar sidan **Leverantörstransaktio
 
 | Verifikation    | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| Fakt 10020  | Faktura          | 6/25/2015 | 10020   |                                      | 1 000,00                              | 0,00    | USD      |
-| APP-10020  | Betalning          | 7/1/2015  |         | 297,00                               |                                       | 0,00    | USD      |
-| RAB-10020 | Kassarabatt    | 7/1/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
-| APP-10021  | Betalning          | 7/15/2015 |         | 700,00                               |                                       | 0,00    | USD      |
+| Fakt 10020  | Faktura          | 6/25/2020 | 10020   |                                      | 1,000.00                              | 0,00    | USD      |
+| APP-10020  | Betalning          | 7/1/2020  |         | 297,00                               |                                       | 0,00    | USD      |
+| RAB-10020 | Kassarabatt    | 7/1/2020  |         | 3.00                                 |                                       | 0,00    | USD      |
+| APP-10021  | Betalning          | 7/15/2020 |         | 700.00                               |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--always"></a>Resterande betalning den 15 juli, Använd kassarabatt = Alltid
 Om leverantören låter April göra en rabatt trots att hon betalar efter rabattdatumet kan hon ändra värdet i fältet **Använd kassarabatt** till **Alltid**. Inställningen **Beräkna kassarabatter för delbetalningar** åsidosätts och rabatten används. Betalningsbeloppet är 693,00 och rabatten är de återstående 7,00.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Valuta | Belopp att kvitta |
-|----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Markerad | Alltid            | Fakt 10020 | 3057    | 6/25/2015 | 7/25/2015 | 10020   | 700,00                               |                                       | USD      | -693,00          |
+|----------|----------|------|------|-----------|-----------|---------|-----------------------|---------------------------------------|----------|------------------|
+| Markerad | Alltid            | Fakt 10020 | 3057    | 6/25/2020 | 7/25/2020 | 10020   | 700.00                   |                   | USD      | -693,00          |
 
 Information om rabatten visas längst ned på sidan **Kvitta transaktioner**.
 
 | Fält                        | Värde     |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/09 |
+| Kassarabattdatum           | 7/09/2020 |
 | Kassarabattbelopp         | 7.00      |
 | Använd kassarabatt            | Alltid    |
 | Utnyttjad kassarabatt          | -3,00     |
@@ -109,11 +109,11 @@ April bokför sedan betalningen. När hon öppnar sidan **Leverantörstransaktio
 
 | Verifikation    | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| Fakt 10020  | Faktura          | 6/25/2015 | 10020   |                                      | 1 000,00                              | 0,00    | USD      |
-| APP-10020  | Betalning          | 7/1/2015  |         | 297,00                               |                                       | 0,00    | USD      |
-| RAB-10020 | Kassarabatt    | 7/1/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
-| APP-10021  | Betalning          | 7/15/2015 |         | 693,00                               |                                       | 0,00    | USD      |
-| RAB-10021 | Kassarabatt    | 7/15/2015 |         | 07:00                                 |                                       | 0,00    | USD      |
+| Fakt 10020  | Faktura          | 6/25/2020 | 10020   |                                      | 1,000.00                              | 0,00    | USD      |
+| APP-10020  | Betalning          | 7/1/2020  |         | 297,00                               |                                       | 0,00    | USD      |
+| RAB-10020 | Kassarabatt    | 7/1/2020  |         | 3.00                                 |                                       | 0,00    | USD      |
+| APP-10021  | Betalning          | 7/15/2020 |         | 693,00                               |                                       | 0,00    | USD      |
+| RAB-10021 | Kassarabatt    | 7/15/2020 |         | 7.00                                 |                                       | 0,00    | USD      |
 
 
 

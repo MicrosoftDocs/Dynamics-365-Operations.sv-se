@@ -2,24 +2,19 @@
 title: Översikt över omdömen och recensioner
 description: I denna artikel beskrivs omdömen och recensioner i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/01/2019
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: ''
-ms.search.industry: ''
-ms.openlocfilehash: 612a3ca480049febac352ed9215ec9de83bbecf6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1f0d3ed5d95ad49cb09cf1f89d0f4c8c07620b92
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269011"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785160"
 ---
 # <a name="ratings-and-reviews-overview"></a>Översikt över omdömen och recensioner
 
@@ -42,6 +37,11 @@ Lösningen för omdömen och recensioner i Dynamics 365 Commerce använder Azure
 Med lösningen för omdömen och recensioner får du en widget som visar betygssammanfattningar i produktlistor, i sökresultat, på sidan produktinformation och på andra platser. Widgetarna visar fullständiga omdömeslistor och innehåller även sorterings- och filtreringsalternativ.
 
 Lösningen för omdömen och recensioner innehåller också en Business Intelligence-mall (BI) som innehåller en uppsättning mått som ger insikter på omdömen och recensioner. Data för omdömen och recensioner kan exporteras för vidare analys.
+
+Följande video innehåller en översikt över bedömningar och granskningar av funktioner i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
-ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
+ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9702206"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764250"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheter eller ändringar i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Denna artikel listar nya funktioner, korrigeringar, förbättringar och kända problem för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20370"></a>Version 2.0.37.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+- Lade till en användarinställning som låter medarbetarna välja var i programmet visar produkten (i både kort och stegrubriker, bara i stegrubriker eller inte alls). 
+- Förbättrad detaljkortskärmens layout genom att minska storleken på stegbanderollen och kvantitetsinmatning, vilket lämnar mer plats för annat innehåll. 
+- Förbättrade användargränssnittet när det körs på en Honeywell Thor-enhet. 
+- Förbättrat helskärmsläge (gäller endast enheter med maskinvarutangentbord). 
+- Förbättrade resultat vid sortering av detaljer för kort och anpassade sidor efter prioritet eller underprioritet (DataPriority eller DisplaySubPriority). 
+- Stöd för fler språk har lagts till. 
+- Förbättrad stabilitet. 
+- Förbättrad flera bilder och ikoner. 
 
 ## <a name="version-20350"></a>Version 2.0.35.0
 

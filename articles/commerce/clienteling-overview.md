@@ -2,28 +2,23 @@
 title: Översikt över kundhantering
 description: Denna artikel innehåller en översikt över nya klientfunktioner som är tillgängliga i butiksprogrammet.
 author: bebeale
-ms.date: 02/01/2021
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "260624"
 - intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc7daeb27c25efa21fd34b0456af8892074056d5
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885621"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785056"
 ---
 # <a name="clienteling-overview"></a>Översikt över kundhantering
 
@@ -31,6 +26,11 @@ ms.locfileid: "8885621"
 
 
 Många återförsäljare, särskilt de specialiserade återförsäljarna, vill att deras säljpartner ska bilda långsiktiga relationer med sina viktigaste kunder. Intresseföretag förväntas känna till om dessa kunders gillar och ogillar, inköps historik, produktinställningar och viktiga datum, t.ex. årsdagar och födelsedagar. Säljare behöver en plats där de kan samla in informationen och lätt hitta den när den behövs. Om denna information är tillgänglig i en enda vy, kan de enkelt rikta kunder som uppfyller specifika kriterier. De kan till exempel hitta alla kunder som föredrar att handla för handväskor, eller kunder som har en viktig händelse, t.ex. en födelsedag eller en årsdag.
+
+Följande video går igenom ett exempelscenario för kundhantering i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSP]
 
 ## <a name="client-book"></a>Kundbok
 

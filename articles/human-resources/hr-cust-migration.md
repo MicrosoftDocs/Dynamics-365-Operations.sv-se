@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63b08a8493702cf319aa078ef6aa787e2094be87
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
+ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733464"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760373"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources kundmigrering
 
@@ -38,13 +38,12 @@ Kundmigrering är en "Lift and Shift-migrering" (rörelse) för en kunddatabas t
 
 ### <a name="dataverse-environment-backup-sandbox"></a>Dataverse-miljö säkerhetskopia (Sandbox)
 
-1. Valfri men rekommenderad: Uppdatera den befintliga sandbox-miljön för Personal med hjälp av en kopia av personalproduktionsmiljön.
-2. [Skapa en ny Dataverse-miljö](/power-platform/admin/create-environment#create-an-environment-with-a-database) genom att ändra Power Platform administrationscentret.
+ - Valfri men rekommenderad: Uppdatera den befintliga sandbox-miljön för Personal med hjälp av en kopia av personalproduktionsmiljön.
+ - Skapa en ny Dataverse-miljö genom att använda Power Platform administrationscentret.
+ - Kopiera den befintliga Dataverse-miljön, som är länkad till det fristående programmet Personal, till den miljö du skapade i det föregående steget.
 
-    > [!NOTE]
-    > När du lägger till en databas måste alternativet **Aktivera Dynamics 365-program** vara inställt på **Ja**.
-
-3. [Kopiera den befintliga Dataverse-miljön](/power-platform/admin/copy-environment), som är länkad till det fristående programmet Personal, till den miljö du skapade i det föregående steget.
+> [!NOTE]
+> När du lägger till en databas måste alternativet **Aktivera Dynamics 365-program** vara inställt på **Ja**. Mer information finns i [Förbereda en Power Platform miljö](hr-cust-migration.md#prepare-a-power-platform-environment)
 
 ### <a name="dataverse-capacity"></a>Dataverse-kapacitet
 
@@ -89,9 +88,9 @@ När ett nytt Lifecycle Services-projekt har skapats och projektets registrering
 #### <a name="prepare-a-power-platform-environment"></a>Förbered en Power Platform-miljö
 
 > [!NOTE]
-> Det här steget används bara för migrering av sandbox-miljöer. När du migrerar produktionsmiljön, den befintliga Power Platform-miljön i administrationscentret som är kopplad till produktionsmiljön kommer att föras vidare.
+> Det här steget används bara för migrering av sandbox-miljöer. När du migrerar produktionsmiljön, den befintliga Power Platform-miljön i administrationscentret som är kopplad till produktionsmiljön kommer att föras vidare. När du lägger till en databas måste knappen **Aktivera Dynamics 365-program** vara inställt på **Ja**. 
 
-- I administrationscentret för Power Platform [skapa en Power Platform-miljö](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) att använda för sandbox-migrering, eller välj en befintlig miljö.
+- I administrationscentret för Power Platform [skapa en miljö med en databas](/power-platform/admin/create-environment#create-an-environment-with-a-database) att använda för sandbox-migrering, eller välj en befintlig miljö.
 - [Kopiera en miljö](/power-platform/admin/copy-environment) för att uppdatera den Power Platform-miljö som används för mappning.
 
 #### <a name="migrate-the-sandbox-environment"></a>Migrera sandbox-miljön

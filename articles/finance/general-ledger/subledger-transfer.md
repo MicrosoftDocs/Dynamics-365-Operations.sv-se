@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a53b7834271355aaf11c13c3f1886257a97b1da8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7ef93b81ce37128f7ff400eb4034ffea01756038
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069003"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779864"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Överför delredovisning till redovisningen
 
@@ -35,7 +35,7 @@ Följande alternativ är tillgängliga för överföring av delredovisningsbatch
 - **Asynkron** – Överför av delredovisningstransaktionerna till redovisningen schemaläggs omedelbart. Redovisningsverifikationen registreras så snart resurser är fria att bearbeta denna begäran på servern.
 - **Tidsplanerad batch** – Bokföringsposterna som måste överföras läggs till i behandlingskön i huvudbok. Posterna i kön bearbetas i den ordning de kommer in. Redovisningsverifikationen kommer att uppdatera kontona på den schemalagda tiden om resurser är fria att bearbeta detta batchjobb på servern.
 
-I version 10.0.8 har förbättringar gjorts för att förbättra prestanda för alternativet **Asynkront**. Den här funktionen aktiveras under funktionsnamnet **Prestandaoptimering för överföring av delredovisning till redovisning**.
+Förbättringar gjorts för att förbättra prestanda för alternativet **Asynkront**. Den här funktionen aktiveras under funktionsnamnet **Prestandaoptimering för överföring av delredovisning till redovisning**.
 
 Funktionerna för asynkron överföring av redovisningsbatchar underlättar överföringen av data från redovisningen till redovisningen. Genom att gruppera uppsättningar med mindre transaktioner och överföra transaktioner i grupper, bearbetar funktionerna transaktionerna på ett mer effektivt sätt. När transaktioner grupperas används batchserverns resurser på ett effektivare sätt.
 

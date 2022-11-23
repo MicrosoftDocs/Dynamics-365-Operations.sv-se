@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713683"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775310"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Skapa en avskrivningsjournal för en kund
 
@@ -48,9 +48,9 @@ Den här uppgiftsguiden innehåller information om hur du ställer in parametrar
 7. Gå till **Navigeringsfönstret > Moduler > Redovisning > Journalposter > Allmänna journaler**.
 8. Välj journalbatchnumret för den journal som innehåller din avskrivning. En rad skapas för att återföra kundbalansen. En eller flera rader skapas för att bokföra avskrivningen till avskrivningskontot.  
 9. Stäng sidan.
-10. Stäng sidan.
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Skriv av transaktioner från inkassoformuläret.
+
+## <a name="write-off-transactions-from-the-collections-page"></a>Skriv av transaktioner från inkassosidan
 1. Gå till **Kredit och inkasso > Inkasso > Åldersfördelade saldon**.
 2. Välj namnet på kunden som har de transaktioner som du vill skriva av. Välj till exempel Cave Wholesales (US-004).
 3. Markera raden för den första transaktionen.
@@ -63,7 +63,7 @@ Den här uppgiftsguiden innehåller information om hur du ställer in parametrar
 10. Gå till **Redovisning > Journalposter > Allmänna journaler**.
 11. Välj journalbatchnumret för den journal som innehåller din avskrivning. En rad skapas för att återföra kundbalansen. En eller flera rader skapas för att bokföra avskrivningen till avskrivningskontot.  
 12. Stäng sidan.
-13. Stäng sidan.
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Skriv av en faktura från sidan Öppna kundfakturor
 1. Gå till **Navigeringsfönster > Moduler > Kundreskontra > Fakturor > Öppna kundfakturor**.

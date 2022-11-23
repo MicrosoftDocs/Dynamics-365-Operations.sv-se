@@ -2,23 +2,23 @@
 title: Exportera data för dotterbolag till filer
 description: I detta avsnitt beskrivs hur du förbereder export av data från Microsoft Dynamics 365 Finance och sedan importerar den till en konsoliderad juridisk person.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30d69f9a2813621df410a29568644f264392fb49
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876165"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779972"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Exportera data för dotterbolag till filer
 
@@ -32,14 +32,14 @@ Använd sidan **Export** (**Systemadministration \> Arbetsytor \> Import/Export*
 
     | Fält                             | beskrivning |
     |-----------------------------------|-------|
-    | Huvudkonto                      | Ange kontona som ska konsolideras. Lämna det här fältet tomt om du vill inkludera alla konton. |
-    | Använd konsolideringskonto         | Om du har angett konsolideringskonton ställer du in det här alternativet på **Ja**. |
-    | Välj konsolideringskonto från | Välj antingen **Huvudkonto** eller **Konsolideringskontogrupp**. |
-    | Konsolideringskontogrupp       | Välj en konsolideringskontogrupp för det konsolideringskonto som du har valt. |
-    | Konsolideringsperiod              | Ange "från och till"-datum för konsolideringen. |
-    | Inkludera faktiska belopp            | Ange alternativet som **Ja** om du vill inkludera faktiska belopp. |
-    | Inkludera budgetbelopp            | Ange alternativet som **Ja** om du vill inkludera budgetbelopp i konsolideringar. |
-    | Budgetmodeller                     | Ange den budgetmodell som ska inkluderas. |
+    | **Huvudkonto**                      | Ange kontona som ska konsolideras. Lämna det här fältet tomt om du vill inkludera alla konton. |
+    | **Använd konsolideringskonto**         | Om du har angett konsolideringskonton ställer du in det här alternativet på **Ja**. |
+    | **Välj konsolideringskonto från** | Välj antingen **Huvudkonto** eller **Konsolideringskontogrupp**. |
+    | **Konsolideringskontogrupp**       | Välj en konsolideringskontogrupp för det konsolideringskonto som du har valt. |
+    | **Konsolideringsperiod**              | Ange "från och till"-datum för konsolideringen. |
+    | **Inkludera faktiska belopp**            | Ange alternativet som **Ja** om du vill inkludera faktiska belopp. |
+    | **Inkludera budgetbelopp**            | Ange alternativet som **Ja** om du vill inkludera budgetbelopp i konsolideringar. |
+    | **Budgetmodeller**                     | Ange den budgetmodell som ska inkluderas. |
 
 3. På fliken **Ekonomiska dimensioner** anger du detaljer för konsolideringen:
 
