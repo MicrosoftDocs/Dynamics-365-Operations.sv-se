@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
-ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
+ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9752309"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775412"
 ---
 # <a name="proactive-quality-updates"></a>Förebyggande kvalitetsuppdateringar
 
@@ -112,7 +112,7 @@ Mer information om mörka timmar för varje region finns i [Vilka är de planera
 | Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 14 oktober till 17 oktober 2022 och 2 november till 5 november 2022 | 13 november till 16 november 2022 |
 | Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 15 oktober till 18 oktober 2022 och 2 november till 5 november 2022 | 13 november till 16 november 2022 |
 | Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 16 oktober till 19 oktober 2022 och 2 november till 5 november 2022 | 13 november till 16 november 2022 |
-| Station 4 | Europa, norra, USA, centrala, USA, västra | 17 oktober till 20 oktober 2022 och 2 november till 5 november 2022 | 13 november till 16 november 2022 |
+| Station 4 | Europa, norra, USA, centrala, USA, västra | 17 oktober till 20 oktober 2022 och 2 november till 5 november 2022 | 15 november till 18 november 2022 |
 | Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt | Inte schemalagt |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Förebyggande kvalitetsuppdateringar: 10.0.30
