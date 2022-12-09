@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62f828b93075c134778da280243c0875edf99300
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 1d123a341a471dd37fcc33e0025ce5e98235a27f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715840"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804274"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Förskottsfakturor kontra förskottsbetalningar
 
@@ -65,12 +65,13 @@ Ett förskottsbetalningskonto måste definieras på fliken **Inköpsorder** på 
 
 Motbokning av sammanfattning konto för kundreskontra definieras i profilen för **leverantörsbokföring**. Klicka på för att definiera standardinläggsprofilen **Leverantörsreskontra \>Inställningar \> Parametrar för leverantörsreskontra \>fliken Redovisning och moms \> Bokföringsprofil med leverantörsfaktura för förskottsbetalning**.
 
-**Policy för förskottsansökan** anger om systemet automatiskt kommer att tillämpa avvecklade förskottsfakturor på den slutliga fakturan som skapades manuellt. Fakturor som skapas med hjälp av en dataenhet refererar inte till **programpolicyn för förskottsbetalning**. Du måste använda kvittade förskottsbetalningsfakturor manuellt på fakturor som har skapats med en dataenhet. Om du vill definiera policyn går du till **Leverantörsreskontra \>Inställningar \> Parametrar för leverantörsreskontra \> fliken Redovisning och moms \> Programpolicyn för förskottsbetalning**. Om fältet **Programpolicyn för förskottsbetalning** anges till **Automatisk**, förskottsfakturan markeras automatiskt för avräkning med den slutliga fakturan. Om fältet är inställt på **Meddelande** visas en visuell indikation av att en förskottsbetalningsfaktura är tillgänglig för användning när den slutgiltiga fakturan skapas.
+**Policy för förskottsansökan** anger om det automatiskt kommer att tillämpa avvecklade förskottsfakturor på den slutliga fakturan som skapades manuellt. Fakturor som skapas med hjälp av en dataenhet refererar inte till **programpolicyn för förskottsbetalning**. Du måste använda kvittade förskottsbetalningsfakturor manuellt på fakturor som har skapats med en dataenhet. Om du vill definiera policyn går du till **Leverantörsreskontra \>Inställningar \> Parametrar för leverantörsreskontra \> fliken Redovisning och moms \> Programpolicyn för förskottsbetalning**. Om fältet **Programpolicyn för förskottsbetalning** anges till **Automatisk**, förskottsfakturan markeras automatiskt för avräkning med den slutliga fakturan. Om fältet är inställt på **Meddelande** visas en visuell indikation av att en förskottsbetalningsfaktura är tillgänglig för användning när den slutgiltiga fakturan skapas.
 
 ## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Skapa en inköpsorder som innehåller information om förskottsbetalningsfaktura
 När en leverantör säger att han eller hon behöver förskottsbetalning av varor och tjänster som finns på en inköpsorder, måste du definiera förskottsbetalningsvärdet för den associerade inköpsordern. Gå till **Leverantörsreskontra \> Vanliga \> Inköpsorder \> Alla inköpsorder** och hitta leverantörens inköpsorder. I åtgärdsfönstret, välj fliken **Inköp** och välj sedan **Förskottsbetalningar**. Ange information för förskottsfakturan, inklusive en beskrivning, värdet på förskottet, om förskottet är ett fast belopp eller en procentsats och ett förskottskategori-ID. 
 
-Observera att flera förskottsbetalningsdefinitioner på en inköpsorder inte är tillåtna. Om du behöver tillåta flera förskottsbetalningar på en inköpsorder bokför du betalningarna med hjälp av betalningsjournalen istället för en förskottsbetalningsfaktura.
+> [!Note] 
+> Flera förskottsbetalningsdefinitioner på en inköpsorder inte är tillåtna. Om du behöver tillåta flera förskottsbetalningar på en inköpsorder bokför du betalningarna med hjälp av betalningsjournalen istället för en förskottsbetalningsfaktura.
 
 Förskottsbetalningen kan tas bort från inköpsordern om du inte redan har kvittat en betalning mot den bokförda förskottsbetalningsfakturan eller bokfört standardfakturan. Välj om du vill ta bort information om förskottsbetalning från inköpsordern **Leverantörsreskontra \> Vanliga \> Purchase orders \> Alla inköpsorder** och hitta leverantörens inköpsorder. I åtgärdsfönstret, välj fliken **Inköp** och välj sedan **Ta bort betalningar**.
 

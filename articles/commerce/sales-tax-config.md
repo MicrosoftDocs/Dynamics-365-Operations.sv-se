@@ -9,18 +9,18 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 5936d16039927812dabf99bd770afcc0e827f1ca
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: c899bd020ec9536a906a98635a6c70fac1355789
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276727"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819280"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurera moms för onlinebeställningar
 
@@ -33,6 +33,8 @@ Det kan vara en god idé att låta näthandelskanal stödja alternativ som lever
 ## <a name="destination-based-taxes-for-online-orders"></a>Målbaserade skatter för onlineorder
 
 I allmänhet definieras skatter för onlineorder som levereras till kundadresser av målet. Varje momsgrupp har en konfiguration för målbaserad skattekonfiguration där ditt företag kan definiera destinationsinformation som exempelvis land eller region, delstat, region och ort i ett hierarkiskt formulär.
+
+Konfigurationen för **Destinationsbaserad skatt för detaljhandel** hittas avsnittet **Momsmodul > Indirekta skatter > Moms > Momsgrupper**.
 
 ### <a name="orders-delivered-to-customer-address"></a>Order som levereras till en kundadress
 

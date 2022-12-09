@@ -2,7 +2,7 @@
 title: Redovisningskvittningar
 description: Den här artikeln beskriver hur du använder sidan Redovisningskvittningar för att kvitta redovisningstransaktioner och återföra kvittningar.
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 39fd6c6677565a4b1e9a9bf6f43a4c630cb5e07b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6357629f83873437eb62a4839fafd8efd98fffc1
+ms.sourcegitcommit: 9041fa6e00ecbdf1a1880659d9bdfff4d888f20e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902499"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9800652"
 ---
 # <a name="ledger-settlements"></a>Redovisningskvittningar
 
@@ -75,7 +75,7 @@ Om du vill kvitta redovisningstransaktioner följer du dessa steg.
 ## <a name="make-transactions-easier-to-find"></a>Göra det lättare att hitta transaktioner
 Sidan **Redovisningskvittningar** innehåller funktioner som gör det lättare att visa de transaktioner som behövs för kvittning.
 
-- Använd filtret **Markerade** låter dig filtrera transaktioner utifrån om kryssrutan **Markerade** har markerats för dem.
+- Använd filtret **Markerade** låter dig filtrera transaktioner utifrån om fältet **Markerade** har markerats.
 - Använd filtret **Status** för att filtrera transaktioner utifrån deras status.
 - Välj **Sortera efter absolut belopp** om du vill sortera beloppen efter absolut värde. På det här sättet kan du gruppera debet- och kredit som har samma belopp.
 
@@ -90,7 +90,12 @@ Du kan återföra en kvittning som har gjorts av misstag.
     > [!IMPORTANT]
     > Alla transaktioner som har samma kvittnings-ID återförs, även om de inte är markerade. Till exempel har fyra rader markerats och kvitterats. Alla fyra raderna har samma kvittnings-ID. Om du markerar en av dessa fyra rader och sedan väljer **Återföra markerade transaktioner** kommer alla fyra raderna att återföras.
 
+## <a name="unmark-for-selected-users"></a>Avmarkera för valda användare
+Markera **Avmarkera för markerade användare** om du vill avmarkera redovisningsreglerade transaktioner för alla juridiska personer per användar-ID. Det innebär till exempel att en redovisningschef kan avmarkera transaktioner för en användare som gått på semester innan kvittningen är klar eller för en användare som lämnat organisationen. Åtgärden kommer att tillåta dessa transaktioner att markeras för avveckling av en annan användare.
 
+
+## <a name="unmark-all-transactions"></a>Avmarkera alla transaktioner
+Markera **Avmarkera alla transaktioner** om du vill avmarkera redovisningsreglerade transaktioner för alla användare och juridiska personer. Den här åtgärden är tillgänglig för administratörsrollen.
 
 
 

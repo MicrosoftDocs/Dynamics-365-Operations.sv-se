@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-10-01
 ms.dyn365.ops.version: 10.0.31
-ms.openlocfilehash: 05ccd9794ffeba6a09d6fec0a57ffad2b59707ad
-ms.sourcegitcommit: 87e75aa6af2c3280316d7d73eafa14a52353a5e4
+ms.openlocfilehash: ed4325095163415d05a56128cb1f0334440fe0e5
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "9709866"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787537"
 ---
 # <a name="preview-of-dynamics-365-commerce-10031-february-2023"></a>Förhandsgranskning av Dynamics 365 Commerce 10.0.31 (2023 februari)
 
@@ -38,6 +38,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 | Betalningar | [Aktivera Apple Pay med Dynamics 365-betalningskoppling för Adyen](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-apple-pay-dynamics-365-payment-connector-adyen)  | E-handelskunder kan använda Apple Pay på kundvagns. och kassasidor när du använder vilka enheter eller webbläsare som stöds. | Välj utvecklare |
 | Betalningar  |  Commerce har lagt till möjligheten att begränsa hur användare samverkar med återkommande betalningstoken i användargränssnittet för Commerce headquarters. Betalningsformulär, till exempel sidan **Försäljningsorder för kundtjänst** visar inte längre en kunds tidigare använda återkommande betalningstoken för användning i en ny transaktion. Endast inmatning av bestämt "registrerat kort" på skärmen för Commerce **kundbetalningar**, eller med överenskommelse med en kund vid betalning genom en försäljningsorder, kommer att presenteras för kundtjänst eller Commerce headquarters-användare när en betalning för en ny transaktion behandlas. | [Begränsa användningen av betalningstoken](../dev-itpro/limit-token-usage.md)  |  Funktionshantering<p>*Begränsa användning av betalningstoken till ordersammanhang*  |
 | Kassa | [Skapa inköpsorder från kassan](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/create-purchase-orders-pos)  |  Förbättrad inkommande lagerdrift i kassaappen (Point of Sale) för att tillåta användare att skapa, redigera och bekräfta inköpsorderförfrågningar. |  Funktionshantering<p>*Möjlighet att skapa inköpsorderbegäran i kassa*   |
+| Ytterligare språk är tillgängliga | Fyra ytterligare språk är tillgängliga | Fyra nya språk är tillgängliga för användarval i listan över föredragna språk: koreanska, portugisiska (Portugal), vietnamesiska och kinesiska (traditionell). Om du vill välja det här alternativet går du till **Användaralternativ \> Inställningar \> Inställningar för språk och land/region**. | Lokaliserade inställningar |  
 
 
 

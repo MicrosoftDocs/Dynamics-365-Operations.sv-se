@@ -2,7 +2,7 @@
 title: Gränssnitt för Report Designer
 description: Den här artikeln innehåller en beskrivning av hur du navigerar på Report Designer och hur du använder de olika alternativen för att uppfylla dina krav.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.form: FinancialReports
-ms.openlocfilehash: 3bc3ddb9f04f7f6f2a63b2ecccfe04fbaf2eadfc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25d913e6f5d4c95dceda1291a2c33abe37348574
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274740"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802753"
 ---
 # <a name="report-designer-interface"></a>Gränssnitt för Report Designer
 
@@ -50,7 +50,7 @@ Menyn **ArkivFil** är tillgänglig för alla användare och inkluderar följand
 | Senaste rapportdefinitionerna         | Visa en lista med de senast skapade eller ändrade rapporterna. Du kan sedan välja en rapport i listan. |
 | Senaste raddefinitionerna            | Visa en lista med de senast skapade eller ändrade raddefinitionerna. Du kan sedan välja en raddefinition i listan. |
 | Senaste kolumndefinitionerna         | Visa en lista med de senast skapade eller ändrade kolumndefinitionerna. Du kan sedan välja en kolumndefinition i listan. |
-| Senaste rapportträddefinitionerna | Visa en lista med de senast skapade eller ändrade rapportträddefinitionerna. Du kan sedan välja en rapportträddefinition i listan. |
+| Tidigare rapportträdsdefinitioner  | Visa en lista med de senast skapade eller ändrade rapportträddefinitionerna. Du kan sedan välja en rapportträddefinition i listan. |
 | Avsluta                              | Avsluta Report Designer. |
 
 ### <a name="edit-menu"></a>Redigera meny
@@ -70,14 +70,14 @@ Menyn **Redigera** är tillgänglig för användare som har rollerna **Designer*
 | Infoga rader från dimensioner            | Öppna dialogrutan **Infoga rader från dimensioner** där du kan välja de dimensionsvärden som ska inkluderas i raddefinitionen. Detta kommando är tillgängligt från en raddefinition. |
 | Numrera om rader                          | Numrera om alla numeriska radkoder. Detta kommando är tillgängligt från en raddefinition. |
 | Radlänkar                              | Öppna dialogrutan **Radlänkar** där du kan ange källorna för datalänkar i raddefinitioner och rapportträddefinitioner. Detta kommando är tillgängligt från en raddefinition. |
-| Avrundningsjusteringar                    | Öppna dialogrutan **Avrundningsjusteringar** där du kan ange parametrar för avrundning. Detta kommando är tillgängligt från en raddefinition. |
-| Hantera dimensionsuppsättningar                  | Öppna dialogrutan **Dimensionsuppsättningar** där du kan skapa och ändra dimensionsuppsättningar. Detta kommando är tillgängligt från en raddefinition eller en rapportträddefinition. |
+| Avrundningsjustering                    | Öppna dialogrutan **Avrundningsjusteringar** där du kan ange parametrar för avrundning. Detta kommando är tillgängligt från en raddefinition. |
+| Hantera dimensionsgrupper                  | Öppna dialogrutan **Dimensionsuppsättningar** där du kan skapa och ändra dimensionsuppsättningar. Detta kommando är tillgängligt från en raddefinition eller en rapportträddefinition. |
 | Infoga rad                             | Infoga en tom rad i raddefinitionen eller tom rubrikrad till kolumndefinitionen. Detta kommando är tillgängligt från en raddefinition eller en kolumndefinition. |
 | Ta bort rad                             | Ta bort den markerade raden från den valda raddefinitionen eller rubrikraden från kolumndefinitionen. Detta kommando är tillgängligt från en raddefinition eller en kolumndefinition. |
 | Infoga kolumn                          | Infoga en tom kolumn till kolumndefinitionen. Detta kommando är tillgängligt från en kolumndefinition. |
 | Ta bort kolumn                          | Ta bort den valda kolumnen från kolumndefinitionen. Detta kommando är tillgängligt från en kolumndefinition. |
-| Infoga Rapportenheter från Dimensioner | Öppna dialogrutan **Infoga Rapportenheter från Dimensioner** där du kan välja de dimensionsvärden som ska inkluderas i rapportträddefinitionen. Detta kommando är tillgängligt från en rapportträddefinition. |
-| Importera hierarki för dimensionsuppsättning         | Öppna dialogrutan **Hierarki för dimensionsuppsättning** där du kan importera en hierarki för dimensionsuppsättning från de ekonomiska data. Detta kommando är tillgängligt från en raddefinition för ett ..\\financial-dimensions\\dimension-baserat system. |
+| Infoga rapportenheter från dimensioner | Öppna dialogrutan **Infoga Rapportenheter från Dimensioner** där du kan välja de dimensionsvärden som ska inkluderas i rapportträddefinitionen. Detta kommando är tillgängligt från en rapportträddefinition. |
+| Importera dimensionsgrupphierarki         | Öppna dialogrutan **Hierarki för dimensionsuppsättning** där du kan importera en hierarki för dimensionsuppsättning från de ekonomiska data. Detta kommando är tillgängligt från en raddefinition för ett ..\\financial-dimensions\\dimension-baserat system. |
 | Infoga rapportenhet                  | Infoga en tom rad i rapportträddefinitionen. Detta kommando är tillgängligt från en rapportträddefinition. |
 | Ta bort rapportenhet                  | Ta bort den valda rapportenhetraden från rapportträddefinitionen. Det här kommandot är tillgängligt i rapportträdsdefinitioner. |
 
@@ -89,7 +89,7 @@ Menyn **Visa** är tillgänglig för alla användare och inkluderar följande ko
 |-----------------|------------------------------------------------------------------------|
 | Navigeringsfönstret | Visa eller dölja navigeringsfönstret.                                      |
 | Verktygsfält        | Välj de verktygsfält som är synliga.                                  |
-| Statusfält      | Visa eller dölj statusinformationen i fönstret **Rapportdesignern**. |
+| Statusfält      | Visa eller dölj statusinformationen i fönstret **Report Designer**. |
 | Välkomstsida    | Öppna **Välkomstsidan**.                                             |
 
 ### <a name="format-menu"></a>Formatera menyn
@@ -98,7 +98,7 @@ Menyn **Format** är tillgänglig för användare som har rollerna **Designer** 
 
 | Kommando               | Beskrivning |
 |-----------------------|-------------|
-| Utföranden och formatering | Öppna dialogrutan **Utföranden och formatering** där du kan skapa och ändra utförandet av text i raddefinitioner och kolumndefinitioner. Detta kommando är tillgängligt från en raddefinition eller en kolumndefinition. |
+| Format och formatering | Öppna dialogrutan **Utföranden och formatering** där du kan skapa och ändra utförandet av text i raddefinitioner och kolumndefinitioner. Detta kommando är tillgängligt från en raddefinition eller en kolumndefinition. |
 | Kolumnbredd          | Öppna dialogrutan **Kolumnbredden** där du kan ställa in bredden på den valda kolumnen. Detta kommando är tillgängligt från en raddefinition, en kolumndefinition eller en rapportträddefinition. |
 | Dölj                  | Dölj den valda kolumnen. Detta kommando är tillgängligt från en raddefinition, en kolumndefinition eller en rapportträddefinition. |
 | Visa                | Visa de dolda kolumnerna mellan de markerade kolumnerna. Detta kommando är tillgängligt från en raddefinition, en kolumndefinition eller en rapportträddefinition. |
@@ -110,7 +110,7 @@ Menyn **Företag** är tillgänglig för användare som har rollerna **Designer*
 | Kommando               | Beskrivning                                                                                                            |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Företag             | Öppna dialogrutan **Företag** där du kan skapa och ändra företag.                                          |
-| Grupper för byggblock | Öppna dialogrutan **Grupper för byggblock** där du kan skapa, ändra, importera och exportera grupper för byggblock. |
+| Byggblocksgrupper | Öppna dialogrutan **Grupper för byggblock** där du kan skapa, ändra, importera och exportera grupper för byggblock. |
 
 ### <a name="go-menu"></a>Gå till menyn
 
@@ -194,18 +194,18 @@ Standardverktygsfältet ger snabb åtkomst till fil- och redigeringskommandon. D
 
 Formateringverktygsfältet innehåller enkel åtkomst till utförandekommandon. Detta verktygsfält innehåller följande knappar.
 
-| Knapp                                                                                                       | beskrivning                                             |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Knappen Teckenstil.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Tillämpa den valda teckenstilen den till den aktuella texten.      |
-| [![Knappen Teckensnitt.](./media/fonttype.png)](./media/fonttype.png)                                                 | Ställ in den aktuella texten med den valda teckenstilen.              |
+| Knapp                                                                                                       | beskrivning                                           |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| [![Knappen Teckenstil.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Tillämpa den valda teckenstilen den till den aktuella texten.   |
+| [![Knappen Teckensnitt.](./media/fonttype.png)](./media/fonttype.png)                                                 | Ställ in den aktuella texten med den valda teckenstilen.           |
 | [![Knappen Teckenstorlek.](./media/fontsize.png)](./media/fontsize.png)                                            | Ställ in den aktuella texten med den valda teckenstorleken (i punkter). |
-| [![Knappen Fetstil.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gör den aktuella texten fet.                             |
-| [![Knappen Kursiv.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Gör den aktuella texten kursiv.                           |
-| [![Knappen Understrykning.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Stryker under den aktuella texten.                             |
-| [![Knappen Minska indrag.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Minskar den aktuella textens indrag.                |
-| [![Knappen Öka indrag.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Ökar den aktuella textens indrag.                |
-| [![Knappen Bakgrundsfärg.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Ändra bakgrundsfärgen på den aktuella cellen.        |
-| [![Knappen Teckenfärg.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Ändra den aktuella textens teckenfärg.                   |
+| [![Knappen Fetstil.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gör den aktuella texten fet.                          |
+| [![Knappen Kursiv.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Gör den aktuella texten kursiv.                        |
+| [![Knappen Understrykning.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Stryker under den aktuella texten.                          |
+| [![Knappen Minska indrag.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Minskar den aktuella textens indrag.             |
+| [![Knappen Öka indrag.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Ökar den aktuella textens indrag.             |
+| [![Knappen Bakgrundsfärg.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Ändra bakgrundsfärgen på den aktuella cellen.     |
+| [![Knappen Teckenfärg.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Ändra den aktuella textens teckenfärg.                |
 
 ### <a name="report-designer-toolbar"></a>Verktygsfält för Report Designer
 
@@ -213,9 +213,9 @@ Verktygsfältet för rapportdesignern ger snabb åtkomst till kommandon navigeri
 
 | Knapp                                                                                              | beskrivning |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Knappen Rapportdefinition.](./media/reportc130389.png)](./media/reportc130389.png)                 | Visa rapportdefinitionen som anges på menyn **Fönster**. |
-| [![Knappen Raddefinition.](./media/rowc130389.png)](./media/rowc130389.png)                          | Visa den raddefinition som har tilldelats den aktiva rapportdefinitionen. |
-| [![Knappen Kolumndefinition.](./media/columnc130389.png)](./media/columnc130389.png)                 | Visa den kolumndefinition som har tilldelats den aktiva rapportdefinitionen. |
+| [![Knappen Rapportdefinition.](./media/reportc130389.png)](./media/reportc130389.png)            | Visa rapportdefinitionen som anges på menyn **Fönster**. |
+| [![Knappen Raddefinition.](./media/rowc130389.png)](./media/rowc130389.png)             | Visa den raddefinition som har tilldelats den aktiva rapportdefinitionen. |
+| [![Knappen Kolumndefinition.](./media/columnc130389.png)](./media/columnc130389.png)  | Visa den kolumndefinition som har tilldelats den aktiva rapportdefinitionen. |
 | [![Knappen Rapportträddefinition.](./media/treec130389.png)](./media/treec130389.png)             | Visa den rapportträddefinition som har tilldelats den aktiva rapportdefinitionen. |
 | [![Knappen Rapportvisning.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Starta Report Viewer och visa den senaste versionen av den skapade rapporten. Denna knapp är tillgänglig från en rapportdefinition, om du har skapat minst en rapport. |
 | [![Knappen Skapa rapport.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Skapa en rapport från den aktiva rapportdefinitionen. Den här knappen är tillgänglig från en rapportdefinition. |

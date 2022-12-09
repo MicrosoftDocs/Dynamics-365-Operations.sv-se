@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.form: FinancialReports
-ms.openlocfilehash: d23d6afde0daa44b8527c624305bdfd0fb4cbd53
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 97f6c869e8d05e37ec3001d5de262ab8927d735a
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291901"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802807"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
@@ -45,15 +45,15 @@ En kolumndefinition kan innehålla två till 255 kolumner.
 
 ### <a name="add-a-column-to-a-column-definition"></a>Lägga till en kolumn i en kolumndefinition
 
-1. I Rapportdesignern, klicka på **Kolumnddefinitioner** och öppna kolumndefinitionen för att ändra.
+1. I Report Designer, klicka på **Kolumnddefinitioner** och öppna kolumndefinitionen för att ändra.
 2. Markera kolumnen där en ny kolumn ska infogas.
 3. I menyn **Redigera**, klicka på **Infoga kolumn**. Den nya kolumnen visas till vänster om den kolumn som du markerade.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Ta bort en kolumn ur en kolumndefinition
 
-1. Klicka på **Kolumndefinitioner** i Report Designer och öppna sedan den kolumndefinition som du vill ändra.
+1. I Report Designer, klicka på **Kolumnddefinitioner** och öppna kolumndefinitionen för att ändra.
 2. Markera kolumnen som du vill ta bort.
-3. Klicka på **Ta bort kolumn** på **Redigera**-menyn.
+3. Klicka på **Ta bort kolumn** på **Redigera kolumn**-menyn.
 
 ## <a name="contents-of-a-column-definition"></a>Innehållet i en kolumndefinition
 En kolumndefinition omfattar följande information:
@@ -72,19 +72,19 @@ Den här informationen visas i följande områden i kolumndefinitionen:
 
 - Kolumndetaljrader är raderna under rubrikraderna i kolumndefinitionen. Kolumndetaljrader definierar informationen som inkluderas i rapporten. Följande tabeller listar och beskriver kolumndetaljraderna.
 
-    | Namn på kolumndetaljrad                                                | Beskrivning                                                                                            |
-    |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-    | Kolumntyp                                                           | Ange typ av data i kolumnen (obligatoriskt).                                                     |
-    | Bokkod/attributkategori                                          | Ange information om ekonomiska data för kolumner av typen **FD** och **ATTR**.                       |
-    | Räkenskapsårperiod täcks                                    | Ange information om ekonomiska data för kolumner av typen **FD**.                                     |
-    | Formel                                                               | Ange en beräkningsformel för kolumner av typen **CALC**.                                        |
-    | Kolumnbredd Ytterligare blanksteg innan kolumn Åsidosättning av format Utskriftskontroll | Ange särskilda formatalternativ.                                                                        |
-    | Kolumnbegränsningar                                                   | Begränsa data.                                                                                         |
-    | Rapporteringsenhet                                                        | Begränsa kolumnen så att den endast visar data för den angivna rapportenheten.                      |
-    | Valuta Visa valutafilter                                      | Formatera valuta.                                                                                       |
-    | Dimensionsfilter                                                      | Ange ett filter för att begränsa data till vissa ekonomiska datarapportenheter.                           |
-    | Attributfilter                                                      | Ange ett filter för att begränsa de ekonomiska data.                                                       |
-    | Slutdatum Startdatum                                                   | Begränsa de ekonomiska data till specifika datum.                                                         |
+    | Namn på kolumndetaljrad                                                | Beskrivning                                                    |
+    |-----------------------------------------------------------------------|-------------------------------------------------------------------------|
+    | Kolumntyp                                                           | Ange typ av data i kolumnen (obligatoriskt).                                      |
+    | Bokkod/attributkategori                                          | Ange information om ekonomiska data för kolumner av typen **FD** och **ATTR**.     |
+    | Räkenskapsårperiod täcks                                    | Ange information om ekonomiska data för kolumner av typen **FD**.              |
+    | Formel                                                               | Ange en beräkningsformel för kolumner av typen **CALC**.                  |
+    | Kolumnbredd Ytterligare blanksteg innan kolumn Åsidosättning av format Utskriftskontroll | Ange särskilda formatalternativ.                                               |
+    | Kolumnbegränsningar                                                   | Begränsa data.                                                                        |
+    | Rapporteringsenhet                                                        | Begränsa kolumnen så att den endast visar data för den angivna rapportenheten.      |
+    | Valuta Visa valutafilter                                      | Formatera valuta.                                                                      |
+    | Dimensionsfilter                                                      | Ange ett filter för att begränsa data till vissa ekonomiska datarapportenheter.           |
+    | Attributfilter                                                      | Ange ett filter för att begränsa de ekonomiska data.                                      |
+    | Slutdatum Startdatum                                                   | Begränsa de ekonomiska data till specifika datum.                                    |
     | Motivering                                                         | Vänsterjustera, centrera eller högerjustera beskrivningstexten som anges i raddefinitionen. |
 
 ## <a name="column-restrictions-in-a-column-definition"></a>Kolumnbegränsningar i en kolumndefinition
@@ -123,7 +123,7 @@ Följande register beskriver kolumnbegränsningskoderna.
 
 1. Öppna kolumndefinitionen för att ändra den i Report Designer.
 2. Dubbelklicka på cellen **Rapportenhet** för kolumnen för att begränsa.
-3. I diaglogrutan **Val av rapporteringsenhet**, i listan **Rapporteringsträd**, välj ett träd.
+3. I dialogrutan **Val av rapporteringsenhet**, i listan **Rapporteringsträd**, välj ett träd.
 4. Expandera eller dölj listan över enheter, välj en rapportenhet och klicka sedan på **OK**.
 
 ## <a name="format-column-headers"></a>Formatera kolumnrubriker
@@ -136,7 +136,7 @@ Du kan använda dialogrutan **Kolumnrubrik** för att lägga till, ändra och ta
 | Fält                 | Beskrivning |
 |-----------------------|-------------|
 | Kolumnrubriktext    | Texten visas i kolumnrubriken. Du kan ange text direkt i det här fältet eller klicka på **Infoga autotext** om du vill välja ett alternativ som uppdaterar kolumnrubriken varje gång som rapporten skapas. Klicka på **Infoga autotext** igen för att inkludera flera autotextkoder och klicka sedan på en annan kod i listan. |
-| Formatalternativ        | Formatera en kolumnrubrik, till exempel ruta eller understrykning. |
+| Formatera alternativ        | Formatera en kolumnrubrik, till exempel ruta eller understrykning. |
 | Fördela från Fördela till | Definiera kolumnen eller kolumnerna som rubriktexten gäller för. |
 | Motivering         | Ange hur kolumnrubriktexten ska justeras för kolumnen eller intervallet av kolumnerna som anges i fälten **Fördela från** och **Fördela till** . |
 
@@ -211,18 +211,18 @@ Villkorsstyrda omfattande rubriker kan omfatta flera kolumner som baseras på sp
 
 En användare skapar en rapport för en dynamisk sexmånadersprognos. Användaren vill att ordet "Utfall" ska skrivas ut över kolumnerna, som innehåller faktiska data och att ordet "Budget" ska skrivas ut över kolumner som innehåller budgetprognoser. Varje månad som rapporten körs finns det en till aktuell kolumn och en mindre budgetkolumn. Även om användaren kan ändra kolumndefinitionen manuellt varje gång som rapporten skapas för att justera rubrikerna bestämmer användaren, i syfte att spara tid och insats, sig för att skapa villkorsstyrda omfattande rubriker som automatiskt kommer att skapa rubriker över motsvarande kolumner varje gång som rapporten körs. Användaren öppnar Report Designer, klickar på **Kolumndefinition** i navigeringsfönstret och öppnar kolumndefinitionen för rapporten. Användaren anger sedan följande information. Basperioden i rapportdefinitionen är 4.
 
-|      Format         |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
-|---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Rubrik 1            |      | Utfall        | Budget        |               |               |               |               |               |               |               |               |               |               |
-| Rubrik 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
-| Rubrik 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
-| Kolumntyp         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
+|  Format   |  A   | B     | C      | D       | E        | F       | G       | H      | I             | J             | K             | L             | M             |
+|-----------|------|-------|--------|---------|----------|---------|---------|---------|-------------|---------------|---------------|---------------|---------------|
+| Rubrik 1   |    | Utfall    | Budget        |         |         |        |       |          |        |               |               |               |               |
+| Rubrik 2   |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
+| Rubrik 3    |      |       |        |        |        |         |        |          |               |               |               |               |               |
+| Kolumntyp  | DESC | FD   | FD     | FD    | FD   | FD    | FD      | FD            | FD            | FD            | FD            | FD            | FD            |
 | Bokkod/attribut |      | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    |
-| Räkenskapsår         |      | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          |
-| Period              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
+| Räkenskapsår |  | BAS   | BAS   | BAS   | BAS   | BAS    | BAS    | BAS     | BAS          | BAS          | BAS          | BAS          | BAS          |
+| Period  |     | 1      | 1       | 2      | 2      | 3       | 3       | 4        | 4             | 5             | 5             | 6             | 6             |
 | Täckta perioder     |      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      |
-| Kolumnbredd        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
-| Utskriftskontroll       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
+| Kolumnbredd   | 30   | 10    | 10     | 10     | 10    | 10    | 10    | 10     | 10            | 10            | 10            | 10            | 10            |
+| Utskriftskontroll  |    | P&lt;=B    | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B   | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B       | P&gt;B        |
 
 Sedan dubbelklickar användaren på kolumrubrikcellen i kolumn B för att öppna dialogrutan **Kolumnrubrik** och där ange följande information.
 
@@ -275,7 +275,7 @@ Cellen **Kolumnbredd** anger antalet tecken som ska användas för bredden på d
 #### <a name="specify-the-width-of-a-column-on-a-report"></a>Ange bredden för en kolumn i en rapport
 
 1. Öppna kolumndefinitionen för att ändra den i Report Designer.
-2. I cellen **Kolumnbredd** anger du antal blanksteg för kolumnens bredd. Den maximala bredden på en kolumn är 255 tecken (detta nummer inkluderar SEK, kommatecken och parenteser). Alternativt kan du dubbelklicka på cellen **Kolumnbredd** och sedan på **Autoanpassning** om du vill möjliggöra för rapportutformaren att välja lämplig bredd för kolumnen baserat på cellinnehållet.
+2. I cellen **Kolumnbredd** anger du antal blanksteg för kolumnens bredd. Den maximala bredden på en kolumn är 255 tecken (detta nummer inkluderar SEK, kommatecken och parenteser). Alternativt kan du dubbelklicka på cellen **Kolumnbredd** och sedan på **Autoanpassning** om du vill möjliggöra för Report Designer att välja lämplig bredd för kolumnen baserat på cellinnehållet.
 
 ### <a name="add-space-between-columns"></a>Lägg till blanksteg mellan kolumner
 
@@ -292,7 +292,7 @@ Cellen **Åsidosätt format/valuta** anger formateringen av decimaltecken-, valu
 
 #### <a name="assign-a-format-currency-override-to-a-report-column"></a>Tilldela en format- eller valutaåsidosättning för en rapportkolumn
 
-1. Öppna den kolumndefinition som ska ändras i Report Designer.
+1. Öppna kolumndefinitionen för att ändra den i Report Designer.
 2. Dubbelklicka på cellen **Format-/valutaåsidosättning** i en beloppskolumn.
 3. Välj formateringsalternativ i dialogrutan **Formatåsidosätt**.
 
@@ -306,7 +306,7 @@ Cellen **Utskriftskontroll** kan innehålla koder som justerar visningen eller u
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Icke utskriftsbara                                     | Exkludera beloppen i denna kolumn från rapporten som skrivs ut och från beräkningar. Mer information finns i kolumnen direkt i beräkningsformeln om du vill inkludera icke utskriftsbara kolumner i beräkningen. Exempelvis inkluderas den icke utskriftsbara kolumnen C i följande formel: **B+C+D**. Exempelvis inkluderas den icke utskriftsbara kolumnen C inte i följande formel: **B:D**. |
 | XCR                | Ändra tecknet om vanligt saldo på raden är kredit | Skapa en budget eller jämförande rapport där eventuella ofördelaktiga avvikelser (till exempel intäktbrist eller utgiftsöverskridning) alltid är negativ. Tillämpa den här koden till en **CALC**-kolumn om du vill återställa tecknet för kolumnbeloppet, om det vanliga saldot för en viss rad är en kredit (som identifieras av ett **C** i kolumnen **Normalt saldo** i raddefinitionen.)<p><strong>Obs!</strong> För <strong>TOT</strong>-rader och </strong>CAL</strong>-rader som vanligtvis har ett kreditsaldo ska du se till att ange ett <strong>C</strong> i kolumnen <strong>Normalt saldo</strong> i raddefinitionen.</p> |
-| X0                 | Undertryck kolumnen om alla är noll eller tomma          | Exkludera en **FD**-kolumn från rapporten om alla celler i den kolumnen är antingen tomma eller innehåller nollor. |
+| X0            | Undertryck kolumnen om alla är noll eller tomma   | Exkludera en **FD**-kolumn från rapporten om alla celler i den kolumnen är antingen tomma eller innehåller nollor. |
 | SR                 | Undertryck avrundning                               | Förhindra beloppen i denna kolumn från att avrundas. |
 | XR                 | Undertryck ackumulerade                                 | Undertryck ackumulerade. Om rapporten använder ett rapportträd, är beloppen i denna kolumn inte ackumulerade till överordnade noder. |
 | RP                 | Upprepa kolumnen på varje sida                      | Upprepa en viss kolumn på varje sida i en rapport. Du kan till exempel använda utskriftskontrollen **RP** om du vill inkludera en kolumn med typen **ROW** som drar in radkoder på varje sida. |
@@ -325,7 +325,7 @@ Cellen **Utskriftskontroll** kan innehålla koder som justerar visningen eller u
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Lägg till utskriftskontrollkoder till en rapportkolumn
 
-1. Öppna den kolumndefinition som ska ändras i Report Designer.
+1. Öppna kolumndefinitionen för att ändra den i Report Designer.
 2. Dubbelklicka på cellen **Utskriftskontroll**.
 3. I dialogrutan **Utskriftskontroll** väljer du en kod i listan **Välj alternativ för utskriftskontroll** . Håll ned CTRL-tangenten medan du väljer koderna om du vill välja mer än en kod.
 4. Välj ett alternativ i fältet **Villkorsstyrda utskriftsalternativ**. Förvalt alternativ är **(inga)**. Du kan bara välja en villkorsstyrd utskriftskod åt gången
@@ -436,7 +436,7 @@ Du kan gå bakom räkenskapsårets begränsningar i någon av periodspecifikatio
 
 ### <a name="specify-the-periods-for-an-fd-column"></a>Ange perioderna för en FD-kolumn.
 
-1. Öppna den kolumndefinition som ska ändras i Report Designer.
+1. Öppna kolumndefinitionen för att ändra den i Report Designer.
 2. I en **FD**-kolumn, dubbelklicka på raden och välj **Period** och välj sedan ett alternativ i listan.
 3. Fyll i formeln i formelfältet ovanför navigeringsfönstret eller i cellen **Period**. Byt ut valfritt nummertecken (\#) mot lämpligt värde.
 
@@ -458,7 +458,7 @@ Cellen **Täckta period** identifierar de belopp som kolumnen ska visa. Detta be
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Attributfilter i en kolumndefinition
 
-Attribut är ekonomiska datavärden som ytterligare definierar ett konto eller en transaktion. Kontoattributen inkluderar **Tillgång**, **Skuld**, **Intäkt** och **Utgift**. Transaktionattributen inkluderar **Transaktionbeskrivning** och **Transaktionens tillämpningsdatum**. Attributsupport kan skilja sig mellan Microsoft Dynamics ERP-system. Cellen **Attributfilter** begränsar data i **FD**-kolumner till specifika värden eller intervall för attributkategorier. Även om den här funktionen kan användas tillsammans med en **ATTR**-kolumn krävs inte **ATTR**-kolumnen. I **FD**-kolumnen finns det en gräns för de konton eller transaktioner som rapporten ska inkludera i attributfiltret.
+Attribut är ekonomiska datavärden som ytterligare definierar ett konto eller en transaktion. Kontoattributen inkluderar **Tillgång**, **Skuld**, **Intäkt** och **Utgift**. Transaktionsattributen inkluderar **Transaktionbeskrivning** och **Transaktionens tillämpningsdatum**. Attributsupport kan skilja sig mellan Microsoft Dynamics 365 Finanace. Cellen **Attributfilter** begränsar data i **FD**-kolumner till specifika värden eller intervall för attributkategorier. Även om den här funktionen kan användas tillsammans med en **ATTR**-kolumn krävs inte **ATTR**-kolumnen. I **FD**-kolumnen finns det en gräns för de konton eller transaktioner som rapporten ska inkludera i attributfiltret.
 
 > [!NOTE]
 > Om du vill se vilka attribut ERP-systemet har stöd för läser du integrationsguiden för det aktuella systemet.
@@ -510,7 +510,7 @@ En rapport med flera valutor kan visa beloppen i den aktuella redovisningsvaluta
 - **Valutavisning** – Ange valutatyp (redovisning, rapportering, transaktion eller omräkning) som visas i transaktionerna. Omräknat till en rapporteringsvalutafunktion kallas ibland valutaomräkning. Valutaomräkning är förmågan att rapportera redovisningsbelopp i en valuta som inte kanske är företagets funktionella eller rapporteringsvaluta eller den valuta som transaktionen angavs i.
 - **Valutafilter** – Ange ett valutafilter. Endast transaktioner som anges i den valda valutan visas i rapporten.
 
-> 
+
 Följ stegen nedan om du vill avgöra ett företags redovisningsvaluta.
 
 1. Klicka på **Företag** på **Företag**-menyn i Report Designer.

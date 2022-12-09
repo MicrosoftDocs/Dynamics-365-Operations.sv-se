@@ -2,7 +2,7 @@
 title: Komponenter för ekonomisk rapport
 description: Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering.
 author: aprilolson
-ms.date: 10/27/2017
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: af5cd63c2dbd531b4c8097b6149d7e67fe112259
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280044"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802726"
 ---
 # <a name="financial-report-components"></a>Komponenter i ekonomisk rapportering
 
@@ -28,7 +28,7 @@ ms.locfileid: "9280044"
 
 Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln förklarar hur du ordnar och låser byggblock.
 
-Designfilosofin bakom ekonomiska rapporteringsdesigner är att dela upp information i de minsta komponenterna eller byggblocken och sedan mixa och matcha komponenterna efter behov. Därför är formateringen separerad från dina ekonomiska data och du kan ändra en rapports design utan att ändra ekonomiska data i Microsoft Dynamics ERP-system. Med hjälp av den här byggblocksstrategin kan du kombinera text, belopp och beräkningar för att skapa de rapporter du behöver. Dessutom uppmuntrar den här flexibiliteten till kreativitet genom att göra det enklare för dig att visa dina operationer på olika sätt. De enskilda byggblocken i en rapportdefinition liknar ett tredimensionellt kalkylblad, men är mer effektiva. En rapportdefinitionen specificerar raddefinitionen, kolumndefinitionen och en valfri definition av det rapporteringsträd som ska användas för rapporten. Den innehåller också information om var du lagrar den genererade rapporten och hur du öppnar den.
+Designfilosofin bakom ekonomiska rapporteringsdesigner är att dela upp information i de minsta komponenterna eller byggblocken och sedan mixa och matcha komponenterna efter behov. Därför är formateringen separerad från dina ekonomiska data och du kan ändra en rapports design utan att ändra ekonomiska data i Microsoft Dynamics 365 Finance. Med hjälp av den här byggblocksstrategin kan du kombinera text, belopp och beräkningar för att skapa de rapporter du behöver. Dessutom uppmuntrar den här flexibiliteten till kreativitet genom att göra det enklare för dig att visa dina operationer på olika sätt. De enskilda byggblocken i en rapportdefinition liknar ett tredimensionellt kalkylblad, men är mer effektiva. En rapportdefinitionen specificerar raddefinitionen, kolumndefinitionen och en valfri definition av det rapporteringsträd som ska användas för rapporten. Den innehåller också information om var du lagrar den genererade rapporten och hur du öppnar den.
 
 ## <a name="building-blocks-of-a-report"></a>Byggblock i en rapport
 
@@ -52,7 +52,7 @@ Använd mappar när du vill ordna byggblock i Report Designer. Alla mappar är s
     - Högerklicka på den överordnade mappen och klicka sedan på **Ny mapp**.
     - Välj den överordnade mappen, klicka på **Fil** och klicka sedan på **Ny mapp**.
 
-3. Ange namnet på den nya mappen när den visas och tryck sedan på Retur.
+3. Ange namnet på den nya mappen när den visas och tryck sedan på **Retur**.
 
 ## <a name="lock-a-building-block"></a>Låsa ett byggblock
 Du kan skapa ett lösenord för att skydda och låsa ett byggblock. På det här sättet kan du lägga till en säkerhetsnivå till en rapportkomponent utan att behöva skydda hela systemet. Ett lösenord kan bidra till att skydda information om byggblock som är viktiga för din rapporteringsprocess i månadsslutet. En användare i en roll kan låsa ett byggblock. Andra användare har dock alltid skrivskyddad åtkomst till en låst komponent. Användarna kan öppna, ändra och spara den låsta komponenten under ett nytt namn. En användare som har rollen som administratör kan alltid komma åt och ändra ett låst byggblock.
@@ -80,7 +80,7 @@ Du kan visa alla byggblock som tilldelas en byggblockgrupp. Du kan även exporte
 
 Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp. Du kan använda den exporterade byggblocksgruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblocksgruppen.
 
-1. I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
+1. Klicka på **Byggblocksgrupper** på **Företag**-menyn i Report Designer.
 2. Markera det byggblock som ska exporteras i dialogrutan **Byggblocksgrupper** och klicka sedan på **Exportera**.
 3. I dialogrutan **Exportera** väljer du de rapportdefinitioner som du vill exportera:
 
@@ -99,7 +99,7 @@ Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp.
 
 Du kan importera en byggblockgrupp till en befintlig byggblockgrupp. Alla importerade byggblocksgrupper behåller sina ursprungliga teckensnittsinställningar och företagsreferenser och inkluderar relevanta dimensionsuppsättningar.
 
-1. I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
+1. Klicka på **Byggblocksgrupper** på **Företag**-menyn i Report Designer.
 2. Markera det byggblock som ska byggblocksgruppen ska importeras till i dialogrutan **Byggblocksgrupper** och klicka sedan på **Importera**.
 3. Markera den byggblocksgrupp som ska importeras i dialogrutan **Öppna**, och klicka sedan på **Öppna**.
 4. I dialogrutan **Importera** väljer du de rapportdefinitioner som du vill importera:

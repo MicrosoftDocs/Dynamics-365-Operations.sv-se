@@ -2,7 +2,7 @@
 title: Inställningar för parametrar för kredithantering
 description: I den här artikeln beskrivs alternativen som du kan använda för att konfigurera kredithantering efter företagets behov.
 author: JodiChristiansen
-ms.date: 12/10/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8955518e7b5c0200d3827c1c22b7d150a09be244
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876366"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799556"
 ---
 # <a name="credit-management-parameters-setup"></a>Inställningar för parametrar för kredithantering
 
@@ -73,7 +73,7 @@ Flera statistik för kredithantering inkluderas i faktarutan **Statistik över k
 
 - I kredithantering visas kundkreditgränsen i kundens valuta. Du måste ange valutakurstypen för kreditgränsen i kundens valuta. I fältet **kreditgränsens valutakurstyp** väljer du den typ av valutakurs som ska användas för att konvertera den primära kreditgränsen till kundens kreditgräns.
 - Ange alternativet **Tillåt manuell redigering av kreditgränser** till **Nej** om du vill förhindra att användare redigerar kreditgränser på sidan **kund**. Om det här alternativet är inställt på **Nej** kan ändringar av kundens kreditgräns endast göras genom att transaktioner för kreditgränsjusteringar bokförs.
-- Ställ in alternativet **Hoppa över lagerreservationer** till **Ja**, om du vill ignorera lagerreservationer när spärregler för kredithantering kontrolleras. I det här fallet görs en kontroll av att alla radkvantiteter har slutförts och att respitperioder kontrolleras oberoende av kvantiteten för lagerreservationen.
+- Ställ in alternativet **Hoppa över lagerreservationer** till **Ja**, om du vill ignorera lagerreservationer när spärregler för kredithantering kontrolleras. I det här fallet görs en kontroll av att alla kvantiteter har slutförts och att respitperioder kontrolleras oberoende av kvantiteten för lagerreservationen.
 - När Kredithantering är aktiverad används inställningen av **meddelandet när kreditgränsen** överskrids för att endast bearbeta fritextfakturor. Även om meddelanden fortfarande läggs till försäljningsorder när kunderna har överskridit sin kreditgräns, blockeras inte bekräftelse, utskrift av plocklistor och följesedlar eller bokföring av fakturor.
 
     Kredithantering aktiveras som standard, men du kan inaktivera det. Om den är aktiverad använder du spärrreglerna och checkpointsen för kredithantering för att identifiera när kunderna har överskridit sin kreditgräns. Om det är inaktiverat läggs meddelandena till i försäljningsorder baserat på inställningen av **Meddelande när kreditgränsen överskrids** kan hjälpa dig att identifiera när kunder har överskridit sin kreditgräns.

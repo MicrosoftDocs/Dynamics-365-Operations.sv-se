@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 786aecf69bae3d07ac80a55b4dc835dd8129bd59
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779945"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803975"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Garantitransaktion
 
@@ -43,7 +43,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 1. Gå till **Leverantörsreskontra > Order > Alla försäljningsorder**.
 2. Klicka på **Ny**.
 3. Ange eller välj ett värde i fältet **Kundkonto**.
-4. Expandera avsnittet Allmänt.
+4. Expandera den **allmänna** delen.
 5. i fältet **Plats** anger eller väljer du ett värde.
 6. Klicka på länken på den valda raden i listan.
 7. Ange eller välj ett värde i fältet **Lagerställe**.
@@ -52,9 +52,12 @@ I den här proceduren används demonstrationsföretaget USMF.
 10. Klicka på **OK**.
 11. I fältet **artikelnummer** anger du eller väljer ett värde.
 12. Ange ett tal i fältet **Enhetspris**.
-13. Expandera avsnittet Radinformation.
-14. Klicka på fliken Leverans.
-    * Obs! Välj Leveransdatumkontroll = Ingen.  
+13. Visa avsnittet **Raddetaljer**.
+14. Klicka på fliken **Leverans**.
+
+>[!Note] 
+>Välj **Leveransdatumkontroll** = **Ingen**  
+
 15. I fältet **Begärt transportdatum**, ange ett datum.
 16. I fältet **Bekräftat transportdatum**, ange ett datum.
 
@@ -83,7 +86,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 2. I fältet **Banknummer**, skriv ett värde.
     * Kontrollera värdena i de beräknade fälten **marginal** och **utgift**.  
 3. Klicka på **OK**.
-4. Expandera avsnittet Åtgärder.
+4. Expandera avsnittet **Åtgärder**.
     * Kontrollera posten Ta emot från bank.  
 5. Klicka för att följa länken i fältet **Journalbatchnummer**.
 6. Klicka på **Rader**.
@@ -102,7 +105,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 9. Hitta och markera önskad post i listan.
 10. Klicka på **Ge till mottagare** för att öppna dialogrutan.
 11. Klicka på **OK**.
-12. Expandera avsnittet Åtgärder.
+12. Expandera avsnittet **Åtgärder**.
     * Validera posten Ge till mottagare.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>Bearbeta garanti_Öka värde
@@ -118,7 +121,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 10. Hitta och markera önskad post i listan.
 11. Klicka på **Öka värde** för att öppna dialogrutan.
 12. Klicka på **OK**.
-13. Expandera avsnittet Åtgärder.
+13. Expandera avsnittet **Åtgärder**.
     * Kontrollera posten Öka värde.  
 14. Hitta och markera önskad post i listan.
 15. Klicka för att följa länken i fältet **Journalbatchnummer**.
@@ -137,7 +140,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 9. Hitta och markera önskad post i listan.
 10. Klicka på **Likvidera** för att öppna dialogrutan.
 11. Klicka på **OK**.
-12. Expandera avsnittet Åtgärder.
+12. Expandera avsnittet **Åtgärder**.
     * Kontrollera posten Likvidera.  
 13. Hitta och markera önskad post i listan.
 14. Klicka för att följa länken i fältet **Journalbatchnummer**.

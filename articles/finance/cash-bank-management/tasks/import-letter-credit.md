@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f07748c2dc41f6411add1d54589652baa7fc3fbb
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 95a79b3c391c15099aee0a8d34419e1cf48fafbc
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779449"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804002"
 ---
 # <a name="import-letter-of-credit"></a>Importera remburs
 
@@ -42,7 +42,10 @@ I den här proceduren används demonstrationsföretaget USMF.
 10. Klicka på länken på den valda raden i listan.
 11. Ange ett datum i fältet **Redovisningsdatum**.
 12. I fältet **Leveransdatum**, ange ett datum.
-    * Obs! Fältet **Bankdokumenttyp** bör väljas med värdet **Remburs**.  
+
+>[!Note] 
+>Fältet **Bankdokumenttyp** bör väljas med värdet **Remburs**.  
+
 13. Klicka på **OK**.
 14. I fältet **artikelnummer** anger du eller väljer ett värde.
 15. Hitta och markera önskad post i listan.
@@ -97,7 +100,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 1. I åtgärdsrutan, klicka på **Ta emot**.
 2. Klicka på **Produktinleverans**.
 3. Ange ett värde i fältet **PurchParmTable_Num**.
-    * Välj försändelsenumret som skapas med hänvisning till rembursen.  
+    * Välj **försändelsenumret** som skapas med hänvisning till rembursen.  
 4. Klicka på länken på den valda raden i listan.
 5. I fältet **Produktinleveransdatum**, ange ett datum.
 6. Klicka på **OK**.
@@ -108,7 +111,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 1. Gå till **Kassa- och bankhantering > Remburser > Importremburs och importinkasso**.
 2. Hitta och markera önskad post i listan.
 3. Klicka på länken på den valda raden i listan.
-    * Kontrollera statusen för Importremburs.     
+    * Kontrollera statusen för **Importremburs**.     
 4. Stäng sidan.
 5. Stäng sidan.
 
@@ -152,7 +155,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 6. Ange ett datum i fältet **Datum.**
 7. Ange önskade värden i fältet **Konto**.
 8. Klicka på **Kvitta transaktioner**.
-9. Expandera avsnittet Summor.
+9. Expandera avsnittet **Summor**.
 10. I fältet **Visa**, välj ett alternativ.
     * Kontrollera att fälten **Bankdokumentnummer** och **Försändelsenummer** har uppdaterats.  
 11. Markera kryssrutan **Markera**.
@@ -167,12 +170,12 @@ I den här proceduren används demonstrationsföretaget USMF.
 1. Gå till **Kassa- och bankhantering > Remburser > Importremburs och importinkasso**.
 2. Hitta och markera önskad post i listan.
 3. Klicka på länken på den valda raden i listan.
-    * Kontrollera statusen för Importremburs.   
+    * Kontrollera statusen för **Importremburs**.   
 4. Stäng sidan.
 
 ## <a name="verify-the-bank-facility-limit-and-utilization-report"></a>Verifiera rapporten över bankkreditlimiter och utnyttjande
 1. Gå till **Kassa- och bankhantering > Förfrågningar och rapporter > Remburser eller garantier > Rapport om bankkreditlimiter och utnyttjande**.
-2. Expandera avsnittet Poster som ska ingå.
+2. Expandera avsnittet **Poster som ska ingå**.
 3. Klicka på **Filter**.
     * Definiera fältet **Kriterier** med det obligatoriska bankkontot.  
 4. I fältet **Kriterier** anger du eller väljer ett värde.

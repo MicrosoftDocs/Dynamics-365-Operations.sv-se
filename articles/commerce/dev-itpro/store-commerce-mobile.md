@@ -2,32 +2,33 @@
 title: Store Commerce-app för mobila plattformar
 description: I den här artikeln beskrivs hur du kommer igång med hjälp av Microsoft Dynamics 365 Commerce Store Commerce-app för Android och iOS.
 author: stuharg
-ms.date: 10/07/2022
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2018-10-29
-ms.openlocfilehash: 1f07a130629863ebd9d036378436cf360e90ac26
-ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
+ms.openlocfilehash: dc952698a2a3301aff312e8310c58cbbb9cfe290
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9642347"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815794"
 ---
 # <a name="store-commerce-app-for-mobile-platforms"></a>Store Commerce-app för mobila plattformar
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 I den här artikeln beskrivs hur du kommer igång med hjälp av Microsoft Dynamics 365 Commerce Store Commerce-appar för Android och iOS.
 
-Med Dynamics 365 Commerce mobilapparna för Android och iOS distribueras alla enheter för mobil kassa (POS) för din butiksmiljö enkelt. I Store Commerce-mobilappar levereras alla möjligheter och fördelar med [Store Commerce-app för Windows](store-commerce.md) på telefon och surfplatta formfaktorer. Store Commerce mobilappar apps kan installeras direkt från Apples och Google Play appbutiker och kräver inte att en utvecklare skapar ett nytt applikationspaket för att distribuera eller uppdatera dem. 
+Med Dynamics 365 Commerce mobilapparna för Android och iOS distribueras alla enheter för mobil kassa (POS) för din butiksmiljö enkelt. I Store Commerce-mobilappar levereras nästan alla möjligheter och fördelar med [Store Commerce-app för Windows](store-commerce.md), och presterar bra på ett brett utbud av iOS och Android telefoner och surfplattor. Store Commerce mobilappar apps kan installeras direkt från Apples och Google Play appbutiker och kräver inte att en utvecklare skapar ett nytt applikationspaket för att distribuera eller uppdatera dem. 
 
 Store Commerce mobilapparna behåller fullständig funktionell paritet med aktuella Retail hybrida appar. Dessutom omfattar Store Commerce för iOS stöd för en dedicerad maskinvara så att iOS-enheter kan kommunicera med anslutna betalningsterminaler, kvittoskrivare och kassalåda utan att en delad maskinvara krävs. 
 
 > [!IMPORTANT]
-> Store Commerce-appar för Windows, Android och och iOS är nästa generering av kassaprogram för Dynamics 365 Commerce. Det aktuella MPOS-programmet (Modern POS) och [Retail hybrida appar](hybridapp.md) för mobil inaktiveras i oktober 2023. Microsoft rekommenderar att du använder Store Commerce eller Cloud POS (CPOS) för alla nya POS-distributioner. Befintliga kunder ska planera att flytta från Retail hybridapp till Store Commerce. För mer information om avskrivningsplanen för MPOS och Retail hybridappar finns i [Modernisera Dynamics 365 Commerce i butik teknikstack](https://www.microsoft.com/download/details.aspx?id=103896). 
+> Store Commerce-appar för Windows, Android och och iOS är nästa generering av kassaprogram för Dynamics 365 Commerce. Store Commerce-apparna innehåller många förbättringar vad gäller prestandan samtidigt som de behåller full funktionalitet och paritet. Microsoft kommer att avskriva MPOS och Android och iOS Retail POS hybrida appar sent under 2023 och rekommenderar att du använder Store Commerce eller Cloud POS (CPOS) för alla nya kassadistributioner. Befintliga kunder ska planera att flytta från Retail hybridapp till Store Commerce. Mer information finns i [Flytta modern POS till Store Commerce](pos-extension/migrate-mpos-store-commerce.md). 
 
 ## <a name="app-architecture"></a>Apparkitektur
 
@@ -51,7 +52,7 @@ Store Commerce mobilappar kräver Dynamics 365 Commerce, särskilt Commerce head
 Du kan installera Store Commerce mobilappar från Google Play Store eller Apple App Store. 
 
 - [Store Commerce-appen för Android](https://aka.ms/storecommerceandroid)
-- Store Commerce-appen för iOS (kommer snart)
+- [Store Commerce-appen för iOS](https://aka.ms/storecommerceios)
 
 Paketen Android-app (.apk) och Apple-app (.ipa) kan också hämtas från biblioteket gemensam tillgång i Microsoft Dynamics Lifecycle Services. 
 

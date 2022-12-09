@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5fbcee713625c597080d1d63ba0ffc70f088799
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0691c65e6a499f713952070811cefaa7a213af7b
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901296"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787564"
 ---
 # <a name="ledger-allocation-rules"></a>Allokeringsregler för redovisning
 
@@ -28,7 +28,7 @@ ms.locfileid: "8901296"
 
 Den här artikeln innehåller information om allokeringsregler för redovisning. Den beskriver de olika komponenterna för dessa allokeringsregler och allokeringsmetoderna som kan användas för dem.
 
-Redovisningallokeringsregler används för att beräkna och automatiskt generera allokeringsjournaler och kontoposter för allokering av redovisningssaldon eller fasta belopp. Allokeringmetoder kan vara variabla eller fasta. Följande allokeringsmetoder kan användas för redovisningallokeringsregler:
+Redovisningallokeringsregler används för att beräkna och automatiskt generera allokeringsjournaler och kontoposter för allokering av redovisningssaldon eller fasta belopp. Allokeringmetoder kan vara variabla eller fasta. Allokeringen baseras på transaktionens valutavärde. Bokföringsposter för vinst/förlust i utländsk valuta bokförs till exempel om du vill justera beloppen i redovisnings- och rapporteringsvalutan. Dessa poster omfattas inte av allokeringsregler eftersom deras transaktionsvalutavärde är 0,00. Följande allokeringsmetoder kan användas för redovisningallokeringsregler:
 
 -   **Bas** – Den här variabelmetoden används när allokeringen beror på det verkliga redovisningssaldot, baserat på filterkriterier. Du kan till exempel allokera utgifter baserat på varje avdelnings försäljning i proportion till den totala försäljningen.
 -   **Fast procentsats** och **Fast vikt** – För dessa metoder anges allokeringsprocent eller vikt direkt för regeln. Till exempel kan annonseringsutgifter allokeras så att avdelning A får 70 procent av annonseringsutgifterna och avdelning B får 30 procent.

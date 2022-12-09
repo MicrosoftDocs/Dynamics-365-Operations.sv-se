@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
-ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
+ms.openlocfilehash: 6283e07b87dc169d3cbaa71a371839ab9b2d6150
+ms.sourcegitcommit: ee13b854cbd52a3aa33e2449a296aed775862594
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "9785110"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "9799047"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller utfasade plattformsfunktioner
 
@@ -71,10 +71,10 @@ Som en del av [En dynamisk en plattform](/dynamics365-release-plan/2022wave2/fin
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Vi tar bort följande lista med chiffersviter för att följa våra nuvarande säkerhetsprotokoll.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Ersatt av en annan funktion?**   | Från och med 31 januari 2023 kan kunder bara använda vår [standard chiffersvit](/power-platform/admin/server-cipher-tls-requirements). Den här ändringen påverkar dina klienter och servrar som kommunicerar med våra servrar. Det kan t.ex. påverka dina tredjepartsintegrationer som inte rättar sig efter vår standardstandard. |
+| **Ersatt av en annan funktion?**   | Från och med januari 2023 kan kunder bara använda vår [standard chiffersvit](/power-platform/admin/server-cipher-tls-requirements). Den här ändringen påverkar dina klienter och servrar som kommunicerar med våra servrar. Det kan t.ex. påverka dina tredjepartsintegrationer som inte rättar sig efter vår standardstandard. |
 | **Produktområden som påverkas**         | Appar för ekonomi och drift |
 | **Distribueringsalternativ**              | Molndistributioner |
-| **Status**                         | Inaktuell. Kunderna måste uppgradera sina servrar före den 31 januari 2023. Mer information om hur du konfigurerar TLS chiffersvit order finns i [Hantera Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
+| **Status**                         | Inaktuell. Kunderna måste uppgradera sina servrar före den januari 2023. Mer information om hur du konfigurerar TLS chiffersvit order finns i [Hantera Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Utfasning av funktioner från juni 2022

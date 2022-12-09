@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1afc8aec18c61b1ce488472adf540e47540eaa17
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: d7c4e98481bc3607d3dce68a6b6cb0478524442f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715535"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804166"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Kassarabatter för överbetalningar
 
@@ -53,7 +53,9 @@ Kunden skickar in en betalning på för 95,00 inom kassarabattperioden. Betalnin
 | Betalning       | -95.00 | 0,00    |
 | Kassarabatt | -10.50 | 0,00    |
 
-Följande redovisningsposter genereras för betalningen och kvittningen. **Betalning**
+Följande redovisningsposter genereras för betalningen och kvittningen.
+
+**Betalning**
 
 | Konto             | Debetbelopp | Kreditbelopp |
 |---------------------|--------------|---------------|
@@ -85,7 +87,9 @@ Kunden skickar in en betalning på för 95,00 inom kassarabattperioden. Betalnin
 | Betalning       | -95.00 | -0.50   |
 | Kassarabatt | -10.50 | 0,00    |
 
-Överbetalningsbeloppet på 0,50 kommer att återstå som ett öppet saldot på betalningen och kan kvittas mot en annan faktura. Följande redovisningsposter genereras för betalningen och kvittningen. **Betalning**
+Överbetalningsbeloppet på 0,50 kommer att återstå som ett öppet saldot på betalningen och kan kvittas mot en annan faktura. Följande redovisningsposter genereras för betalningen och kvittningen. 
+
+**Betalning**
 
 | Konto             | Debetbelopp | Kreditbelopp |
 |---------------------|--------------|---------------|
@@ -118,7 +122,9 @@ Kunden skickar in en betalning på för 95,00 inom kassarabattdatumet. Betalning
 | Betalning       | -95.00 | -0.00   |
 | Kassarabatt | -10.00 | 0,00    |
 
-Kassarabattbeloppet reduceras från 10,50 till 10,00. Betalningen och fakturan anses kvittade. **Betalning**
+Kassarabattbeloppet reduceras från 10,50 till 10,00. Betalningen och fakturan anses kvittade. 
+
+**Betalning**
 
 | Konto             | Debetbelopp | Kreditbelopp |
 |---------------------|--------------|---------------|

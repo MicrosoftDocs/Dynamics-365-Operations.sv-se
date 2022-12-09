@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872280"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806386"
 ---
 # <a name="recruiting-request"></a>Rekryteringsbegäran
 
@@ -68,7 +68,7 @@ Beskriver en rekryteringsbegäran för ett jobb.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ Beskriver en rekryteringsbegäran för ett jobb.
 | **Status**<br>mshr_status<br>Alternativuppsättningen *RekryteringRequestStatus* | Skrivskydd<br>Obligatoriskt<br> | Visar statusen för rekryteringsbegäran. |
 | **Beskrivning**<br>mshr_description<br>*Sträng* | Skrivskydd<br>Obligatoriskt | Beskriver begäran. |
 | **Plats-ID för rekryteringsbegäran**<br>mshr_recruitingrequestlocationid<br>*Sträng* | Skrivskydd<br>Valfritt | Det användarläsbara unika ID:t för jobbplatsen som hör till denna begäran. |
-| **ID-värde för rekryteringsplats**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Skrivskydd<br>Valfritt<br>Sekundärnyckel: entiteten mshr_hcmrecruitingrequestlocationentityid of mshr_hcmrecruitingrequestlocationentity | Systemgenererat GUID-värde för att identifiera den plats för rekryteringsbegäran som valts för begäran. |
+| **ID-värde för rekryteringsplats**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Skrivskydd<br>Valfritt<br>Sekundärnyckel: entiteten mshr_hcmrecruitingrequestlocationentityid of mshr_hcmrecruitingrequestlocationentity | Systemgenererat GUID-värde för att identifiera den plats för rekryteringsbegäran som valts för begäran. |
 | **Kommentarer**<br>mshr_comments<br>*Sträng* | Skrivskydd<br>Valfritt | Kommentarer om begäran (att användas av anställande chefer och rekryterare). |
 | **Jobb-ID**<br>mshr_jobid<br>*Sträng* | Skriv en gång<br>Obligatoriskt |   Det användarläsbara unika ID:t för jobbet som delas av samtliga befattningar associerade med denna begäran. |
 | **ID-värde för jobb**<br>_mshr_fk_job_id_value<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Sekundärnyckel: mshr_hcmjobentityid för entiteten mshr_hcmjobentity | Det systemgenererade, unika ID:t för jobbet som delas av samtliga befattningar associerade med rekryterandebegäran. |

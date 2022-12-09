@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-07-12
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 24aed03172446fd97865b719497c51281231cf69
-ms.sourcegitcommit: b37596f943f6469af6c1590d74211a66a2900ece
+ms.openlocfilehash: 54d1aa9e20470b55c8085b41b65804b948846b7a
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9138732"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806529"
 ---
 # <a name="supply-chain-management-troubleshooting-and-faqs"></a>Felsökning av och Vanliga frågor och svar kring Supply Chain Management
 
@@ -46,6 +46,7 @@ Följande Vanliga frågor och svar-artiklar innehåller information om de frågo
 - [Vanliga frågor och svar om produktinformationshantering](pim/product-information-faq.md)
 - [Vanliga frågor och svar om försäljningsorder](sales-marketing/sales-orders-faq.md)
 - [Schemalägga datarensning i försäljningshistorik](sales-marketing/sales-update-history-cleanup-performance-improvements.md)
+- [Vanliga frågor om DDMRP](master-planning/planning-optimization/ddmrp-faqs.md)
 
 Följande Vanliga frågor och svar-artiklar diskuterar problem med den plattform som delas av samtliga appar för ekonomi och drift, inklusive Supply Chain Management:
 

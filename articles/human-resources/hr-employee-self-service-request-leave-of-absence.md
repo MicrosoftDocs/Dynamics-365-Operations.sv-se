@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51c6cb7c5706bb4bd7080c7f7d679e49771443d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e6c98246e94670dd5f882fcbbd1f269e57f66faf
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869848"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805298"
 ---
 # <a name="request-a-leave-of-absence"></a>Begäran om frånvaro
 
@@ -51,6 +51,22 @@ Du kan skicka en begäran om frånvaro och se statusen för din begäran om frå
 1. I arbetsyta **Självbetjäning för medarbetare**, välj **Fler** (...) panelen **ledighetssaldon**.
 
 2. Om du vill visa din begäran om frånvaro, välj **Visa begäran om frånvaro**.
+
+## <a name="update-a-leave-of-absence-request"></a>Uppdatera en begäran om frånvaro
+
+1. I arbetsytan **Självbetjäning för medarbetare** på panelen **Tjänstledighet** välj **Fler (...)**.
+2. Välj den tjänstledighetsbegäran som ska uppdateras och välj sedan **Uppdatera tjänstledighet**.
+3. Uppdatera värdet i fältet **Slutdatum** om du vill utöka eller korta tjänstledigheten.
+4. Om slutdatumet har bekräftats ställer du in alternativet **Bekräfta slutdatum** till **Ja**.
+5. När alternativet **Bekräfta slutdatum** har ställts in som **Ja**, kan du föra över ett meddelande om att återgå till arbete. Markera sedan kryssrutan för att bekräfta att ett meddelande om att återgå till arbete har överförts.
+6. Välj **Skicka** för att uppdatera tjänstledigheten.
+
+## <a name="cancel-a-leave-of-absence-request"></a>Avbryt en begäran om frånvaro
+
+1. I arbetsytan **Självbetjäning för medarbetare** på panelen **Tjänstledighet** välj **Fler (...)**.
+2. Välj den tjänstledighetsbegäran som ska avbrytas och välj sedan **Uppdatera tjänstledighet**.
+3. Ange alternativet **Avbryta tjänstledighet** till **Ja**.
+4. Välj **Skicka** för att avbryta tjänstledigheten.
 
 ## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Importera tjänstledighetsansökningar från andra system eller äldre system
 

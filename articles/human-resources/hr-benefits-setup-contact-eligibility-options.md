@@ -2,7 +2,7 @@
 title: Konfigurera berättigandealternativ för personlig kontakt
 description: Detta ämne förklarar hur du konfigurerar berättigande alternativ för personliga kontakter i Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 251a12b0da364744f1d8c84324099708a2f816a1
-ms.sourcegitcommit: 1717ff6af1879c6f3a8360936c42ecf55f86acd0
+ms.openlocfilehash: e3e393002901f31c035a54bd8036ed20ecdf9e00
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2022
-ms.locfileid: "9749293"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803895"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Konfigurera berättigandealternativ för personlig kontakt
 
@@ -43,7 +43,8 @@ Det här ämnet förklarar hur du konfigurerar de typer av personliga kontakter 
    | **Berättigandekod för kontakt** | Den systemkod som bäst beskriver det personliga berättigandealternativet. Du kan välja mellan: <ul><li>Relation</li><li>Student</li><li>Överårig beroende</li><li>Överårig funktionshindrad beroende</li></ul> |
    | **Status** | Status för berättigandealternativet. Om status för ett alternativ är inaktiverad kan du inte välja det personliga kontaktalternativet för personliga kontakter. |
    | **Relation** | Anger relationen mellan den personliga kontakten och medarbetaren. Det här fältet är endast aktivt om kontakt villkorskoden är inställd på relation. |
-   | **Ålder** | Minsta ålder för en berättigad personlig kontakt för förmånsplanen. Det här fältet är bara aktivt om du väljer en relation. Denna ålder jämförs med den beräknade åldern för den personliga kontakten. Beräknad ålder är: (täckningsdatum – personliga kontaktens födelsedatum/365). Det här talet är alltid ett heltal. |
+   | **Ålder** |Anger maximal ålder för en berättigad personlig kontakt för förmånsplanen. Det här fältet är bara aktivt om du väljer en relation. Denna ålder jämförs med den beräknade åldern för den personliga kontakten. Beräknad ålder är: (täckningsdatum – personliga kontaktens födelsedatum/365). Det här talet är alltid ett heltal.
+För kontaktalternativet **Överårig beroende personlig** är åldersgränsen i det här fältet minimiåldern. Om t.ex. ålder har satts till 18 för alternativet **Överårig beroende** kommer de beroende som är markerade som överåriga beroende och är 18 år eller äldre omfattas av berättigandealternativet.  |
 
 4. Välj **Spara**. 
 

@@ -2,7 +2,7 @@
 title: Organisera rapportdelar i rapportdesignern
 description: Den här artikeln innehåller en beskrivning av hur du organiserar befintliga rapporter, byggblock och objekt i rapportdesignern.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6abad01232d05e94321d0d568d2e801d92875ae
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: a94a88114072792243026e441e6c5a62ee80fc56
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135892"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802699"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisera rapportdelar i rapportdesignern
 
@@ -28,16 +28,16 @@ ms.locfileid: "9135892"
 
 När du har utformat byggblock och skapat rapporter är det praktiskt att ordna objekten så att de blir lättare att hitta för användarna. Den här artikeln innehåller en beskrivning av hur du organiserar befintliga rapporter, byggblock och objekt i rapportdesignern.
 
-Du kan ändra namn på mappar, rapporter, byggblock och andra objekt i rapportdesignern för att organisera dina filer. Beroende på vilken typ av objekt du byter namn på måste du kanske uppdatera associationer till det objektet.
+Du kan ändra namn på mappar, rapporter, byggblock och andra objekt i Report Designer för att organisera dina filer. Beroende på vilken typ av objekt du byter namn på måste du kanske uppdatera associationer till det objektet.
 
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Ändra namn på en mapp eller byggsten i Report Designer
 I Report Designer kan du byta namn på mappar, rapportdefinitioner, raddefinitioner, kolumndefinitioner och rapportträdsdefinitioner.
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Byta namn på en mapp eller ett byggblock i Report Designer
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Ändra namn på en mapp eller byggsten i Report Designer
 
 1. Använd navigeringsfönstret i Report Designer när du ska leta rätt på den mapp eller det objekt som du ska byta namn på.
 2. Högerklicka på mappen eller objekt och klicka sedan på **Ändra namn**. Fältet **Namn** i navigeringsfönstret blir tillgängligt.
-3. Skriv in ett nytt namn och tryck sedan på Enter.
+3. Skriv in ett nytt namn och tryck sedan på **Enter**.
 4. Om byggblocket är en raddefinition, kolumndefinition eller rapportträdsdefinition måste du uppdatera andra byggblock som är kopplade till objektet. Högerklicka på byggblocket du bytte namn i steg 3, välj **Associationer** och välj sedan ett alternativ i listan om du vill uppdatera det.
 5. Upprepa steg 4 tills alla tillhörande artiklar uppdateras.
 
@@ -60,7 +60,7 @@ Du kan gruppera rapportdefinitioner för att skapa flera rapporter samtidigt. F�
 3. Klicka på fliken **Rapportgrupp** och utför valfria ändringar.
 4. I menyn **Arkiv** klickar du på **Spara** för att spara den ändrade rapportgruppen. Du kan också klicka på knappen **Spara** ![Spara.](media/save.gif "Spara") i verktygsfältet.
 
-> Om du har schemalagda rapporter som skapas vid inställda intervall kan du åsidosätta dessa inställningar och skapa en rapport direkt.
+> [NOTE] Om du har schemalagda rapporter som skapas vid inställda intervall kan du åsidosätta dessa inställningar och skapa en rapport omedelbart.
 
 ### <a name="generate-a-report-group-report"></a>Skapar en rapportgruppsrapport
 
@@ -80,13 +80,13 @@ I följande tabell hittar du beskrivningar av kontrollerna på fliken **Rapportg
 <table>
 <thead>
 <tr>
-<th>Kontroll</th>
+<th>Styrning</th>
 <th>Beskrivning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Åsidosätt företaget, detaljer och datuminställningar från enskilda rapportdefinitioner</td>
+<td>Åsidosätt företag-, detalj- och datuminställningar från enskilda rapportdefinitioner</td>
 <td>Markera den här kryssrutan för att åsidosätta individuella rapportdefinitioner av rapporter i denna rapport för generering av dessa rapporter.</td>
 </tr>
 <tr>
@@ -113,7 +113,7 @@ I följande tabell hittar du beskrivningar av kontrollerna på fliken **Rapportg
 </tr>
 <tr>
 <td>Inkluderar alla rapporteringsvalutor</td>
-<td>Om ytterligare rapporteringsvalutor som är konfigurerade i ditt Microsoft Dynamics ERP-system kommer att visas här. Välj den här kryssrutan om du vill ha skapa fler rapporter i de valutor som anges. Klicka på <strong>Valuta</strong> och välj en valuta om du vill visa rapporterna i Web Viewer.</td>
+<td>Om ytterligare rapporteringsvalutor som är konfigurerade i ditt Microsoft Dynamics 365 Finance-system kommer att visas här. Välj den här kryssrutan om du vill ha skapa fler rapporter i de valutor som anges. Klicka på <strong>Valuta</strong> och välj en valuta om du vill visa rapporterna i Web Viewer.</td>
 </tr>
 <tr>
 <td>Datuminformation sparas inte med rapportdefinition</td>

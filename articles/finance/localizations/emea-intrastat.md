@@ -1,8 +1,8 @@
 ---
 title: Intrastat – översikt
 description: Det här ämnet ger information om Intrastat-rapportering för handel av varor och, i vissa fall, tjänster mellan länder/regioner i den Europeiska unionen (EU).
-author: EvgenyPopovMBS
-ms.date: 01/13/2021
+author: mrolecki
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom:
 - "28581"
 - intro-internal
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 762de8a098c61bc0d717c038d6ca0ff6d649bff3
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894786"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815720"
 ---
 # <a name="intrastat-overview"></a>Intrastat – översikt
 
@@ -387,6 +387,28 @@ I det här exemplet måste ett företag i Tyskland köpa 10 enheter varor från 
 5. Granska fliken **Allmänt** för inköpsordern. Lägg märke till **Kvantiteten för ytterligare enheter** och **Ytterligare enheter** i avsnittet **Enhet** ställs in automatiskt.
 
    ![Inköpsorderdetaljer på fliken Allmänt på Intrastat-sidan](media/intrastat_overview_6.png)
+   
+## <a name="list-of-countryregion-specific-articles"></a>Lista med landsspecifika artiklar
+I följande tabell visas tillgängliga lands-/regionspecifika intrastatartiklar.
+
+| Land          | Länk      |
+|------------------|-----------|
+| Österrike          |[Österrikisk Intrastat](emea-aut-intrastat.md)| 
+| Belgien          |[Intrastat för Belgien](emea-bel-intrastat.md)|
+| Tjeckien   |[Tjeckisk Intrastat](emea-cze-intrastat.md)|
+| Danmark          |[Dansk Intrastat](emea-dnk-intrastat.md)|
+| Estland          |[Estnisk Intrastat](emea-est-intrastat.md)|
+| Finland          |[Finsk Intrastat](emea-fin-intrastat.md)|
+| Frankrike           |[Fransk Intrastat](emea-fra-intrastat.md)|
+| Tyskland          |[Tysk Intrastat](emea-deu-intrastat.md)|
+| Ungern          |[Ungersk Intrastat](emea-hun-intrastat.md)|
+| Italien            |[Italiensk Intrastat](emea-ita-intrastat.md)|
+| Lettland           |[Lettisk Intrastat](emea-lva-intrastat.md)|
+| Litauen        |[Litauisk Intrastat](emea-ltu-intrastat.md)|
+| Nederländerna      |[Intrastat för Nederländerna](emea-nl-intrastat.md)|
+| Polen           |[Intrastat för Polen](emea-pol-intrastat.md)|
+| Spanien            |[Intrastat för Spanien](emea-esp-intrastat.md)|
+| Sverige           |[Svensk Intrastat](emea-swe-intrastat.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

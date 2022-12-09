@@ -15,30 +15,30 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1db95720d56cc538f2d702137889467a9892d99c
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b75637bfb38c13591223ff11be36d958b3972d4f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715197"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804147"
 ---
 # <a name="cash-discounts"></a>Kassarabatter
 
 [!include [banner](../includes/banner.md)]
 
-Kassarabatter ställs in och delas för Leverantörsreskontra och Kundreskontra.  Den tillgängliga kassarabatten kan definieras på kundfakturan eller leverantörsfakturan och dras av om fakturan betalas innan kassarabattsdatumet har förfallit. 
+Kassarabatter ställs in och delas för Leverantörsreskontra och Kundreskontra. Den tillgängliga kassarabatten kan definieras på kundfakturan eller leverantörsfakturan och dras av om fakturan betalas innan kassarabattsdatumet har förfallit. 
 
 ## <a name="cash-discounts"></a>Kassarabatter
 
-Kassarabatter för både kunder eller leverantörer kan skapas på sidan Kassarabatter. Du kan också definiera, genom att använda fältet Nästa rabattkod, en serie kassarabatter som följer efter varandra när tidigare kassarabattdatum förfaller. Mer information finns i ”Exempel: Serie med kassarabatter” senare i den här artikeln. Om fakturan, kredittransaktionen (antingen en betalning eller en kreditfaktura) eller båda anges i en annan valuta än redovisningsvalutan för den juridiska personen beräknas kassarabatten med hjälp av valutakursen för datumet för betalningen eller kreditfakturan. Om faktura- och kreditdokumentet anges i olika juridiska personer, och om redovisningsvalutorna förde juridiska personerna skiljer sig, hämtas valutakursen från den juridiska personen på fakturan, från datumet för kreditdokumentet. Mer information finns i ”Exempel: Valutakurser för kassarabatter” senare i den här artikeln.
+Kassarabatter för både kunder eller leverantörer kan skapas på sidan **Kassarabatter**. Du kan också definiera, genom att använda fältet **Nästa rabattkod**, en serie kassarabatter som följer efter varandra när tidigare kassarabattdatum förfaller. Mer information finns i ”Exempel: Serie med kassarabatter” senare i den här artikeln. Om fakturan, kredittransaktionen (antingen en betalning eller en kreditfaktura) eller båda anges i en annan valuta än redovisningsvalutan för den juridiska personen beräknas kassarabatten med hjälp av valutakursen för datumet för betalningen eller kreditfakturan. Om faktura- och kreditdokumentet anges i olika juridiska personer, och om redovisningsvalutorna förde juridiska personerna skiljer sig, hämtas valutakursen från den juridiska personen på fakturan, från datumet för kreditdokumentet. Mer information finns i ”Exempel: Valutakurser för kassarabatter” senare i den här artikeln.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Ange standardordning för kassarabatthuvudkontot
 
 Om en faktura betalas i tid för en kassarabatt bokförs rabatten automatiskt på ett huvudkonto för kassarabatter enligt följande standardprioritet:
-1.  Huvudkontot som angetts i fältet Alternativt kassarabattskonto på sidan Kvitta öppna transaktioner för kunden eller på sidan Kvitta öppna transaktioner.
-2.  Huvudkontot som angetts i fältet Kundkassarabatt eller fältet Leverantörskassarabatt i redovisningsbokföringsgruppen som är tilldelad till momskoden på fakturan. Ställ in redovisningsbokföringsgrupper på sidan för redovisningsbokföringsgrupper och tilldela dem till momskoder på sidan Momskoder.
-3.  Huvudredovisningskontot på sidan Kassarabatter i fältet Huvudkonto för kundrabatter eller fältet Huvudkonto för leverantörsrabatter för kassarabattkoden på den kvittade fakturan.
-4.  Huvudkontot för kassarabatter så som detta definierats på sidan Konton för automatiska transaktioner.
+1.  Huvudkontot som angetts i fältet **Alternativt kassarabattskonto** på sidan **Kvitta öppna transaktioner** för kunden eller på sidan **Kvitta öppna transaktioner**.
+2.  Huvudkontot som angetts i fältet **Kundkassarabatt** eller fältet **Leverantörskassarabatt** i redovisningsbokföringsgruppen som är tilldelad till momskoden på fakturan. Ställ in redovisningsbokföringsgrupper på sidan för **redovisningsbokföringsgrupper** och tilldela dem till momskoder på sidan **Momskoder**.
+3.  Huvudredovisningskontot på sidan **Kassarabatter** i fältet **Huvudkonto för kundrabatter** eller fältet **Huvudkonto för leverantörsrabatter** för kassarabattkoden på den kvittade fakturan.
+4.  Huvudkontot för kassarabatter så som detta definierats på sidan **Konton för automatiska transaktioner**.
 
 ## <a name="example-series-of-cash-discounts"></a>Exempel: Serie med kassarabatter
 Ställ in tre kassarabattkoder enligt följande:
@@ -46,7 +46,7 @@ Ställ in tre kassarabattkoder enligt följande:
 -   Kod 10D5% – En kassarabatt på 5 % om beloppet betalas inom 10 dagar.
 -   Kod 14D2% – En kassarabatt på 2 % om beloppet betalas inom 14 dagar.
 
-I fältet Nästa rabattkod:
+I fältet **Nästa rabattkod**:
 -   Välj 10D5% för koden 5D10%.
 -   Välj 14D2% för koden 10D5%.
 -   För koden 14D2% låter du fältet Nästa rabattkod vara tomt.
@@ -61,7 +61,7 @@ Din juridisk persons redovisningsvaluta är EUR och följande valutakurser anges
 En faktura på 1000 USD med villkor för kassarabatt på 20D2% bokförs den 15 februari. Fakturans belopp i redovisningsvalutan är 1 100 EUR. En betalning på 980 USD kvittas mot fakturan den 1 mars. Kassarabattbeloppet är 20 USD. Redovisningsvalutabeloppet för betalningen är 784 EUR. Redovisningsvalutabeloppet för kassarabatten beräknas med hjälp av valutakursen för den 1 mars 1: 20 \* 80 / 100 = 16 EUR.
 
 > [!NOTE]
-> Om alternativet Beräkna kassarabatter för delbetalningar har valts på sidan Parametrar för kundreskontra eller sidan Parametrar för leverantörsreskontra används valutakursen som gäller på datumet för respektive delbetalning. 
+> Om alternativet **Beräkna kassarabatter för delbetalningar** har valts på sidan **Parametrar för kundreskontra** eller sidan **Parametrar för leverantörsreskontra** används valutakursen som gäller på datumet för respektive delbetalning. 
 
 
 

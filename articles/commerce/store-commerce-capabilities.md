@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-09-30
-ms.openlocfilehash: d713cc0e9537ae20ffddee6e77779a16e74bd779
-ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
+ms.openlocfilehash: 58f2ab1f913d3629de7971c8eeb2d1821161e44f
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "9725644"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788524"
 ---
 # <a name="store-commerce-app-capabilities"></a>Funktioner i appen Store Commerce
 
@@ -41,7 +41,7 @@ Denna artikel innehåller en översikt över funktioner i appen Store Commerce.
 
 | Funktion | Beskrivning | Dokumentation | Tilläggsinnehåll |
 |---|---|---|---|
-| Flera formulärfaktorer |  Store Commerce-appen stöds av flera formulärfaktorer, till exempel datorer, surfplattor och mobila enheter. Det responsiva användargränssnittet (UI) gör det möjligt att ändra storlek på och justera layouten automatiskt efter skärmstorlek. | [Visuella konfigurationer](pos-screen-layouts.md) | |
+| Flera formulärfaktorer |  Store Commerce-appen stöds av flera formulärfaktorer, till exempel datorer, surfplattor och mobila enheter. Det responsiva användargränssnittet (UI) gör det möjligt att ändra storlek på och justera layouten automatiskt efter skärmstorlek. | [Visuella konfigurationer](pos-screen-layouts.md) |  |
 | Flera plattformar | Store Commerce-appen stöds på webben, Windows, iOS och Android-plattformar. | [Plattformar](dev-itpro/hybridapp.md) | |
 | Profilering | Med hjälp av skärmdesignern kan du anpassa skärmlayouterna så att de uppfyller företagets krav. Dessutom kan teman, layouter, färger och bilder skapas utifrån medarbetarroller och sedan delas mellan användarna för konsekventa och användarvänliga funktioner. | [Visuella konfigurationer](pos-screen-layouts.md) | [Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | Topologi | Olika topologier i butikerna stöds, baserat på nätverkets tillgänglighet. | <p>[Topologi](dev-itpro/retail-modern-pos-architecture.md)</p><p>[Informationsgrafik](dev-itpro/retail-in-store-topology.md)</p> | |
@@ -77,7 +77,7 @@ Denna artikel innehåller en översikt över funktioner i appen Store Commerce.
 | Produktsökning | Sök produkter efter namn och begränsa sökningar med hjälp av produktattribut som märke, pris och material. Den här kapaciteten tillhandahålls av Azure Cognitive Search. | [Molnbaserade sökning](cloud-powered-search-overview.md) | |
 | Sidan Produktinformation | Sidor för omfattande produkter kan innehålla bilder, en beskrivning, produktattribut och rekommenderade produkter. Rekommendationer drivs av tjänsten Rekommendationer. | | |
 | Jämför produkter | Jämför flera produkter, och hjälpa kunder att välja en och lägga till dem i en transaktion. | | |
-| Ändlös gång | Du kan enkelt söka efter lager i andra butiker och skapa order. | [Lagersökning](pos-inventory-lookup-operation.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Ändlös gång | Du kan enkelt söka efter lager i andra butiker och skapa order. | [Lagersökning](pos-inventory-lookup-operation.md) | <p>[Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 | Rekommendationer | Merförsäljning och korsförsäljning av produkter med hjälp av tjänsten Rekommendationer. Denna tjänst använder patenterad teknik för att föreslå rekommendationer, baserat på inköpstrender och egenskaper som nya, liknande utseende och bästsäljande. Dessa rekommendationer finns på produktinformationssidorna, sidan **Kundinformation** och sidan **Transaktioner**. | [Rekommendationer](product-recommendations.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-recommendations-march-2-2021) |
 
 ## <a name="customer-relationship"></a>Kundrelation
@@ -88,8 +88,8 @@ Denna artikel innehåller en översikt över funktioner i appen Store Commerce.
 | Kundattribut | Med ramverket för kundattribut kan ytterligare kundrelaterade data samlas in baserat på affärsbehov. | [Attribut](dev-itpro/customer-attributes.md) | |
 | Sidan för kundinformation | En detaljsida för en detaljerad kund innehåller en vy i flera kanaler av kundens interaktioner mellan alla kanaler. Dessa interaktioner omfattar inköp, önskelistor och förmånspoäng. | | |
 | Molndriven kundsökning | Sök kunder efter namn, telefonnummer, e-postadress, förmånskort, adress och så vidare. | [Molnbaserade sökning](pos-search-improvements.md#customer-search) | |
-| Bonusar och belöningar | Kunder kan delta i bonusprogram och få och lösa in förmånspoäng i olika kanaler. | [Förmåner](set-up-customer-loyalty-program.md) | |
-| Kundhantering | Hantera nyckelkunder med hjälp av en klientbok och spåra aktiviteter och noteringar på kundprofilen. Med Dynamics 365 Customer Insights-integration kan vi butiksanställda få stackikoner för nästa bästa åtgärd för varje kund. | [Kundhantering](clienteling-overview.md#activities-and-notes) | |
+| Bonusar och belöningar | Kunder kan delta i bonusprogram och få och lösa in förmånspoäng i olika kanaler. | [Förmåner](set-up-customer-loyalty-program.md) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5c2wW) |
+| Kundhantering | Hantera nyckelkunder med hjälp av en klientbok och spåra aktiviteter och noteringar på kundprofilen. Med Dynamics 365 Customer Insights-integration kan vi butiksanställda få stackikoner för nästa bästa åtgärd för varje kund. | [Kundhantering](clienteling-overview.md#activities-and-notes) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSP) |
 
 ## <a name="pricing-and-discounts"></a>Prissättning och rabatter
 
@@ -132,8 +132,8 @@ Denna artikel innehåller en översikt över funktioner i appen Store Commerce.
 | Orderattribut | Med ramverket för orderattribut kan ytterligare orderrelaterad information samlas in baserat på affärsbehov. | [Attribut](dev-itpro/order-attributes.md) | |
 | Direktleverans | Artiklar kan markeras för direktleverans av en leverantör till en kundadress. Direktleverans kallas också för direktleverans. | [Direktleverans](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | Offert | Butiksanställda kan skapa offerter för kunder och kan ange ett särskilt pris, manuella rabatter och ett giltighetsdatum för offerten. | [Offert](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
-| Uppfyllelse | Butikerna kan plocka, packa och leverera order. En följesedel kan läggas till i de paket som är klara för leverans. | [Uppfyllelse](order-fulfillment-overview.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021) |
-| Fördelad orderhantering | Store Commerce-appen stöder optimering av orderuppfyllelse där affärsstrategier kan konfigureras utifrån företagets karaktär, kundtyp, ordertyp och leveransmetod. | [DOM](dom.md) | |
+| Uppfyllelse | Butikerna kan plocka, packa och leverera order. En följesedel kan läggas till i de paket som är klara för leverans. | [Uppfyllelse](order-fulfillment-overview.md) | <p>[Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021)</p> <p>[Video](https://www.microsoft.com/videoplayer/embed/RE5bRXE)</p>|
+| Fördelad orderhantering | Store Commerce-appen stöder optimering av orderuppfyllelse där affärsstrategier kan konfigureras utifrån företagets karaktär, kundtyp, ordertyp och leveransmetod. | [DOM](dom.md) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bRYl)|
 
 ## <a name="inventory-management"></a>Lagerhantering
 
@@ -141,12 +141,12 @@ Denna artikel innehåller en översikt över funktioner i appen Store Commerce.
 |---|---|---|---|
 | Centraliserad distribution | Göra det enklare att distribuera tillgängligt lager från ett distributionscenter till flera butiker eller lagerställen. | [Centraliserad distribution](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Direktleverans | Effektivisera distributionen av lager på inkommande inköpsorder till flera butiker eller lager. | [Direktleverans](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Inkommande lager | Ta emot lager från en leverantör via en inköpsorder eller från ett annat lagerställe via en överföringsorder. Skapa en inkommande inköpsorder eller överföringsorderförfrågan. | [Inkommande](pos-inbound-inventory-operation.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Utgående lager | Leverera lager till ett annat lagerställe via en överföringsorder och skapa en utgående överföringsorderbegäran. | [Utgående](pos-outbound-inventory-operation.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Lagersökning | Kontrollera lagerbehållning för produkter mellan butiker och lagerställen och kontrollera tillgängligt disponibelt att lova (ATP) vid framtida datum. | [Lagersökning](pos-inventory-lookup-operation.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Lagerjustering | Justera lagret till eller från ett butikslagerställe för att uppfylla särskilda affärsbehov utan att använda en försäljning, inleverans eller omräkning. | [Lagerjustering](work-with-store-inventory.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Lagerinventeringar | Räkna fysiskt lager och justera systemets bokföringslager så att det matchar det. | [Inventering](work-with-store-inventory.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Lagerförflyttning | Flytta lager mellan platser i en butik. | [Rörelse](work-with-store-inventory.md) | [Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Inkommande lager | Ta emot lager från en leverantör via en inköpsorder eller från ett annat lagerställe via en överföringsorder. Skapa en inkommande inköpsorder eller överföringsorderförfrågan. | [Inkommande](pos-inbound-inventory-operation.md) | <p>[Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Utgående lager | Leverera lager till ett annat lagerställe via en överföringsorder och skapa en utgående överföringsorderbegäran. | [Utgående](pos-outbound-inventory-operation.md) | <p>[Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Lagersökning | Kontrollera lagerbehållning för produkter mellan butiker och lagerställen och kontrollera tillgängligt disponibelt att lova (ATP) vid framtida datum. | [Lagersökning](pos-inventory-lookup-operation.md) | <p>[Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Lagerjustering | Justera lagret till eller från ett butikslagerställe för att uppfylla särskilda affärsbehov utan att använda en försäljning, inleverans eller omräkning. | [Lagerjustering](work-with-store-inventory.md) | <p>[Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Lagerinventeringar | Räkna fysiskt lager och justera systemets bokföringslager så att det matchar det. | [Inventering](work-with-store-inventory.md) | <p>[Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)<p> |
+| Lagerförflyttning | Flytta lager mellan platser i en butik. | [Rörelse](work-with-store-inventory.md) | <p>[Tekniksnack](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 
 ## <a name="financials"></a>Ekonomi
 

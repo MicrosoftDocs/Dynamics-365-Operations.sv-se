@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
-ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
+ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2022
-ms.locfileid: "9775412"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805325"
 ---
 # <a name="proactive-quality-updates"></a>Förebyggande kvalitetsuppdateringar
 
@@ -105,19 +105,19 @@ Mer information om mörka timmar för varje region finns i [Vilka är de planera
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Förebyggande kvalitetsuppdateringar: 10.0.29
 **Programversion: 10.0.1326.70**  
-**Motsvarande senaste KB-artikel: 748926**
+**Motsvarande senaste KB-artikel: 750332**
 
 | Station | Regioner | Slutfört schema | Kommande schema för sandbox|
 |---|---|---|---|
-| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 14 oktober till 17 oktober 2022 och 2 november till 5 november 2022 | 13 november till 16 november 2022 |
-| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 15 oktober till 18 oktober 2022 och 2 november till 5 november 2022 | 13 november till 16 november 2022 |
-| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 16 oktober till 19 oktober 2022 och 2 november till 5 november 2022 | 13 november till 16 november 2022 |
-| Station 4 | Europa, norra, USA, centrala, USA, västra | 17 oktober till 20 oktober 2022 och 2 november till 5 november 2022 | 15 november till 18 november 2022 |
+| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 14 oktober till 17 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022 | 5 december till 8 december|
+| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 15 oktober till 18 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022 | 5 december till 8 december|
+| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 16 oktober till 19 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022 | 5 december till 8 december|
+| Station 4 | Europa, norra, USA, centrala, USA, västra | 17 oktober till 20 oktober 2022, 2 november till 5 november 2022, 15 november till 18 november 2022 | 5 december till 8 december|
 | Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt | Inte schemalagt |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Förebyggande kvalitetsuppdateringar: 10.0.30
-**App Appversion: TBD**
-**Motsvarande senaste KB-artikel: TBD**
+**Appversion: 10.0.1362.77**
+**Motsvarande senaste KB artikel: 767597**
 
 | Station | Regioner | Kommande schema för sandbox |
 |---|---|---|
@@ -147,14 +147,14 @@ Microsoft arbetar med att hålla frisläppningspipeline effektiv nog att leverer
 Nr. Målet med kvalitetsuppdateringar är att säkerställa grundläggande rättigheter som säkerhet, integritet, tillförlitlighet, tillgänglighet och prestanda kontinuerligt förbättras för våra kunder. Det är en risk att en uppdatering, säkerhet, tillgänglighet och tillförlitlighet försenas eller pausas.
 
 ## <a name="how-do-i-know-what-set-of-changes-went-into-a-quality-update-payload"></a>Hur kan jag veta vilken uppsättning som har gått in i en uppdatering av nyttolast av kvalitet?
-Följande steg är en tillfällig lösning när vi fortsätter att arbeta med att ge en bättre lösning för att identifiera listan med ändringar som går till en kvalitetsuppdatering av nyttolast. 
+Följ anvisningarna nedan för att identifiera listan med ändringar som går till en nyttolast för kvalitetsuppdatering. 
 
-Använd KB# 745340 uppdatering för kvalitetsuppdateringsspåret 10.0.28 och den relaterade 10.0.1265.89.
+Använd 10.0.28 uppdatering för kvalitetsuppdateringsspåret och den relaterade 10.0.1265.89.
 
 1. I Lifecycle Services öppna sidan **Miljöinformation** för din sandbox. 
 2. I avsnittet **Tillgängliga uppdateringar**, välj **Visa uppdatering** för senaste kvalitetsuppdatering version. 
 3. Exportera versionen till en CSV eller Microsoft Excel-filen.
-4. Sortera informationen i den exporterade filen efter tid (äldsta först) och sök sedan efter den KB-745340 i kolumnen **Uppdatera ID**. Du bör nu kunna se deltalistan över KB
+4. Filtrera i den exporterade filen och välj den **version** som är mindre än eller lika med versionsnummer 10.0.1265.89. Du bör nu kunna se delta över nyttolast
  
 > [!NOTE]
 > Exporten till en CSV- eller Excel-fil måste ske innan miljön uppdateras. Annars kan du använda en miljö med en liknande konfiguration som inte har uppdateringen installerad och följer stegen ovan.
@@ -185,8 +185,8 @@ Om det finns någon information med en förplanerad åtgärd, t.ex. en Återstä
 ## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Kan en miljö föras tillbaka till sitt tidigare tillstånd om det finns problem efter att en kvalitetsuppdatering har tillämpats?
 När en kvalitetsuppdatering har tillämpats finns ingen återställning under några omständigheter. Det finns bara tillgängliga alternativ för uppdatering framåt för att minska problemen.
 
-## <a name="what-about-fda-regulation-and-gpx"></a>Vad säger du om FDA-regler och GPX?
-Planen för kunder som omfattas av FDA-validering och -bestämmelse är fortfarande arbetsföring. Förvänta dig fler uppdateringar på detta område inom kort. För tillfället är alla sådana kunder undantagna från kvalitetsuppdateringar. För att säkerställa att en kund faller under FDA-föreskrifter, besök [Microsoft Azure GPX-erbjudanden](/azure/compliance/offerings/offering-gxp).
+## <a name="what-about-fda-regulation-and-gxp"></a>Vad säger du om FDA-regler och GxP?
+Planen för kunder som omfattas av FDA-validering och -bestämmelse är fortfarande arbetsföring. Förvänta dig fler uppdateringar på detta område inom kort. För tillfället är alla sådana kunder undantagna från kvalitetsuppdateringar. För att säkerställa att en kund faller under FDA-föreskrifter, besök [Microsoft Azure GxP-erbjudanden](/azure/compliance/offerings/offering-gxp).
 
 ## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Vilka versioner av serviceuppdateringar som stöds av dessa kvalitetsuppdateringar?
 Kunder på alla versioner av tjänstuppdateringar som stöds kvalificerar sig för kvalitetsuppdateringar. 

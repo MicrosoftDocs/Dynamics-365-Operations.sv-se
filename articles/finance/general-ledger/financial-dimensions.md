@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
-ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
+ms.openlocfilehash: adfa2c1164550e32b07da25de0d96aa82430b980
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680369"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799637"
 ---
 # <a name="financial-dimensions"></a>Ekonomiska dimensioner
 
@@ -136,6 +136,12 @@ Du kan ställa in dimensioner härledda segment och värden med hjälp av enhete
 - Härledda entiteters dimensionsvärde låter dig importera de värden som ska härledas för varje huvuddimension.
 
 När du använder en enhet för att importera data, om den enheten importerar dimensioner tillämpas reglerna för härledd dimension under importen, om inte enheten specifikt åsidosätter dessa dimensioner.
+
+## <a name="financial-dimension-service"></a>Tjänsten Ekonomiska dimension
+
+Tillägget Ekonomiska dimensioner är tillgängligt i Microsoft Dynamics Lifecycle Services-miljön. Det förbättrar prestanda när du använder datahanteringsramverket för att importera en journal som har ett stort antal rader. Om du vill använda tjänsten måste du aktivera den på sidan **Parametrar för tjänsten Ekonomisk dimension**. För närvarande fungerar tjänsten bara på importerade journaler som har 500 rader eller mer. Dessutom kan den för närvarande endast bearbeta allmänna journaler där kontotypen **redovisning** är inställd på journalraderna. Andra kontotyper på journalrader, som t.ex. **kund**, **leverantör** och **bank**, stöds inte för närvarande. Den här tjänsten startas inte när härledda dimensioner ställs in i systemet.
+
+Tjänsten Ekonomisk dimension ger förbättrad prestanda när journaler importeras genom att en ny tjänst körs parallellt med dataimporten. Den körs bara på huvudkonto- och ekonomiska dimensionsdata i journalen och genererar de dimensionskombinationer som angetts i strängfältet för redovisningskonto på journalraderna. Bearbetningen omvandlar den här strängen till den strukturerade datalagring som ramverket För ekonomisk dimension använder i resten av produkten för validering, sammanfattningsrapportering och förfrågningar. Mer information om sammanfattningsrapportering av ekonomiska dimensionsdata finns i [ekonomiska dimensionsuppsättningar](financial-dimension-sets.md).
 
 Mer information finns i följande avsnitt:
 

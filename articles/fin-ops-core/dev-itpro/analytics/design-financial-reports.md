@@ -2,7 +2,7 @@
 title: Visa och utforma ekonomiska rapporter
 description: Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 Finance.
 author: jcart1106
-ms.date: 10/02/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.form: FinancialReportingSetup
-ms.openlocfilehash: b6709f90065c91c55a489f101da430db33355a75
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 92474e7b99af7d83b2089b6652558630c60824c1
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9273438"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799529"
 ---
 # <a name="view-and-design-financial-reports"></a>Visa och utforma ekonomiska rapporter
 
@@ -51,30 +51,30 @@ För den här övning ska du generera och undersöka en befintlig standardrappor
     > [!NOTE]
     > Du uppmanas att hämta enklicks-rapportdesignern och att logga in. Använd dina autentiseringsuppgifter när du loggar in.
 
-7. Ändra basåret till 2012 och välj **Generera**. När en rapport genereras via rapportutformaren kommer den at öppnas i en ny webbläsarflik. Du kan antingen granska rapporten i den nya webbläsarfliken eller också gå till din ursprungliga webbläsarfliken och öppna rapporten därifrån genom att välja den i listan **Finansiella rappporter**.
+7. Ändra basåret till 2021 och välj **Generera**. När en rapport genereras via rapportutformaren kommer den at öppnas i en ny webbläsarflik. Du kan antingen granska rapporten i den nya webbläsarfliken eller också gå till din ursprungliga webbläsarfliken och öppna rapporten därifrån genom att välja den i listan **Finansiella rappporter**.
 8. Välj ett av beloppen i den öppna rapporten för att gå nedåt till kontodetaljeran i rapporten.
 9. Välj ett konto med data i kontodetaljerna och **gå nedåt till rapporttransaktionsnivån**. På rapporttransaktionsnivån kan du se egenskaperna (attribut )som togs med i designen i den här rapporten. Beroende på transaktionen och kontot, visas några eller alla attribut.
 10. Stäng rapporttransaktionsnivån.
-11. Markera samma eller ett annat konto och **öppna verifikationstransaktioner**. Verifikationstransaktioner filtreras till period, år och konto + dimensionskombinationen för det valda kontot. Från verifikationstransaktioner kan du välja att undersöka annan information om transaktionen.
-12. Stäng verifikationstransaktioner. I en ekonomisk rapport kan du välja att visa data antingen för ett annat period och ett annat år eller med olika attribut och dimensioner. Det gör du genom att använda **Rapportalternativ**.
+11. Markera samma eller ett annat konto och **öppna verifikationstransaktioner**. Verifikationstransaktioner filtreras till period, år och konto + dimensionskombinationen för det valda kontot. Från **verifikationstransaktioner** kan du välja att undersöka annan information om transaktionen.
+12. Stäng **verifikationstransaktioner**. I en ekonomisk rapport kan du välja att visa data antingen för ett annat period och ett annat år eller med olika attribut och dimensioner. Det gör du genom att använda **Rapportalternativ**.
 13. Välj **Rapportalternativ**.
 14. Markera **Lägg till ett dimensionsfilter** och sedan **Affärsenhet**.
-15. Skriv 001 till fältet och välj **OK**. Rapporten visar nu bara data för affärsenheten 001. Detta är en anpassad vy av rapporten och den är inte tillgänglig för andra.
+15. Skriv **001** till fältet och välj **OK**. Rapporten visar nu bara data för affärsenheten 001. Detta är en anpassad vy av rapporten och den är inte tillgänglig för andra.
 16. Stäng den filtrerade rapporten. Ekonomiska rapporter kan visas i vilken valuta som helst som har lagts till i appen.
 17. Välj **Valuta** och sedan **EUR**. Rapporten visas nu i euro. Valutakoder eller valutasymboler som ingår i rapportdesignen visas nu i den använda valutan. Om ingen valutasymbol har definierats för en valuta, visas ingen valutasymbol.
 18. Stäng rapporten **Huvudbokdetalj**.
 19. Stäng **rapportdesignern**.
 
 ## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Övning 2: Lägg till ytterligare kontoegenskaper i en rapportdesign
-I den här övningen ska du ändra en befintlig standardrapport. Du kommer att uppdatera både raddefinitionen för att ta med alla konton och kolumndefinitionen så att den innehåller kontoattribut. När uppdateringarna är slutförd, ska du generera den nyligen skapade rapporten och undersöka rapporten. Vi börjar med listan över ekonomiska rapporter.
+I den här övningen ska du ändra en befintlig standardrapport. Du kommer att uppdatera både raddefinitionen för att ta med alla konton och kolumndefinitionen så att den innehåller kontoattribut. När uppdateringarna är slutförd, ska du generera den nyligen skapade rapporten och undersöka rapporten. Vi börjar med listan över **ekonomiska rapporter**.
 
-1. Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
+1. Gå till **Ekonomiska rapporter** under **Förfrågningar och rapporter** i redovisningen.
 2. Markera raden för rapporten som heter **Råbalanssammanfattning – standardinställning**.
 3. Välj **Redigera**. **Råbalanssammanfattning – standardinställning** öppnas i rapportdesignern.
-4. Välj **Arkiv**, sedan **Spara som** och namnge rapporten Detaljerad råbalans med attribut.
+4. Välj **Arkiv**, sedan **Spara som** och namnge rapporten **Detaljerad råbalans med attribut**.
 
     > [!NOTE]
-    > När en ny rapport har skapats i rapportdesignern, uppdateras listan är uppdaterad.
+    > När en ny rapport har skapats i Report Designer, uppdateras listan **Ekonomiska rapporter** är uppdaterad.
 
 5. Välj rapportdefinitionen, markera raddefinitionsikonen för att öppna i **Råbalans – detaljerad raddefinition**.
 6. Spara raddefinitionen som **Detaljerad råbalans med attribut**
@@ -107,7 +107,7 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kommer att u
 26. Stäng **rapportdesignern**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Övning 3: Skapa en flerdimensionell rapport med ett rapportträd
-I den här övningen ska du ändra en befintlig standardrapport. Du ska skapa ett rapportträd och lägga till en rapportdefinition för att producera en resultaträkning för kostnadsställe/avdelning. När uppdateringen är klar, skapar du resultaträkningen för kostnadsstället/avdelningen och utforskar rapporten med hjälp av rapportträdet. Vi börjar med listan över ekonomiska rapporter.
+I den här övningen ska du ändra en befintlig standardrapport. Du ska skapa ett rapportträd och lägga till en rapportdefinition för att producera en **resultaträkning för kostnadsställe/avdelning**. När uppdateringen är klar, skapar du **resultaträkningen för kostnadsstället/avdelningen** och utforskar rapporten med hjälp av rapportträdet. Vi börjar med listan över **ekonomiska rapporter**.
 
 1. Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
 2. Markera raden för rapporten som heter **Resultaträkning – standardinställning**.
@@ -117,7 +117,7 @@ I den här övningen ska du ändra en befintlig standardrapport. Du ska skapa et
 6. Avmarkera kryssrutorna för alla dimensioner, utom **Kostnadsställe**.
 7. Klicka i fältet **Från dimension** för kostnadsställedimensionen och skriv **007**. Tryck sedan på tabbtangenten. I fältet **Till dimension**, skriv **018**.
 8. **Spara** det resulterande trädet med namnet **Kostnadsställen per avdelning**. Nu när rapportträdet har skapats, kan du ändra rapportträdet så att det innehåller tre nya värdeenheter: marknadsföring, åtgärder och butik.
-9. På menyn **Fönster**, klicka på **Kostnadsställen per avdelning**. (Om rapportträdet har stängts, markerade det i rapportträddefinitionerna i navigeringsfönstret).
+9. På menyn **Fönster**, klicka på **Kostnadsställen per avdelning**. (Om rapportträdet har stängts, markerade det i **rapportträddefinitionerna** i navigeringsfönstret).
 10. Klicka på enheten nummer två, **Mässor** och klicka på ikonen **Infoga rapportenhet**.
 11. Dubbelklicka på enhetskolumnen på den tomma raden och välj **USMF**.
 12. Skriv **Marknadsföring** in kolumnerna B och C.
@@ -131,13 +131,13 @@ I den här övningen ska du ändra en befintlig standardrapport. Du ska skapa et
 20. Välj **Sänk rapportenhet**. Nu visas enheten som underordnad **Marknadsföring**.
 21. Klicka på enhet fyra **Marknadsföringskampanj** och högerklicka.
 22. Välj **Sänk rapportenhet**.
-23. Klicka på **Serviceåtgärder** i den grafiska presentationen. Peka och hålla ned vänster musknapp medan du dra enheten upp till **Åtgärder**. Släpp vänster musknapp när du vill släppa enheten i Åtgärder. Upprepa detta för **Produktion, kvalitetskontroll, logistik, anskaffning samt administration**.
+23. Klicka på **Serviceåtgärder** i den grafiska presentationen. Peka och hålla ned vänster musknapp medan du dra enheten upp till **Åtgärder**. Släpp vänster musknapp när du vill släppa enheten i Åtgärder. Upprepa detta för **Produktion**, **kvalitetskontroll**, **logistik**, **anskaffning** samt **administration**.
 24. Gör **Outlet**, **Super**, **Galleria** och **Online** underordnade till **Butik** genom att sänka dem eller dra och släppa.
 25. Spara omorganisationen. Nu när vi har skapat och organiserat rapportträdet kan det läggas till i rapportdefinitionen.
 26. På menyn **Fönster**, välj **Resultaträkning – standardinställning** för att öppna definitionen.
 27. Klicka på listrutan **Trädtyp** och välj **Rapporträd**.
 28. Klicka på trädpilen och välj **Kostnadsställen per avdelning**.
-29. Ändra basåret till **2012**, **spara** ändringarna och **generera** rapporten. När rapporten har genererats och öppnats kan du granska den.
+29. Ändra basåret till **2021**, **spara** ändringarna och **generera** rapporten. När rapporten har genererats och öppnats kan du granska den.
 30. Välj listrutan **Rapportträd** för att visa rapportenheterna. Alternativt kan du gå ner till en rad i rapporten om du vill visa alla saldon för alla enheter i rapportträdet.
 31. Stäng **Resultaträkning – standardinställning**.
 32. Stäng **rapportdesignern**.
@@ -145,11 +145,11 @@ I den här övningen ska du ändra en befintlig standardrapport. Du ska skapa et
 ## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Övning 4: Skapa en konsoliderad rapport med hjälp av en organisationshierarki
 I den här övningen ska du ändra en befintlig standardrapport. Du kan lägga till en organisationshierarki i rapportdefinitionen för att producera en konsoliderad resultaträkning och balansräkning. När uppdateringarna är klara, skapar du den konsoliderade rapporten och utforskar rapporten med hjälp av rapportträdet. Vi börjar med listan över ekonomiska rapporter.
 
-1. Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
+1. Gå till **Ekonomiska rapporter** under **Förfrågningar och rapporter** i redovisningen.
 2. Markera raden för rapporten **Balansräkning och resultaträkning sida vid sida – standardinställning**
 3. Välj **Redigera**. **Balansräkning och resultaträkning sida vid sida – standardinställning** öppnas i rapportdesignern.
 4. Välj **Fil** &gt; **Spara som** och namnge rapporten **Konsoliderad balansräkning och resultaträkning sida vid sida**.
-5. Ändra basåret till 2012.
+5. Ändra basåret till 2021.
 6. Klicka på trädlistrutan och välj **Organisationshierarkier**.
 7. Klicka på trädlistpilen och välj **Contoso Holdings**.
 8. Spara ändringarna och generera rapporten. Markera alla rapportenheter, om du uppmanas till det. När rapporten har genererats och öppnats kan du granska den.
@@ -162,16 +162,16 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kan lägga t
 15. Stäng **rapportdesignern**.
 
 ## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Övning 5: Skapa en rapport för parallella avdelningar
-I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning för parallella avdelningar. Du använder en befintlig raddefinition, men skapar en ny rapportdefinition och en ny kolumndefinition som använder dimensionsfilter. Vi börjar med listan över ekonomiska rapporter.
+I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning för parallella avdelningar. Du använder en befintlig raddefinition, men skapar en ny rapportdefinition och en ny kolumndefinition som använder dimensionsfilter. Vi börjar med listan över **ekonomiska rapporter**.
 
-1. Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
+1. Gå till **Ekonomiska rapporter** under **Förfrågningar och rapporter** i redovisningen.
 2. Markera **Nytt**. Rapportdesignern öppnas med en tom rapportdefinition. Din första uppgift blir att skapa kolumndefinitionen.
 3. Skapa en ny kolumndefinition genom att klicka på **Arkiv**, sedan på **Nytt** och därefter på **Kolumndefinition**.
 4. I **Kolumn A**, välj **DESC** som kolumntyp.
 5. I **Kolumn B**, välj **FD** som kolumntyp.
 6. Dubbelklicka i fältet **Dimensionsfilter**.
 7. I fönstret **Dimension**, dubbelklicka på kolumnen **Avdelning**.
-8. I avsnittet för enstaka eller intervall klickar du på **ellipsen** för fältet **Från** för att visa en lista med avdelningar.
+8. I avsnittet för **enstaka eller intervall** klickar du på **ellipsen** för fältet **Från** för att visa en lista med avdelningar.
 9. Välj avdelning **022**, **Försäljning och marknadsföring** och klicka sedan på **OK**.
 10. Upprepa steg 5 till 8 för avdelningarna 23–25.
 11. På raden **Huvud 2** för varje FD-kolumn, skriv följande avdelningsbeskrivningar:
@@ -185,7 +185,7 @@ I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning
 13. På menyn **Fönster**, välj **Ny rapportdefinition** för att öppna definitionen.
 14. Välj **Resultaträkning – standardinställning** som raddefinitionen och **Parallella avdelningar** som kolumndefinition.
 15. Spara rapportdefinitionen som **Resultaträkning för parallella avdelningar**.
-16. Ändra basåret till **2012**.
+16. Ändra basåret till **2021**.
 17. Ändra detaljnivån till **Ekonomisk, Konto och Transaktion**
 18. **Spara** ändringarna och **generera**. När rapporten har genererats och öppnats kan du granska den.
 

@@ -2,7 +2,7 @@
 title: Rapportdefinitioner i designer för ekonomiska rapporter
 description: En raddefinition är en rapportkomponent eller byggblock som anger innehållet på varje rad i en ekonomisk rapport.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.form: FinancialReports
-ms.openlocfilehash: 1481d95bc7a02294b499e07308df2d26a3ab0e3a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 3325f76f991ea6d2a1b6131f299460e529d63d38
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274706"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802456"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Rapportdefinitioner i designer för ekonomiska rapporter
 
@@ -71,7 +71,7 @@ En dimension är en skärningspunkt av data och värden. Du kan gruppera data oc
 
 Följ dessa steg för att lägga till dimensioner i en raddefinition:
 
-1. Öppna Rapport Designer, klicka på **Raddefinitioner** och öppna sedan den raddefinition som ska modifieras.
+1. Öppna Report Designer, klicka på **Raddefinitioner** och öppna sedan den raddefinition som ska modifieras.
 2. Klicka på menyn **Redigera** och klicka på **Infoga rapportenheter från dimensioner**.
 3. I dialogrutan **Infoga rader från Dimensioner**, på raden **Dimensioner**, väljer du cellen för dimensionen som ska överföras till raddefinitionen och klickar sedan på **Alla &&&**.
 4. Om du vill begränsa raddimensionen till ett specifikt intervall av dimensionsvärdena anger du startdimensionsvärdet i cellen **Dimensionsintervallstart** och skriv sedan in det avslutande dimensionsvärdet i cellen **Dimensionsintervallslut**. Låt de här cellerna vara tomma om du vill inkludera den markerade dimensionens alla värden.
@@ -94,7 +94,7 @@ Om du har en balansräkning där beloppen avrundas kan det hända att summorna i
 
 Följ dessa steg för att justera avrundningen i en balansräkning.
 
-1. I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
+1. Öppna Report Designer, klicka på **Raddefinitioner** och öppna sedan den raddefinition som ska modifieras.
 2. Klicka på **Avrundningsjustering** på **Redigera**-menyn.
 3. I dialogrutan **Avrundningsjusteringar** anger du följande värden:
 
@@ -156,7 +156,7 @@ Du kan skapa och ändra teckensnitt för din rapport. Du kan sedan tillämpa des
 
 Den formatering som anges i raddefinitionen åsidosätter all formatering som anges i kolumndefinitionen och i rapportdefinitionen. Du kan ändra textformatet genom att använda kontrollerna i verktygsfältet Formatering. Kontrollerna är Microsoft Windows-standardkontroller.
 
-1. Öppna den raddefinition som ska ändras i Report Designer.
+1. Öppna raddefinitionen i Report Designer för att ändra den.
 2. Välj cellerna om du vill formatera. Håll ned CTRL-tangenten medan du väljer koderna om du vill välja mer än en cell.
 3. Klicka på verktygsfältsknappen av formatet som ska användas. För att exempelvis göra indrag på en rad väljer du raden och klickar sedan på **Öka indrag** ![Öka indrag](media/indent.gif "Öka indrag"). i verktygsfältet.
 

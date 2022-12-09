@@ -2,7 +2,7 @@
 title: Kundbokföringsprofiler
 description: Den här artikeln beskriver kundbokföringsprofiler som styr bokföringen av kundtransaktioner till huvudboken.
 author: JodiChristiansen
-ms.date: 12/22/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04cf5b8656bccde974fb1adfdf830080e2f52436
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891707"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799583"
 ---
 # <a name="customer-posting-profiles"></a>Kundbokföringsprofiler
 
@@ -58,15 +58,15 @@ Om du vill att alla kundtransaktioner ska ha samma bokföringsprofil skapar du b
 </thead>
 <tbody>
 <tr>
-<td>Bokföringsprofil</td>
+<td><strong>Bokföringsprofil</strong></td>
 <td>Ange en kod för bokföringsprofilen. Till exempel kan du skapa två bokföringsprofiler för att skapa ett konto för kundsaldon i den nationella valutan och ett annat för kundsaldon i en utländsk valuta. Du kan kalla en för Nationell och den andra för Utländsk.</td>
 </tr>
 <tr>
-<td>Beskrivning</td>
+<td><strong>Beskrivning</strong></td>
 <td>Ange en beskrivning av bokföringsprofilen. Detta används endast för att bättre identifiera bokföringsprofilen när du visar den på den här sidan.</td>
 </tr>
 <tr>
-<td>Kontokod</td>
+<td><strong>Kontokod</strong></td>
 <td>Ange om bokföringsprofilen gäller för en enda kund, en grupp kunder eller alla kunder:
 <ul>
 <li><b>Tabell</b> – Bokföringsprofilen gäller för en enskild kund. Välj kundkontot i fältet <b>Konto-/gruppnummer</b>.</li>
@@ -76,33 +76,33 @@ Om du vill att alla kundtransaktioner ska ha samma bokföringsprofil skapar du b
 </td>
 </tr>
 <tr>
-<td>Konto-/gruppnummer</td>
+<td><strong>Konto-/gruppnummer</strong></td>
 <td>Om du har valt <b>Tabell</b> i fältet <b>Kontokod</b> anger du kontonumret för kunden som är associerad med bokföringsprofilen. Om du väljer <b>Grupp</b> ska du välja kundgruppen. Om du har valt <b>Alla</b> lämnar du det här fältet tomt.</td>
 </tr>
 <tr>
-<td>Samlingskonto</td>
+<td><strong>Samlingskonto</strong></td>
 <td>Välj det huvudkonto som används som kundreskontra handel för kunderna som är associerade med bokföringsprofilen. Detta konto är kontot för bokföringstypen <b>Kundsaldo</b>.</td>
 </tr>
 <tr>
-<td>Likviditetskonto för betalningar</td>
-<td>Välj det likviditetskonto i redovisningen som används för kassaflödesprognoser. Det här fältet visas bara om kassaflödesprognoser aktiveras.</td>
+<td><strong>Likviditetskonto för betalningar</strong></td>
+<td>Välj det <strong>likviditetskonto i redovisningen</strong> som används för kassaflödesprognoser. Det här fältet visas bara om kassaflödesprognoser aktiveras.</td>
 </tr>
 <tr>
-<td>Förskottsbetalningar av moms</td>
+<td><strong>Förskottsbetalningar av moms</strong></td>
 <td><p>Välj momskontonumret för betalningar som mottas i förskott.</p>
 <p><strong>Obs!</strong> Använd sidan <b>Parametrar för kundreskontra</b> för att ange postningsprofilen som används när en betalning markeras som en förskottsbetalning.</p>
 </td>
 </tr>
 <tr>
-<td>Skulder för diskonteringskonto</td>
+<td><strong>Skulder för diskonteringskonto</strong></td>
 <td>Välj huvudbokskontot för diskonterade skulder.</td>
 </tr>
 <tr>
-<td>Kravbrevsserie</td>
+<td><strong>Kravbrevsserie</strong></td>
 <td>Välj identifieraren för kravbrevsserien som används för kunder som tilldelas bokföringsprofilen.</td>
 </tr>
 <tr>
-<td>Räntekod</td>
+<td><strong>Räntekod</strong></td>
 <td>Välj räntekoden för beräkning av ränta för kunder som tilldelas bokföringsprofilen.</td>
 </tr>
 </tbody>

@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d7fc58ad71365275d5e82a277554bee99c43a
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 8e613bc97a41b62e81ebfbcb8c08e33a60603648
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151374"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803921"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Stämma av bankutdrag med hjälp av avancerad bankavstämning
 
@@ -37,7 +37,10 @@ Du kan överföra ett bankutdrag som innehåller information om antingen ett ens
 -   Om du vill importera en enskild bankutdragsfil för ett enskilt konto, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Nej** och välj det bankkonto som är associerat med utdraget. Klicka på **Bläddra** för att välja den associerade bankutdragsfilen och klicka sedan på **Överför**.
 -   Om du vill importera en enstaka bankutdragsfil för flera konton, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Ja**. Klicka på **Bläddra** för att välja den associerade bankutdragsfilen och klicka sedan på **Överför**.
 
-Om några uttalanden i den elektroniska filen inte kan kopplas till ett bankkonto eller om det är associerat med flera bankkonton genom att använda de identifierande fälten, importeras de inte. Du kan dock fortfarande importera andra utdrag i filen. Användaren får sedan ett meddelande med information om att importen av bankutdraget misslyckades för specifika bankkonton. Observera att användaren som importerar bankutdraget måste ha åtkomst till en juridisk person för att importera utdrag för den juridiska personens bankkonton. 
+Om några uttalanden i den elektroniska filen inte kan kopplas till ett bankkonto eller om det är associerat med flera bankkonton genom att använda de identifierande fälten, importeras de inte. Du kan dock fortfarande importera andra utdrag i filen. Användaren får sedan ett meddelande med information om att importen av bankutdraget misslyckades för specifika bankkonton. 
+
+>[!Note] 
+>Användaren som importerar bankutdraget måste ha åtkomst till en juridisk person för att importera utdrag för den juridiska personens bankkonton. 
 
 Du kan använda en zip-fil för att överföra flera utdragsfiler till Financ i en enda process. Om du vill importera flera bankutdragsfiler för flera konton kan du slå samla alla bankutdragsfiler i en zip-fil. I dialogrutan **Importera bankutdrag**, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Ja**. Klicka på **Bläddra** för att välja zip-filen som innehåller bankutdragsfilerna och klicka sedan på **Överför**. Importeringsprocessen kommer att känna igen zip-filen och överföra varje utdrag som är inkluderade i den, oavsett bankkontots juridiska person.
 

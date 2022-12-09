@@ -2,7 +2,7 @@
 title: Visa ekonomiska rapporter
 description: Den här avsnittet innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 Finance. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f932bbef2543e4894c65b9a04c1ef66f1b3ab8e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907904"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802402"
 ---
 # <a name="view-financial-reports"></a>Visa ekonomiska rapporter
 
@@ -31,7 +31,7 @@ Den här artikeln innehåller en beskrivning av hur du visar och utforskar ekono
 ## <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
 
 ## <a name="open-a-financial-report"></a>Öppna en ekonomisk rapport
-Välj ett rapportnamn om du vill öppna en rapport. Första gången rapporten öppnas skapas den automatiskt för föregående månad. Om du exempelvis öppnar en rapport för första gången i augusti 2015 genereras rapporten för den 31 juli 2015. När en rapport har öppnats kan du börja utforska den mer ingående genom att titta närmare på specifika delar av data och ändra rapportsalternativ.
+Välj ett rapportnamn om du vill öppna en rapport. Första gången rapporten öppnas skapas den automatiskt för föregående månad. Om du exempelvis öppnar en rapport för första gången i augusti 2020 genereras rapporten för den 31 juli 2020. När en rapport har öppnats kan du börja utforska den mer ingående genom att titta närmare på specifika delar av data och ändra rapportsalternativ.
 
 ## <a name="drill-down-on-a-financial-report"></a>Söka nedåt i en ekonomisk rapport
 Ekonomiska rapporter kan innehålla flera detaljnivåer. Den ekonomiska nivån är den första nivån som visas när du öppnar en ekonomisk rapport. Om du vill gå till kontonivån markerar du uppgifterna du vill söka nedåt i. Om du exempelvis vill visa kontodetaljer för försäljning markerar du försäljningsuppgifterna du vill utforska. Från kontonivån kan du söka nedåt för att visa transaktionerna som utgör kontosaldot. Det finns två sätt att visa transaktioner på: rapporttransaktioner och verifikationstransaktioner.
@@ -46,12 +46,12 @@ Du kan lägga till attribut och dimensionsfilter samt ändra budgetscenariot i r
 
 -   Välj attributfilter till en rapport genom att markera **Lägg till ett attributfilter**. Välj attributet, skriv attributvärdet och klicka sedan på **OK**. Om du t.ex. väljer attributet **Kontokategori** anger du **FÖRSÄLJNING** som attributvärde. Ta bort ett attributfilter genom att klicka på **Ta bort**.
 -   Välj dimensionsfilter till en rapport genom att markera **Lägg till ett dimensionsfilter**. Välj dimension och skriv sedan dimensions-ID eller välj dimensionen i listan. Ta bort ett dimensionsfilter genom att klicka på **Ta bort**.
--   Ändra scenariot i rapporten **Utfall kontra budget** genom att väja ett nytt scenario och sedan klicka på **OK**. Om det valda scenariot är ett annat räkenskapsår kommer inga resultat att returneras. Till exempel om en rapport genereras för FY2015 och det aktuella scenariot för FY2015 och det nya valda scenariot är FY2016, returneras inga resultat. Om ett nytt scenario för ett annat räkenskapsår behövs, generera en ny version av rapporten för verksamhetsåret relaterat till scenariot.
+-   Ändra scenariot i rapporten **Utfall kontra budget** genom att väja ett nytt scenario och sedan klicka på **OK**. Om det valda scenariot är ett annat räkenskapsår kommer inga resultat att returneras. Till exempel om en rapport genereras för FY2015 och det aktuella scenariot för FY2020 och det nya valda scenariot är FY2016, returneras inga resultat. Om ett nytt scenario för ett annat räkenskapsår behövs, generera en ny version av rapporten för verksamhetsåret relaterat till scenariot.
 
 När du klickar på **OK** sparas alla alternativ du har valt i rapporten. Om du inte vill använda de valda alternativen klickar du på **Avbryt**.
 
 ## <a name="update-a-financial-report"></a>Uppdatera en ekonomisk rapport
-Du kan uppdatera en ekonomisk rapport så att den visar den senaste informationen för perioden och året som rapporten har skapats för. Om du exempelvis uppdaterar en ekonomisk rapport som skapades för oktober 2015 visar rapporten alla nya transaktioner som har bokförts för oktober 2015. Om du vill uppdatera en ekonomisk rapport kan du klicka på **Uppdatera** i åtgärdsfönstret. En uppdaterad rapporten är bara tillgänglig för den person som uppdaterade den. För att andra personer ska kunna se samma data, måste rapporten publiceras.
+Du kan uppdatera en ekonomisk rapport så att den visar den senaste informationen för perioden och året som rapporten har skapats för. Om du exempelvis uppdaterar en ekonomisk rapport som skapades för oktober 2020 visar rapporten alla nya transaktioner som har bokförts för oktober 2020. Om du vill uppdatera en ekonomisk rapport kan du klicka på **Uppdatera** i åtgärdsfönstret. En uppdaterad rapporten är bara tillgänglig för den person som uppdaterade den. För att andra personer ska kunna se samma data, måste rapporten publiceras.
 
 ## <a name="publish-a-financial-report"></a>Publicera en ekonomisk rapport
 När du har uppdaterat en ekonomisk rapport kan du publicera den. Andra personer i organisationen kan sedan visa den. Publicera en rapport genom att klicka på **Publicera** i åtgärdsfönstret.

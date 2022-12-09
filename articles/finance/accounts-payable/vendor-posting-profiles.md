@@ -2,7 +2,7 @@
 title: Bokföringsprofiler för leverantörer
 description: Leverantörsbokföringsprofiler styr bokföringen av leverantörstransaktioner i redovisningen.
 author: abruer
-ms.date: 06/12/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.form: VendPosting
-ms.openlocfilehash: 922612e536164c7985f0be107f67ad8bbaef7898
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 09f27ef510f38c10fc265b682a492ba5872b6d3e
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272991"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799610"
 ---
 # <a name="vendor-posting-profiles"></a>Bokföringsprofiler för leverantörer
 
@@ -94,7 +94,7 @@ Om du vill att alla leverantörstransaktioner ska ha samma bokföringsprofil ska
 </tr>
 <tr class="even">
 <td><strong>Införsel</strong></td>
-<td>Markera redovisningskontot där information om ej godkända fakturor registreras. Informationen registreras i Fakturaregisterjournal. Till exempel anger en användare mycket grundläggande information om leverantörsfakturor när de tas emot i fakturaregistret. När fakturaregistret bokförs, bokförs transaktionerna på det konto som har angetts här och i fältet <strong>Motkonto</strong>. När fakturorna godkänns överförs skulden från kontot Införselkonto till leverantörens samlingskonto.</td>
+<td>Markera redovisningskontot där information om ej godkända fakturor registreras. Informationen registreras i <strong>Fakturaregisterjournal</strong>. Till exempel anger en användare mycket grundläggande information om leverantörsfakturor när de tas emot i fakturaregistret. När fakturaregistret bokförs, bokförs transaktionerna på det konto som har angetts här och i fältet <strong>Motkonto</strong>. När fakturorna godkänns överförs skulden från kontot Införselkonto till leverantörens samlingskonto.</td>
 </tr>
 <tr class="odd">
 <td><strong>Motkonto</strong></td>
@@ -110,10 +110,10 @@ Ange om transaktioner kvittas automatiskt, ränta beräknas och kravbrev leverer
 
 Ange följande värden om du vill ställa in din bokföringsprofil.
 
-| Fält          | Beskrivning                                                                                                                                                                                                    |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fält          | Beskrivning             |
+|----------------|--------------------------------------------------------------------------|
 | **Kvittning** | Välj det här alternativet för att aktivera automatisk kvittning av transaktioner som har denna bokföringsprofil. Om det här alternativet avmarkeras måste du kvitta transaktioner manuellt genom att använda sidan **Kvitta öppna transaktioner**. |
-| **Avbryt**     | Välj det här alternativet för möjlighet att avbryta transaktioner som har denna bokföringsprofil.                                                                                                               |
+| **Avbryt**     | Välj det här alternativet för möjlighet att avbryta transaktioner som har denna bokföringsprofil.                              |
 | **Stäng**      | Markera en bokföringsprofiler att ändra till när transaktionerna med denna bokföringsprofil stängs. En transaktion betraktas som stängd när den har kvittats helt.                                       |
 
 

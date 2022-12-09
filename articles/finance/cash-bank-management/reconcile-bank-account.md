@@ -14,12 +14,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 12de50f26127c54c2f82ace43487de10e7125aea
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779538"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804247"
 ---
 # <a name="reconcile-a-bank-account"></a>Stämma av ett bankkonto
 
@@ -63,7 +63,7 @@ Om du vill välja kryssrutan **Reglerat** för ett intervall med checkar som all
 
 ## <a name="cancel-bank-statement-reconciliation"></a>Avbryt avstämning av bankkontoutdrag 
 
-Med funktionen Avbryt avstämning av bankutdrag kan du annullera avstämning av bankutdrag. Om du vill använda den här funktionen aktiverar du funktionen **Avbryt avstämning av bankkontoutdrag** i arbetsytan **funktionshantering**. Du måste också aktivera parametern **Tillåt redigering av bankutdrag**. För att göra detta går du till **Kassa- och bankhantering > Inställningar > Parametrar för kassa- och bankhantering > Bankavstämning**.
+Med funktionen **Avbryt avstämning av bankutdrag** kan du annullera avstämning av bankutdrag. Om du vill använda den här funktionen aktiverar du funktionen **Avbryt avstämning av bankkontoutdrag** i arbetsytan **funktionshantering**. Du måste också aktivera parametern **Tillåt redigering av bankutdrag**. För att göra detta går du till **Kassa- och bankhantering > Inställningar > Parametrar för kassa- och bankhantering > Bankavstämning**.
  
 Avstämningar av bankutdrag kan bara annulleras i kronologisk ordning som de angavs. När en avstämning av bankutdraget annulleras, kommer nya transaktioner och korrigeringar att återföras och alla andra transaktioner markeras som ej avstämda.
  

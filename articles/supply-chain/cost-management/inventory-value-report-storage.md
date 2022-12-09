@@ -2,21 +2,21 @@
 title: Lagervärderapporter
 description: Denna artikel förklarar hur du konfigurerar, genererar och använder lagervärdesrapporter. Rapporterna innehåller information om fysiska och ekonomiska kvantiteter och belopp för lagret.
 author: JennySong-SH
-ms.date: 08/05/2022
+ms.date: 11/28/2022
 ms.topic: article
-ms.search.form: InventValueProcess, InventValueReportSetup
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6b21f6a7856526863914aac73d50e5c3a70605e8
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334938"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806417"
 ---
 # <a name="inventory-value-reports"></a>Lagervärderapporter
 
@@ -129,7 +129,7 @@ På sidan **Lagervärdesrapporter** kan du konfigurera innehållet som ingår i 
     - **Direktutkontraktering** – Ange detta alternativ som *Ja* för att visa PIA-kostnader för direktutkontraktering. Denna information är praktisk för legotillverkning.
     - **Detaljnivå** – Välj ett visningsalternativ för rapporten:
 
-        - *Transaktioner* – Visa alla relevanta transaktioner i rapporten. Observera att du kan komma att uppleva prestandaproblem när du visar rapporter som omfattar ett stort antal transaktioner. Om du vill använda detta visningsalternativ rekommenderar vi därför att du använder rapporten **Lagring av lagervärdesrapport**.
+        - *Transaktioner* – Visa alla relevanta transaktioner i rapporten. Du kan komma att uppleva prestandaproblem när du visar rapporter som omfattar ett stort antal transaktioner. Om du vill använda detta visningsalternativ rekommenderar vi därför att du använder rapporten **Lagring av lagervärdesrapport**.
         - *Summor* – Visa det totala resultatet.
 
     - **Inkludera ingående saldo** – Ange det här alternativet som *Ja* för att visa ingående saldo. Detta alternativ är endast tillgängligt om fältet **Detaljnivå** anges som *Transaktioner*.
@@ -172,7 +172,7 @@ När du har genererat en rapport kan du visa och utforska den genom att följa d
     - Använd fältet **filter** om du vill filtrera rapporten efter vilket värde som helst i flera tillgängliga kolumner.
     - Använd visa-menyn (ovanför fältet **filter**) för att spara och läsa in dina favoritkombinationer av sorterings- och filteralternativ.
 
-## <a name="export-an-inventory-value-report-storage-report"></a>Exportera en rapport för Lagring av lagervärderapport
+## <a name="export-an-inventory-value-report-storage-report"></a><a name="export-stored-report"></a>Exportera en rapport för Lagring av lagervärderapport
 
 Varje rapport som du skapar lagras i dataenheten **Lagringsrapport**. Du kan använda de standardiserade datahanteringsfunktionerna i Supply Chain Management för att exportera data från den här enheten till alla dataformat som stöds inklusive CSV eller Excel-format.
 
@@ -203,6 +203,34 @@ I följande exempel visas hur du exporterar en rapport för **Lagring av lagerv�
 1. På sidan **körningssammanfattning** som visas kan du se statusen för exportjobbet och en lista över de enheter som har exporterats. I avsnittet **Bearbetningsstatus för entitet**, välj **Lagervärde** i listan och välj sedan **Hämta fil** för att hämta de data som exporteras från den enheten.
 
 Mer information om hur du använder datahantering för att exportera data finns i [översikt över dataimport- och exportjobb](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+## <a name="delete-stored-inventory-value-reports"></a>Ta bort lagrade lagervärdesrapporter
+
+Allt eftersom antalet lagrade lagervärdesrapporter ökar, kan de komma att ta upp alltför mycket plats i databasen. Situationen kan påverka systemets prestanda och leda till högre datalagringskostnader. Därför måste du troligen rensa rapporterna då och då genom att ta bort äldre rapporter.
+
+> [!IMPORTANT]
+> Innan du tar bort någon av dina tidigare genererade lagervärderapporter rekommenderar vi starkt att du först [exportera rapporterna](#export-stored-report) och lagra dem externt, eftersom du kanske inte kan regenerera dem igen senare. Den här begränsningen finns eftersom när du genererar en lagervärderapport fungerar systemet bakåt från idag och bearbetar varje lagertransaktionspost i omvänd ordning. Om du försöker att se för långt tillbaka när du genererar en rapport kan volymen av transaktioner som ska bearbetas så stor att systemet kommer att ta slut innan rapporten kan genereras. Hur långt fram i tiden som du kan generera nya rapporter beror på antalet lagertransaktioner som du har i systemet för relevant tidsperiod.
+
+### <a name="delete-one-report-at-a-time"></a>Ta bort en rapport i taget
+
+Följ anvisningarna nedan om du vill ta bort en lagrad rapport åt gången.
+
+1. [Exportera rapporten](#export-stored-report) som du planerar att ta bort och spara den på en extern plats för framtida referens.
+1. Gå till **kostnadshantering \>förfrågningar och rapporter \>Lagring av lagervärdesrapport**.
+1. I listrutan väljer du rapporten som ska tas bort.
+1. Välj sedan **Ta bort** i åtgärdsfönstret.
+1. Ett varningsmeddelande uppmanar dig att backa upp genererade rapporter. Välj **Ja** om du är redo att fortsätta med raderingen.
+
+### <a name="delete-several-reports-at-the-same-time"></a>Ta bort flera rapporter samtidigt
+
+Följ anvisningarna nedan om flera lagrade rapporter samtidigt.
+
+1. [Exportera alla rapporter](#export-stored-report) som du planerar att ta bort och spara den på en extern plats för framtida referens.
+1. Gå till **Kostnadshantering \> Lagerredovisning \> Rensa \> Lagervärderapport, datarensning**.
+1. I dialogrutan **Lagervärderapport, datarensning** i fältet **Radera lagervärdesrapport utförd före** väljer du det datum som alla lagervärdesrapporter ska raderas före.
+1. På snabbfliken **Poster som ska ingå** kan du konfigurera ytterligare filtervillkor för att begränsa den uppsättning rapporter som ska tas bort. Välj **Filter** för att öppna en standarddialogruta för Power Query-redigeraren, där du kan definiera rapporterna som ska tas bort.
+1. På snabbfliken **Kör i bakgrunden** anger du hur, när och hur ofta rapporterna ska tas bort. Fälten fungerar precis som de gör för andra typer av [bakgrundsjobb](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management. Du kör vanligtvis det här jobbet manuellt varje gång som det behövs.
+1. Välj **OK** för att radera angivna rapporter.
 
 ## <a name="generate-a-standard-inventory-value-report"></a>Generera en standardrapport för lagervärde
 

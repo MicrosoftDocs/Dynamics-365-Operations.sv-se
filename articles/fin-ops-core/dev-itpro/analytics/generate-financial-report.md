@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 59ec6978d83f5c51309bc7d90d47366774cb2880
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f55fe1a23735d8631a5918fa49e08f74eee4d37
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898839"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802780"
 ---
 # <a name="generate-financial-reports"></a>Generera ekonomiska rapporter
 
@@ -32,7 +32,7 @@ Den här artikeln innehåller information om att generera en ekonomisk rapport.
 
 Allt eftersom rapportgenereringen fortskrider kan följande indikatorer för rapportköstatus vara synliga på sidan **Rapportköstatus**.
 
-| Status          | Delstat | Beskrivning|
+| Status          | Tillstånd | Beskrivning|
 |-----------------|--------|--------------------|
 | Köar        | Mellanliggande |Rapportdefinitionen valideras innan rapporten läggs i genereringskön.                    |
 | I kö          | Mellanliggande | Rapporten anger rapportens genereringskö och väntar på att bearbetas.                      |
@@ -67,7 +67,7 @@ Att skapa en rapport med **Rapportdesigner**, öppna rapportdefinition och välj
 
 Rapportgrupper är ett effektivt sätt att generera flera rapporter samtidigt. Anta att dina användare genererar åtta rapporter varje månad vid månadsslut. Skapa en rapportgrupp och du kan välja **Generera** för var och en av de åtta rapporterna i gruppen kan du välja **Generera** för rapportgruppen och de åtta rapporterna genereras i ett steg. När rapporterna i den valda rapportgruppen har genererats kan du gå till **Ekonomiska rapporter** (**Redovisning > Förfrågningar och rapporter > Ekonomiska rapporter**) för att visa de enskilda rapporterna. Slutför följande steg för att skapa en rapportgrupp.
 
-1. Välj i Rapportdesigner **Rapportgrupper**. 
+1. Välj i **Report Designer** **Rapportgrupper**. 
 2. Välj de befintliga rapportdefinitioner som ska inkluderas i rapportgruppen. 
 3. Välj inställningar för åsidosättningsföretag, detaljer och datum för var och en av rapporterna som ska ingå i gruppen.
    Vi rekommenderar att du **Företag**, **Period**, **År** och **Detaljnivå** för varje rapport. 
@@ -76,21 +76,21 @@ Rapportgrupper är ett effektivt sätt att generera flera rapporter samtidigt. A
 ## <a name="schedule-report-generation"></a>Schemalägga rapporter
 Många företag har en serie grundläggande rapporter som körs regelbundet vid schemalagda tidpunkter som en del av affärsprocesserna. Du kan schemalägga en rapport som ska skapas en gång om dagen, en gång i veckan eller månaden eller årligen. Det kan vara en enstaka rapport eller en grupp rapporter som inbegriper flera företag. Du måste ange dina autentiseringsuppgifter för vart och ett av företagen du anger, t.ex. sådana i en rapportträdsdefinition. Om autentiseringsuppgifterna är ogiltiga visas endast den information du har behörighet att komma åt i rapporterna, t.ex. det aktuella företag du är inloggad i för tillfället. Utdatainformationen läses först från rapportgruppen och sedan från de enskilda rapporterna.
 
-De rapportscheman som skapas och sparas visas under Rapportscheman i navigationsfönstret. Du kan ordna rapporterna i mappar som du skapar. Om en enstaka rapport i ett schema inte skulle köras, körs ändå de övriga av schemats rapporter.
+De rapportscheman som skapas och sparas visas under **Rapportscheman** i navigationsfönstret. Du kan ordna rapporterna i mappar som du skapar. Om en enstaka rapport i ett schema inte skulle köras, körs ändå de övriga av schemats rapporter.
 
 > [!IMPORTANT]
 > Du måste ha designer- eller administratörsrollen för att kunna skapa, ändra och ta bort rapportscheman. När en rapport körs skapas den med hjälp av autentiseringsuppgifterna för den användare som skapade schemat.
 
 ### <a name="create-a-report-schedule"></a>Skapa ett rapportschema
 
-1. Klicka på **Nytt** på **Arkiv**-menyn i Report Designer och välj sedan **Rapportschema**. Dialogrutan **Nytt rapportschema** öppnas.
+1. I **Report Designer**, på menyn **Arkiv** välj **Ny** och sedan **Rapportschema**. Dialogrutan **Nytt rapportschema** öppnas.
 2. Markera en enskild rapport eller en rapportgrupp som du vill schemalägga under **Inställningar**. De rapporter och rapportgrupper som visas gäller endast för det valda företaget eller byggblocket som du för närvarande är inloggad i.
 3. Aktivera rapportschemat genom att markera kryssrutan **Aktivt**. Det är endast den som har skapat rapporten eller en administratör som kan aktivera eller inaktivera ett rapportschema.
 4. Ange företagets autentiseringsuppgifter genom att klicka på knappen **Behörigheter**. Som standard används din inloggningsinformation för företaget som du är inloggad i. Om även andra företag är inbegripna, t.ex. som i rapportträdsdefinitioner, markerar du **Använd andra autentiseringsuppgifter** och anger sedan autentiseringsuppgifterna för andra företag som ingår i rapportschemat. Du kan markera **Windows-autentisering** eller skriva ett användarnamn och lösenord för varje företag. Markera kryssrutan **Spara autentiseringsuppgifter** om du vill spara företagens uppgifter och stäng sedan dialogrutan genom att klicka på **OK**.
 5. Välj det datum när schemat ska börja i fältet **Början av återkommande** under **Frekvens**. Klientdatorns aktuella systemdatum är förvalt som standard.
 6. Välj den tidpunkt när rapporten ska köras i fältet **Kör rapport**. Om du anger en tidpunkt som ligger tidigare än aktuell systemtid körs rapporten på följande schemalagda datum.
-7. Ange hur ofta rapporten ska köras i området **Upprepningsmönster**. **Daglig** väljs som standard, med ett intervallvärde (dagar) på 1. Andra alternativ inkluderar Veckovis, Månadsvis och Årligen.
-8. Välj när rapporten ska upphöra att genereras i området Intervall för återkommande.
+7. Ange hur ofta rapporten ska köras i området **Upprepningsmönster**. **Daglig** väljs som standard, med ett **intervallvärde (dagar)** på **1**. Andra alternativ inkluderar **Veckovis**, **Månadsvis** och **Årligen**.
+8. Välj när rapporten ska upphöra att genereras i området **Intervall för återkommande**.
 
     - **Slutdatum saknas** – Rapportschemat körs tills vidare.
     - **Ange antal förekomster** – Rapportsschemat körs angivet antal gånger och sedan inaktiveras det.
@@ -110,13 +110,13 @@ Du måste vara ägare till rapportschemat eller ha administratörsrollen för at
 
 ### <a name="delete-a-report-schedule"></a>Ta bort ett rapportschema
 
-1. Klicka på **Rapportscheman** i navigeringsfönstret i rapportdesigner.
+1. Klicka på **Rapportscheman** i navigeringsfönstret i Report Designer.
 2. Markera det rapportschema som du vill ta bort och klicka sedan på **Ta bort** eller tryck på **Delete**-tangenten.
 3. Om du vill ta bort rapportschemat permanent klickar du på **Ja** i dialogrutan där du bekräftar borttagningen. Skulle du sakna behörighet att ta bort schemat visas ett meddelande och rapporten behålls.
 
 ### <a name="credentials-and-report-schedules"></a>Användarinformation och rapporttidsplaner
 
-Om du inte anger de autentiseringsuppgifter som krävs för alla företag som omfattas av rapporterna visas följande felmeddelande när du sparar rapportschemat: ”Du måste ange autentiseringsuppgifter för företagen som ingår i det här rapportschemat. Ange autentiseringsuppgifterna genom att klicka på knappen Behörigheter.”
+Om du inte anger de autentiseringsuppgifter som krävs för alla företag som omfattas av rapporterna visas följande felmeddelande när du sparar rapportschemat: ”Du måste ange autentiseringsuppgifter för företagen som ingår i det här rapportschemat. Ange autentiseringsuppgifterna genom att klicka på knappen **Behörigheter**.”
 
 Exempel: Användaren loggar in i företag A med sitt användarnamn och lösenord. Användaren skapar ett schema för en rapport där en rapportträdsdefinition används för att samla in data från flera företag. När rapporten sparas uppmanas användaren ange autentiseringsuppgifterna för de andra angivna företagen i rapportträdsdefinitionen. Om dina autentiseringsuppgifter upphör att gälla skapas inte de rapporter i rapportschemat som påverkas förrän autentiseringsuppgifterna har uppdaterats. Det visas ett meddelande i rapportkön om att behörigheterna måste uppdateras. Körningen av rapportschemat misslyckas om något av följande inträffar (på grund av krav på autentiseringsuppgifter):
 

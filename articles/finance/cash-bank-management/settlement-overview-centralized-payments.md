@@ -2,7 +2,7 @@
 title: Kvittningsöversikt för centraliserade betalningar
 description: Den här artikeln beskriver kvittning för centraliserade betalningar med Microsoft Dynamics 365 Finance.
 author: angelad116
-ms.date: 08/02/2018
+ms.date: 11/22/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 42c359edbe49af151ac76c9873c0d429bbe1ca12
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151189"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804237"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Kvittningsöversikt för centraliserade betalningar
 
@@ -84,11 +84,11 @@ Kassarabatter som skapas i samband med kvittningsprocessen mellan företag bokf�
 
 Toleranser för överbetalning, underbetalning och öresskillnader fastställs baserat på den betalningens juridiska person för överbetalningar samt på fakturans juridiska person för underbetalningar. Redovisningskontot som används bestäms av inställningarna i fältet **Administration av kassarabatt** på sidan **Parametrar för kundreskontra** för kunder, samt i fältet **Administration av kassarabatt** på sidan **Parametrar för leverantörsreskontra** för leverantörer.
 
--   Om administrationsinställningen för kassarabatt är specificerad (Specific), eller om inställningen inte är specificerad (Unspecific) och den tillämpliga kassarabatten bokförs på en annan juridisk person än överbetalningen, används det automatiska kontot för kassarabatt för konsument, kassarabatt för leverantör eller öresskillnad i redovisningsvaluta. Du kan ange dessa konton på sidan **Konton för automatiska transaktioner**.
--   Om administrationsinställningen för kassarabatt inte är specificerad (Unspecific) och kassarabatten bokförs i samma juridiska person överbetalningen (den juridiska personen förbetalning och faktura är densamma), kommer kontot för kassarabatt att justeras. Om till exempel en faktura på 100,00 med en kassarabatt på 3,00 kvittas med en betalning på 98,00, justeras kassarabattkontot med 1,00. Nettobeloppet för rabatt är 2,00.
--   Om administrationsinställningen för kassarabatt inte är specificerad (Unspecific), kassarabatten bokförs för samma juridiska person som överbetalningen, och överbetalningen eller underbetalningen kvittas med flera fakturor med kassarabatter, justeras kassarabattkontot för den sista fakturan.
+-   Om administrationsinställningen för kassarabatt är **specificerad** eller om inställningen **inte är specificerad** och den tillämpliga kassarabatten bokförs på en annan juridisk person än överbetalningen, används det automatiska kontot för kassarabatt för konsument, kassarabatt för leverantör eller öresskillnad i redovisningsvaluta. Du kan ange dessa konton på sidan **Konton för automatiska transaktioner**.
+-   Om administrationsinställningen för kassarabatt **inte är specificerad** och kassarabatten bokförs i samma juridiska person överbetalningen (den juridiska personen förbetalning och faktura är densamma), kommer kontot för kassarabatt att justeras. Om till exempel en faktura på 100,00 med en kassarabatt på 3,00 kvittas med en betalning på 98,00, justeras kassarabattkontot med 1,00. Nettobeloppet för rabatt är 2,00.
+-   Om administrationsinställningen för kassarabatt **inte är specificerad**, kassarabatten bokförs för samma juridiska person som överbetalningen, och överbetalningen eller underbetalningen kvittas med flera fakturor med kassarabatter, justeras kassarabattkontot för den sista fakturan.
 
-Om administrationsinställningen för kassarabatt är ospecificerad (Unspecific) gäller ospecifika regler för betalningskvittning enbart i följande situationer:
+Om administrationsinställningen för kassarabatt är **ospecificerad** gäller ospecifika regler för betalningskvittning enbart i följande situationer:
 -   En överbetalning föreligger.
 -   Överbetalningen kvittas mot en eller flera fakturor som har en kassarabatt.
 -   Kassarabatten bokförs för samma juridiska person som överbetalningen.

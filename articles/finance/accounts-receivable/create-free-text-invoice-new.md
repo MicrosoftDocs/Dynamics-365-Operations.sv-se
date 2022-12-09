@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 4298d7114e0237072c242e83e51951a922e34e5a
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: e8f80aa4cc0a7248506e0725881b8f575a0c7ff4
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780574"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788551"
 ---
 # <a name="create-a-free-text-invoice"></a>Skapa en fritextfaktura
 
@@ -69,6 +69,8 @@ Den här artikeln innehåller information om hur du skapar fritextfakturor. För
     * DU kan ändra tidmätning för din fakturautskrift. Välj **Aktuell** om du vill skriva ut fakturor när de uppdateras. Välj **Efter** om du vill skriva ut när alla fakturor har uppdaterats.
     * Om du vill ändra hur kundens kreditgräns kontrolleras innan fakturan bokförs kan du ändra värdet i fältet **kreditgränstyp**.
     * Du kan välja att stoppa bokföring av fritextfakturor när dett fel uppstår på fliken **Uppdateringar** på sidan **Parametrar för kundreskontra** (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). Välj **Ja** för parametern **Stoppa bokföring av fritextfakturor vid första fel** om du vill stoppa bokföringen av fritextfakturor när ett fel inträffar. Om du bokför i batch stoppar ett fel bokföringsprocessen och batchstatusen anges som **Fel**. Om det här alternativet inte markeras hoppar bokföringsprocessen över en faktura med ett bokföringsfel och fortsätter bokföra ytterligare fakturor. Om du bokför i batch hindrar inte ett bokföringsfel andra fakturor från att bokföras. Batchstatusen blir **Avslutad**. En detaljerad bokföringsprocessrapport finns tillgänglig för granskning i batchjobbhistoriken.
+    * I Microsoft Dynamics 365 Finance 10.0.30, förbättrar funktionen **Förbättringar av bokföring av fritextfaktura för beräkning av summor** förbättrar bokföringsprestandan genom att låta den köras mer effektivt. När den här funktionen är aktiverad sparas de beräknade summorna automatiskt i bokföringen i stället för att summorna beräknas om flera gånger under bokföringsprocessen. 
+    * I Microsoft Dynamics 365 Finance 10.0.31, förbättrar funktionen **Förbättring av batchbokföringsprocessen för fritextfaktura** förbättrar bokföringsprestandan genom att låta den köras mer effektivt. När den här funktionen är aktiverad använder bokföringen ett mönster som hanterar arbetsbelastningen för batchbokföringen själv över ett fast antal trådar, i stället för att tilldela ett fast antal dokument över ett obegränsat antal trådar.
     * Om du vill skriva ut fakturan, ange alternativet till **Ja**.
     * Om du vill bokföra fakturan, ange alternativet till **Ja**. Du kan skriva ut fakturan utan att bokföra den.
 

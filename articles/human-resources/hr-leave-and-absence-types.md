@@ -2,7 +2,7 @@
 title: Konfigurera typer av tjänstledighet och frånvaro
 description: Ställ in tjänstledighetstyper som medarbetarna kan göra i Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/09/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
-ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
+ms.openlocfilehash: e35c5fed886ebf9a453c22b3e04ca9ffe50b6d70
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9323971"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805215"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurera typer av tjänstledighet och frånvaro
+
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,19 +43,25 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 1. I arbetsytan **tjänstledighet och frånvaro** välj fliken **Länkar**.
 2. Under **Inställningar**, välj **Typer av tjänstledighet och frånvaro**.
 3. Välj **Ny**.
-4. Ange ett namn för tjänstledighetstyp under **Typ**, välj ett arbetsflöde från **arbetsflödes-ID** och ange en beskrivning under **Beskrivning**.
+4. Ange ett namn för tjänstledighetstyp under **Typ**, ange en beskrivning under **Beskrivning** och välj ett arbetsflöde i fältet **Arbetsflödes-ID**. Utifrån tjänstledighetstypen väljer du en begäranstyp i fältet **Typ av begäran**. Välj till exempel **Semester** eller **Tjänstledighet**.
 5. I **Allmänhet**, välj **Ingen**, **Schemalagd** eller **Ej schemalagd** från listrutan **Kategori**.
 6. Välj en inkomstkod i listrutan **inkomstkod**.
 7. Ange **under orsakskod** som krävs om du vill kräva en orsakskod. Om du vill kräva orsakskoder kan du behöva lägga till dem. Under **Orsakskoder**, välj **Lägg till**, välj en orsakskod och markera sedan kryssrutan **Aktivera** bredvid den.
-8. Under **begränsa åtkomst till valda roller** väljer du om du vill begränsa åtkomsten. Välj sedan säkerhetsrollerna under **säkerhetsroller för denna tjänstledighetstyp**. Säkerhetsrollerna definieras i det arbetsflöde du markerade under **arbetsflödes-ID** tidigare i den här proceduren.
-9. Under **Kalenderfärg**, välj vilken färg du vill visa på tjänstledighets- och frånvarokalendrar för den här tjänstledighetstypen. 
-10. Under **Uppskjutningsrelationer**, välj om du vill att den här tjänstledighetstypen antingen ska skjuta upp en annan tjänstledighetstyp eller skjutas upp av en annan tjänstledighetstyp. När en ledighetsansökan lämnas in för den uppskjutna tjänstledighetstypen, skapas en uppskjutning av tjänstledighet automatiskt för den uppskjutna tjänstledighetstypen. 
-11. Välj **Spara**.
+8. Om begärandstypen är **Tjänstledighet**, följ dessa steg:
+
+      1. Välj under **Obegränsad** om användare ska kunna skapa obegränsad tjänstledighet.
+      2. Om **Obegränsad** har aktiverats kan du välja om medarbetarna måste skicka in ett meddelande om återgång till arbetet när de kommer tillbaka från tjänstledigheten.
+      3. Om en medarbetare måste skicka meddelande om återgång till arbetet kan du aktivera **Aktivera meddelande om återgång till arbetet**. Om **Aktivera meddelande om återgång till arbetet** är aktiverat, **Bilaga som krävs** aktiveras automatiskt och kan inte inaktiveras.
+
+9. Om användarna ska skicka dokument när de skapar eller uppdaterar tjänstledighetsansökningar kan du aktivera **Bilaga som krävs**.
+10. Under **begränsa åtkomst till valda roller** väljer du om du vill begränsa åtkomsten. Välj sedan säkerhetsrollerna under **säkerhetsroller för denna tjänstledighetstyp**. Säkerhetsrollerna definieras i det arbetsflöde du markerade under **arbetsflödes-ID** tidigare i den här proceduren.
+11. Under **Kalenderfärg**, välj vilken färg du vill visa på tjänstledighets- och frånvarokalendrar för den här tjänstledighetstypen.
+11. Under **Uppskjutningsrelationer**, välj om du vill att den här tjänstledighetstypen antingen ska skjuta upp en annan tjänstledighetstyp eller skjutas upp av en annan tjänstledighetstyp. När en ledighetsansökan lämnas in för den uppskjutna tjänstledighetstypen, skapas en uppskjutning av tjänstledighet automatiskt för den uppskjutna tjänstledighetstypen.
+12. Välj **Spara**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurera regler för tjänstledighetstyp
 
 1. Ange avrundningsalternativ för typen **Tjänstledighet och frånvaro**. Alternativen inkluderar **Ingen**, **Upp**, **Ned** och **Närmast**. Du kan också ställa in avrundningsprecision för tjänstledighetstypen.
-
 2. Ange **helgdagskorrigering** för tjänstledighetstypen. När du väljer det här alternativet används antalet helgdagar som infaller en arbetsdag för att avgöra hur ledighetstypen ska skjutas upp. Om t.ex. juldagen infaller på en måndag kommer personalavdelningen att subtrahera en dag från tjänstledighetstypen när periodiseringen bearbetas.
 
    Du kan ange helgdagar arbetstidskalender. Mer information finns i [skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md).
@@ -69,7 +77,7 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 
 1. På sidan **Tjänstledighet och frånvaro** på fliken **Länkar**, under **Inställningar**, välj **Tjänstledighets- och frånvarotyper**.
 
-2. Välj en ledighet och frånvaro i listan. I avsnittet **Allmänt** använder du fältet **Bilaga som krävs** för att ange om en bilaga måste laddas upp när en anställd skickar en ny ledighetsbegäran för den valda ledighetstypen. 
+2. Välj en **typ av ledighet och frånvaro** i listan. I avsnittet **Allmänt** använder du fältet **Bilaga som krävs** för att ange om en bilaga måste laddas upp när en anställd skickar en ny ledighetsbegäran för den valda ledighetstypen. 
 
 Medarbetare måste föra över en bilaga när de skickar en ny tjänstledighetsbegäran som har en tjänstledighetstyp där fältet **obligatoriskt bilaga** är aktiverat. Om du vill visa bilagan som har förts över som en del av en tjänstledighetsbegäran kan du lämna denna till godkännare om du vill använda alternativet **Bilagor** för de arbetsobjekt som har tilldelats dem. Om du har åtkomst till en tjänstledighetsbegäran med hjälp av programmet Personal i Microsoft Teams kan alternativet **Visa detaljer** för tjänstledighetsförfrågan användas för att visa information och eventuella bilagor.
 
