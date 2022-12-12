@@ -1011,7 +1011,23 @@
                 - name: Massöverföra URL-omdirigeringar
                   href: upload-bulk-redirects.md
                 - name: Ställa in en B2C-klientorganisation i Commerce
-                  href: set-up-B2C-tenant.md
+                  items:
+                    - name: Ställa in en B2C-klientorganisation
+                      href: set-up-B2C-tenant.md
+                    - name: Skapa eller länka till en befintlig Azure AD B2C-klientorganisation
+                      href: create-link-aad-b2c-tenant.md
+                    - name: Skapa ett B2C-program
+                      href: create-b2c-app.md
+                    - name: Skapa policyer för användarflöden
+                      href: create-user-flow-policies.md
+                    - name: Lägga till sociala identitetsproviders
+                      href: add-social-identity-providers.md
+                    - name: Uppdatera Commerce headquarters med Azure AD B2C-information
+                      href: update-hq-aad-b2c-info.md
+                    - name: Konfigurera B2C-klientorganisation i webbplatsbyggaren
+                      href: config-b2c-tenant-site-builder.md
+                    - name: Ytterligare B2C-information
+                      href: additional-b2c-info.md
                 - name: Ställa in anpassade sidor för användarinloggningar
                   href: custom-pages-user-logins.md
                 - name: Aktivera automatisk länkning av identitetsposter till kundkonton
@@ -1570,6 +1586,8 @@
               items:
                 - name: Generera QR-koder och skriv ut dem på kvitton för Saudiarabien
                   href: localizations/emea-sau-qr-code.md
+                - name: Generera och skicka förenklade elektroniska fakturor för Saudiarabien
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: Sverige
               items:
                 - name: Funktioner för kassaapparat
@@ -2790,7 +2808,7 @@
                               href: e-commerce-extensibility/request-properties-object.md
                             - name: Appinställningar
                               href: e-commerce-extensibility/app-settings.md
-                            - name: Konfigurera globala konfigurationsinställningar för webbplatsskaparen baserat på aktiverade funktioner
+                            - name: Konfigurera globala konfigurationsinställningar för webbplatsbyggaren baserat på aktiverade funktioner
                               href: e-commerce-extensibility/config-settings-for-features.md
                             - name: Fil för plattformsinställningar
                               href: e-commerce-extensibility/platform-settings.md
@@ -2984,11 +3002,11 @@
                   href: troubleshoot/store-commerce-extensions.md
             - name: Orderbehandling
               items:
-                - name: Betalningstyp måste vara kreditkortsfel
+                - name: Betalningstyp måste vara kreditkort-fel
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: Moms på onlineorder felaktigt beräknad
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Ordersynkroniseringfel relaterat till standardbetaltjänsten
+                - name: Problem med asynkron ordersynkronisering
                   href: troubleshoot/synchronization-error.md
             - name: Betalningsbearbetning
               items:
@@ -3008,9 +3026,9 @@
                       href: troubleshoot/payments-auto-settled.md
             - name: Hantera näthandelsplats
               items:
-                - name: Det går inte att konfigurera säkerhetsgrupp för webbplatsskaparen under den första distributionen
+                - name: Det går inte att konfigurera säkerhetsgrupp för webbplatsbyggaren under den första distributionen
                   href: troubleshoot/security-group-site-builder.md
-                - name: Produkter och kategorier visas inte i webbplatsskaparen
+                - name: Produkter och kategorier visas inte i webbplatsbyggaren
                   href: troubleshoot/products-categories-unavailable.md
                 - name: Produkter och kategorier saknas efter miljökopiering
                   href: troubleshoot/missing-products-categories.md

@@ -570,6 +570,8 @@
               href: hr-leave-and-absence-suspend-leave.md
             - name: Tjänstledighetsansökan
               href: hr-employee-self-service-request-leave-of-absence.md
+            - name: Skapa en obegränsad tjänstledighet
+              href: hr-create-open-leave-absence.md
             - name: Hantera tjänstledighet för medarbetare
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Visa analys för tjänstledighet och frånvaro

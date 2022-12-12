@@ -1606,7 +1606,9 @@
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
                         - name: Kom i gång med elektronisk fakturering för Polen
                           href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: Kom i gång med elektronisk fakturering för Saudiarabien
+                        - name: Kom i gång med elektronisk fakturering för Saudiarabien – Fas ett
+                          href: localizations/e-invoicing-sa-get-started-phase-one.md
+                        - name: Kom i gång med elektronisk fakturering för Saudiarabien – Fas två
                           href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
                         - name: Integrering av elektronisk fakturering i Saudiarabien
                           href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
