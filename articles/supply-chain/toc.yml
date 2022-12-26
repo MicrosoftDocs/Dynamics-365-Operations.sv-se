@@ -1809,6 +1809,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanering
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Konfigurera kassation för att beräkna behov av råmaterial
+                  href: master-planning/scrap-calculations.md
                 - name: Huvudplanering för produkter med begränsad hållbarhetstid
                   href: master-planning/planning-optimization/shelf-life.md
                 - name: Tidsplanering med obegränsad kapacitet
@@ -2355,7 +2357,7 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Skapa en frisläppt produkt för ett enskilt företag
                   href: pim/tasks/create-released-product-single-company.md
-                - name: Använda dataentiteter
+                - name: Produktdatatabeller
                   href: pim/data-entities.md
                 - name: Produktens livscykeltillstånd
                   items:

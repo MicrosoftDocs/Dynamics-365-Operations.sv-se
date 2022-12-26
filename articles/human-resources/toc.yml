@@ -32,6 +32,8 @@
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Nyheter i Dynamics 365 Human Resources (fristående)
                   items:
+                    - name: Nyheter i Dynamics 365 Human Resources (fristående) december 2022
+                      href: hr-whats-new-2022-12-12.md
                     - name: Nyheter i Dynamics 365 Human Resources (fristående) arkiv 2021
                       href: hr-admin-whats-new.md
                     - name: 29 november 2021
@@ -110,6 +112,8 @@
                   href: hr-admin-integration-common-data-service-virtual-entities.md
                 - name: Vanliga frågor och svar om virtuella tabeller i Human Resources
                   href: hr-admin-virtual-entity-faq.md
+                - name: Konfigurera integration med Dataverse
+                  href: hr-dataverse-integration.md
                 - name: Konfigurera integration med Finance
                   href: hr-admin-integration-finance.md
                 - name: Konfigurera integration med Dayforce
@@ -530,7 +534,7 @@
                       href: ../human-resources/hr-personnel-set-up-positions.md
                     - name: Anställa kandidater via rekrytering
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                    - name: Anställa befintliga medarbetare via rekrytering
+                    - name: Anställa befintlig medarbetare via rekrytering
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
                     - name: Identifiera och distribuera kandidaturvalsverktyg
                       href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
