@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c3f049946c66fcd8560f7c08a4cb2beab0dcd5b2
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: cdf950fc7b3720543d93e108d4e3c3c2ab254e09
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9115037"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838402"
 ---
 # <a name="configure-google-pay-with-adyen"></a>Konfigurera Google Pay med Adyen
 
@@ -90,11 +90,6 @@ Följ dessa steg om du vill konfigurera en Commerce-näthandelsbutik till att an
 
 1. När du har avslutat konfigureringen av egenskaperna för anslutningsprogrammet kör du tidsplansjobbet **1070 (Kanalkonfiguration**) för distribution.
 
-## <a name="configure-commerce-pos-for-google-pay"></a>Konfigurera Commerce-kassa för Google Pay
-
-Kassakonfigurationen använder inställningen i maskinvaruprofilens **EFT-tjänst**-fält för anslutningsprogrammet för Dynamics 365-betalning för Adyen. Information om hur du konfigurerar EFT-tjänsten (Electronic Funds Transfer) för anslutningsprogrammet för Dynamics 365-betalning för Adyen i Commerce Headquarters finns i [Konfigurera ett avsnitt för hårdvaruprofil för Dynamics 365-kassa](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-Processormappningen för Adyen-anslutningsprogrammet registrerar de korttyper som Google Pay använder i kassaterminalen.
 
 ### <a name="use-the-payment-express-module-with-google-pay"></a>Använd expressmodulen för betalning med Google Pay
 
@@ -180,7 +175,7 @@ För att lägga till ett fragment för snabbetalning på kundvagnssidan följer 
 1. Välj **Sidor** i webbplatsverktyget och välj sedan webbplatsens kundvagnssida.
 2. Välj **Redigera**.
 3. I översiktvyn expanderar du **Huvudplats** i trädvyn och letar sedan reda på den behållare som innehåller modulen **Kundvagn**.
-4. I modulen **Kundvagn** väljer du platsen **Snabbetalning** > väljer ellipsen (**...**) och sedan **Lägg till modul**.
+4. I modulen **Kundvagn** väljer du platsen **Snabbetalning** väljer ellipsen (**...**) och sedan **Lägg till modul**.
 5. I dialogrutan **Välj moduler**, välj modulen **Expressbetalning** och klicka sedan på **OK**.
 6. Välj modulplatsen **Snabbetalning**. Under **Betalningsmedel som stöds** anger du **GooglePay** i egenskapsfönstret till höger. Värdet måste matcha strängen **Betalningsmedel som stöds** i det anslutningsprogram som konfigurerades för kanalen (enligt beskrivningen i avsnittet [Konfigurera en Commerce-onlinebutik för Google Pay](#configure-a-commerce-online-store-for-google-pay) tidigare i den här artikeln).
 1. Välj **Spara** för att spara dina ändringar, och välj sedan **Avsluta redigering**.
@@ -223,6 +218,12 @@ Den ordning i vilken leveranssätten visas i modulen för snabbetalning konfigur
 Kassamodulen använder också modulen för leveransalternativ när leveranssätt återges i kassan. Mer information finns i [Modul för leveransalternativ](../delivery-options-module.md).
 
 Leveranssätt visas när de läggs till i listan **Leveranssätt** i onlinebutiken.
+
+## <a name="configure-commerce-pos-for-google-pay"></a>Konfigurera Commerce-kassa för Google Pay
+
+Kassakonfigurationen använder inställningen i maskinvaruprofilens **EFT-tjänst**-fält för anslutningsprogrammet för Dynamics 365-betalning för Adyen. Information om hur du konfigurerar EFT-tjänsten (Electronic Funds Transfer) för anslutningsprogrammet för Dynamics 365-betalning för Adyen i Commerce headquarters finns i [Konfigurera ett avsnitt för hårdvaruprofil för Dynamics 365-kassa](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+Processormappningen för Adyen-anslutningsprogrammet registrerar de korttyper som Google Pay använder i kassaterminalen.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

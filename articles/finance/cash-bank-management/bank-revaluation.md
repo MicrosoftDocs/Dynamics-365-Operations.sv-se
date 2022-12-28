@@ -2,23 +2,23 @@
 title: Bank – omräkning i utländsk valuta
 description: Den här artikeln innehåller en översikt över processen för bank – omräkning i utländsk valuta. Den innehåller information om inställningar, köra processen, beräkningen för processen och återföring av ombedömningstransaktioner.
 author: angelad116
-ms.date: 05/16/2019
+ms.date: 12/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8efec304e745332c332030b33363403869870532
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 2d5e8a36d3b4d44c9ad0454db94164adebf80997
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151444"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887271"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – omräkning i utländsk valuta
 
@@ -39,17 +39,8 @@ Innan du kan köra ombedömningsprocessen måste följande inställningar göras
 - Ange valutakurstypen åpå sidan **Redovisning**. Om en valutakurstyp inte är definierad på huvudkontot, används denna valutakurstyp i samband med omräkning i utländsk valuta.
 - Ange realiserad vinst, realiserad förlust, orealiserad vinst och orealiserad förlust för valutaomvärdering på sidan **Redovisning**. Realiserad vinstkonton och realiserad förlustkonton används när kundreskontra- och leverantörsreskontratransaktioner kvittas. Orealiserad vinstkonton och orealiserad förlustkonton används för att omvärdera öppna transaktioner och huvudkonton för redovisning.
 - På sidan **Valutaombedömningskonton** kan du välja olika valutaombedömningskonton för varje valuta och företag. Om inga konton har definierats används kontona från sidan **Redovisning**.
+- På sidan **Parametrar för kassa- och bankhantering**, på fliken **Nummersekvens**, lägg till en nummersekvens för omvärdering av utländsk valuta.
 
-## <a name="enable-foreign-currency-revaluation"></a>Aktivera omvärdering i utländsk valuta
-
-Du måste aktivera funktionen för bank – omvärdering i utländsk valuta innan du kan bearbeta omvärdering i utländsk valuta.
-
-1. Gå till **Kassa- och bankhantering \> Inställningar \> Parametrar för kassa- och bankhantering**.
-2. På fliken **Allmänt** under **omvärdering i utländsk valuta** anger du alternativet **aktivera bankomvärdering** till **Ja** för att aktivera funktionen för den aktuella juridiska personen. 
-3. På fliken **nummerserier** lägger du till en nummerserie för omvärdering i utländsk valuta.
-4. Uppdatera webbläsaren för att se **omvärdering i utländsk valuta** i avsnittet **periodiska uppgifter** på områdessidan.
-
-Du måste aktivera funktionen för varje juridisk person som används för omvärdering i utländsk valuta. Om du har tilldelats rollen som systemadministratör eller funktionshanterare kan du undvika det här steget genom att aktivera funktionen **Aktivera omvärdering av bank utan parameter** på arbetsytan för **funktionshantering**.
 
 > [!NOTE]
 > Om en juridisk person använder en ryska, polska och ungerska lands-/regionskoder kan du redan göra bank – omräkning i utländsk valuta. Du kan inte använda omvärdering i utländsk valuta som används i andra länder eller regioner.

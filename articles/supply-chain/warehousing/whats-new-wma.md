@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 61d3ebc85d3c3d20bb17acd7364adc04cd2f3f94
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764250"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843691"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheter eller ändringar i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Denna artikel listar nya funktioner, korrigeringar, förbättringar och kända problem för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20390"></a>Version 2.0.39.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+- Ökad stabilitet. 
+- Fälten på sidan **anpassad** sorteras inte längre automatiskt baserat på deras inställningarna för prioritet och delprioritet.  
+- Programmet använder nu inställningarna för prioritet och delprioritet för varje fält för att identifiera det primära fältet för en sida. Det primära fältet visas i stegrubriken. 
+- Har åtgärdat ett problem där det mjuka tangentbordet inte döljer sig på Android.
+- Åtgärdade ett problem där kvantitetsförloppet visar ett felaktigt värde vid öppning i flödet *rörelse* . 
+- Har åtgärdat ett problem där det skrivskyddade kvantitetsvärdet för artiklar inte är korrekt centrerade. 
+- Åtgärdade ett problem där webbsidorna inte öppnas från sidan **Om**. 
+- Färgschemat *Automatisk* får nu sitt standardutseende (ljus eller mörk) baserat på det globala tema som är inställt i den mobila enhetens operativsystem.
 
 ## <a name="version-20370"></a>Version 2.0.37.0
 

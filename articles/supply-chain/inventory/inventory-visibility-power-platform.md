@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
-ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
+ms.openlocfilehash: 0a4e436cc1af6b71049f75fb66bdfb89ca38df9f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9762711"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831785"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Använda appen Inventory Visibility
 
@@ -106,7 +106,7 @@ Följ dessa steg för att aktivera sidan **lagersammanfattning** ställa in synk
 
 1. Öppna sidan **Konfiguration**.
 1. Öppna fliken **Funktionshantering och inställningar**.
-1. Ställ in växlingsknappen för funktionen **OnHandMostSpecificBackgroundService** till *Ja*.
+1. Ställ in växlingsknappen för funktionen *OnHandMostSpecificBackgroundService* till *Ja*.
 1. När funktionen har aktiverats blir avsnittet **Tjänstekonfiguration** tillgängligt och innehåller en rad för konfigurering av funktionen **OnHandMostSpecificBackgroundService**. Med den här inställningen kan du välja hur ofta lagersammanfattningsdata ska synkroniseras. Använd knapparna **Upp** och **Ned** i kolumnen **Värde** för att ändra tiden mellan synkroniseringar (som kan vara så låg som 5 minuter). Välj sedan **Spara**.
 
     ![OnHandMostSpecificBackgroundService, inställning](media/inventory-visibility-ohms-freq.png "OnHandMostSpecificBackgroundService, inställning")
@@ -125,10 +125,10 @@ Supply Chain Management lagrar en stor mängd information om din nuvarande lager
 
 Sidan **Förinläsa sammanfattning av lagersynlighet** ger en vy av entiteten *Behållningsindex av förinläsning av frågeresultat*. Till skillnad från entiteten *lagersammanfattning* ger entiteten *Behållningsindex av förinläsning av frågeresultat* en tillgänglig inventeringslista för produkter tillsammans med valda dimensioner. Lagersynlighet synkroniserar de förinlästa sammanfattningsdata var 15:e minut.
 
-Om du vill visa data på fliken **Förinläsa sammanfattning av lagersynlighet** måste du aktivera funktionen *OnHandIndexQueryPreloadBackgroundService* på fliken **Funktionshantering** på sidan **Konfiguration** och sedan välja **Uppdatera konfiguration** (se även [Konfigurera lagersynlighet](inventory-visibility-configuration.md)).
+Om du vill visa data på fliken **Förinläsa sammanfattning av lagersynlighet** måste du aktivera och konfigurera funktionen *OnHandIndexQueryPreloadBackgroundService* feature. Se [Aktivera och konfigurera förinlästa behållningsfrågor](inventory-visibility-configuration.md#query-preload-configuration) för information.
 
 > [!NOTE]
-> Liksom funktionen *OnhandMostSpecificBackgroudService* spårar funktionen *OnHandIndexQueryPreloadBackgroundService* endast ändringar i lagerbehållning som skett efter att du aktiverat funktionen. Data för produkter som inte har ändrats sedan du aktiverade funktionen synkroniseras inte från lagertjänstcachen till Dataverse-miljön. Om din sida för **lagersamamnfattning** inte visar all behållningsinformation du förväntar dig går du till **Lagerhantering > Periodiska uppgifter > Integrering av lagersynlighet** inaktiverar du batchjobbet och återaktiverar det. Detta utför den första distributionen och all data synkroniseras med entiteten *Behållningsindex av förinläsning av frågeresultat* under närmaste 15 minuter. Om du vill använda den här funktionen rekommenderar vi att du aktiverar den innan du skapar ändringar i lagerbehållningen och aktiverar batchjobbet **Integrering för lagersynlighet**.
+> Liksom funktionen *OnHandMostSpecificBackgroundService* spårar funktionen *OnHandIndexQueryPreloadBackgroundService* endast ändringar i lagerbehållning som skett efter att du aktiverat funktionen. Data för produkter som inte har ändrats sedan du aktiverade funktionen synkroniseras inte från lagertjänstcachen till Dataverse-miljön. Om din sida för **lagersamamnfattning** inte visar all behållningsinformation du förväntar dig går du till **Lagerhantering > Periodiska uppgifter > Integrering av lagersynlighet** inaktiverar du batchjobbet och återaktiverar det. Detta utför den första distributionen och all data synkroniseras med entiteten *Behållningsindex av förinläsning av frågeresultat* under närmaste 15 minuter. Om du vill använda den här funktionen rekommenderar vi att du aktiverar den innan du skapar ändringar i lagerbehållningen och aktiverar batchjobbet **Integrering för lagersynlighet**.
 
 ## <a name="filter-and-browse-the-inventory-summaries"></a><a name="additional-tip-for-viewing-data"></a>Filtrera och bläddra i lagersammanfattningar
 

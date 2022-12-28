@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 6d14bba13dbf701a8c27c10ac2d318b071092bc1
+ms.sourcegitcommit: 77ffeccffff28fbb6ff576864d7abddd412cdab6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405476"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "9852395"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -225,6 +225,7 @@ I det här avsnittet finns en lista över kända problem för den nya rutnätsko
 ### <a name="open-issues"></a>Öppna ärenden
 - När funktionen för **ny rutnätskontroll** aktiveras fortsätter vissa sidor att använda den befintliga rutnätskontrollen. Detta sker i följande situationer:
  
+    - [Löst] Problem 762533: Oväntat klientfel när du väljer en rad i en kortlista.
     - [Löst] Det finns en kortlista på sidan som renderas i flera kolumner.
         - Den här typen av kortlista stöds av den **nya rutnätskontrollen** som startar i version 10.0.30. All användning av forceLegacyGrid() detta syfte kan tas bort. 
     - [Löst] Det finns en grupperad kortlista på sidan.

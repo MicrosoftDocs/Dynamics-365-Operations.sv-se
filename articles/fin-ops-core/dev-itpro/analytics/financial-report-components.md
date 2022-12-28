@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
-ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
+ms.openlocfilehash: 180b3c64b9eb506f162071a67b1fa9b728a569ce
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2022
-ms.locfileid: "9802726"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831621"
 ---
 # <a name="financial-report-components"></a>Komponenter i ekonomisk rapportering
 
@@ -65,7 +65,7 @@ Du kan skapa ett lösenord för att skydda och låsa ett byggblock. På det här
 
 ## <a name="building-block-groups"></a>Byggblocksgrupper
 
-Byggblock är de raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner som du skapar för en rapport. Byggblocksgrupper är samlingar med definitioner och dimensionsgrupper.
+Byggblock är de raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner som du skapar för en rapport. Byggblocksgrupper är samlingar med definitioner och definitionvärdeuppsättningar.
 
 ### <a name="view-a-building-block-group"></a>Visa en byggblocksgrupp
 
@@ -78,17 +78,17 @@ Du kan visa alla byggblock som tilldelas en byggblockgrupp. Du kan även exporte
 
 ### <a name="export-a-building-block-group"></a>Exportera en byggblocksgrupp
 
-Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp. Du kan använda den exporterade byggblocksgruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblocksgruppen.
+Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp. Du kan använda den exporterade byggblocksgruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan installationer. Report designer inkluderar de refererade teckenstilarna och definitionvärdeuppsättningar tillsammans med byggblocksgruppen.
 
 1. Klicka på **Byggblocksgrupper** på **Företag**-menyn i Report Designer.
 2. Markera det byggblock som ska exporteras i dialogrutan **Byggblocksgrupper** och klicka sedan på **Exportera**.
 3. I dialogrutan **Exportera** väljer du de rapportdefinitioner som du vill exportera:
 
     - Klicka på **Markera alla** om du vill exportera alla dina rapportdefinitioner och de associerade byggblocken.
-    - Om du vill exportera specifika rapporter, rader, kolumner, träd eller dimensionsuppsättningar klickar du på lämpliga flikar och väljer de artiklar du vill exportera. Tryck och håll ned CTRL-tangenten om du vill välja flera artiklar på en flik.
+    - Om du vill exportera specifika rapporter, rader, kolumner, träd eller definitionvärdeuppsättningar klickar du på lämpliga flikar och väljer de artiklar du vill exportera. Tryck och håll ned CTRL-tangenten om du vill välja flera artiklar på en flik.
 
     > [!NOTE]
-    > När du markerar de rapporter som ska exporteras markeras motsvarande rader, kolumner, träd och dimensionsgrupper.
+    > När du markerar de rapporter som ska exporteras markeras motsvarande rader, kolumner, träd och definitionvärdeuppsättningar.
 
 4. När du har valt artiklar som ska exporteras, klicka på **Exportera**.
 5. I dialogrutan **Spara som** väljer du en plats att exportera byggblockgruppen till.
@@ -97,7 +97,7 @@ Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp.
 
 ### <a name="import-a-building-block-group"></a>Importera en byggblockgrupp
 
-Du kan importera en byggblockgrupp till en befintlig byggblockgrupp. Alla importerade byggblocksgrupper behåller sina ursprungliga teckensnittsinställningar och företagsreferenser och inkluderar relevanta dimensionsuppsättningar.
+Du kan importera en byggblockgrupp till en befintlig byggblockgrupp. Alla importerade byggblocksgrupper behåller sina ursprungliga teckensnittsinställningar och företagsreferenser och inkluderar relevanta definitionvärdeuppsättningar.
 
 1. Klicka på **Byggblocksgrupper** på **Företag**-menyn i Report Designer.
 2. Markera det byggblock som ska byggblocksgruppen ska importeras till i dialogrutan **Byggblocksgrupper** och klicka sedan på **Importera**.
@@ -105,7 +105,7 @@ Du kan importera en byggblockgrupp till en befintlig byggblockgrupp. Alla import
 4. I dialogrutan **Importera** väljer du de rapportdefinitioner som du vill importera:
 
     - Klicka på **Markera alla** om du vill importera alla rapportdefinitioner och stödjande byggblock.
-    - Om du vill importera specifika rapporter väljer du de rader, kolumner, träd eller dimensionsuppsättningar som ska importeras.
+    - Om du vill importera specifika rapporter väljer du de rader, kolumner, träd eller definitionvärdeuppsättningar som ska importeras.
 
 5. När du har valt artiklar att importera, klicka på **Importera**.
 

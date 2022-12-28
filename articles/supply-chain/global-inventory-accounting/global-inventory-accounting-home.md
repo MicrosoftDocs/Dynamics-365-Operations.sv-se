@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: fd9877365977694ca29f4d9116bcae45360306d5
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135470"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843638"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startsida för Global lagerredovisning
 
@@ -40,11 +40,17 @@ En konferens är en samling av lagerredovisningsprinciper som kan kopplas till e
 
 Global lagerredovisning är just nu tillgänglig i följande geografiska områden i Azure:
 
-- USA
-- Europa
-- Storbritannien
 - Australien
 - Kanada
+- Kina
+- Europa
+- Frankrike
+- Norge
+- Sydafrika
+- Schweiz
+- UAE
+- Storbritannien
+- USA
 
 Om du försöker installera tillägget från ett annat geografiskt område visar Microsoft Dynamics Lifecycle Services (LCS) visar ett meddelande om att detta geografiska område inte stöds. Global lagerredovisning har inte stöd för lokala distributioner av Supply Chain Management.
 

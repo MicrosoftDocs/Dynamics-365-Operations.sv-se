@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 2a368535c9644e174d1a2460ac0891c9dc1b1b3f
+ms.sourcegitcommit: 44f0b4ef8d74c86b5c5040be37981e32eb43e1a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9765716"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "9850034"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera Inventory Visibility
 
@@ -32,9 +32,10 @@ Innan du börjar arbeta med Lagersynlighet måste du utföra följande konfigura
 - [Patritionskonfiguration](#partition-configuration)
 - [Konfiguration av produktindexhierarki](#index-configuration)
 - [Reservationskonfiguration (valfritt)](#reservation-configuration)
+- [Förinläsningskonfiguration för fråga (valfritt)](#query-preload-configuration)
 - [Exempel på standardkonfiguration](#default-configuration-sample)
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Innan du börjar installerar och konfigurerar du tillägget Lagersynlighet enligt beskrivningen i [Installera och konfigurera Lagersynlighet](inventory-visibility-setup.md).
 
@@ -52,10 +53,13 @@ Tillägget Lagersynlighet lägger till flera nya funktioner i Power Apps-install
 |---|---|
 | *OnHandReservation* | Denna funktion låter dig skapa reservationsfunktionen för att skapa reservationer, förbruka reservationer och/eller avmarkera angivna lagerkvantiteter med hjälp av Lagersynlighet. Mer information finns i [Reservationer för Lagersynlighet](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Denna funktion ger en lagersammanfattning för produkter tillsammans med alla dimensioner. Data för lagersammanfattningen synkroniseras regelbundet från Lagersynlighet. Standardsynkronisering frekvensen är en gång var 15:e minut och kan ställas in så högt som en gång var 5:e minut. Mer information finns i [Lagersammanfattning](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Med den här funktionen kan du förinläsa lagerbehållningsfrågor för lagersynlighet för att sätta ihop beredskapslistor med förvalda dimensioner. Standardsynkroniseringsfrekvensen är en gång var 15:e minut. Mer information finns i [Förinläsning av strömlinjeformad behållningsfråga](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
+| *OnHandIndexQueryPreloadBackgroundService* | Denna funktion hämtar och lagrar regelbundet en uppsättning samlingsdata för lagerbehållning baserat på dina förkonfigurerade dimensioner. Den innehåller en lagersammanfattning som bara omfattar dimensioner som är relevanta för din dagliga verksamhet och som är kompatibla med artiklar som aktiverats för lagerstyrningsprocesser (WMS). Mer information finns i [Aktivera och konfigurera förinlästa behållningsfrågor](#query-preload-configuration) och [förinläsning av en strömlinjeformad behållningsfråga](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Med hjälp av denna valfria funktion får du åtkomst till funktionerna för lagerändringsschema för lagerbehållning och disponibelt att lova (ATP). Mer information finns i [Ändringsschema för lagersynlighet för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md). |
 | *Allokering* | Denna valfria funktion gör att Lagersynlighet kan skydda lagret (ringfencing) och överförsäljningskontroll. Mer information finns i [Lagerallokering för Lagersynlighet](inventory-visibility-allocation.md). |
 | *Aktivera lagerartiklar i lagersynlighet* | Denna tillvalsfunktion gör att Lagersynlighet kan stödja artiklar som har aktiverats för lagerstyrningsprocesser (WMS). Mer information finns i [Stöd för lagersynlighet för WMS-artiklar](inventory-visibility-whs-support.md). |
+
+> [!IMPORTANT]
+> Vi rekommenderar att du antingen använder funktionen *OnHandIndexQueryPreloadBackgroundService* eller *OnHandMostSpecificBackgroundService*, inte båda. Om du aktiverar båda funktionerna påverkas prestandan.
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Hitta tjänstslutpunkten
 
@@ -178,6 +182,15 @@ Om datakällan är Supply Chain Management behöver du inte skapa de fysiska sta
 1. Logga in i din Power Apps-miljö och öppna **Lagersynlighet**.
 1. Öppna sidan **Konfiguration**.
 1. Välj den **datakälla** som fysiska mått ska läggas till i (till exempel datakällan) på fliken `ecommerce` datakälla. I avsnittet **Fysiska mått** väljer du **Lägg till** och ange måttets namn (t.ex. `Returned` om du vill registrera returnerade kvantiteter i denna datakälla till lagersynlighet). Spara ändringarna.
+
+### <a name="extended-dimensions"></a>Utbyggda dimensioner
+
+Kunder som vill använda externa datakällor i datakällan kan dra nytta av den utbyggbarhet som Dynamics 365 erbjuder genom att skapa [klasstillägg](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) för klasserna `InventOnHandChangeEventDimensionSet` och `InventInventoryDataServiceBatchJobTask`.
+
+Se till att synkronisera med databasen efter att du har skapat tilläggen för att de anpassade fälten ska läggas till i `InventSum` registret. Du kan sedan referera till dimensionsavsnittet tidigare i den här artikeln för att mappa dina anpassade dimensioner till någon av de åtta utbyggda dimensionerna i `BaseDimensions` i Lager.
+
+> [!NOTE] 
+> Mer information om hur du skapar tillägg finns på [startsidan utbyggbarhet](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### <a name="calculated-measures"></a>Beräknade mått
 
@@ -496,6 +509,30 @@ En giltig dimensionssekvens bör strikt följa reservationshierarkin, dimension 
 ## <a name="available-to-promise-configuration-optional"></a>Konfiguration av tillgänglig för löfte (valfritt)
 
 Du kan konfigurera lagersynlighet så att du kan tidsplanera framtida ändringar av lagerbehållningen och beräkna kvantiteter som är tillgängliga att lova. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder den här beräkningen kan du öka möjligheten att uppfylla ordern mycket. Om du vill använda funktionen måste du aktivera den på fliken **Funktionshantering** och sedan konfigurera den på fliken **ATP-inställningar**. Mer information finns i [Lagerinventeringsbehållningens ändringsscheman och som är tillgängliga att lova](inventory-visibility-available-to-promise.md).
+
+## <a name="turn-on-and-configure-preloaded-on-hand-queries-optional"></a><a name="query-preload-configuration"></a>Aktivera och konfigurera förinlästa behållningsfrågor (valfritt)
+
+Lagersynlighet kan regelbundet hämta och lagra en uppsättning samlingsdata för lagerbehållning baserat på dina förkonfigurerade dimensioner. Detta ger följande fördelar:
+
+- En vy som lagrar en lagersammanfattning som bara innehåller de dimensioner som är relevanta för din dagliga verksamhet.
+- En lagersammanfattning som är kompatibel med artiklar som aktiverats för lagerstyrningsprocesser (WMS).
+
+Mer information om hur du arbetar med den här funktionen finns i [Förinläsning av en strömlinjeformad behållningsfråga](inventory-visibility-power-platform.md#preload-streamlined-onhand-query).
+
+> [!IMPORTANT]
+> Vi rekommenderar att du antingen använder funktionen *OnHandIndexQueryPreloadBackgroundService* eller *OnHandMostSpecificBackgroundService*, inte båda. Om du aktiverar båda funktionerna påverkas prestandan.
+
+Följ dessa steg för att konfigurera funktionen:
+
+1. Logga in på Power Apps för lagersynlighet.
+1. Gå till **Konfiguration \> Funktionshantering och inställningar**.
+1. Om funktionen *OnHandIndexQueryPreloadBackgroundService* redan har aktiverats rekommenderar vi att du stänger av den för tillfället eftersom rensningsprocessen kan ta mycket lång tid att slutföra. Du kan aktivera den senare under denna procedur.
+1. Öppna fliken **Förinläsningsinställningar** .
+1. I avsnittet **Steg 1: Rensa förinläst lager**, välj **Rensa** om du vill rensa databasen och gör den klar att acceptera dina nya gruppera efter-inställning.
+1. I avsnittet **Steg 2: Ställ in grupp efter värden** i fältet **Gruppera resultat efter** anger du en kommaavgränsad lista med fältnamn som frågeresultaten ska grupperas efter. När det finns data i förinläsningsdatabasen kan du inte ändra den här inställningen förrän du har rensat databasen, enligt beskrivningen i föregående steg.
+1. Gå till **Konfiguration \> Funktionshantering och inställningar**.
+1. Aktivera funktionen *OnHandIndexQueryPreloadBackgroundService*.
+1. Välj **Uppdatera konfiguration** i det övre högra hörnet på sidan **Konfiguration** om du vill utföra ändringarna.
 
 ## <a name="complete-and-update-the-configuration"></a>Slutför och uppdatera konfigurationen
 

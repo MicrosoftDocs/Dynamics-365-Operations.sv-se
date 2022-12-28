@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
-ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
+ms.openlocfilehash: 7d8de017c54a13a9935d74d33a57813922c9f823
+ms.sourcegitcommit: 8aee31d6dffabe13969dd5b9de4e0bf95f53e67e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/29/2022
-ms.locfileid: "9805325"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887141"
 ---
 # <a name="proactive-quality-updates"></a>Förebyggande kvalitetsuppdateringar
 
@@ -28,16 +28,24 @@ Denna förutsättning bekräftas av resultaten: lägre antal incident inom alla 
 
 ## <a name="what-you-need-to-know"></a>Vad du behöver veta
 
-- Förebyggande kvalitetsuppdateringar tillämpas varje månad.
-- Microsoft kommer att tillämpa förebyggande kvalitetsuppdateringar på alla kvalitetsmiljöer som kör en serviceuppdatering som var [i bruk](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) när de förebyggande kvalitetsuppdateringarna skapades.
+- Förebyggande kvalitetsuppdateringar (PQU) tillämpas varje månad.
 - Undantag för förebyggande kvalitetsuppdateringar tillåts för kunder som är reglerade av den amerikanska Food and Drug Administration (FDA).
+- Förebyggande kvalitetsuppdateringar försämrar aldrig miljön eller uppgraderar automatiskt från en serviceuppdateringsversion till en annan. 
 - Microsoft bestämmer hur förebyggande kvalitetsuppdateringar ska hanteras för reglerade miljöer, och för kunder med förebyggande åtgärder och för myndighetskunder.
-- Meddelanden som rör förebyggande kvalitetsuppdateringar bokförs i [Microsoft 365 meddelande center](https://admin.microsoft.com/AdminPortal/) och på en banderoll i kundens Microsoft Dynamics Lifecycle Services-projekt.
+- Meddelanden relaterade till förebyggande kvalitetsuppdateringar bokförs i [Microsoft 365 meddelandecenter](https://admin.microsoft.com/AdminPortal/).
 - Fem dagar innan en förebyggande kvalitetsuppdatering tillämpas i en miljö får kunder information om att uppdateringen ska ske.
 - Kunder kan inte avbryta eller skjuta upp förebyggande kvalitetsuppdateringar.
 - Förebyggande kvalitetsuppdateringar installeras under det regionspecifika [fönstret för planerat underhåll](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Kvalitetsuppdateringar är utformade så att risken för problem eller problem är låg och den stöds av Microsoft-data.
 - Microsoft rekommenderar riktad testning för specifika problem eller specifika snabbkorrigeringar som hör till en förebyggande kvalitetsuppdatering.
+- ALLA sandbox-miljöer, förutom de som har ett tidsbegränsningsundantag beroende på lagstadgade orsaker, kommer att vara registrerade 7 januari 2023.
+- Produktionsregistrering för förebyggande kvalitetsuppdateringar kommer att börja från den 21 januari 2023. 
+- Produktionsregistrering kommer endast att starta för Lifecycle Services-projekt som har sandbox-miljöer registrerade och där fram tills nu får förebyggande kvalitetsuppdateringar regelbundet för alla supportade serviceuppdateringsversioner. Detta gäller endast för kundmiljöer som inte har tillhandahållits undantag på grund av lagstadgade eller andra juridiska orsaker.
+- Nedan finns en fullständig tidsplan med förebyggande kvalitetsuppdateringar för sandbox-miljöer och produktionsmiljöer under 2023.
+- Varje serviceuppdatering har minst en PQU-version som pågår eller planeras att påbörjas. När dina miljöer har förflyttats till PQU-processen kan du få en förplanerad förebyggande kvalitetsuppdatering av dem alla när du flyttar till en nyare version av serviceuppdateringen. Kontrollera schemat för att avgöra när en PQU för en serviceuppdatering är tidsplanerad om du tänker uppgradera till en nyare version av tjänsten. 
+
+> [!Note]
+> Standardprestandatest (nivå4), premium prestandatest (nivå5) sandbox-miljöer och produktionsmiljöer får PQU på veckoslut. 
 
 ## <a name="focus-on-quality-updates"></a>Fokusera på kvalitetsuppdateringar
 
@@ -75,33 +83,22 @@ En uppsättning processändringar implementeras innan förebyggande kvalitetsupp
     > Microsoft Communications-teamet undersöker en pågående pågående oavvishet vad gäller e-postverktyget som förhindrar att e-postmeddelanden skickas. Fortsätt att övervaka Microsoft 365 meddelandecenter för inkommande och meddelanden som är relaterade till meddelanden.
 
 - **Felsäker via förhandsversion** – Förhandsversionen kommer att användas för ändring av kod, där det är tillämpligt i en kvalitetsuppdatering eller för att använda den befintliga funktion som är relevant för korrigeringen. Om en reserv eller en ändring måste stängas av efter en förebyggande distribution, kan den göras via systemet för förhandsversionen för att undvika ytterligare fel.
-- **Synkroniserad sandbox beteckning** – Mindre än 20 procent av kunderna har idag flera problem och har en distribution där versionen matchar produktionen som hjälp vid felsökning. Om en kund använder en sandbox för att testa en nyare version än produktionen kommer den sandbox att få kvalitetsuppdateringar av den nyare versionen.
+- **Synkroniserad sandbox beteckning** – förskjuten uppdatering till en vald isolerad sandbox-miljö tillsammans med produktion stöds inte just nu. Alla nivå-2- och nivå-3-tjänster får förebyggande uppdateringar minst 7 dagar före produktionsmiljön i ett Lifecycle Services-projekt. Detta gäller endast för kundmiljöer som inte har tillhandahållits undantag på grund av lagstadgade eller andra juridiska orsaker.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Vad är det för fel på sammanslagningen som gäller för kvalitetsuppdateringar?
 
-Distributionen av förebyggande kvalitetsuppdateringar för kvalitetsmiljöer förväntas börja i slutet av september eller oktober 2022 för kunder i Azure offentligt moln. Utvärderingsmiljöer börjar också att motta förebyggande uppdatering vid den tidpunkten. I september skickas ett meddelande till varje kund om det förväntade schemat för deras miljöer. Undantag till den förebyggande uppdaterade distributionsprocessen tillåts bara för FDA-reglerade kunder. Vi arbetar fortfarande med hur reglerade miljöer och myndighets molnbaserade kunder ska hanteras.
+Distributionen av förebyggande kvalitetsuppdateringar för kvalitetsmiljöer börjar i september eller oktober 2022 för kunder i Azure offentligt moln. Den 1 januari 2023 kommer vi att slutföra 99 % av koderna till förebyggande kvalitetsuppdateringar.
 
-Under den kommande sexmånadersperioden kommer vi gradvis att öka andelen sandbox-miljöer som får proaktiva uppdateringar, tills alla utsedda miljöer är inkluderade och går vidare till uppdatering av produktionsmiljöer. Under hela perioden kommer vi att övervaka att distributionsprocessen är sömlös och att vi får tillbaka målet att inte avbryta nyttolast.
+Undantag till den förebyggande uppdaterade distributionsprocessen tillåts bara för FDA-reglerade kunder. Vi arbetar fortfarande med hur reglerade miljöer och myndighets molnbaserade kunder ska hanteras. 
 
 Eftersom kunderna regelbundet får mindre nyttolaster, förväntar vi oss att processen med nuvarande situation blir enklare. Vi justerar frekvensen för uppdatering av distributionen när vi demonstrerar möjligheten att köra processen utan störningar. Denna process fungerar redan effektivt för vår Dataverse plattform och våra program och levererar de förväntade förbättringarna av servicekvalitet. Vi ser fram emot att ta samma steg framåt för appar för ekonomi och drift.
 
+
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>När startas kvalitetsuppdateringar för produktionsmiljöer?
-I den här tiden är kvalitetsuppdateringar bara mål för kvalitetsnormer. Vi uppdaterar det här utrymmet med ett startdatum för produktionsmiljöer när vi har fler data och värden från förebyggande uppdateringar för åtgärder för att bedöma beredskapen för prod.
+Under de första månaderna av 2023, med början den 15 januari – kommer vi att börja integrera produktionsmiljöer till proaktiva uppdateringar och gradvis öka andelen produktionsmiljöer som får proaktiva uppdateringar. Vi tänker bara hitta en produktionsmiljö i ett Lifecycle Services-projekt där miljöerna redan finns tillgängliga för att ta emot förebyggande uppdateringar. Innan en uppdatering görs får kunder med egen tillverkningsmiljöer information via meddelandecenter eller Lifecycle Services-bannern. Nedan finns en fullständig tidsplan med förebyggande kvalitetsuppdateringar för sandbox-miljöer och produktionsmiljöer under 2023.
 
 ## <a name="what-is-the-schedule-for-sandbox-proactive-quality-updates"></a>Vad är schemat för förebyggande kvalitetsuppdateringar av sandbox?
 Mer information om mörka timmar för varje region finns i [Vilka är de planerade underhållsfönstren per region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
-
-### <a name="proactive-quality-update-release-10028"></a>Förebyggande kvalitetsuppdateringar: 10.0.28
-**Programversion: 10.0.1265.89**  
-**Motsvarande senaste KB-artikel: 745340**
-
-| Station | Regioner | Slutfört schema| Kommande schema för sandbox
-|---|---|---|---|
-| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 15 september till 18 september 2022, 19 september till 22 september 2022 och 7 oktober till 10 oktober 2022 | 25 oktober till 28 oktober 2022 |
-| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 25 september till 28 september 2022 och 7 oktober till 10 oktober 2022 | 25 oktober till 28 oktober 2022 |
-| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 26 september till 29 september 2022 och 7 oktober till 10 oktober 2022 | 25 oktober till 28 oktober 2022 |
-| Station 4 | Europa, norra, USA, centrala, USA, västra | 28 september till 1 oktober 2022 och 7 oktober till 10 oktober 2022 | 25 oktober till 28 oktober 2022 |
-| Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt | Inte schemalagt |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Förebyggande kvalitetsuppdateringar: 10.0.29
 **Programversion: 10.0.1326.70**  
@@ -109,23 +106,83 @@ Mer information om mörka timmar för varje region finns i [Vilka är de planera
 
 | Station | Regioner | Slutfört schema | Kommande schema för sandbox|
 |---|---|---|---|
-| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 14 oktober till 17 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022 | 5 december till 8 december|
-| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 15 oktober till 18 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022 | 5 december till 8 december|
-| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 16 oktober till 19 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022 | 5 december till 8 december|
-| Station 4 | Europa, norra, USA, centrala, USA, västra | 17 oktober till 20 oktober 2022, 2 november till 5 november 2022, 15 november till 18 november 2022 | 5 december till 8 december|
+| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 14 oktober till 17 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022, 5 december till 8 december 2022 | 2 januari till 5 januari 2023 |
+| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 15 oktober till 18 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022, 5 december till 8 december 2022 | 2 januari till 5 januari 2023 |
+| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, västra, USA, östra, Förenade Arabemiraten, centrala | 16 oktober till 19 oktober 2022, 2 november till 5 november 2022, 13 november till 16 november 2022, 5 december till 8 december 2022 | 2 januari till 5 januari 2023 |
+| Station 4 | Europa, norra, USA, centrala, USA, västra | 17 oktober till 20 oktober 2022, 2 november till 5 november 2022, 15 november till 18 november 2022, 5 december till 8 december 2022 | 2 januari till 5 januari 2023 |
 | Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt | Inte schemalagt |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Förebyggande kvalitetsuppdateringar: 10.0.30
 **Appversion: 10.0.1362.77**
 **Motsvarande senaste KB artikel: 767597**
 
-| Station | Regioner | Kommande schema för sandbox |
+| Station | Regioner | Slutfört schema | Kommande schema för sandbox |
+|---|---|---|---|
+| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 1 december till 4 december 2022 |  13 december till 16 december 2022 | 
+| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 2 december till 5 december 2022 |  13 december till 16 december 2022 | 
+| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, norra, USA, östra, Förenade Arabemiraten, centrala | 3 december till 6 december 2022 |  13 december till 16 december 2022 | 
+| Station 4 | Europa, västra, USA, centrala, USA, västra | 4 december till 7 december 2022 |  13 december till 16 december 2022 | 
+| Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt | Inte schemalagt |
+
+### <a name="proactive-quality-update-calendar-year-2023-schedule"></a><a name="schedule"></a> Planering för förebyggande kvalitetsuppdatering per kalenderår 2023
+
+#### <a name="stations-to-region-mapping"></a><a name="Stations-Regions"></a> Stationer till regionmappning
+
+| Stationer | Regioner |
+|---|---|
+| Station 1 | Ska definieras |
+| Station 2 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra |
+| Station 3 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien |
+| Station 4 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, norra, USA, östra, Förenade Arabemiraten, centrala |
+| Station 5 | Europa, västra, USA, centrala, USA, västra |
+| Station 6 | DoD, Government Community Cloud, Kina |
+
+
+> [!IMPORTANT]
+> Det här är en tidsplan på hög nivå för år 2023. För en mer konkret tidsplan kan du läsa exemplet nedan för 10.0.30 version-2. Det exakta schemat och appversionen uppdateras 7 dagar innan kvalitetsuppdatering av versionsflöde startas.
+
+> [!Note]
+> Endast de egenbyggda produktionsmiljöerna får uppdateringen för 10.0.30 version-2 versionsflöde, registrerade miljöer får explicit kommunikation.
+
+| Kvalitetsuppdatering versionsflöde | Frisläpp | Versionsflödets varaktighet |
 |---|---|---|
-| Station 1 | Kanada, centrala, Kanada, östra, Frankrike, centrala, Indien, centrala, Norge, östra, Schweiz, västra | 1 december till 4 december 2022 |
-| Station 2 | Frankrike, södra, Indien, södra, Norge, västra, Schweiz, norra, Sydafrika, norra, Australien, östra, Storbritannien, södra, Förenade Arabemiraten Nord, Japan, östra, Australien, sydöstra, Sydostasien | 2 december till 5 december 2022 |
-| Station 3 | Asien, östra, Storbritannien, västra, Japan, västra, Brasilien, södra, Europa, norra, USA, östra, Förenade Arabemiraten, centrala | 3 december till 6 december 2022 |
-| Station 4 | Europa, västra, USA, centrala, USA, västra | 4 december till 7 december 2022 |
-| Station 5 | DoD, Government Community Cloud, Kina | Inte schemalagt |
+| 10.0.30 version-2 | 16 december 2022 | 2 januari till 29 januari 2023 |
+| 10.0.30 version-3 | 13 januari 2023 | 30 januari till 25 februari 2023 |
+| 10.0.30 version-4 | 24 februari 2023 | 6 mars till 8 april 2023 |
+| 10.0.31 version-1 | 3 februari 2023 | 13 februari 2023 till 18 mars 2023|
+| 10.0.31 version-2 | 3 mars 2023 | 13 mars till 15 april 2023|
+| 10.0.31 version-3 | 14 april 2023 | 24 april 2023 till 27 maj 2023|
+| 10.0.32 version-1 | 31 mars 2023 | 10 april 2023 till 13 maj 2023|
+| 10.0.32 version-2 | 28 april 2023 | 8 maj 2023 till 10 juni 2023|
+| 10.0.32 version-3 | 26 maj 2023 | 5 juni 2023 till 8 juli 2023|
+| 10.0.33 version-1 | 28 april 2023 | 8 maj 2023 till 10 juni 2023|
+| 10.0.33 version-2 | 26 maj 2023 | 5 juni 2023 till 8 juli 2023|
+| 10.0.33 version-3 | 14 juli 2023 | 24 juli till 26 augusti 2023|
+| 10.0.34 version-1 | 23 juni 2023 | 3 juli till 5 augusti 2023|
+| 10.0.34 version-2 | 21 juli 2023 | 31 juli till 2 september 2023|
+| 10.0.34 version-3 | 1 september 2023 | 11 september till 14 oktober 2023|
+| 10.0.35 version-1 | 28 juli 2023 | 7 augusti till 9 september 2023|
+| 10.0.35 version-2 | 25 augusti 2023 | 4 september till 7 oktober 2023|
+| 10.0.35 version-3 | 20 oktober 2023 | 30 oktober till 16 december 2023|
+| 10.0.36 version-1 | 29 september 2023 | 9 oktober 2023 till 11 november 2023|
+| 10.0.36 version-2 | 27 oktober 2023 | 6 november till 16 december 2023|
+| 10.0.36 version-3 | 12 januari 2024 | 22 januari 2023 till 24 februari 2024|
+| 10.0.37 version-1 | 3 november 2023 | 13 november 2023 till 6 januari 2024|
+| 10.0.37 version-2 | 30 december 2023 | 8 januari 2024 till 10 februari 2024|
+| 10.0.37 version-3 | 27 januari 2024 | 5 februari 2024 till 9 mars 2024|
+| 10.0.37 version-4 | 23 februari 2024 | 4 mars till 6 april 2024|
+
+### <a name="proactive-quality-update-upcoming-10030-release-2-train-schedule"></a><a name="schedule"></a> Kommande förebyggande kvalitetsuppdateringar 10.0.30 version-2 versionsflöde
+**Programversion: 10.0.1362.99**
+
+| Stationer | Kommande schema för sandbox | Kommande tidsplan för produktion |
+|---|---|---|
+| Station 1 | NA | NA |
+| Station 2 | 2 januari till 5 januari 2023 | 21 januari till 22 januari 2023 |
+| Station 3 | 3 januari till 6 januari 2023 | 28 januari till 29 januari 2023 |
+| Station 4 | 9 januari till 12 januari 2023 | NA |
+| Station 5 | 16 januari till 19 januari 2023 | NA |
+| Station 6 | NA | NA |
 
 > [!IMPORTANT] 
 > Fem dagar i förväg uppdaterar Microsoft föregående schema och skickar ett meddelande till de miljöer som har tidsplanerats att få dessa kvalitetsuppdateringar. Föregående schema kan endast tillämpas på de miljöer som har meddelats om en kommande uppdatering. Mer information om mörka timmar för varje region finns i [Vilka är de planerade underhållsfönstren per region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

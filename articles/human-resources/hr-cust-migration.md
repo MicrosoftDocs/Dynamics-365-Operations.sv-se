@@ -2,7 +2,7 @@
 title: Dynamics 365 Human Resources kundmigrering till infrastrukturen för ekonomi och drift
 description: Den här artikeln beskriver kundmigrering av Microsoft Dynamics 365 Human Resources till ekonomi- och driftsinfrastrukturen.
 author: twheeloc
-ms.date: 10/25/2022
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
-ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
+ms.openlocfilehash: ab9680c2d1caa08c15aed325f4153aac6eae63c3
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2022
-ms.locfileid: "9760373"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831731"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources kundmigrering
 
@@ -43,7 +43,7 @@ Kundmigrering är en "Lift and Shift-migrering" (rörelse) för en kunddatabas t
  - Kopiera den befintliga Dataverse-miljön, som är länkad till det fristående programmet Personal, till den miljö du skapade i det föregående steget.
 
 > [!NOTE]
-> När du lägger till en databas måste alternativet **Aktivera Dynamics 365-program** vara inställt på **Ja**. Mer information finns i [Förbereda en Power Platform miljö](hr-cust-migration.md#prepare-a-power-platform-environment)
+> När du lägger till en databas måste alternativet **Aktivera Dynamics 365-program** vara inställt på **Ja**. Mer information finns i [Förbereda en Power Platform miljö](hr-cust-migration.md#prepare-a-power-platform-environment).
 
 ### <a name="dataverse-capacity"></a>Dataverse-kapacitet
 
@@ -67,7 +67,7 @@ Om du vill skapa ett nytt projekt, följ dessa steg:
 7. Markera kryssrutan om du vill acceptera villkoren.
 8. Markera **Skapa**.
 
-När du har skapat en ny Lifecycle Services-projekt följer du dessa steg och konfigurerar den.
+När du har skapat en ny Lifecycle Services-projekt följer du dessa steg och konfigurerar projektet.
 
 1. Välj **Projektregistrering** för att slutföra projektregistreringen. Mer information finns i [Projektregistrering](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md).
 
@@ -158,6 +158,7 @@ När du är klar med migrering och validering av en sandbox-miljö, följer du d
 
 - Prenumerationsberäkning bör vara slutförd.
 - Go-live [beredskapsbedömning](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) ska ha slutförts.
+- Användaren som initierar produktionsmigreringen i Lifecycle Services ska ha en systemadministratörsroll i Power Platform. 
 
 #### <a name="migrate-the-production-environment"></a>Migrera produktionsmiljön
 

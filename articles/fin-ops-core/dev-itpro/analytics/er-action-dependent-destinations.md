@@ -2,7 +2,7 @@
 title: Konfigurera åtgärdsberoende ER-destinationer
 description: Det här ämnet beskriver hur du konfigurerar åtgärdsberoende destinationer för ett ER-format (elektronisk rapportering) som har konfigurerats för att generera utgående dokument.
 author: kfend
-ms.date: 02/09/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: 10.0.17
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
-ms.openlocfilehash: babd123e4c8007e3adc545bb92a2dc83bab93f4e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 80a432a431891c02e4bf5c71cfe2bd9642c41c75
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286260"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843808"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurera åtgärdsberoende ER-destinationer
 
@@ -32,7 +32,7 @@ I Microsoft Dynamics 365 Finance **version 10.0.17 och senare**, kan ett ER-form
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Gör åtgärdsberoende ER-destinationer tillgängliga
 
-För att konfigurera åtgärdsberoende ER-destinationer i den aktuella Finance-instansen och aktivera [ny](er-apis-app10-0-17.md) ER API, öppna arbetsytan [Funktionshantering](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) och aktivera funktionen **Konfigurera specifika ER-destinationer som ska användas för olika PM-åtgärder**. Att använda konfigurerade ER-destinationer för rapporter [specifika](#reports-list-wave1) vid körning, ska du aktivera funktionen **Flödesutmatning av PM-rapporter baserade på ER-destinationer som är specifika för användaråtgärder (cykel 1)**.
+För att konfigurera åtgärdsberoende ER-destinationer i den aktuella Finance-instansen och aktivera [ny](er-apis-app10-0-17.md) ER API, öppna arbetsytan [Funktionshantering](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) och aktivera funktionen **Konfigurera specifika ER-destinationer som ska användas för olika PM-åtgärder**. Att använda konfigurerade ER-destinationer för rapporter specifika vid körning, ska du aktivera funktionen **Flödesutmatning av PM-rapporter baserade på ER-destinationer som är specifika för användaråtgärder (cykel 1)**.
 
 ## <a name="configure-action-dependent-er-destinations"></a>Konfigurera åtgärdsberoende ER-destinationer
 
@@ -89,6 +89,51 @@ Följande illustration visar ett exempel på dialogrutan **destinationer i elekt
 > [!NOTE]
 > Om du konfigurerat ER-destinationer för flera komponenter i det körande ER-formatet, erbjuds ett alternativ separat för alla konfigurerade komponenter i ER-formatet.
 
+Om flera ER-format används som rapportmallar för det valda dokumentet visas alla ER-destinationer för alla tillämpliga ER-rapportmallar i dialogrutan och är tillgängliga för manuell justering vid körning.
+
+Om inga rapportmallar för [SQL Server Reporting Services (SSRS)](SSRS-report.md) är tillämpliga på det valda dokumentet är standardurvalet för destination för utskriftshantering dynamiskt dolt.
+
+Från och med ekonomiversion **10.0.31** kan du manuellt ändra de tilldelade ER-destinationerna vid körning för följande affärsdokument:
+
+- Kontoutdrag för kund
+- Räntefaktura
+- Kravbrevsnotering
+- Betalningsavi för kund
+- Betalningsavi för leverantör
+
+För att aktivera möjligheten att ändra ER-destinationer under körning, aktivera funktionen **Tillåt ER-destinationer vid körning i arbetsytan** i [funktionshantering](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace).
+
+> [!IMPORTANT]
+> För rapporterna **Betalningsavi för kund** och **Betalningsavi för leverantör** är möjligheten att manuellt ändra ER-destinationer endast tillgänglig om förhandsversion **ForcePrintJobSettings** är aktiverad.
+
+[![Justera ER-destinationer vid körning.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+> [!NOTE]
+> När alternativet **Använd destination för utskriftshantering** är inställt på **Ja**, använder systemet de standarddestinationer för ER som har konfigurerats för specifika ER-rapporter. Alla manuella ändringar som görs i dialogrutan ignoreras. Ställ in destinationsalternativ för **Använd destination för utskriftshantering** till **Nej** om du vill bearbeta dokument till de ER-destinationer som definieras i dialogrutan omedelbart innan du kör rapporterna.
+
+Följande affärsdokument förutsätter inte att användaren explicit väljer en åtgärd när de körs:
+
+- Kontoutdrag för kund
+- Räntefaktura
+- Kravbrevsnotering
+- Betalningsavi för kund
+- Betalningsavi för leverantör
+
+Med hjälp av följande logik kan du avgöra vilken åtgärd som ska användas medan de föregående rapporterna bearbetas:
+
+- Om förhandsversionen **ForcePrintJobSettings** har aktiverats:
+
+    - Om alternativet **Använd destination för utskriftshantering** anges till **Ja** kommer åtgärden **Skriv ut** att användas.
+    - Om alternativet **Använd destination för utskriftshantering** anges till **Nej** kommer åtgärden **Vy** att användas.
+
+- Om förhandsversionen **ForcePrintJobSettings** har aktiverats:
+
+    - Om alternativet **Använd destination för utskriftshantering** anges till **Ja**, används åtgärden **Skriv ut** för rapporterna **Betalningsavi för kund** och **Betalningsavi för leverantör**.
+    - Om alternativet **Använd destination för utskriftshantering** anges till **Nej** används standard SSRS-rapportmallen alltid för rapporterna **Betalningsavi för kund** och **Betalningsavi för leverantör** oavsett vilka ER-inställningar som har konfigurerats.
+    - Åtgärden **Skriva ut** används alltid för rapporterna **Kontoutdrag för kund**, **Räntefaktura** och **Kravbrevsnotering**.
+
+För föregående logik kan åtgärderna **Skriv ut** eller **Visa** användas för att konfigurera åtgärdsberoende ER-rapportdestinationer. Vid körning filtreras bara ER-destinationer som har konfigurerats för en viss åtgärd i dialogrutan.
+
 ## <a name="verify-the-provided-user-action"></a>Kontrollera den angivna användaråtgärden
 
 Du kan kontrollera vilken användaråtgärd som eventuellt vidtas för att köra ER-formatet när du utför en viss användaråtgärd. Denna verifiering är viktig när du måste konfigurera åtgärdsberoende ER-destinationer, men du är inte säker på vilken användaråtgärdskod, om det finns någon sådan, tillhandahålls. Till exempel när du börjar lägga upp en fritextfaktura och ställer in alternativet **Skriv ut faktura** till **Ja** i dialogrutan **Bokför fritextfaktura** kan du ange alternativet **Använd destination för utskriftshantering** till **Ja** eller **Nej**.
@@ -104,20 +149,6 @@ Följ dessa steg för att verifiera den användaråtgärdskod som finns.
 7. Granska loggposterna som måste innehålla den post som presenterar den angivna användaråtgärdskoden, om någon åtgärd har tillhandahållits för ER-formatkörningen.
 
     ![Sidan Körningsloggar för elektronisk rapportering som innehåller information om den användaråtgärdskod som har angetts för den filtrerade körningen av ett ER-format.](./media/er-destination-action-dependent-03.png)
-
-## <a name=""></a><a name="reports-list-wave1">Lista över affärsdokument (cykel 1)</a>
-
-Följande lista över affärsdokument styrs av funktionen **Flödesutmatning av PM-rapporter baserade på ER-destinationer som är specifika för användaråtgärder (cykel 1)**:
-
-- Kundfaktura (fritextfaktura)
-- Kundfaktura (försäljningsfaktura)
-- Inköpsorder
-- Inköpsförfrågan för inköpsorder
-- Bekräftelse av försäljningsorder
-- Kravbrevsnotering
-- Räntefaktura
-- Betalningsavi för leverantör
-- Anbudsförfrågan
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

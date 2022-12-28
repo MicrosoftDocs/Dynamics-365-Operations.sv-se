@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: bbb5f3d4c61907243bed404f3ab7bea05c78b1c0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0e1092c0c5c49c6a99dd441c75f545fc831c0b03
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276465"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831568"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Välja mellan Store Commerce och molnbaserad kassa
 
@@ -71,7 +71,7 @@ Förutom en plattform och formulärfaktor måste detaljhandlare också välja et
 |----------------------------|---------------------|-------------------|-------------------|
 | Store Commerce för Windows | Moln eller RSSU       | Ja               | Ja               |
 | Store Commerce för Android | Moln eller RSSU       | Nej                | Ja               |
-| Store Commerce för iOS     | Moln eller RSSU       | Nej                | Nej                |
+| Store Commerce för iOS     | Moln eller RSSU       | Nej                | Ja               |
 | Cloud POS                  | Moln eller RSSU       | Nej                | Nej                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
@@ -90,7 +90,7 @@ Store Commerce för Windows stödjer offlineläge. I offline-läge kan POS forts
 |----------------------------|----------------|---------------------|--------------------|
 | Store Commerce för Windows | Ja            | Ja                 | Ja                |
 | Store Commerce för Android | Nej             | Ja                 | Ja                |
-| Store Commerce för iOS     | Nej             | Nej                  | Ja                |
+| Store Commerce för iOS     | Nej             | Ja                 | Ja                |
 | Cloud POS                  | Nej             | Nej                  | Ja                |
 
 Mer information om maskinvarustationer finns [Konfiguration och installation av Retail-maskinvarustationer](retail-hardware-station-configuration-installation.md).

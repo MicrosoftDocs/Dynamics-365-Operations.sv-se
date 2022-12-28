@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
-ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
+ms.openlocfilehash: 1333881f80c735794784831d4042bfe7d070b796
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714773"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838483"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta Warehouse Management-mobilappen
 
@@ -58,10 +58,10 @@ Det enklaste sättet att installera programmet på en enskild enhet är att inst
 
 Ett alternativ till att installera från en appbutik är att hämta programmet från Microsoft App Center. App Center innehåller avinstallationsbara paket som du kan separat inläsning. Utöver den aktuella versionen kan du även hämta tidigare versioner med App Center, och du kan förse förhandsgranskningsversioner med kommande funktioner som du kan prova. Om du vill hämta aktuella, tidigare eller förhandsgranskningsversioner av mobilapplikationen Lagerstyrning från Microsoft App Center använder du någon av följande länkar:
 
-- **Windows (UWP):** [Lagerstyrning (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+- **Windows (UWP):** [Lagerstyrning (Windows)](https://aka.ms/wma-windows-official-release)  
     För instruktioner om hur du installerar ett nedladdat paket på en Windows-enhet och sedan konfigurerar nödvändiga certifikat, se [Installera en version från App Center](/appcenter/distribution/installation).
 
-- **Android:** [distributionslagerhantering (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+- **Android:** [distributionslagerhantering (Android)](https://aka.ms/wma-android-official-release)  
     Om du laddar ner en förhandsgranskningsversion krävs några extra steg för att installera den. Mer information finns i [Testa Android-appar](/appcenter/distribution/testers/testing-android).
 
 Information om hur du installerar ett bygge som hämtats från App Center finns i [Installera en version](/appcenter/distribution/installation).

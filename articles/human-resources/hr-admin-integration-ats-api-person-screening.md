@@ -2,7 +2,7 @@
 title: Personkontroller
 description: I denna artikel beskrivs kontrollentiteten Person för Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e9b2bbda8f8191f592462f4fbd1902e7274cf7f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3c316e0381f4d407ed7c4c39b5949717b71477bd
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907652"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831901"
 ---
 # <a name="person-screening"></a>Personkontroller
 
@@ -44,6 +44,7 @@ Denna entitet beskriver gallringningar som en kandidat har klarat eller måste k
     "mshr_status": Int,
     "mshr_partynumber": "String",
     "mshr_screeningtypeid": "String",
+    "_mshr_fk_screeningtype_id_value": "Guid",
     "mshr_primaryfield": "String",
     "_mshr_fk_person_id_value": "Guid",
     "mshr_hcmpersonscreeningentityid": "Guid",
@@ -55,15 +56,17 @@ Denna entitet beskriver gallringningar som en kandidat har klarat eller måste k
 
 | Egenskap<br>**Fysiskt namn**<br>**_Typ_** | Använd | beskrivning |
 | --- | --- | --- |
-| **Entitets-ID för persongallring**<br>mshr_hcmpersonscreeningentityid<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Systemgenererad | Unik, primär identifierare för posten för persongallring. |
+| **Anteckningar**<br>mshr_note<br>*Sträng* | Skrivskydd<br>Valfritt | Anteckningar att användas av anställande chefer och rekryterare. |
+| **Krävs senast**<br>mshr_requiredby<br>*Datum/tid* | Skrivskydd<br>Valfritt | Det datum då gallringen måste ha genomförts. |
+| **Status**<br>mshr_status<br>*alternativuppsättningen mshr_hcmcompletionstatus*|Skrivskydd<br>Obligatoriskt | Anger kandidatens status för gallring. |
 | **Partnummer**<br>mshr_partynumber<br>*Sträng* | Skrivskydd<br>Obligatoriskt | Det partnummer (personnummer) som är kopplat till kandidaten. |
-| **Värde för personligt ID**<br>_mshr_fk_person_id_value<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Sekundärnyckel: mshr_dirpersonentityid för mshr_dirpersonentity | Den systemgenererade, unika identifieraren för entitetsposten för parten (personen). |
 | **ID för gallringstyp**<br>mshr_screeningtypeid<br>*Sträng* | Skrivskydd<br>Obligatoriskt<br>Sekundärnyckel: Gallringstyp | Identifieraren för den gallringstyp som angetts i Personal. |
 | **ID-värde för gallringstyp**<br>_mshr_fk_screeningtype_id_value<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Sekundärnyckel: mshr_hcmscreeningtypeentityid för mshr_hcmscreeningtypeentity | Systemgenererad identifierare för gallringstypposten i den associerade entiteten. |
-| **Krävs senast**<br>mshr_requiredby<br>*Datum/tid* | Skrivskydd<br>Valfritt | Det datum då gallringen måste ha genomförts. |
-| **Status**<br>mshr_status<br>*alternativuppsättningen mshr_hcmcompletionstatus*<br>Skrivskydd<br>Obligatoriskt | Anger kandidatens status för gallring. |
+| **Primärt fält**<br>mshr_primaryfield<br>*Sträng* |  Skrivskydd<br>Obligatoriskt | Fält som används som identifierare för entitetsposten. |
+| **Värde för personligt ID**<br>_mshr_fk_person_id_value<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Sekundärnyckel: mshr_dirpersonentityid för mshr_dirpersonentity | Den systemgenererade, unika identifieraren för entitetsposten för parten (personen). |
+| **Entitets-ID för persongallring**<br>mshr_hcmpersonscreeningentityid<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Systemgenererad| Unik, primär identifierare för posten för persongallring. |
 | **Slutfört den**<br>mshr_completeddate<br>*Datum/tid* | Skrivskydd<br>Valfritt | Det datum då gallringningen slutfördes. |
-| **Anteckningar**<br>mshr_note<br>*Sträng* | Skrivskydd<br>Valfritt | Anteckningar att användas av anställande chefer och rekryterare. |
+
 
 ## <a name="see-also"></a>Se även
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Release 10.0.11
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
-ms.openlocfilehash: 7509092d353d75cefbbd97393d45c078530a21bd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 61bc5e3f36bd2ae6e38ed0f511d70a7ae62e045c
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291367"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9832042"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Felsöka datakällor i ett kört ER-format för analys av dataflöde och omvandling
 
@@ -28,7 +28,7 @@ ms.locfileid: "9291367"
 
 [!include[banner](../includes/preview-banner.md)]
 
-När du [konfigurerar](tasks/er-format-configuration-2016-11.md) en elektronisk rapportlösning (ER) för att generera elektroniska dokument, definierar du den metod som används för att hämta data från programmet och anger den i genererad utdata. För att du ska kunna göra livscykelsupport för ER-lösningen mer effektiv bör din lösning bestå av en ER datamodell och dess mappnings-komponenter, och också ett återställningsformat med dess mappningskomponenter så att modellmappningen är programspecifik, medan andra komponenter fortfarande är programagnostiska. Därför kan flera ER-komponenter påverka processen att ange data i den genererade utmatningen.
+När du [konfigurerar](tasks/er-format-configuration-2016-11.md) en elektronisk rapportlösning (ER) för att generera elektroniska dokument, definierar du den metod som används för att hämta data från programmet och anger den i genererad utdata. För att du ska kunna göra livscykelsupport för ER-lösningen mer effektiv bör din lösning bestå av en ER datamodell och dess mappnings-komponenter, och också ett återställningsformat  med dess mappningskomponenter så att modellmappningen är programspecifik, medan andra komponenter fortfarande är programagnostiska. Därför kan flera ER-komponenter påverka processen att ange data i den genererade utmatningen.
 
 Ibland ser data i den genererade utmatningen annorlunda ut än samma data i programdatabasen. I dessa fall vill du ta reda på vilken ER-komponent som ansvarar för dataomvandlingen. Funktionen för felsökning av ER-datakällan minskar markant både tid och kostnad för undersökningen. Du kan avbryta körningen av ett ER-format och öppna gränssnittet för datakällans felsökning. Där kan du bläddra bland tillgängliga datakällor och välja en enskild datakälla att köra. Denna manuella körning simulerar körning av datakällan när ett ER-format körs på riktigt. Resultatet visas på en sida där du kan analysera de data som har tagits emot.
 

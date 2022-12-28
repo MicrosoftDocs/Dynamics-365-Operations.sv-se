@@ -2,7 +2,7 @@
 title: Aktivera flera leveranssätt genom upphämtning för kundorder
 description: I denna artikel beskrivs funktionerna i Microsoft Dynamics 365 Commerce som gör att du kan skapa kundorder för upphämtning i en butik.
 author: hhainesms
-ms.date: 06/07/2021
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,29 +12,29 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e4d8883b3dc1c4a0e12bcb00b6441f76d73da92e
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858918"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831595"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktivera flera leveranssätt genom upphämtning för kundorder
 
 [!include [banner](includes/banner.md)]
 
 
-I Microsoft Dynamics 365 Commerce version 10.0.16 och senare kan organisationer definiera flera leveranssätt som konsumenter eller säljmedarbetare kan välja mellan när de skapar en order som ska hämtas i en butik. På så sätt kan organisationer erbjuda sina konsumenter flera upphämtningsalternativ. Numera låter många återförsäljare exempelvis sina konsumenter välja mellan upphämtning i butik eller drive in-upphämtning för sina order. Commerce stöder konfiguration av dessa olika leveranssätt genom upphämtning. Användarna kan sedan dra nytta av dem när de skapar kundorder i valfr Commerce-kanal som stöds (näthandel, kundtjänst eller butik).
+I Microsoft Dynamics 365 Commerce kan organisationer definiera flera leveranssätt som konsumenter eller säljmedarbetare kan välja mellan när de skapar en order som ska hämtas i en butik. På så sätt kan organisationer erbjuda sina konsumenter flera upphämtningsalternativ. Numera låter många återförsäljare exempelvis sina konsumenter välja mellan upphämtning i butik eller drive in-upphämtning för sina order. Commerce stöder konfiguration av dessa olika leveranssätt genom upphämtning. Användarna kan sedan dra nytta av dem när de skapar kundorder i valfr Commerce-kanal som stöds (näthandel, kundtjänst eller butik).
 
 ## <a name="enable-and-configure-pickup-delivery-modes"></a>Aktivera och konfigurera leveranssätt
 
-Om du vill använda den här funktionen ska du aktivera **Stöd för flera upphämtnings-leveranssätt** i arbetsytan **Funktionshantering** i Commerce headquarters. När du har aktiverat funktionen krävs ytterligare konfiguration.
+Funktionen **Stöd för flera upphämtnings-leveranssätt** i arbetsytan **Funktionshantering** i Commerce headquarters är obligatorisk och bör aktiveras i miljön.
 
-I Commerce version 10.0.15 och tidigare kan organisationer endast definiera ett enda leveranssätt som det avsedda upphämtnings-leveranssättet. Denna definition görs på sidan **Commerce-parametrar**. I version 10.0.16 och senare, när du aktiverar funktionen **Stöd för flera olika upphämtnings-leveranssätt** kopieras det leveranssätt som tidigare angavs som upphämtnings-leveranssätt på sidan **Commerce-parametrar** automatiskt till den nya konfigurationen för upphämtnings-leveranssättparametrar.
+Om du tidigare definierat ett leveranssätt för upphämtning på sidan **Handelsparametrar** visas det läget i den aktuella konfigurationen för leveranssätt för upphämtning.
 
 ![Leveranssätt för hämtning på parametersidan för Commerce.](media/multiplepickupparameter.png)
 
-När du har aktiverat funktionen **Stöd för flera leveranssätt genom upphämtning** kan du definiera flera leveranssätt genom upphämtning i rutnätet **Leveranssätt: upphämtning** på snabbfliken **Leveranssätt**, på fliken **Kundorder** på sidan **Parametrar för Commerce**.
+Du kan definiera flera leveranssätt för upphämtning i rutnätet **Leveranssätt: upphämtning** på fliken **Handelsparametrar** > **Kundorders** > snabbfliken **Leveranssätt**.  
 
 Fälten **Leveranssätt: utlämning** och **Leveranssätt: elektroniskt**, samt alternativet **Visa endast speditörslägesalternativ för leveransorder** har flyttats till denna snabbflik.
 
@@ -47,8 +47,6 @@ När du har definierat de ytterligare leveranssätten för upphämtning lägger 
 > [!NOTE]
 > Förutom det befintliga leveranssättet för upphämtning som kopieras till rutnätet **Leveranssätt: upphämtning** när du aktiverar funktionen **Stöd för flera leveranssätt genom upphämtning** bör du konfigurera nya leveranssätt för varje ytterligare leveranssätt genom upphämtning som du skapar. När du lägger till leveranssätt i rutnätet **Leveranssätt: upphämtning** validerar Commerce huruvida någon aktiv och öppen försäljningsrad redan använder dem. Om någon öppen försäljningsrad hittas visas ett felmeddelande. Leveranssätt betraktas inte som leveranssätt genom upphämtning förrän alla öppna försäljningsrader där de används har stängts (antingen fakturerats eller annullerats).
 
-> [!IMPORTANT]
-> När du har definierat mer än ett leveranssätt genom upphämtning på sidan **Commerce-parametrar** blir funktionen **Stöd för flera leveranssätt genom upphämtning** obligatorisk och kan inte längre stängas av. Om du måste stänga av funktionen tar du bort alla leveranssätt genom upphämtning från rutnätet **Leveranssätt: upphämtning**. När endast ett leveranssätt genom upphämtning har definierats anses funktionen inte längre vara obligatorisk och kan inaktiveras.
 
 ### <a name="e-commerce-site-configurations"></a>Konfigurationer för näthandelssajt
 

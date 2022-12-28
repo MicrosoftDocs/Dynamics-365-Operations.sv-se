@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b2f5f56e757e89339c12fd41c59848b4c987a2f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846869"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831844"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Ekonomisk konsolidering och valutaregistrering – översikt
 
@@ -64,7 +64,7 @@ Nedan följer några konsolideringsscenarier som Konsolidera online stöder:
 - Konsolideringar som involverar flera rapportvalutor
 
 ## <a name="legal-entity-setup"></a>Inställning av juridisk person
-Innan du bearbetar en konsolidering måste du ställa in den juridiska personen. Du kan köra konsolideringen så många gånger som du behöver och alla data som ska konverteras från källföretagets redovisningsvaluta till den valuta som har definierats för konsolideringsföretaget. Därför, för följande organisationsstruktur, om du först måste konvertera alla amerikanska företag till amerikanska dollar (USD) och sedan till euro (EUR), valutan för det överordnade företaget, måstedu ah ha minst två konsolideringsföretag.
+Innan du bearbetar en konsolidering måste du ställa in den juridiska personen. Du kan köra konsolideringen så många gånger som du behöver och alla data som ska konverteras från källföretagets redovisningsvaluta eller rapporteringsvaluta till den valuta som har definierats för konsolideringsföretaget. Därför, för följande organisationsstruktur, om du först måste konvertera alla amerikanska företag till amerikanska dollar (USD) och sedan till euro (EUR), valutan för det överordnade företaget, måstedu ah ha minst två konsolideringsföretag.
 
 ![Organisationsstruktur.](./media/organizational-structure.png "Organisationsstruktur")
 
@@ -178,8 +178,8 @@ Nedan följer några konsolideringsscenarier som Ekonomisk rapportering stöder:
 - Konsolideringar som involverar flera rapportvalutor
 - Konsolideringar av affärsenhet
 
-## <a name="generating-consolidated-financial-statements"></a>Generera konsoliderade bokslut
-För information om scenarier där du kan skapa konsoliderade bokslut, se [skapa konsoliderade bokslut](./generating-consolidated-financial-statements.md).
+## <a name="generating-consolidated-financial-statements"></a>Generera konsoliderade årsbokslut
+För information om scenarier där du kan skapa konsoliderade årsbokslut, se [skapa konsoliderade årsbokslut](./generating-consolidated-financial-statements.md).
 
 ## <a name="performance-enhancement-for-large-consolidations"></a>Prestandaförbättringar för stora konsolideringar
 
